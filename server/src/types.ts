@@ -22,6 +22,7 @@ export interface BookingRequest {
   date: string;
   time: string;
   notes?: string;
+  honeypot?: string;
 }
 
 export interface BookingResponse {

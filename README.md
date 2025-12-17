@@ -22,7 +22,7 @@ View your app in AI Studio: https://ai.studio/apps/drive/1gpRghA6T9t8DAjw9tnID1W
 
 Backend (Fastify):
 - From `server/`, run `npm install` once, then `npm run dev` for API.
-- Required env: GEMINI_API_KEY, DATABASE_URL, ADMIN_TOKEN, HOST, PORT, LOG_LEVEL, NODE_ENV, CORS_ORIGINS.
+- Required env: GEMINI_API_KEY, DATABASE_URL, ADMIN_TOKEN, HOST, PORT, LOG_LEVEL, NODE_ENV, CORS_ORIGINS, SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, MAIL_FROM, MAIL_TO.
 - Apply migrations (Postgres): `psql $DATABASE_URL -f server/migrations/001_bookings.sql`
 - Admin bookings endpoint `/api/bookings` requires `Authorization: Bearer $ADMIN_TOKEN`.
 

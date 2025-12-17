@@ -16,7 +16,8 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ onNavigate, init
     phone: '',
     date: '',
     time: '',
-    service: ''
+    service: '',
+    honeypot: ''
   });
   
   const [status, setStatus] = useState<'IDLE' | 'SUBMITTING' | 'SUCCESS' | 'ERROR'>('IDLE');
@@ -308,6 +309,19 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ onNavigate, init
                 </div>
 
                 <div className="pt-4">
+                    {/* Honeypot field for spam bots */}
+                    <div className="hidden" aria-hidden="true">
+                      <label>Leave this field empty</label>
+                      <input
+                        type="text"
+                        name="honeypot"
+                        value={formData.honeypot}
+                        onChange={handleChange}
+                        tabIndex={-1}
+                        autoComplete="off"
+                      />
+                    </div>
+
                     <button
                         type="submit"
                         disabled={status === 'SUBMITTING'}
