@@ -8,7 +8,8 @@
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
   },
   "dependencies": {
     "@fastify/cors": "^9.0.1",
@@ -24,7 +25,8 @@
     "@types/node": "^20.14.10",
     "@types/pg": "^8.11.6",
     "tsx": "^4.16.2",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "vitest": "^1.6.0"
   },
   "engines": {
     "node": ">=20"
