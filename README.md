@@ -25,6 +25,7 @@ Backend (Fastify):
 - Required env: GEMINI_API_KEY, DATABASE_URL, ADMIN_TOKEN, HOST, PORT, LOG_LEVEL, NODE_ENV, CORS_ORIGINS, SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, MAIL_FROM, MAIL_TO.
 - Apply migrations (Postgres): `psql $DATABASE_URL -f server/migrations/001_bookings.sql`
 - Admin bookings endpoint `/api/bookings` requires `Authorization: Bearer $ADMIN_TOKEN`.
+- Replace `public/og-image.jpg` with a real 1200x630 image hosted at the same path for correct social previews.
 
 Tests and checks:
 - `npm run lint` / `npm run typecheck` / `npm test`
