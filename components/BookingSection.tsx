@@ -140,9 +140,14 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ onNavigate, init
         {/* Background Image */}
         <div className="absolute inset-0 opacity-60">
            <img 
-             src="https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&fit=crop&q=80&w=1200" 
+             src="https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&fit=crop&q=80&w=1600" 
              alt="Luxury Dental Clinic Waiting Area" 
              className="w-full h-full object-cover"
+             loading="lazy"
+             decoding="async"
+             width="1600"
+             height="1067"
+             sizes="(min-width: 1024px) 40vw, 100vw"
            />
            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
         </div>

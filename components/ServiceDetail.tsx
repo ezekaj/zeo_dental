@@ -48,6 +48,11 @@ export const ServiceDetail: React.FC<ServiceDetailProps> = ({ serviceId, onNavig
           alt={service.title} 
           onError={() => setImgSrc(PLACEHOLDER_IMAGE)}
           className="w-full h-full object-cover"
+          loading="eager"
+          decoding="async"
+          sizes="100vw"
+          width={1600}
+          height={900}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-full p-8 md:p-16">

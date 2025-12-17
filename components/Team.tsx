@@ -117,6 +117,9 @@ export const Team: React.FC = () => {
                   src={doctor.image} 
                   alt={doctor.name} 
                   loading="lazy"
+                  decoding="async"
+                  width="800"
+                  height="1000"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>

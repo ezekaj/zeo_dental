@@ -57,9 +57,14 @@ export const WhyChooseUs: React.FC = () => {
           <div className="relative">
             <div className="absolute -inset-4 bg-primary-500/20 rounded-2xl blur-lg"></div>
             <img
-              src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800"
+              src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=1200"
               alt="Advanced Dental Technology"
               className="relative rounded-2xl shadow-2xl w-full object-cover h-[600px]"
+              loading="lazy"
+              decoding="async"
+              width="1200"
+              height="900"
+              sizes="(min-width: 1024px) 600px, 100vw"
             />
             <div className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur-md p-6 rounded-xl shadow-lg">
                 <p className="font-serif text-slate-900 text-xl italic">{t('whyChooseUs.testimonialQuote')}</p>

@@ -29,6 +29,11 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1920" 
           alt="Modern Dental Clinic Interior" 
           className="w-full h-[120%] object-cover object-center"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          width="1920"
+          height="1280"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent"></div>
       </div>
