@@ -1,0 +1,313 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "experience": "Experience",
+    "gallery": "Gallery",
+    "team": "Team",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "booking": "Book Now"
+  },
+  "hero": {
+    "welcome": "Welcome to Zeo Dental",
+    "redefining": "Redefining",
+    "artOfSmiles": "The Art of Smiles",
+    "subtitle": "Experience world-class dental care where advanced technology meets luxury comfort. Your journey to a perfect smile begins here.",
+    "bookConsultation": "Book Consultation",
+    "exploreServices": "Explore Services",
+    "yearsExp": "Years Exp.",
+    "smiles": "Smiles"
+  },
+  "services": {
+    "label": "Our Expertise",
+    "title": "Comprehensive Care",
+    "subtitle": "We combine artistry with science to provide a complete range of dental treatments tailored to your unique needs.",
+    "learnMore": "Learn More",
+    "backToServices": "Back to Services",
+    "overview": "Overview",
+    "aboutTreatment": "About This Treatment",
+    "keyBenefits": "Key Benefits",
+    "theProcess": "The Process",
+    "readyToStart": "Ready to start?",
+    "bookConsultation": "Book a consultation with our specialists to discuss if {service} is right for you.",
+    "durationVaries": "Duration varies by case",
+    "warrantyProcedures": "Warranty on all procedures",
+    "bookAppointment": "Book Appointment",
+    "serviceNotFound": "Service Not Found",
+    "returnHome": "Return Home",
+    "items": {
+      "cosmetic": {
+        "title": "Cosmetic Dentistry",
+        "description": "Transform your smile with veneers, whitening, and aesthetic bonding tailored to your facial structure.",
+        "longDescription": "Our cosmetic dentistry services are designed to enhance the natural beauty of your smile while maintaining optimal oral health. We believe that a smile makeover is not just about changing teeth; it is about harmonizing your smile with your facial features and personality. Using digital smile design technology, we allow you to preview your new smile before any treatment begins.",
+        "benefits": [
+          "Custom-designed porcelain veneers for a natural look",
+          "Professional whitening for immediate results",
+          "Minimally invasive bonding techniques",
+          "Digital Smile Design preview"
+        ],
+        "process": [
+          { "title": "Consultation", "description": "We discuss your goals and analyze your facial structure." },
+          { "title": "Design", "description": "Digital simulation of your new smile for approval." },
+          { "title": "Preparation", "description": "Minimal preparation of teeth and placement of temporaries." },
+          { "title": "Transformation", "description": "Bonding of final ceramics and final adjustments." }
+        ]
+      },
+      "implants": {
+        "title": "Dental Implants",
+        "description": "Restore function and confidence with our state-of-the-art titanium and zirconia implant solutions.",
+        "longDescription": "Dental implants are the gold standard for tooth replacement, offering a permanent solution that looks, feels, and functions like natural teeth. At Zeo, we use 3D guided surgery for unparalleled precision and comfort. Whether you need to replace a single tooth or require a full-arch restoration, our specialists ensure a result that restores both your bite and your confidence.",
+        "benefits": [
+          "Permanent solution for missing teeth",
+          "Preserves jaw bone density",
+          "No impact on surrounding healthy teeth",
+          "Biocompatible materials (Titanium or Zirconia)"
+        ],
+        "process": [
+          { "title": "3D Scan", "description": "CBCT scanning to map bone structure and nerve pathways." },
+          { "title": "Placement", "description": "Precise surgical placement of the implant post." },
+          { "title": "Healing", "description": "Osseointegration period where bone fuses with the implant." },
+          { "title": "Restoration", "description": "Attachment of the custom-made crown or bridge." }
+        ]
+      },
+      "ortho": {
+        "title": "Orthodontics",
+        "description": "Modern alignment solutions including invisible aligners and ceramic braces for all ages.",
+        "longDescription": "Straightening your teeth has never been more discreet or comfortable. We offer comprehensive orthodontic solutions ranging from clear aligners to ceramic braces. Our focus is not just on straight teeth, but on creating a functional bite that promotes long-term joint health. We treat patients of all ages, helping you achieve the smile you have always wanted.",
+        "benefits": [
+          "Clear aligners for discreet treatment",
+          "Accelerated orthodontics options",
+          "Correction of bite issues (TMJ)",
+          "Digital monitoring for fewer office visits"
+        ],
+        "process": [
+          { "title": "Assessment", "description": "Digital scanning and bite analysis." },
+          { "title": "Planning", "description": "Custom treatment plan and timeline creation." },
+          { "title": "Active Therapy", "description": "Wearing aligners or braces with regular check-ins." },
+          { "title": "Retention", "description": "Custom retainers to maintain your new smile forever." }
+        ]
+      },
+      "general": {
+        "title": "General Care",
+        "description": "Comprehensive preventive care, hygiene, and maintenance for long-lasting oral health.",
+        "longDescription": "Preventive care is the foundation of the Zeo philosophy. We go beyond basic cleaning to provide a comprehensive analysis of your oral health ecosystem. Our hygiene appointments include oral cancer screenings, gum health assessments, and personalized advice to keep your teeth healthy for life. We make routine visits a relaxing, spa-like experience.",
+        "benefits": [
+          "Advanced airflow cleaning technology",
+          "Digital cavity detection",
+          "Oral cancer screening",
+          "Personalized hygiene plans"
+        ],
+        "process": [
+          { "title": "Exam", "description": "Comprehensive check-up with low-radiation digital X-rays." },
+          { "title": "Hygiene", "description": "Thorough cleaning and polish by expert hygienists." },
+          { "title": "Education", "description": "Tips and tools tailored to your specific oral biome." },
+          { "title": "Plan", "description": "Long-term maintenance schedule based on risk assessment." }
+        ]
+      },
+      "surgery": {
+        "title": "Oral Surgery",
+        "description": "Expert surgical procedures including extractions and gum contouring in a pain-free environment.",
+        "longDescription": "When surgery is necessary, our priority is your comfort and safety. Our suite is equipped for sedation dentistry to ensure a completely anxiety-free experience. From wisdom tooth removal to complex gum grafting, our board-certified surgeons use microsurgical techniques to minimize recovery time and maximize results.",
+        "benefits": [
+          "Sedation options for anxiety-free treatment",
+          "Microsurgical techniques for faster healing",
+          "Wisdom teeth management",
+          "Gum grafting and contouring"
+        ],
+        "process": [
+          { "title": "Evaluation", "description": "Review of medical history and surgical planning." },
+          { "title": "Comfort", "description": "Administration of local anesthesia or sedation." },
+          { "title": "Procedure", "description": "Minimally invasive surgical execution." },
+          { "title": "Recovery", "description": "Detailed aftercare instructions and follow-up." }
+        ]
+      },
+      "pediatric": {
+        "title": "Pediatric Dentistry",
+        "description": "Gentle, engaging care designed specifically for the unique needs of children and teenagers.",
+        "longDescription": "We believe that positive dental experiences in childhood set the stage for a lifetime of health. Our pediatric wing is designed to be welcoming and non-threatening. We speak \"kid,\" explaining procedures in fun, understandable ways. Our focus is on prevention, sealants, and monitoring growth patterns to intervene early if orthodontic needs arise.",
+        "benefits": [
+          "Child-friendly environment and terminology",
+          "Preventive sealants and fluoride",
+          "Growth and development monitoring",
+          "Emergency trauma care"
+        ],
+        "process": [
+          { "title": "Meet & Greet", "description": "Getting comfortable with the team and environment." },
+          { "title": "Counting Teeth", "description": "Gentle exam to check for cavities and development." },
+          { "title": "Cleaning", "description": "Soft polishing and hygiene instruction." },
+          { "title": "Reward", "description": "Positive reinforcement to build confidence." }
+        ]
+      }
+    }
+  },
+  "whyChooseUs": {
+    "label": "The Zeo Standard",
+    "title": "Dentistry Done",
+    "titleHighlight": "Differently.",
+    "subtitle": "We believe a visit to the dentist should be something you look forward to. By combining luxury amenities with cutting-edge medical technology, we've created an environment that soothes the senses and delivers exceptional results.",
+    "feature1Title": "5-Star Experience",
+    "feature1Desc": "Concierge service, noise-canceling headphones, and a calming atmosphere.",
+    "feature2Title": "Advanced Technology",
+    "feature2Desc": "3D scanning, digital smile design, and laser dentistry for precise care.",
+    "feature3Title": "Respect for Your Time",
+    "feature3Desc": "Zero wait times. Your appointment starts exactly when it's scheduled.",
+    "testimonialQuote": "\"The most technologically advanced clinic I've ever visited.\"",
+    "testimonialSource": "TechDaily Review"
+  },
+  "gallery": {
+    "label": "Inside Zeo",
+    "title": "A clinic built for comfort",
+    "subtitle": "Take a look at our spa-inspired suites, digital lab, and private lounges designed to keep you at ease.",
+    "cta": "Schedule a private tour"
+  },
+  "team": {
+    "label": "Our Experts",
+    "title": "Meet The Doctors",
+    "viewProfile": "View Profile",
+    "readFullBio": "Read Full Bio",
+    "biography": "Biography",
+    "education": "Education",
+    "memberships": "Memberships",
+    "quote": "\"I am committed to providing the highest level of care to every patient that walks through our doors.\"",
+    "educationPlaceholder1": "DDS, Top Tier Dental School",
+    "educationPlaceholder2": "Residency in Specialty Area",
+    "educationPlaceholder3": "Advanced Certification",
+    "membershipPlaceholder1": "American Dental Association",
+    "membershipPlaceholder2": "State Dental Society",
+    "membershipPlaceholder3": "Academy of General Dentistry",
+    "doctors": {
+      "dr-emanuela": {
+        "role": "Founder & Cosmetic Specialist",
+        "bio": "With over 15 years of experience, Dr. Velaj specializes in creating natural, radiant smiles using the latest minimally invasive techniques.",
+        "fullBio": "Dr. Emanuela Velaj founded Zeo Dental with a vision to merge luxury hospitality with clinical excellence. A graduate of Harvard School of Dental Medicine, she completed her residency in Aesthetic Dentistry at UCLA. Dr. Velaj is renowned for her \"natural-first\" approach to veneers and smile makeovers, ensuring that every result complements the patient's unique facial features. She is an accredited member of the American Academy of Cosmetic Dentistry and frequently lectures on minimally invasive aesthetic procedures."
+      },
+      "dr-james": {
+        "role": "Implantologist",
+        "bio": "Dr. Chen is a board-certified surgeon known for his precision and gentle approach to complex restorative procedures.",
+        "fullBio": "Dr. James Chen is a dual-degree oral and maxillofacial surgeon and a leader in the field of implantology. He received his dental degree from UCSF and his medical degree from Columbia University. Specializing in complex full-mouth reconstruction and \"All-on-4\" immediate loading implants, Dr. Chen utilizes advanced 3D guided surgery to ensure safety and precision. His calm demeanor and focus on sedation dentistry make him a favorite among anxious patients."
+      },
+      "dr-elena": {
+        "role": "Orthodontist",
+        "bio": "Dr. Rodriguez combines art and science to align smiles perfectly, certified in the most advanced clear aligner systems.",
+        "fullBio": "Dr. Elena Rodriguez believes that a straight smile is the foundation of oral health. She earned her Doctorate of Dental Surgery and Master of Science in Orthodontics from the University of Michigan. Dr. Rodriguez is a Diamond Plus Provider of Invisalign and specializes in accelerated orthodontic treatments for both teens and adults. She is passionate about airway-focused orthodontics, helping patients achieve not just beautiful smiles, but better breathing and sleep quality."
+      }
+    }
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "Patient Stories",
+    "rating": "Average Rating",
+    "items": {
+      "t1": {
+        "name": "Michael Ross",
+        "role": "Patient",
+        "content": "The level of care at Zeo is unmatched. From the moment you walk in, it feels like a 5-star hotel, not a clinic. My veneers look incredible."
+      },
+      "t2": {
+        "name": "Jennifer Wu",
+        "role": "Patient",
+        "content": "I was terrified of the dentist until I met Dr. Zeo. The pain-free technology they use is a game changer. Highly recommended!"
+      },
+      "t3": {
+        "name": "David Okafor",
+        "role": "Patient",
+        "content": "Professional, pristine, and punctual. They value your time and your health. The best dental experience I have ever had."
+      }
+    }
+  },
+  "booking": {
+    "title": "Book Appointment",
+    "subtitle": "Fill out the form to schedule your appointment",
+    "conciergeTitle": "Concierge Services",
+    "conciergeSubtitle": "Your Comfort is Our Priority.",
+    "conciergeDesc": "Schedule your visit with our easy-to-use booking portal. For urgent matters or specific requests, our concierge team is standing by.",
+    "directLine": "Direct Line",
+    "availability": "Available Mon-Sat, 9AM - 7PM",
+    "backToHome": "Back to Home",
+    "personalDetails": "Personal Details",
+    "appointmentDetails": "Appointment Details",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "service": "Service Interest",
+    "selectService": "Select a treatment type...",
+    "otherConsultation": "Other / Consultation",
+    "date": "Preferred Date",
+    "time": "Preferred Time",
+    "selectTime": "Select time...",
+    "morning": "Morning (9AM - 12PM)",
+    "afternoon": "Afternoon (12PM - 4PM)",
+    "evening": "Evening (4PM - 7PM)",
+    "notes": "Additional Notes",
+    "submit": "Confirm Booking Request",
+    "disclaimer": "By submitting this form, you acknowledge that this is a request for an appointment. Our team will contact you to finalize the schedule.",
+    "success": "Request Confirmed",
+    "successMessage": "Thank you, {name}. We have received your appointment request.",
+    "confirmationEmail": "A confirmation email has been sent to",
+    "serviceRequested": "Service Requested",
+    "preferredTime": "Preferred Time",
+    "bookAnother": "Book Another Appointment",
+    "returnHome": "Return to Home",
+    "processing": "Processing...",
+    "namePlaceholder": "John Doe",
+    "emailPlaceholder": "john@example.com",
+    "phonePlaceholder": "(555) 123-4567"
+  },
+  "footer": {
+    "description": "Elevating dental care to an art form. We combine luxury, technology, and compassion to create smiles that change lives.",
+    "quickLinks": "Quick Links",
+    "ourDoctors": "Our Doctors",
+    "patientPortal": "Patient Portal",
+    "contactUs": "Contact Us",
+    "openingHours": "Opening Hours",
+    "monFri": "Monday - Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "closed": "Closed",
+    "rights": "Zeo Dental Clinic. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "hoursMF": "9:00 - 19:00",
+    "hoursSat": "10:00 - 16:00"
+  },
+  "chat": {
+    "title": "Chat with Zeo",
+    "placeholder": "Type your message...",
+    "greeting": "Hello! I'm Zeo, your virtual dental assistant. Feel free to text me in your language! How can I help you achieve your perfect smile today?",
+    "assistantName": "Zeo Assistant",
+    "status": "Always online",
+    "typing": "Zeo is typing...",
+    "disclaimer": "AI responses may vary. For medical emergencies, call 911."
+  },
+  "contact": {
+    "phone": "(555) 123-4567",
+    "email": "zeodentalclinic@gmail.com",
+    "address": "123 Premium Blvd, Beverly Hills, CA 90210",
+    "addressShort": "123 Premium Blvd, Beverly Hills"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "message": "We apologize for the inconvenience. Please try refreshing the page or contact us directly.",
+    "tryAgain": "Try Again",
+    "callUs": "Call (555) 123-4567"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "bookNow": "Book Now",
+    "contactUs": "Contact Us",
+    "callNow": "Call Now",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "tryAgain": "Try Again"
+  },
+  "language": {
+    "select": "Select Language",
+    "albanian": "Shqip",
+    "english": "English"
+  }
+}

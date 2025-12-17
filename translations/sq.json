@@ -1,0 +1,313 @@
+{
+  "nav": {
+    "home": "Kreu",
+    "services": "Shërbimet",
+    "experience": "Përvoja",
+    "gallery": "Galeria",
+    "team": "Ekipi",
+    "testimonials": "Dëshmitë",
+    "contact": "Kontakt",
+    "booking": "Rezervo Tani"
+  },
+  "hero": {
+    "welcome": "Mirësevini në Zeo Dental",
+    "redefining": "Ridefinojmë",
+    "artOfSmiles": "Artin e Buzëqeshjeve",
+    "subtitle": "Përjetoni kujdes dentar të klasit botëror ku teknologjia e avancuar takon komoditetin luksoz. Udhëtimi juaj drejt një buzëqeshjeje perfekte fillon këtu.",
+    "bookConsultation": "Rezervo Konsultën",
+    "exploreServices": "Eksploro Shërbimet",
+    "yearsExp": "Vite Përvojë",
+    "smiles": "Buzëqeshje"
+  },
+  "services": {
+    "label": "Ekspertiza Jonë",
+    "title": "Kujdes Gjithëpërfshirës",
+    "subtitle": "Kombinojmë artizanatin me shkencën për të ofruar një gamë të plotë trajtimesh dentare të përshtatura për nevojat tuaja unike.",
+    "learnMore": "Mëso Më Shumë",
+    "backToServices": "Kthehu tek Shërbimet",
+    "overview": "Përmbledhje",
+    "aboutTreatment": "Rreth Këtij Trajtimi",
+    "keyBenefits": "Përfitimet Kryesore",
+    "theProcess": "Procesi",
+    "readyToStart": "Gati të filloni?",
+    "bookConsultation": "Rezervoni një konsultë me specialistët tanë për të diskutuar nëse {service} është e duhur për ju.",
+    "durationVaries": "Kohëzgjatja varion sipas rastit",
+    "warrantyProcedures": "Garanci për të gjitha procedurat",
+    "bookAppointment": "Rezervo Takim",
+    "serviceNotFound": "Shërbimi Nuk u Gjet",
+    "returnHome": "Kthehu në Kreu",
+    "items": {
+      "cosmetic": {
+        "title": "Stomatologji Kozmetike",
+        "description": "Transformoni buzëqeshjen tuaj me veneers, zbardhje dhe lidhje estetike të përshtatura për strukturën e fytyrës suaj.",
+        "longDescription": "Shërbimet tona të stomatologjisë kozmetike janë krijuar për të rritur bukurinë natyrale të buzëqeshjes suaj duke ruajtur shëndetin optimal oral. Ne besojmë se një transformim i buzëqeshjes nuk ka të bëjë vetëm me ndryshimin e dhëmbëve; bëhet fjalë për harmonizimin e buzëqeshjes suaj me tiparet e fytyrës dhe personalitetin tuaj. Duke përdorur teknologjinë e dizajnit dixhital të buzëqeshjes, ju lejojmë të shikoni paraprakisht buzëqeshjen tuaj të re para se të fillojë çdo trajtim.",
+        "benefits": [
+          "Veneers porcelani të dizajnuara me porosi për pamje natyrale",
+          "Zbardhje profesionale për rezultate të menjëhershme",
+          "Teknika lidhëse minimalisht invazive",
+          "Parashikim me Dizajn Dixhital të Buzëqeshjes"
+        ],
+        "process": [
+          { "title": "Konsultë", "description": "Diskutojmë qëllimet tuaja dhe analizojmë strukturën e fytyrës suaj." },
+          { "title": "Dizajn", "description": "Simulim dixhital i buzëqeshjes suaj të re për miratim." },
+          { "title": "Përgatitje", "description": "Përgatitje minimale e dhëmbëve dhe vendosje e provizorëve." },
+          { "title": "Transformim", "description": "Lidhje e qeramikave përfundimtare dhe rregullime finale." }
+        ]
+      },
+      "implants": {
+        "title": "Implante Dentare",
+        "description": "Rivendosni funksionin dhe besimin me zgjidhjet tona të avancuara të implanteve nga titani dhe zirkoni.",
+        "longDescription": "Implantet dentare janë standardi i artë për zëvendësimin e dhëmbëve, duke ofruar një zgjidhje të përhershme që duket, ndihet dhe funksionon si dhëmbët natyralë. Në Zeo, përdorim kirurgji të udhëhequr 3D për precizitet dhe komoditet të pashoq. Qoftë se keni nevojë të zëvendësoni një dhëmb të vetëm ose kërkoni një restaurim të harkut të plotë, specialistët tanë sigurojnë një rezultat që rikthen si kafshimin tuaj ashtu edhe besimin tuaj.",
+        "benefits": [
+          "Zgjidhje e përhershme për dhëmbë që mungojnë",
+          "Ruan dendësinë e kockës së nofullës",
+          "Asnjë ndikim në dhëmbët e shëndetshëm përreth",
+          "Materiale biokompatibile (Titan ose Zirkon)"
+        ],
+        "process": [
+          { "title": "Skanim 3D", "description": "Skanim CBCT për hartimin e strukturës kockore dhe rrugëve nervore." },
+          { "title": "Vendosje", "description": "Vendosje kirurgjikale e saktë e shtyllës së implantit." },
+          { "title": "Shërim", "description": "Periudhë osteointegrimi ku kocka bashkohet me implantin." },
+          { "title": "Restaurim", "description": "Bashkimi i kurorës ose urës së bërë me porosi." }
+        ]
+      },
+      "ortho": {
+        "title": "Ortodonci",
+        "description": "Zgjidhje moderne të drejtimit përfshirë alignerë të padukshëm dhe aparate qeramike për të gjitha moshat.",
+        "longDescription": "Drejtimi i dhëmbëve tuaja nuk ka qenë kurrë më diskret ose më komod. Ofrojmë zgjidhje ortodontike gjithëpërfshirëse duke filluar nga alignerë të kthjellët tek aparate qeramike. Fokusi ynë nuk është vetëm tek dhëmbët e drejtë, por tek krijimi i një kafshimi funksional që promovon shëndetin afatgjatë të nyjeve. Trajtojmë pacientë të të gjitha moshave, duke ju ndihmuar të arrini buzëqeshjen që keni dashur gjithmonë.",
+        "benefits": [
+          "Alignerë të kthjellët për trajtim diskret",
+          "Opsione ortodoncie të përshpejtuar",
+          "Korrigjim i problemeve të kafshimit (TMJ)",
+          "Monitorim dixhital për më pak vizita në zyrë"
+        ],
+        "process": [
+          { "title": "Vlerësim", "description": "Skanim dixhital dhe analizë e kafshimit." },
+          { "title": "Planifikim", "description": "Krijim i planit të trajtimit dhe afateve kohore me porosi." },
+          { "title": "Terapi Aktive", "description": "Mbartje e alignerëve ose aparateve me kontrolle të rregullta." },
+          { "title": "Mbajtje", "description": "Mbajtëse me porosi për të ruajtur buzëqeshjen tuaj të re përgjithmonë." }
+        ]
+      },
+      "general": {
+        "title": "Kujdes i Përgjithshëm",
+        "description": "Kujdes gjithëpërfshirës parandalues, higjenë dhe mirëmbajtje për shëndet oral afatgjatë.",
+        "longDescription": "Kujdesi parandalues është themeli i filozofisë Zeo. Shkojmë përtej pastrimit bazik për të ofruar një analizë gjithëpërfshirëse të ekosistemit tuaj të shëndetit oral. Takimet tona të higjenës përfshijnë kontrolle për kancer oral, vlerësime të shëndetit të mishrave dhe këshilla të personalizuara për të mbajtur dhëmbët tuaj të shëndetshëm për jetë. E bëjmë vizitat rutinë një përvojë relaksuese si në spa.",
+        "benefits": [
+          "Teknologji e avancuar pastrimi me rrjedhje ajri",
+          "Zbulim dixhital i kaviteteve",
+          "Kontroll për kancer oral",
+          "Plane higjenike të personalizuara"
+        ],
+        "process": [
+          { "title": "Ekzaminim", "description": "Kontroll gjithëpërfshirës me radiografi dixhitale me rrezatim të ulët." },
+          { "title": "Higjenë", "description": "Pastrim dhe lustrim i plotë nga higjenistët ekspertë." },
+          { "title": "Edukim", "description": "Këshilla dhe mjete të përshtatura për biomin tuaj specifik oral." },
+          { "title": "Plan", "description": "Orar mirëmbajtjeje afatgjatë bazuar në vlerësimin e rrezikut." }
+        ]
+      },
+      "surgery": {
+        "title": "Kirurgji Orale",
+        "description": "Procedura kirurgjikale eksperte përfshirë nxjerrje dhe konturim të mishrave në një mjedis pa dhimbje.",
+        "longDescription": "Kur kirurgjia është e nevojshme, prioriteti ynë është komoditeti dhe siguria juaj. Salla jonë është e pajisur për stomatologji me sedacion për të siguruar një përvojë plotësisht pa ankth. Nga heqja e dhëmbëve të mençurisë tek transplantimi kompleks i mishrave, kirurgët tanë të certifikuar përdorin teknika mikrokirurgjikale për të minimizuar kohën e rikuperimit dhe maksimizuar rezultatet.",
+        "benefits": [
+          "Opsione sedacioni për trajtim pa ankth",
+          "Teknika mikrokirurgjikale për shërim më të shpejtë",
+          "Menaxhim i dhëmbëve të mençurisë",
+          "Transplantim dhe konturim i mishrave"
+        ],
+        "process": [
+          { "title": "Vlerësim", "description": "Rishikim i historisë mjekësore dhe planifikim kirurgjik." },
+          { "title": "Komoditet", "description": "Administrim i anestezisë lokale ose sedacionit." },
+          { "title": "Procedurë", "description": "Ekzekutim kirurgjik minimalisht invaziv." },
+          { "title": "Rikuperim", "description": "Udhëzime të detajuara pas-kujdesi dhe ndjekje." }
+        ]
+      },
+      "pediatric": {
+        "title": "Stomatologji Pediatrike",
+        "description": "Kujdes i butë dhe tërheqës i dizajnuar posaçërisht për nevojat unike të fëmijëve dhe adoleshentëve.",
+        "longDescription": "Ne besojmë se përvojat pozitive dentare në fëmijëri vendosin bazat për një jetë të shëndetshme. Krahu ynë pediatrik është dizajnuar të jetë mikpritës dhe jo kërcënues. Flasim \"gjuhën e fëmijëve,\" duke shpjeguar procedurat në mënyra argëtuese dhe të kuptueshme. Fokusi ynë është tek parandalimi, vulosjet dhe monitorimi i modeleve të rritjes për të ndërhyrë herët nëse lindin nevoja ortodontike.",
+        "benefits": [
+          "Mjedis dhe terminologji miqësore për fëmijët",
+          "Vulosje parandaluese dhe fluor",
+          "Monitorim i rritjes dhe zhvillimit",
+          "Kujdes emergjent për trauma"
+        ],
+        "process": [
+          { "title": "Njohje", "description": "Të ndihen rehat me ekipin dhe mjedisin." },
+          { "title": "Numërim Dhëmbësh", "description": "Ekzaminim i butë për të kontrolluar kavitetet dhe zhvillimin." },
+          { "title": "Pastrim", "description": "Lustrim i butë dhe udhëzime higjene." },
+          { "title": "Shpërblim", "description": "Përforcim pozitiv për të ndërtuar besimin." }
+        ]
+      }
+    }
+  },
+  "whyChooseUs": {
+    "label": "Standardi Zeo",
+    "title": "Stomatologji e",
+    "titleHighlight": "Ndryshme.",
+    "subtitle": "Ne besojmë se një vizitë tek dentisti duhet të jetë diçka që e prisni me padurim. Duke kombinuar luksin me teknologjinë mjekësore të fundit, kemi krijuar një mjedis që qetëson shqisat dhe ofron rezultate të jashtëzakonshme.",
+    "feature1Title": "Përvojë 5-Yje",
+    "feature1Desc": "Shërbim concierge, kufje me anulim të zhurmës dhe atmosferë qetësuese.",
+    "feature2Title": "Teknologji e Avancuar",
+    "feature2Desc": "Skanim 3D, dizajn dixhital i buzëqeshjes dhe stomatologji me lazer për kujdes preciz.",
+    "feature3Title": "Respekt për Kohën Tuaj",
+    "feature3Desc": "Zero kohë pritjeje. Takimi juaj fillon saktësisht kur është caktuar.",
+    "testimonialQuote": "\"Klinika më e avancuar teknologjikisht që kam vizituar ndonjëherë.\"",
+    "testimonialSource": "TechDaily Review"
+  },
+  "gallery": {
+    "label": "Brenda Zeo",
+    "title": "Një klinikë e ndërtuar për rehati",
+    "subtitle": "Hidhini një sy suiteve tona me frymë spa, laboratorit dixhital dhe salloneve private që ju mbajnë të qetë.",
+    "cta": "Cakto një tur privat"
+  },
+  "team": {
+    "label": "Ekspertët Tanë",
+    "title": "Njihuni me Doktorët",
+    "viewProfile": "Shiko Profilin",
+    "readFullBio": "Lexo Biografinë",
+    "biography": "Biografia",
+    "education": "Edukimi",
+    "memberships": "Anëtarësimet",
+    "quote": "\"Jam i përkushtuar të ofroj nivelin më të lartë të kujdesit për çdo pacient që hyn në dyert tona.\"",
+    "educationPlaceholder1": "DDS, Shkollë Dentare e Nivelit të Lartë",
+    "educationPlaceholder2": "Specializim në Fushën Përkatëse",
+    "educationPlaceholder3": "Certifikim i Avancuar",
+    "membershipPlaceholder1": "Shoqata Amerikane e Stomatologjisë",
+    "membershipPlaceholder2": "Shoqata Shtetërore e Stomatologjisë",
+    "membershipPlaceholder3": "Akademia e Stomatologjisë së Përgjithshme",
+    "doctors": {
+      "dr-emanuela": {
+        "role": "Themeluese & Specialiste Kozmetike",
+        "bio": "Me mbi 15 vite përvojë, Dr. Velaj specializohet në krijimin e buzëqeshjeve natyrale dhe rrezatuese duke përdorur teknikat më të fundit minimalisht invazive.",
+        "fullBio": "Dr. Emanuela Velaj themeloi Zeo Dental me një vizion për të bashkuar mikpritjen luksoze me ekselencën klinike. E diplomuar nga Harvard School of Dental Medicine, ajo përfundoi specializimin e saj në Stomatologji Estetike në UCLA. Dr. Velaj është e njohur për qasjen e saj \"natyrale së pari\" ndaj veneers dhe transformimeve të buzëqeshjes, duke siguruar që çdo rezultat plotëson tiparet unike të fytyrës së pacientit. Ajo është anëtare e akredituar e Akademisë Amerikane të Stomatologjisë Kozmetike dhe ligjëron shpesh mbi procedurat estetike minimalisht invazive."
+      },
+      "dr-james": {
+        "role": "Implantolog",
+        "bio": "Dr. Chen është kirurg i certifikuar i njohur për precizitetin dhe qasjen e butë ndaj procedurave komplekse restauruese.",
+        "fullBio": "Dr. James Chen është kirurg oral dhe maksilofacial me dy diploma dhe lider në fushën e implantologjisë. Ai mori diplomën e stomatologjisë nga UCSF dhe diplomën e mjekësisë nga Universiteti Columbia. Duke u specializuar në rikonstruksion kompleks të gojës së plotë dhe implante \"All-on-4\" me ngarkesë të menjëhershme, Dr. Chen përdor kirurgji të avancuar të udhëhequr 3D për të siguruar siguri dhe precizitet. Qëndrimi i tij i qetë dhe fokusi në stomatologji me sedacion e bëjnë të preferuarin e pacientëve me ankth."
+      },
+      "dr-elena": {
+        "role": "Ortodonte",
+        "bio": "Dr. Rodriguez kombinon artin dhe shkencën për të drejtuar buzëqeshjet në mënyrë perfekte, e certifikuar në sistemet më të avancuara të alignerëve të kthjellët.",
+        "fullBio": "Dr. Elena Rodriguez beson se një buzëqeshje e drejtë është themeli i shëndetit oral. Ajo fitoi Doktoraturën e Kirurgjisë Dentare dhe Masterin e Shkencës në Ortodonci nga Universiteti i Michigan. Dr. Rodriguez është Ofruese Diamond Plus e Invisalign dhe specializohet në trajtime ortodontike të përshpejtuara si për adoleshentë ashtu edhe për të rritur. Ajo është e apasionuar pas ortodoncisë së fokusuar në rrugët e ajrit, duke ndihmuar pacientët të arrijnë jo vetëm buzëqeshje të bukura, por edhe frymëmarrje dhe cilësi gjumi më të mirë."
+      }
+    }
+  },
+  "testimonials": {
+    "label": "Dëshmitë",
+    "title": "Histori Pacientësh",
+    "rating": "Vlerësim Mesatar",
+    "items": {
+      "t1": {
+        "name": "Michael Ross",
+        "role": "Pacient",
+        "content": "Niveli i kujdesit në Zeo është i pashoq. Që nga momenti që hyni, ndihet si hotel 5-yjesh, jo si klinikë. Veneers-at e mia duken të mahnitshme."
+      },
+      "t2": {
+        "name": "Jennifer Wu",
+        "role": "Pacient",
+        "content": "Isha e tmerruar nga dentisti derisa takova Dr. Zeo. Teknologjia pa dhimbje që përdorin është revolucionare. E rekomandoj shumë!"
+      },
+      "t3": {
+        "name": "David Okafor",
+        "role": "Pacient",
+        "content": "Profesionale, e pastër dhe e saktë. Vlerësojnë kohën dhe shëndetin tuaj. Përvoja më e mirë dentare që kam pasur ndonjëherë."
+      }
+    }
+  },
+  "booking": {
+    "title": "Rezervo Takimin",
+    "subtitle": "Plotëso formularin për të caktuar takimin tënd",
+    "conciergeTitle": "Shërbime Concierge",
+    "conciergeSubtitle": "Komoditeti Juaj është Prioriteti Ynë.",
+    "conciergeDesc": "Caktoni vizitën tuaj me portalin tonë të lehtë rezervimi. Për çështje urgjente ose kërkesa specifike, ekipi ynë concierge është në gatishmëri.",
+    "directLine": "Linja Direkte",
+    "availability": "E disponueshme Hën-Sht, 9:00 - 19:00",
+    "backToHome": "Kthehu në Kreu",
+    "personalDetails": "Detajet Personale",
+    "appointmentDetails": "Detajet e Takimit",
+    "name": "Emri i Plotë",
+    "email": "Adresa Email",
+    "phone": "Numri i Telefonit",
+    "service": "Interesi për Shërbimin",
+    "selectService": "Zgjidh llojin e trajtimit...",
+    "otherConsultation": "Tjetër / Konsultë",
+    "date": "Data e Preferuar",
+    "time": "Ora e Preferuar",
+    "selectTime": "Zgjidh orën...",
+    "morning": "Mëngjes (9:00 - 12:00)",
+    "afternoon": "Pasdite (12:00 - 16:00)",
+    "evening": "Mbrëmje (16:00 - 19:00)",
+    "notes": "Shënime Shtesë",
+    "submit": "Konfirmo Kërkesën për Rezervim",
+    "disclaimer": "Duke dërguar këtë formular, ju pranoni që kjo është një kërkesë për takim. Ekipi ynë do t'ju kontaktojë për të finalizuar orarin.",
+    "success": "Kërkesa u Konfirmua",
+    "successMessage": "Faleminderit, {name}. Kemi marrë kërkesën tuaj për takim.",
+    "confirmationEmail": "Një email konfirmimi është dërguar në",
+    "serviceRequested": "Shërbimi i Kërkuar",
+    "preferredTime": "Koha e Preferuar",
+    "bookAnother": "Rezervo Takim Tjetër",
+    "returnHome": "Kthehu në Kreu",
+    "processing": "Duke procesuar...",
+    "namePlaceholder": "Emri Mbiemri",
+    "emailPlaceholder": "emri@shembull.com",
+    "phonePlaceholder": "+355 69 123 4567"
+  },
+  "footer": {
+    "description": "Duke ngritur kujdesin dentar në art. Kombinojmë luksin, teknologjinë dhe dhembshurinë për të krijuar buzëqeshje që ndryshojnë jetë.",
+    "quickLinks": "Lidhje të Shpejta",
+    "ourDoctors": "Doktorët Tanë",
+    "patientPortal": "Portali i Pacientit",
+    "contactUs": "Na Kontaktoni",
+    "openingHours": "Orari i Punës",
+    "monFri": "E Hënë - E Premte",
+    "saturday": "E Shtunë",
+    "sunday": "E Dielë",
+    "closed": "Mbyllur",
+    "rights": "Zeo Dental Clinic. Të gjitha të drejtat e rezervuara.",
+    "privacy": "Politika e Privatësisë",
+    "terms": "Kushtet e Shërbimit",
+    "hoursMF": "9:00 - 19:00",
+    "hoursSat": "10:00 - 16:00"
+  },
+  "chat": {
+    "title": "Bisedo me Zeo",
+    "placeholder": "Shkruaj mesazhin tënd...",
+    "greeting": "Përshëndetje! Unë jam Zeo, asistenti juaj virtual dentar. Si mund t'ju ndihmoj sot?",
+    "assistantName": "Asistenti Zeo",
+    "status": "Gjithmonë online",
+    "typing": "Zeo po shkruan...",
+    "disclaimer": "Përgjigjet e AI mund të ndryshojnë. Për emergjenca mjekësore, telefononi 112."
+  },
+  "contact": {
+    "phone": "(555) 123-4567",
+    "email": "zeodentalclinic@gmail.com",
+    "address": "123 Premium Blvd, Beverly Hills, CA 90210",
+    "addressShort": "123 Premium Blvd, Beverly Hills"
+  },
+  "error": {
+    "title": "Diçka shkoi keq",
+    "message": "Kërkojmë ndjesë për shqetësimin. Ju lutemi provoni të rifreskoni faqen ose na kontaktoni drejtpërdrejt.",
+    "tryAgain": "Provo Përsëri",
+    "callUs": "Thirr (555) 123-4567"
+  },
+  "common": {
+    "learnMore": "Mëso Më Shumë",
+    "readMore": "Lexo Më Shumë",
+    "bookNow": "Rezervo Tani",
+    "contactUs": "Na Kontaktoni",
+    "callNow": "Thirr Tani",
+    "address": "Adresa",
+    "phone": "Telefon",
+    "email": "Email",
+    "loading": "Duke u ngarkuar...",
+    "error": "Ndodhi një gabim",
+    "tryAgain": "Provo Përsëri"
+  },
+  "language": {
+    "select": "Zgjidh Gjuhën",
+    "albanian": "Shqip",
+    "english": "English"
+  }
+}
