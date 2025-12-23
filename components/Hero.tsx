@@ -35,13 +35,13 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           width="1920"
           height="1280"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-950/85 via-primary-700/60 to-transparent"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20">
         <div className="max-w-2xl">
           <h2 
-            className="text-primary-400 font-medium tracking-widest text-sm uppercase mb-4 opacity-0 animate-fade-in-up"
+              className="text-primary-400 font-medium tracking-widest text-sm uppercase mb-4 opacity-0 animate-fade-in-up"
             style={{ animationDelay: '0.1s' }}
           >
             {t('hero.welcome')}
@@ -73,7 +73,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           >
             <button 
               onClick={() => onNavigate('booking')}
-              className="group bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-[0_0_20px_rgba(20,184,166,0.3)] hover:shadow-[0_0_30px_rgba(20,184,166,0.5)] flex items-center justify-center gap-2"
+              className="group bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-[0_0_20px_rgba(153,125,91,0.25)] hover:shadow-[0_0_30px_rgba(193,154,107,0.35)] flex items-center justify-center gap-2"
             >
               {t('hero.bookConsultation')}
               <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />

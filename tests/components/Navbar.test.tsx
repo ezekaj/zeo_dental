@@ -109,7 +109,7 @@ describe('Navbar', () => {
     const openButton = screen.getByRole('button', { name: /open navigation menu/i });
     await userEvent.click(openButton);
 
-    expect(screen.getByText('(555) 123-4567')).toBeInTheDocument();
+    expect(screen.getByText('+355 68 400 4840')).toBeInTheDocument();
   });
 
   it('applies solid background when scrolled', () => {

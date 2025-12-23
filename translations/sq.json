@@ -252,7 +252,7 @@
     "processing": "Duke procesuar...",
     "namePlaceholder": "Emri Mbiemri",
     "emailPlaceholder": "emri@shembull.com",
-    "phonePlaceholder": "+355 69 123 4567"
+    "phonePlaceholder": "+355 68 400 4840"
   },
   "footer": {
     "description": "Duke ngritur kujdesin dentar në art. Kombinojmë luksin, teknologjinë dhe dhembshurinë për të krijuar buzëqeshje që ndryshojnë jetë.",
@@ -281,7 +281,7 @@
     "disclaimer": "Përgjigjet e AI mund të ndryshojnë. Për emergjenca mjekësore, telefononi 112."
   },
   "contact": {
-    "phone": "(555) 123-4567",
+    "phone": "+355 68 400 4840",
     "email": "zeodentalclinic@gmail.com",
     "address": "123 Premium Blvd, Beverly Hills, CA 90210",
     "addressShort": "123 Premium Blvd, Beverly Hills"
@@ -290,7 +290,7 @@
     "title": "Diçka shkoi keq",
     "message": "Kërkojmë ndjesë për shqetësimin. Ju lutemi provoni të rifreskoni faqen ose na kontaktoni drejtpërdrejt.",
     "tryAgain": "Provo Përsëri",
-    "callUs": "Thirr (555) 123-4567"
+    "callUs": "Thirr +355 68 400 4840"
   },
   "common": {
     "learnMore": "Mëso Më Shumë",

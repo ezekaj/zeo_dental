@@ -40,7 +40,7 @@ describe('bookingRoutes', () => {
       payload: {
         name: 'John Doe',
         email: 'john@example.com',
-        phone: '+1 (555) 123-4567',
+        phone: '+355 68 400 4840',
         service: 'Cosmetic Dentistry',
         date: '2025-12-25',
         time: 'morning',
@@ -65,7 +65,7 @@ describe('bookingRoutes', () => {
       payload: {
         name: '',
         email: 'john@example.com',
-        phone: '+1 (555) 123-4567',
+        phone: '+355 68 400 4840',
         service: 'Cosmetic Dentistry',
         date: '2025-12-25',
         time: 'morning',

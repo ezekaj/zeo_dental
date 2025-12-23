@@ -48,7 +48,7 @@ describe('ErrorBoundary', () => {
       </ErrorBoundary>
     );
 
-    expect(screen.getByText('Call (555) 123-4567')).toBeInTheDocument();
+    expect(screen.getByText('Call +355 68 400 4840')).toBeInTheDocument();
   });
 
   it('resets error state when Try Again is clicked', () => {

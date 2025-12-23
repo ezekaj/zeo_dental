@@ -252,7 +252,7 @@
     "processing": "Processing...",
     "namePlaceholder": "John Doe",
     "emailPlaceholder": "john@example.com",
-    "phonePlaceholder": "(555) 123-4567"
+    "phonePlaceholder": "+355 68 400 4840"
   },
   "footer": {
     "description": "Elevating dental care to an art form. We combine luxury, technology, and compassion to create smiles that change lives.",
@@ -281,7 +281,7 @@
     "disclaimer": "AI responses may vary. For medical emergencies, call 911."
   },
   "contact": {
-    "phone": "(555) 123-4567",
+    "phone": "+355 68 400 4840",
     "email": "zeodentalclinic@gmail.com",
     "address": "123 Premium Blvd, Beverly Hills, CA 90210",
     "addressShort": "123 Premium Blvd, Beverly Hills"
@@ -290,7 +290,7 @@
     "title": "Something went wrong",
     "message": "We apologize for the inconvenience. Please try refreshing the page or contact us directly.",
     "tryAgain": "Try Again",
-    "callUs": "Call (555) 123-4567"
+    "callUs": "Call +355 68 400 4840"
   },
   "common": {
     "learnMore": "Learn More",

@@ -67,7 +67,7 @@ export const sendMessageToGemini = async (
     return responseText;
   } catch (error) {
     console.error('Chat service error:', error);
-    return "I'm having trouble connecting right now. Please call us directly at (555) 123-4567.";
+    return "I'm having trouble connecting right now. Please call us directly at +355 68 400 4840.";
   }
 };
 

@@ -77,22 +77,22 @@ export const ChatWidget: React.FC = () => {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
       {/* Chat Window */}
       {isOpen && (
-        <div className="mb-4 w-[350px] sm:w-[400px] h-[500px] bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden animate-fade-in-up">
+        <div className="mb-4 w-[350px] sm:w-[400px] h-[500px] bg-white rounded-2xl shadow-2xl border border-primary-100 flex flex-col overflow-hidden animate-fade-in-up">
           {/* Header */}
-          <div className="bg-slate-900 p-4 flex justify-between items-center">
+          <div className="bg-primary-950 p-4 flex justify-between items-center">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary-400 relative">
+              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary-300 relative">
                 <Bot size={24} />
-                <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-500 rounded-full border-2 border-slate-900"></span>
+                <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-500 rounded-full border-2 border-primary-950"></span>
               </div>
               <div>
                 <h3 className="text-white font-semibold">{t('chat.assistantName')}</h3>
-                <p className="text-slate-400 text-xs">{t('chat.status')}</p>
+                <p className="text-primary-100 text-xs">{t('chat.status')}</p>
               </div>
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="text-slate-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-primary-400 rounded"
+              className="text-primary-100 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-primary-400 rounded"
               aria-label="Close chat"
             >
               <X size={20} aria-hidden="true" />
@@ -100,7 +100,7 @@ export const ChatWidget: React.FC = () => {
           </div>
 
           {/* Messages Area */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
+          <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-primary-50">
             {messages.map((msg) => (
               <div
                 key={msg.id}
@@ -110,7 +110,7 @@ export const ChatWidget: React.FC = () => {
                   className={`max-w-[80%] p-3 rounded-2xl text-sm leading-relaxed ${
                     msg.role === 'user'
                       ? 'bg-primary-600 text-white rounded-tr-none'
-                      : 'bg-white text-slate-700 shadow-sm border border-slate-100 rounded-tl-none'
+                      : 'bg-white text-primary-900 shadow-sm border border-primary-100 rounded-tl-none'
                   }`}
                 >
                   {msg.text}
@@ -119,9 +119,9 @@ export const ChatWidget: React.FC = () => {
             ))}
             {loadingState === LoadingState.LOADING && (
               <div className="flex justify-start">
-                 <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-slate-100 flex items-center gap-2">
+                 <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-primary-100 flex items-center gap-2">
                     <Loader2 size={16} className="animate-spin text-primary-500" />
-                    <span className="text-xs text-slate-400">{t('chat.typing')}</span>
+                    <span className="text-xs text-primary-700">{t('chat.typing')}</span>
                  </div>
               </div>
             )}
@@ -129,7 +129,7 @@ export const ChatWidget: React.FC = () => {
           </div>
 
           {/* Input Area */}
-          <div className="p-4 bg-white border-t border-slate-100">
+          <div className="p-4 bg-white border-t border-primary-100">
             <div className="flex items-center gap-2">
               <input
                 type="text"
@@ -138,7 +138,7 @@ export const ChatWidget: React.FC = () => {
                 onKeyDown={handleKeyPress}
                 placeholder={t('chat.placeholder')}
                 aria-label="Type your message to the dental assistant"
-                className="flex-1 bg-slate-50 border border-slate-200 rounded-full px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all text-slate-700 placeholder-slate-400"
+                className="flex-1 bg-primary-50 border border-primary-100 rounded-full px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all text-primary-900 placeholder:text-primary-500"
               />
               <button
                 onClick={handleSend}
@@ -150,7 +150,7 @@ export const ChatWidget: React.FC = () => {
               </button>
             </div>
             <div className="text-center mt-2">
-                <span className="text-[10px] text-slate-400">{t('chat.disclaimer')}</span>
+                <span className="text-[10px] text-primary-700">{t('chat.disclaimer')}</span>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@ export const ChatWidget: React.FC = () => {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={`p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 ${
-          isOpen ? 'bg-slate-700 rotate-90 text-white' : 'bg-primary-600 text-white animate-pulse-slow'
+          isOpen ? 'bg-primary-900 rotate-90 text-white' : 'bg-primary-600 text-white animate-pulse-slow'
         }`}
         aria-expanded={isOpen}
         aria-label={isOpen ? 'Close chat assistant' : 'Open chat assistant'}

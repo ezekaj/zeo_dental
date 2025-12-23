@@ -61,11 +61,11 @@ describe('BookingSection', () => {
 
     await user.type(screen.getByLabelText(/full name/i), 'John Doe');
     await user.type(screen.getByLabelText(/email address/i), 'john@example.com');
-    await user.type(screen.getByLabelText(/phone number/i), '555-123-4567');
+    await user.type(screen.getByLabelText(/phone number/i), '+355 68 400 4840');
 
     expect(screen.getByLabelText(/full name/i)).toHaveValue('John Doe');
     expect(screen.getByLabelText(/email address/i)).toHaveValue('john@example.com');
-    expect(screen.getByLabelText(/phone number/i)).toHaveValue('555-123-4567');
+    expect(screen.getByLabelText(/phone number/i)).toHaveValue('+355 68 400 4840');
   });
 
   it('shows service options including all dental services', () => {
@@ -94,7 +94,7 @@ describe('BookingSection', () => {
   it('displays clinic contact info', () => {
     render(<BookingSection onNavigate={mockNavigate} />);
 
-    expect(screen.getByText('(555) 123-4567')).toBeInTheDocument();
+    expect(screen.getByText('+355 68 400 4840')).toBeInTheDocument();
   });
 
   it('shows disclaimer about appointment confirmation', () => {
@@ -112,7 +112,7 @@ describe('BookingSection', () => {
     // Fill out form
     await user.type(screen.getByLabelText(/full name/i), 'John Doe');
     await user.type(screen.getByLabelText(/email address/i), 'john@example.com');
-    await user.type(screen.getByLabelText(/phone number/i), '555-123-4567');
+    await user.type(screen.getByLabelText(/phone number/i), '+355 68 400 4840');
     await user.selectOptions(screen.getByLabelText(/service interest/i), 'Cosmetic Dentistry');
     await user.type(screen.getByLabelText(/preferred date/i), '2024-12-25');
     await user.selectOptions(screen.getByLabelText(/preferred time/i), 'morning');
