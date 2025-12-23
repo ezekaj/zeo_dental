@@ -145,11 +145,15 @@ export async function bookingRoutes(fastify: FastifyInstance) {
 
         transporter
           .sendMail(clinicMail)
-          .catch((err) => fastify.log.error('Clinic email failed: %s', err instanceof Error ? err.message : String(err)));
+          .catch((err: unknown) =>
+            fastify.log.error('Clinic email failed: %s', err instanceof Error ? err.message : String(err))
+          );
 
         transporter
           .sendMail(patientMail)
-          .catch((err) => fastify.log.error('Patient email failed: %s', err instanceof Error ? err.message : String(err)));
+          .catch((err: unknown) =>
+            fastify.log.error('Patient email failed: %s', err instanceof Error ? err.message : String(err))
+          );
       } else {
         fastify.log.warn('Mail not configured; skipping booking notifications');
       }
