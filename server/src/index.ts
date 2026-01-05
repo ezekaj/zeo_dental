@@ -7,7 +7,6 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { chatRoutes } from './routes/chat.js';
 import { bookingRoutes } from './routes/booking.js';
-import { reviewsRoutes } from './routes/reviews.js';
 import { postgresPlugin } from './plugins/postgres.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -69,7 +68,6 @@ async function start() {
     // Register API routes
     await fastify.register(chatRoutes, { prefix: '/api' });
     await fastify.register(bookingRoutes, { prefix: '/api' });
-    await fastify.register(reviewsRoutes, { prefix: '/api' });
 
     // Serve static files (React build)
     const publicPath = join(__dirname, '..', 'public');
