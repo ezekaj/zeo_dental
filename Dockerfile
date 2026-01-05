@@ -16,6 +16,8 @@ WORKDIR /app/server
 
 # Copy server package files
 COPY server/package*.json ./
+# Cache bust for dependency changes
+ARG CACHE_BUST=1
 RUN npm ci
 
 # Copy server source and build
