@@ -28,11 +28,14 @@ RUN npm run build
 FROM node:20-alpine AS production
 WORKDIR /app
 
+# Cache bust for production dependencies
+ARG PROD_CACHE_BUST=1
+
 # Create non-root user for security
 RUN addgroup -g 1001 -S nodejs && \
     adduser -S fastify -u 1001
 
-# Copy server build and dependencies
+# Copy server build and dependencies (rate-limit v9.x for Fastify 4.x)
 COPY --from=server-build /app/server/dist ./dist
 COPY --from=server-build /app/server/node_modules ./node_modules
 COPY --from=server-build /app/server/package.json ./
