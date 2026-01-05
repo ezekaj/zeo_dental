@@ -19,7 +19,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled, currentView, onNavigat
     if (currentView !== 'home') return;
 
     const handleScroll = () => {
-      const sections = ['home', 'services', 'experience', 'team', 'testimonials'];
+      const sections = ['home', 'services', 'experience', 'team', 'reviews'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -54,7 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled, currentView, onNavigat
     { name: t('nav.services'), id: 'services' },
     { name: t('nav.experience'), id: 'experience' },
     { name: t('nav.team'), id: 'team' },
-    { name: t('nav.testimonials'), id: 'testimonials' },
+    { name: t('nav.testimonials'), id: 'reviews' },
   ];
 
   const handleLinkClick = (id: string) => {

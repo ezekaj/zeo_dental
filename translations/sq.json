@@ -194,6 +194,13 @@
       }
     }
   },
+  "reviews": {
+    "label": "Vlerësimet në Google",
+    "title": "Çfarë Thonë Pacientët Tanë",
+    "reviewCount": "vlerësime",
+    "leaveReview": "Lër një Vlerësim",
+    "poweredBy": "Fuqizuar nga Google Reviews"
+  },
   "testimonials": {
     "label": "Dëshmitë",
     "title": "Histori Pacientësh",

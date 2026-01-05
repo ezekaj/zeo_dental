@@ -4,7 +4,7 @@ import { Hero } from './components/Hero';
 import { Services } from './components/Services';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { Team } from './components/Team';
-import { Testimonials } from './components/Testimonials';
+import { GoogleReviews } from './components/GoogleReviews';
 import { BookingSection } from './components/BookingSection';
 import { ServiceDetail } from './components/ServiceDetail';
 import { Footer } from './components/Footer';
@@ -142,8 +142,8 @@ const App: React.FC = () => {
               <section id="team" aria-label="Our Team">
                 <Team />
               </section>
-              <section id="testimonials" aria-label="Patient Testimonials">
-                <Testimonials />
+              <section id="reviews" aria-label="Patient Reviews">
+                <GoogleReviews />
               </section>
             </div>
           )}
