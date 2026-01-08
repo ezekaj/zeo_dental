@@ -26,7 +26,7 @@ export const GoogleReviews: React.FC = () => {
     // Load Elfsight script if widget ID is configured
     if (widgetId && !document.querySelector('script[src*="elfsight"]')) {
       const script = document.createElement('script');
-      script.src = 'https://static.elfsight.com/platform/platform.js';
+      script.src = 'https://elfsightcdn.com/platform.js';
       script.async = true;
       document.body.appendChild(script);
     }
@@ -50,9 +50,8 @@ export const GoogleReviews: React.FC = () => {
           {widgetId ? (
             // Elfsight widget - auto-updates from Google
             <div
-              className="elfsight-app-lazy"
+              className={`elfsight-app-${widgetId}`}
               data-elfsight-app-lazy
-              data-elfsight-app-widget-id={widgetId}
             />
           ) : (
             // Placeholder when widget not configured
