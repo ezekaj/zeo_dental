@@ -89,7 +89,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
 
         <div className="border-t border-primary-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-primary-100/80">
-          <p>&copy; {new Date().getFullYear()} {t('footer.rights')}</p>
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+            <p>&copy; {new Date().getFullYear()} {t('footer.rights')}</p>
+            <span className="hidden md:inline">•</span>
+            <a
+              href="https://zedigital.tech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary-200 transition-colors"
+            >
+              Made by Z.E Digital Tech
+            </a>
+          </div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary-200 transition-colors">{t('footer.privacy')}</a>
             <a href="#" className="hover:text-primary-200 transition-colors">{t('footer.terms')}</a>
