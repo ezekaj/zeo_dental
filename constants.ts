@@ -130,12 +130,21 @@ export const SERVICES: ServiceItem[] = [
 
 export const DOCTORS: Doctor[] = [
   {
+    id: 'dr-emanuela',
+    name: 'Dr. Emanuela Velaj',
+    role: 'Founder & Lead Dentist',
+    // Will be replaced with processed local photo when P1016623.RW2 is converted
+    image: 'https://images.unsplash.com/photo-1559839734-2b71ea86b3f9?auto=format&fit=crop&q=95&w=1600',
+    bio: 'Founder of Zeo Dental Clinic, Dr. Velaj is a distinguished graduate of the Faculty of Medicine, Dentistry program, with advanced certifications in Orthodontics and Prosthetic Gnathological Rehabilitation from UCAM, Spain.',
+    fullBio: 'Dr. Emanuela Velaj is the founder of Zeo Dental Clinic, having completed her studies at the Faculty of Medicine, Dentistry program, building a professional profile based on deep knowledge, clinical precision, and continuous commitment to quality. Her training has been enriched over the years with advanced postgraduate courses in key areas of modern dentistry, including endodontics, gnathology, implant-supported prosthetics, dental aesthetics, and orthodontics. She holds a diploma from UCAM – Universidad Católica de Murcia (Spain) in Orthodontics and Prosthetic Gnathological Rehabilitation, where she has acquired contemporary European standards and advanced treatment protocols, focused on functional harmony, sophisticated aesthetics, and long-term sustainability of clinical results. As the founder, she has conceptualized and built Zeo Dental Clinic on the principles of medical excellence, advanced technology, and maximum sterilization standards, creating a modern, refined, and completely safe environment, where every detail is designed for patient comfort and trust. Distinguished by professional elegance, clear communication, and a humane approach, the doctor works with precision, ethics, and maximum dedication, offering personalized treatments and high-level functional and aesthetic results. Personally, she is a mother of two children, a role that has strengthened her empathy, patience, and human sensitivity. Traveling and getting to know different cultures are a constant source of inspiration, while music, dancing, and contact with nature give her balance and positive energy, naturally reflected in her professional philosophy and special care for each patient.'
+  },
+  {
     id: 'dr-rien',
     name: 'Dr. Rien Stambolliu',
     role: 'Dental Specialist',
     image: '/images/team/rien-stambolliu-card.webp',
-    bio: 'Dr. Stambolliu brings expertise and dedication to providing exceptional dental care with a focus on patient comfort and satisfaction.',
-    fullBio: 'Dr. Rien Stambolliu is a highly skilled dental professional committed to delivering comprehensive oral health care. With advanced training in modern dental techniques and a patient-centered approach, Dr. Stambolliu ensures every visit is comfortable and effective. Their dedication to continuous learning and staying current with the latest advancements in dentistry makes them a valued member of the Zeo Dental team.'
+    bio: 'Graduate of the University of Stomatology, Tirana, Dr. Stambolliu specializes in dental therapy, fixed and mobile prosthetics, and implant-supported restorations.',
+    fullBio: 'Dr. Rien Stambolliu completed his studies at the University of Stomatology, Tirana. Throughout his professional development, he has successfully completed numerous national and international training programs, and has been an active participant in several medical conferences, continuously updating himself with the latest techniques and standards in dentistry. He professionally performs treatments in the field of dental therapy, fixed prosthetics, removable prosthetics, as well as implant-supported prosthetics, paying special attention to the function, aesthetics, and long-term sustainability of the work. Known for his correctness, careful approach, and warm demeanor towards patients, Dr. Rien works with maximum dedication to guarantee quality, safe, and personalized treatments for each patient.'
   },
   {
     id: 'dr-kristi',
@@ -144,33 +153,6 @@ export const DOCTORS: Doctor[] = [
     image: '/images/team/kristi-sulanjaku-card.webp',
     bio: 'Dr. Sulanjaku combines clinical excellence with a compassionate approach, ensuring personalized care for every patient.',
     fullBio: 'Dr. Kristi Sulanjaku is a dedicated dental professional passionate about transforming smiles and improving oral health. With extensive experience in comprehensive dental care, Dr. Sulanjaku focuses on creating positive patient experiences through gentle, effective treatment. Their commitment to excellence and attention to detail ensures that each patient receives the highest quality care tailored to their individual needs.'
-  },
-  {
-    id: 'dr-emanuela',
-    name: 'Dr. Emanuela Velaj',
-    role: 'Founder & Cosmetic Specialist',
-    // Increased resolution to w=1600 and quality to q=95 for sharp modal display
-    image: 'https://images.unsplash.com/photo-1559839734-2b71ea86b3f9?auto=format&fit=crop&q=95&w=1600',
-    bio: 'With over 15 years of experience, Dr. Velaj specializes in creating natural, radiant smiles using the latest minimally invasive techniques.',
-    fullBio: 'Dr. Emanuela Velaj founded Zeo Dental with a vision to merge luxury hospitality with clinical excellence. A graduate of Harvard School of Dental Medicine, she completed her residency in Aesthetic Dentistry at UCLA. Dr. Velaj is renowned for her "natural-first" approach to veneers and smile makeovers, ensuring that every result complements the patient\'s unique facial features. She is an accredited member of the American Academy of Cosmetic Dentistry and frequently lectures on minimally invasive aesthetic procedures.'
-  },
-  {
-    id: 'dr-james',
-    name: 'Dr. James Chen',
-    role: 'Implantologist',
-    // Increased resolution to w=1600 and quality to q=95 for sharp modal display
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=95&w=1600',
-    bio: 'Dr. Chen is a board-certified surgeon known for his precision and gentle approach to complex restorative procedures.',
-    fullBio: 'Dr. James Chen is a dual-degree oral and maxillofacial surgeon and a leader in the field of implantology. He received his dental degree from UCSF and his medical degree from Columbia University. Specializing in complex full-mouth reconstruction and "All-on-4" immediate loading implants, Dr. Chen utilizes advanced 3D guided surgery to ensure safety and precision. His calm demeanor and focus on sedation dentistry make him a favorite among anxious patients.'
-  },
-  {
-    id: 'dr-elena',
-    name: 'Dr. Elena Rodriguez',
-    role: 'Orthodontist',
-    // Increased resolution to w=1600 and quality to q=95 for sharp modal display
-    image: 'https://images.unsplash.com/photo-1594824476969-233589973a7c?auto=format&fit=crop&q=95&w=1600',
-    bio: 'Dr. Rodriguez combines art and science to align smiles perfectly, certified in the most advanced clear aligner systems.',
-    fullBio: 'Dr. Elena Rodriguez believes that a straight smile is the foundation of oral health. She earned her Doctorate of Dental Surgery and Master of Science in Orthodontics from the University of Michigan. Dr. Rodriguez is a Diamond Plus Provider of Invisalign and specializes in accelerated orthodontic treatments for both teens and adults. She is passionate about airway-focused orthodontics, helping patients achieve not just beautiful smiles, but better breathing and sleep quality.'
   }
 ];
 

@@ -34,15 +34,27 @@ export const Team: React.FC = () => {
         <div className="w-full md:w-5/12 h-64 md:h-auto relative flex-shrink-0 bg-slate-100">
            <picture>
              <source
-               srcSet={selectedDoctor?.image.replace('-card.webp', '-modal.webp')}
+               srcSet={
+                 selectedDoctor?.image.includes('-card.webp')
+                   ? selectedDoctor.image.replace('-card.webp', '-modal.webp')
+                   : selectedDoctor?.image
+               }
                type="image/webp"
              />
              <source
-               srcSet={selectedDoctor?.image.replace('-card.webp', '-modal.jpg').replace('?auto=format', '')}
+               srcSet={
+                 selectedDoctor?.image.includes('-card.webp')
+                   ? selectedDoctor.image.replace('-card.webp', '-modal.jpg')
+                   : selectedDoctor?.image.replace('?auto=format', '').replace('w=1600', 'w=2000')
+               }
                type="image/jpeg"
              />
              <img
-               src={selectedDoctor?.image.replace('-card.webp', '-modal.jpg').replace('?auto=format', '')}
+               src={
+                 selectedDoctor?.image.includes('-card.webp')
+                   ? selectedDoctor.image.replace('-card.webp', '-modal.jpg')
+                   : selectedDoctor?.image.replace('?auto=format', '').replace('w=1600', 'w=2000')
+               }
                alt={selectedDoctor?.name}
                className="w-full h-full object-cover"
              />
@@ -112,27 +124,27 @@ export const Team: React.FC = () => {
           <h3 className="text-4xl font-serif font-bold text-slate-900">{t('team.title')}</h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {DOCTORS.map((doctor) => (
-            <div 
-              key={doctor.id} 
-              onClick={() => setSelectedDoctor(doctor)}
-              className="group bg-white rounded-t-full rounded-b-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 cursor-pointer flex flex-col"
+        {/* Founder - Featured at top */}
+        {DOCTORS[0] && (
+          <div className="max-w-2xl mx-auto mb-12">
+            <div
+              onClick={() => setSelectedDoctor(DOCTORS[0])}
+              className="group bg-white rounded-t-full rounded-b-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 cursor-pointer flex flex-col"
             >
               <div className="aspect-[4/5] overflow-hidden relative">
                 <div className="absolute inset-0 bg-primary-900/0 group-hover:bg-primary-900/20 transition-all duration-500 z-10 flex items-center justify-center">
                     <span className="opacity-0 group-hover:opacity-100 text-white font-semibold tracking-wide transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">{t('team.viewProfile')}</span>
                 </div>
                 <picture>
-                  <source srcSet={doctor.image} type="image/webp" />
+                  <source srcSet={DOCTORS[0].image} type="image/webp" />
                   <source
-                    srcSet={doctor.image.replace('.webp', '.jpg').replace('?auto=format', '')}
+                    srcSet={DOCTORS[0].image.replace('.webp', '.jpg').replace('?auto=format', '')}
                     type="image/jpeg"
                   />
                   <img
-                    src={doctor.image.replace('.webp', '.jpg').replace('?auto=format', '')}
-                    alt={doctor.name}
-                    loading="lazy"
+                    src={DOCTORS[0].image.replace('.webp', '.jpg').replace('?auto=format', '')}
+                    alt={DOCTORS[0].name}
+                    loading="eager"
                     decoding="async"
                     width="800"
                     height="1000"
@@ -140,19 +152,64 @@ export const Team: React.FC = () => {
                   />
                 </picture>
               </div>
-              <div className="p-8 text-center relative z-20 bg-white flex-grow flex flex-col items-center">
-                <h4 className="text-2xl font-serif font-bold text-slate-900 mb-1">{doctor.name}</h4>
-                <p className="text-primary-600 font-medium text-sm uppercase tracking-wider mb-4">{t(`team.doctors.${doctor.id}.role`)}</p>
-                <p className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3">
-                  {t(`team.doctors.${doctor.id}.bio`)}
+              <div className="p-10 text-center relative z-20 bg-white flex-grow flex flex-col items-center">
+                <h4 className="text-3xl font-serif font-bold text-slate-900 mb-2">{DOCTORS[0].name}</h4>
+                <p className="text-primary-600 font-medium text-base uppercase tracking-wider mb-6">{t(`team.doctors.${DOCTORS[0].id}.role`)}</p>
+                <p className="text-slate-500 text-base leading-relaxed mb-8 line-clamp-4">
+                  {t(`team.doctors.${DOCTORS[0].id}.bio`)}
                 </p>
                 <button className="mt-auto text-primary-600 text-sm font-semibold hover:text-primary-700 flex items-center gap-1 transition-colors group/btn">
                     {t('team.readFullBio')} <ArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
                 </button>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        )}
+
+        {/* Team Members - Grid below founder */}
+        {DOCTORS.length > 1 && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+            {DOCTORS.slice(1).map((doctor) => (
+              <div
+                key={doctor.id}
+                onClick={() => setSelectedDoctor(doctor)}
+                className="group bg-white rounded-t-full rounded-b-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 cursor-pointer flex flex-col"
+              >
+                <div className="aspect-[4/5] overflow-hidden relative">
+                  <div className="absolute inset-0 bg-primary-900/0 group-hover:bg-primary-900/20 transition-all duration-500 z-10 flex items-center justify-center">
+                      <span className="opacity-0 group-hover:opacity-100 text-white font-semibold tracking-wide transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">{t('team.viewProfile')}</span>
+                  </div>
+                  <picture>
+                    <source srcSet={doctor.image} type="image/webp" />
+                    <source
+                      srcSet={doctor.image.replace('.webp', '.jpg').replace('?auto=format', '')}
+                      type="image/jpeg"
+                    />
+                    <img
+                      src={doctor.image.replace('.webp', '.jpg').replace('?auto=format', '')}
+                      alt={doctor.name}
+                      loading="lazy"
+                      decoding="async"
+                      width="800"
+                      height="1000"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </picture>
+                </div>
+                <div className="p-8 text-center relative z-20 bg-white flex-grow flex flex-col items-center">
+                  <h4 className="text-2xl font-serif font-bold text-slate-900 mb-1">{doctor.name}</h4>
+                  <p className="text-primary-600 font-medium text-sm uppercase tracking-wider mb-4">{t(`team.doctors.${doctor.id}.role`)}</p>
+                  <p className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3">
+                    {t(`team.doctors.${doctor.id}.bio`)}
+                  </p>
+                  <button className="mt-auto text-primary-600 text-sm font-semibold hover:text-primary-700 flex items-center gap-1 transition-colors group/btn">
+                      {t('team.readFullBio')} <ArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Render Modal via Portal to avoid z-index/transform issues */}
