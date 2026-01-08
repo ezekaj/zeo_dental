@@ -26,7 +26,8 @@ export const ChatWidget: React.FC = () => {
       // Otherwise, update only the welcome message, preserve conversation
       return prev.map(msg => msg.id === 'welcome' ? welcomeMsg : msg);
     });
-  }, [language, t]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [language]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
