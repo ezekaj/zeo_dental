@@ -32,11 +32,21 @@ export const Team: React.FC = () => {
 
         {/* Image Side */}
         <div className="w-full md:w-5/12 h-64 md:h-auto relative flex-shrink-0 bg-slate-100">
-           <img 
-             src={selectedDoctor?.image} 
-             alt={selectedDoctor?.name} 
-             className="w-full h-full object-cover"
-           />
+           <picture>
+             <source
+               srcSet={selectedDoctor?.image.replace('-card.webp', '-modal.webp')}
+               type="image/webp"
+             />
+             <source
+               srcSet={selectedDoctor?.image.replace('-card.webp', '-modal.jpg').replace('?auto=format', '')}
+               type="image/jpeg"
+             />
+             <img
+               src={selectedDoctor?.image.replace('-card.webp', '-modal.jpg').replace('?auto=format', '')}
+               alt={selectedDoctor?.name}
+               className="w-full h-full object-cover"
+             />
+           </picture>
            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent md:hidden"></div>
            <div className="absolute bottom-4 left-4 text-white md:hidden">
               <h3 className="text-2xl font-serif font-bold">{selectedDoctor?.name}</h3>
@@ -113,15 +123,22 @@ export const Team: React.FC = () => {
                 <div className="absolute inset-0 bg-primary-900/0 group-hover:bg-primary-900/20 transition-all duration-500 z-10 flex items-center justify-center">
                     <span className="opacity-0 group-hover:opacity-100 text-white font-semibold tracking-wide transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">{t('team.viewProfile')}</span>
                 </div>
-                <img 
-                  src={doctor.image} 
-                  alt={doctor.name} 
-                  loading="lazy"
-                  decoding="async"
-                  width="800"
-                  height="1000"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+                <picture>
+                  <source srcSet={doctor.image} type="image/webp" />
+                  <source
+                    srcSet={doctor.image.replace('.webp', '.jpg').replace('?auto=format', '')}
+                    type="image/jpeg"
+                  />
+                  <img
+                    src={doctor.image.replace('.webp', '.jpg').replace('?auto=format', '')}
+                    alt={doctor.name}
+                    loading="lazy"
+                    decoding="async"
+                    width="800"
+                    height="1000"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </picture>
               </div>
               <div className="p-8 text-center relative z-20 bg-white flex-grow flex flex-col items-center">
                 <h4 className="text-2xl font-serif font-bold text-slate-900 mb-1">{doctor.name}</h4>

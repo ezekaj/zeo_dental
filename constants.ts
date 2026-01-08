@@ -130,6 +130,22 @@ export const SERVICES: ServiceItem[] = [
 
 export const DOCTORS: Doctor[] = [
   {
+    id: 'dr-rien',
+    name: 'Dr. Rien Stambolliu',
+    role: 'Dental Specialist',
+    image: '/images/team/rien-stambolliu-card.webp',
+    bio: 'Dr. Stambolliu brings expertise and dedication to providing exceptional dental care with a focus on patient comfort and satisfaction.',
+    fullBio: 'Dr. Rien Stambolliu is a highly skilled dental professional committed to delivering comprehensive oral health care. With advanced training in modern dental techniques and a patient-centered approach, Dr. Stambolliu ensures every visit is comfortable and effective. Their dedication to continuous learning and staying current with the latest advancements in dentistry makes them a valued member of the Zeo Dental team.'
+  },
+  {
+    id: 'dr-kristi',
+    name: 'Dr. Kristi Sulanjaku',
+    role: 'Dental Specialist',
+    image: '/images/team/kristi-sulanjaku-card.webp',
+    bio: 'Dr. Sulanjaku combines clinical excellence with a compassionate approach, ensuring personalized care for every patient.',
+    fullBio: 'Dr. Kristi Sulanjaku is a dedicated dental professional passionate about transforming smiles and improving oral health. With extensive experience in comprehensive dental care, Dr. Sulanjaku focuses on creating positive patient experiences through gentle, effective treatment. Their commitment to excellence and attention to detail ensures that each patient receives the highest quality care tailored to their individual needs.'
+  },
+  {
     id: 'dr-emanuela',
     name: 'Dr. Emanuela Velaj',
     role: 'Founder & Cosmetic Specialist',

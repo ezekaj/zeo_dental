@@ -177,10 +177,20 @@
     "membershipPlaceholder2": "State Dental Society",
     "membershipPlaceholder3": "Academy of General Dentistry",
     "doctors": {
+      "dr-rien": {
+        "role": "Dental Specialist",
+        "bio": "Graduate of the University of Stomatology, Tirana, Dr. Stambolliu specializes in dental therapy, fixed and mobile prosthetics, and implant-supported restorations.",
+        "fullBio": "Dr. Rien Stambolliu completed his studies at the University of Stomatology, Tirana. Throughout his professional development, he has successfully completed numerous national and international training programs and actively participated in medical conferences, continuously updating his knowledge with the latest techniques and standards in dentistry. He professionally delivers treatments in dental therapy, fixed and mobile prosthetics, as well as implant-supported prosthetics, paying special attention to function, aesthetics, and long-term durability of his work. Known for his precision, careful approach, and warm demeanor with patients, Dr. Rien works with maximum dedication to guarantee quality, safe, and personalized treatments for every patient."
+      },
+      "dr-kristi": {
+        "role": "Dental Specialist",
+        "bio": "Dr. Sulanjaku combines clinical excellence with a compassionate approach, ensuring personalized care for every patient.",
+        "fullBio": "Dr. Kristi Sulanjaku is a dedicated dental professional passionate about transforming smiles and improving oral health. With extensive experience in comprehensive dental care, Dr. Sulanjaku focuses on creating positive patient experiences through gentle, effective treatment. Their commitment to excellence and attention to detail ensures that each patient receives the highest quality care tailored to their individual needs."
+      },
       "dr-emanuela": {
-        "role": "Founder & Cosmetic Specialist",
-        "bio": "With over 15 years of experience, Dr. Velaj specializes in creating natural, radiant smiles using the latest minimally invasive techniques.",
-        "fullBio": "Dr. Emanuela Velaj founded Zeo Dental with a vision to merge luxury hospitality with clinical excellence. A graduate of Harvard School of Dental Medicine, she completed her residency in Aesthetic Dentistry at UCLA. Dr. Velaj is renowned for her \"natural-first\" approach to veneers and smile makeovers, ensuring that every result complements the patient's unique facial features. She is an accredited member of the American Academy of Cosmetic Dentistry and frequently lectures on minimally invasive aesthetic procedures."
+        "role": "Founder & Lead Dentist",
+        "bio": "Founder of Zeo Dental Clinic, Dr. Velaj is a distinguished graduate of the Faculty of Medicine, Dentistry Department, with advanced certifications in Orthodontics and Prosthetic Gnathological Rehabilitation from UCAM, Spain.",
+        "fullBio": "Dr. Emanuela Velaj is the founder of Zeo Dental Clinic, having completed her studies at the Faculty of Medicine, Dentistry Department, building a professional profile based on profound knowledge, clinical precision, and continuous commitment to quality. Her education has been enriched over the years with advanced postgraduate training in key fields of modern dentistry, including endodontics, gnathology, implant prosthetics, dental aesthetics, and orthodontics. She holds a diploma from UCAM – Universidad Católica de Murcia (Spain) in Orthodontics and Prosthetic Gnathological Rehabilitation, where she mastered contemporary European standards and advanced treatment protocols focused on functional harmony, sophisticated aesthetics, and long-term clinical sustainability. As founder, she has conceptualized and built Zeo Dental Clinic on principles of medical excellence, advanced technology, and maximum sterilization standards, creating a modern, refined, and completely safe environment where every detail is designed for patient comfort and trust. Distinguished by professional elegance, clear communication, and a humane approach, Dr. Velaj works with precision, ethics, and maximum dedication, offering personalized treatments and high-level functional and aesthetic results. Personally, she is a mother of two children, a role that has strengthened her empathy, patience, and human sensitivity. Travel and exposure to different cultures provide continuous inspiration, while music, dance, and contact with nature give her balance and positive energy, naturally reflected in her professional philosophy and special care for every patient."
       },
       "dr-james": {
         "role": "Implantologist",
