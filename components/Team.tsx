@@ -45,7 +45,7 @@ export const Team: React.FC = () => {
                srcSet={
                  selectedDoctor?.image.includes('-card.webp')
                    ? selectedDoctor.image.replace('-card.webp', '-modal.jpg')
-                   : selectedDoctor?.image.replace('?auto=format', '').replace('w=1600', 'w=2000')
+                   : selectedDoctor?.image.replace('w=1600', 'w=2000')
                }
                type="image/jpeg"
              />
@@ -53,7 +53,7 @@ export const Team: React.FC = () => {
                src={
                  selectedDoctor?.image.includes('-card.webp')
                    ? selectedDoctor.image.replace('-card.webp', '-modal.jpg')
-                   : selectedDoctor?.image.replace('?auto=format', '').replace('w=1600', 'w=2000')
+                   : selectedDoctor?.image.replace('w=1600', 'w=2000')
                }
                alt={selectedDoctor?.name}
                className="w-full h-full object-cover object-left"
