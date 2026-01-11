@@ -59,7 +59,7 @@ export const Team: React.FC = () => {
                className="w-full h-full object-cover"
                style={
                  selectedDoctor?.id === 'dr-rien' || selectedDoctor?.id === 'dr-kristi'
-                   ? { objectPosition: '35% center' }
+                   ? { objectPosition: '15% center' }
                    : { objectPosition: 'center' }
                }
              />
@@ -200,7 +200,7 @@ export const Team: React.FC = () => {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       style={
                         doctor.id === 'dr-rien' || doctor.id === 'dr-kristi'
-                          ? { objectPosition: '35% center' }
+                          ? { objectPosition: '15% center' }
                           : { objectPosition: 'center' }
                       }
                     />
