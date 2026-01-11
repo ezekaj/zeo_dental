@@ -56,11 +56,12 @@ export const Team: React.FC = () => {
                    : selectedDoctor?.image.replace('w=1600', 'w=2000')
                }
                alt={selectedDoctor?.name}
-               className={`w-full h-full object-cover ${
+               className="w-full h-full object-cover"
+               style={
                  selectedDoctor?.id === 'dr-rien' || selectedDoctor?.id === 'dr-kristi'
-                   ? 'object-right'
-                   : 'object-center'
-               }`}
+                   ? { objectPosition: '65% center' }
+                   : { objectPosition: 'center' }
+               }
              />
            </picture>
            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent md:hidden"></div>
@@ -196,11 +197,12 @@ export const Team: React.FC = () => {
                       decoding="async"
                       width="800"
                       height="1000"
-                      className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      style={
                         doctor.id === 'dr-rien' || doctor.id === 'dr-kristi'
-                          ? 'object-right'
-                          : 'object-center'
-                      }`}
+                          ? { objectPosition: '65% center' }
+                          : { objectPosition: 'center' }
+                      }
                     />
                   </picture>
                 </div>
