@@ -185,7 +185,14 @@
       "dr-kristi": {
         "role": "Specialist Stomatologjik",
         "bio": "Dr.Kristi Sulanjaku ka përfunduar studimet Master në Shkenca Mjekësore, dega Stomatologji, me rezultate shumë të larta. Zotëron njohuri të thelluara në protetikën dentare.",
-        "fullBio": "Dr.Kristi Sulanjaku ka përfunduar studimet Master në Shkenca Mjekësore, dega Stomatologji, me rezultate shumë të larta. Ajo merr pjesë rregullisht në konferenca mjekësore. Zotëron njohuri të thelluara në protetikën dentare dhe dallohet për korrektësinë, saktësinë dhe vëmendjen e veçantë ndaj detajeve, duke garantuar rezultate funksionale dhe estetike optimale. Ka aftësi shumë të mira komunikimi dhe pune, duke ofruar trajtime profesionale dhe të personalizuara për çdo pacient."
+        "fullBio": "Dr.Kristi Sulanjaku ka përfunduar studimet Master në Shkenca Mjekësore, dega Stomatologji, me rezultate shumë të larta. Ajo merr pjesë rregullisht në konferenca mjekësore. Zotëron njohuri të thelluara në protetikën dentare dhe dallohet për korrektësinë, saktësinë dhe vëmendjen e veçantë ndaj detajeve, duke garantuar rezultate funksionale dhe estetike optimale. Ka aftësi shumë të mira komunikimi dhe pune, duke ofruar trajtime profesionale dhe të personalizuara për çdo pacient.",
+        "education1": "Master në Shkenca Mjekësore, dega Stomatologji",
+        "education2": "Trajnime të avancuara në Protetikë Dentare",
+        "education3": "Pjesëmarrëse aktive në konferenca mjekësore ndërkombëtare",
+        "membership1": "Urdhri i Stomatologëve të Shqipërisë",
+        "membership2": "Shoqata Shqiptare e Stomatologjisë",
+        "membership3": "Anëtare e shoqatave profesionale të protetikës dentare",
+        "quote": "Jam e përkushtuar të ofroj kujdes të personalizuar dhe rezultate optimale për çdo pacient."
       },
       "dr-emanuela": {
         "role": "Themeluese & Stomatolog Kryesor",

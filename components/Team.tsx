@@ -94,9 +94,19 @@ export const Team: React.FC = () => {
                         <GraduationCap className="text-primary-500" size={18} /> {t('team.education')}
                     </h4>
                     <ul className="text-sm text-slate-600 space-y-2">
-                        <li>{t('team.educationPlaceholder1')}</li>
-                        <li>{t('team.educationPlaceholder2')}</li>
-                        <li>{t('team.educationPlaceholder3')}</li>
+                        {selectedDoctor?.id === 'dr-kristi' ? (
+                            <>
+                                <li>{t('team.doctors.dr-kristi.education1')}</li>
+                                <li>{t('team.doctors.dr-kristi.education2')}</li>
+                                <li>{t('team.doctors.dr-kristi.education3')}</li>
+                            </>
+                        ) : (
+                            <>
+                                <li>{t('team.educationPlaceholder1')}</li>
+                                <li>{t('team.educationPlaceholder2')}</li>
+                                <li>{t('team.educationPlaceholder3')}</li>
+                            </>
+                        )}
                     </ul>
                 </div>
                 <div>
@@ -104,16 +114,31 @@ export const Team: React.FC = () => {
                         <Award className="text-primary-500" size={18} /> {t('team.memberships')}
                     </h4>
                     <ul className="text-sm text-slate-600 space-y-2">
-                        <li>{t('team.membershipPlaceholder1')}</li>
-                        <li>{t('team.membershipPlaceholder2')}</li>
-                        <li>{t('team.membershipPlaceholder3')}</li>
+                        {selectedDoctor?.id === 'dr-kristi' ? (
+                            <>
+                                <li>{t('team.doctors.dr-kristi.membership1')}</li>
+                                <li>{t('team.doctors.dr-kristi.membership2')}</li>
+                                <li>{t('team.doctors.dr-kristi.membership3')}</li>
+                            </>
+                        ) : (
+                            <>
+                                <li>{t('team.membershipPlaceholder1')}</li>
+                                <li>{t('team.membershipPlaceholder2')}</li>
+                                <li>{t('team.membershipPlaceholder3')}</li>
+                            </>
+                        )}
                     </ul>
                 </div>
              </div>
            </div>
-           
+
            <div className="mt-8 pt-6 border-t border-slate-100">
-               <p className="text-slate-400 italic text-sm">{t('team.quote')}</p>
+               <p className="text-slate-400 italic text-sm">
+                   {selectedDoctor?.id === 'dr-kristi'
+                       ? t('team.doctors.dr-kristi.quote')
+                       : t('team.quote')
+                   }
+               </p>
            </div>
         </div>
 

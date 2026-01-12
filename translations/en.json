@@ -185,7 +185,14 @@
       "dr-kristi": {
         "role": "Dental Specialist",
         "bio": "Dr. Kristi Sulanjaku completed her Master's studies in Medical Sciences, Dentistry Department, with very high results. She possesses deep knowledge in dental prosthetics.",
-        "fullBio": "Dr. Kristi Sulanjaku completed her Master's studies in Medical Sciences, Dentistry Department, with very high results. She regularly participates in medical conferences. She possesses deep knowledge in dental prosthetics and is distinguished by her correctness, precision, and special attention to detail, guaranteeing optimal functional and aesthetic results. She has excellent communication and work skills, offering professional and personalized treatments for every patient."
+        "fullBio": "Dr. Kristi Sulanjaku completed her Master's studies in Medical Sciences, Dentistry Department, with very high results. She regularly participates in medical conferences. She possesses deep knowledge in dental prosthetics and is distinguished by her correctness, precision, and special attention to detail, guaranteeing optimal functional and aesthetic results. She has excellent communication and work skills, offering professional and personalized treatments for every patient.",
+        "education1": "Master's in Medical Sciences, Dentistry Department",
+        "education2": "Advanced training in Dental Prosthetics",
+        "education3": "Active participant in international medical conferences",
+        "membership1": "Order of Albanian Dentists",
+        "membership2": "Albanian Dental Association",
+        "membership3": "Member of professional dental prosthetics associations",
+        "quote": "I am committed to providing personalized care and optimal results for every patient."
       },
       "dr-emanuela": {
         "role": "Founder & Lead Dentist",
