@@ -84,7 +84,7 @@ export const Team: React.FC = () => {
                     <User className="text-primary-500" size={18} /> {t('team.biography')}
                 </h4>
                 <p
-                    className="text-slate-600 leading-relaxed text-lg font-light"
+                    className="text-slate-600 leading-relaxed text-lg font-light [&_strong]:font-bold [&_strong]:text-slate-900"
                     dangerouslySetInnerHTML={{
                         __html: selectedDoctor ? t(`team.doctors.${selectedDoctor.id}.fullBio`) : ''
                     }}
@@ -217,7 +217,7 @@ export const Team: React.FC = () => {
                 <h4 className="text-3xl font-serif font-bold text-slate-900 mb-2">{DOCTORS[0].name}</h4>
                 <p className="text-primary-600 font-medium text-base uppercase tracking-wider mb-6">{t(`team.doctors.${DOCTORS[0].id}.role`)}</p>
                 <p
-                    className="text-slate-500 text-base leading-relaxed mb-8 line-clamp-4"
+                    className="text-slate-500 text-base leading-relaxed mb-8 line-clamp-4 [&_strong]:font-bold [&_strong]:text-slate-900"
                     dangerouslySetInnerHTML={{
                         __html: t(`team.doctors.${DOCTORS[0].id}.bio`)
                     }}
@@ -269,7 +269,7 @@ export const Team: React.FC = () => {
                   <h4 className="text-2xl font-serif font-bold text-slate-900 mb-1">{doctor.name}</h4>
                   <p className="text-primary-600 font-medium text-sm uppercase tracking-wider mb-4">{t(`team.doctors.${doctor.id}.role`)}</p>
                   <p
-                      className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3"
+                      className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3 [&_strong]:font-bold [&_strong]:text-slate-900"
                       dangerouslySetInnerHTML={{
                           __html: t(`team.doctors.${doctor.id}.bio`)
                       }}
