@@ -100,6 +100,12 @@ export const Team: React.FC = () => {
                                 <li>{t('team.doctors.dr-kristi.education2')}</li>
                                 <li>{t('team.doctors.dr-kristi.education3')}</li>
                             </>
+                        ) : selectedDoctor?.id === 'dr-emanuela' ? (
+                            <>
+                                <li>{t('team.doctors.dr-emanuela.education1')}</li>
+                                <li>{t('team.doctors.dr-emanuela.education2')}</li>
+                                <li>{t('team.doctors.dr-emanuela.education3')}</li>
+                            </>
                         ) : (
                             <>
                                 <li>{t('team.educationPlaceholder1')}</li>
@@ -120,6 +126,12 @@ export const Team: React.FC = () => {
                                 <li>{t('team.doctors.dr-kristi.membership2')}</li>
                                 <li>{t('team.doctors.dr-kristi.membership3')}</li>
                             </>
+                        ) : selectedDoctor?.id === 'dr-emanuela' ? (
+                            <>
+                                <li>{t('team.doctors.dr-emanuela.membership1')}</li>
+                                <li>{t('team.doctors.dr-emanuela.membership2')}</li>
+                                <li>{t('team.doctors.dr-emanuela.membership3')}</li>
+                            </>
                         ) : (
                             <>
                                 <li>{t('team.membershipPlaceholder1')}</li>
@@ -136,6 +148,8 @@ export const Team: React.FC = () => {
                <p className="text-slate-400 italic text-sm">
                    {selectedDoctor?.id === 'dr-kristi'
                        ? t('team.doctors.dr-kristi.quote')
+                       : selectedDoctor?.id === 'dr-emanuela'
+                       ? t('team.doctors.dr-emanuela.quote')
                        : t('team.quote')
                    }
                </p>
