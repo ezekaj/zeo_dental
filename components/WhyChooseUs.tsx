@@ -57,7 +57,7 @@ export const WhyChooseUs: React.FC = () => {
           <div className="relative">
             <div className="absolute -inset-4 bg-primary-400/25 rounded-2xl blur-lg"></div>
             <img
-              src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=1200"
+              src="/images/why-choose-us.jpg"
               alt="Advanced Dental Technology"
               className="relative rounded-2xl shadow-2xl w-full object-cover h-[600px]"
               loading="lazy"
