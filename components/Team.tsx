@@ -83,9 +83,12 @@ export const Team: React.FC = () => {
                 <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3 flex items-center gap-2">
                     <User className="text-primary-500" size={18} /> {t('team.biography')}
                 </h4>
-                <p className="text-slate-600 leading-relaxed text-lg font-light">
-                    {selectedDoctor && t(`team.doctors.${selectedDoctor.id}.fullBio`)}
-                </p>
+                <p
+                    className="text-slate-600 leading-relaxed text-lg font-light"
+                    dangerouslySetInnerHTML={{
+                        __html: selectedDoctor ? t(`team.doctors.${selectedDoctor.id}.fullBio`) : ''
+                    }}
+                ></p>
              </div>
 
              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-100">
@@ -105,6 +108,12 @@ export const Team: React.FC = () => {
                                 <li>{t('team.doctors.dr-emanuela.education1')}</li>
                                 <li>{t('team.doctors.dr-emanuela.education2')}</li>
                                 <li>{t('team.doctors.dr-emanuela.education3')}</li>
+                            </>
+                        ) : selectedDoctor?.id === 'dr-rien' ? (
+                            <>
+                                <li>{t('team.doctors.dr-rien.education1')}</li>
+                                <li>{t('team.doctors.dr-rien.education2')}</li>
+                                <li>{t('team.doctors.dr-rien.education3')}</li>
                             </>
                         ) : (
                             <>
@@ -132,6 +141,12 @@ export const Team: React.FC = () => {
                                 <li>{t('team.doctors.dr-emanuela.membership2')}</li>
                                 <li>{t('team.doctors.dr-emanuela.membership3')}</li>
                             </>
+                        ) : selectedDoctor?.id === 'dr-rien' ? (
+                            <>
+                                <li>{t('team.doctors.dr-rien.membership1')}</li>
+                                <li>{t('team.doctors.dr-rien.membership2')}</li>
+                                <li>{t('team.doctors.dr-rien.membership3')}</li>
+                            </>
                         ) : (
                             <>
                                 <li>{t('team.membershipPlaceholder1')}</li>
@@ -150,6 +165,8 @@ export const Team: React.FC = () => {
                        ? t('team.doctors.dr-kristi.quote')
                        : selectedDoctor?.id === 'dr-emanuela'
                        ? t('team.doctors.dr-emanuela.quote')
+                       : selectedDoctor?.id === 'dr-rien'
+                       ? t('team.doctors.dr-rien.quote')
                        : t('team.quote')
                    }
                </p>
@@ -199,9 +216,12 @@ export const Team: React.FC = () => {
               <div className="p-10 text-center relative z-20 bg-white flex-grow flex flex-col items-center">
                 <h4 className="text-3xl font-serif font-bold text-slate-900 mb-2">{DOCTORS[0].name}</h4>
                 <p className="text-primary-600 font-medium text-base uppercase tracking-wider mb-6">{t(`team.doctors.${DOCTORS[0].id}.role`)}</p>
-                <p className="text-slate-500 text-base leading-relaxed mb-8 line-clamp-4">
-                  {t(`team.doctors.${DOCTORS[0].id}.bio`)}
-                </p>
+                <p
+                    className="text-slate-500 text-base leading-relaxed mb-8 line-clamp-4"
+                    dangerouslySetInnerHTML={{
+                        __html: t(`team.doctors.${DOCTORS[0].id}.bio`)
+                    }}
+                ></p>
                 <button className="mt-auto text-primary-600 text-sm font-semibold hover:text-primary-700 flex items-center gap-1 transition-colors group/btn">
                     {t('team.readFullBio')} <ArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
                 </button>
@@ -248,9 +268,12 @@ export const Team: React.FC = () => {
                 <div className="p-8 text-center relative z-20 bg-white flex-grow flex flex-col items-center">
                   <h4 className="text-2xl font-serif font-bold text-slate-900 mb-1">{doctor.name}</h4>
                   <p className="text-primary-600 font-medium text-sm uppercase tracking-wider mb-4">{t(`team.doctors.${doctor.id}.role`)}</p>
-                  <p className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3">
-                    {t(`team.doctors.${doctor.id}.bio`)}
-                  </p>
+                  <p
+                      className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3"
+                      dangerouslySetInnerHTML={{
+                          __html: t(`team.doctors.${doctor.id}.bio`)
+                      }}
+                  ></p>
                   <button className="mt-auto text-primary-600 text-sm font-semibold hover:text-primary-700 flex items-center gap-1 transition-colors group/btn">
                       {t('team.readFullBio')} <ArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
                   </button>
