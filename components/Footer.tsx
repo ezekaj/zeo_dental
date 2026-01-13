@@ -1,110 +1,78 @@
 import React from 'react';
-import { Facebook, Instagram, Twitter, Mail, MapPin, Phone } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 
-interface FooterProps {
-  onNavigate: (view: 'home' | 'booking', sectionId?: string) => void;
-}
+const NAV_ITEMS = [
+  { labelKey: 'nav.clinic', href: '#home' },
+  { labelKey: 'nav.treatments', href: '#services' },
+  { labelKey: 'nav.philosophy', href: '#philosophy' },
+  { labelKey: 'nav.team', href: '#team' },
+  { labelKey: 'nav.cases', href: '#cases' },
+  { labelKey: 'nav.contact', href: '#contact' },
+];
 
-export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
+export const Footer: React.FC = () => {
   const { t } = useTranslation();
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary-950 text-primary-50 pt-20 pb-10" id="contact">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Brand */}
-          <div>
-            <button
-              onClick={() => onNavigate('home')}
-              className="text-3xl font-serif font-bold tracking-widest block mb-6 hover:text-white/90"
-            >
-              ZEO<span className="text-primary-500">.</span>
-            </button>
-            <p className="text-primary-100/80 text-sm leading-relaxed mb-6">
-              {t('footer.description')}
-            </p>
-            <div className="flex gap-4">
-              <a href="https://www.instagram.com/zeodentalclinic/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-900 flex items-center justify-center hover:bg-primary-600 transition-colors">
-                <Instagram size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-900 flex items-center justify-center hover:bg-primary-600 transition-colors">
-                <Facebook size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-900 flex items-center justify-center hover:bg-primary-600 transition-colors">
-                <Twitter size={18} />
-              </a>
+    <footer className="bg-white pt-32 pb-8 overflow-hidden">
+      <div className="container mx-auto px-6 md:px-12">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-32 items-end">
+            <div>
+                 <ul className="space-y-2">
+                    {NAV_ITEMS.map(item => (
+                        <li key={item.labelKey} className="overflow-hidden">
+                            <a
+                                href={item.href}
+                                className="block text-4xl md:text-5xl font-serif text-studio-black hover:italic hover:translate-x-4 transition-all duration-500"
+                                data-cursor="hover"
+                            >
+                                {t(item.labelKey)}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
             </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-serif text-lg font-semibold mb-6">{t('footer.quickLinks')}</h4>
-            <ul className="space-y-3 text-primary-100/80 text-sm">
-              <li><button onClick={() => onNavigate('home', 'services')} className="hover:text-primary-300 transition-colors text-left">{t('services.items.cosmetic.title')}</button></li>
-              <li><button onClick={() => onNavigate('home', 'services')} className="hover:text-primary-300 transition-colors text-left">{t('services.items.implants.title')}</button></li>
-              <li><button onClick={() => onNavigate('home', 'services')} className="hover:text-primary-300 transition-colors text-left">{t('services.items.ortho.title')}</button></li>
-              <li><button onClick={() => onNavigate('home', 'team')} className="hover:text-primary-300 transition-colors text-left">{t('footer.ourDoctors')}</button></li>
-              <li><a href="#" className="hover:text-primary-300 transition-colors">{t('footer.patientPortal')}</a></li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="font-serif text-lg font-semibold mb-6">{t('footer.contactUs')}</h4>
-            <ul className="space-y-4 text-primary-100/80 text-sm">
-              <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-primary-400 flex-shrink-0 mt-0.5" />
-                <span>{t('contact.address')}</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone size={18} className="text-primary-400 flex-shrink-0" />
-                <span>{t('contact.phone')}</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail size={18} className="text-primary-400 flex-shrink-0" />
-                <span>{t('contact.email')}</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Hours */}
-          <div>
-            <h4 className="font-serif text-lg font-semibold mb-6">{t('footer.openingHours')}</h4>
-            <ul className="space-y-3 text-primary-100/80 text-sm">
-              <li className="flex justify-between border-b border-primary-900 pb-2">
-                <span>{t('footer.monFri')}</span>
-                <span className="text-primary-50">{t('footer.hoursMF')}</span>
-              </li>
-              <li className="flex justify-between border-b border-primary-900 pb-2">
-                <span>{t('footer.saturday')}</span>
-                <span className="text-primary-50">{t('footer.hoursSat')}</span>
-              </li>
-              <li className="flex justify-between pb-2">
-                <span>{t('footer.sunday')}</span>
-                <span className="text-primary-300">{t('footer.closed')}</span>
-              </li>
-            </ul>
-          </div>
+            <div className="flex flex-col justify-end items-start md:items-end">
+                <div className="flex gap-8 mb-8">
+                     <a
+                       href="https://www.instagram.com/zeodentalclinic/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="text-[10px] uppercase tracking-ultra text-studio-black hover:text-studio-gold transition-colors"
+                     >
+                       Instagram
+                     </a>
+                     <a href="#" className="text-[10px] uppercase tracking-ultra text-studio-black hover:text-studio-gold transition-colors">LinkedIn</a>
+                </div>
+                <p className="text-right text-studio-gray font-light text-sm max-w-xs">
+                    {t('footer.tagline')}
+                </p>
+            </div>
         </div>
 
-        <div className="border-t border-primary-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-primary-100/80">
-          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
-            <p>&copy; {new Date().getFullYear()} {t('footer.rights')}</p>
-            <span className="hidden md:inline">•</span>
-            <a
-              href="https://zedigital.tech"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-primary-200 transition-colors"
-            >
-              Made by Z.E Digital Tech
-            </a>
-          </div>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-primary-200 transition-colors">{t('footer.privacy')}</a>
-            <a href="#" className="hover:text-primary-200 transition-colors">{t('footer.terms')}</a>
-          </div>
+        {/* Massive Brand Name */}
+        <div className="border-t border-gray-100 pt-8 relative">
+             <h1 className="font-serif text-[18vw] leading-none text-center text-studio-black opacity-[0.03] select-none pointer-events-none translate-y-4">
+                ZEO.STUDIO
+            </h1>
+
+            <div className="absolute bottom-4 w-full flex flex-col md:flex-row justify-between items-center md:items-end text-[10px] uppercase tracking-ultra text-gray-400 gap-2">
+                <div className="flex flex-col md:flex-row items-center gap-2 md:gap-3">
+                  <span>&copy; {currentYear} {t('footer.rights')}</span>
+                  <span className="hidden md:inline">•</span>
+                  <a
+                    href="https://zedigital.tech"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-studio-gold transition-colors"
+                  >
+                    Made by Z.E Digital Tech
+                  </a>
+                </div>
+                <span>{t('footer.location')}</span>
+            </div>
         </div>
       </div>
     </footer>

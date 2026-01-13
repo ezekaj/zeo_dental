@@ -7,13 +7,24 @@
     "team": "Team",
     "testimonials": "Testimonials",
     "contact": "Contact",
-    "booking": "Book Now"
+    "booking": "Book Now",
+    "menu": "Menu",
+    "close": "Close",
+    "location": "Tirana, Albania",
+    "book": "Book",
+    "clinic": "The Clinic",
+    "treatments": "Treatments",
+    "philosophy": "Philosophy",
+    "cases": "Clinical Cases"
   },
   "hero": {
     "welcome": "Welcome to Zeo Dental",
     "redefining": "Redefining",
     "artOfSmiles": "The Art of Smiles",
-    "subtitle": "Experience world-class dental care where advanced technology meets luxury comfort. Your journey to a perfect smile begins here.",
+    "artOf": "The Art of",
+    "dentistry": "DENTISTRY",
+    "subtitle": "Excellence, Precision, Aesthetics",
+    "explore": "Explore",
     "bookConsultation": "Book Consultation",
     "exploreServices": "Explore Services",
     "yearsExp": "Years Exp.",
@@ -36,6 +47,22 @@
     "bookAppointment": "Book Appointment",
     "serviceNotFound": "Service Not Found",
     "returnHome": "Return Home",
+    "excellence": {
+      "title": "Excellence",
+      "description": "Uncompromising standards in every treatment, combining advanced technology with artisanal precision"
+    },
+    "personalization": {
+      "title": "Personalization",
+      "description": "Bespoke treatment plans designed around your unique dental profile and aesthetic vision"
+    },
+    "comfort": {
+      "title": "Comfort",
+      "description": "A refined environment where every detail is curated for your peace of mind and relaxation"
+    },
+    "privacy": {
+      "title": "Privacy",
+      "description": "Discrete, confidential care in an exclusive setting that honors your personal space"
+    },
     "items": {
       "cosmetic": {
         "title": "Cosmetic Dentistry",
@@ -223,6 +250,60 @@
         "bio": "Dr. Rodriguez combines art and science to align smiles perfectly, certified in the most advanced clear aligner systems.",
         "fullBio": "Dr. Elena Rodriguez believes that a straight smile is the foundation of oral health. She earned her Doctorate of Dental Surgery and Master of Science in Orthodontics from the University of Michigan. Dr. Rodriguez is a Diamond Plus Provider of Invisalign and specializes in accelerated orthodontic treatments for both teens and adults. She is passionate about airway-focused orthodontics, helping patients achieve not just beautiful smiles, but better breathing and sleep quality."
       }
+    },
+    "founderLabel": "The Founder",
+    "teamTitle": "The Studio Team",
+    "teamSubtitle": "Expertise & Care"
+  },
+  "philosophy": {
+    "label": "Our Philosophy",
+    "imageAlt": "Zeo Dental Philosophy",
+    "quote": "Artistry and precision in every smile we craft",
+    "text1": "We believe in the transformative power of a confident smile, crafted through artistry, precision, and advanced technology.",
+    "text2": "Every treatment is a personalized journey, where your vision meets our expertise to create lasting, natural results.",
+    "expertise": "Expertise",
+    "expertiseList": {
+      "item1": "Aesthetic Dentistry",
+      "item2": "Surgical Precision",
+      "item3": "Implant Mastery"
+    },
+    "technology": "Technology",
+    "technologyList": {
+      "item1": "3D Digital Scanning",
+      "item2": "CAD/CAM Design",
+      "item3": "Guided Surgery"
+    }
+  },
+  "cases": {
+    "label": "Transformations",
+    "title": "Selected Cases",
+    "viewGallery": "View Entire Gallery",
+    "case1": {
+      "number": "Case 01",
+      "title": "Full Mouth Rehab",
+      "description": "Addressing severe wear and aesthetic concerns. A combination of crown lengthening and 20 handcrafted ceramic veneers.",
+      "detail1Label": "Time",
+      "detail1Value": "3 Wks",
+      "detail2Label": "Shade",
+      "detail2Value": "BL2"
+    },
+    "case2": {
+      "number": "Case 02",
+      "title": "Invisalign® Align",
+      "description": "Discreet alignment using clear aligners. Correcting crowding and deep bite over 14 months to achieve perfect arch coordination.",
+      "detail1Label": "Time",
+      "detail1Value": "14 Mos",
+      "detail2Label": "Type",
+      "detail2Value": "Full"
+    },
+    "case3": {
+      "number": "Case 03",
+      "title": "Composite Bonding",
+      "description": "Minimally invasive edge bonding to restore symmetry and volume. Single session transformation with zero tooth reduction.",
+      "detail1Label": "Time",
+      "detail1Value": "1 Visit",
+      "detail2Label": "Shade",
+      "detail2Value": "B1"
     }
   },
   "reviews": {
@@ -255,8 +336,25 @@
     }
   },
   "booking": {
+    "label": "Contact",
+    "title1": "Begin your",
+    "title2": "journey.",
+    "subtitle": "We are currently accepting new patients for the upcoming season. Schedule your private consultation.",
+    "studioLabel": "Studio",
+    "address": "123 Blvd Haussmann, Paris",
+    "phoneLabel": "Direct Line",
+    "phone": "+33 1 23 45 67 89",
+    "emailLabel": "Inquiries",
+    "email": "hello@zeo.com",
+    "namePlaceholder": "Name",
+    "phonePlaceholder": "Phone",
+    "emailPlaceholder": "Email",
+    "privacyNotice": "By submitting this form, you agree to our privacy policy and terms of service.",
+    "submit": "Request Booking",
+    "submitting": "Sending...",
+    "backToForm": "Back to Form",
+    "error": "There was an error submitting your request. Please try again.",
     "title": "Book Appointment",
-    "subtitle": "Fill out the form to schedule your appointment",
     "conciergeTitle": "Concierge Services",
     "conciergeSubtitle": "Your Comfort is Our Priority.",
     "conciergeDesc": "Schedule your visit with our easy-to-use booking portal. For urgent matters or specific requests, our concierge team is standing by.",
@@ -293,6 +391,8 @@
     "phonePlaceholder": "+355 68 400 4840"
   },
   "footer": {
+    "tagline": "Redefining the standard of care through design, technology, and artistry.",
+    "location": "Tirana • Albania",
     "description": "Elevating dental care to an art form. We combine luxury, technology, and compassion to create smiles that change lives.",
     "quickLinks": "Quick Links",
     "ourDoctors": "Our Doctors",

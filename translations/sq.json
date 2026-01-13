@@ -7,13 +7,24 @@
     "team": "Ekipi",
     "testimonials": "Dëshmitë",
     "contact": "Kontakt",
-    "booking": "Rezervo Tani"
+    "booking": "Rezervo Tani",
+    "menu": "Meny",
+    "close": "Mbyll",
+    "location": "Tiranë, Shqipëri",
+    "book": "Rezervo",
+    "clinic": "Klinika",
+    "treatments": "Trajtimet",
+    "philosophy": "Filozofia",
+    "cases": "Raste Klinike"
   },
   "hero": {
     "welcome": "Mirësevini në Zeo Dental",
     "redefining": "Ridefinojmë",
     "artOfSmiles": "Artin e Buzëqeshjeve",
-    "subtitle": "Përjetoni kujdes dentar të klasit botëror ku teknologjia e avancuar takon komoditetin luksoz. Udhëtimi juaj drejt një buzëqeshjeje perfekte fillon këtu.",
+    "artOf": "Arti i",
+    "dentistry": "STOMATOLOGJISË",
+    "subtitle": "Përsosmëri, Precizitet, Estetikë",
+    "explore": "Eksploro",
     "bookConsultation": "Rezervo Konsultën",
     "exploreServices": "Eksploro Shërbimet",
     "yearsExp": "Vite Përvojë",
@@ -36,6 +47,22 @@
     "bookAppointment": "Rezervo Takim",
     "serviceNotFound": "Shërbimi Nuk u Gjet",
     "returnHome": "Kthehu në Kreu",
+    "excellence": {
+      "title": "Përsosmëri",
+      "description": "Standarde të pakompromis në çdo trajtim, duke kombinuar teknologjinë e avancuar me precizitetin artizanal"
+    },
+    "personalization": {
+      "title": "Personalizim",
+      "description": "Plane trajtimi të përshtatura rreth profilit tuaj unik dentar dhe vizionit estetik"
+    },
+    "comfort": {
+      "title": "Komoditet",
+      "description": "Një mjedis i rafinuar ku çdo detaj është kuruar për paqen tuaj mendore dhe relaksimin"
+    },
+    "privacy": {
+      "title": "Privatësi",
+      "description": "Kujdes diskret dhe konfidencial në një ambient ekskluziv që respekton hapësirën tuaj personale"
+    },
     "items": {
       "cosmetic": {
         "title": "Stomatologji Kozmetike",
@@ -223,6 +250,60 @@
         "bio": "Dr. Rodriguez kombinon artin dhe shkencën për të drejtuar buzëqeshjet në mënyrë perfekte, e certifikuar në sistemet më të avancuara të alignerëve të kthjellët.",
         "fullBio": "Dr. Elena Rodriguez beson se një buzëqeshje e drejtë është themeli i shëndetit oral. Ajo fitoi Doktoraturën e Kirurgjisë Dentare dhe Masterin e Shkencës në Ortodonci nga Universiteti i Michigan. Dr. Rodriguez është Ofruese Diamond Plus e Invisalign dhe specializohet në trajtime ortodontike të përshpejtuara si për adoleshentë ashtu edhe për të rritur. Ajo është e apasionuar pas ortodoncisë së fokusuar në rrugët e ajrit, duke ndihmuar pacientët të arrijnë jo vetëm buzëqeshje të bukura, por edhe frymëmarrje dhe cilësi gjumi më të mirë."
       }
+    },
+    "founderLabel": "Themeluesja",
+    "teamTitle": "Ekipi i Studios",
+    "teamSubtitle": "Ekspertizë & Kujdes"
+  },
+  "philosophy": {
+    "label": "Filozofia Jonë",
+    "imageAlt": "Filozofia e Zeo Dental",
+    "quote": "Artizanat dhe precizitet në çdo buzëqeshje që krijojmë",
+    "text1": "Ne besojmë në fuqinë transformuese të një buzëqeshjeje të sigurt, e krijuar përmes artizanatit, precizitetit dhe teknologjisë së avancuar.",
+    "text2": "Çdo trajtim është një udhëtim i personalizuar, ku vizioni juaj takon ekspertizën tonë për të krijuar rezultate natyrale dhe të qëndrueshme.",
+    "expertise": "Ekspertiza",
+    "expertiseList": {
+      "item1": "Stomatologji Estetike",
+      "item2": "Precizitet Kirurgjik",
+      "item3": "Mjeshtëri Implantesh"
+    },
+    "technology": "Teknologji",
+    "technologyList": {
+      "item1": "Skanim 3D Dixhital",
+      "item2": "Dizajn CAD/CAM",
+      "item3": "Kirurgji e Udhëhequr"
+    }
+  },
+  "cases": {
+    "label": "Transformime",
+    "title": "Raste të Zgjedhura",
+    "viewGallery": "Shiko Galerinë e Plotë",
+    "case1": {
+      "number": "Rasti 01",
+      "title": "Rehabilitim i Plotë",
+      "description": "Adresimi i konsumit të rëndë dhe shqetësimeve estetike. Një kombinim i zgjatjes së kurorës dhe 20 veneers qeramike të punuara me dorë.",
+      "detail1Label": "Kohë",
+      "detail1Value": "3 Javë",
+      "detail2Label": "Ngjyrë",
+      "detail2Value": "BL2"
+    },
+    "case2": {
+      "number": "Rasti 02",
+      "title": "Drejtim Invisalign®",
+      "description": "Drejtim diskret duke përdorur alignerë të kthjellët. Korrigjimi i mbingarkesës dhe kafshimit të thellë për 14 muaj për të arritur koordinim perfekt të harkut.",
+      "detail1Label": "Kohë",
+      "detail1Value": "14 Muaj",
+      "detail2Label": "Tipi",
+      "detail2Value": "I Plotë"
+    },
+    "case3": {
+      "number": "Rasti 03",
+      "title": "Lidhje me Kompozit",
+      "description": "Lidhje minimalisht invazive e skajeve për të restauruar simetrinë dhe vëllimin. Transformim në një seancë me zero reduktim të dhëmbit.",
+      "detail1Label": "Kohë",
+      "detail1Value": "1 Vizitë",
+      "detail2Label": "Ngjyrë",
+      "detail2Value": "B1"
     }
   },
   "reviews": {
@@ -255,8 +336,25 @@
     }
   },
   "booking": {
+    "label": "Kontakt",
+    "title1": "Fillo",
+    "title2": "udhëtimin tënd.",
+    "subtitle": "Aktualisht po pranojmë pacientë të rinj për sezonin e ardhshëm. Cakto konsultën tënde private.",
+    "studioLabel": "Studio",
+    "address": "Rruga Muhamet Gjollesha, Tiranë",
+    "phoneLabel": "Linja Direkte",
+    "phone": "+355 68 400 4840",
+    "emailLabel": "Pyetjet",
+    "email": "zeodentalclinic@gmail.com",
+    "namePlaceholder": "Emri",
+    "phonePlaceholder": "Telefoni",
+    "emailPlaceholder": "Email",
+    "privacyNotice": "Duke dërguar këtë formular, ju pranoni politikën tonë të privatësisë dhe kushtet e shërbimit.",
+    "submit": "Kërkesë për Rezervim",
+    "submitting": "Duke dërguar...",
+    "backToForm": "Kthehu tek Formulari",
+    "error": "Kishte një gabim në dërgimin e kërkesës suaj. Ju lutemi provoni përsëri.",
     "title": "Rezervo Takimin",
-    "subtitle": "Plotëso formularin për të caktuar takimin tënd",
     "conciergeTitle": "Shërbime Concierge",
     "conciergeSubtitle": "Komoditeti Juaj është Prioriteti Ynë.",
     "conciergeDesc": "Caktoni vizitën tuaj me portalin tonë të lehtë rezervimi. Për çështje urgjente ose kërkesa specifike, ekipi ynë concierge është në gatishmëri.",
@@ -293,6 +391,8 @@
     "phonePlaceholder": "+355 68 400 4840"
   },
   "footer": {
+    "tagline": "Duke ridefinuar standardin e kujdesit përmes dizajnit, teknologjisë dhe artizanatit.",
+    "location": "Tiranë • Shqipëri",
     "description": "Duke ngritur kujdesin dentar në art. Kombinojmë luksin, teknologjinë dhe dhembshurinë për të krijuar buzëqeshje që ndryshojnë jetë.",
     "quickLinks": "Lidhje të Shpejta",
     "ourDoctors": "Doktorët Tanë",

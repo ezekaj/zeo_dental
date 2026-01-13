@@ -80,55 +80,127 @@
     }
     </script>
 
+    <!-- Google Fonts: Playfair Display (Italic & Regular) & Montserrat (Light & Regular) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
-            colors: {
-              primary: {
-                50: '#f4e8d8',
-                100: '#e9d2b4',
-                200: '#d9c0a0',
-                300: '#cdae8b',
-                400: '#c19a6b',
-                500: '#b3a199',
-                600: '#a5897f',
-                700: '#997d5b',
-                800: '#7d6345',
-                900: '#5d4732',
-                950: '#3f2f21',
-              }
-            },
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              serif: ['Playfair Display', 'serif'],
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
             },
-            animation: {
-              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-              'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
-              'fade-in-scale': 'fadeInScale 0.8s ease-out forwards',
-              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            colors: {
+              'studio-black': '#050505',
+              'studio-white': '#ffffff',
+              'studio-gold': '#C5A47E',
+              'studio-gray': '#999999',
+              'studio-light': '#F9F9F9',
             },
-            keyframes: {
-              fadeInUp: {
-                '0%': { opacity: '0', transform: 'translateY(20px)' },
-                '100%': { opacity: '1', transform: 'translateY(0)' },
-              },
-              slideInLeft: {
-                '0%': { opacity: '0', transform: 'translateX(-50px)' },
-                '100%': { opacity: '1', transform: 'translateX(0)' },
-              },
-              fadeInScale: {
-                '0%': { opacity: '0', transform: 'scale(0.95)' },
-                '100%': { opacity: '1', transform: 'scale(1)' },
-              }
+            letterSpacing: {
+              'tight': '-0.03em',
+              'normal': '0',
+              'wide': '0.05em',
+              'widest': '0.1em',
+              'ultra': '0.3em',
+            },
+            fontSize: {
+              '2xs': '0.6rem',
+              'hero': 'clamp(4rem, 15vw, 12rem)',
+            },
+            height: {
+              'screen-90': '90vh',
             }
           }
         }
       }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+        cursor: none; /* Hide default cursor for custom implementation */
+      }
+
+      body {
+        background-color: #FFFFFF;
+        color: #050505;
+        overflow-x: hidden;
+      }
+
+      /* Custom Cursor */
+      .cursor-dot,
+      .cursor-outline {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 9999;
+        pointer-events: none;
+      }
+
+      .cursor-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #C5A47E;
+      }
+
+      .cursor-outline {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(197, 164, 126, 0.5);
+        transition: width 0.2s, height 0.2s, background-color 0.2s;
+      }
+
+      body.hovering .cursor-outline {
+        width: 60px;
+        height: 60px;
+        background-color: rgba(197, 164, 126, 0.1);
+        border-color: #C5A47E;
+      }
+
+      /* Mobile override */
+      @media (pointer: coarse) {
+        html { cursor: auto; }
+        .cursor-dot, .cursor-outline { display: none; }
+      }
+
+      /* Smooth Fade Up */
+      .fade-up {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 1.2s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+        will-change: opacity, transform;
+      }
+      .fade-up.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Line Animation */
+      .line-grow {
+        width: 0;
+        transition: width 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      .line-grow.is-visible {
+        width: 100%;
+      }
+
+      /* Utilities */
+      .text-balance {
+        text-wrap: balance;
+      }
+
+      ::selection {
+        background: #C5A47E;
+        color: white;
+      }
+    </style>
   <script type="importmap">
 {
   "imports": {
@@ -143,7 +215,7 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-[#f7efe4] text-[#2f2418] antialiased selection:bg-primary-100 selection:text-primary-900">
+  <body class="bg-studio-white text-studio-black antialiased">
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>

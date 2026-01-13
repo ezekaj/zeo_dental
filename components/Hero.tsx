@@ -1,106 +1,83 @@
-import React, { useEffect, useState } from 'react';
-import { ChevronRight } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react';
+import { Reveal } from './ui/Reveal';
 import { useTranslation } from '../hooks/useTranslation';
 
-interface HeroProps {
-  onNavigate: (view: 'home' | 'booking', sectionId?: string) => void;
-}
-
-export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
-  const [scrollY, setScrollY] = useState(0);
+export const Hero: React.FC = () => {
   const { t } = useTranslation();
+  const [offset, setOffset] = useState(0);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY);
+      setOffset(window.scrollY);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <div className="relative h-screen flex items-center overflow-hidden">
-      {/* Background Image with Parallax */}
-      <div 
-        className="absolute inset-0 z-0 will-change-transform"
-        style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+    <section id="home" className="relative w-full h-screen overflow-hidden bg-studio-black">
+      {/* Parallax Video Background */}
+      <div
+        className="absolute inset-0 z-0 w-full h-[120%] -top-[10%]"
+        style={{ transform: `translateY(${offset * 0.3}px)` }}
       >
-        <img 
-          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1920" 
-          alt="Modern Dental Clinic Interior" 
-          className="w-full h-[120%] object-cover object-center"
-          loading="eager"
-          fetchpriority="high"
-          decoding="async"
-          width="1920"
-          height="1280"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-950/85 via-primary-700/60 to-transparent"></div>
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover opacity-50 grayscale contrast-125"
+          poster="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2574&auto=format&fit=crop"
+        >
+          <source src="https://cdn.pixabay.com/video/2021/07/13/81806-574739932_large.mp4" type="video/mp4" />
+        </video>
+        {/* Grain Overlay */}
+        <div className="absolute inset-0 bg-noise opacity-10 mix-blend-overlay"></div>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20">
-        <div className="max-w-2xl">
-          <h2 
-              className="text-primary-400 font-medium tracking-widest text-sm uppercase mb-4 opacity-0 animate-fade-in-up"
-            style={{ animationDelay: '0.1s' }}
-          >
-            {t('hero.welcome')}
-          </h2>
-          <h1 className="text-5xl md:text-7xl font-serif text-white font-bold leading-tight mb-6 drop-shadow-lg">
-            <span 
-              className="block opacity-0 animate-slide-in-left" 
-              style={{ animationDelay: '0.3s' }}
-            >
-              {t('hero.redefining')}
-            </span>
-            <span 
-              className="block italic font-light text-primary-200 opacity-0 animate-fade-in-scale"
-              style={{ animationDelay: '0.5s' }}
-            >
-              {t('hero.artOfSmiles')}
-            </span>
-          </h1>
-          <p 
-            className="text-lg md:text-xl text-slate-300 mb-8 font-light leading-relaxed max-w-lg opacity-0 animate-fade-in-up"
-            style={{ animationDelay: '0.7s' }}
-          >
-            {t('hero.subtitle')}
-          </p>
-          
-          <div 
-            className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in-up"
-            style={{ animationDelay: '0.9s' }}
-          >
-            <button 
-              onClick={() => onNavigate('booking')}
-              className="group bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-[0_0_20px_rgba(153,125,91,0.25)] hover:shadow-[0_0_30px_rgba(193,154,107,0.35)] flex items-center justify-center gap-2"
-            >
-              {t('hero.bookConsultation')}
-              <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button 
-              onClick={() => onNavigate('home', 'services')}
-              className="px-8 py-4 rounded-full font-semibold text-white border border-white/30 hover:bg-white/10 transition-all backdrop-blur-sm flex items-center justify-center"
-            >
-              {t('hero.exploreServices')}
-            </button>
-          </div>
+      {/* Hero Content */}
+      <div className="relative z-10 w-full h-full flex flex-col justify-center items-center text-center px-4">
+        <Reveal>
+            <h1 className="flex flex-col items-center justify-center text-white leading-[0.85]">
+                <span className="font-serif italic font-light text-[12vw] md:text-[8vw] tracking-tight opacity-90">{t('hero.artOf')}</span>
+                <span className="font-serif font-normal text-[15vw] md:text-[12vw] tracking-tighter mt-2">{t('hero.dentistry')}</span>
+            </h1>
+        </Reveal>
+
+        <Reveal delay={300}>
+            <div className="mt-12 flex items-center gap-6">
+                <span className="h-[1px] w-12 bg-white/50"></span>
+                <p className="text-white text-[10px] md:text-xs uppercase tracking-ultra font-light">
+                    {t('hero.subtitle')}
+                </p>
+                <span className="h-[1px] w-12 bg-white/50"></span>
+            </div>
+        </Reveal>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 mix-blend-difference text-white">
+        <div className="flex flex-col items-center gap-2">
+            <span className="text-[9px] uppercase tracking-ultra opacity-70">{t('hero.explore')}</span>
+            <div className="w-[1px] h-12 bg-white/30 overflow-hidden relative">
+                <div className="absolute top-0 left-0 w-full h-full bg-white animate-pulldown"></div>
+            </div>
         </div>
       </div>
 
-      {/* Decorative Elements */}
-      <div className="absolute bottom-0 right-0 p-12 hidden md:block z-10 opacity-0 animate-fade-in-up" style={{ animationDelay: '1.2s' }}>
-        <div className="flex gap-8 text-white/60">
-           <div>
-              <p className="text-2xl font-serif text-white">15+</p>
-              <p className="text-xs uppercase tracking-wider">{t('hero.yearsExp')}</p>
-           </div>
-           <div>
-              <p className="text-2xl font-serif text-white">2k+</p>
-              <p className="text-xs uppercase tracking-wider">{t('hero.smiles')}</p>
-           </div>
-        </div>
-      </div>
-    </div>
+      <style>{`
+        @keyframes pulldown {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+        .animate-pulldown {
+            animation: pulldown 2s cubic-bezier(0.8, 0, 0.2, 1) infinite;
+        }
+      `}</style>
+    </section>
   );
 };
