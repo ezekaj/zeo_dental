@@ -341,11 +341,11 @@
     "title2": "journey.",
     "subtitle": "We are currently accepting new patients for the upcoming season. Schedule your private consultation.",
     "studioLabel": "Studio",
-    "address": "123 Blvd Haussmann, Paris",
+    "address": "Rruga Muhamet Gjollesha, Tiranë",
     "phoneLabel": "Direct Line",
-    "phone": "+33 1 23 45 67 89",
+    "phone": "+355 68 400 4840",
     "emailLabel": "Inquiries",
-    "email": "hello@zeo.com",
+    "email": "zeodentalclinic@gmail.com",
     "namePlaceholder": "Name",
     "phonePlaceholder": "Phone",
     "emailPlaceholder": "Email",
@@ -421,8 +421,8 @@
   "contact": {
     "phone": "+355 68 400 4840",
     "email": "zeodentalclinic@gmail.com",
-    "address": "123 Premium Blvd, Beverly Hills, CA 90210",
-    "addressShort": "123 Premium Blvd, Beverly Hills"
+    "address": "Rruga Muhamet Gjollesha, Tiranë, Albania",
+    "addressShort": "Tiranë, Albania"
   },
   "error": {
     "title": "Something went wrong",
