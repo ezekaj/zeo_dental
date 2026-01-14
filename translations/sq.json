@@ -363,10 +363,10 @@
     "backToHome": "Kthehu në Kreu",
     "personalDetails": "Detajet Personale",
     "appointmentDetails": "Detajet e Takimit",
-    "name": "Emri i Plotë",
-    "email": "Adresa Email",
-    "phone": "Numri i Telefonit",
-    "service": "Interesi për Shërbimin",
+    "nameField": "Emri i Plotë",
+    "emailField": "Adresa Email",
+    "phoneField": "Numri i Telefonit",
+    "serviceField": "Interesi për Shërbimin",
     "selectService": "Zgjidh llojin e trajtimit...",
     "otherConsultation": "Tjetër / Konsultë",
     "date": "Data e Preferuar",
@@ -421,8 +421,8 @@
   "contact": {
     "phone": "+355 68 400 4840",
     "email": "zeodentalclinic@gmail.com",
-    "address": "123 Premium Blvd, Beverly Hills, CA 90210",
-    "addressShort": "123 Premium Blvd, Beverly Hills"
+    "address": "Rruga Muhamet Gjollesha, Tiranë, Albania",
+    "addressShort": "Tiranë, Albania"
   },
   "error": {
     "title": "Diçka shkoi keq",
