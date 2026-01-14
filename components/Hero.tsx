@@ -43,8 +43,8 @@ export const Hero: React.FC = () => {
       <div className="relative z-10 w-full h-full flex flex-col justify-center items-center text-center px-4">
         <Reveal>
             <h1 className="flex flex-col items-center justify-center text-white leading-[0.85]">
-                <span className="font-serif italic font-light text-[12vw] md:text-[8vw] tracking-tight opacity-90">{t('hero.artOf')}</span>
-                <span className="font-serif font-normal text-[15vw] md:text-[12vw] tracking-tighter mt-2">{t('hero.dentistry')}</span>
+                <span className="font-serif italic font-light text-[10vw] md:text-[8vw] tracking-tight opacity-90">{t('hero.artOf')}</span>
+                <span className="font-serif font-normal text-[13vw] md:text-[12vw] tracking-tighter mt-2">{t('hero.dentistry')}</span>
             </h1>
         </Reveal>
 

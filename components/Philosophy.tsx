@@ -47,10 +47,10 @@ export const Philosophy: React.FC = () => {
 
                         <div className="pl-8 md:pl-12 pt-12">
                             <Reveal delay={200}>
-                                <div className="grid grid-cols-2 gap-12 border-t border-gray-100 pt-12">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-gray-100 pt-12">
                                     <div>
                                         <h4 className="font-sans text-[10px] uppercase tracking-ultra text-studio-gray mb-3">{t('philosophy.expertise')}</h4>
-                                        <ul className="space-y-2 font-serif text-xl">
+                                        <ul className="space-y-2 font-serif text-lg md:text-xl">
                                             <li>{t('philosophy.expertiseList.item1')}</li>
                                             <li>{t('philosophy.expertiseList.item2')}</li>
                                             <li>{t('philosophy.expertiseList.item3')}</li>
@@ -58,7 +58,7 @@ export const Philosophy: React.FC = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-sans text-[10px] uppercase tracking-ultra text-studio-gray mb-3">{t('philosophy.technology')}</h4>
-                                        <ul className="space-y-2 font-serif text-xl">
+                                        <ul className="space-y-2 font-serif text-lg md:text-xl">
                                             <li>{t('philosophy.technologyList.item1')}</li>
                                             <li>{t('philosophy.technologyList.item2')}</li>
                                             <li>{t('philosophy.technologyList.item3')}</li>

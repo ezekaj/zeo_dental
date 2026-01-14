@@ -98,26 +98,26 @@ export const Booking: React.FC = () => {
             <Reveal>
                 <div className="flex flex-col lg:flex-row justify-between mb-24 gap-12">
                     <div className="max-w-2xl">
-                        <span className="text-studio-gold text-[10px] uppercase tracking-ultra mb-8 block font-semibold">{t('booking.label')}</span>
-                        <h2 className="font-serif text-6xl md:text-8xl mb-8 leading-[0.9]">
+                        <span className="text-studio-gold text-[10px] uppercase tracking-ultra mb-6 md:mb-8 block font-semibold">{t('booking.label')}</span>
+                        <h2 className="font-serif text-5xl md:text-8xl mb-6 md:mb-8 leading-[0.9]">
                             {t('booking.title1')} <br/><span className="italic font-light text-white/50">{t('booking.title2')}</span>
                         </h2>
-                        <p className="text-white/60 font-light text-lg leading-relaxed max-w-md">
+                        <p className="text-white/60 font-light text-base md:text-lg leading-relaxed max-w-md">
                             {t('booking.subtitle')}
                         </p>
                     </div>
-                    <div className="mt-auto text-left lg:text-right space-y-8">
+                    <div className="mt-auto text-left lg:text-right space-y-6 md:space-y-8">
                          <div>
                              <p className="text-[10px] uppercase tracking-ultra text-studio-gold mb-2">{t('booking.studioLabel')}</p>
-                             <p className="font-serif text-2xl text-white">{t('booking.address')}</p>
+                             <p className="font-serif text-xl md:text-2xl text-white">{t('booking.address')}</p>
                         </div>
                         <div>
                              <p className="text-[10px] uppercase tracking-ultra text-studio-gold mb-2">{t('booking.phoneLabel')}</p>
-                             <p className="font-serif text-2xl text-white">{t('booking.phone')}</p>
+                             <p className="font-serif text-xl md:text-2xl text-white">{t('booking.phone')}</p>
                         </div>
                         <div>
                              <p className="text-[10px] uppercase tracking-ultra text-studio-gold mb-2">{t('booking.emailLabel')}</p>
-                             <a href={`mailto:${t('booking.email')}`} className="font-serif text-2xl text-white hover:italic transition-all">{t('booking.email')}</a>
+                             <a href={`mailto:${t('booking.email')}`} className="font-serif text-xl md:text-2xl text-white hover:italic transition-all">{t('booking.email')}</a>
                         </div>
                     </div>
                 </div>

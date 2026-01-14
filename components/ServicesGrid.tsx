@@ -18,13 +18,13 @@ export const ServicesGrid: React.FC = () => {
         {SERVICES.map((service, index) => (
           <div
             key={service.key}
-            className="group relative border-r border-b border-gray-100 lg:last:border-r-0 md:nth-child-2:border-r-0 lg:nth-child-2:border-r p-10 lg:p-12 xl:p-16 h-[500px] flex flex-col justify-between transition-all duration-700 hover:bg-[#FAFAFA]"
+            className="group relative border-r border-b border-gray-100 lg:last:border-r-0 md:nth-child-2:border-r-0 lg:nth-child-2:border-r p-8 md:p-10 lg:p-12 xl:p-16 h-[400px] md:h-[450px] lg:h-[500px] flex flex-col justify-between transition-all duration-700 hover:bg-[#FAFAFA]"
             data-cursor="hover"
           >
             <Reveal delay={index * 100}>
                 {/* Header */}
                 <div className="flex justify-between items-start w-full">
-                    <span className="font-serif text-xl italic text-gray-300 group-hover:text-studio-gold transition-colors duration-500">
+                    <span className="font-serif text-lg md:text-xl italic text-gray-300 group-hover:text-studio-gold transition-colors duration-500">
                         {String(index + 1).padStart(2, '0')}
                     </span>
                     {/* Minimal decorative line */}
@@ -33,7 +33,7 @@ export const ServicesGrid: React.FC = () => {
 
                 {/* Content */}
                 <div className="mt-auto relative z-10">
-                    <h3 className="font-serif text-3xl text-studio-black mb-6 group-hover:translate-x-2 transition-transform duration-700 ease-[0.19,1,0.22,1]">
+                    <h3 className="font-serif text-2xl md:text-3xl text-studio-black mb-4 md:mb-6 group-hover:translate-x-2 transition-transform duration-700 ease-[0.19,1,0.22,1]">
                         {t(`services.${service.key}.title`)}
                     </h3>
 

@@ -38,21 +38,21 @@ export const Team: React.FC = () => {
                                 <span className="text-studio-gold text-[10px] uppercase tracking-ultra font-semibold">{t('team.founderLabel')}</span>
                             </div>
 
-                            <h2 className="font-serif text-5xl md:text-7xl text-studio-black mb-8 leading-[0.9]">
+                            <h2 className="font-serif text-4xl md:text-7xl text-studio-black mb-6 md:mb-8 leading-[0.9]">
                                 {founder.name}
                             </h2>
 
                             <p
-                                className="font-serif text-xl md:text-2xl text-studio-black mb-10 leading-relaxed opacity-80 max-w-2xl [&_strong]:font-bold [&_strong]:text-studio-black"
+                                className="font-serif text-lg md:text-2xl text-studio-black mb-8 md:mb-10 leading-relaxed opacity-80 max-w-2xl [&_strong]:font-bold [&_strong]:text-studio-black"
                                 dangerouslySetInnerHTML={{
                                     __html: t(`team.doctors.${founder.id}.bio`)
                                 }}
                             />
 
-                            <div className="flex flex-col md:flex-row gap-8 md:gap-16">
+                            <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-16">
                                 <div>
                                     <span className="text-[10px] text-studio-gray uppercase tracking-ultra block mb-2">{t('team.education')}</span>
-                                    <div className="font-serif text-lg space-y-1">
+                                    <div className="font-serif text-base md:text-lg space-y-1">
                                         <p>{t(`team.doctors.${founder.id}.education1`)}</p>
                                         <p>{t(`team.doctors.${founder.id}.education2`)}</p>
                                         <p>{t(`team.doctors.${founder.id}.education3`)}</p>
@@ -60,7 +60,7 @@ export const Team: React.FC = () => {
                                 </div>
                                 <div>
                                     <span className="text-[10px] text-studio-gray uppercase tracking-ultra block mb-2">{t('team.memberships')}</span>
-                                    <div className="font-serif text-lg space-y-1">
+                                    <div className="font-serif text-base md:text-lg space-y-1">
                                         <p>{t(`team.doctors.${founder.id}.membership1`)}</p>
                                         <p>{t(`team.doctors.${founder.id}.membership2`)}</p>
                                         <p>{t(`team.doctors.${founder.id}.membership3`)}</p>
@@ -80,9 +80,9 @@ export const Team: React.FC = () => {
                 {/* Team Grid */}
                 <div>
                     <Reveal>
-                         <div className="flex items-center justify-between mb-16">
-                            <h3 className="font-serif text-3xl text-studio-black">{t('team.teamTitle')}</h3>
-                            <span className="hidden md:block text-[10px] uppercase tracking-ultra text-studio-gray">{t('team.teamSubtitle')}</span>
+                         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 md:mb-16 gap-4">
+                            <h3 className="font-serif text-2xl md:text-3xl text-studio-black">{t('team.teamTitle')}</h3>
+                            <span className="text-[10px] uppercase tracking-ultra text-studio-gray">{t('team.teamSubtitle')}</span>
                         </div>
                     </Reveal>
 
