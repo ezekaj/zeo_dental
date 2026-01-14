@@ -341,7 +341,7 @@
     "title2": "udhëtimin tënd.",
     "subtitle": "Aktualisht po pranojmë pacientë të rinj për sezonin e ardhshëm. Cakto konsultën tënde private.",
     "studioLabel": "Studio",
-    "address": "Rruga Muhamet Gjollesha, Tiranë",
+    "address": "Rruga Hamdi Sina, Tiranë",
     "phoneLabel": "Linja Direkte",
     "phone": "+355 68 400 4840",
     "emailLabel": "Pyetjet",
@@ -421,7 +421,7 @@
   "contact": {
     "phone": "+355 68 400 4840",
     "email": "zeodentalclinic@gmail.com",
-    "address": "Rruga Muhamet Gjollesha, Tiranë, Albania",
+    "address": "Rruga Hamdi Sina, Tiranë, Albania",
     "addressShort": "Tiranë, Albania"
   },
   "error": {
