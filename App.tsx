@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Treatments } from './components/Treatments';
-import { ServicesGrid } from './components/ServicesGrid';
 import { Philosophy } from './components/Philosophy';
 import { Team } from './components/Team';
 import { ClinicalCases } from './components/ClinicalCases';
@@ -81,7 +80,6 @@ const App: React.FC = () => {
           <main id="main-content" tabIndex={-1}>
             <Hero />
             <Treatments />
-            <ServicesGrid />
             <Philosophy />
             <Team />
             <ClinicalCases />
