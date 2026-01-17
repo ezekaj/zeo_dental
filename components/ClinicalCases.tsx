@@ -107,54 +107,25 @@ export const ClinicalCases: React.FC = () => {
         </div>
 
         {/*
-            Uniform Grid Layout
-            Switching from Featured + Grid to a clean 3-column row
-            to match the "Studio" aesthetic better.
+            Single Case Layout - Centered
+            Will expand to grid when more real cases are added
         */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-
-            <Reveal delay={0}>
-                <CaseCard
-                    number={t('cases.case1.number')}
-                    title={t('cases.case1.title')}
-                    description={t('cases.case1.description')}
-                    beforeImage="https://images.unsplash.com/photo-1616391182219-e080b4d1043a?q=80&w=2883&auto=format&fit=crop"
-                    afterImage="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=2550&auto=format&fit=crop"
-                    details={[
-                        { label: t('cases.case1.detail1Label'), value: t('cases.case1.detail1Value') },
-                        { label: t('cases.case1.detail2Label'), value: t('cases.case1.detail2Value') }
-                    ]}
-                />
-            </Reveal>
-
-            <Reveal delay={100}>
-                <CaseCard
-                    number={t('cases.case2.number')}
-                    title={t('cases.case2.title')}
-                    description={t('cases.case2.description')}
-                    beforeImage="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?q=80&w=2669&auto=format&fit=crop"
-                    afterImage="https://images.unsplash.com/photo-1606811971618-4486d14f3f72?q=80&w=2574&auto=format&fit=crop"
-                    details={[
-                        { label: t('cases.case2.detail1Label'), value: t('cases.case2.detail1Value') },
-                        { label: t('cases.case2.detail2Label'), value: t('cases.case2.detail2Value') }
-                    ]}
-                />
-            </Reveal>
-
-            <Reveal delay={200}>
-                <CaseCard
-                    number={t('cases.case3.number')}
-                    title={t('cases.case3.title')}
-                    description={t('cases.case3.description')}
-                    beforeImage="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2000&auto=format&fit=crop"
-                    afterImage="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2000&auto=format&fit=crop"
-                    details={[
-                        { label: t('cases.case3.detail1Label'), value: t('cases.case3.detail1Value') },
-                        { label: t('cases.case3.detail2Label'), value: t('cases.case3.detail2Value') }
-                    ]}
-                />
-            </Reveal>
-
+        <div className="flex justify-center">
+            <div className="w-full max-w-md">
+                <Reveal delay={0}>
+                    <CaseCard
+                        number={t('cases.case1.number')}
+                        title={t('cases.case1.title')}
+                        description={t('cases.case1.description')}
+                        beforeImage="/images/cases/case1-before.jpg"
+                        afterImage="/images/cases/case1-after.jpg"
+                        details={[
+                            { label: t('cases.case1.detail1Label'), value: t('cases.case1.detail1Value') },
+                            { label: t('cases.case1.detail2Label'), value: t('cases.case1.detail2Value') }
+                        ]}
+                    />
+                </Reveal>
+            </div>
         </div>
 
         {/* Mobile-only CTA since the top one is hidden on mobile */}
