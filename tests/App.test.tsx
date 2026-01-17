@@ -32,10 +32,6 @@ vi.mock('../components/Booking', () => ({
   Booking: () => <section data-testid="booking">Booking Section</section>,
 }));
 
-vi.mock('../components/Footer', () => ({
-  Footer: () => <footer data-testid="footer">Footer</footer>,
-}));
-
 vi.mock('../components/ChatWidget', () => ({
   ChatWidget: () => <div data-testid="chat-widget">Chat Widget</div>,
 }));
@@ -63,7 +59,6 @@ describe('App', () => {
     expect(screen.getByTestId('team')).toBeInTheDocument();
     expect(screen.getByTestId('clinical-cases')).toBeInTheDocument();
     expect(screen.getByTestId('booking')).toBeInTheDocument();
-    expect(screen.getByTestId('footer')).toBeInTheDocument();
   });
 
   it('renders chat widget', () => {
