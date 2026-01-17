@@ -31,8 +31,22 @@ async function start() {
 
     // Security headers
     await fastify.register(helmet, {
-      contentSecurityPolicy: false, // Relaxed due to inline styles/images from CDN; tighten later if possible
+      contentSecurityPolicy: {
+        directives: {
+          defaultSrc: ["'self'"],
+          scriptSrc: ["'self'", "'unsafe-inline'"],
+          styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+          fontSrc: ["'self'", "https://fonts.gstatic.com"],
+          imgSrc: ["'self'", "data:", "https://images.unsplash.com", "https://*.pexels.com"],
+          mediaSrc: ["'self'", "https://videos.pexels.com", "https://cdn.pixabay.com"],
+          connectSrc: ["'self'", "https://generativelanguage.googleapis.com"],
+          frameSrc: ["'self'", "https://www.google.com"],
+          objectSrc: ["'none'"],
+          upgradeInsecureRequests: [],
+        },
+      },
       crossOriginResourcePolicy: { policy: 'cross-origin' },
+      referrerPolicy: { policy: 'strict-origin-when-cross-origin' },
     });
 
     // Basic rate limiting to protect public endpoints
