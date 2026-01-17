@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+html {
+  scroll-behavior: smooth;
+  cursor: none; /* Hide default cursor for custom implementation */
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #050505;
+  overflow-x: hidden;
+}
+
+/* Custom Cursor */
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #C5A47E;
+}
+
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(197, 164, 126, 0.5);
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+body.hovering .cursor-outline {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(197, 164, 126, 0.1);
+  border-color: #C5A47E;
+}
+
+/* Mobile override */
+@media (pointer: coarse) {
+  html { cursor: auto; }
+  .cursor-dot, .cursor-outline { display: none; }
+}
+
+/* Smooth Fade Up */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+.fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Line Animation */
+.line-grow {
+  width: 0;
+  transition: width 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.line-grow.is-visible {
+  width: 100%;
+}
+
+/* Utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+::selection {
+  background: #C5A47E;
+  color: white;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #C5A47E;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Focus visible styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #C5A47E;
+  outline-offset: 2px;
+}
