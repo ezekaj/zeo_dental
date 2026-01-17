@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Reveal } from './ui/Reveal';
 import { useTranslation } from '../hooks/useTranslation';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface TreatmentCardProps {
   number: string;
@@ -23,7 +23,7 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({
 
   return (
     <div
-      className="group relative overflow-hidden bg-white cursor-pointer"
+      className="group relative overflow-hidden bg-white cursor-pointer flex-shrink-0 w-[85vw] md:w-[45vw] lg:w-[30vw] max-w-[400px]"
       data-cursor="hover"
     >
       {/* Image Container */}
@@ -32,7 +32,7 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({
           <img
             src={image}
             alt={title}
-            className={`w-full h-full object-cover transition-all duration-700 ease-[0.22,1,0.36,1] group-hover:scale-105 ${
+            className={`w-full h-full object-cover transition-all duration-700 ease-[0.22,1,0.36,1] group-hover:scale-105 grayscale group-hover:grayscale-0 ${
               imageLoaded ? 'opacity-100' : 'opacity-0'
             }`}
             onLoad={() => setImageLoaded(true)}
@@ -80,6 +80,9 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({
 
 export const Treatments: React.FC = () => {
   const { t } = useTranslation();
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
 
   const treatments = [
     {
@@ -108,6 +111,33 @@ export const Treatments: React.FC = () => {
     },
   ];
 
+  const checkScrollButtons = () => {
+    if (sliderRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = sliderRef.current;
+      setCanScrollLeft(scrollLeft > 0);
+      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10);
+    }
+  };
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+    if (slider) {
+      slider.addEventListener('scroll', checkScrollButtons);
+      checkScrollButtons();
+      return () => slider.removeEventListener('scroll', checkScrollButtons);
+    }
+  }, []);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (sliderRef.current) {
+      const scrollAmount = sliderRef.current.clientWidth * 0.8;
+      sliderRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <section id="treatments" className="py-24 lg:py-32 bg-[#FAFAFA]">
       <div className="container mx-auto px-6 md:px-12">
@@ -129,21 +159,57 @@ export const Treatments: React.FC = () => {
           </Reveal>
 
           <Reveal delay={200}>
-            <a
-              href="#booking"
-              className="group hidden lg:flex items-center gap-4 text-[10px] uppercase tracking-ultra hover:text-studio-gold transition-colors"
-              data-cursor="hover"
-            >
-              {t('treatments.bookConsultation')}
-              <ArrowRight className="w-4 h-4 transform group-hover:translate-x-2 transition-transform" />
-            </a>
+            <div className="hidden lg:flex items-center gap-6">
+              {/* Navigation Arrows */}
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={() => scroll('left')}
+                  disabled={!canScrollLeft}
+                  className={`w-12 h-12 rounded-full border flex items-center justify-center transition-all duration-300 ${
+                    canScrollLeft
+                      ? 'border-studio-black text-studio-black hover:bg-studio-black hover:text-white'
+                      : 'border-gray-200 text-gray-300 cursor-not-allowed'
+                  }`}
+                  aria-label="Previous treatments"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                <button
+                  onClick={() => scroll('right')}
+                  disabled={!canScrollRight}
+                  className={`w-12 h-12 rounded-full border flex items-center justify-center transition-all duration-300 ${
+                    canScrollRight
+                      ? 'border-studio-black text-studio-black hover:bg-studio-black hover:text-white'
+                      : 'border-gray-200 text-gray-300 cursor-not-allowed'
+                  }`}
+                  aria-label="Next treatments"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+              </div>
+
+              <a
+                href="#booking"
+                className="group flex items-center gap-4 text-[10px] uppercase tracking-ultra hover:text-studio-gold transition-colors"
+                data-cursor="hover"
+              >
+                {t('treatments.bookConsultation')}
+                <ArrowRight className="w-4 h-4 transform group-hover:translate-x-2 transition-transform" />
+              </a>
+            </div>
           </Reveal>
         </div>
+      </div>
 
-        {/* Treatment Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      {/* Horizontal Scrolling Slider */}
+      <div className="relative">
+        <div
+          ref={sliderRef}
+          className="flex gap-6 lg:gap-8 overflow-x-auto scrollbar-hide px-6 md:px-12 pb-4 snap-x snap-mandatory"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
           {treatments.map((treatment, index) => (
-            <Reveal key={treatment.key} delay={index * 100}>
+            <div key={treatment.key} className="snap-start">
               <TreatmentCard
                 number={String(index + 1).padStart(2, '0')}
                 title={t(`treatments.items.${treatment.key}.title`)}
@@ -151,12 +217,42 @@ export const Treatments: React.FC = () => {
                 image={treatment.image}
                 index={index}
               />
-            </Reveal>
+            </div>
           ))}
         </div>
 
-        {/* Mobile CTA */}
-        <div className="mt-12 lg:hidden flex justify-center">
+        {/* Mobile Navigation Arrows */}
+        <div className="lg:hidden flex justify-center gap-4 mt-8">
+          <button
+            onClick={() => scroll('left')}
+            disabled={!canScrollLeft}
+            className={`w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-300 ${
+              canScrollLeft
+                ? 'border-studio-black text-studio-black'
+                : 'border-gray-200 text-gray-300 cursor-not-allowed'
+            }`}
+            aria-label="Previous treatments"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+          <button
+            onClick={() => scroll('right')}
+            disabled={!canScrollRight}
+            className={`w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-300 ${
+              canScrollRight
+                ? 'border-studio-black text-studio-black'
+                : 'border-gray-200 text-gray-300 cursor-not-allowed'
+            }`}
+            aria-label="Next treatments"
+          >
+            <ChevronRight className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile CTA */}
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="mt-8 lg:hidden flex justify-center">
           <a
             href="#booking"
             className="group flex items-center gap-4 text-[10px] uppercase tracking-ultra hover:text-studio-gold transition-colors"

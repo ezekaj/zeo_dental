@@ -1,5 +1,32 @@
 @import "tailwindcss";
 
+/* Tailwind v4 Theme Configuration */
+@theme {
+  /* Colors */
+  --color-studio-black: #050505;
+  --color-studio-white: #ffffff;
+  --color-studio-gold: #C5A47E;
+  --color-studio-gray: #999999;
+  --color-studio-light: #F9F9F9;
+
+  /* Fonts */
+  --font-family-serif: "Playfair Display", serif;
+  --font-family-sans: "Montserrat", sans-serif;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.03em;
+  --letter-spacing-wide: 0.05em;
+  --letter-spacing-widest: 0.1em;
+  --letter-spacing-ultra: 0.3em;
+
+  /* Font Sizes */
+  --font-size-2xs: 0.6rem;
+  --font-size-hero: clamp(4rem, 15vw, 12rem);
+
+  /* Heights */
+  --height-screen-90: 90vh;
+}
+
 /* Custom base styles */
 html {
   scroll-behavior: smooth;
@@ -74,6 +101,15 @@ body.hovering .cursor-outline {
 /* Utilities */
 .text-balance {
   text-wrap: balance;
+}
+
+/* Hide scrollbar for horizontal sliders */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 ::selection {
