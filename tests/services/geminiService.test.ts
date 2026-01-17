@@ -15,13 +15,12 @@ describe('geminiService', () => {
     it('returns a response when API call succeeds', async () => {
       const mockFetch = vi.fn().mockResolvedValue({
         ok: true,
-        json: () => Promise.resolve({ text: 'Hello from API!' }),
+        json: () => Promise.resolve({ response: 'Hello from API!' }),
       });
       global.fetch = mockFetch;
 
-      const { sendMessageToGemini, clearChatHistory } = await import(
-        '../../services/geminiService'
-      );
+      const { sendMessageToGemini, clearChatHistory } =
+        await import('../../services/geminiService');
       clearChatHistory();
 
       const response = await sendMessageToGemini('Hello');
@@ -70,13 +69,12 @@ describe('geminiService', () => {
     it('sends POST request with message', async () => {
       const mockFetch = vi.fn().mockResolvedValue({
         ok: true,
-        json: () => Promise.resolve({ text: 'Response' }),
+        json: () => Promise.resolve({ response: 'Response' }),
       });
       global.fetch = mockFetch;
 
-      const { sendMessageToGemini, clearChatHistory } = await import(
-        '../../services/geminiService'
-      );
+      const { sendMessageToGemini, clearChatHistory } =
+        await import('../../services/geminiService');
       clearChatHistory();
 
       await sendMessageToGemini('Test message');
