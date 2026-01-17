@@ -6,7 +6,6 @@ import { Philosophy } from './components/Philosophy';
 import { Team } from './components/Team';
 import { ClinicalCases } from './components/ClinicalCases';
 import { Booking } from './components/Booking';
-import { Footer } from './components/Footer';
 import { ChatWidget } from './components/ChatWidget';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { LanguageProvider } from './contexts/LanguageContext';
@@ -85,7 +84,6 @@ const App: React.FC = () => {
             <ClinicalCases />
             <Booking />
           </main>
-          <Footer />
           <ChatWidget />
         </div>
       </ErrorBoundary>
