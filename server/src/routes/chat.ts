@@ -1,7 +1,8 @@
 import { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify';
 import type { ChatRequest, ChatResponse } from '../types.js';
 
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
+const GEMINI_API_URL =
+  'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 
 // Dental clinic system prompt
 const SYSTEM_INSTRUCTION = `You are Zeo, a friendly and knowledgeable AI assistant for Zeo Dental Clinic. You help patients with:
@@ -103,9 +104,7 @@ async function fetchWithRetry(
 
     // Exponential backoff: 1s, 2s, 4s
     if (attempt < maxRetries - 1) {
-      await new Promise((resolve) =>
-        setTimeout(resolve, Math.pow(2, attempt) * 1000)
-      );
+      await new Promise(resolve => setTimeout(resolve, Math.pow(2, attempt) * 1000));
     }
   }
 
@@ -137,8 +136,9 @@ export async function chatRoutes(fastify: FastifyInstance) {
     }
 
     // Language-specific instruction
-    const languageInstruction = language === 'sq'
-      ? `**LANGUAGE REQUIREMENT:**
+    const languageInstruction =
+      language === 'sq'
+        ? `**LANGUAGE REQUIREMENT:**
 Your DEFAULT language is Albanian (Shqip). Start by responding in Albanian.
 Use proper Albanian grammar and natural Albanian expressions.
 
@@ -148,7 +148,7 @@ HOWEVER, if the user explicitly asks you to switch languages (e.g., "speak Engli
 3. Confirm the switch briefly (e.g., "Of course! How can I help you today?")
 
 The user's language preference takes priority over the default.`
-      : `**LANGUAGE REQUIREMENT:**
+        : `**LANGUAGE REQUIREMENT:**
 Your DEFAULT language is English. Start by responding in English.
 
 HOWEVER, if the user explicitly asks you to switch languages (e.g., "fol shqip", "speak Albanian", "në shqip"), you MUST:
@@ -159,9 +159,10 @@ HOWEVER, if the user explicitly asks you to switch languages (e.g., "fol shqip",
 The user's language preference takes priority over the default.`;
 
     // Initial greeting based on language
-    const initialGreeting = language === 'sq'
-      ? 'Kuptohet. Unë jam Zeo, asistenti virtual miqësor për Zeo Dental Clinic. Si mund t\'ju ndihmoj sot?'
-      : 'Understood. I am Zeo, the friendly AI assistant for Zeo Dental Clinic. How can I help you today?';
+    const initialGreeting =
+      language === 'sq'
+        ? "Kuptohet. Unë jam Zeo, asistenti virtual miqësor për Zeo Dental Clinic. Si mund t'ju ndihmoj sot?"
+        : 'Understood. I am Zeo, the friendly AI assistant for Zeo Dental Clinic. How can I help you today?';
 
     // Build conversation contents
     const contents = [
@@ -184,42 +185,39 @@ The user's language preference takes priority over the default.`;
     ];
 
     try {
-      const response = await fetchWithRetry(
-        `${GEMINI_API_URL}?key=${apiKey}`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
+      const response = await fetchWithRetry(`${GEMINI_API_URL}?key=${apiKey}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          contents,
+          generationConfig: {
+            temperature: 0.7,
+            topK: 40,
+            topP: 0.95,
+            maxOutputTokens: 1024,
           },
-          body: JSON.stringify({
-            contents,
-            generationConfig: {
-              temperature: 0.7,
-              topK: 40,
-              topP: 0.95,
-              maxOutputTokens: 1024,
+          safetySettings: [
+            {
+              category: 'HARM_CATEGORY_HARASSMENT',
+              threshold: 'BLOCK_MEDIUM_AND_ABOVE',
             },
-            safetySettings: [
-              {
-                category: 'HARM_CATEGORY_HARASSMENT',
-                threshold: 'BLOCK_MEDIUM_AND_ABOVE',
-              },
-              {
-                category: 'HARM_CATEGORY_HATE_SPEECH',
-                threshold: 'BLOCK_MEDIUM_AND_ABOVE',
-              },
-              {
-                category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT',
-                threshold: 'BLOCK_MEDIUM_AND_ABOVE',
-              },
-              {
-                category: 'HARM_CATEGORY_DANGEROUS_CONTENT',
-                threshold: 'BLOCK_MEDIUM_AND_ABOVE',
-              },
-            ],
-          }),
-        }
-      );
+            {
+              category: 'HARM_CATEGORY_HATE_SPEECH',
+              threshold: 'BLOCK_MEDIUM_AND_ABOVE',
+            },
+            {
+              category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT',
+              threshold: 'BLOCK_MEDIUM_AND_ABOVE',
+            },
+            {
+              category: 'HARM_CATEGORY_DANGEROUS_CONTENT',
+              threshold: 'BLOCK_MEDIUM_AND_ABOVE',
+            },
+          ],
+        }),
+      });
 
       if (!response.ok) {
         const errorText = await response.text();

@@ -2,6 +2,31 @@ import '@testing-library/jest-dom';
 import { cleanup } from '@testing-library/react';
 import { afterEach, vi } from 'vitest';
 
+// Mock the useTranslation hook globally for all tests
+vi.mock('./hooks/useTranslation', () => ({
+  useTranslation: () => ({
+    t: (key: string) => key, // Return the key as-is for testing
+    language: 'en',
+  }),
+}));
+
+vi.mock('../hooks/useTranslation', () => ({
+  useTranslation: () => ({
+    t: (key: string) => key, // Return the key as-is for testing
+    language: 'en',
+  }),
+}));
+
+// Mock LanguageContext
+vi.mock('../contexts/LanguageContext', () => ({
+  LanguageProvider: ({ children }: { children: React.ReactNode }) => children,
+  useLanguage: () => ({
+    language: 'en',
+    setLanguage: vi.fn(),
+    t: (key: string) => key,
+  }),
+}));
+
 // Cleanup after each test
 afterEach(() => {
   cleanup();

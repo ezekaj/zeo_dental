@@ -16,7 +16,7 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({
   title,
   description,
   image,
-  index
+  index,
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
@@ -133,7 +133,7 @@ export const Treatments: React.FC = () => {
       const scrollAmount = sliderRef.current.clientWidth * 0.8;
       sliderRef.current.scrollBy({
         left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
   };

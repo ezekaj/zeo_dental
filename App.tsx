@@ -27,16 +27,25 @@ const App: React.FC = () => {
       }
 
       if (cursorOutlineRef.current) {
-        cursorOutlineRef.current.animate({
-          left: `${posX}px`,
-          top: `${posY}px`
-        }, { duration: 500, fill: "forwards" });
+        cursorOutlineRef.current.animate(
+          {
+            left: `${posX}px`,
+            top: `${posY}px`,
+          },
+          { duration: 500, fill: 'forwards' }
+        );
       }
     };
 
     const onMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      if (target.tagName === 'A' || target.tagName === 'BUTTON' || target.closest('a') || target.closest('button') || target.dataset.cursor === 'hover') {
+      if (
+        target.tagName === 'A' ||
+        target.tagName === 'BUTTON' ||
+        target.closest('a') ||
+        target.closest('button') ||
+        target.dataset.cursor === 'hover'
+      ) {
         document.body.classList.add('hovering');
       } else {
         document.body.classList.remove('hovering');
@@ -61,7 +70,10 @@ const App: React.FC = () => {
           <div ref={cursorOutlineRef} className="cursor-outline"></div>
 
           {/* Skip link for accessibility */}
-          <a href="#main-content" className="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-studio-gold focus:text-white focus:rounded">
+          <a
+            href="#main-content"
+            className="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-studio-gold focus:text-white focus:rounded"
+          >
             Skip to main content
           </a>
 

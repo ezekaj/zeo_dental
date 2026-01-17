@@ -146,13 +146,19 @@ export async function bookingRoutes(fastify: FastifyInstance) {
         transporter
           .sendMail(clinicMail)
           .catch((err: unknown) =>
-            fastify.log.error('Clinic email failed: %s', err instanceof Error ? err.message : String(err))
+            fastify.log.error(
+              'Clinic email failed: %s',
+              err instanceof Error ? err.message : String(err)
+            )
           );
 
         transporter
           .sendMail(patientMail)
           .catch((err: unknown) =>
-            fastify.log.error('Patient email failed: %s', err instanceof Error ? err.message : String(err))
+            fastify.log.error(
+              'Patient email failed: %s',
+              err instanceof Error ? err.message : String(err)
+            )
           );
       } else {
         fastify.log.warn('Mail not configured; skipping booking notifications');
@@ -182,26 +188,33 @@ export async function bookingRoutes(fastify: FastifyInstance) {
   });
 
   // Get bookings (admin endpoint - would need auth in production)
-  fastify.get('/bookings', {
-    preHandler: async (request, reply) => {
-      if (!adminToken) {
-        return reply.status(503).send({ error: 'Admin access not configured' });
-      }
-      const authHeader = request.headers.authorization;
-      if (authHeader !== `Bearer ${adminToken}`) {
-        return reply.status(401).send({ error: 'Unauthorized' });
+  fastify.get(
+    '/bookings',
+    {
+      preHandler: async (request, reply) => {
+        if (!adminToken) {
+          return reply.status(503).send({ error: 'Admin access not configured' });
+        }
+        const authHeader = request.headers.authorization;
+        if (authHeader !== `Bearer ${adminToken}`) {
+          return reply.status(401).send({ error: 'Unauthorized' });
+        }
+      },
+    },
+    async (request, reply) => {
+      try {
+        const pool = fastify.pg;
+        const result = await pool.query(
+          'SELECT * FROM bookings ORDER BY created_at DESC LIMIT 100'
+        );
+        return reply.send({ bookings: result.rows });
+      } catch (err) {
+        fastify.log.error(
+          'Get bookings error: %s',
+          err instanceof Error ? err.message : String(err)
+        );
+        return reply.status(500).send({ error: 'Failed to fetch bookings' });
       }
     }
-  }, async (request, reply) => {
-    try {
-      const pool = fastify.pg;
-      const result = await pool.query(
-        'SELECT * FROM bookings ORDER BY created_at DESC LIMIT 100'
-      );
-      return reply.send({ bookings: result.rows });
-    } catch (err) {
-      fastify.log.error('Get bookings error: %s', err instanceof Error ? err.message : String(err));
-      return reply.status(500).send({ error: 'Failed to fetch bookings' });
-    }
-  });
+  );
 }

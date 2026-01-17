@@ -31,9 +31,7 @@ export const useNetworkStatus = (): NetworkStatus => {
 
   const getConnectionInfo = useCallback((): Partial<NetworkStatus> => {
     const connection =
-      navigator.connection ||
-      navigator.mozConnection ||
-      navigator.webkitConnection;
+      navigator.connection || navigator.mozConnection || navigator.webkitConnection;
 
     if (connection) {
       return {
@@ -82,9 +80,7 @@ export const useNetworkStatus = (): NetworkStatus => {
 
     // Listen for connection changes if available
     const connection =
-      navigator.connection ||
-      navigator.mozConnection ||
-      navigator.webkitConnection;
+      navigator.connection || navigator.mozConnection || navigator.webkitConnection;
 
     if (connection) {
       connection.addEventListener('change', handleConnectionChange);
@@ -110,9 +106,5 @@ export const useSlowConnection = (): boolean => {
   // Consider connection slow if:
   // - effectiveType is slow-2g or 2g
   // - or RTT is > 400ms
-  return (
-    effectiveType === 'slow-2g' ||
-    effectiveType === '2g' ||
-    (rtt !== undefined && rtt > 400)
-  );
+  return effectiveType === 'slow-2g' || effectiveType === '2g' || (rtt !== undefined && rtt > 400);
 };

@@ -30,16 +30,22 @@ export const Hero: React.FC = () => {
           playsInline
           className="w-full h-full object-cover opacity-50 grayscale contrast-125"
           poster="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2574&auto=format&fit=crop"
-          onError={(e) => {
+          onError={e => {
             // Hide video on error, fallback to poster image
             const target = e.currentTarget;
             target.style.display = 'none';
           }}
         >
           {/* Primary: Pexels dental video (more reliable) */}
-          <source src="https://videos.pexels.com/video-files/3873195/3873195-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+          <source
+            src="https://videos.pexels.com/video-files/3873195/3873195-uhd_2560_1440_25fps.mp4"
+            type="video/mp4"
+          />
           {/* Fallback: Original Pixabay video */}
-          <source src="https://cdn.pixabay.com/video/2021/07/13/81806-574739932_large.mp4" type="video/mp4" />
+          <source
+            src="https://cdn.pixabay.com/video/2021/07/13/81806-574739932_large.mp4"
+            type="video/mp4"
+          />
         </video>
         {/* Grain Overlay */}
         <div className="absolute inset-0 bg-noise opacity-10 mix-blend-overlay"></div>
@@ -50,30 +56,36 @@ export const Hero: React.FC = () => {
       {/* Hero Content */}
       <div className="relative z-10 w-full h-full flex flex-col justify-center items-center text-center px-4">
         <Reveal>
-            <h1 className="flex flex-col items-center justify-center text-white leading-[0.85]">
-                <span className="font-serif italic font-light text-[10vw] md:text-[8vw] tracking-tight opacity-90">{t('hero.artOf')}</span>
-                <span className="font-serif font-normal text-[13vw] md:text-[12vw] tracking-tighter mt-2">{t('hero.dentistry')}</span>
-            </h1>
+          <h1 className="flex flex-col items-center justify-center text-white leading-[0.85]">
+            <span className="font-serif italic font-light text-[10vw] md:text-[8vw] tracking-tight opacity-90">
+              {t('hero.artOf')}
+            </span>
+            <span className="font-serif font-normal text-[13vw] md:text-[12vw] tracking-tighter mt-2">
+              {t('hero.dentistry')}
+            </span>
+          </h1>
         </Reveal>
 
         <Reveal delay={300}>
-            <div className="mt-12 flex items-center gap-6">
-                <span className="h-[1px] w-12 bg-white/50"></span>
-                <p className="text-white text-[10px] md:text-xs uppercase tracking-ultra font-light">
-                    {t('hero.subtitle')}
-                </p>
-                <span className="h-[1px] w-12 bg-white/50"></span>
-            </div>
+          <div className="mt-12 flex items-center gap-6">
+            <span className="h-[1px] w-12 bg-white/50"></span>
+            <p className="text-white text-[10px] md:text-xs uppercase tracking-ultra font-light">
+              {t('hero.subtitle')}
+            </p>
+            <span className="h-[1px] w-12 bg-white/50"></span>
+          </div>
         </Reveal>
       </div>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 mix-blend-difference text-white">
         <div className="flex flex-col items-center gap-2">
-            <span className="text-[9px] uppercase tracking-ultra opacity-70">{t('hero.explore')}</span>
-            <div className="w-[1px] h-12 bg-white/30 overflow-hidden relative">
-                <div className="absolute top-0 left-0 w-full h-full bg-white animate-pulldown"></div>
-            </div>
+          <span className="text-[9px] uppercase tracking-ultra opacity-70">
+            {t('hero.explore')}
+          </span>
+          <div className="w-[1px] h-12 bg-white/30 overflow-hidden relative">
+            <div className="absolute top-0 left-0 w-full h-full bg-white animate-pulldown"></div>
+          </div>
         </div>
       </div>
 

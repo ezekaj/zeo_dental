@@ -26,7 +26,7 @@ export const sendMessageToGemini = async (
 ): Promise<string> => {
   try {
     // Convert history to API format
-    const historyForApi: ApiChatMessage[] = conversationHistory.map((msg) => ({
+    const historyForApi: ApiChatMessage[] = conversationHistory.map(msg => ({
       role: msg.role,
       parts: [{ text: msg.text }],
     }));
@@ -50,8 +50,7 @@ export const sendMessageToGemini = async (
 
     const data = await response.json();
     const responseText =
-      data.response ||
-      "I apologize, I couldn't process that request. Please try again.";
+      data.response || "I apologize, I couldn't process that request. Please try again.";
 
     // Update conversation history
     conversationHistory.push(

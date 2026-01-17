@@ -87,7 +87,8 @@ describe('geminiService', () => {
         },
       });
 
-      const { sendMessageToGemini, clearChatHistory } = await import('../../services/geminiService');
+      const { sendMessageToGemini, clearChatHistory } =
+        await import('../../services/geminiService');
       clearChatHistory();
 
       const response = await sendMessageToGemini('Hello');
@@ -98,7 +99,7 @@ describe('geminiService', () => {
           method: 'POST',
           headers: expect.objectContaining({
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer test-anon-key',
+            Authorization: 'Bearer test-anon-key',
           }),
         })
       );
@@ -120,7 +121,8 @@ describe('geminiService', () => {
         },
       });
 
-      const { sendMessageToGemini, clearChatHistory } = await import('../../services/geminiService');
+      const { sendMessageToGemini, clearChatHistory } =
+        await import('../../services/geminiService');
       clearChatHistory();
 
       // First message

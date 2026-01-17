@@ -6,7 +6,7 @@ interface RevealProps {
   delay?: number;
 }
 
-export const Reveal: React.FC<RevealProps> = ({ children, className = "", delay = 0 }) => {
+export const Reveal: React.FC<RevealProps> = ({ children, className = '', delay = 0 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -21,7 +21,7 @@ export const Reveal: React.FC<RevealProps> = ({ children, className = "", delay 
       },
       {
         threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
+        rootMargin: '0px 0px -50px 0px',
       }
     );
 

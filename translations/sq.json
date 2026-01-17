@@ -75,10 +75,22 @@
           "Parashikim me Dizajn Dixhital të Buzëqeshjes"
         ],
         "process": [
-          { "title": "Konsultë", "description": "Diskutojmë qëllimet tuaja dhe analizojmë strukturën e fytyrës suaj." },
-          { "title": "Dizajn", "description": "Simulim dixhital i buzëqeshjes suaj të re për miratim." },
-          { "title": "Përgatitje", "description": "Përgatitje minimale e dhëmbëve dhe vendosje e provizorëve." },
-          { "title": "Transformim", "description": "Lidhje e qeramikave përfundimtare dhe rregullime finale." }
+          {
+            "title": "Konsultë",
+            "description": "Diskutojmë qëllimet tuaja dhe analizojmë strukturën e fytyrës suaj."
+          },
+          {
+            "title": "Dizajn",
+            "description": "Simulim dixhital i buzëqeshjes suaj të re për miratim."
+          },
+          {
+            "title": "Përgatitje",
+            "description": "Përgatitje minimale e dhëmbëve dhe vendosje e provizorëve."
+          },
+          {
+            "title": "Transformim",
+            "description": "Lidhje e qeramikave përfundimtare dhe rregullime finale."
+          }
         ]
       },
       "implants": {
@@ -92,9 +104,18 @@
           "Materiale biokompatibile (Titan ose Zirkon)"
         ],
         "process": [
-          { "title": "Skanim 3D", "description": "Skanim CBCT për hartimin e strukturës kockore dhe rrugëve nervore." },
-          { "title": "Vendosje", "description": "Vendosje kirurgjikale e saktë e shtyllës së implantit." },
-          { "title": "Shërim", "description": "Periudhë osteointegrimi ku kocka bashkohet me implantin." },
+          {
+            "title": "Skanim 3D",
+            "description": "Skanim CBCT për hartimin e strukturës kockore dhe rrugëve nervore."
+          },
+          {
+            "title": "Vendosje",
+            "description": "Vendosje kirurgjikale e saktë e shtyllës së implantit."
+          },
+          {
+            "title": "Shërim",
+            "description": "Periudhë osteointegrimi ku kocka bashkohet me implantin."
+          },
           { "title": "Restaurim", "description": "Bashkimi i kurorës ose urës së bërë me porosi." }
         ]
       },
@@ -110,9 +131,18 @@
         ],
         "process": [
           { "title": "Vlerësim", "description": "Skanim dixhital dhe analizë e kafshimit." },
-          { "title": "Planifikim", "description": "Krijim i planit të trajtimit dhe afateve kohore me porosi." },
-          { "title": "Terapi Aktive", "description": "Mbartje e alignerëve ose aparateve me kontrolle të rregullta." },
-          { "title": "Mbajtje", "description": "Mbajtëse me porosi për të ruajtur buzëqeshjen tuaj të re përgjithmonë." }
+          {
+            "title": "Planifikim",
+            "description": "Krijim i planit të trajtimit dhe afateve kohore me porosi."
+          },
+          {
+            "title": "Terapi Aktive",
+            "description": "Mbartje e alignerëve ose aparateve me kontrolle të rregullta."
+          },
+          {
+            "title": "Mbajtje",
+            "description": "Mbajtëse me porosi për të ruajtur buzëqeshjen tuaj të re përgjithmonë."
+          }
         ]
       },
       "general": {
@@ -126,10 +156,22 @@
           "Plane higjenike të personalizuara"
         ],
         "process": [
-          { "title": "Ekzaminim", "description": "Kontroll gjithëpërfshirës me radiografi dixhitale me rrezatim të ulët." },
-          { "title": "Higjenë", "description": "Pastrim dhe lustrim i plotë nga higjenistët ekspertë." },
-          { "title": "Edukim", "description": "Këshilla dhe mjete të përshtatura për biomin tuaj specifik oral." },
-          { "title": "Plan", "description": "Orar mirëmbajtjeje afatgjatë bazuar në vlerësimin e rrezikut." }
+          {
+            "title": "Ekzaminim",
+            "description": "Kontroll gjithëpërfshirës me radiografi dixhitale me rrezatim të ulët."
+          },
+          {
+            "title": "Higjenë",
+            "description": "Pastrim dhe lustrim i plotë nga higjenistët ekspertë."
+          },
+          {
+            "title": "Edukim",
+            "description": "Këshilla dhe mjete të përshtatura për biomin tuaj specifik oral."
+          },
+          {
+            "title": "Plan",
+            "description": "Orar mirëmbajtjeje afatgjatë bazuar në vlerësimin e rrezikut."
+          }
         ]
       },
       "surgery": {
@@ -143,8 +185,14 @@
           "Transplantim dhe konturim i mishrave"
         ],
         "process": [
-          { "title": "Vlerësim", "description": "Rishikim i historisë mjekësore dhe planifikim kirurgjik." },
-          { "title": "Komoditet", "description": "Administrim i anestezisë lokale ose sedacionit." },
+          {
+            "title": "Vlerësim",
+            "description": "Rishikim i historisë mjekësore dhe planifikim kirurgjik."
+          },
+          {
+            "title": "Komoditet",
+            "description": "Administrim i anestezisë lokale ose sedacionit."
+          },
           { "title": "Procedurë", "description": "Ekzekutim kirurgjik minimalisht invaziv." },
           { "title": "Rikuperim", "description": "Udhëzime të detajuara pas-kujdesi dhe ndjekje." }
         ]
@@ -161,7 +209,10 @@
         ],
         "process": [
           { "title": "Njohje", "description": "Të ndihen rehat me ekipin dhe mjedisin." },
-          { "title": "Numërim Dhëmbësh", "description": "Ekzaminim i butë për të kontrolluar kavitetet dhe zhvillimin." },
+          {
+            "title": "Numërim Dhëmbësh",
+            "description": "Ekzaminim i butë për të kontrolluar kavitetet dhe zhvillimin."
+          },
           { "title": "Pastrim", "description": "Lustrim i butë dhe udhëzime higjene." },
           { "title": "Shpërblim", "description": "Përforcim pozitiv për të ndërtuar besimin." }
         ]

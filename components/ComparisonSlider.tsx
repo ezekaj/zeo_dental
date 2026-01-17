@@ -30,7 +30,7 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
     const position = event.touches[0].clientX - left;
     const percentage = Math.max(0, Math.min(100, (position / width) * 100));
     setSliderPosition(percentage);
-  }
+  };
 
   useEffect(() => {
     const handleUp = () => setIsResizing(false);
@@ -47,9 +47,9 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
     if (!containerRef.current) return;
 
     const updateWidth = () => {
-        if (containerRef.current) {
-            setContainerWidth(containerRef.current.offsetWidth);
-        }
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.offsetWidth);
+      }
     };
 
     updateWidth();
@@ -85,15 +85,15 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
       >
         {/* Inner Wrapper: Matches full container width to prevent squashing */}
         <div
-            className="relative h-full"
-            style={{ width: containerWidth ? `${containerWidth}px` : '100vw' }}
+          className="relative h-full"
+          style={{ width: containerWidth ? `${containerWidth}px` : '100vw' }}
         >
-            <img
-                src={afterImage}
-                alt="After"
-                className="absolute top-0 left-0 w-full h-full object-cover select-none grayscale group-hover:grayscale-0 group-hover/case:grayscale-0 transition-all duration-[1.5s] ease-out"
-                draggable={false}
-            />
+          <img
+            src={afterImage}
+            alt="After"
+            className="absolute top-0 left-0 w-full h-full object-cover select-none grayscale group-hover:grayscale-0 group-hover/case:grayscale-0 transition-all duration-[1.5s] ease-out"
+            draggable={false}
+          />
         </div>
       </div>
 
@@ -104,23 +104,39 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
       >
         {/* Handle Circle */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-white flex items-center justify-center backdrop-blur-sm bg-white/10 shadow-lg transition-transform transform group-hover:scale-110">
-           <div className="flex gap-2">
-              <svg width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 1L0.5 4L3.5 7" stroke="white"/></svg>
-              <svg width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 1L3.5 4L0.5 7" stroke="white"/></svg>
-           </div>
+          <div className="flex gap-2">
+            <svg
+              width="4"
+              height="8"
+              viewBox="0 0 4 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M3.5 1L0.5 4L3.5 7" stroke="white" />
+            </svg>
+            <svg
+              width="4"
+              height="8"
+              viewBox="0 0 4 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0.5 1L3.5 4L0.5 7" stroke="white" />
+            </svg>
+          </div>
         </div>
 
         {/* Labels attached to slider - Only visible on hover or interaction */}
         <div className="absolute top-6 right-full mr-6 opacity-0 group-hover:opacity-100 group-hover/case:opacity-100 transition-opacity duration-500 flex items-center">
-            <div className="bg-black/30 backdrop-blur-md px-3 py-1 text-[8px] tracking-ultra font-bold uppercase text-white shadow-lg whitespace-nowrap border border-white/10">
-                Before
-            </div>
+          <div className="bg-black/30 backdrop-blur-md px-3 py-1 text-[8px] tracking-ultra font-bold uppercase text-white shadow-lg whitespace-nowrap border border-white/10">
+            Before
+          </div>
         </div>
 
         <div className="absolute top-6 left-full ml-6 opacity-0 group-hover:opacity-100 group-hover/case:opacity-100 transition-opacity duration-500 flex items-center">
-             <div className="bg-studio-gold/90 backdrop-blur-md px-3 py-1 text-[8px] tracking-ultra font-bold uppercase text-white shadow-lg whitespace-nowrap">
-                After
-            </div>
+          <div className="bg-studio-gold/90 backdrop-blur-md px-3 py-1 text-[8px] tracking-ultra font-bold uppercase text-white shadow-lg whitespace-nowrap">
+            After
+          </div>
         </div>
       </div>
     </div>

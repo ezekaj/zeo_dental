@@ -26,12 +26,8 @@ const ErrorFallbackUI: React.FC<ErrorFallbackUIProps> = ({ error, onRetry }) => 
         <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
           <AlertTriangle className="w-8 h-8 text-red-500" />
         </div>
-        <h2 className="text-2xl font-serif font-bold text-slate-900 mb-3">
-          {t('error.title')}
-        </h2>
-        <p className="text-slate-600 mb-6">
-          {t('error.message')}
-        </p>
+        <h2 className="text-2xl font-serif font-bold text-slate-900 mb-3">{t('error.title')}</h2>
+        <p className="text-slate-600 mb-6">{t('error.message')}</p>
         <div className="space-y-3">
           <button
             onClick={onRetry}
@@ -62,10 +58,14 @@ const ErrorFallbackUI: React.FC<ErrorFallbackUIProps> = ({ error, onRetry }) => 
   );
 };
 
-export class ErrorBoundary extends Component<Props, State> {
+// React 19 has stricter types for class components - suppress known issues
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export class ErrorBoundary extends (Component as any)<Props, State> {
+  state: State = { hasError: false, error: null };
+
   constructor(props: Props) {
     super(props);
-    this.state = { hasError: false, error: null };
+    this.handleRetry = this.handleRetry.bind(this);
   }
 
   static getDerivedStateFromError(error: Error): State {
@@ -76,9 +76,9 @@ export class ErrorBoundary extends Component<Props, State> {
     console.error('ErrorBoundary caught an error:', error, errorInfo);
   }
 
-  handleRetry = (): void => {
+  handleRetry(): void {
     this.setState({ hasError: false, error: null });
-  };
+  }
 
   render(): ReactNode {
     if (this.state.hasError) {

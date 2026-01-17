@@ -46,13 +46,7 @@ describe('ImageWithFallback', () => {
   });
 
   it('tries fallback src when primary fails', async () => {
-    render(
-      <ImageWithFallback
-        src="primary.jpg"
-        alt="Test"
-        fallbackSrc="fallback.jpg"
-      />
-    );
+    render(<ImageWithFallback src="primary.jpg" alt="Test" fallbackSrc="fallback.jpg" />);
 
     const img = screen.getByRole('img', { hidden: true });
 
@@ -65,13 +59,7 @@ describe('ImageWithFallback', () => {
   });
 
   it('shows error state when both primary and fallback fail', async () => {
-    render(
-      <ImageWithFallback
-        src="primary.jpg"
-        alt="Test"
-        fallbackSrc="fallback.jpg"
-      />
-    );
+    render(<ImageWithFallback src="primary.jpg" alt="Test" fallbackSrc="fallback.jpg" />);
 
     const img = screen.getByRole('img', { hidden: true });
 
@@ -91,40 +79,21 @@ describe('ImageWithFallback', () => {
   });
 
   it('hides skeleton when showSkeleton is false', () => {
-    render(
-      <ImageWithFallback
-        src="test.jpg"
-        alt="Test"
-        showSkeleton={false}
-      />
-    );
+    render(<ImageWithFallback src="test.jpg" alt="Test" showSkeleton={false} />);
 
     const skeleton = document.querySelector('[aria-hidden="true"]');
     expect(skeleton).not.toBeInTheDocument();
   });
 
   it('applies custom className', () => {
-    render(
-      <ImageWithFallback
-        src="test.jpg"
-        alt="Test"
-        className="custom-image"
-      />
-    );
+    render(<ImageWithFallback src="test.jpg" alt="Test" className="custom-image" />);
 
     const container = screen.getByRole('img', { hidden: true }).parentElement;
     expect(container).toHaveClass('custom-image');
   });
 
   it('passes through additional img props', () => {
-    render(
-      <ImageWithFallback
-        src="test.jpg"
-        alt="Test"
-        loading="lazy"
-        data-testid="custom-img"
-      />
-    );
+    render(<ImageWithFallback src="test.jpg" alt="Test" loading="lazy" data-testid="custom-img" />);
 
     const img = screen.getByTestId('custom-img');
     expect(img).toHaveAttribute('loading', 'lazy');

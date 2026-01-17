@@ -47,11 +47,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     isEnglish: language === 'en',
   };
 
-  return (
-    <LanguageContext.Provider value={value}>
-      {children}
-    </LanguageContext.Provider>
-  );
+  return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
 };
 
 export const useLanguage = (): LanguageContextType => {

@@ -11,9 +11,7 @@ export const NotFound: React.FC = () => {
 
         {/* Message */}
         <div className="mt-[-2rem] md:mt-[-4rem]">
-          <h2 className="font-serif text-3xl md:text-4xl text-studio-black mb-4">
-            Page Not Found
-          </h2>
+          <h2 className="font-serif text-3xl md:text-4xl text-studio-black mb-4">Page Not Found</h2>
           <p className="text-studio-gray font-light mb-8">
             The page you&apos;re looking for doesn&apos;t exist or has been moved.
           </p>

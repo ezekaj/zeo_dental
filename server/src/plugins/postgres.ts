@@ -44,7 +44,10 @@ const postgresPluginAsync: FastifyPluginAsync = async (fastify: FastifyInstance)
     fastify.log.info('Connected to PostgreSQL database');
     client.release();
   } catch (err) {
-    fastify.log.error('Failed to connect to PostgreSQL: %s', err instanceof Error ? err.message : String(err));
+    fastify.log.error(
+      'Failed to connect to PostgreSQL: %s',
+      err instanceof Error ? err.message : String(err)
+    );
     throw err;
   }
 

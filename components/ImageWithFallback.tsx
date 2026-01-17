@@ -61,10 +61,7 @@ export const ImageWithFallback: React.FC<ImageWithFallbackProps> = ({
     <div className={`relative ${className}`}>
       {/* Skeleton loader */}
       {isLoading && showSkeleton && (
-        <Skeleton
-          variant="rectangular"
-          className={`absolute inset-0 ${skeletonClassName}`}
-        />
+        <Skeleton variant="rectangular" className={`absolute inset-0 ${skeletonClassName}`} />
       )}
 
       {/* Actual image */}

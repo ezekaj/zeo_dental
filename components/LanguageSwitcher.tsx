@@ -15,7 +15,10 @@ const languages: LanguageOption[] = [
 ];
 
 // Animated Globe Icon Component
-const GlobeIcon: React.FC<{ className?: string; isHovered: boolean }> = ({ className = '', isHovered }) => {
+const GlobeIcon: React.FC<{ className?: string; isHovered: boolean }> = ({
+  className = '',
+  isHovered,
+}) => {
   return (
     <motion.svg
       viewBox="0 0 24 24"
@@ -99,7 +102,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ variant = 'd
       opacity: 0,
       scale: 0.95,
       y: -10,
-      transition: { duration: 0.15 }
+      transition: { duration: 0.15 },
     },
     visible: {
       opacity: 1,
@@ -108,9 +111,9 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ variant = 'd
       transition: {
         type: 'spring',
         stiffness: 300,
-        damping: 25
-      }
-    }
+        damping: 25,
+      },
+    },
   };
 
   // Item animation variants
@@ -122,9 +125,9 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ variant = 'd
       transition: {
         delay: i * 0.05,
         duration: 0.2,
-        ease: 'easeOut'
-      }
-    })
+        ease: 'easeOut',
+      },
+    }),
   };
 
   // Check animation variants
@@ -136,14 +139,15 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ variant = 'd
       transition: {
         type: 'spring',
         stiffness: 500,
-        damping: 25
-      }
-    }
+        damping: 25,
+      },
+    },
   };
 
-  const buttonTextColor = variant === 'light'
-    ? 'text-white hover:text-white/80'
-    : 'text-slate-700 hover:text-primary-600';
+  const buttonTextColor =
+    variant === 'light'
+      ? 'text-white hover:text-white/80'
+      : 'text-slate-700 hover:text-primary-600';
 
   return (
     <div ref={dropdownRef} className="relative">
@@ -160,7 +164,9 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ variant = 'd
         whileTap={{ scale: 0.97 }}
       >
         <GlobeIcon className="w-5 h-5" isHovered={isHovered} />
-        <span className="text-sm font-medium hidden sm:inline">{currentLang.code.toUpperCase()}</span>
+        <span className="text-sm font-medium hidden sm:inline">
+          {currentLang.code.toUpperCase()}
+        </span>
         <motion.svg
           className="w-3 h-3"
           fill="none"

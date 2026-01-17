@@ -75,10 +75,22 @@
           "Digital Smile Design preview"
         ],
         "process": [
-          { "title": "Consultation", "description": "We discuss your goals and analyze your facial structure." },
-          { "title": "Design", "description": "Digital simulation of your new smile for approval." },
-          { "title": "Preparation", "description": "Minimal preparation of teeth and placement of temporaries." },
-          { "title": "Transformation", "description": "Bonding of final ceramics and final adjustments." }
+          {
+            "title": "Consultation",
+            "description": "We discuss your goals and analyze your facial structure."
+          },
+          {
+            "title": "Design",
+            "description": "Digital simulation of your new smile for approval."
+          },
+          {
+            "title": "Preparation",
+            "description": "Minimal preparation of teeth and placement of temporaries."
+          },
+          {
+            "title": "Transformation",
+            "description": "Bonding of final ceramics and final adjustments."
+          }
         ]
       },
       "implants": {
@@ -92,10 +104,22 @@
           "Biocompatible materials (Titanium or Zirconia)"
         ],
         "process": [
-          { "title": "3D Scan", "description": "CBCT scanning to map bone structure and nerve pathways." },
-          { "title": "Placement", "description": "Precise surgical placement of the implant post." },
-          { "title": "Healing", "description": "Osseointegration period where bone fuses with the implant." },
-          { "title": "Restoration", "description": "Attachment of the custom-made crown or bridge." }
+          {
+            "title": "3D Scan",
+            "description": "CBCT scanning to map bone structure and nerve pathways."
+          },
+          {
+            "title": "Placement",
+            "description": "Precise surgical placement of the implant post."
+          },
+          {
+            "title": "Healing",
+            "description": "Osseointegration period where bone fuses with the implant."
+          },
+          {
+            "title": "Restoration",
+            "description": "Attachment of the custom-made crown or bridge."
+          }
         ]
       },
       "ortho": {
@@ -111,8 +135,14 @@
         "process": [
           { "title": "Assessment", "description": "Digital scanning and bite analysis." },
           { "title": "Planning", "description": "Custom treatment plan and timeline creation." },
-          { "title": "Active Therapy", "description": "Wearing aligners or braces with regular check-ins." },
-          { "title": "Retention", "description": "Custom retainers to maintain your new smile forever." }
+          {
+            "title": "Active Therapy",
+            "description": "Wearing aligners or braces with regular check-ins."
+          },
+          {
+            "title": "Retention",
+            "description": "Custom retainers to maintain your new smile forever."
+          }
         ]
       },
       "general": {
@@ -126,10 +156,22 @@
           "Personalized hygiene plans"
         ],
         "process": [
-          { "title": "Exam", "description": "Comprehensive check-up with low-radiation digital X-rays." },
-          { "title": "Hygiene", "description": "Thorough cleaning and polish by expert hygienists." },
-          { "title": "Education", "description": "Tips and tools tailored to your specific oral biome." },
-          { "title": "Plan", "description": "Long-term maintenance schedule based on risk assessment." }
+          {
+            "title": "Exam",
+            "description": "Comprehensive check-up with low-radiation digital X-rays."
+          },
+          {
+            "title": "Hygiene",
+            "description": "Thorough cleaning and polish by expert hygienists."
+          },
+          {
+            "title": "Education",
+            "description": "Tips and tools tailored to your specific oral biome."
+          },
+          {
+            "title": "Plan",
+            "description": "Long-term maintenance schedule based on risk assessment."
+          }
         ]
       },
       "surgery": {
@@ -143,7 +185,10 @@
           "Gum grafting and contouring"
         ],
         "process": [
-          { "title": "Evaluation", "description": "Review of medical history and surgical planning." },
+          {
+            "title": "Evaluation",
+            "description": "Review of medical history and surgical planning."
+          },
           { "title": "Comfort", "description": "Administration of local anesthesia or sedation." },
           { "title": "Procedure", "description": "Minimally invasive surgical execution." },
           { "title": "Recovery", "description": "Detailed aftercare instructions and follow-up." }
@@ -160,8 +205,14 @@
           "Emergency trauma care"
         ],
         "process": [
-          { "title": "Meet & Greet", "description": "Getting comfortable with the team and environment." },
-          { "title": "Counting Teeth", "description": "Gentle exam to check for cavities and development." },
+          {
+            "title": "Meet & Greet",
+            "description": "Getting comfortable with the team and environment."
+          },
+          {
+            "title": "Counting Teeth",
+            "description": "Gentle exam to check for cavities and development."
+          },
           { "title": "Cleaning", "description": "Soft polishing and hygiene instruction." },
           { "title": "Reward", "description": "Positive reinforcement to build confidence." }
         ]

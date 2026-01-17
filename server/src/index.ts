@@ -35,12 +35,18 @@ async function start() {
         directives: {
           defaultSrc: ["'self'"],
           scriptSrc: ["'self'", "'unsafe-inline'"],
-          styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
-          fontSrc: ["'self'", "https://fonts.gstatic.com"],
-          imgSrc: ["'self'", "data:", "https://images.unsplash.com", "https://*.pexels.com", "https://i.pinimg.com"],
-          mediaSrc: ["'self'", "https://videos.pexels.com", "https://cdn.pixabay.com"],
-          connectSrc: ["'self'", "https://generativelanguage.googleapis.com"],
-          frameSrc: ["'self'", "https://www.google.com"],
+          styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
+          fontSrc: ["'self'", 'https://fonts.gstatic.com'],
+          imgSrc: [
+            "'self'",
+            'data:',
+            'https://images.unsplash.com',
+            'https://*.pexels.com',
+            'https://i.pinimg.com',
+          ],
+          mediaSrc: ["'self'", 'https://videos.pexels.com', 'https://cdn.pixabay.com'],
+          connectSrc: ["'self'", 'https://generativelanguage.googleapis.com'],
+          frameSrc: ["'self'", 'https://www.google.com'],
           objectSrc: ["'none'"],
           upgradeInsecureRequests: [],
         },
@@ -53,7 +59,7 @@ async function start() {
     await fastify.register(rateLimit, {
       max: parseInt(process.env.RATE_LIMIT_MAX || '200', 10),
       timeWindow: process.env.RATE_LIMIT_WINDOW || '1 minute',
-      allowList: (req) => {
+      allowList: req => {
         // Allow internal health checks and optionally authenticated admin calls
         if (req.url === '/health') return true;
         if (adminToken && req.headers.authorization === `Bearer ${adminToken}`) return true;
@@ -63,7 +69,9 @@ async function start() {
 
     // Register CORS
     const parsedOrigins = process.env.CORS_ORIGINS
-      ? process.env.CORS_ORIGINS.split(',').map((o) => o.trim()).filter(Boolean)
+      ? process.env.CORS_ORIGINS.split(',')
+          .map(o => o.trim())
+          .filter(Boolean)
       : undefined;
 
     await fastify.register(cors, {
@@ -117,7 +125,7 @@ async function start() {
 
 // Graceful shutdown
 const signals: NodeJS.Signals[] = ['SIGINT', 'SIGTERM'];
-signals.forEach((signal) => {
+signals.forEach(signal => {
   process.on(signal, async () => {
     fastify.log.info(`Received ${signal}, shutting down gracefully...`);
     await fastify.close();

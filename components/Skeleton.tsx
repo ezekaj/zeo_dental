@@ -50,12 +50,7 @@ export const SkeletonText: React.FC<{ lines?: number; className?: string }> = ({
 }) => (
   <div className={`space-y-2 ${className}`}>
     {Array.from({ length: lines }).map((_, i) => (
-      <Skeleton
-        key={i}
-        variant="text"
-        height={16}
-        width={i === lines - 1 ? '75%' : '100%'}
-      />
+      <Skeleton key={i} variant="text" height={16} width={i === lines - 1 ? '75%' : '100%'} />
     ))}
   </div>
 );
@@ -71,11 +66,4 @@ export const SkeletonCard: React.FC<{ className?: string }> = ({ className = '' 
 export const SkeletonAvatar: React.FC<{ size?: number; className?: string }> = ({
   size = 48,
   className = '',
-}) => (
-  <Skeleton
-    variant="circular"
-    width={size}
-    height={size}
-    className={className}
-  />
-);
+}) => <Skeleton variant="circular" width={size} height={size} className={className} />;

@@ -36,7 +36,6 @@ export const Header: React.FC = () => {
         }`}
       >
         <div className="container mx-auto px-6 md:px-12 grid grid-cols-3 items-center">
-
           {/* Left: Menu */}
           <div className="flex items-center justify-start gap-4">
             <button
@@ -44,11 +43,13 @@ export const Header: React.FC = () => {
               onClick={() => setIsMobileMenuOpen(true)}
               data-cursor="hover"
             >
-               <div className="flex flex-col items-end gap-[5px] w-6 group-hover:gap-[7px] transition-all">
+              <div className="flex flex-col items-end gap-[5px] w-6 group-hover:gap-[7px] transition-all">
                 <span className="w-full h-[1px] bg-current"></span>
                 <span className="w-2/3 h-[1px] bg-current group-hover:w-full transition-all"></span>
               </div>
-              <span className="hidden md:inline-block text-[10px] uppercase tracking-ultra font-medium">{t('nav.menu')}</span>
+              <span className="hidden md:inline-block text-[10px] uppercase tracking-ultra font-medium">
+                {t('nav.menu')}
+              </span>
             </button>
 
             {/* Language Switcher */}
@@ -65,7 +66,11 @@ export const Header: React.FC = () => {
 
           {/* Center: Brand */}
           <div className="flex justify-center">
-             <a href="#" className="font-serif text-2xl tracking-widest relative group" data-cursor="hover">
+            <a
+              href="#"
+              className="font-serif text-2xl tracking-widest relative group"
+              data-cursor="hover"
+            >
               ZEO<span className="text-studio-gold">.</span>
             </a>
           </div>
@@ -94,40 +99,45 @@ export const Header: React.FC = () => {
         }`}
       >
         <div className="container mx-auto px-6 md:px-12 h-full relative">
-            <div className="absolute top-8 right-6 md:top-10 md:right-12">
+          <div className="absolute top-8 right-6 md:top-10 md:right-12">
             <button
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="group p-4 flex items-center gap-4 text-studio-black"
-                data-cursor="hover"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="group p-4 flex items-center gap-4 text-studio-black"
+              data-cursor="hover"
             >
-                <span className="text-[10px] uppercase tracking-ultra">{t('nav.close')}</span>
-                <X className="w-5 h-5 transition-transform group-hover:rotate-90 duration-500" strokeWidth={1} />
+              <span className="text-[10px] uppercase tracking-ultra">{t('nav.close')}</span>
+              <X
+                className="w-5 h-5 transition-transform group-hover:rotate-90 duration-500"
+                strokeWidth={1}
+              />
             </button>
-            </div>
+          </div>
 
-            <div className="h-full flex flex-col justify-center items-center">
+          <div className="h-full flex flex-col justify-center items-center">
             <nav className="flex flex-col items-center space-y-4 md:space-y-8">
-                {NAV_ITEMS.map((item, idx) => (
+              {NAV_ITEMS.map((item, idx) => (
                 <div key={item.labelKey} className="overflow-hidden">
-                    <a
+                  <a
                     href={item.href}
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`block font-serif text-4xl md:text-7xl lg:text-8xl text-studio-black hover:text-studio-gold hover:italic transition-all duration-500 transform ${
-                        isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
+                      isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
                     }`}
                     style={{ transitionDelay: `${300 + idx * 100}ms` }}
                     data-cursor="hover"
-                    >
+                  >
                     {t(item.labelKey)}
-                    </a>
+                  </a>
                 </div>
-                ))}
+              ))}
             </nav>
-            </div>
+          </div>
 
-             <div className="absolute bottom-12 left-0 w-full text-center">
-                <p className="text-[10px] uppercase tracking-ultra text-studio-gray">{t('nav.location')}</p>
-            </div>
+          <div className="absolute bottom-12 left-0 w-full text-center">
+            <p className="text-[10px] uppercase tracking-ultra text-studio-gray">
+              {t('nav.location')}
+            </p>
+          </div>
         </div>
       </div>
     </>

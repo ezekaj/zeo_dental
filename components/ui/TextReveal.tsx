@@ -5,7 +5,7 @@ interface TextRevealProps {
   className?: string;
 }
 
-export const TextReveal: React.FC<TextRevealProps> = ({ children, className = "" }) => {
+export const TextReveal: React.FC<TextRevealProps> = ({ children, className = '' }) => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -32,7 +32,7 @@ export const TextReveal: React.FC<TextRevealProps> = ({ children, className = ""
   }, []);
 
   // Split text into words for finer control
-  const words = children.split(" ");
+  const words = children.split(' ');
 
   return (
     <div ref={containerRef} className={`flex flex-wrap ${className}`}>
@@ -47,7 +47,7 @@ export const TextReveal: React.FC<TextRevealProps> = ({ children, className = ""
             className="mr-[0.25em] transition-opacity duration-500"
             style={{
               opacity: isActive ? 1 : 0.1,
-              transitionDelay: `${i * 10}ms`
+              transitionDelay: `${i * 10}ms`,
             }}
           >
             {word}

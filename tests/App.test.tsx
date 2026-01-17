@@ -1,50 +1,38 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { render, screen, waitFor } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import { render, screen } from '@testing-library/react';
 import App from '../App';
 
-// Mock all child components to isolate App testing
-vi.mock('../components/Navbar', () => ({
-  Navbar: ({ onNavigate }: { onNavigate: (view: string, section?: string) => void }) => (
-    <nav data-testid="navbar">
-      <button onClick={() => onNavigate('home')}>Home</button>
-      <button onClick={() => onNavigate('booking')}>Book</button>
-      <button onClick={() => onNavigate('home', 'services')}>Services</button>
-    </nav>
-  ),
+// Mock child components to isolate App testing
+vi.mock('../components/Header', () => ({
+  Header: () => <header data-testid="header">Header</header>,
 }));
 
 vi.mock('../components/Hero', () => ({
-  Hero: () => <div data-testid="hero">Hero Section</div>,
+  Hero: () => <section data-testid="hero">Hero Section</section>,
 }));
 
-vi.mock('../components/Services', () => ({
-  Services: () => <div data-testid="services">Services Section</div>,
+vi.mock('../components/Treatments', () => ({
+  Treatments: () => <section data-testid="treatments">Treatments Section</section>,
 }));
 
-vi.mock('../components/WhyChooseUs', () => ({
-  WhyChooseUs: () => <div data-testid="why-choose-us">Why Choose Us</div>,
+vi.mock('../components/ServicesGrid', () => ({
+  ServicesGrid: () => <section data-testid="services-grid">Services Grid</section>,
+}));
+
+vi.mock('../components/Philosophy', () => ({
+  Philosophy: () => <section data-testid="philosophy">Philosophy Section</section>,
 }));
 
 vi.mock('../components/Team', () => ({
-  Team: () => <div data-testid="team">Team Section</div>,
+  Team: () => <section data-testid="team">Team Section</section>,
 }));
 
-vi.mock('../components/Testimonials', () => ({
-  Testimonials: () => <div data-testid="testimonials">Testimonials</div>,
+vi.mock('../components/ClinicalCases', () => ({
+  ClinicalCases: () => <section data-testid="clinical-cases">Clinical Cases</section>,
 }));
 
-vi.mock('../components/BookingSection', () => ({
-  BookingSection: ({ onNavigate }: { onNavigate: (view: string) => void }) => (
-    <div data-testid="booking">
-      Booking Section
-      <button onClick={() => onNavigate('home')}>Back Home</button>
-    </div>
-  ),
-}));
-
-vi.mock('../components/ServiceDetail', () => ({
-  ServiceDetail: () => <div data-testid="service-detail">Service Detail</div>,
+vi.mock('../components/Booking', () => ({
+  Booking: () => <section data-testid="booking">Booking Section</section>,
 }));
 
 vi.mock('../components/Footer', () => ({
@@ -55,26 +43,30 @@ vi.mock('../components/ChatWidget', () => ({
   ChatWidget: () => <div data-testid="chat-widget">Chat Widget</div>,
 }));
 
+vi.mock('../components/ErrorBoundary', () => ({
+  ErrorBoundary: ({ children }: { children: React.ReactNode }) => <>{children}</>,
+}));
+
+vi.mock('../contexts/LanguageContext', () => ({
+  LanguageProvider: ({ children }: { children: React.ReactNode }) => <>{children}</>,
+}));
+
 describe('App', () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    // Reset URL
-    window.history.pushState({}, '', '/');
   });
 
-  it('renders home view by default', () => {
+  it('renders all main sections', () => {
     render(<App />);
 
+    expect(screen.getByTestId('header')).toBeInTheDocument();
     expect(screen.getByTestId('hero')).toBeInTheDocument();
-    expect(screen.getByTestId('services')).toBeInTheDocument();
+    expect(screen.getByTestId('treatments')).toBeInTheDocument();
+    expect(screen.getByTestId('services-grid')).toBeInTheDocument();
+    expect(screen.getByTestId('philosophy')).toBeInTheDocument();
     expect(screen.getByTestId('team')).toBeInTheDocument();
-    expect(screen.getByTestId('testimonials')).toBeInTheDocument();
-  });
-
-  it('renders navbar and footer on all views', () => {
-    render(<App />);
-
-    expect(screen.getByTestId('navbar')).toBeInTheDocument();
+    expect(screen.getByTestId('clinical-cases')).toBeInTheDocument();
+    expect(screen.getByTestId('booking')).toBeInTheDocument();
     expect(screen.getByTestId('footer')).toBeInTheDocument();
   });
 
@@ -84,41 +76,7 @@ describe('App', () => {
     expect(screen.getByTestId('chat-widget')).toBeInTheDocument();
   });
 
-  it('navigates to booking view', async () => {
-    render(<App />);
-
-    const user = userEvent.setup();
-    await user.click(screen.getByText('Book'));
-
-    await waitFor(() => {
-      expect(screen.getByTestId('booking')).toBeInTheDocument();
-    });
-
-    // Home sections should not be visible
-    expect(screen.queryByTestId('hero')).not.toBeInTheDocument();
-  });
-
-  it('navigates back to home from booking', async () => {
-    render(<App />);
-
-    const user = userEvent.setup();
-
-    // Go to booking
-    await user.click(screen.getByText('Book'));
-
-    await waitFor(() => {
-      expect(screen.getByTestId('booking')).toBeInTheDocument();
-    });
-
-    // Go back home
-    await user.click(screen.getByText('Back Home'));
-
-    await waitFor(() => {
-      expect(screen.getByTestId('hero')).toBeInTheDocument();
-    });
-  });
-
-  it('includes skip-to-content link', () => {
+  it('includes skip-to-content link for accessibility', () => {
     render(<App />);
 
     const skipLink = screen.getByText('Skip to main content');
@@ -126,7 +84,7 @@ describe('App', () => {
     expect(skipLink).toHaveAttribute('href', '#main-content');
   });
 
-  it('has main element with correct role', () => {
+  it('has main element with correct id', () => {
     render(<App />);
 
     const main = screen.getByRole('main');
@@ -134,43 +92,14 @@ describe('App', () => {
     expect(main).toHaveAttribute('id', 'main-content');
   });
 
-  it('updates document title based on view', async () => {
-    render(<App />);
+  it('renders custom cursor elements', () => {
+    const { container } = render(<App />);
 
-    // Default home title
-    expect(document.title).toContain('Zeo Dental Clinic');
-
-    const user = userEvent.setup();
-
-    // Navigate to booking
-    await user.click(screen.getByText('Book'));
-
-    await waitFor(() => {
-      expect(document.title).toContain('Book Appointment');
-    });
-
-    // Navigate back home
-    await user.click(screen.getByText('Back Home'));
-
-    await waitFor(() => {
-      expect(document.title).toContain('Premium Dental Care');
-    });
+    expect(container.querySelector('.cursor-dot')).toBeInTheDocument();
+    expect(container.querySelector('.cursor-outline')).toBeInTheDocument();
   });
 
-  it('has proper section aria-labels', () => {
-    render(<App />);
-
-    // Check section labels
-    expect(screen.getByLabelText('Welcome')).toBeInTheDocument();
-    expect(screen.getByLabelText('Our Services')).toBeInTheDocument();
-    expect(screen.getByLabelText('Why Choose Us')).toBeInTheDocument();
-    expect(screen.getByLabelText('Our Team')).toBeInTheDocument();
-    expect(screen.getByLabelText('Patient Testimonials')).toBeInTheDocument();
-  });
-
-  it('wraps content in ErrorBoundary', () => {
-    // ErrorBoundary is imported and used in App
-    // We can verify it doesn't crash on normal render
+  it('renders without throwing errors', () => {
     expect(() => render(<App />)).not.toThrow();
   });
 });

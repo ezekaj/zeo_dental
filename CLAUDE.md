@@ -49,11 +49,13 @@ fly deploy           # Deploy to Fly.io
 ```
 
 **Single Page Application with view-based routing** (no react-router):
+
 - `App.tsx` manages view state (`home | booking | service-detail`) via `useState`
 - Navigation uses `window.history.pushState` for URL updates without page reload
 - Browser back/forward handled via `popstate` event listener
 
 **Key Architectural Patterns:**
+
 - Flat component structure in `/components` - no nested directories
 - Centralized data in `constants.ts` (services, doctors, testimonials)
 - Type definitions in `types.ts`
@@ -61,6 +63,7 @@ fly deploy           # Deploy to Fly.io
 - Backend in `server/` directory (Fastify)
 
 **API Endpoints:**
+
 - `POST /api/chat` - Gemini AI proxy with conversation history
 - `POST /api/booking` - Create booking with validation
 - `GET /api/bookings` - List bookings (admin)
@@ -90,11 +93,13 @@ server/
 ## Environment Setup
 
 **Development (frontend .env.local):**
+
 ```bash
 # Not needed for development - API calls go to localhost:3000
 ```
 
 **Server (server/.env or Fly.io secrets):**
+
 ```bash
 GEMINI_API_KEY=your_gemini_api_key
 DATABASE_URL=postgresql://...  # Auto-set by Fly Postgres
@@ -134,6 +139,7 @@ App.tsx
 ## Navigation Pattern
 
 `onNavigate(view, sectionId?, serviceParam?)` is the central navigation handler:
+
 - View switching triggers URL pushState
 - Section scrolling accounts for 80px navbar offset
 - Service context passed to booking/detail views via `serviceParam`
@@ -141,6 +147,7 @@ App.tsx
 ## Production Readiness Assessment: 90/100
 
 **Implemented:**
+
 - Error boundaries with recovery UI
 - ESLint + Prettier for code quality
 - Vitest testing infrastructure with 90+ tests
@@ -155,6 +162,7 @@ App.tsx
 - Health checks and graceful shutdown
 
 **Remaining for 100%:**
+
 - Email notification integration (booking confirmations)
 - Analytics/monitoring setup (consider Posthog or Plausible)
 - i18n support (if international audience needed)

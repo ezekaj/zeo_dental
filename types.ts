@@ -1,4 +1,3 @@
-
 export interface ServiceProcessStep {
   title: string;
   description: string;
@@ -43,5 +42,5 @@ export enum LoadingState {
   IDLE = 'IDLE',
   LOADING = 'LOADING',
   ERROR = 'ERROR',
-  SUCCESS = 'SUCCESS'
+  SUCCESS = 'SUCCESS',
 }

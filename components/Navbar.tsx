@@ -46,7 +46,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled, currentView, onNavigat
 
   const textClasses = isSolidNav ? 'text-slate-900' : 'text-slate-900 md:text-white';
   const buttonClasses = isSolidNav
-    ? 'bg-primary-600 text-white hover:bg-primary-700' 
+    ? 'bg-primary-600 text-white hover:bg-primary-700'
     : 'bg-white text-primary-900 hover:bg-slate-100 md:bg-white/20 md:backdrop-blur-sm md:text-white md:hover:bg-white/30';
 
   const navLinks = [
@@ -79,12 +79,14 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled, currentView, onNavigat
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
+            {navLinks.map(link => (
               <button
                 key={link.name}
                 onClick={() => handleLinkClick(link.id)}
                 className={`text-sm font-medium tracking-wide transition-colors duration-200 hover:text-primary-500 ${textClasses} ${
-                  currentView === 'home' && activeSection === link.id ? 'text-primary-500 font-semibold' : ''
+                  currentView === 'home' && activeSection === link.id
+                    ? 'text-primary-500 font-semibold'
+                    : ''
                 }`}
               >
                 {link.name}
@@ -97,7 +99,9 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled, currentView, onNavigat
                 onNavigate('booking');
               }}
               className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg hover:shadow-xl ${buttonClasses} ${
-                currentView === 'booking' ? 'bg-primary-700 ring-2 ring-primary-500 ring-offset-2' : ''
+                currentView === 'booking'
+                  ? 'bg-primary-700 ring-2 ring-primary-500 ring-offset-2'
+                  : ''
               }`}
             >
               {t('nav.booking')}
@@ -128,12 +132,14 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled, currentView, onNavigat
           aria-label="Mobile navigation"
         >
           <div className="px-4 pt-8 pb-3 space-y-6 flex flex-col items-center">
-            {navLinks.map((link) => (
+            {navLinks.map(link => (
               <button
                 key={link.name}
                 onClick={() => handleLinkClick(link.id)}
                 className={`block text-2xl font-serif hover:text-primary-600 ${
-                  currentView === 'home' && activeSection === link.id ? 'text-primary-600 font-medium' : 'text-slate-800'
+                  currentView === 'home' && activeSection === link.id
+                    ? 'text-primary-600 font-medium'
+                    : 'text-slate-800'
                 }`}
               >
                 {link.name}
@@ -152,8 +158,10 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled, currentView, onNavigat
               {t('nav.booking')}
             </button>
             <div className="mt-8 flex flex-col items-center text-slate-500">
-               <span className="flex items-center gap-2 mb-2"><Phone size={18}/> {t('contact.phone')}</span>
-               <span className="text-sm">{t('contact.addressShort')}</span>
+              <span className="flex items-center gap-2 mb-2">
+                <Phone size={18} /> {t('contact.phone')}
+              </span>
+              <span className="text-sm">{t('contact.addressShort')}</span>
             </div>
           </div>
         </div>

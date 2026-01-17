@@ -34,7 +34,12 @@ export const useTranslation = () => {
         // Key not found, try fallback language (English)
         let fallbackValue: TranslationValue | undefined = translations.en;
         for (const fk of keys) {
-          if (fallbackValue && typeof fallbackValue === 'object' && !Array.isArray(fallbackValue) && fk in fallbackValue) {
+          if (
+            fallbackValue &&
+            typeof fallbackValue === 'object' &&
+            !Array.isArray(fallbackValue) &&
+            fk in fallbackValue
+          ) {
             fallbackValue = (fallbackValue as { [key: string]: TranslationValue })[fk];
           } else {
             fallbackValue = undefined;
@@ -71,7 +76,12 @@ export const useTranslation = () => {
         // Key not found, try fallback language (English)
         let fallbackValue: TranslationValue | undefined = translations.en;
         for (const fk of keys) {
-          if (fallbackValue && typeof fallbackValue === 'object' && !Array.isArray(fallbackValue) && fk in fallbackValue) {
+          if (
+            fallbackValue &&
+            typeof fallbackValue === 'object' &&
+            !Array.isArray(fallbackValue) &&
+            fk in fallbackValue
+          ) {
             fallbackValue = (fallbackValue as { [key: string]: TranslationValue })[fk];
           } else {
             fallbackValue = undefined;

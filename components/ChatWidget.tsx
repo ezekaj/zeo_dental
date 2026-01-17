@@ -19,12 +19,12 @@ export const ChatWidget: React.FC = () => {
         id: 'welcome',
         role: 'model',
         text: t('chat.greeting'),
-        timestamp: new Date()
+        timestamp: new Date(),
       };
       // If no messages yet, just set the welcome message
       if (prev.length === 0) return [welcomeMsg];
       // Otherwise, update only the welcome message, preserve conversation
-      return prev.map(msg => msg.id === 'welcome' ? welcomeMsg : msg);
+      return prev.map(msg => (msg.id === 'welcome' ? welcomeMsg : msg));
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language]);
@@ -44,7 +44,7 @@ export const ChatWidget: React.FC = () => {
       id: Date.now().toString(),
       role: 'user',
       text: inputText,
-      timestamp: new Date()
+      timestamp: new Date(),
     };
 
     setMessages(prev => [...prev, userMsg]);
@@ -57,12 +57,12 @@ export const ChatWidget: React.FC = () => {
         id: (Date.now() + 1).toString(),
         role: 'model',
         text: responseText,
-        timestamp: new Date()
+        timestamp: new Date(),
       };
       setMessages(prev => [...prev, botMsg]);
       setLoadingState(LoadingState.SUCCESS);
     } catch (error) {
-        console.error(error);
+      console.error(error);
       setLoadingState(LoadingState.ERROR);
     }
   };
@@ -102,7 +102,7 @@ export const ChatWidget: React.FC = () => {
 
           {/* Messages Area */}
           <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-primary-50">
-            {messages.map((msg) => (
+            {messages.map(msg => (
               <div
                 key={msg.id}
                 className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
@@ -120,10 +120,10 @@ export const ChatWidget: React.FC = () => {
             ))}
             {loadingState === LoadingState.LOADING && (
               <div className="flex justify-start">
-                 <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-primary-100 flex items-center gap-2">
-                    <Loader2 size={16} className="animate-spin text-primary-500" />
-                    <span className="text-xs text-primary-700">{t('chat.typing')}</span>
-                 </div>
+                <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-primary-100 flex items-center gap-2">
+                  <Loader2 size={16} className="animate-spin text-primary-500" />
+                  <span className="text-xs text-primary-700">{t('chat.typing')}</span>
+                </div>
               </div>
             )}
             <div ref={messagesEndRef} />
@@ -135,7 +135,7 @@ export const ChatWidget: React.FC = () => {
               <input
                 type="text"
                 value={inputText}
-                onChange={(e) => setInputText(e.target.value)}
+                onChange={e => setInputText(e.target.value)}
                 onKeyDown={handleKeyPress}
                 placeholder={t('chat.placeholder')}
                 aria-label="Type your message to the dental assistant"
@@ -151,7 +151,7 @@ export const ChatWidget: React.FC = () => {
               </button>
             </div>
             <div className="text-center mt-2">
-                <span className="text-[10px] text-primary-700">{t('chat.disclaimer')}</span>
+              <span className="text-[10px] text-primary-700">{t('chat.disclaimer')}</span>
             </div>
           </div>
         </div>
@@ -161,12 +161,18 @@ export const ChatWidget: React.FC = () => {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={`p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 ${
-          isOpen ? 'bg-primary-900 rotate-90 text-white' : 'bg-primary-600 text-white animate-pulse-slow'
+          isOpen
+            ? 'bg-primary-900 rotate-90 text-white'
+            : 'bg-primary-600 text-white animate-pulse-slow'
         }`}
         aria-expanded={isOpen}
         aria-label={isOpen ? 'Close chat assistant' : 'Open chat assistant'}
       >
-        {isOpen ? <X size={28} aria-hidden="true" /> : <MessageCircle size={28} aria-hidden="true" />}
+        {isOpen ? (
+          <X size={28} aria-hidden="true" />
+        ) : (
+          <MessageCircle size={28} aria-hidden="true" />
+        )}
       </button>
     </div>
   );
