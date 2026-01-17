@@ -63,6 +63,20 @@ export const Footer: React.FC = () => {
                   <span>&copy; {currentYear} {t('footer.rights')}</span>
                   <span className="hidden md:inline">•</span>
                   <a
+                    href="/privacy-policy"
+                    className="hover:text-studio-gold transition-colors"
+                  >
+                    Privacy Policy
+                  </a>
+                  <span className="hidden md:inline">•</span>
+                  <a
+                    href="/terms-of-service"
+                    className="hover:text-studio-gold transition-colors"
+                  >
+                    Terms of Service
+                  </a>
+                  <span className="hidden md:inline">•</span>
+                  <a
                     href="https://zedigital.tech"
                     target="_blank"
                     rel="noopener noreferrer"
