@@ -10,12 +10,14 @@ export const Booking: React.FC = () => {
     name: '',
     email: '',
     phone: '',
+    date: '',
+    time: 'morning',
     honeypot: '',
   });
 
   const [status, setStatus] = useState<'IDLE' | 'SUBMITTING' | 'SUCCESS' | 'ERROR'>('IDLE');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value,
@@ -39,10 +41,12 @@ export const Booking: React.FC = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          ...formData,
-          date: '',
-          time: '',
-          service: 'General Inquiry',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          date: formData.date,
+          time: formData.time,
+          service: 'General Consultation',
         }),
       });
 
@@ -79,7 +83,7 @@ export const Booking: React.FC = () => {
             <button
               onClick={() => {
                 setStatus('IDLE');
-                setFormData({ name: '', email: '', phone: '', honeypot: '' });
+                setFormData({ name: '', email: '', phone: '', date: '', time: 'morning', honeypot: '' });
               }}
               className="text-[10px] uppercase tracking-ultra text-studio-gold hover:text-white transition-colors"
             >
@@ -152,7 +156,7 @@ export const Booking: React.FC = () => {
               autoComplete="off"
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 mb-12">
               <div className="group relative">
                 <input
                   type="text"
@@ -185,6 +189,36 @@ export const Booking: React.FC = () => {
                   required
                   className="w-full bg-transparent border-b border-white/20 py-4 text-xl font-serif text-white placeholder-white/20 focus:outline-none focus:border-white transition-colors"
                 />
+              </div>
+              <div className="group relative">
+                <label className="text-[10px] uppercase tracking-ultra text-white/40 mb-2 block">
+                  {t('booking.date')}
+                </label>
+                <input
+                  type="date"
+                  name="date"
+                  value={formData.date}
+                  onChange={handleChange}
+                  min={new Date().toISOString().split('T')[0]}
+                  required
+                  className="w-full bg-transparent border-b border-white/20 py-4 text-xl font-serif text-white focus:outline-none focus:border-white transition-colors [color-scheme:dark]"
+                />
+              </div>
+              <div className="group relative">
+                <label className="text-[10px] uppercase tracking-ultra text-white/40 mb-2 block">
+                  {t('booking.time')}
+                </label>
+                <select
+                  name="time"
+                  value={formData.time}
+                  onChange={handleChange}
+                  required
+                  className="w-full bg-transparent border-b border-white/20 py-4 text-xl font-serif text-white focus:outline-none focus:border-white transition-colors appearance-none cursor-pointer"
+                >
+                  <option value="morning" className="bg-studio-black">{t('booking.morning')}</option>
+                  <option value="afternoon" className="bg-studio-black">{t('booking.afternoon')}</option>
+                  <option value="evening" className="bg-studio-black">{t('booking.evening')}</option>
+                </select>
               </div>
             </div>
 
