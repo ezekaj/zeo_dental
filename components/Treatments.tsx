@@ -84,27 +84,27 @@ export const Treatments: React.FC = () => {
   const treatments = [
     {
       key: 'implantology',
-      image: '/images/treatments/implantology.jpg',
+      image: 'https://i.pinimg.com/originals/60/04/b9/6004b9521440d181bde0a734d93b7184.jpg',
     },
     {
       key: 'prosthetics',
-      image: '/images/treatments/prosthetics.jpg',
+      image: 'https://i.pinimg.com/originals/a1/30/09/a130095fbe716c5bb8e7be0713584fd0.jpg',
     },
     {
       key: 'aligners',
-      image: '/images/treatments/aligners.jpg',
+      image: 'https://i.pinimg.com/originals/5a/9e/4b/5a9e4b3d06cecb638556ece73cb0417c.jpg',
     },
     {
       key: 'orthodontics',
-      image: '/images/treatments/orthodontics.jpg',
+      image: 'https://i.pinimg.com/originals/d2/10/e6/d210e6d0cc27fca87fe4245aea34e071.jpg',
     },
     {
       key: 'crowns',
-      image: '/images/treatments/crowns.jpg',
+      image: 'https://i.pinimg.com/originals/3d/90/fd/3d90fd9c0112b18067d6348072116872.jpg',
     },
     {
       key: 'aesthetics',
-      image: '/images/treatments/aesthetics.jpg',
+      image: 'https://i.pinimg.com/originals/e1/9e/6c/e19e6c06f7723fc1752fa56a49c6aad9.jpg',
     },
   ];
 

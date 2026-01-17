@@ -37,7 +37,7 @@ async function start() {
           scriptSrc: ["'self'", "'unsafe-inline'"],
           styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
           fontSrc: ["'self'", "https://fonts.gstatic.com"],
-          imgSrc: ["'self'", "data:", "https://images.unsplash.com", "https://*.pexels.com"],
+          imgSrc: ["'self'", "data:", "https://images.unsplash.com", "https://*.pexels.com", "https://i.pinimg.com"],
           mediaSrc: ["'self'", "https://videos.pexels.com", "https://cdn.pixabay.com"],
           connectSrc: ["'self'", "https://generativelanguage.googleapis.com"],
           frameSrc: ["'self'", "https://www.google.com"],
