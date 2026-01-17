@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import type { ReactNode } from 'react';
 import App from '../App';
 
 // Mock child components to isolate App testing
@@ -44,11 +45,11 @@ vi.mock('../components/ChatWidget', () => ({
 }));
 
 vi.mock('../components/ErrorBoundary', () => ({
-  ErrorBoundary: ({ children }: { children: React.ReactNode }) => <>{children}</>,
+  ErrorBoundary: ({ children }: { children: ReactNode }) => <>{children}</>,
 }));
 
 vi.mock('../contexts/LanguageContext', () => ({
-  LanguageProvider: ({ children }: { children: React.ReactNode }) => <>{children}</>,
+  LanguageProvider: ({ children }: { children: ReactNode }) => <>{children}</>,
 }));
 
 describe('App', () => {
