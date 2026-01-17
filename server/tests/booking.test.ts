@@ -42,7 +42,7 @@ describe('bookingRoutes', () => {
         email: 'john@example.com',
         phone: '+355 68 400 4840',
         service: 'Cosmetic Dentistry',
-        date: '2025-12-25',
+        date: '2027-12-25',
         time: 'morning',
         notes: 'Looking forward',
       },
@@ -67,7 +67,7 @@ describe('bookingRoutes', () => {
         email: 'john@example.com',
         phone: '+355 68 400 4840',
         service: 'Cosmetic Dentistry',
-        date: '2025-12-25',
+        date: '2027-12-25',
         time: 'morning',
       },
     });
