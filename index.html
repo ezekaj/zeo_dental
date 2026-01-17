@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zeo Dental Clinic | Premium Dental Care in Beverly Hills</title>
+    <title>Zeo Dental Clinic | Premium Dental Care in Tiranë, Albania</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Zeo Dental Clinic offers premium cosmetic dentistry, dental implants, orthodontics, and general dental care in Beverly Hills. Experience luxury dental care with advanced technology." />
-    <meta name="keywords" content="dental clinic, cosmetic dentistry, dental implants, orthodontics, Beverly Hills dentist, veneers, teeth whitening, Invisalign" />
+    <meta name="description" content="Zeo Dental Clinic offers premium cosmetic dentistry, dental implants, orthodontics, and general dental care in Tiranë, Albania. Experience luxury dental care with advanced technology." />
+    <meta name="keywords" content="dental clinic, cosmetic dentistry, dental implants, orthodontics, Tiranë dentist, Albania dental, veneers, teeth whitening, Invisalign" />
     <meta name="author" content="Zeo Dental Clinic" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://zeodental.com" />
@@ -18,8 +18,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://zeodental.com" />
-    <meta property="og:title" content="Zeo Dental Clinic | Premium Dental Care in Beverly Hills" />
-    <meta property="og:description" content="Experience luxury dental care with advanced technology. Cosmetic dentistry, implants, orthodontics, and more." />
+    <meta property="og:title" content="Zeo Dental Clinic | Premium Dental Care in Tiranë, Albania" />
+    <meta property="og:description" content="Experience luxury dental care with advanced technology in Tiranë. Cosmetic dentistry, implants, orthodontics, and more." />
     <meta property="og:image" content="https://zeodental.com/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -29,8 +29,8 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://zeodental.com" />
-    <meta name="twitter:title" content="Zeo Dental Clinic | Premium Dental Care" />
-    <meta name="twitter:description" content="Experience luxury dental care with advanced technology in Beverly Hills." />
+    <meta name="twitter:title" content="Zeo Dental Clinic | Premium Dental Care in Tiranë" />
+    <meta name="twitter:description" content="Experience luxury dental care with advanced technology in Tiranë, Albania." />
     <meta name="twitter:image" content="https://zeodental.com/og-image.jpg" />
 
     <!-- Favicon -->
@@ -48,16 +48,16 @@
       "email": "zeodentalclinic@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "123 Premium Blvd",
-        "addressLocality": "Beverly Hills",
-        "addressRegion": "CA",
-        "postalCode": "90210",
-        "addressCountry": "US"
+        "streetAddress": "Rruga Hamdi Sina",
+        "addressLocality": "Tiranë",
+        "addressRegion": "Tiranë",
+        "postalCode": "1001",
+        "addressCountry": "AL"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "34.0736",
-        "longitude": "-118.4004"
+        "latitude": "41.3275",
+        "longitude": "19.8187"
       },
       "openingHoursSpecification": [
         {
@@ -85,135 +85,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              serif: ['"Playfair Display"', 'serif'],
-              sans: ['"Montserrat"', 'sans-serif'],
-            },
-            colors: {
-              'studio-black': '#050505',
-              'studio-white': '#ffffff',
-              'studio-gold': '#C5A47E',
-              'studio-gray': '#999999',
-              'studio-light': '#F9F9F9',
-            },
-            letterSpacing: {
-              'tight': '-0.03em',
-              'normal': '0',
-              'wide': '0.05em',
-              'widest': '0.1em',
-              'ultra': '0.3em',
-            },
-            fontSize: {
-              '2xs': '0.6rem',
-              'hero': 'clamp(4rem, 15vw, 12rem)',
-            },
-            height: {
-              'screen-90': '90vh',
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-        cursor: none; /* Hide default cursor for custom implementation */
-      }
+    <!-- Resource hints for performance -->
+    <link rel="preconnect" href="https://images.unsplash.com">
 
-      body {
-        background-color: #FFFFFF;
-        color: #050505;
-        overflow-x: hidden;
-      }
-
-      /* Custom Cursor */
-      .cursor-dot,
-      .cursor-outline {
-        position: fixed;
-        top: 0;
-        left: 0;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-        z-index: 9999;
-        pointer-events: none;
-      }
-
-      .cursor-dot {
-        width: 8px;
-        height: 8px;
-        background-color: #C5A47E;
-      }
-
-      .cursor-outline {
-        width: 40px;
-        height: 40px;
-        border: 1px solid rgba(197, 164, 126, 0.5);
-        transition: width 0.2s, height 0.2s, background-color 0.2s;
-      }
-
-      body.hovering .cursor-outline {
-        width: 60px;
-        height: 60px;
-        background-color: rgba(197, 164, 126, 0.1);
-        border-color: #C5A47E;
-      }
-
-      /* Mobile override */
-      @media (pointer: coarse) {
-        html { cursor: auto; }
-        .cursor-dot, .cursor-outline { display: none; }
-      }
-
-      /* Smooth Fade Up */
-      .fade-up {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: opacity 1.2s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
-        will-change: opacity, transform;
-      }
-      .fade-up.is-visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      /* Line Animation */
-      .line-grow {
-        width: 0;
-        transition: width 1s cubic-bezier(0.2, 0.8, 0.2, 1);
-      }
-      .line-grow.is-visible {
-        width: 100%;
-      }
-
-      /* Utilities */
-      .text-balance {
-        text-wrap: balance;
-      }
-
-      ::selection {
-        background: #C5A47E;
-        color: white;
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
-    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.1"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-studio-white text-studio-black antialiased">
     <div id="root"></div>
