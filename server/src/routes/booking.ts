@@ -140,7 +140,7 @@ export async function bookingRoutes(fastify: FastifyInstance) {
           from: mailFrom,
           to: booking.email,
           subject: 'We received your booking request',
-          text: `Hi ${booking.name},\n\nThank you for reaching out to Zeo Dental Clinic. We received your request for ${booking.service} on ${booking.preferred_date} (${booking.preferred_time}). Our concierge team will contact you to confirm your appointment.\n\nIf this wasn’t you, please call us at +355 68 400 4840.\n\nZeo Dental Clinic\n123 Premium Blvd, Beverly Hills, CA 90210`,
+          text: `Hi ${booking.name},\n\nThank you for reaching out to Zeo Dental Clinic. We received your request for ${booking.service} on ${booking.preferred_date} (${booking.preferred_time}). Our concierge team will contact you to confirm your appointment.\n\nIf this wasn't you, please call us at +355 68 400 4840.\n\nZeo Dental Clinic\nRruga Hamdi Sina, Tiranë, Albania`,
         };
 
         transporter
