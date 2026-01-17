@@ -447,5 +447,37 @@
     "select": "Zgjidh Gjuhën",
     "albanian": "Shqip",
     "english": "English"
+  },
+  "treatments": {
+    "label": "Trajtimet Tona",
+    "title": "Kujdes i Specializuar",
+    "subtitle": "Nga implantet tek estetika, ofrojmë zgjidhje dentare gjithëpërfshirëse të përshtatura për të rivendosur funksionin, rritur bukurinë dhe transformuar buzëqeshjet me precizitet dhe artizanat.",
+    "bookConsultation": "Rezervo një Konsultë",
+    "items": {
+      "implantology": {
+        "title": "Implantologji",
+        "description": "Implante titani dhe zirkoni të teknologjisë së fundit me kirurgji të udhëhequr 3D për zëvendësim të përhershëm dhe natyral të dhëmbëve."
+      },
+      "prosthetics": {
+        "title": "Protetikë",
+        "description": "Zgjidhje të plota protetike përfshirë ura fikse, proteza të lëvizshme, proteza parciale dhe restaurime mbi implante."
+      },
+      "aligners": {
+        "title": "Maskerina Transparente",
+        "description": "Trajtim ortodontik i padukshëm me maskerina transparente të bëra me porosi për korrigjim diskret të buzëqeshjes pa mbajtëse metalike."
+      },
+      "orthodontics": {
+        "title": "Ortodonci",
+        "description": "Zgjidhje moderne të drejtimit përfshirë aparate qeramike dhe ortodonci tradicionale për kafshim perfekt dhe buzëqeshje të bukur."
+      },
+      "crowns": {
+        "title": "Kurora Dentare",
+        "description": "Kurora premium porcelani dhe zirkoni që restaurojnë dhëmbët e dëmtuar duke përshtatur ngjyrën dhe transparencën natyrale."
+      },
+      "aesthetics": {
+        "title": "Stomatologji Estetike",
+        "description": "Transformoni buzëqeshjen tuaj me faseta, zbardhje dhe lidhje të dizajnuara për të rritur bukurinë natyrale dhe harmoninë e fytyrës."
+      }
+    }
   }
 }

@@ -447,5 +447,37 @@
     "select": "Select Language",
     "albanian": "Shqip",
     "english": "English"
+  },
+  "treatments": {
+    "label": "Our Treatments",
+    "title": "Specialized Care",
+    "subtitle": "From implants to aesthetics, we offer comprehensive dental solutions tailored to restore function, enhance beauty, and transform smiles with precision and artistry.",
+    "bookConsultation": "Book a Consultation",
+    "items": {
+      "implantology": {
+        "title": "Implantology",
+        "description": "State-of-the-art titanium and zirconia implants with 3D guided surgery for permanent, natural-looking tooth replacement."
+      },
+      "prosthetics": {
+        "title": "Prosthetics",
+        "description": "Complete prosthetic solutions including fixed bridges, removable dentures, partial prostheses, and implant-supported restorations."
+      },
+      "aligners": {
+        "title": "Clear Aligners",
+        "description": "Invisible orthodontic treatment with custom-made transparent aligners for discreet smile correction without metal brackets."
+      },
+      "orthodontics": {
+        "title": "Orthodontics",
+        "description": "Modern alignment solutions including ceramic braces and traditional orthodontics for perfect bite and beautiful smile."
+      },
+      "crowns": {
+        "title": "Dental Crowns",
+        "description": "Premium porcelain and zirconia crowns that restore damaged teeth while matching the natural color and translucency."
+      },
+      "aesthetics": {
+        "title": "Aesthetic Dentistry",
+        "description": "Transform your smile with veneers, whitening, and bonding designed to enhance natural beauty and facial harmony."
+      }
+    }
   }
 }
