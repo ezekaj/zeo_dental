@@ -29,7 +29,7 @@ export const Testimonials: React.FC = () => {
                   <Star key={i} size={16} className="text-primary-500" fill="currentColor" />
                 ))}
               </div>
-              <p className="text-primary-800 italic mb-6 relative z-10 font-light text-lg">"{t(`testimonials.items.${testimonial.id}.content`)}"</p>
+              <p className="text-primary-800 italic mb-6 relative z-10 font-light text-lg">&ldquo;{t(`testimonials.items.${testimonial.id}.content`)}&rdquo;</p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center font-serif font-bold text-primary-800">
                     {t(`testimonials.items.${testimonial.id}.name`).charAt(0)}

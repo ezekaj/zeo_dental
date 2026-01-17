@@ -23,7 +23,7 @@ export const Philosophy: React.FC = () => {
                                     className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-[1.5s] ease-out hover:scale-105"
                                 />
                                 <div className="absolute bottom-6 left-6 right-6 p-6 bg-white/90 backdrop-blur-sm opacity-0 hover:opacity-100 transition-opacity duration-500">
-                                    <p className="font-serif italic text-lg text-studio-black">"{t('philosophy.quote')}"</p>
+                                    <p className="font-serif italic text-lg text-studio-black">&ldquo;{t('philosophy.quote')}&rdquo;</p>
                                 </div>
                             </div>
                         </Reveal>

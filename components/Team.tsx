@@ -70,7 +70,7 @@ export const Team: React.FC = () => {
 
                             <div className="mt-12 pt-8 border-t border-gray-100">
                                 <p className="font-serif italic text-studio-gray text-lg">
-                                    "{t(`team.doctors.${founder.id}.quote`)}"
+                                    &ldquo;{t(`team.doctors.${founder.id}.quote`)}&rdquo;
                                 </p>
                             </div>
                         </Reveal>

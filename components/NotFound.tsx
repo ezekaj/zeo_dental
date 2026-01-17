@@ -1,9 +1,6 @@
 import React from 'react';
-import { useTranslation } from '../hooks/useTranslation';
 
 export const NotFound: React.FC = () => {
-  const { t } = useTranslation();
-
   return (
     <div className="min-h-screen bg-studio-white flex flex-col items-center justify-center px-4">
       <div className="text-center max-w-md">
@@ -18,7 +15,7 @@ export const NotFound: React.FC = () => {
             Page Not Found
           </h2>
           <p className="text-studio-gray font-light mb-8">
-            The page you're looking for doesn't exist or has been moved.
+            The page you&apos;re looking for doesn&apos;t exist or has been moved.
           </p>
 
           {/* Return Home Button */}
