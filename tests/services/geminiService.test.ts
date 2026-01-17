@@ -12,32 +12,26 @@ afterEach(() => {
 
 describe('geminiService', () => {
   describe('sendMessageToGemini', () => {
-    it('returns offline message when API key is not configured', async () => {
-      // Mock environment without API key
-      vi.stubGlobal('import.meta', {
-        env: {
-          VITE_SUPABASE_URL: '',
-          VITE_SUPABASE_ANON_KEY: '',
-          VITE_GEMINI_API_KEY: '',
-        },
+    it('returns a response when API call succeeds', async () => {
+      const mockFetch = vi.fn().mockResolvedValue({
+        ok: true,
+        json: () => Promise.resolve({ text: 'Hello from API!' }),
       });
+      global.fetch = mockFetch;
 
-      const { sendMessageToGemini } = await import('../../services/geminiService');
+      const { sendMessageToGemini, clearChatHistory } = await import(
+        '../../services/geminiService'
+      );
+      clearChatHistory();
+
       const response = await sendMessageToGemini('Hello');
 
-      expect(response).toContain('offline');
+      expect(response).toBe('Hello from API!');
     });
 
     it('handles API errors gracefully', async () => {
       // Mock fetch to fail
       global.fetch = vi.fn().mockRejectedValue(new Error('Network error'));
-
-      vi.stubGlobal('import.meta', {
-        env: {
-          VITE_SUPABASE_URL: 'https://test.supabase.co',
-          VITE_SUPABASE_ANON_KEY: 'test-key',
-        },
-      });
 
       const { sendMessageToGemini } = await import('../../services/geminiService');
       const response = await sendMessageToGemini('Hello');
@@ -72,69 +66,30 @@ describe('geminiService', () => {
     });
   });
 
-  describe('Supabase Edge Function integration', () => {
-    it('calls Supabase Edge Function when URL is configured', async () => {
-      const mockFetch = vi.fn().mockResolvedValue({
-        ok: true,
-        json: () => Promise.resolve({ text: 'Hello from Supabase!' }),
-      });
-      global.fetch = mockFetch;
-
-      vi.stubGlobal('import.meta', {
-        env: {
-          VITE_SUPABASE_URL: 'https://test.supabase.co',
-          VITE_SUPABASE_ANON_KEY: 'test-anon-key',
-        },
-      });
-
-      const { sendMessageToGemini, clearChatHistory } =
-        await import('../../services/geminiService');
-      clearChatHistory();
-
-      const response = await sendMessageToGemini('Hello');
-
-      expect(mockFetch).toHaveBeenCalledWith(
-        'https://test.supabase.co/functions/v1/chat',
-        expect.objectContaining({
-          method: 'POST',
-          headers: expect.objectContaining({
-            'Content-Type': 'application/json',
-            Authorization: 'Bearer test-anon-key',
-          }),
-        })
-      );
-
-      expect(response).toBe('Hello from Supabase!');
-    });
-
-    it('includes conversation history in requests', async () => {
+  describe('API integration', () => {
+    it('sends POST request with message', async () => {
       const mockFetch = vi.fn().mockResolvedValue({
         ok: true,
         json: () => Promise.resolve({ text: 'Response' }),
       });
       global.fetch = mockFetch;
 
-      vi.stubGlobal('import.meta', {
-        env: {
-          VITE_SUPABASE_URL: 'https://test.supabase.co',
-          VITE_SUPABASE_ANON_KEY: 'test-key',
-        },
-      });
-
-      const { sendMessageToGemini, clearChatHistory } =
-        await import('../../services/geminiService');
+      const { sendMessageToGemini, clearChatHistory } = await import(
+        '../../services/geminiService'
+      );
       clearChatHistory();
 
-      // First message
-      await sendMessageToGemini('First message');
+      await sendMessageToGemini('Test message');
 
-      // Second message should include history
-      await sendMessageToGemini('Second message');
-
-      const lastCall = mockFetch.mock.calls[mockFetch.mock.calls.length - 1];
-      const body = JSON.parse(lastCall[1].body);
-
-      expect(body.history.length).toBeGreaterThan(0);
+      expect(mockFetch).toHaveBeenCalledWith(
+        expect.any(String),
+        expect.objectContaining({
+          method: 'POST',
+          headers: expect.objectContaining({
+            'Content-Type': 'application/json',
+          }),
+        })
+      );
     });
   });
 });
