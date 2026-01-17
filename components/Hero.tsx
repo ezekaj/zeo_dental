@@ -30,7 +30,15 @@ export const Hero: React.FC = () => {
           playsInline
           className="w-full h-full object-cover opacity-50 grayscale contrast-125"
           poster="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2574&auto=format&fit=crop"
+          onError={(e) => {
+            // Hide video on error, fallback to poster image
+            const target = e.currentTarget;
+            target.style.display = 'none';
+          }}
         >
+          {/* Primary: Pexels dental video (more reliable) */}
+          <source src="https://videos.pexels.com/video-files/3873195/3873195-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+          {/* Fallback: Original Pixabay video */}
           <source src="https://cdn.pixabay.com/video/2021/07/13/81806-574739932_large.mp4" type="video/mp4" />
         </video>
         {/* Grain Overlay */}
