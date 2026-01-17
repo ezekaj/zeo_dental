@@ -16,10 +16,6 @@ vi.mock('../components/Treatments', () => ({
   Treatments: () => <section data-testid="treatments">Treatments Section</section>,
 }));
 
-vi.mock('../components/ServicesGrid', () => ({
-  ServicesGrid: () => <section data-testid="services-grid">Services Grid</section>,
-}));
-
 vi.mock('../components/Philosophy', () => ({
   Philosophy: () => <section data-testid="philosophy">Philosophy Section</section>,
 }));
@@ -63,7 +59,6 @@ describe('App', () => {
     expect(screen.getByTestId('header')).toBeInTheDocument();
     expect(screen.getByTestId('hero')).toBeInTheDocument();
     expect(screen.getByTestId('treatments')).toBeInTheDocument();
-    expect(screen.getByTestId('services-grid')).toBeInTheDocument();
     expect(screen.getByTestId('philosophy')).toBeInTheDocument();
     expect(screen.getByTestId('team')).toBeInTheDocument();
     expect(screen.getByTestId('clinical-cases')).toBeInTheDocument();

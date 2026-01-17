@@ -182,16 +182,9 @@ export const Treatments: React.FC = () => {
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
-        <div
-          ref={trackRef}
-          className="flex"
-          style={{ willChange: 'transform' }}
-        >
+        <div ref={trackRef} className="flex" style={{ willChange: 'transform' }}>
           {loopedTreatments.map((treatment, index) => (
-            <div
-              key={`${treatment.key}-${index}`}
-              className="border-r border-gray-100"
-            >
+            <div key={`${treatment.key}-${index}`} className="border-r border-gray-100">
               <TreatmentItem
                 number={String((index % treatments.length) + 1).padStart(2, '0')}
                 title={t(`treatments.items.${treatment.key}.title`)}
