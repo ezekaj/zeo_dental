@@ -78,6 +78,9 @@ Object.defineProperty(window, 'scrollTo', {
   value: vi.fn(),
 });
 
+// Mock scrollIntoView
+Element.prototype.scrollIntoView = vi.fn();
+
 // Mock fetch for API tests
 global.fetch = vi.fn();
 
