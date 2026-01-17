@@ -6,6 +6,7 @@ import { Philosophy } from './components/Philosophy';
 import { Team } from './components/Team';
 import { ClinicalCases } from './components/ClinicalCases';
 import { Booking } from './components/Booking';
+import { Footer } from './components/Footer';
 import { ChatWidget } from './components/ChatWidget';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { LanguageProvider } from './contexts/LanguageContext';
@@ -58,8 +59,13 @@ const App: React.FC = () => {
           <div ref={cursorDotRef} className="cursor-dot"></div>
           <div ref={cursorOutlineRef} className="cursor-outline"></div>
 
+          {/* Skip link for accessibility */}
+          <a href="#main-content" className="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-studio-gold focus:text-white focus:rounded">
+            Skip to main content
+          </a>
+
           <Header />
-          <main>
+          <main id="main-content" tabIndex={-1}>
             <Hero />
             <ServicesGrid />
             <Philosophy />
@@ -67,6 +73,7 @@ const App: React.FC = () => {
             <ClinicalCases />
             <Booking />
           </main>
+          <Footer />
           <ChatWidget />
         </div>
       </ErrorBoundary>
