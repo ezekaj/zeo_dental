@@ -83,7 +83,14 @@ export const Booking: React.FC = () => {
             <button
               onClick={() => {
                 setStatus('IDLE');
-                setFormData({ name: '', email: '', phone: '', date: '', time: 'morning', honeypot: '' });
+                setFormData({
+                  name: '',
+                  email: '',
+                  phone: '',
+                  date: '',
+                  time: 'morning',
+                  honeypot: '',
+                });
               }}
               className="text-[10px] uppercase tracking-ultra text-studio-gold hover:text-white transition-colors"
             >
@@ -215,9 +222,15 @@ export const Booking: React.FC = () => {
                   required
                   className="w-full bg-transparent border-b border-white/20 py-4 text-xl font-serif text-white focus:outline-none focus:border-white transition-colors appearance-none cursor-pointer"
                 >
-                  <option value="morning" className="bg-studio-black">{t('booking.morning')}</option>
-                  <option value="afternoon" className="bg-studio-black">{t('booking.afternoon')}</option>
-                  <option value="evening" className="bg-studio-black">{t('booking.evening')}</option>
+                  <option value="morning" className="bg-studio-black">
+                    {t('booking.morning')}
+                  </option>
+                  <option value="afternoon" className="bg-studio-black">
+                    {t('booking.afternoon')}
+                  </option>
+                  <option value="evening" className="bg-studio-black">
+                    {t('booking.evening')}
+                  </option>
                 </select>
               </div>
             </div>

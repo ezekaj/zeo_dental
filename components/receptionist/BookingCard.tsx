@@ -122,7 +122,7 @@ export const BookingCard: React.FC<BookingCardProps> = ({
       {isPending && (
         <div className="flex gap-2 pt-4 border-t border-gray-100">
           <button
-            onClick={(e) => {
+            onClick={e => {
               e.stopPropagation();
               onConfirm(booking);
             }}
@@ -132,7 +132,7 @@ export const BookingCard: React.FC<BookingCardProps> = ({
             {t('receptionist.actions.confirm')}
           </button>
           <button
-            onClick={(e) => {
+            onClick={e => {
               e.stopPropagation();
               onCancel(booking);
             }}
@@ -148,7 +148,8 @@ export const BookingCard: React.FC<BookingCardProps> = ({
       {booking.notes && (
         <div className="mt-4 pt-4 border-t border-gray-100">
           <p className="text-xs text-studio-gray line-clamp-2">
-            <span className="font-semibold">{t('receptionist.booking.notes')}:</span> {booking.notes}
+            <span className="font-semibold">{t('receptionist.booking.notes')}:</span>{' '}
+            {booking.notes}
           </p>
         </div>
       )}

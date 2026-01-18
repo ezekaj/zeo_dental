@@ -54,23 +54,26 @@ export const ReceptionistApp: React.FC = () => {
   };
 
   // API helpers
-  const fetchWithAuth = useCallback(async (url: string, options: RequestInit = {}) => {
-    const response = await fetch(url, {
-      ...options,
-      headers: {
-        ...options.headers,
-        'Authorization': `Bearer ${token}`,
-        'Content-Type': 'application/json',
-      },
-    });
+  const fetchWithAuth = useCallback(
+    async (url: string, options: RequestInit = {}) => {
+      const response = await fetch(url, {
+        ...options,
+        headers: {
+          ...options.headers,
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+      });
 
-    if (response.status === 401) {
-      handleLogout();
-      throw new Error('Unauthorized');
-    }
+      if (response.status === 401) {
+        handleLogout();
+        throw new Error('Unauthorized');
+      }
 
-    return response;
-  }, [token]);
+      return response;
+    },
+    [token]
+  );
 
   // Fetch stats
   const fetchStats = useCallback(async () => {
@@ -266,7 +269,7 @@ export const ReceptionistApp: React.FC = () => {
             <Filter className="w-4 h-4 text-studio-gray" />
             <select
               value={statusFilter}
-              onChange={(e) => setStatusFilter(e.target.value)}
+              onChange={e => setStatusFilter(e.target.value)}
               className="border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:border-studio-gold transition-colors"
             >
               <option value="">{t('receptionist.filters.all')}</option>
@@ -284,7 +287,7 @@ export const ReceptionistApp: React.FC = () => {
             <input
               type="text"
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={e => setSearchQuery(e.target.value)}
               placeholder={t('receptionist.filters.search')}
               className="flex-1 border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:border-studio-gold transition-colors"
             />
@@ -316,19 +319,19 @@ export const ReceptionistApp: React.FC = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {bookings.map((booking) => (
+            {bookings.map(booking => (
               <BookingCard
                 key={booking.id}
                 booking={booking}
-                onView={(b) => {
+                onView={b => {
                   setSelectedBooking(b);
                   setModalMode('view');
                 }}
-                onConfirm={(b) => {
+                onConfirm={b => {
                   setSelectedBooking(b);
                   setModalMode('confirm');
                 }}
-                onCancel={(b) => {
+                onCancel={b => {
                   setSelectedBooking(b);
                   setModalMode('cancel');
                 }}

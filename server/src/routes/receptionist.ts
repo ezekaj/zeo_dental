@@ -63,13 +63,21 @@ export async function receptionistRoutes(fastify: FastifyInstance) {
         const pool = fastify.pg;
 
         const today = new Date().toISOString().split('T')[0];
-        const weekFromNow = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+        const weekFromNow = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
+          .toISOString()
+          .split('T')[0];
 
         const [pendingResult, todayResult, weekResult, confirmedTodayResult] = await Promise.all([
           pool.query("SELECT COUNT(*) FROM bookings WHERE status = 'pending'"),
           pool.query('SELECT COUNT(*) FROM bookings WHERE preferred_date = $1', [today]),
-          pool.query('SELECT COUNT(*) FROM bookings WHERE preferred_date BETWEEN $1 AND $2', [today, weekFromNow]),
-          pool.query("SELECT COUNT(*) FROM bookings WHERE confirmed_date = $1 AND status = 'confirmed'", [today]),
+          pool.query('SELECT COUNT(*) FROM bookings WHERE preferred_date BETWEEN $1 AND $2', [
+            today,
+            weekFromNow,
+          ]),
+          pool.query(
+            "SELECT COUNT(*) FROM bookings WHERE confirmed_date = $1 AND status = 'confirmed'",
+            [today]
+          ),
         ]);
 
         return reply.send({
@@ -126,14 +134,20 @@ export async function receptionistRoutes(fastify: FastifyInstance) {
           paramIndex++;
         }
 
-        const whereClause = whereConditions.length > 0 ? `WHERE ${whereConditions.join(' AND ')}` : '';
+        const whereClause =
+          whereConditions.length > 0 ? `WHERE ${whereConditions.join(' AND ')}` : '';
 
         // Get total count
-        const countResult = await pool.query(`SELECT COUNT(*) FROM bookings ${whereClause}`, params);
+        const countResult = await pool.query(
+          `SELECT COUNT(*) FROM bookings ${whereClause}`,
+          params
+        );
         const total = parseInt(countResult.rows[0].count, 10);
 
         // Get pending count
-        const pendingResult = await pool.query("SELECT COUNT(*) FROM bookings WHERE status = 'pending'");
+        const pendingResult = await pool.query(
+          "SELECT COUNT(*) FROM bookings WHERE status = 'pending'"
+        );
         const pending_count = parseInt(pendingResult.rows[0].count, 10);
 
         // Get bookings
@@ -152,7 +166,10 @@ export async function receptionistRoutes(fastify: FastifyInstance) {
           pending_count,
         });
       } catch (err) {
-        fastify.log.error('Bookings list error: %s', err instanceof Error ? err.message : String(err));
+        fastify.log.error(
+          'Bookings list error: %s',
+          err instanceof Error ? err.message : String(err)
+        );
         return reply.status(500).send({
           success: false,
           bookings: [],
@@ -180,7 +197,10 @@ export async function receptionistRoutes(fastify: FastifyInstance) {
 
         return reply.send({ success: true, booking: result.rows[0] });
       } catch (err) {
-        fastify.log.error('Get booking error: %s', err instanceof Error ? err.message : String(err));
+        fastify.log.error(
+          'Get booking error: %s',
+          err instanceof Error ? err.message : String(err)
+        );
         return reply.status(500).send({ success: false, error: 'Failed to fetch booking' });
       }
     }
@@ -225,7 +245,10 @@ export async function receptionistRoutes(fastify: FastifyInstance) {
             whatsapp_sent = true;
             await pool.query('UPDATE bookings SET whatsapp_sent = TRUE WHERE id = $1', [id]);
           } catch (whatsappErr) {
-            fastify.log.error('WhatsApp error: %s', whatsappErr instanceof Error ? whatsappErr.message : String(whatsappErr));
+            fastify.log.error(
+              'WhatsApp error: %s',
+              whatsappErr instanceof Error ? whatsappErr.message : String(whatsappErr)
+            );
           }
         }
 
@@ -234,13 +257,23 @@ export async function receptionistRoutes(fastify: FastifyInstance) {
           try {
             await sendConfirmationEmail(booking, fastify);
             email_sent = true;
-            await pool.query('UPDATE bookings SET confirmation_email_sent = TRUE WHERE id = $1', [id]);
+            await pool.query('UPDATE bookings SET confirmation_email_sent = TRUE WHERE id = $1', [
+              id,
+            ]);
           } catch (emailErr) {
-            fastify.log.error('Email error: %s', emailErr instanceof Error ? emailErr.message : String(emailErr));
+            fastify.log.error(
+              'Email error: %s',
+              emailErr instanceof Error ? emailErr.message : String(emailErr)
+            );
           }
         }
 
-        fastify.log.info('Booking %s confirmed. WhatsApp: %s, Email: %s', id, whatsapp_sent, email_sent);
+        fastify.log.info(
+          'Booking %s confirmed. WhatsApp: %s, Email: %s',
+          id,
+          whatsapp_sent,
+          email_sent
+        );
 
         return reply.send({
           success: true,
@@ -250,7 +283,10 @@ export async function receptionistRoutes(fastify: FastifyInstance) {
           email_sent,
         });
       } catch (err) {
-        fastify.log.error('Confirm booking error: %s', err instanceof Error ? err.message : String(err));
+        fastify.log.error(
+          'Confirm booking error: %s',
+          err instanceof Error ? err.message : String(err)
+        );
         return reply.status(500).send({ success: false, error: 'Failed to confirm booking' });
       }
     }
@@ -288,14 +324,20 @@ export async function receptionistRoutes(fastify: FastifyInstance) {
             try {
               await sendWhatsAppCancellation(booking);
             } catch (err) {
-              fastify.log.error('WhatsApp cancellation error: %s', err instanceof Error ? err.message : String(err));
+              fastify.log.error(
+                'WhatsApp cancellation error: %s',
+                err instanceof Error ? err.message : String(err)
+              );
             }
           }
           if (booking.email) {
             try {
               await sendCancellationEmail(booking, fastify);
             } catch (err) {
-              fastify.log.error('Email cancellation error: %s', err instanceof Error ? err.message : String(err));
+              fastify.log.error(
+                'Email cancellation error: %s',
+                err instanceof Error ? err.message : String(err)
+              );
             }
           }
         }
@@ -308,7 +350,10 @@ export async function receptionistRoutes(fastify: FastifyInstance) {
           booking: result.rows[0],
         });
       } catch (err) {
-        fastify.log.error('Cancel booking error: %s', err instanceof Error ? err.message : String(err));
+        fastify.log.error(
+          'Cancel booking error: %s',
+          err instanceof Error ? err.message : String(err)
+        );
         return reply.status(500).send({ success: false, error: 'Failed to cancel booking' });
       }
     }
@@ -344,7 +389,10 @@ export async function receptionistRoutes(fastify: FastifyInstance) {
           booking: result.rows[0],
         });
       } catch (err) {
-        fastify.log.error('Update status error: %s', err instanceof Error ? err.message : String(err));
+        fastify.log.error(
+          'Update status error: %s',
+          err instanceof Error ? err.message : String(err)
+        );
         return reply.status(500).send({ success: false, error: 'Failed to update status' });
       }
     }

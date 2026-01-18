@@ -37,35 +37,38 @@ function getConfirmationEmailHtml(booking: Booking, language: 'sq' | 'en' = 'sq'
   const confirmedDate = booking.confirmed_date || booking.preferred_date;
   const confirmedTime = booking.confirmed_time || booking.preferred_time;
 
-  const content = language === 'sq' ? {
-    subject: `Takimi juaj është konfirmuar - Zeo Dental`,
-    greeting: `I/E nderuar ${booking.name}`,
-    intro: `Takimi juaj është konfirmuar me sukses.`,
-    detailsTitle: `Detajet e takimit`,
-    service: `Shërbimi`,
-    date: `Data`,
-    time: `Ora`,
-    address: `Adresa`,
-    addressValue: `Rruga Hamdi Sina, Tiranë, Shqipëri`,
-    contact: `Për ndryshime na kontaktoni`,
-    phone: `+355 68 400 4840`,
-    footer: `Ju faleminderit që zgjidhni Zeo Dental!`,
-    note: `Ju lutemi paraqituni 10 minuta përpara orarit të caktuar.`,
-  } : {
-    subject: `Your Appointment is Confirmed - Zeo Dental`,
-    greeting: `Dear ${booking.name}`,
-    intro: `Your appointment has been successfully confirmed.`,
-    detailsTitle: `Appointment Details`,
-    service: `Service`,
-    date: `Date`,
-    time: `Time`,
-    address: `Address`,
-    addressValue: `Rruga Hamdi Sina, Tirana, Albania`,
-    contact: `For changes, contact us`,
-    phone: `+355 68 400 4840`,
-    footer: `Thank you for choosing Zeo Dental!`,
-    note: `Please arrive 10 minutes before your scheduled time.`,
-  };
+  const content =
+    language === 'sq'
+      ? {
+          subject: `Takimi juaj është konfirmuar - Zeo Dental`,
+          greeting: `I/E nderuar ${booking.name}`,
+          intro: `Takimi juaj është konfirmuar me sukses.`,
+          detailsTitle: `Detajet e takimit`,
+          service: `Shërbimi`,
+          date: `Data`,
+          time: `Ora`,
+          address: `Adresa`,
+          addressValue: `Rruga Hamdi Sina, Tiranë, Shqipëri`,
+          contact: `Për ndryshime na kontaktoni`,
+          phone: `+355 68 400 4840`,
+          footer: `Ju faleminderit që zgjidhni Zeo Dental!`,
+          note: `Ju lutemi paraqituni 10 minuta përpara orarit të caktuar.`,
+        }
+      : {
+          subject: `Your Appointment is Confirmed - Zeo Dental`,
+          greeting: `Dear ${booking.name}`,
+          intro: `Your appointment has been successfully confirmed.`,
+          detailsTitle: `Appointment Details`,
+          service: `Service`,
+          date: `Date`,
+          time: `Time`,
+          address: `Address`,
+          addressValue: `Rruga Hamdi Sina, Tirana, Albania`,
+          contact: `For changes, contact us`,
+          phone: `+355 68 400 4840`,
+          footer: `Thank you for choosing Zeo Dental!`,
+          note: `Please arrive 10 minutes before your scheduled time.`,
+        };
 
   return `
 <!DOCTYPE html>
@@ -245,25 +248,28 @@ function getConfirmationEmailHtml(booking: Booking, language: 'sq' | 'en' = 'sq'
 
 // HTML Email Template for Cancellation
 function getCancellationEmailHtml(booking: Booking, language: 'sq' | 'en' = 'sq'): string {
-  const content = language === 'sq' ? {
-    subject: `Takimi juaj është anuluar - Zeo Dental`,
-    greeting: `I/E nderuar ${booking.name}`,
-    intro: `Ju informojmë që takimi juaj është anuluar.`,
-    reason: booking.cancellation_reason ? `Arsyeja: ${booking.cancellation_reason}` : '',
-    reschedule: `Për të ricaktuar një takim të ri, na kontaktoni:`,
-    phone: `+355 68 400 4840`,
-    email: `zeodentalclinic@gmail.com`,
-    footer: `Zeo Dental Clinic`,
-  } : {
-    subject: `Your Appointment has been Cancelled - Zeo Dental`,
-    greeting: `Dear ${booking.name}`,
-    intro: `We inform you that your appointment has been cancelled.`,
-    reason: booking.cancellation_reason ? `Reason: ${booking.cancellation_reason}` : '',
-    reschedule: `To reschedule a new appointment, contact us:`,
-    phone: `+355 68 400 4840`,
-    email: `zeodentalclinic@gmail.com`,
-    footer: `Zeo Dental Clinic`,
-  };
+  const content =
+    language === 'sq'
+      ? {
+          subject: `Takimi juaj është anuluar - Zeo Dental`,
+          greeting: `I/E nderuar ${booking.name}`,
+          intro: `Ju informojmë që takimi juaj është anuluar.`,
+          reason: booking.cancellation_reason ? `Arsyeja: ${booking.cancellation_reason}` : '',
+          reschedule: `Për të ricaktuar një takim të ri, na kontaktoni:`,
+          phone: `+355 68 400 4840`,
+          email: `zeodentalclinic@gmail.com`,
+          footer: `Zeo Dental Clinic`,
+        }
+      : {
+          subject: `Your Appointment has been Cancelled - Zeo Dental`,
+          greeting: `Dear ${booking.name}`,
+          intro: `We inform you that your appointment has been cancelled.`,
+          reason: booking.cancellation_reason ? `Reason: ${booking.cancellation_reason}` : '',
+          reschedule: `To reschedule a new appointment, contact us:`,
+          phone: `+355 68 400 4840`,
+          email: `zeodentalclinic@gmail.com`,
+          footer: `Zeo Dental Clinic`,
+        };
 
   return `
 <!DOCTYPE html>
@@ -384,7 +390,10 @@ function getCancellationEmailHtml(booking: Booking, language: 'sq' | 'en' = 'sq'
 }
 
 // Send confirmation email
-export async function sendConfirmationEmail(booking: Booking, fastify: FastifyInstance): Promise<boolean> {
+export async function sendConfirmationEmail(
+  booking: Booking,
+  fastify: FastifyInstance
+): Promise<boolean> {
   if (!mailEnabled || !transporter) {
     fastify.log.warn('Mail not configured; skipping confirmation email');
     return false;
@@ -404,13 +413,19 @@ export async function sendConfirmationEmail(booking: Booking, fastify: FastifyIn
     fastify.log.info('Confirmation email sent to %s', booking.email);
     return true;
   } catch (error) {
-    fastify.log.error('Confirmation email error: %s', error instanceof Error ? error.message : String(error));
+    fastify.log.error(
+      'Confirmation email error: %s',
+      error instanceof Error ? error.message : String(error)
+    );
     return false;
   }
 }
 
 // Send cancellation email
-export async function sendCancellationEmail(booking: Booking, fastify: FastifyInstance): Promise<boolean> {
+export async function sendCancellationEmail(
+  booking: Booking,
+  fastify: FastifyInstance
+): Promise<boolean> {
   if (!mailEnabled || !transporter) {
     fastify.log.warn('Mail not configured; skipping cancellation email');
     return false;
@@ -430,7 +445,10 @@ export async function sendCancellationEmail(booking: Booking, fastify: FastifyIn
     fastify.log.info('Cancellation email sent to %s', booking.email);
     return true;
   } catch (error) {
-    fastify.log.error('Cancellation email error: %s', error instanceof Error ? error.message : String(error));
+    fastify.log.error(
+      'Cancellation email error: %s',
+      error instanceof Error ? error.message : String(error)
+    );
     return false;
   }
 }

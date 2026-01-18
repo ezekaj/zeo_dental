@@ -59,7 +59,7 @@ export const ReceptionistLogin: React.FC<ReceptionistLoginProps> = ({ onLogin })
             <input
               type="password"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={e => setPassword(e.target.value)}
               className="w-full bg-transparent border-b border-white/20 py-4 text-xl font-serif text-white placeholder-white/20 focus:outline-none focus:border-studio-gold transition-colors"
               placeholder="••••••••"
               required
@@ -67,11 +67,7 @@ export const ReceptionistLogin: React.FC<ReceptionistLoginProps> = ({ onLogin })
             />
           </div>
 
-          {error && (
-            <div className="text-red-400 text-sm text-center">
-              {error}
-            </div>
-          )}
+          {error && <div className="text-red-400 text-sm text-center">{error}</div>}
 
           <button
             type="submit"

@@ -88,16 +88,32 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
   };
 
   const timeSlots = [
-    '09:00', '09:30', '10:00', '10:30', '11:00', '11:30',
-    '12:00', '14:00', '14:30', '15:00', '15:30', '16:00',
-    '16:30', '17:00', '17:30', '18:00'
+    '09:00',
+    '09:30',
+    '10:00',
+    '10:30',
+    '11:00',
+    '11:30',
+    '12:00',
+    '14:00',
+    '14:30',
+    '15:00',
+    '15:30',
+    '16:00',
+    '16:30',
+    '17:00',
+    '17:30',
+    '18:00',
   ];
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50" onClick={onClose}>
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50"
+      onClick={onClose}
+    >
       <div
         className="bg-white w-full max-w-lg max-h-[90vh] overflow-y-auto shadow-2xl"
-        onClick={(e) => e.stopPropagation()}
+        onClick={e => e.stopPropagation()}
       >
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-gray-100">
@@ -107,9 +123,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
               {mode === 'cancel' && t('receptionist.cancel.title')}
               {mode === 'view' && booking.name}
             </h2>
-            {mode !== 'view' && (
-              <p className="text-studio-gray text-sm mt-1">{booking.name}</p>
-            )}
+            {mode !== 'view' && <p className="text-studio-gray text-sm mt-1">{booking.name}</p>}
           </div>
           <button
             onClick={onClose}
@@ -124,31 +138,47 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
           {/* Patient Info */}
           <div className="space-y-3 mb-6">
             <div className="flex items-center justify-between">
-              <span className="text-xs uppercase tracking-ultra text-studio-gray">{t('receptionist.booking.service')}</span>
+              <span className="text-xs uppercase tracking-ultra text-studio-gray">
+                {t('receptionist.booking.service')}
+              </span>
               <span className="font-serif text-studio-black">{booking.service}</span>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-xs uppercase tracking-ultra text-studio-gray">{t('receptionist.booking.phone')}</span>
-              <a href={`tel:${booking.phone}`} className="flex items-center gap-2 text-studio-black hover:text-studio-gold">
+              <span className="text-xs uppercase tracking-ultra text-studio-gray">
+                {t('receptionist.booking.phone')}
+              </span>
+              <a
+                href={`tel:${booking.phone}`}
+                className="flex items-center gap-2 text-studio-black hover:text-studio-gold"
+              >
                 <Phone className="w-3.5 h-3.5" />
                 {booking.phone}
               </a>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-xs uppercase tracking-ultra text-studio-gray">{t('receptionist.booking.email')}</span>
-              <a href={`mailto:${booking.email}`} className="flex items-center gap-2 text-studio-black hover:text-studio-gold">
+              <span className="text-xs uppercase tracking-ultra text-studio-gray">
+                {t('receptionist.booking.email')}
+              </span>
+              <a
+                href={`mailto:${booking.email}`}
+                className="flex items-center gap-2 text-studio-black hover:text-studio-gold"
+              >
                 <Mail className="w-3.5 h-3.5" />
                 {booking.email}
               </a>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-xs uppercase tracking-ultra text-studio-gray">{t('receptionist.booking.preferred')}</span>
+              <span className="text-xs uppercase tracking-ultra text-studio-gray">
+                {t('receptionist.booking.preferred')}
+              </span>
               <span className="text-studio-black">
                 {formatDate(booking.preferred_date)} • {booking.preferred_time}
               </span>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-xs uppercase tracking-ultra text-studio-gray">{t('receptionist.booking.status')}</span>
+              <span className="text-xs uppercase tracking-ultra text-studio-gray">
+                {t('receptionist.booking.status')}
+              </span>
               <StatusBadge status={booking.status} />
             </div>
           </div>
@@ -172,7 +202,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
                 <input
                   type="date"
                   value={confirmedDate}
-                  onChange={(e) => setConfirmedDate(e.target.value)}
+                  onChange={e => setConfirmedDate(e.target.value)}
                   min={new Date().toISOString().split('T')[0]}
                   className="w-full border border-gray-200 p-3 focus:outline-none focus:border-studio-gold transition-colors"
                 />
@@ -184,11 +214,13 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
                 </label>
                 <select
                   value={confirmedTime}
-                  onChange={(e) => setConfirmedTime(e.target.value)}
+                  onChange={e => setConfirmedTime(e.target.value)}
                   className="w-full border border-gray-200 p-3 focus:outline-none focus:border-studio-gold transition-colors"
                 >
-                  {timeSlots.map((time) => (
-                    <option key={time} value={time}>{time}</option>
+                  {timeSlots.map(time => (
+                    <option key={time} value={time}>
+                      {time}
+                    </option>
                   ))}
                 </select>
               </div>
@@ -198,7 +230,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
                   <input
                     type="checkbox"
                     checked={sendWhatsApp}
-                    onChange={(e) => setSendWhatsApp(e.target.checked)}
+                    onChange={e => setSendWhatsApp(e.target.checked)}
                     className="w-5 h-5 accent-studio-gold"
                   />
                   <span className="flex items-center gap-2 text-sm">
@@ -211,7 +243,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
                   <input
                     type="checkbox"
                     checked={sendEmail}
-                    onChange={(e) => setSendEmail(e.target.checked)}
+                    onChange={e => setSendEmail(e.target.checked)}
                     className="w-5 h-5 accent-studio-gold"
                   />
                   <span className="flex items-center gap-2 text-sm">
@@ -232,7 +264,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
                 </label>
                 <textarea
                   value={cancelReason}
-                  onChange={(e) => setCancelReason(e.target.value)}
+                  onChange={e => setCancelReason(e.target.value)}
                   rows={3}
                   className="w-full border border-gray-200 p-3 focus:outline-none focus:border-studio-gold transition-colors resize-none"
                   placeholder="..."
@@ -243,7 +275,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
                 <input
                   type="checkbox"
                   checked={notifyPatient}
-                  onChange={(e) => setNotifyPatient(e.target.checked)}
+                  onChange={e => setNotifyPatient(e.target.checked)}
                   className="w-5 h-5 accent-studio-gold"
                 />
                 <span className="text-sm">{t('receptionist.cancel.notify')}</span>

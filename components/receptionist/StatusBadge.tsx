@@ -38,9 +38,7 @@ export const StatusBadge: React.FC<StatusBadgeProps> = ({ status, size = 'md' })
   };
 
   const config = statusConfig[status] || statusConfig.pending;
-  const sizeClasses = size === 'sm'
-    ? 'text-[9px] px-2 py-0.5'
-    : 'text-[10px] px-3 py-1';
+  const sizeClasses = size === 'sm' ? 'text-[9px] px-2 py-0.5' : 'text-[10px] px-3 py-1';
 
   const statusLabels: Record<string, string> = {
     pending: t('receptionist.filters.pending'),
@@ -51,8 +49,12 @@ export const StatusBadge: React.FC<StatusBadgeProps> = ({ status, size = 'md' })
   };
 
   return (
-    <span className={`inline-flex items-center gap-1.5 ${config.bg} ${config.text} ${sizeClasses} uppercase tracking-wider font-semibold rounded-full`}>
-      <span className={`w-1.5 h-1.5 rounded-full ${config.dot} ${status === 'pending' ? 'animate-pulse' : ''}`} />
+    <span
+      className={`inline-flex items-center gap-1.5 ${config.bg} ${config.text} ${sizeClasses} uppercase tracking-wider font-semibold rounded-full`}
+    >
+      <span
+        className={`w-1.5 h-1.5 rounded-full ${config.dot} ${status === 'pending' ? 'animate-pulse' : ''}`}
+      />
       {statusLabels[status] || status}
     </span>
   );
