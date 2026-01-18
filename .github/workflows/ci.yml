@@ -135,7 +135,7 @@ jobs:
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     environment:
       name: production
-      url: https://zeo-dental.fly.dev
+      url: https://zeodentalclinic.com
     steps:
       - name: Checkout
         uses: actions/checkout@v4
