@@ -592,5 +592,10 @@
       "notify": "Njofto pacientin",
       "submit": "Anulo Rezervimin"
     }
+  },
+  "whatsapp": {
+    "tooltip": "Na shkruani në WhatsApp",
+    "ariaLabel": "Na kontaktoni në WhatsApp",
+    "defaultMessage": "Përshëndetje! Dëshiroj të rezervoj një takim në Klinikën Dentare Zeo."
   }
 }

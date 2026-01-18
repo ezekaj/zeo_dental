@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { X, Globe } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTranslation } from '../hooks/useTranslation';
@@ -12,6 +12,9 @@ const NAV_ITEMS = [
   { labelKey: 'nav.contact', href: '#contact' },
 ];
 
+// Header height offset for smooth scrolling
+const HEADER_OFFSET = 100;
+
 export const Header: React.FC = () => {
   const { t } = useTranslation();
   const { language, setLanguage } = useLanguage();
@@ -24,6 +27,26 @@ export const Header: React.FC = () => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Smooth scroll to section with header offset
+  const scrollToSection = useCallback((e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - HEADER_OFFSET;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+
+    // Close mobile menu if open
+    setIsMobileMenuOpen(false);
   }, []);
 
   return (
@@ -79,6 +102,7 @@ export const Header: React.FC = () => {
           <div className="flex justify-end">
             <a
               href="#contact"
+              onClick={(e) => scrollToSection(e, '#contact')}
               className={`text-[10px] uppercase tracking-ultra font-medium border px-6 py-3 transition-all duration-500 ${
                 isScrolled
                   ? 'border-studio-black text-studio-black hover:bg-studio-black hover:text-white'
@@ -119,7 +143,7 @@ export const Header: React.FC = () => {
                 <div key={item.labelKey} className="overflow-hidden">
                   <a
                     href={item.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={(e) => scrollToSection(e, item.href)}
                     className={`block font-serif text-4xl md:text-7xl lg:text-8xl text-studio-black hover:text-studio-gold hover:italic transition-all duration-500 transform ${
                       isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
                     }`}

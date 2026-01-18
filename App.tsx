@@ -7,6 +7,7 @@ import { Team } from './components/Team';
 import { ClinicalCases } from './components/ClinicalCases';
 import { Booking } from './components/Booking';
 import { ChatWidget } from './components/ChatWidget';
+import { WhatsAppButton } from './components/WhatsAppButton';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { ReceptionistApp } from './components/receptionist/ReceptionistApp';
@@ -98,6 +99,7 @@ const MainSite: React.FC = () => {
         <Booking />
       </main>
       <ChatWidget />
+      <WhatsAppButton />
     </div>
   );
 };

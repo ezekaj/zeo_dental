@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
 import { Button } from './ui/Button';
 import { Reveal } from './ui/Reveal';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, MapPin, Phone, Mail } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
+
+// Clinic contact constants
+const CLINIC_PHONE = '+355684004840';
+const CLINIC_PHONE_DISPLAY = '+355 68 400 4840';
+const CLINIC_EMAIL = 'zeodentalclinic@gmail.com';
+const CLINIC_ADDRESS = 'Rruga Hamdi Sina, Tiranë, Albania';
+const GOOGLE_MAPS_URL = 'https://maps.google.com/?q=Rruga+Hamdi+Sina,+Tiranë,+Albania';
 
 export const Booking: React.FC = () => {
   const { t } = useTranslation();
@@ -127,23 +134,38 @@ export const Booking: React.FC = () => {
                 <p className="text-[10px] uppercase tracking-ultra text-studio-gold mb-2">
                   {t('booking.studioLabel')}
                 </p>
-                <p className="font-serif text-xl md:text-2xl text-white">{t('booking.address')}</p>
+                <a
+                  href={GOOGLE_MAPS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-serif text-xl md:text-2xl text-white hover:text-studio-gold transition-colors inline-flex items-center gap-2 group"
+                >
+                  <MapPin className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  {t('booking.address')}
+                </a>
               </div>
               <div>
                 <p className="text-[10px] uppercase tracking-ultra text-studio-gold mb-2">
                   {t('booking.phoneLabel')}
                 </p>
-                <p className="font-serif text-xl md:text-2xl text-white">{t('booking.phone')}</p>
+                <a
+                  href={`tel:${CLINIC_PHONE}`}
+                  className="font-serif text-xl md:text-2xl text-white hover:text-studio-gold transition-colors inline-flex items-center gap-2 group"
+                >
+                  <Phone className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  {CLINIC_PHONE_DISPLAY}
+                </a>
               </div>
               <div>
                 <p className="text-[10px] uppercase tracking-ultra text-studio-gold mb-2">
                   {t('booking.emailLabel')}
                 </p>
                 <a
-                  href={`mailto:${t('booking.email')}`}
-                  className="font-serif text-xl md:text-2xl text-white hover:italic transition-all"
+                  href={`mailto:${CLINIC_EMAIL}`}
+                  className="font-serif text-xl md:text-2xl text-white hover:text-studio-gold transition-colors inline-flex items-center gap-2 group"
                 >
-                  {t('booking.email')}
+                  <Mail className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  {CLINIC_EMAIL}
                 </a>
               </div>
             </div>

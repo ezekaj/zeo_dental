@@ -592,5 +592,10 @@
       "notify": "Notify patient",
       "submit": "Cancel Booking"
     }
+  },
+  "whatsapp": {
+    "tooltip": "Chat on WhatsApp",
+    "ariaLabel": "Contact us on WhatsApp",
+    "defaultMessage": "Hello! I would like to book an appointment at Zeo Dental Clinic."
   }
 }
