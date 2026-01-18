@@ -531,5 +531,66 @@
         "description": "Transform your smile with veneers, whitening, and bonding designed to enhance natural beauty and facial harmony."
       }
     }
+  },
+  "receptionist": {
+    "title": "Receptionist Dashboard",
+    "loading": "Loading...",
+    "noBookings": "No bookings found",
+    "login": {
+      "title": "Staff Login",
+      "password": "Password",
+      "submit": "Login",
+      "error": "Invalid password",
+      "backToSite": "Back to Website"
+    },
+    "header": {
+      "logout": "Logout",
+      "pending": "Pending"
+    },
+    "stats": {
+      "pending": "Pending",
+      "today": "Today",
+      "thisWeek": "This Week",
+      "confirmedToday": "Confirmed Today"
+    },
+    "filters": {
+      "all": "All Bookings",
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "cancelled": "Cancelled",
+      "completed": "Completed",
+      "noShow": "No Show",
+      "search": "Search by name, email, phone..."
+    },
+    "booking": {
+      "preferred": "Preferred",
+      "confirmed": "Confirmed",
+      "service": "Service",
+      "phone": "Phone",
+      "email": "Email",
+      "notes": "Notes",
+      "status": "Status"
+    },
+    "actions": {
+      "view": "View",
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "close": "Close",
+      "refresh": "Refresh"
+    },
+    "confirm": {
+      "title": "Confirm Booking",
+      "date": "Confirmed Date",
+      "time": "Confirmed Time",
+      "sendWhatsApp": "Send WhatsApp confirmation",
+      "sendEmail": "Send Email confirmation",
+      "submit": "Confirm Booking"
+    },
+    "cancel": {
+      "title": "Cancel Booking",
+      "reason": "Cancellation Reason (optional)",
+      "notify": "Notify patient",
+      "submit": "Cancel Booking"
+    }
   }
 }

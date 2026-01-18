@@ -531,5 +531,66 @@
         "description": "Transformoni buzëqeshjen tuaj me faseta, zbardhje dhe lidhje të dizajnuara për të rritur bukurinë natyrale dhe harmoninë e fytyrës."
       }
     }
+  },
+  "receptionist": {
+    "title": "Paneli i Recepsionistit",
+    "loading": "Duke ngarkuar...",
+    "noBookings": "Nuk u gjetën rezervime",
+    "login": {
+      "title": "Hyrje Stafi",
+      "password": "Fjalëkalimi",
+      "submit": "Hyr",
+      "error": "Fjalëkalim i gabuar",
+      "backToSite": "Kthehu në faqe"
+    },
+    "header": {
+      "logout": "Dil",
+      "pending": "Në pritje"
+    },
+    "stats": {
+      "pending": "Në Pritje",
+      "today": "Sot",
+      "thisWeek": "Këtë Javë",
+      "confirmedToday": "Konfirmuar Sot"
+    },
+    "filters": {
+      "all": "Të gjitha",
+      "pending": "Në pritje",
+      "confirmed": "Konfirmuar",
+      "cancelled": "Anuluar",
+      "completed": "Përfunduar",
+      "noShow": "Nuk erdhi",
+      "search": "Kërko me emër, email, telefon..."
+    },
+    "booking": {
+      "preferred": "Preferuar",
+      "confirmed": "Konfirmuar",
+      "service": "Shërbimi",
+      "phone": "Telefoni",
+      "email": "Email",
+      "notes": "Shënime",
+      "status": "Statusi"
+    },
+    "actions": {
+      "view": "Shiko",
+      "confirm": "Konfirmo",
+      "cancel": "Anulo",
+      "close": "Mbyll",
+      "refresh": "Rifresko"
+    },
+    "confirm": {
+      "title": "Konfirmo Rezervimin",
+      "date": "Data e konfirmuar",
+      "time": "Ora e konfirmuar",
+      "sendWhatsApp": "Dërgo konfirmim WhatsApp",
+      "sendEmail": "Dërgo konfirmim Email",
+      "submit": "Konfirmo Rezervimin"
+    },
+    "cancel": {
+      "title": "Anulo Rezervimin",
+      "reason": "Arsyeja e anulimit (opsionale)",
+      "notify": "Njofto pacientin",
+      "submit": "Anulo Rezervimin"
+    }
   }
 }

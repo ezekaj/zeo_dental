@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { chatRoutes } from './routes/chat.js';
 import { bookingRoutes } from './routes/booking.js';
+import { receptionistRoutes } from './routes/receptionist.js';
 import { postgresPlugin } from './plugins/postgres.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -80,7 +81,7 @@ async function start() {
         : process.env.NODE_ENV === 'production'
           ? ['https://zeo-dental.fly.dev', 'https://zeodental.com']
           : true,
-      methods: ['GET', 'POST', 'OPTIONS'],
+      methods: ['GET', 'POST', 'PATCH', 'OPTIONS'],
       allowedHeaders: ['Content-Type', 'Authorization'],
     });
 
@@ -90,6 +91,7 @@ async function start() {
     // Register API routes
     await fastify.register(chatRoutes, { prefix: '/api' });
     await fastify.register(bookingRoutes, { prefix: '/api' });
+    await fastify.register(receptionistRoutes, { prefix: '/api' });
 
     // Serve static files (React build)
     const publicPath = join(__dirname, '..', 'public');
