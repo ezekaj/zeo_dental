@@ -79,7 +79,11 @@ async function start() {
       origin: parsedOrigins
         ? parsedOrigins
         : process.env.NODE_ENV === 'production'
-          ? ['https://zeodentalclinic.com', 'https://www.zeodentalclinic.com', 'https://zeo-dental.fly.dev']
+          ? [
+              'https://zeodentalclinic.com',
+              'https://www.zeodentalclinic.com',
+              'https://zeo-dental.fly.dev',
+            ]
           : true,
       methods: ['GET', 'POST', 'PATCH', 'OPTIONS'],
       allowedHeaders: ['Content-Type', 'Authorization'],
