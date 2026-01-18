@@ -1,9 +1,13 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useTranslation } from '../../hooks/useTranslation';
 import { ReceptionistLogin } from './ReceptionistLogin';
 import { BookingCard } from './BookingCard';
 import { BookingDetailModal } from './BookingDetailModal';
-import { LogOut, RefreshCw, Search, Filter, Bell } from 'lucide-react';
+import { CalendarView } from './CalendarView';
+import { LogOut, RefreshCw, Search, Filter, Bell, Volume2, VolumeX, LayoutGrid, Calendar } from 'lucide-react';
+
+// Auto-refresh interval (15 seconds)
+const REFRESH_INTERVAL = 15000;
 
 interface Booking {
   id: string;
@@ -41,6 +45,46 @@ export const ReceptionistApp: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedBooking, setSelectedBooking] = useState<Booking | null>(null);
   const [modalMode, setModalMode] = useState<'view' | 'confirm' | 'cancel'>('view');
+  const [lastUpdate, setLastUpdate] = useState<Date | null>(null);
+  const [soundEnabled, setSoundEnabled] = useState(true);
+  const [hasNewBooking, setHasNewBooking] = useState(false);
+  const [viewMode, setViewMode] = useState<'list' | 'calendar'>('list');
+  const previousPendingCount = useRef<number>(0);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Initialize notification sound
+  useEffect(() => {
+    // Create audio element for notification sound
+    audioRef.current = new Audio('data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YU');
+    // Use a simple beep sound from Web Audio API instead
+    return () => {
+      audioRef.current = null;
+    };
+  }, []);
+
+  // Play notification sound
+  const playNotificationSound = useCallback(() => {
+    if (!soundEnabled) return;
+
+    try {
+      const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+      const oscillator = audioContext.createOscillator();
+      const gainNode = audioContext.createGain();
+
+      oscillator.connect(gainNode);
+      gainNode.connect(audioContext.destination);
+
+      oscillator.frequency.value = 800;
+      oscillator.type = 'sine';
+      gainNode.gain.value = 0.3;
+
+      oscillator.start();
+      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+      oscillator.stop(audioContext.currentTime + 0.5);
+    } catch (err) {
+      console.log('Could not play notification sound');
+    }
+  }, [soundEnabled]);
 
   // Auth handlers
   const handleLogin = (newToken: string) => {
@@ -80,11 +124,23 @@ export const ReceptionistApp: React.FC = () => {
     try {
       const response = await fetchWithAuth('/api/receptionist/stats');
       const data = await response.json();
+
+      // Check if there are new pending bookings
+      if (previousPendingCount.current > 0 && data.pending_count > previousPendingCount.current) {
+        // New booking arrived!
+        playNotificationSound();
+        setHasNewBooking(true);
+        // Clear the indicator after 5 seconds
+        setTimeout(() => setHasNewBooking(false), 5000);
+      }
+      previousPendingCount.current = data.pending_count;
+
       setStats(data);
+      setLastUpdate(new Date());
     } catch (err) {
       console.error('Failed to fetch stats:', err);
     }
-  }, [fetchWithAuth]);
+  }, [fetchWithAuth, playNotificationSound]);
 
   // Fetch bookings
   const fetchBookings = useCallback(async () => {
@@ -113,11 +169,11 @@ export const ReceptionistApp: React.FC = () => {
       fetchStats();
       fetchBookings();
 
-      // Poll every 30 seconds for new bookings
+      // Poll every 15 seconds for new bookings
       const interval = setInterval(() => {
         fetchStats();
         fetchBookings();
-      }, 30000);
+      }, REFRESH_INTERVAL);
 
       return () => clearInterval(interval);
     }
@@ -200,8 +256,18 @@ export const ReceptionistApp: React.FC = () => {
 
             {/* Right side */}
             <div className="flex items-center gap-4">
+              {/* New booking alert */}
+              {hasNewBooking && (
+                <div className="flex items-center gap-2 bg-green-100 px-3 py-1.5 rounded-full animate-pulse">
+                  <Bell className="w-4 h-4 text-green-600" />
+                  <span className="text-xs font-semibold text-green-700">
+                    {t('receptionist.header.newBooking')}
+                  </span>
+                </div>
+              )}
+
               {/* Pending notification */}
-              {stats && stats.pending_count > 0 && (
+              {stats && stats.pending_count > 0 && !hasNewBooking && (
                 <div className="flex items-center gap-2 bg-amber-50 px-3 py-1.5 rounded-full">
                   <Bell className="w-4 h-4 text-amber-500 animate-pulse" />
                   <span className="text-xs font-semibold text-amber-700">
@@ -209,6 +275,24 @@ export const ReceptionistApp: React.FC = () => {
                   </span>
                 </div>
               )}
+
+              {/* Last update time */}
+              {lastUpdate && (
+                <span className="hidden md:block text-[10px] text-studio-gray">
+                  {t('receptionist.header.lastUpdate')}: {lastUpdate.toLocaleTimeString()}
+                </span>
+              )}
+
+              {/* Sound toggle */}
+              <button
+                onClick={() => setSoundEnabled(!soundEnabled)}
+                className={`p-1.5 rounded transition-colors ${
+                  soundEnabled ? 'text-studio-gold hover:text-studio-black' : 'text-studio-gray hover:text-studio-black'
+                }`}
+                title={soundEnabled ? t('receptionist.header.soundOn') : t('receptionist.header.soundOff')}
+              >
+                {soundEnabled ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
+              </button>
 
               {/* Language toggle */}
               <button
@@ -293,6 +377,32 @@ export const ReceptionistApp: React.FC = () => {
             />
           </div>
 
+          {/* View toggle */}
+          <div className="flex items-center border border-gray-200 rounded overflow-hidden">
+            <button
+              onClick={() => setViewMode('list')}
+              className={`flex items-center gap-1 px-3 py-2 text-xs uppercase tracking-ultra transition-colors ${
+                viewMode === 'list'
+                  ? 'bg-studio-black text-white'
+                  : 'text-studio-gray hover:text-studio-black'
+              }`}
+            >
+              <LayoutGrid className="w-4 h-4" />
+              <span className="hidden sm:inline">{language === 'sq' ? 'Listë' : 'List'}</span>
+            </button>
+            <button
+              onClick={() => setViewMode('calendar')}
+              className={`flex items-center gap-1 px-3 py-2 text-xs uppercase tracking-ultra transition-colors ${
+                viewMode === 'calendar'
+                  ? 'bg-studio-black text-white'
+                  : 'text-studio-gray hover:text-studio-black'
+              }`}
+            >
+              <Calendar className="w-4 h-4" />
+              <span className="hidden sm:inline">{t('receptionist.header.calendar')}</span>
+            </button>
+          </div>
+
           {/* Refresh */}
           <button
             onClick={() => {
@@ -307,12 +417,20 @@ export const ReceptionistApp: React.FC = () => {
           </button>
         </div>
 
-        {/* Bookings Grid */}
+        {/* Bookings Display */}
         {isLoading && bookings.length === 0 ? (
           <div className="text-center py-20">
             <RefreshCw className="w-8 h-8 text-studio-gray animate-spin mx-auto mb-4" />
             <p className="text-studio-gray">{t('receptionist.loading')}</p>
           </div>
+        ) : viewMode === 'calendar' ? (
+          <CalendarView
+            bookings={bookings}
+            onSelectBooking={b => {
+              setSelectedBooking(b);
+              setModalMode('view');
+            }}
+          />
         ) : bookings.length === 0 ? (
           <div className="text-center py-20 bg-white border border-gray-100">
             <p className="text-studio-gray">{t('receptionist.noBookings')}</p>

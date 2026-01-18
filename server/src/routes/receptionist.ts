@@ -241,9 +241,10 @@ export async function receptionistRoutes(fastify: FastifyInstance) {
         // Send WhatsApp notification
         if (send_whatsapp && booking.phone) {
           try {
-            await sendWhatsAppConfirmation(booking);
-            whatsapp_sent = true;
-            await pool.query('UPDATE bookings SET whatsapp_sent = TRUE WHERE id = $1', [id]);
+            whatsapp_sent = await sendWhatsAppConfirmation(booking);
+            if (whatsapp_sent) {
+              await pool.query('UPDATE bookings SET whatsapp_sent = TRUE WHERE id = $1', [id]);
+            }
           } catch (whatsappErr) {
             fastify.log.error(
               'WhatsApp error: %s',

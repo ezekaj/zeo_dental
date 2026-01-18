@@ -545,7 +545,12 @@
     },
     "header": {
       "logout": "Dil",
-      "pending": "Në pritje"
+      "pending": "Në pritje",
+      "newBooking": "Rezervim i Ri!",
+      "lastUpdate": "Përditësuar",
+      "soundOn": "Zëri i njoftimeve aktiv",
+      "soundOff": "Zëri i njoftimeve joaktiv",
+      "calendar": "Kalendar"
     },
     "stats": {
       "pending": "Në Pritje",
