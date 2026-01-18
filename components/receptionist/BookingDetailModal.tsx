@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from '../../hooks/useTranslation';
 import { StatusBadge } from './StatusBadge';
-import { X, Phone, Mail, Calendar, Clock, MessageCircle, Send, CheckCircle } from 'lucide-react';
+import { X, Phone, Mail, MessageCircle, CheckCircle } from 'lucide-react';
 
 interface Booking {
   id: string;

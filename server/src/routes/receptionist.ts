@@ -99,8 +99,8 @@ export async function receptionistRoutes(fastify: FastifyInstance) {
         const { status, date_from, date_to, search, limit = 50, offset = 0 } = request.query;
         const pool = fastify.pg;
 
-        let whereConditions: string[] = [];
-        let params: (string | number)[] = [];
+        const whereConditions: string[] = [];
+        const params: (string | number)[] = [];
         let paramIndex = 1;
 
         if (status) {

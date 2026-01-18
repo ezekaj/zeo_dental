@@ -15,7 +15,7 @@ const translations: Record<Language, Translations> = {
  * @returns Object with t() function for translations
  */
 export const useTranslation = () => {
-  const { language } = useLanguage();
+  const { language, setLanguage } = useLanguage();
 
   /**
    * Get translation for a key path (e.g., 'nav.home', 'hero.title')
@@ -95,5 +95,5 @@ export const useTranslation = () => {
     return value as T | undefined;
   };
 
-  return { t, tRaw, language };
+  return { t, tRaw, language, setLanguage };
 };

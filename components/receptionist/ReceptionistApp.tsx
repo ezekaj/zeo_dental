@@ -3,7 +3,6 @@ import { useTranslation } from '../../hooks/useTranslation';
 import { ReceptionistLogin } from './ReceptionistLogin';
 import { BookingCard } from './BookingCard';
 import { BookingDetailModal } from './BookingDetailModal';
-import { StatusBadge } from './StatusBadge';
 import { LogOut, RefreshCw, Search, Filter, Bell } from 'lucide-react';
 
 interface Booking {
