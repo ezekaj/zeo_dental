@@ -10,7 +10,46 @@ export const ChatWidget: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputText, setInputText] = useState('');
   const [loadingState, setLoadingState] = useState<LoadingState>(LoadingState.IDLE);
+  const [isOverDark, setIsOverDark] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  // Detect if button is over a dark section
+  useEffect(() => {
+    const checkBackground = () => {
+      if (!buttonRef.current) return;
+
+      const buttonRect = buttonRef.current.getBoundingClientRect();
+      const buttonCenterY = buttonRect.top + buttonRect.height / 2;
+
+      // Get all sections and check which one the button is over
+      const sections = document.querySelectorAll('section');
+      let isDark = false;
+
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (buttonCenterY >= rect.top && buttonCenterY <= rect.bottom) {
+          // Check if this section has dark background
+          const bgClass = section.className;
+          isDark = bgClass.includes('bg-studio-black') ||
+                   bgClass.includes('bg-black') ||
+                   section.id === 'home' ||
+                   section.id === 'contact';
+        }
+      });
+
+      setIsOverDark(isDark);
+    };
+
+    checkBackground();
+    window.addEventListener('scroll', checkBackground);
+    window.addEventListener('resize', checkBackground);
+
+    return () => {
+      window.removeEventListener('scroll', checkBackground);
+      window.removeEventListener('resize', checkBackground);
+    };
+  }, []);
 
   // Initialize and update greeting when language changes
   useEffect(() => {
@@ -159,11 +198,14 @@ export const ChatWidget: React.FC = () => {
 
       {/* Toggle Button */}
       <button
+        ref={buttonRef}
         onClick={() => setIsOpen(!isOpen)}
-        className={`p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 ${
+        className={`p-4 rounded-full shadow-2xl transition-all duration-500 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
           isOpen
-            ? 'bg-primary-900 rotate-90 text-white'
-            : 'bg-primary-600 text-white animate-pulse-slow'
+            ? 'bg-studio-black rotate-90 text-white focus:ring-studio-gold'
+            : isOverDark
+              ? 'bg-white text-studio-black hover:bg-studio-gold hover:text-white focus:ring-white'
+              : 'bg-studio-black text-white hover:bg-studio-gold focus:ring-studio-black'
         }`}
         aria-expanded={isOpen}
         aria-label={isOpen ? 'Close chat assistant' : 'Open chat assistant'}

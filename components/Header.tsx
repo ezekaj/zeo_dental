@@ -5,7 +5,7 @@ import { useTranslation } from '../hooks/useTranslation';
 
 const NAV_ITEMS = [
   { labelKey: 'nav.clinic', href: '#home' },
-  { labelKey: 'nav.treatments', href: '#services' },
+  { labelKey: 'nav.treatments', href: '#treatments' },
   { labelKey: 'nav.philosophy', href: '#philosophy' },
   { labelKey: 'nav.team', href: '#team' },
   { labelKey: 'nav.cases', href: '#cases' },
