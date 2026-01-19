@@ -6,8 +6,8 @@ import { BookingDetailModal } from './BookingDetailModal';
 import { CalendarView } from './CalendarView';
 import { LogOut, RefreshCw, Search, Filter, Bell, Volume2, VolumeX, LayoutGrid, Calendar } from 'lucide-react';
 
-// Auto-refresh interval (15 seconds)
-const REFRESH_INTERVAL = 15000;
+// Auto-refresh interval (1 second for real-time updates)
+const REFRESH_INTERVAL = 1000;
 
 interface Booking {
   id: string;
