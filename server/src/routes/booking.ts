@@ -1,6 +1,6 @@
 import { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify';
-import nodemailer from 'nodemailer';
 import type { BookingRequest, BookingResponse } from '../types.js';
+import { sendClinicNotification } from '../services/emailTemplates.js';
 
 // Validation helpers
 function isValidEmail(email: string): boolean {
@@ -22,23 +22,6 @@ function isValidFutureDate(dateString: string): boolean {
 
 export async function bookingRoutes(fastify: FastifyInstance) {
   const adminToken = process.env.ADMIN_TOKEN;
-  const mailHost = process.env.SMTP_HOST;
-  const mailPort = process.env.SMTP_PORT ? Number(process.env.SMTP_PORT) : undefined;
-  const mailUser = process.env.SMTP_USER;
-  const mailPass = process.env.SMTP_PASS;
-  const mailFrom = process.env.MAIL_FROM || 'no-reply@zeodental.com';
-  const mailTo = process.env.MAIL_TO || 'zeodentalclinic@gmail.com';
-
-  const mailEnabled = Boolean(mailHost && mailPort && mailUser && mailPass);
-
-  const transporter = mailEnabled
-    ? nodemailer.createTransport({
-        host: mailHost,
-        port: mailPort,
-        secure: mailPort === 465,
-        auth: { user: mailUser, pass: mailPass },
-      })
-    : null;
 
   fastify.post<{
     Body: BookingRequest;
@@ -127,42 +110,17 @@ export async function bookingRoutes(fastify: FastifyInstance) {
 
       fastify.log.info('New booking created: %s', booking.id);
 
-      // Fire-and-forget email notifications (non-blocking)
-      if (mailEnabled && transporter) {
-        const clinicMail = {
-          from: mailFrom,
-          to: mailTo,
-          subject: `New booking: ${booking.service} - ${booking.name}`,
-          text: `New booking request\nName: ${booking.name}\nEmail: ${booking.email}\nPhone: ${booking.phone}\nService: ${booking.service}\nDate: ${booking.preferred_date}\nTime: ${booking.preferred_time}\nNotes: ${notes || 'N/A'}`,
-        };
-
-        const patientMail = {
-          from: mailFrom,
-          to: booking.email,
-          subject: 'We received your booking request',
-          text: `Hi ${booking.name},\n\nThank you for reaching out to Zeo Dental Clinic. We received your request for ${booking.service} on ${booking.preferred_date} (${booking.preferred_time}). Our concierge team will contact you to confirm your appointment.\n\nIf this wasn't you, please call us at +355 68 400 4840.\n\nZeo Dental Clinic\nRruga Hamdi Sina, Tiranë, Albania`,
-        };
-
-        transporter
-          .sendMail(clinicMail)
-          .catch((err: unknown) =>
-            fastify.log.error(
-              'Clinic email failed: %s',
-              err instanceof Error ? err.message : String(err)
-            )
-          );
-
-        transporter
-          .sendMail(patientMail)
-          .catch((err: unknown) =>
-            fastify.log.error(
-              'Patient email failed: %s',
-              err instanceof Error ? err.message : String(err)
-            )
-          );
-      } else {
-        fastify.log.warn('Mail not configured; skipping booking notifications');
-      }
+      // Send clinic notification via Resend (fire-and-forget)
+      sendClinicNotification(
+        {
+          ...booking,
+          phone: phone.trim(),
+          preferred_date: date,
+          preferred_time: time.toLowerCase(),
+          notes: notes?.trim() || null,
+        },
+        fastify
+      ).catch(() => {});
 
       return reply.status(201).send({
         success: true,

@@ -4,7 +4,17 @@ import { ReceptionistLogin } from './ReceptionistLogin';
 import { BookingCard } from './BookingCard';
 import { BookingDetailModal } from './BookingDetailModal';
 import { CalendarView } from './CalendarView';
-import { LogOut, RefreshCw, Search, Filter, Bell, Volume2, VolumeX, LayoutGrid, Calendar } from 'lucide-react';
+import {
+  LogOut,
+  RefreshCw,
+  Search,
+  Filter,
+  Bell,
+  Volume2,
+  VolumeX,
+  LayoutGrid,
+  Calendar,
+} from 'lucide-react';
 
 // Auto-refresh interval (1 second for real-time updates)
 const REFRESH_INTERVAL = 1000;
@@ -55,7 +65,9 @@ export const ReceptionistApp: React.FC = () => {
   // Initialize notification sound
   useEffect(() => {
     // Create audio element for notification sound
-    audioRef.current = new Audio('data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YU');
+    audioRef.current = new Audio(
+      'data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YU'
+    );
     // Use a simple beep sound from Web Audio API instead
     return () => {
       audioRef.current = null;
@@ -287,9 +299,15 @@ export const ReceptionistApp: React.FC = () => {
               <button
                 onClick={() => setSoundEnabled(!soundEnabled)}
                 className={`p-1.5 rounded transition-colors ${
-                  soundEnabled ? 'text-studio-gold hover:text-studio-black' : 'text-studio-gray hover:text-studio-black'
+                  soundEnabled
+                    ? 'text-studio-gold hover:text-studio-black'
+                    : 'text-studio-gray hover:text-studio-black'
                 }`}
-                title={soundEnabled ? t('receptionist.header.soundOn') : t('receptionist.header.soundOff')}
+                title={
+                  soundEnabled
+                    ? t('receptionist.header.soundOn')
+                    : t('receptionist.header.soundOff')
+                }
               >
                 {soundEnabled ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
               </button>

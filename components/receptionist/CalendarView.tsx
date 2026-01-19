@@ -27,8 +27,34 @@ const DAYS_OF_WEEK = {
 };
 
 const MONTHS = {
-  en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-  sq: ['Janar', 'Shkurt', 'Mars', 'Prill', 'Maj', 'Qershor', 'Korrik', 'Gusht', 'Shtator', 'Tetor', 'Nëntor', 'Dhjetor'],
+  en: [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ],
+  sq: [
+    'Janar',
+    'Shkurt',
+    'Mars',
+    'Prill',
+    'Maj',
+    'Qershor',
+    'Korrik',
+    'Gusht',
+    'Shtator',
+    'Tetor',
+    'Nëntor',
+    'Dhjetor',
+  ],
 };
 
 export const CalendarView: React.FC<CalendarViewProps> = ({ bookings, onSelectBooking }) => {
@@ -154,7 +180,10 @@ export const CalendarView: React.FC<CalendarViewProps> = ({ bookings, onSelectBo
           {/* Day headers */}
           <div className="grid grid-cols-7 mb-2">
             {DAYS_OF_WEEK[lang].map(day => (
-              <div key={day} className="text-center text-xs uppercase tracking-ultra text-studio-gray py-2">
+              <div
+                key={day}
+                className="text-center text-xs uppercase tracking-ultra text-studio-gray py-2"
+              >
                 {day}
               </div>
             ))}
@@ -185,7 +214,9 @@ export const CalendarView: React.FC<CalendarViewProps> = ({ bookings, onSelectBo
                         : 'border-transparent hover:border-gray-200 hover:bg-gray-50'
                   }`}
                 >
-                  <div className={`text-sm mb-1 ${isToday(day) ? 'font-bold text-studio-gold' : ''}`}>
+                  <div
+                    className={`text-sm mb-1 ${isToday(day) ? 'font-bold text-studio-gold' : ''}`}
+                  >
                     {day}
                   </div>
                   {dayBookings.length > 0 && (
@@ -221,11 +252,14 @@ export const CalendarView: React.FC<CalendarViewProps> = ({ bookings, onSelectBo
         {selectedDate && (
           <div className="lg:w-80 border-t lg:border-t-0 lg:border-l border-gray-100 p-4">
             <h3 className="font-serif text-lg mb-4">
-              {new Date(selectedDate + 'T12:00:00').toLocaleDateString(language === 'sq' ? 'sq-AL' : 'en-US', {
-                weekday: 'long',
-                month: 'long',
-                day: 'numeric',
-              })}
+              {new Date(selectedDate + 'T12:00:00').toLocaleDateString(
+                language === 'sq' ? 'sq-AL' : 'en-US',
+                {
+                  weekday: 'long',
+                  month: 'long',
+                  day: 'numeric',
+                }
+              )}
             </h3>
 
             {selectedDateBookings.length === 0 ? (
@@ -249,13 +283,9 @@ export const CalendarView: React.FC<CalendarViewProps> = ({ bookings, onSelectBo
                     </div>
                     <div className="flex items-center gap-2 text-xs text-studio-gray">
                       <Clock className="w-3 h-3" />
-                      <span>
-                        {booking.confirmed_time || booking.preferred_time}
-                      </span>
+                      <span>{booking.confirmed_time || booking.preferred_time}</span>
                     </div>
-                    <div className="text-xs text-studio-gray mt-1">
-                      {booking.service}
-                    </div>
+                    <div className="text-xs text-studio-gray mt-1">{booking.service}</div>
                   </button>
                 ))}
               </div>

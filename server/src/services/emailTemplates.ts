@@ -1,24 +1,12 @@
 import type { Booking } from '../types.js';
 import type { FastifyInstance } from 'fastify';
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 
-// Get SMTP configuration
-const mailHost = process.env.SMTP_HOST;
-const mailPort = process.env.SMTP_PORT ? Number(process.env.SMTP_PORT) : undefined;
-const mailUser = process.env.SMTP_USER;
-const mailPass = process.env.SMTP_PASS;
-const mailFrom = process.env.MAIL_FROM || 'noreply@zeodental.com';
+// Initialize Resend
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
-const mailEnabled = Boolean(mailHost && mailPort && mailUser && mailPass);
-
-const transporter = mailEnabled
-  ? nodemailer.createTransport({
-      host: mailHost,
-      port: mailPort,
-      secure: mailPort === 465,
-      auth: { user: mailUser, pass: mailPass },
-    })
-  : null;
+const mailFrom = process.env.MAIL_FROM || 'Zeo Dental Clinic <onboarding@resend.dev>';
+const clinicEmail = process.env.MAIL_TO || 'zeodentalclinic@gmail.com';
 
 // Format date for display
 function formatDate(dateString: string, language: 'sq' | 'en' = 'sq'): string {
@@ -389,13 +377,13 @@ function getCancellationEmailHtml(booking: Booking, language: 'sq' | 'en' = 'sq'
   `;
 }
 
-// Send confirmation email
+// Send confirmation email via Resend
 export async function sendConfirmationEmail(
   booking: Booking,
   fastify: FastifyInstance
 ): Promise<boolean> {
-  if (!mailEnabled || !transporter) {
-    fastify.log.warn('Mail not configured; skipping confirmation email');
+  if (!resend) {
+    fastify.log.warn('RESEND_API_KEY not configured; skipping confirmation email');
     return false;
   }
 
@@ -403,12 +391,17 @@ export async function sendConfirmationEmail(
     const html = getConfirmationEmailHtml(booking, 'sq');
     const subject = `Takimi juaj është konfirmuar - Zeo Dental`;
 
-    await transporter.sendMail({
-      from: `"Zeo Dental Clinic" <${mailFrom}>`,
+    const { error } = await resend.emails.send({
+      from: mailFrom,
       to: booking.email,
       subject,
       html,
     });
+
+    if (error) {
+      fastify.log.error('Resend confirmation error: %s', error.message);
+      return false;
+    }
 
     fastify.log.info('Confirmation email sent to %s', booking.email);
     return true;
@@ -421,13 +414,13 @@ export async function sendConfirmationEmail(
   }
 }
 
-// Send cancellation email
+// Send cancellation email via Resend
 export async function sendCancellationEmail(
   booking: Booking,
   fastify: FastifyInstance
 ): Promise<boolean> {
-  if (!mailEnabled || !transporter) {
-    fastify.log.warn('Mail not configured; skipping cancellation email');
+  if (!resend) {
+    fastify.log.warn('RESEND_API_KEY not configured; skipping cancellation email');
     return false;
   }
 
@@ -435,18 +428,113 @@ export async function sendCancellationEmail(
     const html = getCancellationEmailHtml(booking, 'sq');
     const subject = `Takimi juaj është anuluar - Zeo Dental`;
 
-    await transporter.sendMail({
-      from: `"Zeo Dental Clinic" <${mailFrom}>`,
+    const { error } = await resend.emails.send({
+      from: mailFrom,
       to: booking.email,
       subject,
       html,
     });
+
+    if (error) {
+      fastify.log.error('Resend cancellation error: %s', error.message);
+      return false;
+    }
 
     fastify.log.info('Cancellation email sent to %s', booking.email);
     return true;
   } catch (error) {
     fastify.log.error(
       'Cancellation email error: %s',
+      error instanceof Error ? error.message : String(error)
+    );
+    return false;
+  }
+}
+
+// Send notification to clinic about new booking
+export async function sendClinicNotification(
+  booking: Booking,
+  fastify: FastifyInstance
+): Promise<boolean> {
+  if (!resend) {
+    return false;
+  }
+
+  try {
+    const { error } = await resend.emails.send({
+      from: mailFrom,
+      to: clinicEmail,
+      subject: `Rezervim i Ri: ${booking.name} - ${booking.service}`,
+      html: `
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+            .header { background: #050505; color: white; padding: 20px; text-align: center; }
+            .logo { font-size: 28px; }
+            .logo span { color: #C5A47E; }
+            .content { padding: 20px; background: #f9f9f9; }
+            .field { margin: 10px 0; }
+            .label { color: #666; font-size: 12px; text-transform: uppercase; }
+            .value { font-size: 16px; color: #050505; }
+            .cta { text-align: center; margin: 20px 0; }
+            .button { background: #C5A47E; color: white; padding: 12px 24px; text-decoration: none; display: inline-block; }
+          </style>
+        </head>
+        <body>
+          <div class="container">
+            <div class="header">
+              <div class="logo">ZEO<span>.</span></div>
+              <p>Rezervim i Ri</p>
+            </div>
+            <div class="content">
+              <div class="field">
+                <div class="label">Emri</div>
+                <div class="value">${booking.name}</div>
+              </div>
+              <div class="field">
+                <div class="label">Email</div>
+                <div class="value">${booking.email}</div>
+              </div>
+              <div class="field">
+                <div class="label">Telefon</div>
+                <div class="value">${booking.phone}</div>
+              </div>
+              <div class="field">
+                <div class="label">Shërbimi</div>
+                <div class="value">${booking.service}</div>
+              </div>
+              <div class="field">
+                <div class="label">Data e preferuar</div>
+                <div class="value">${formatDate(booking.preferred_date)}</div>
+              </div>
+              <div class="field">
+                <div class="label">Ora e preferuar</div>
+                <div class="value">${booking.preferred_time}</div>
+              </div>
+              ${booking.notes ? `<div class="field"><div class="label">Shënime</div><div class="value">${booking.notes}</div></div>` : ''}
+              <div class="cta">
+                <a href="https://zeodentalclinic.com/receptionist" class="button">Shko te Paneli →</a>
+              </div>
+            </div>
+          </div>
+        </body>
+        </html>
+      `,
+    });
+
+    if (error) {
+      fastify.log.error('Clinic notification error: %s', error.message);
+      return false;
+    }
+
+    fastify.log.info('Clinic notification sent for booking %s', booking.id);
+    return true;
+  } catch (error) {
+    fastify.log.error(
+      'Clinic notification error: %s',
       error instanceof Error ? error.message : String(error)
     );
     return false;

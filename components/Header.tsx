@@ -41,7 +41,7 @@ export const Header: React.FC = () => {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
 
@@ -102,7 +102,7 @@ export const Header: React.FC = () => {
           <div className="flex justify-end">
             <a
               href="#contact"
-              onClick={(e) => scrollToSection(e, '#contact')}
+              onClick={e => scrollToSection(e, '#contact')}
               className={`text-[10px] uppercase tracking-ultra font-medium border px-6 py-3 transition-all duration-500 ${
                 isScrolled
                   ? 'border-studio-black text-studio-black hover:bg-studio-black hover:text-white'
@@ -143,7 +143,7 @@ export const Header: React.FC = () => {
                 <div key={item.labelKey} className="overflow-hidden">
                   <a
                     href={item.href}
-                    onClick={(e) => scrollToSection(e, item.href)}
+                    onClick={e => scrollToSection(e, item.href)}
                     className={`block font-serif text-4xl md:text-7xl lg:text-8xl text-studio-black hover:text-studio-gold hover:italic transition-all duration-500 transform ${
                       isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
                     }`}
