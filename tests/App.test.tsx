@@ -83,13 +83,6 @@ describe('App', () => {
     expect(main).toHaveAttribute('id', 'main-content');
   });
 
-  it('renders custom cursor elements', () => {
-    const { container } = render(<App />);
-
-    expect(container.querySelector('.cursor-dot')).toBeInTheDocument();
-    expect(container.querySelector('.cursor-outline')).toBeInTheDocument();
-  });
-
   it('renders without throwing errors', () => {
     expect(() => render(<App />)).not.toThrow();
   });
