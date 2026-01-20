@@ -1,11 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Reveal } from './ui/Reveal';
 import { useTranslation } from '../hooks/useTranslation';
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation();
   const [offset, setOffset] = useState(0);
-  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,40 +16,20 @@ export const Hero: React.FC = () => {
 
   return (
     <section id="home" className="relative w-full h-screen overflow-hidden bg-studio-black">
-      {/* Parallax Video Background */}
+      {/* Parallax Image Background */}
       <div
         className="absolute inset-0 z-0 w-full h-[120%] -top-[10%]"
         style={{ transform: `translateY(${offset * 0.3}px)` }}
       >
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover opacity-50 grayscale contrast-125"
-          poster="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2574&auto=format&fit=crop"
-          onError={e => {
-            // Hide video on error, fallback to poster image
-            const target = e.currentTarget;
-            target.style.display = 'none';
-          }}
-        >
-          {/* Primary: Pexels dental video (more reliable) */}
-          <source
-            src="https://videos.pexels.com/video-files/3873195/3873195-uhd_2560_1440_25fps.mp4"
-            type="video/mp4"
-          />
-          {/* Fallback: Original Pixabay video */}
-          <source
-            src="https://cdn.pixabay.com/video/2021/07/13/81806-574739932_large.mp4"
-            type="video/mp4"
-          />
-        </video>
+        <img
+          src="/team-hero.jpg"
+          alt="Zeo Dental Clinic Team"
+          className="w-full h-full object-cover opacity-60"
+        />
         {/* Grain Overlay */}
         <div className="absolute inset-0 bg-noise opacity-10 mix-blend-overlay"></div>
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/50" />
       </div>
 
       {/* Hero Content */}
