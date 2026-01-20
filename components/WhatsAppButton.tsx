@@ -61,9 +61,7 @@ export const WhatsAppButton: React.FC = () => {
       target="_blank"
       rel="noopener noreferrer"
       className={`fixed bottom-6 left-6 z-50 p-3 rounded-full transition-all duration-300 transform hover:scale-110 focus:outline-none bg-transparent group ${
-        isOverDark
-          ? 'text-white hover:text-[#25D366]'
-          : 'text-studio-black hover:text-[#25D366]'
+        isOverDark ? 'text-white hover:text-[#25D366]' : 'text-studio-black hover:text-[#25D366]'
       }`}
       aria-label={t('whatsapp.ariaLabel')}
     >

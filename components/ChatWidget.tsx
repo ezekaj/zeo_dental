@@ -31,10 +31,11 @@ export const ChatWidget: React.FC = () => {
         if (buttonCenterY >= rect.top && buttonCenterY <= rect.bottom) {
           // Check if this section has dark background
           const bgClass = section.className;
-          isDark = bgClass.includes('bg-studio-black') ||
-                   bgClass.includes('bg-black') ||
-                   section.id === 'home' ||
-                   section.id === 'contact';
+          isDark =
+            bgClass.includes('bg-studio-black') ||
+            bgClass.includes('bg-black') ||
+            section.id === 'home' ||
+            section.id === 'contact';
         }
       });
 
@@ -201,9 +202,7 @@ export const ChatWidget: React.FC = () => {
         ref={buttonRef}
         onClick={() => setIsOpen(!isOpen)}
         className={`p-3 rounded-full transition-all duration-300 transform hover:scale-110 focus:outline-none bg-transparent ${
-          isOpen
-            ? 'rotate-90'
-            : ''
+          isOpen ? 'rotate-90' : ''
         } ${
           isOverDark
             ? 'text-white hover:text-studio-gold'
