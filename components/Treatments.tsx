@@ -30,7 +30,7 @@ const TreatmentItem: React.FC<TreatmentItemProps> = ({
         <img
           src={image}
           alt={title}
-          className={`w-full h-full object-cover transition-all duration-700 ease-[0.22,1,0.36,1] group-hover:scale-110 ${
+          className={`w-full h-full object-cover transition-all duration-700 ease-[0.22,1,0.36,1] group-hover:scale-110 grayscale group-hover:grayscale-0 ${
             imageLoaded ? 'opacity-100' : 'opacity-0'
           }`}
           onLoad={() => setImageLoaded(true)}
