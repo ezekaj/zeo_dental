@@ -90,24 +90,27 @@ export const ClinicalCases: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="cases" className="py-32 bg-[#FAFAFA] border-t border-gray-100 relative">
-      <div className="container mx-auto px-6 md:px-12">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-24">
+    <section
+      id="cases"
+      className="py-16 sm:py-24 md:py-32 bg-[#FAFAFA] border-t border-gray-100 relative"
+    >
+      <div className="container mx-auto px-4 sm:px-6 md:px-12">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 sm:mb-16 md:mb-24 gap-4 sm:gap-6">
           <Reveal>
-            <div className="flex items-center gap-4 mb-6">
-              <span className="h-[1px] w-8 bg-studio-gold"></span>
-              <span className="text-studio-gold text-[10px] uppercase tracking-ultra font-semibold">
+            <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <span className="h-[1px] w-6 sm:w-8 bg-studio-gold"></span>
+              <span className="text-studio-gold text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra font-semibold">
                 {t('cases.label')}
               </span>
             </div>
-            <h2 className="font-serif text-5xl md:text-7xl text-studio-black">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-studio-black">
               {t('cases.title')}
             </h2>
           </Reveal>
           <Reveal delay={200}>
             <a
               href="#"
-              className="group hidden md:flex items-center gap-4 text-[10px] uppercase tracking-ultra hover:text-studio-gold transition-colors"
+              className="group hidden md:flex items-center gap-4 text-[10px] uppercase tracking-ultra hover:text-studio-gold transition-colors py-2"
               data-cursor="hover"
             >
               {t('cases.viewGallery')}
@@ -139,10 +142,10 @@ export const ClinicalCases: React.FC = () => {
         </div>
 
         {/* Mobile-only CTA since the top one is hidden on mobile */}
-        <div className="mt-12 md:hidden flex justify-center">
+        <div className="mt-8 sm:mt-10 md:mt-12 md:hidden flex justify-center">
           <a
             href="#"
-            className="group flex items-center gap-4 text-[10px] uppercase tracking-ultra hover:text-studio-gold transition-colors"
+            className="group flex items-center gap-3 sm:gap-4 text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra hover:text-studio-gold transition-colors py-3 px-4"
           >
             {t('cases.viewGallery')}
             <ArrowRight className="w-4 h-4 transform group-hover:translate-x-2 transition-transform" />

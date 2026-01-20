@@ -58,13 +58,14 @@ export const Header: React.FC = () => {
             : 'bg-transparent py-8 border-transparent text-white'
         }`}
       >
-        <div className="container mx-auto px-6 md:px-12 grid grid-cols-3 items-center">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 grid grid-cols-3 items-center">
           {/* Left: Menu */}
-          <div className="flex items-center justify-start gap-4">
+          <div className="flex items-center justify-start gap-2 sm:gap-4">
             <button
-              className="group flex items-center gap-3 focus:outline-none"
+              className="group flex items-center gap-2 sm:gap-3 p-2 -ml-2 focus:outline-none"
               onClick={() => setIsMobileMenuOpen(true)}
               data-cursor="hover"
+              aria-label="Open menu"
             >
               <div className="flex flex-col items-end gap-[5px] w-6 group-hover:gap-[7px] transition-all">
                 <span className="w-full h-[1px] bg-current"></span>
@@ -78,12 +79,12 @@ export const Header: React.FC = () => {
             {/* Language Switcher */}
             <button
               onClick={() => setLanguage(language === 'en' ? 'sq' : 'en')}
-              className="flex items-center gap-2 text-[10px] uppercase tracking-ultra font-medium hover:text-studio-gold transition-colors"
+              className="flex items-center gap-1 sm:gap-2 p-2 text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra font-medium hover:text-studio-gold transition-colors"
               data-cursor="hover"
               aria-label="Switch language"
             >
               <Globe className="w-4 h-4" />
-              <span className="hidden sm:inline">{language === 'en' ? 'SQ' : 'EN'}</span>
+              <span>{language === 'en' ? 'SQ' : 'EN'}</span>
             </button>
           </div>
 
@@ -91,7 +92,7 @@ export const Header: React.FC = () => {
           <div className="flex justify-center">
             <a
               href="#"
-              className="font-serif text-2xl tracking-widest relative group"
+              className="font-serif text-xl sm:text-2xl tracking-widest relative group"
               data-cursor="hover"
             >
               ZEO<span className="text-studio-gold">.</span>
@@ -103,7 +104,7 @@ export const Header: React.FC = () => {
             <a
               href="#contact"
               onClick={e => scrollToSection(e, '#contact')}
-              className={`text-[10px] uppercase tracking-ultra font-medium border px-6 py-3 transition-all duration-500 ${
+              className={`text-[10px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra font-medium border px-3 sm:px-6 py-2.5 sm:py-3 transition-all duration-500 ${
                 isScrolled
                   ? 'border-studio-black text-studio-black hover:bg-studio-black hover:text-white'
                   : 'border-white text-white hover:bg-white hover:text-studio-black'
@@ -138,13 +139,13 @@ export const Header: React.FC = () => {
           </div>
 
           <div className="h-full flex flex-col justify-center items-center">
-            <nav className="flex flex-col items-center space-y-4 md:space-y-8">
+            <nav className="flex flex-col items-center space-y-3 sm:space-y-4 md:space-y-8">
               {NAV_ITEMS.map((item, idx) => (
                 <div key={item.labelKey} className="overflow-hidden">
                   <a
                     href={item.href}
                     onClick={e => scrollToSection(e, item.href)}
-                    className={`block font-serif text-4xl md:text-7xl lg:text-8xl text-studio-black hover:text-studio-gold hover:italic transition-all duration-500 transform ${
+                    className={`block font-serif text-3xl sm:text-4xl md:text-7xl lg:text-8xl text-studio-black hover:text-studio-gold hover:italic transition-all duration-500 transform py-1 ${
                       isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
                     }`}
                     style={{ transitionDelay: `${300 + idx * 100}ms` }}
@@ -157,8 +158,8 @@ export const Header: React.FC = () => {
             </nav>
           </div>
 
-          <div className="absolute bottom-12 left-0 w-full text-center">
-            <p className="text-[10px] uppercase tracking-ultra text-studio-gray">
+          <div className="absolute bottom-8 sm:bottom-12 left-0 w-full text-center">
+            <p className="text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra text-studio-gray">
               {t('nav.location')}
             </p>
           </div>

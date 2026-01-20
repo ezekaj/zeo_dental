@@ -127,25 +127,25 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled, currentView, onNavigat
       {isOpen && (
         <div
           id="mobile-menu"
-          className="md:hidden bg-white border-t border-slate-100 absolute w-full h-screen top-full left-0 animate-fade-in-up"
+          className="md:hidden bg-white border-t border-slate-100 absolute w-full max-h-[85vh] overflow-y-auto top-full left-0 animate-fade-in-up"
           role="menu"
           aria-label="Mobile navigation"
         >
-          <div className="px-4 pt-8 pb-3 space-y-6 flex flex-col items-center">
+          <div className="px-6 pt-6 pb-8 space-y-2 flex flex-col items-center">
             {navLinks.map(link => (
               <button
                 key={link.name}
                 onClick={() => handleLinkClick(link.id)}
-                className={`block text-2xl font-serif hover:text-primary-600 ${
+                className={`block w-full text-center text-xl font-serif py-3 px-4 rounded-lg hover:bg-slate-50 hover:text-primary-600 transition-colors ${
                   currentView === 'home' && activeSection === link.id
-                    ? 'text-primary-600 font-medium'
+                    ? 'text-primary-600 font-medium bg-primary-50'
                     : 'text-slate-800'
                 }`}
               >
                 {link.name}
               </button>
             ))}
-            <div className="mt-4">
+            <div className="py-3">
               <LanguageSwitcher variant="dark" />
             </div>
             <button
@@ -153,15 +153,18 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled, currentView, onNavigat
                 setIsOpen(false);
                 onNavigate('booking');
               }}
-              className="mt-4 w-full text-center px-6 py-4 rounded-full bg-primary-600 text-white font-semibold text-lg shadow-md"
+              className="mt-2 w-full text-center px-6 py-4 rounded-full bg-primary-600 text-white font-semibold text-lg shadow-md active:scale-95 transition-transform"
             >
               {t('nav.booking')}
             </button>
-            <div className="mt-8 flex flex-col items-center text-slate-500">
-              <span className="flex items-center gap-2 mb-2">
+            <div className="mt-6 flex flex-col items-center text-slate-500">
+              <a
+                href="tel:+35568400484"
+                className="flex items-center gap-2 py-2 px-4 rounded-lg hover:bg-slate-50 transition-colors"
+              >
                 <Phone size={18} /> {t('contact.phone')}
-              </span>
-              <span className="text-sm">{t('contact.addressShort')}</span>
+              </a>
+              <span className="text-sm mt-1">{t('contact.addressShort')}</span>
             </div>
           </div>
         </div>

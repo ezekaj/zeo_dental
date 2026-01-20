@@ -9,10 +9,10 @@ export const Team: React.FC = () => {
   const team = DOCTORS.slice(1);
 
   return (
-    <section id="team" className="py-32 bg-white relative">
-      <div className="container mx-auto px-6 md:px-12">
+    <section id="team" className="py-16 sm:py-24 md:py-32 bg-white relative">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12">
         {/* Founder Section */}
-        <div className="flex flex-col lg:flex-row gap-16 items-center mb-32 border-b border-gray-100 pb-24">
+        <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center mb-16 sm:mb-24 md:mb-32 border-b border-gray-100 pb-12 sm:pb-16 md:pb-24">
           <div className="w-full lg:w-5/12">
             <Reveal>
               <div className="relative aspect-[3/4] overflow-hidden group">
@@ -32,40 +32,40 @@ export const Team: React.FC = () => {
           </div>
           <div className="w-full lg:w-7/12 lg:pl-12">
             <Reveal delay={200}>
-              <div className="flex items-center gap-4 mb-8">
-                <span className="h-[1px] w-8 bg-studio-gold"></span>
-                <span className="text-studio-gold text-[10px] uppercase tracking-ultra font-semibold">
+              <div className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+                <span className="h-[1px] w-6 sm:w-8 bg-studio-gold"></span>
+                <span className="text-studio-gold text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra font-semibold">
                   {t('team.founderLabel')}
                 </span>
               </div>
 
-              <h2 className="font-serif text-4xl md:text-7xl text-studio-black mb-6 md:mb-8 leading-[0.9]">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-studio-black mb-4 sm:mb-6 md:mb-8 leading-[0.9]">
                 {founder.name}
               </h2>
 
               <p
-                className="font-serif text-lg md:text-2xl text-studio-black mb-8 md:mb-10 leading-relaxed opacity-80 max-w-2xl [&_strong]:font-bold [&_strong]:text-studio-black"
+                className="font-serif text-base sm:text-lg md:text-xl lg:text-2xl text-studio-black mb-6 sm:mb-8 md:mb-10 leading-relaxed opacity-80 max-w-2xl [&_strong]:font-bold [&_strong]:text-studio-black"
                 dangerouslySetInnerHTML={{
                   __html: t(`team.doctors.${founder.id}.bio`),
                 }}
               />
 
-              <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-16">
+              <div className="flex flex-col md:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-16">
                 <div>
-                  <span className="text-[10px] text-studio-gray uppercase tracking-ultra block mb-2">
+                  <span className="text-[11px] sm:text-[10px] text-studio-gray uppercase tracking-wide sm:tracking-ultra block mb-2">
                     {t('team.education')}
                   </span>
-                  <div className="font-serif text-base md:text-lg space-y-1">
+                  <div className="font-serif text-sm sm:text-base md:text-lg space-y-1">
                     <p>{t(`team.doctors.${founder.id}.education1`)}</p>
                     <p>{t(`team.doctors.${founder.id}.education2`)}</p>
                     <p>{t(`team.doctors.${founder.id}.education3`)}</p>
                   </div>
                 </div>
                 <div>
-                  <span className="text-[10px] text-studio-gray uppercase tracking-ultra block mb-2">
+                  <span className="text-[11px] sm:text-[10px] text-studio-gray uppercase tracking-wide sm:tracking-ultra block mb-2">
                     {t('team.memberships')}
                   </span>
-                  <div className="font-serif text-base md:text-lg space-y-1">
+                  <div className="font-serif text-sm sm:text-base md:text-lg space-y-1">
                     <p>{t(`team.doctors.${founder.id}.membership1`)}</p>
                     <p>{t(`team.doctors.${founder.id}.membership2`)}</p>
                     <p>{t(`team.doctors.${founder.id}.membership3`)}</p>
@@ -73,8 +73,8 @@ export const Team: React.FC = () => {
                 </div>
               </div>
 
-              <div className="mt-12 pt-8 border-t border-gray-100">
-                <p className="font-serif italic text-studio-gray text-lg">
+              <div className="mt-8 sm:mt-10 md:mt-12 pt-6 sm:pt-8 border-t border-gray-100">
+                <p className="font-serif italic text-studio-gray text-base sm:text-lg">
                   &ldquo;{t(`team.doctors.${founder.id}.quote`)}&rdquo;
                 </p>
               </div>
@@ -85,21 +85,21 @@ export const Team: React.FC = () => {
         {/* Team Grid */}
         <div>
           <Reveal>
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 md:mb-16 gap-4">
-              <h3 className="font-serif text-2xl md:text-3xl text-studio-black">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 sm:mb-10 md:mb-12 lg:mb-16 gap-3 sm:gap-4">
+              <h3 className="font-serif text-xl sm:text-2xl md:text-3xl text-studio-black">
                 {t('team.teamTitle')}
               </h3>
-              <span className="text-[10px] uppercase tracking-ultra text-studio-gray">
+              <span className="text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra text-studio-gray">
                 {t('team.teamSubtitle')}
               </span>
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-8 sm:gap-y-12 md:gap-y-16">
             {team.map((member, idx) => (
               <Reveal key={member.id} delay={idx * 100}>
                 <div className="group cursor-pointer">
-                  <div className="aspect-[3/4] overflow-hidden mb-6 relative bg-gray-50">
+                  <div className="aspect-[3/4] overflow-hidden mb-4 sm:mb-6 relative bg-gray-50">
                     <picture>
                       <source srcSet={member.image} type="image/webp" />
                       <source srcSet={member.image.replace('.webp', '.jpg')} type="image/jpeg" />
@@ -117,11 +117,11 @@ export const Team: React.FC = () => {
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500"></div>
                   </div>
                   <div className="flex flex-col items-center text-center">
-                    <h3 className="font-serif text-2xl text-studio-black mb-2 group-hover:text-studio-gold transition-colors duration-300">
+                    <h3 className="font-serif text-xl sm:text-2xl text-studio-black mb-2 group-hover:text-studio-gold transition-colors duration-300">
                       {member.name}
                     </h3>
                     <div className="h-[1px] w-6 bg-gray-200 mb-2 group-hover:w-12 transition-all duration-500"></div>
-                    <p className="text-[10px] uppercase tracking-ultra text-studio-gray">
+                    <p className="text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra text-studio-gray">
                       {t(`team.doctors.${member.id}.role`)}
                     </p>
                   </div>

@@ -22,7 +22,7 @@ const TreatmentItem: React.FC<TreatmentItemProps> = ({
 
   return (
     <div
-      className="group relative flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px] h-[400px] md:h-[450px] lg:h-[500px] overflow-hidden"
+      className="group relative flex-shrink-0 w-[280px] sm:w-[300px] md:w-[350px] lg:w-[400px] h-[380px] sm:h-[400px] md:h-[450px] lg:h-[500px] overflow-hidden"
       data-cursor="hover"
     >
       {/* Background Image */}
@@ -40,7 +40,7 @@ const TreatmentItem: React.FC<TreatmentItemProps> = ({
       </div>
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-between p-6 md:p-8 lg:p-10">
+      <div className="absolute inset-0 flex flex-col justify-between p-5 sm:p-6 md:p-8 lg:p-10">
         {/* Header */}
         <div className="flex justify-between items-start w-full">
           <span className="font-serif text-lg md:text-xl italic text-white/60 group-hover:text-studio-gold transition-colors duration-500">
@@ -51,21 +51,21 @@ const TreatmentItem: React.FC<TreatmentItemProps> = ({
 
         {/* Bottom Content */}
         <div className="relative z-10">
-          <h3 className="font-serif text-2xl md:text-3xl text-white mb-4 md:mb-6 group-hover:translate-x-2 transition-transform duration-700 ease-[0.19,1,0.22,1]">
+          <h3 className="font-serif text-xl sm:text-2xl md:text-3xl text-white mb-3 sm:mb-4 md:mb-6 group-hover:translate-x-2 transition-transform duration-700 ease-[0.19,1,0.22,1]">
             {title}
           </h3>
 
           <div className="overflow-hidden">
-            <p className="font-sans text-xs text-white/70 font-medium leading-loose max-w-[280px] opacity-60 group-hover:opacity-100 transition-all duration-700 transform translate-y-4 group-hover:translate-y-0">
+            <p className="font-sans text-[11px] sm:text-xs text-white/70 font-medium leading-relaxed sm:leading-loose max-w-[260px] sm:max-w-[280px] opacity-60 group-hover:opacity-100 transition-all duration-700 transform translate-y-4 group-hover:translate-y-0">
               {description}
             </p>
           </div>
 
           {/* Learn more link */}
-          <div className="mt-6 overflow-hidden">
+          <div className="mt-4 sm:mt-6 overflow-hidden">
             <a
               href="#booking"
-              className="inline-flex items-center gap-2 text-[10px] uppercase tracking-ultra text-white/60 group-hover:text-studio-gold transition-all duration-500 transform translate-y-8 group-hover:translate-y-0"
+              className="inline-flex items-center gap-2 text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra text-white/60 group-hover:text-studio-gold transition-all duration-500 transform translate-y-8 group-hover:translate-y-0 py-2"
             >
               {learnMoreText}
               <ArrowRight className="w-3 h-3 transform group-hover:translate-x-1 transition-transform" />
@@ -149,16 +149,16 @@ export const Treatments: React.FC = () => {
   return (
     <section id="treatments" className="bg-white border-b border-gray-100">
       {/* Section Header */}
-      <div className="container mx-auto px-6 md:px-12 py-16 lg:py-24">
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 py-12 sm:py-16 lg:py-24">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 sm:gap-8">
           <Reveal>
-            <div className="flex items-center gap-4 mb-6">
-              <span className="h-[1px] w-8 bg-studio-gold"></span>
-              <span className="text-studio-gold text-[10px] uppercase tracking-ultra font-semibold">
+            <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <span className="h-[1px] w-6 sm:w-8 bg-studio-gold"></span>
+              <span className="text-studio-gold text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra font-semibold">
                 {t('treatments.label')}
               </span>
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-studio-black leading-[1.1]">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-studio-black leading-[1.1]">
               {t('treatments.title')}
             </h2>
           </Reveal>
@@ -198,11 +198,11 @@ export const Treatments: React.FC = () => {
       </div>
 
       {/* Mobile CTA */}
-      <div className="container mx-auto px-6 md:px-12 py-12 lg:hidden">
+      <div className="container mx-auto px-6 md:px-12 py-10 sm:py-12 lg:hidden">
         <div className="flex justify-center">
           <a
             href="#booking"
-            className="group flex items-center gap-4 text-[10px] uppercase tracking-ultra hover:text-studio-gold transition-colors"
+            className="group flex items-center gap-3 sm:gap-4 text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra hover:text-studio-gold transition-colors py-3 px-4"
             data-cursor="hover"
           >
             {t('treatments.bookConsultation')}
