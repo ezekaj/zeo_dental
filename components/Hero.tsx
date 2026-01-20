@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
         <img
           src="/team-hero.jpg"
           alt="Zeo Dental Clinic Team"
-          className="w-full h-full object-cover opacity-60"
+          className="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700"
         />
         {/* Grain Overlay */}
         <div className="absolute inset-0 bg-noise opacity-10 mix-blend-overlay"></div>
