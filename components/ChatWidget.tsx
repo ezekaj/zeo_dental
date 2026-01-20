@@ -10,7 +10,46 @@ export const ChatWidget: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputText, setInputText] = useState('');
   const [loadingState, setLoadingState] = useState<LoadingState>(LoadingState.IDLE);
+  const [isOverDark, setIsOverDark] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  // Detect if button is over a dark section
+  useEffect(() => {
+    const checkBackground = () => {
+      if (!buttonRef.current) return;
+
+      const buttonRect = buttonRef.current.getBoundingClientRect();
+      const buttonCenterY = buttonRect.top + buttonRect.height / 2;
+
+      // Get all sections and check which one the button is over
+      const sections = document.querySelectorAll('section');
+      let isDark = true; // Default to dark (hero section)
+
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (buttonCenterY >= rect.top && buttonCenterY <= rect.bottom) {
+          // Check if this section has dark background
+          const bgClass = section.className;
+          isDark = bgClass.includes('bg-studio-black') ||
+                   bgClass.includes('bg-black') ||
+                   section.id === 'home' ||
+                   section.id === 'contact';
+        }
+      });
+
+      setIsOverDark(isDark);
+    };
+
+    checkBackground();
+    window.addEventListener('scroll', checkBackground);
+    window.addEventListener('resize', checkBackground);
+
+    return () => {
+      window.removeEventListener('scroll', checkBackground);
+      window.removeEventListener('resize', checkBackground);
+    };
+  }, []);
 
   // Initialize and update greeting when language changes
   useEffect(() => {
@@ -157,21 +196,26 @@ export const ChatWidget: React.FC = () => {
         </div>
       )}
 
-      {/* Toggle Button */}
+      {/* Toggle Button - Transparent with outline icon */}
       <button
+        ref={buttonRef}
         onClick={() => setIsOpen(!isOpen)}
-        className={`p-4 rounded-full shadow-2xl transition-all duration-500 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+        className={`p-3 rounded-full transition-all duration-300 transform hover:scale-110 focus:outline-none bg-transparent ${
           isOpen
-            ? 'bg-studio-gold rotate-90 text-white focus:ring-studio-gold'
-            : 'bg-studio-gold text-white hover:bg-studio-black focus:ring-studio-gold'
+            ? 'rotate-90'
+            : ''
+        } ${
+          isOverDark
+            ? 'text-white hover:text-studio-gold'
+            : 'text-studio-black hover:text-studio-gold'
         }`}
         aria-expanded={isOpen}
         aria-label={isOpen ? 'Close chat assistant' : 'Open chat assistant'}
       >
         {isOpen ? (
-          <X size={28} aria-hidden="true" />
+          <X size={32} strokeWidth={1.5} aria-hidden="true" />
         ) : (
-          <MessageCircle size={28} aria-hidden="true" />
+          <MessageCircle size={32} strokeWidth={1.5} aria-hidden="true" />
         )}
       </button>
     </div>
