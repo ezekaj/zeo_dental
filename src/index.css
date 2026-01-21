@@ -30,6 +30,13 @@
 /* Custom base styles */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Account for fixed header */
+}
+
+@media (max-width: 640px) {
+  html {
+    scroll-padding-top: 80px; /* Smaller header on mobile */
+  }
 }
 
 body {
