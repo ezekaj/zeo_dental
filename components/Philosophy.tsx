@@ -62,7 +62,7 @@ export const Philosophy: React.FC = () => {
                 <span className="text-studio-gold text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra mb-4 sm:mb-6 block font-semibold">
                   {t('philosophy.label')}
                 </span>
-                <div className="relative aspect-[3/4] w-full overflow-hidden mb-6 sm:mb-8 bg-gray-100">
+                <div className="relative aspect-[3/4] w-full overflow-hidden mb-6 sm:mb-8 bg-gray-100 group/philosophy">
                   {/* Image container with fade animation */}
                   <div className="absolute inset-0">
                     {philosophyImages.map((img, index) => (
@@ -70,7 +70,7 @@ export const Philosophy: React.FC = () => {
                         key={img.src}
                         src={img.src}
                         alt={img.alt}
-                        className={`absolute inset-0 object-cover w-full h-full transition-opacity duration-1000 ease-in-out ${
+                        className={`absolute inset-0 object-cover w-full h-full transition-all duration-1000 ease-in-out grayscale group-hover/philosophy:grayscale-0 ${
                           index === currentImageIndex && !isTransitioning
                             ? 'opacity-100'
                             : 'opacity-0'
