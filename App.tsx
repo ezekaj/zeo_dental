@@ -11,6 +11,8 @@ import { WhatsAppButton } from './components/WhatsAppButton';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { ReceptionistApp } from './components/receptionist/ReceptionistApp';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
+import { TermsOfService } from './components/TermsOfService';
 
 // Simple router based on pathname
 const useRoute = () => {
@@ -55,11 +57,22 @@ const MainSite: React.FC = () => {
 const App: React.FC = () => {
   const route = useRoute();
 
+  const renderRoute = () => {
+    switch (route) {
+      case '/receptionist':
+        return <ReceptionistApp />;
+      case '/privacy-policy':
+        return <PrivacyPolicy />;
+      case '/terms-of-service':
+        return <TermsOfService />;
+      default:
+        return <MainSite />;
+    }
+  };
+
   return (
     <LanguageProvider>
-      <ErrorBoundary>
-        {route === '/receptionist' ? <ReceptionistApp /> : <MainSite />}
-      </ErrorBoundary>
+      <ErrorBoundary>{renderRoute()}</ErrorBoundary>
     </LanguageProvider>
   );
 };
