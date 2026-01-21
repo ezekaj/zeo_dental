@@ -38,8 +38,8 @@ export async function bookingRoutes(fastify: FastifyInstance) {
       });
     }
 
-    // Validate required fields
-    const requiredFields = ['name', 'email', 'phone', 'service', 'date', 'time'] as const;
+    // Validate required fields (name, service, date, time are always required)
+    const requiredFields = ['name', 'service', 'date', 'time'] as const;
     for (const field of requiredFields) {
       if (!request.body[field]) {
         return reply.status(400).send({
@@ -50,8 +50,17 @@ export async function bookingRoutes(fastify: FastifyInstance) {
       }
     }
 
-    // Validate email
-    if (!isValidEmail(email)) {
+    // Require at least phone OR email
+    if (!phone && !email) {
+      return reply.status(400).send({
+        success: false,
+        message: 'Either phone or email is required',
+        error: 'Either phone or email is required',
+      });
+    }
+
+    // Validate email if provided
+    if (email && !isValidEmail(email)) {
       return reply.status(400).send({
         success: false,
         message: 'Invalid email format',
@@ -59,8 +68,8 @@ export async function bookingRoutes(fastify: FastifyInstance) {
       });
     }
 
-    // Validate phone
-    if (!isValidPhone(phone)) {
+    // Validate phone if provided
+    if (phone && !isValidPhone(phone)) {
       return reply.status(400).send({
         success: false,
         message: 'Invalid phone number format',
@@ -96,8 +105,8 @@ export async function bookingRoutes(fastify: FastifyInstance) {
          RETURNING id, name, email, service, preferred_date, preferred_time, status`,
         [
           name.trim(),
-          email.trim().toLowerCase(),
-          phone.trim(),
+          email ? email.trim().toLowerCase() : null,
+          phone ? phone.trim() : null,
           service.trim(),
           date,
           time.toLowerCase(),

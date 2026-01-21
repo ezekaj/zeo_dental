@@ -400,6 +400,8 @@
     "namePlaceholder": "Emri",
     "phonePlaceholder": "Telefoni",
     "emailPlaceholder": "Email",
+    "phoneOrEmail": "Kërkohet telefoni ose email",
+    "optional": "Opsionale",
     "privacyNotice": "Duke dërguar këtë formular, ju pranoni politikën tonë të privatësisë dhe kushtet e shërbimit.",
     "submit": "Kërkesë për Rezervim",
     "submitting": "Duke dërguar...",

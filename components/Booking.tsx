@@ -37,6 +37,12 @@ export const Booking: React.FC = () => {
     // Honeypot check
     if (formData.honeypot) return;
 
+    // Require at least phone OR email
+    if (!formData.phone && !formData.email) {
+      setStatus('ERROR');
+      return;
+    }
+
     setStatus('SUBMITTING');
 
     const API_BASE = import.meta.env.DEV ? 'http://localhost:3000' : '';
@@ -204,9 +210,11 @@ export const Booking: React.FC = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder={t('booking.phonePlaceholder')}
-                  required
                   className="w-full bg-transparent border-b border-white/20 py-4 text-xl font-serif text-white placeholder-white/20 focus:outline-none focus:border-white transition-colors"
                 />
+                <span className="text-[10px] text-white/30 mt-1 block">
+                  {t('booking.phoneOrEmail')}
+                </span>
               </div>
               <div className="group relative">
                 <input
@@ -215,9 +223,11 @@ export const Booking: React.FC = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder={t('booking.emailPlaceholder')}
-                  required
                   className="w-full bg-transparent border-b border-white/20 py-4 text-xl font-serif text-white placeholder-white/20 focus:outline-none focus:border-white transition-colors"
                 />
+                <span className="text-[10px] text-white/30 mt-1 block">
+                  {t('booking.optional')}
+                </span>
               </div>
               <div className="group relative">
                 <label className="text-[10px] uppercase tracking-ultra text-white/40 mb-2 block">

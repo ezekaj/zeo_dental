@@ -400,6 +400,8 @@
     "namePlaceholder": "Name",
     "phonePlaceholder": "Phone",
     "emailPlaceholder": "Email",
+    "phoneOrEmail": "Phone or email required",
+    "optional": "Optional",
     "privacyNotice": "By submitting this form, you agree to our privacy policy and terms of service.",
     "submit": "Request Booking",
     "submitting": "Sending...",
