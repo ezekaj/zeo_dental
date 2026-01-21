@@ -179,7 +179,7 @@ export const Booking: React.FC = () => {
         </Reveal>
 
         <Reveal delay={200}>
-          <form className="w-full border-t border-white/10 pt-16" onSubmit={handleSubmit}>
+          <form id="booking-form" className="w-full border-t border-white/10 pt-16" onSubmit={handleSubmit}>
             {/* Honeypot field */}
             <input
               type="text"

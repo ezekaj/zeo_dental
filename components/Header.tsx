@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   { labelKey: 'nav.philosophy', href: '#philosophy' },
   { labelKey: 'nav.team', href: '#team' },
   { labelKey: 'nav.cases', href: '#cases' },
-  { labelKey: 'nav.contact', href: '#contact' },
+  { labelKey: 'nav.contact', href: '#booking-form' },
 ];
 
 // Header height offset for smooth scrolling
@@ -102,8 +102,8 @@ export const Header: React.FC = () => {
           {/* Right: CTA */}
           <div className="flex justify-end">
             <a
-              href="#contact"
-              onClick={e => scrollToSection(e, '#contact')}
+              href="#booking-form"
+              onClick={e => scrollToSection(e, '#booking-form')}
               className={`text-[10px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra font-medium border px-3 sm:px-6 py-2.5 sm:py-3 transition-all duration-500 ${
                 isScrolled
                   ? 'border-studio-black text-studio-black hover:bg-studio-black hover:text-white'

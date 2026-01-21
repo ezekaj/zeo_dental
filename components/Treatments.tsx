@@ -64,7 +64,7 @@ const TreatmentItem: React.FC<TreatmentItemProps> = ({
           {/* Learn more link */}
           <div className="mt-4 sm:mt-6 overflow-hidden">
             <a
-              href="#contact"
+              href="#booking-form"
               className="inline-flex items-center gap-2 text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra text-white/60 group-hover:text-studio-gold transition-all duration-500 transform translate-y-8 group-hover:translate-y-0 py-2"
             >
               {learnMoreText}
@@ -165,7 +165,7 @@ export const Treatments: React.FC = () => {
 
           <Reveal delay={200}>
             <a
-              href="#contact"
+              href="#booking-form"
               className="group hidden lg:flex items-center gap-4 text-[10px] uppercase tracking-ultra hover:text-studio-gold transition-colors"
               data-cursor="hover"
             >
@@ -201,7 +201,7 @@ export const Treatments: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12 py-10 sm:py-12 lg:hidden">
         <div className="flex justify-center">
           <a
-            href="#contact"
+            href="#booking-form"
             className="group flex items-center gap-3 sm:gap-4 text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra hover:text-studio-gold transition-colors py-3 px-4"
             data-cursor="hover"
           >

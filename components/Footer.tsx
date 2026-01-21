@@ -7,7 +7,7 @@ const NAV_ITEMS = [
   { labelKey: 'nav.philosophy', href: '#philosophy' },
   { labelKey: 'nav.team', href: '#team' },
   { labelKey: 'nav.cases', href: '#cases' },
-  { labelKey: 'nav.contact', href: '#contact' },
+  { labelKey: 'nav.contact', href: '#booking-form' },
 ];
 
 export const Footer: React.FC = () => {
