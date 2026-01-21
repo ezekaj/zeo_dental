@@ -105,3 +105,14 @@ body {
   outline: 2px solid #C5A47E;
   outline-offset: 2px;
 }
+
+/* Hero image responsive positioning */
+.hero-image {
+  object-position: center 25%;
+}
+
+@media (min-width: 640px) {
+  .hero-image {
+    object-position: center center;
+  }
+}
