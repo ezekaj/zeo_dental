@@ -35,8 +35,8 @@ export const Hero: React.FC = () => {
       {/* Hero Content */}
       <div className="relative z-10 w-full min-h-screen flex flex-col justify-center items-center text-center px-6 py-20">
         <Reveal>
-          <h1 className="flex flex-col items-center justify-center text-white leading-[0.9] px-4">
-            <span className="font-serif italic font-light text-[clamp(2rem,8vw,min(8vw,12vh))] md:text-[min(8vw,12vh)] tracking-tight opacity-90 pr-[0.1em]">
+          <h1 className="flex flex-col items-center justify-center text-white leading-[0.95] px-6">
+            <span className="font-serif italic font-light text-[clamp(2rem,8vw,min(8vw,12vh))] md:text-[min(8vw,12vh)] tracking-tight opacity-90 px-[0.15em]">
               {t('hero.artOf')}
             </span>
             <span className="font-serif font-normal text-[clamp(2.5rem,11vw,min(12vw,18vh))] md:text-[min(12vw,18vh)] tracking-tighter mt-2">

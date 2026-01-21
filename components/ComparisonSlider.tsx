@@ -70,15 +70,15 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
       onTouchStart={handleMouseDown}
       data-cursor="hover"
     >
-      {/* Before Image (Background Layer) */}
+      {/* After Image (Background Layer - Right Side) */}
       <img
-        src={beforeImage}
-        alt="Before"
+        src={afterImage}
+        alt="After"
         className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none select-none grayscale group-hover:grayscale-0 group-hover/case:grayscale-0 transition-all duration-[1.5s] ease-out"
         draggable={false}
       />
 
-      {/* After Image (Foreground Layer - Clipped) */}
+      {/* Before Image (Foreground Layer - Clipped Left Side) */}
       <div
         className="absolute top-0 left-0 h-full overflow-hidden pointer-events-none border-r border-white/50 z-20"
         style={{ width: `${sliderPosition}%` }}
@@ -89,8 +89,8 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
           style={{ width: containerWidth ? `${containerWidth}px` : '100vw' }}
         >
           <img
-            src={afterImage}
-            alt="After"
+            src={beforeImage}
+            alt="Before"
             className="absolute top-0 left-0 w-full h-full object-cover select-none grayscale group-hover:grayscale-0 group-hover/case:grayscale-0 transition-all duration-[1.5s] ease-out"
             draggable={false}
           />
