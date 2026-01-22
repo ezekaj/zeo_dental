@@ -5,7 +5,7 @@ import { useTranslation } from '../hooks/useTranslation';
 
 const NAV_ITEMS = [
   { labelKey: 'nav.clinic', href: '#home' },
-  { labelKey: 'nav.treatments', href: '#treatments' },
+  { labelKey: 'nav.treatments', href: '/treatments', isPage: true },
   { labelKey: 'nav.philosophy', href: '#philosophy' },
   { labelKey: 'nav.team', href: '#team' },
   { labelKey: 'nav.cases', href: '#cases' },
@@ -148,7 +148,15 @@ export const Header: React.FC = () => {
                 <div key={item.labelKey} className="overflow-hidden">
                   <a
                     href={item.href}
-                    onClick={e => scrollToSection(e, item.href)}
+                    onClick={e => {
+                      if ('isPage' in item && item.isPage) {
+                        // For page links, close menu and navigate
+                        setIsMobileMenuOpen(false);
+                        // Let the default navigation happen
+                      } else {
+                        scrollToSection(e, item.href);
+                      }
+                    }}
                     className={`block font-serif text-3xl sm:text-4xl md:text-7xl lg:text-8xl text-studio-black hover:text-studio-gold hover:italic transition-all duration-500 transform py-1 ${
                       isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
                     }`}

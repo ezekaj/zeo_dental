@@ -14,6 +14,7 @@ import { ReceptionistApp } from './components/receptionist/ReceptionistApp';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { TermsOfService } from './components/TermsOfService';
 import { TreatmentPage } from './components/TreatmentPage';
+import { TreatmentsOverview } from './components/TreatmentsOverview';
 
 // Treatment page configurations with hero images
 const treatmentConfigs: Record<string, { key: string; heroImage: string }> = {
@@ -100,6 +101,8 @@ const App: React.FC = () => {
         return <PrivacyPolicy />;
       case '/terms-of-service':
         return <TermsOfService />;
+      case '/treatments':
+        return <TreatmentsOverview />;
       default:
         return <MainSite />;
     }
