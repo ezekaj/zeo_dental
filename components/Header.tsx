@@ -6,9 +6,9 @@ import { useTranslation } from '../hooks/useTranslation';
 const NAV_ITEMS = [
   { labelKey: 'nav.clinic', href: '#home' },
   { labelKey: 'nav.treatments', href: '/treatments', isPage: true },
-  { labelKey: 'nav.philosophy', href: '#philosophy' },
-  { labelKey: 'nav.team', href: '#team' },
-  { labelKey: 'nav.cases', href: '#cases' },
+  { labelKey: 'nav.philosophy', href: '/philosophy', isPage: true },
+  { labelKey: 'nav.team', href: '/team', isPage: true },
+  { labelKey: 'nav.cases', href: '/cases', isPage: true },
   { labelKey: 'nav.contact', href: '#booking-form' },
 ];
 

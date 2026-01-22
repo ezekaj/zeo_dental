@@ -15,6 +15,9 @@ import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { TermsOfService } from './components/TermsOfService';
 import { TreatmentPage } from './components/TreatmentPage';
 import { TreatmentsOverview } from './components/TreatmentsOverview';
+import { PhilosophyPage } from './components/PhilosophyPage';
+import { TeamPage } from './components/TeamPage';
+import { ClinicalCasesPage } from './components/ClinicalCasesPage';
 
 // Treatment page configurations with hero images
 const treatmentConfigs: Record<string, { key: string; heroImage: string }> = {
@@ -103,6 +106,12 @@ const App: React.FC = () => {
         return <TermsOfService />;
       case '/treatments':
         return <TreatmentsOverview />;
+      case '/philosophy':
+        return <PhilosophyPage />;
+      case '/team':
+        return <TeamPage />;
+      case '/cases':
+        return <ClinicalCasesPage />;
       default:
         return <MainSite />;
     }

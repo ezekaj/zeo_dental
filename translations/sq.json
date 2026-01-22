@@ -972,5 +972,39 @@
       "duration": "Varion sipas llojit të trajtimit",
       "warranty": "5-15 vjet në varësi të trajtimit"
     }
+  },
+  "philosophyPage": {
+    "title": "Filozofia Jonë",
+    "subtitle": "Në Klinikën Dentare Zeo, besojmë se kujdesi i jashtëzakonshëm dentar është një formë arti. Çdo buzëqeshje që krijojmë është një kryevepër e precizitetit, teknologjisë dhe prekjes njerëzore.",
+    "visionLabel": "Vizioni Ynë",
+    "visionTitle": "Transformojmë Buzëqeshje, Ndryshojmë Jetë",
+    "visionText": "Ne përfytyrojmë një botë ku vizita tek dentisti nuk është vetëm një nevojë, por një përvojë që e prisni me padurim. Klinika jonë është ndërtuar mbi bazën e besimit, ekselencës dhe kujdesit të vërtetë për çdo pacient që hyn në dyert tona. Kombinojmë artizanatin e stomatologjisë estetike me precizitetin e teknologjisë moderne për të ofruar rezultate që tejkalojnë pritshmëritë.",
+    "valuesLabel": "Vlerat Thelbesore",
+    "valuesTitle": "Çfarë Përfaqësojmë"
+  },
+  "teamPage": {
+    "title": "Njihuni me Ekipin Tonë",
+    "subtitle": "Ekipi ynë i përkushtuar i profesionistëve dentarë bashkon dekada përvojë, edukim të vazhdueshëm dhe një pasion të përbashkët për krijimin e buzëqeshjeve të bukura dhe të shëndetshme.",
+    "ctaTitle": "Gati të Na Takoni?",
+    "ctaSubtitle": "Caktoni një konsultë dhe përjetoni ndryshimin e Zeo Dental. Ekipi ynë është gati t'ju mirëpresë."
+  },
+  "casesPage": {
+    "title": "Raste Klinike",
+    "subtitle": "Eksploroni portofolon tonë të transformimeve të buzëqeshjeve. Çdo rast përfaqëson një udhëtim unik nga konsulta deri në përfundim, duke shfaqur artizanatin dhe precizitetin e punës sonë.",
+    "introLabel": "Puna Jonë",
+    "introTitle": "Rezultate të Vërteta, Pacientë të Vërtetë",
+    "introText": "Çdo transformim buzëqeshjeje në Klinikën Dentare Zeo tregon një histori. Ne dokumentojmë rastet tona jo vetëm për të shfaqur ekspertizën tonë, por për t'ju ndihmuar të përfytyroni mundësitë për buzëqeshjen tuaj. Këta janë pacientë të vërtetë që na besuan udhëtimin e tyre dentar.",
+    "moreComing": "Më Shumë Raste Së Shpejti",
+    "moreComingDesc": "Jemi duke shtuar vazhdimisht transformime të reja në galerinë tonë.",
+    "processLabel": "Qasja Jonë",
+    "processTitle": "Si i Arrijmë Këto Rezultate",
+    "step1Title": "Konsultë",
+    "step1Desc": "Fillojmë me një analizë gjithëpërfshirëse të shëndetit tuaj dentar dhe qëllimeve estetike, duke përdorur imazherinë dixhitale për të planifikuar transformimin tuaj.",
+    "step2Title": "Trajtim",
+    "step2Desc": "Duke përdorur teknologjinë më të avancuar dhe materialet premium, ekzekutojmë planin tuaj të personalizuar të trajtimit me precizitet dhe kujdes.",
+    "step3Title": "Rezultate",
+    "step3Desc": "Largoheni me një buzëqeshje të transformuar dhe besimin që vjen me dijen se keni marrë kujdesin e cilësisë më të lartë.",
+    "ctaTitle": "Filloni Transformimin Tuaj",
+    "ctaSubtitle": "Gati të shihni çfarë është e mundur për buzëqeshjen tuaj? Rezervoni një konsultë dhe na lini të krijojmë planin tuaj të personalizuar të trajtimit."
   }
 }

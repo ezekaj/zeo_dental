@@ -972,5 +972,39 @@
       "duration": "Varies by treatment type",
       "warranty": "5-15 years depending on treatment"
     }
+  },
+  "philosophyPage": {
+    "title": "Our Philosophy",
+    "subtitle": "At Zeo Dental Clinic, we believe that exceptional dental care is an art form. Every smile we create is a masterpiece of precision, technology, and human touch.",
+    "visionLabel": "Our Vision",
+    "visionTitle": "Transforming Smiles, Changing Lives",
+    "visionText": "We envision a world where visiting the dentist is not just a necessity, but an experience you look forward to. Our clinic is built on the foundation of trust, excellence, and genuine care for every patient who walks through our doors. We combine the artistry of aesthetic dentistry with the precision of modern technology to deliver results that exceed expectations.",
+    "valuesLabel": "Core Values",
+    "valuesTitle": "What We Stand For"
+  },
+  "teamPage": {
+    "title": "Meet Our Team",
+    "subtitle": "Our dedicated team of dental professionals brings together decades of experience, continuous education, and a shared passion for creating beautiful, healthy smiles.",
+    "ctaTitle": "Ready to Meet Us?",
+    "ctaSubtitle": "Schedule a consultation and experience the Zeo Dental difference. Our team is ready to welcome you."
+  },
+  "casesPage": {
+    "title": "Clinical Cases",
+    "subtitle": "Explore our portfolio of smile transformations. Each case represents a unique journey from consultation to completion, showcasing the artistry and precision of our work.",
+    "introLabel": "Our Work",
+    "introTitle": "Real Results, Real Patients",
+    "introText": "Every smile transformation at Zeo Dental Clinic tells a story. We document our cases not just to showcase our expertise, but to help you envision the possibilities for your own smile. These are real patients who trusted us with their dental journey.",
+    "moreComing": "More Cases Coming Soon",
+    "moreComingDesc": "We are continuously adding new transformations to our gallery.",
+    "processLabel": "Our Approach",
+    "processTitle": "How We Achieve These Results",
+    "step1Title": "Consultation",
+    "step1Desc": "We begin with a comprehensive analysis of your dental health and aesthetic goals, using digital imaging to plan your transformation.",
+    "step2Title": "Treatment",
+    "step2Desc": "Using state-of-the-art technology and premium materials, we execute your personalized treatment plan with precision and care.",
+    "step3Title": "Results",
+    "step3Desc": "You leave with a transformed smile and the confidence that comes with knowing you received the highest quality care.",
+    "ctaTitle": "Start Your Transformation",
+    "ctaSubtitle": "Ready to see what's possible for your smile? Book a consultation and let us create your personalized treatment plan."
   }
 }
