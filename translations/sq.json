@@ -604,5 +604,373 @@
     "tooltip": "Na shkruani në WhatsApp",
     "ariaLabel": "Na kontaktoni në WhatsApp",
     "defaultMessage": "Përshëndetje! Dëshiroj të rezervoj një takim në Klinikën Dentare Zeo."
+  },
+  "treatmentPages": {
+    "implantology": {
+      "title": "Implante Dentare",
+      "subtitle": "Standardi i Artë për Zëvendësimin e Dhëmbëve",
+      "heroDescription": "Rivendosni buzëqeshjen tuaj me implante dentare të përhershme dhe natyrale duke përdorur kirurgji të udhëhequr 3D për precizitet dhe komoditet të pashoq.",
+      "overview": "Implantet dentare përfaqësojnë zgjidhjen më të avancuar dhe të besueshme për zëvendësimin e dhëmbëve që mungojnë. Ndryshe nga protesat tradicionale ose urat, implantet vendosen kirurgjikisht në kockën e nofullës, ku bashkohen me kockën përmes një procesi të quajtur osteointegracion. Kjo krijon një bazë të qëndrueshme dhe të përhershme që duket, ndihet dhe funksionon saktësisht si dhëmbët tuaj natyralë.\n\nNë Klinikën Dentare Zeo, përdorim imazherinë 3D të avancuar dhe kirurgjinë e udhëhequr nga kompjuteri për të planifikuar dhe ekzekutuar çdo procedurë implanti me precizitet milimetrik. Qoftë se keni nevojë të zëvendësoni një dhëmb të vetëm ose kërkoni një restaurim të harkut të plotë, specialistët tanë sigurojnë vendosje optimale për jetëgjatësi maksimale dhe rezultate estetike.\n\nOfrojmë implante nga titani dhe zirkoni, duke na lejuar të personalizojmë trajtimin tuaj bazuar në nevojat tuaja specifike, dendësinë e kockës dhe preferencat estetike. Angazhimi ynë për të përdorur vetëm materiale premium nga prodhues të besuar siguron që implantet tuaja do t'ju shërbejnë mirë për dekada.",
+      "benefitsTitle": "Pse të Zgjidhni Implantet Dentare?",
+      "benefits": [
+        "Zgjidhje e përhershme që mund të zgjasë një jetë me kujdes të duhur",
+        "Ruan dendësinë e kockës së nofullës dhe parandalon humbjen e kockës fytyrore",
+        "Asnjë ndikim në dhëmbët e shëndetshëm ngjitur ndryshe nga urat",
+        "Pamje natyrale që nuk dallohet nga dhëmbët e vërtetë",
+        "Funksion i rikthyer i përtyçjes - hani të gjitha ushqimet tuaja të preferuara",
+        "Mirëmbajtje e lehtë - lani dhe përdorni fill dentar si dhëmbët natyralë",
+        "Të folur të përmirësuar krahasuar me protesat e lëvizshme",
+        "Eliminon shqetësimin dhe parehatin e protezave"
+      ],
+      "processTitle": "Udhëtimi Juaj i Implantit",
+      "process": [
+        {
+          "title": "Konsultë Gjithëpërfshirëse",
+          "description": "Fillojmë me një ekzaminim të plotë përfshirë skanimin 3D CBCT për të vlerësuar cilësinë dhe sasinë e kockës, dhe hartuar strukturat kritike si nervat dhe sinuset. Diskutojmë qëllimet tuaja dhe krijojmë një plan trajtimi të personalizuar."
+        },
+        {
+          "title": "Planifikim Dixhital i Trajtimit",
+          "description": "Duke përdorur softuer të avancuar, planifikojmë dixhitalisht pozicionin, këndin dhe thellësinë e saktë të çdo implanti. Kjo na lejon të krijojmë një udhëzues kirurgjik për vendosje milimetrike."
+        },
+        {
+          "title": "Vendosje Kirurgjikale e Implantit",
+          "description": "Shtylla e implantit nga titani ose zirkoni vendoset në kockën e nofullës duke përdorur teknika minimalisht invazive. Shumica e pacientëve raportojnë shqetësim minimal, dhe procedura kryhet nën anestezi lokale me opsione sedacioni të disponueshme."
+        },
+        {
+          "title": "Periudha e Osteointegra\u00ebiomit",
+          "description": "Gjatë 3-6 muajve, implanti bashkohet me kockën tuaj të nofullës duke krijuar një bazë jashtëzakonisht të fortë. Gjatë kësaj kohe, mund të mbani një restaurim të përkohshëm për të ruajtur estetikën."
+        },
+        {
+          "title": "Restaurimi Përfundimtar",
+          "description": "Pasi të shërohet plotësisht, bashkojmë një kurorë, urë ose protezë të bërë me porosi në implantin tuaj. Restaurimi përfundimtar është dizajnuar për t'u përshtatur perfekt me dhëmbët tuaj natyralë në ngjyrë, formë dhe funksion."
+        }
+      ],
+      "faqTitle": "Pyetje të Shpeshta",
+      "faqs": [
+        {
+          "question": "A jam kandidat i mirë për implante dentare?",
+          "answer": "Shumica e të rriturve me shëndet të mirë të përgjithshëm janë kandidatë për implante dentare. Faktorët kyç përfshijnë dendësinë adekuate të kockës (e cila mund të rr\u00eadhët me transplantim nëse nevojitet), mishrat e shëndetshme dhe angazhimin për higjenën orale. Gjatë konsultës suaj, do të vlerësojmë situatën tuaj specifike dhe diskutojmë të gjitha opsionet."
+        },
+        {
+          "question": "Sa zgjatin implantet dentare?",
+          "answer": "Me kujdes dhe mirëmbajtje të duhur, implantet dentare mund të zgjatin një jetë. Implanti vetë është dizajnuar të jetë i përhershëm, ndërsa kurora mund të ketë nevojë për zëvendësim pas 15-20 viteve për shkak të konsumit normal. Kontrollet e rregullta dhe higjena e mirë orale janë thelbësore për jetëgjatësinë."
+        },
+        {
+          "question": "A është procedura e implantit e dhimbshme?",
+          "answer": "Procedura kryhet nën anestezi lokale, kështu që nuk do të ndjeni dhimbje gjatë vendosjes. Shumica e pacientëve raportojnë se shqetësimi pas është më pak se pritej - shpesh i krahasueshëm me një nxjerrje dhëmbi. Ofrojmë udhëzime gjithëpërfshirëse pas-kujdesi dhe opsione menaxhimi dhimbjeje."
+        },
+        {
+          "question": "Sa kushtojnë implantet dentare?",
+          "answer": "Kostoja varion në varësi të numrit të implanteve, llojit të restaurimit dhe nëse nevojiten procedura shtesë si transplantimi i kockës. Gjatë konsultës suaj, ofrojmë një plan trajtimi të detajuar me çmime transparente. Ndërsa implantet kanë kosto më të lartë fillestare se opsionet e tjera, jetëgjatësia e tyre shpesh i bën më ekonomike afatgjatë."
+        }
+      ],
+      "duration": "3-6 muaj kohë totale trajtimi",
+      "warranty": "Garanci jetësore për implantet"
+    },
+    "prosthetics": {
+      "title": "Protetikë Dentare",
+      "subtitle": "Zgjidhje të Plota për Restaurimin e Buzëqeshjes",
+      "heroDescription": "Nga urat fikse tek protesat mbi implante, ofrojmë zgjidhje protetike gjithëpërfshirëse të krijuara me precizitet për të rivendosur funksionin dhe bukurinë.",
+      "overview": "Protetika dentare përfshin një gamë të gjerë zgjidhjesh restauruese të dizajnuara për të zëvendësuar dhëmbët që mungojnë dhe rivendosur funksionin oral. Në Klinikën Dentare Zeo, kombinojmë mjeshtërinë tradicionale me teknologjinë moderne dixhitale për të krijuar protetikë që nuk dallohet nga dhëmbët natyralë.\n\nOfrimet tona protetike përfshijnë urat fikse që zëvendësojnë përgjithmonë një ose më shumë dhëmbë që mungojnë, proteza parciale të lëvizshme për pacientët që mungojnë disa dhëmbë, proteza të plota për ata që kanë humbur të gjithë dhëmbët në një hark, dhe protetikë të avancuar mbi implante që ofron stabilitetin e implanteve me mbulimin e protetikës tradicionale.\n\nÇdo protetikë që krijojmë është e dizajnuar me porosi duke përdorur përshtypje dixhitale dhe teknologji CAD/CAM, duke siguruar një përshtatje precize që maksimizon komoditetin dhe funksionin. Punojmë ngushtë me laboratorë dentarë premium për të përdorur vetëm materialet e cilësisë më të lartë, nga strukturat zirkoni pa metal tek dhëmbët qeramikë realiste.",
+      "benefitsTitle": "Përfitimet e Protetikës Moderne",
+      "benefits": [
+        "Aftësi e rivendosur për të ngrënë, folur dhe buzëqeshur me besim",
+        "Rezultate natyrale duke përdorur materiale premium",
+        "Opsione të shumta për t'iu përshtatur nevojave dhe buxheteve të ndryshme",
+        "Mbështetje e përmirësuar fytyrore dhe pamje rinore",
+        "Precizitet dixhital për përshtatje dhe komoditet optimal",
+        "Materiale të qëndrueshme të dizajnuara për përdorim afatgjatë",
+        "Zgjidhje për humbje parciale ose të plotë të dhëmbëve",
+        "Opsione mbi implante për stabilitet maksimal"
+      ],
+      "processTitle": "Procesi Juaj i Trajtimit Protetik",
+      "process": [
+        {
+          "title": "Vlerësim Fillestar",
+          "description": "Kryejmë një ekzaminim gjithëpërfshirës të shëndetit tuaj oral, dhëmbëve të mbetur, gjendjes së mishrave dhe strukturës së kockës. Përshtypjet dhe fotografitë dixhitale na ndihmojnë të kuptojmë nevojat tuaja unike."
+        },
+        {
+          "title": "Planifikim Trajtimi",
+          "description": "Bazuar në vlerësimin tuaj, diskutojmë të gjitha opsionet e disponueshme - nga urat tek protesat tek zgjidhjet mbi implante. Së bashku, zgjedhim qasjen më të mirë për stilin tuaj të jetës, buxhetin dhe qëllimet estetike."
+        },
+        {
+          "title": "Dizajn Dixhital",
+          "description": "Duke përdorur teknologjinë CAD/CAM, dizajnojmë protetikën tuaj me precizitet. Mund të parashikoni se si do të duken dhëmbët tuaj të rinj para se të fillojë fabrikimi, duke siguruar kënaqësinë tuaj të plotë me rezultatin."
+        },
+        {
+          "title": "Fabrikim",
+          "description": "Protetika juaj krijohet në një laborator dentar premium duke përdorur materialet më të mira. Për protetikë fikse, restaurimet e përkohshme ju mbajnë komod dhe të sigurt gjatë periudhës së fabrikimit."
+        },
+        {
+          "title": "Përshtatje & Rregullim",
+          "description": "Përshtatim me kujdes protetikën tuaj të re, duke bërë rregullimet e nevojshme për komoditet dhe funksion optimal. Sigurojmë që kafshimi juaj të jetë i balancuar dhe estetika të përmbushë pritjet tuaja."
+        }
+      ],
+      "faqTitle": "Pyetje të Zakonshme Rreth Protetikës",
+      "faqs": [
+        {
+          "question": "Cila është ndryshimi midis një ure dhe një proteze?",
+          "answer": "Ura është një restaurim fiks që zëvendëson një ose më shumë dhëmbë që mungojnë duke u ankoruar në dhëmbët natyralë ngjitur ose implantet. Është e cementuar në vend dhe nuk hiqet. Proteza është një pajisje e lëvizshme që zëvendëson dhëmbë të shumtë ose të gjithë në një hark. Secila ka avantazhet e veta në varësi të situatës suaj specifike."
+        },
+        {
+          "question": "Sa kohë duhet për t'u mësuar me protezat e reja?",
+          "answer": "Shumica e pacientëve përshtaten me protesat e reja brenda 2-4 javëve. Fillimisht, mund të përjetoni disa vështirësi në të folur ose ngrënë, dhe dhënia e lehtë është normale. Caktojmë takime ndjekëse për të bërë rregullime dhe siguruar komoditetin tuaj gjatë kësaj periudhe kalimtare."
+        },
+        {
+          "question": "A mund të kaloj nga protetat në protetikë mbi implante?",
+          "answer": "Po, shumë pacientë që aktualisht mbajnë proteza tradicionale zgjedhin të kalojnë në opsione mbi implante për stabilitet dhe funksion më të mirë. Mund të vlerësojmë dendësinë tuaj të kockës dhe shëndetin e përgjithshëm për të përcaktuar nëse jeni kandidat për këtë përmirësim."
+        },
+        {
+          "question": "Si t'i kujdesem për protetikën time?",
+          "answer": "Protetika fikse kujdeset si dhëmbët natyralë - larje të rregullt, fill dentar dhe pastrime profesionale. Protetika e lëvizshme duhet hequr natën, pastruar me zgjidhje të përshtatshme dhe ruajtur siç duhet. Ofrojmë udhëzime të detajuara kujdesi specifike për llojin tuaj të protetikës."
+        }
+      ],
+      "duration": "2-6 javë në varësi të llojit",
+      "warranty": "Garanci 5-vjeçare për të gjithë protetikën"
+    },
+    "aligners": {
+      "title": "Maskerina Transparente",
+      "subtitle": "Trajtim Ortodontik i Padukshëm",
+      "heroDescription": "Arrini buzëqeshjen tuaj perfekte në mënyrë diskrete me maskerina transparente të bëra me porosi - alternativa moderne ndaj aparateve tradicionale.",
+      "overview": "Maskerinat transparente kanë revolucionarizuar trajtimin ortodontik, duke ofruar një mënyrë pothuajse të padukshme për të drejtuar dhëmbët pa kompromiset estetike dhe të stilit të jetës të aparateve metalike tradicionale. Në Klinikën Dentare Zeo, përdorim sisteme maskerinash të avancuara për të trajtuar një gamë të gjerë çështjesh ortodontike nga mbingarkesa e lehtë tek problemet komplekse të kafshimit.\n\nÇdo set maskerinash fabrikohet me porosi duke përdorur teknologji printimi 3D bazuar në skanime dixhitale precize të dhëmbëve tuaj. Do të mbani çdo set për rreth dy javë para se të kaloni tek tjetri, me çdo maskerinë që bën rregullime të vogla për të lëvizur gradualisht dhëmbët tuaj në pozicionet e tyre ideale.\n\nBukuria e maskerinave transparente qëndron në heqshmërinë e tyre - mund t'i hiqni për të ngrënë, pirë, larë dhëmbët dhe përdorur fill dentar, duke e bërë higjenën orale gjatë trajtimit shumë më të thjeshtë se me aparatet tradicionale. Shumica e pacientëve i gjejnë komode për t'u mbajtur, dhe të tjerët rrallë vërejnë se jeni duke kaluar trajtim ortodontik.",
+      "benefitsTitle": "Pse të Zgjidhni Maskerinat Transparente?",
+      "benefits": [
+        "Pothuajse të padukshme - shumica e njerëzve nuk do të vërejnë që i mbani",
+        "Të heqshme për ngrënie, pirje dhe raste të veçanta",
+        "Asnjë kufizim dietik ndryshe nga aparatet tradicionale",
+        "Higjenë orale më e lehtë - lani dhe përdorni fill dentar normalisht",
+        "Më pak vizita në zyrë krahasuar me ortodoncinë tradicionale",
+        "Parashikim dixhital i rezultateve tuaja të pritshme para fillimit",
+        "Plastikë e lëmuar komode pa mbajtëse ose tela të mprehta",
+        "Afat kohor trajtimi i parashikueshëm me pika të qarta"
+      ],
+      "processTitle": "Udhëtimi Juaj me Maskerina Transparente",
+      "process": [
+        {
+          "title": "Konsultë Dixhitale",
+          "description": "Marrim skanime 3D të detajuara të dhëmbëve tuaj duke përdorur një skaner intraoral - pa nevojë për përshtypje të parehatatueshme. Analizojmë kafshimin tuaj dhe diskutojmë qëllimet e buzëqeshjes suaj."
+        },
+        {
+          "title": "Simulim Trajtimi",
+          "description": "Duke përdorur softuer të specializuar, krijojmë një simulim virtual që tregon se si do të lëvizin dhëmbët tuaj gjatë trajtimit. Do të shihni rezultatin tuaj të pritshëm përfundimtar para se të angazhoheni për trajtimin."
+        },
+        {
+          "title": "Fabrikim i Maskerinave me Porosi",
+          "description": "Pasi të miratoni planin e trajtimit, seti juaj i plotë i maskerinave me porosi fabrikohet duke përdorur teknologji printimi 3D me precizitet."
+        },
+        {
+          "title": "Trajtim Aktiv",
+          "description": "Do të mbani çdo set maskerinash për rreth 2 javë, 20-22 orë në ditë. Do të caktojmë kontrolle periodike për të monitoruar progresin dhe ofruar setet tuaja të ardhshme të maskerinave."
+        },
+        {
+          "title": "Faza e Mbajtjes",
+          "description": "Pas përfundimit të trajtimit, do të mbani mbajtëse për të ruajtur buzëqeshjen tuaj të bukur të re. Ofrojmë opsione mbajtësesh të lëvizshme dhe fikse."
+        }
+      ],
+      "faqTitle": "Pyetje të Shpeshta për Maskerinat",
+      "faqs": [
+        {
+          "question": "A mund të korrigjojnë maskerinat çështjen time specifike dentare?",
+          "answer": "Maskerinat transparente mund të trajtojnë efektivisht shumicën e çështjeve të zakonshme ortodontike përfshirë mbingarkesën, hapësirat, kafshimin e tepërt, kafshimin e nënvlerësuar dhe kafshimin e kryqëzuar. Gjatë konsultës suaj, do të vlerësojmë situatën tuaj specifike dhe përcaktojmë nëse maskerinat janë zgjedhja e duhur, ose nëse trajtime alternative mund të jenë më efektive."
+        },
+        {
+          "question": "Sa zgjat trajtimi me maskerina transparente?",
+          "answer": "Kohëzgjatja e trajtimit varion bazuar në kompleksitetin e rastit tuaj. Rastet e thjeshta mund të marrin 6-9 muaj, ndërsa rastet më komplekse mund të marrin 12-18 muaj ose më shumë. Gjatë konsultës suaj, do të ofrojmë një afat kohor trajtimi të personalizuar."
+        },
+        {
+          "question": "A dhembin maskerinat transparente?",
+          "answer": "Mund të përjetoni disa presion ose shqetësim të lehtë kur kaloni në një set të ri maskerinash, pasi kjo tregon që dhëmbët po lëvizin. Kjo zakonisht kalon brenda disa ditëve. Në përgjithësi, shumica e pacientëve i gjejnë maskerinat më komode se aparatet tradicionale."
+        },
+        {
+          "question": "Çfarë ndodh nëse humbas ose dëmtoj një maskerinë?",
+          "answer": "Na kontaktoni menjëherë nëse humbni ose dëmtoni një maskerinë. Në varësi të fazës së trajtimit tuaj, mund t'ju këshillojmë të kaloni në setin tjetër ose të mbani setin e mëparshëm ndërsa bëhet një zëvendësim. Mbajmë regjistrime dixhitale të të gjitha maskerinave tuaja për zëvendësim të lehtë."
+        }
+      ],
+      "duration": "6-18 muaj trajtim mesatar",
+      "warranty": "Garanci kënaqësie e përfshirë"
+    },
+    "orthodontics": {
+      "title": "Ortodonci",
+      "subtitle": "Drejtim Ekspert i Dhëmbëve për të Gjitha Moshat",
+      "heroDescription": "Zgjidhje moderne ortodontike përfshirë aparate qeramike dhe teknika të avancuara për drejtim perfekt dhe një buzëqeshje të shëndetshme e të bukur.",
+      "overview": "Ortodoncia ka të bëjë më shumë se vetëm dhëmbë të drejtë - bëhet fjalë për krijimin e një kafshimi të shëndetshëm dhe funksional që mbështet shëndetin afatgjatë oral. Në Klinikën Dentare Zeo, specialistët tanë ortodontikë trajtojnë pacientë të të gjitha moshave, nga fëmijët tek të rriturit, duke përdorur teknikat dhe teknologjitë më të fundit.\n\nNdërsa maskerinat transparente funksionojnë mirë për shumë raste, aparatet tradicionale mbeten standardi i artë për çështje komplekse ortodontike. Ofrojmë disa opsione përfshirë aparate metalike konvencionale, aparate qeramike me ngjyrë dhëmbi për një pamje më diskrete, dhe sisteme vetë-lidhëse që mund të reduktojnë kohën e trajtimit dhe shqetësimin.\n\nQasja jonë ndaj ortodoncisë është gjithëpërfshirëse. Nuk fokusohemi vetëm në estetikë - analizojmë me kujdes marrëdhënien e nofullës, rrugën e ajrit dhe funksionin e nyjës temporomandibulare (TMJ) për të siguruar që trajtimi juaj rezulton jo vetëm në një buzëqeshje të bukur, por në shëndet dhe funksion optimal oral.",
+      "benefitsTitle": "Avantazhet e Ortodoncisë Profesionale",
+      "benefits": [
+        "Korrigjon raste komplekse që maskerinat nuk mund t'i trajtojnë",
+        "Kontroll preciz mbi lëvizjen e dhëmbëve në të gjitha drejtimet",
+        "Efektive për mbingarkesë, hapësira dhe probleme të rënda kafshimi",
+        "Opsione për të gjitha moshat - fëmijë, adoleshentë dhe të rritur",
+        "Aparatet qeramike ofrojnë alternativë më estetike",
+        "Mund të adresojë drejtimin e nofullës dhe çështjet e TMJ",
+        "Përmirëson shëndetin oral duke bërë dhëmbët më të lehtë për t'u pastruar",
+        "Rezultate që zgjasin një jetë me mbajtje të duhur"
+      ],
+      "processTitle": "Rruga Juaj e Trajtimit Ortodontik",
+      "process": [
+        {
+          "title": "Vlerësim Gjithëpërfshirës",
+          "description": "Marrim radiografi dixhitale, fotografi dhe skanime 3D për të vlerësuar plotësisht dhëmbët, nofullën dhe strukturën fytyrore tuaj. Identifikojmë çdo çështje themelore që duhet adresuar."
+        },
+        {
+          "title": "Plan Trajtimi i Personalizuar",
+          "description": "Bazuar në vlerësimin tonë, krijojmë një plan trajtimi të detajuar që përshkruan qasjen e rekomanduar, afatin kohor të pritshëm dhe rezultatet e parashikuara. Diskutojmë të gjitha opsionet në mënyrë që të merrni një vendim të informuar."
+        },
+        {
+          "title": "Vendosja e Aparateve",
+          "description": "Mbajtëset lidhen me kujdes në çdo dhëmb, dhe harku vendoset. Takimi fillestar zgjat rreth 1-2 orë. Sigurojmë që të kuptoni se si të kujdeseni për aparatet tuaja."
+        },
+        {
+          "title": "Rregullime të Rregullta",
+          "description": "Do të na vizitoni çdo 4-8 javë për rregullime. Gjatë këtyre vizitave, zëvendësojmë telat, rregullojmë mbajtëset dhe monitorojmë progresin. Çdo rregullim ju afron më shumë qëllimit tuaj."
+        },
+        {
+          "title": "Heqja e Aparateve & Mbajtja",
+          "description": "Pasi të përfundojë trajtimi, heqim aparatet dhe marrim regjistrimet përfundimtare. Do të merrni mbajtëse me porosi për të ruajtur rezultatet tuaja. Caktojmë vizita ndjekëse për të siguruar suksesin afatgjatë."
+        }
+      ],
+      "faqTitle": "Pyetje Ortodontike të Përgjgjuara",
+      "faqs": [
+        {
+          "question": "A jam shumë i madh/e për aparate?",
+          "answer": "Absolutisht jo! Trajtimi ortodontik mund të jetë i suksesshëm në çdo moshë. Në fakt, rreth 25% e pacientëve ortodontikë sot janë të rritur. Për aq kohë sa dhëmbët dhe mishrat tuaj janë të shëndetshëm, mosha nuk është pengesë për të arritur një buzëqeshje më të drejtë."
+        },
+        {
+          "question": "Sa kohë do të duhet të mbaj aparate?",
+          "answer": "Koha e trajtimit varion në varësi të kompleksitetit të rastit tuaj. Mesatarisht, shumica e pacientëve mbajnë aparate për 18-24 muaj. Disa raste të thjeshta mund të përfundohen në 12 muaj, ndërsa rastet më komplekse mund të kërkojnë 30 muaj ose më shumë."
+        },
+        {
+          "question": "A dhembin aparatet?",
+          "answer": "Ka të ngjarë të përjetoni disa shqetësim për disa ditë pas marrjes së aparateve dhe pas çdo rregullimi ndërsa dhëmbët tuaj fillojnë të lëvizin. Kjo është normale dhe mund të menaxhohet me qetësues dhimbjeje pa recetë. Shqetësimi zakonisht kalon brenda një jave."
+        },
+        {
+          "question": "Çfarë ushqimesh duhet të shmang me aparate?",
+          "answer": "Duhet të shmangni ushqime të forta, ngjitëse dhe të përtypshme që mund të dëmtojnë mbajtëset ose telat. Kjo përfshin karamele të forta, kokoshka, arra, akull, karamel dhe çamçakëz. Do t'ju japim një listë gjithëpërfshirëse dhe këshilla për të mbajtur një dietë të shëndetshme gjatë trajtimit."
+        }
+      ],
+      "duration": "12-30 muaj trajtim mesatar",
+      "warranty": "Rezultate të garantuara me mbajtje"
+    },
+    "crowns": {
+      "title": "Kurora Dentare",
+      "subtitle": "Restauroni & Mbroni Dhëmbët Tuaj",
+      "heroDescription": "Kurora premium porcelani dhe zirkoni që restaurojnë dhëmbët e dëmtuar në bukurinë, forcën dhe funksionin e tyre natyral.",
+      "overview": "Kurora dentare është një kapak i bërë me porosi që mbulon dhe mbron një dhëmb të dëmtuar, të dobësuar ose kozmeti\u00adsht të papërsosur. Në Klinikën Dentare Zeo, përdorim vetëm materiale premium përfshirë kurora qeramike dhe zirkoni që ofrojnë forcë të jashtëzakonshme dhe estetikë natyrale.\n\nTeknologjia moderne e kurorës ka avancuar ndjeshëm. Duke përdorur përshtypje dixhitale dhe dizajn CAD/CAM, mund të krijojmë kurora që përputhen saktësisht me ngjyrën, transparencën dhe formën e dhëmbëve tuaj natyralë. Në shumë raste, madje mund të ofrojmë kurora brenda ditës duke përdorur teknologjinë tonë të frezimit në zyrë.\n\nQoftë se keni nevojë të restauroni një dhëmb pas trajtimit të kanalit rrënjësor, mbroni një dhëmb të çarë nga dëmtimi i mëtejshëm, ose thjesht dëshironi të përmirësoni pamjen e një dhëmbi të ngjyrosur ose të formësuar keq, kurorat tona ofrojnë një zgjidhje afatgjatë që duket dhe ndihet plotësisht natyrale.",
+      "benefitsTitle": "Përfitimet e Kurorës Cilësore Dentare",
+      "benefits": [
+        "Rikthen funksionin e plotë të dhëmbëve të dëmtuar ose të dobësuar",
+        "Mbron dhëmbët pas trajtimit të kanalit rrënjësor",
+        "Pamje natyrale që përputhet me dhëmbët përreth",
+        "Qëndrueshmëri afatgjatë - mund të zgjasë 15-25 vjet ose më shumë",
+        "Opsione pa metal për estetikë dhe biokompatibilitet optimal",
+        "Opsione kurorë brenda ditës të disponueshme për lehtësi",
+        "Forcon dhe ruan strukturën e dhëmbit të mbetur",
+        "Përmirëson drejtimin e kafshimit dhe funksionin e nofullës"
+      ],
+      "processTitle": "Procesi Juaj i Trajtimit me Kurorë",
+      "process": [
+        {
+          "title": "Vlerësim & Përgatitje",
+          "description": "Ekzaminojmë dhëmbin dhe marrim radiografi dixhitale për të vlerësuar gjendjen e tij. Nëse kurora është zgjidhja më e mirë, diskutojmë opsionet e materialeve dhe përgatisim dhëmbin duke hequr një shtresë të hollë smaltoi për të bërë vend për kurorën."
+        },
+        {
+          "title": "Përshtypje Dixhitale",
+          "description": "Duke përdorur një skaner intraoral, kapim imazhe 3D precize të dhëmbit tuaj të përgatitur dhe dhëmbëve përreth. Kjo eliminon nevojën për përshtypje tradicionale të çrregullta dhe siguron saktësi të jashtëzakonshme."
+        },
+        {
+          "title": "Dizajn me Porosi",
+          "description": "Kurora juaj dizajnohet duke përdorur softuer CAD, duke na lejuar të përsosim formën, madhësinë dhe përshtatjen. Përputhim me kujdes nuancën me dhëmbët tuaj natyralë për integrim pa ndërprerje."
+        },
+        {
+          "title": "Fabrikim",
+          "description": "Në varësi të rastit tuaj, kurora juaj mund të frezohet në zyrën tonë të njëjtën ditë ose të krijohet nga partneri ynë laborator dentar premium. Një kurorë e përkohshme mbron dhëmbin tuaj gjatë kësaj periudhe nëse nevojitet."
+        },
+        {
+          "title": "Vendosje e Përhershme",
+          "description": "Verifikojmë përshtatjen, kafshimin dhe estetikën e kurorës suaj të re para se ta cementojmë përgjithmonë në vend. Rregullimet përfundimtare sigurojnë komoditet dhe funksion optimal."
+        }
+      ],
+      "faqTitle": "Pyetje të Shpeshta për Kurorat",
+      "faqs": [
+        {
+          "question": "Kur kam nevojë për kurorë dentare?",
+          "answer": "Kurorat rekomandohen për dhëmbë që janë dëmtuar ndjeshëm, çarë ose dobësuar, pas trajtimit të kanalit rrënjësor, për të restauruar dhëmbë të thyer, për të mbuluar dhëmbë të ngjyrosur rëndë, ose si pjesë e një ure dentare. Gjatë ekzaminimit tuaj, do të shpjegojmë pse kurora është opsioni më i mirë për situatën tuaj."
+        },
+        {
+          "question": "Sa zgjatin kurorat dentare?",
+          "answer": "Me kujdes të duhur, kurorat dentare zakonisht zgjasin 15-25 vjet, dhe shumë zgjasin edhe më shumë. Faktorët që ndikojnë jetëgjatësinë përfshijnë zakonet e higjenës orale, dietën, nëse i gërvishni dhëmbët dhe materialin e përdorur. Kontrollet e rregullta dentare na ndihmojnë të monitorojmë gjendjen e kurorës suaj."
+        },
+        {
+          "question": "A do të duket kurora ime natyrale?",
+          "answer": "Absolutisht. Përdorim materiale të avancuara qeramike dhe zirkoni që imitojnë transparencën dhe variacionet e ngjyrës së dhëmbëve natyralë. Përputhim me kujdes kurorën tuaj me dhëmbët ngjitur në mënyrë që të jetë pothuajse e padallueshme. Shumica e njerëzve, përfshirë dentistët, nuk mund të dallojnë ndryshimin."
+        },
+        {
+          "question": "A është e dhimbshme marrja e kurorës?",
+          "answer": "Procedura e kurorës kryhet nën anestezi lokale, kështu që nuk do të ndjeni dhimbje gjatë përgatitjes. Mund të përjetoni disa ndjeshmëri për disa ditë pas procedurës, por kjo zakonisht është e lehtë dhe kalimtare. Nëse jeni të ankthshëm, ofrojmë opsione sedacioni."
+        }
+      ],
+      "duration": "1-2 takime gjatë 1-2 javëve",
+      "warranty": "Garanci 10-vjeçare për të gjitha kurorat"
+    },
+    "aesthetics": {
+      "title": "Stomatologji Estetike",
+      "subtitle": "Arti i Buzëqeshjeve të Bukura",
+      "heroDescription": "Transformoni buzëqeshjen tuaj me trajtimet tona gjithëpërfshirëse estetike përfshirë faseta, zbardhje dhe lidhje të dizajnuara për të rritur bukurinë tuaj natyrale.",
+      "overview": "Stomatologjia estetike është ku arti takon shkencën. Në Klinikën Dentare Zeo, besojmë se të gjithë meritojnë një buzëqeshje për të cilën janë krenarë ta tregojnë. Trajtimet tona estetike janë dizajnuar jo vetëm për të përmirësuar pamjen e dhëmbëve tuaj, por për të harmonizuar buzëqeshjen tuaj me tiparet fytyrore për një rezultat natyral dhe të sigurt.\n\nShërbimet tona estetike përfshijnë faseta porcelani për transformime dramatike të buzëqeshjes, zbardhje profesionale për një buzëqeshje më të ndritshme, lidhje kompoziti për riparime dhe përmirësime të vogla, konturim mishrat për një vijë buzëqeshjeje të balancuar, dhe dizajn të plotë buzëqeshjeje duke përdorur teknologji dixhitale për të parashikuar transformimin tuaj.\n\nMarrim një qasje konservative ndaj stomatologjisë estetike, duke ruajtur gjithmonë sa më shumë strukturë natyrale dhëmbi të jetë e mundur ndërsa arrijmë rezultatet tuaja të dëshiruara. Duke përdorur teknologjinë e Dizajnit Dixhital të Buzëqeshjes, mund të shihni saktësisht se si do të duket buzëqeshja juaj e re para se të fillojë çdo trajtim, duke siguruar kënaqësinë tuaj të plotë.",
+      "benefitsTitle": "Transformoni Buzëqeshjen Tuaj",
+      "benefits": [
+        "Përmirësim dramatik në estetikën e buzëqeshjes",
+        "Rritje e vetëbesimit dhe cilësisë së jetës",
+        "Rezultate natyrale që rrisin tiparet tuaja",
+        "Parashikim dixhital i buzëqeshjes suaj të re para trajtimit",
+        "Opsione konservative që ruajnë strukturën e dhëmbit",
+        "Rezultate afatgjata me kujdes të duhur",
+        "Zgjidhje për ngjyrosje, thërrmime, hapësira dhe çështje forme",
+        "Plane trajtimi të personalizuara për qëllimet tuaja unike"
+      ],
+      "processTitle": "Transformimi Juaj Estetik",
+      "process": [
+        {
+          "title": "Analizë e Buzëqeshjes",
+          "description": "Kryejmë një analizë gjithëpërfshirëse të buzëqeshjes, fytyrës dhe buzëve tuaja duke përdorur fotografi dhe skanime dixhitale. Diskutojmë çfarë ju pëlqen dhe nuk ju pëlqen rreth buzëqeshjes suaj aktuale dhe qëllimet tuaja estetike."
+        },
+        {
+          "title": "Dizajn Dixhital i Buzëqeshjes",
+          "description": "Duke përdorur softuer të avancuar, krijojmë një makete dixhitale të buzëqeshjes suaj të re. Mund të shihni rezultatet e projektuara nga kënde të shumta dhe të jepni komente për të rafinuar dizajnin derisa të jetë perfekt."
+        },
+        {
+          "title": "Planifikim Trajtimi",
+          "description": "Bazuar në dizajnin tuaj të miratuar, krijojmë një plan trajtimi të detajuar. Kjo mund të përfshijë një procedurë të vetme si zbardhja ose një kombinim trajtimesh për një transformim të plotë të buzëqeshjes."
+        },
+        {
+          "title": "Modele Dylli ose Buzëqeshje Prove",
+          "description": "Për ndryshime të mëdha si fasetat, krijojmë një model dylli ose buzëqeshje prove të përkohshme në mënyrë që të mund të 'provoni' pamjen tuaj të re para se të angazhoheni për restaurime të përhershme."
+        },
+        {
+          "title": "Trajtimi Përfundimtar",
+          "description": "Ekzekutojmë planin e trajtimit me precizitet, qoftë zbardhje, lidhje ose vendosje fasetash me porosi. Çdo detaj është perfeksionuar për të arritur buzëqeshjen që keni dashur gjithmonë."
+        }
+      ],
+      "faqTitle": "Pyetje Stomatologjie Estetike",
+      "faqs": [
+        {
+          "question": "Cili është ndryshimi midis fasetave dhe lidhjes?",
+          "answer": "Fasetat janë guaska të holla porcelani të bëra me porosi në laborator dhe të lidhura përgjithmonë në pjesën e përparme të dhëmbëve - ato janë shumë të qëndrueshme dhe rezistente ndaj njollave. Lidhja përdor rezinë kompoziti me ngjyrë dhëmbi të aplikuar drejtpërdrejt në dhëmbë në një vizitë të vetme - është më e përballueshme por mund të ketë nevojë për zëvendësim më shpejt. Do të rekomandojmë opsionin më të mirë bazuar në nevojat tuaja specifike dhe buxhetin."
+        },
+        {
+          "question": "Sa të bardhë mund të bëhen dhëmbët e mi me zbardhje profesionale?",
+          "answer": "Zbardhja profesionale mund zakonisht të ndriçojë dhëmbët me 6-8 nuanca ose më shumë, në varësi të ngjyrës fillestare dhe llojit të njollosjes. Rezultatet variojnë bazuar në faktorë si shkaku i ngjyrosjes dhe ngjyra juaj natyrale e dhëmbit. Do të vlerësojmë dhëmbët tuaj dhe do t'ju japim pritshmëri realiste gjatë konsultës suaj."
+        },
+        {
+          "question": "Sa zgjatin fasetat?",
+          "answer": "Fasetat cilësore porcelani zakonisht zgjasin 15-20 vjet ose më shumë me kujdes të duhur. Faktorët që ndikojnë jetëgjatësinë përfshijnë higjenën orale, dietën, zakonet si gërvishja e dhëmbëve dhe kontrollet e rregullta dentare. Ofrojmë udhëzime të detajuara kujdesi për të maksimizuar jetën e fasetave tuaja."
+        },
+        {
+          "question": "A do të dëmtojnë trajtimet estetike dhëmbët e mi natyralë?",
+          "answer": "Prioritizojmë trajtimin konservativ që ruan sa më shumë strukturë natyrale dhëmbi të jetë e mundur. Zbardhja është jo-invazive, lidhja kërkon përgatitje minimale, dhe fasetat moderne kërkojnë shumë më pak reduktim dhëmbi se teknikat e vjetra. Do të diskutojmë gjithmonë çfarë përfshihet para çdo trajtimi."
+        }
+      ],
+      "duration": "Varion sipas llojit të trajtimit",
+      "warranty": "5-15 vjet në varësi të trajtimit"
+    }
   }
 }

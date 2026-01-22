@@ -35,6 +35,7 @@ export const Header: React.FC = () => {
     const targetId = href.replace('#', '');
     const element = document.getElementById(targetId);
 
+    // If element exists on current page, scroll to it
     if (element) {
       const elementPosition = element.getBoundingClientRect().top + window.scrollY;
       const offsetPosition = elementPosition - HEADER_OFFSET;
@@ -43,6 +44,9 @@ export const Header: React.FC = () => {
         top: offsetPosition,
         behavior: 'smooth',
       });
+    } else {
+      // If not on homepage, navigate to homepage with anchor
+      window.location.href = '/' + href;
     }
 
     // Close mobile menu if open
@@ -91,7 +95,7 @@ export const Header: React.FC = () => {
           {/* Center: Brand */}
           <div className="flex justify-center">
             <a
-              href="#"
+              href="/"
               className="font-serif text-xl sm:text-2xl tracking-widest relative group"
               data-cursor="hover"
             >

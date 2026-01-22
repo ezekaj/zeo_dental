@@ -13,6 +13,35 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import { ReceptionistApp } from './components/receptionist/ReceptionistApp';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { TermsOfService } from './components/TermsOfService';
+import { TreatmentPage } from './components/TreatmentPage';
+
+// Treatment page configurations with hero images
+const treatmentConfigs: Record<string, { key: string; heroImage: string }> = {
+  '/treatments/implantology': {
+    key: 'implantology',
+    heroImage: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=2670&auto=format&fit=crop',
+  },
+  '/treatments/prosthetics': {
+    key: 'prosthetics',
+    heroImage: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2574&auto=format&fit=crop',
+  },
+  '/treatments/aligners': {
+    key: 'aligners',
+    heroImage: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2670&auto=format&fit=crop',
+  },
+  '/treatments/orthodontics': {
+    key: 'orthodontics',
+    heroImage: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2670&auto=format&fit=crop',
+  },
+  '/treatments/crowns': {
+    key: 'crowns',
+    heroImage: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2668&auto=format&fit=crop',
+  },
+  '/treatments/aesthetics': {
+    key: 'aesthetics',
+    heroImage: 'https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?q=80&w=2670&auto=format&fit=crop',
+  },
+};
 
 // Simple router based on pathname
 const useRoute = () => {
@@ -58,6 +87,12 @@ const App: React.FC = () => {
   const route = useRoute();
 
   const renderRoute = () => {
+    // Check for treatment pages
+    if (treatmentConfigs[route]) {
+      const { key, heroImage } = treatmentConfigs[route];
+      return <TreatmentPage treatmentKey={key} heroImage={heroImage} />;
+    }
+
     switch (route) {
       case '/receptionist':
         return <ReceptionistApp />;

@@ -604,5 +604,373 @@
     "tooltip": "Chat on WhatsApp",
     "ariaLabel": "Contact us on WhatsApp",
     "defaultMessage": "Hello! I would like to book an appointment at Zeo Dental Clinic."
+  },
+  "treatmentPages": {
+    "implantology": {
+      "title": "Dental Implants",
+      "subtitle": "The Gold Standard for Tooth Replacement",
+      "heroDescription": "Restore your smile with permanent, natural-looking dental implants using state-of-the-art 3D guided surgery for unmatched precision and comfort.",
+      "overview": "Dental implants represent the most advanced and reliable solution for replacing missing teeth. Unlike traditional dentures or bridges, implants are surgically placed into the jawbone, where they fuse with the bone through a process called osseointegration. This creates a stable, permanent foundation that looks, feels, and functions exactly like your natural teeth.\n\nAt Zeo Dental Clinic, we use cutting-edge 3D imaging and computer-guided surgery to plan and execute every implant procedure with millimeter precision. Whether you need a single tooth replacement or a full-arch restoration, our specialists ensure optimal placement for maximum longevity and aesthetic results.\n\nWe offer both titanium and zirconia implants, allowing us to customize your treatment based on your specific needs, bone density, and aesthetic preferences. Our commitment to using only premium materials from trusted manufacturers ensures that your implants will serve you well for decades to come.",
+      "benefitsTitle": "Why Choose Dental Implants?",
+      "benefits": [
+        "Permanent solution that can last a lifetime with proper care",
+        "Preserves jawbone density and prevents facial bone loss",
+        "No impact on adjacent healthy teeth unlike bridges",
+        "Natural appearance that's indistinguishable from real teeth",
+        "Restored chewing function - eat all your favorite foods",
+        "Easy maintenance - brush and floss like natural teeth",
+        "Improved speech compared to removable dentures",
+        "Eliminates the discomfort and inconvenience of dentures"
+      ],
+      "processTitle": "Your Implant Journey",
+      "process": [
+        {
+          "title": "Comprehensive Consultation",
+          "description": "We begin with a thorough examination including 3D CBCT scanning to assess bone quality, quantity, and map critical structures like nerves and sinuses. We discuss your goals and create a personalized treatment plan."
+        },
+        {
+          "title": "Digital Treatment Planning",
+          "description": "Using advanced software, we digitally plan the exact position, angle, and depth of each implant. This allows us to create a surgical guide for millimeter-precise placement."
+        },
+        {
+          "title": "Surgical Implant Placement",
+          "description": "The titanium or zirconia implant post is placed into the jawbone using minimally invasive techniques. Most patients report minimal discomfort, and the procedure is performed under local anesthesia with sedation options available."
+        },
+        {
+          "title": "Osseointegration Period",
+          "description": "Over 3-6 months, the implant fuses with your jawbone creating an incredibly strong foundation. During this time, you may wear a temporary restoration to maintain aesthetics."
+        },
+        {
+          "title": "Final Restoration",
+          "description": "Once fully healed, we attach a custom-crafted crown, bridge, or denture to your implant. The final restoration is designed to match your natural teeth perfectly in color, shape, and function."
+        }
+      ],
+      "faqTitle": "Frequently Asked Questions",
+      "faqs": [
+        {
+          "question": "Am I a good candidate for dental implants?",
+          "answer": "Most adults with good general health are candidates for dental implants. Key factors include adequate bone density (which can be enhanced with grafting if needed), healthy gums, and commitment to oral hygiene. During your consultation, we'll evaluate your specific situation and discuss all options."
+        },
+        {
+          "question": "How long do dental implants last?",
+          "answer": "With proper care and maintenance, dental implants can last a lifetime. The implant itself is designed to be permanent, while the crown may need replacement after 15-20 years due to normal wear. Regular check-ups and good oral hygiene are essential for longevity."
+        },
+        {
+          "question": "Is the implant procedure painful?",
+          "answer": "The procedure is performed under local anesthesia, so you won't feel pain during placement. Most patients report that the discomfort afterward is less than expected - often comparable to a tooth extraction. We provide comprehensive aftercare instructions and pain management options."
+        },
+        {
+          "question": "How much do dental implants cost?",
+          "answer": "The cost varies depending on the number of implants, type of restoration, and whether additional procedures like bone grafting are needed. During your consultation, we provide a detailed treatment plan with transparent pricing. While implants have a higher upfront cost than other options, their longevity often makes them more economical long-term."
+        }
+      ],
+      "duration": "3-6 months total treatment time",
+      "warranty": "Lifetime warranty on implants"
+    },
+    "prosthetics": {
+      "title": "Dental Prosthetics",
+      "subtitle": "Complete Smile Restoration Solutions",
+      "heroDescription": "From fixed bridges to implant-supported dentures, we offer comprehensive prosthetic solutions crafted with precision to restore both function and beauty.",
+      "overview": "Dental prosthetics encompasses a wide range of restorative solutions designed to replace missing teeth and restore oral function. At Zeo Dental Clinic, we combine traditional craftsmanship with modern digital technology to create prosthetics that are indistinguishable from natural teeth.\n\nOur prosthetic offerings include fixed bridges that permanently replace one or more missing teeth, removable partial dentures for patients missing several teeth, complete dentures for those who have lost all teeth in an arch, and advanced implant-supported prosthetics that offer the stability of implants with the coverage of traditional prosthetics.\n\nEvery prosthetic we create is custom-designed using digital impressions and CAD/CAM technology, ensuring a precise fit that maximizes comfort and function. We work closely with premium dental laboratories to use only the highest quality materials, from metal-free zirconia frameworks to lifelike ceramic teeth.",
+      "benefitsTitle": "Benefits of Modern Prosthetics",
+      "benefits": [
+        "Restored ability to eat, speak, and smile with confidence",
+        "Natural-looking results using premium materials",
+        "Multiple options to suit different needs and budgets",
+        "Improved facial support and youthful appearance",
+        "Digital precision for optimal fit and comfort",
+        "Durable materials designed for long-term use",
+        "Solutions for partial or complete tooth loss",
+        "Implant-supported options for maximum stability"
+      ],
+      "processTitle": "Your Prosthetic Treatment Process",
+      "process": [
+        {
+          "title": "Initial Assessment",
+          "description": "We conduct a comprehensive examination of your oral health, remaining teeth, gum condition, and bone structure. Digital impressions and photographs help us understand your unique needs."
+        },
+        {
+          "title": "Treatment Planning",
+          "description": "Based on your assessment, we discuss all available options - from bridges to dentures to implant-supported solutions. Together, we choose the best approach for your lifestyle, budget, and aesthetic goals."
+        },
+        {
+          "title": "Digital Design",
+          "description": "Using CAD/CAM technology, we design your prosthetic with precision. You can preview how your new teeth will look before fabrication begins, ensuring your complete satisfaction with the result."
+        },
+        {
+          "title": "Fabrication",
+          "description": "Your prosthetic is crafted in a premium dental laboratory using the finest materials. For fixed prosthetics, temporary restorations keep you comfortable and confident during the fabrication period."
+        },
+        {
+          "title": "Fitting & Adjustment",
+          "description": "We carefully fit your new prosthetic, making any necessary adjustments for optimal comfort and function. We ensure your bite is balanced and the aesthetics meet your expectations."
+        }
+      ],
+      "faqTitle": "Common Questions About Prosthetics",
+      "faqs": [
+        {
+          "question": "What's the difference between a bridge and a denture?",
+          "answer": "A bridge is a fixed restoration that replaces one or more missing teeth by anchoring to adjacent natural teeth or implants. It's cemented in place and isn't removable. A denture is a removable appliance that replaces multiple or all teeth in an arch. Each has its advantages depending on your specific situation."
+        },
+        {
+          "question": "How long does it take to get used to new dentures?",
+          "answer": "Most patients adapt to new dentures within 2-4 weeks. Initially, you may experience some difficulty speaking or eating, and minor soreness is normal. We schedule follow-up appointments to make adjustments and ensure your comfort during this transition period."
+        },
+        {
+          "question": "Can I upgrade from dentures to implant-supported prosthetics?",
+          "answer": "Yes, many patients who currently wear traditional dentures choose to upgrade to implant-supported options for better stability and function. We can evaluate your bone density and overall health to determine if you're a candidate for this upgrade."
+        },
+        {
+          "question": "How do I care for my prosthetics?",
+          "answer": "Fixed prosthetics are cared for like natural teeth - regular brushing, flossing, and professional cleanings. Removable prosthetics should be removed nightly, cleaned with appropriate solutions, and stored properly. We provide detailed care instructions specific to your prosthetic type."
+        }
+      ],
+      "duration": "2-6 weeks depending on type",
+      "warranty": "5-year warranty on all prosthetics"
+    },
+    "aligners": {
+      "title": "Clear Aligners",
+      "subtitle": "Invisible Orthodontic Treatment",
+      "heroDescription": "Achieve your perfect smile discreetly with custom-made transparent aligners - the modern alternative to traditional braces.",
+      "overview": "Clear aligners have revolutionized orthodontic treatment, offering a virtually invisible way to straighten teeth without the aesthetic and lifestyle compromises of traditional metal braces. At Zeo Dental Clinic, we use advanced aligner systems to treat a wide range of orthodontic issues from mild crowding to complex bite problems.\n\nEach set of aligners is custom-fabricated using 3D printing technology based on precise digital scans of your teeth. You'll wear each set for about two weeks before progressing to the next, with each aligner making incremental adjustments to gradually move your teeth into their ideal positions.\n\nThe beauty of clear aligners lies in their removability - you can take them out to eat, drink, brush, and floss, making oral hygiene during treatment much simpler than with traditional braces. Most patients find them comfortable to wear, and others rarely notice you're undergoing orthodontic treatment.",
+      "benefitsTitle": "Why Choose Clear Aligners?",
+      "benefits": [
+        "Virtually invisible - most people won't notice you're wearing them",
+        "Removable for eating, drinking, and special occasions",
+        "No dietary restrictions unlike traditional braces",
+        "Easier oral hygiene - brush and floss normally",
+        "Fewer office visits compared to traditional orthodontics",
+        "Digital preview of your expected results before starting",
+        "Comfortable smooth plastic with no sharp brackets or wires",
+        "Predictable treatment timeline with clear milestones"
+      ],
+      "processTitle": "Your Clear Aligner Journey",
+      "process": [
+        {
+          "title": "Digital Consultation",
+          "description": "We take detailed 3D scans of your teeth using an intraoral scanner - no uncomfortable impressions needed. We analyze your bite and discuss your smile goals."
+        },
+        {
+          "title": "Treatment Simulation",
+          "description": "Using specialized software, we create a virtual simulation showing how your teeth will move throughout treatment. You'll see your expected final result before committing to treatment."
+        },
+        {
+          "title": "Custom Aligner Fabrication",
+          "description": "Once you approve the treatment plan, your complete set of custom aligners is fabricated using precision 3D printing technology."
+        },
+        {
+          "title": "Active Treatment",
+          "description": "You'll wear each set of aligners for about 2 weeks, 20-22 hours per day. We'll schedule periodic check-ups to monitor progress and provide your next sets of aligners."
+        },
+        {
+          "title": "Retention Phase",
+          "description": "After completing treatment, you'll wear retainers to maintain your beautiful new smile. We offer both removable and fixed retainer options."
+        }
+      ],
+      "faqTitle": "Clear Aligner FAQs",
+      "faqs": [
+        {
+          "question": "Can clear aligners fix my specific dental issue?",
+          "answer": "Clear aligners can effectively treat most common orthodontic issues including crowding, spacing, overbite, underbite, and crossbite. During your consultation, we'll assess your specific situation and determine if aligners are the right choice, or if alternative treatments might be more effective."
+        },
+        {
+          "question": "How long does clear aligner treatment take?",
+          "answer": "Treatment duration varies based on the complexity of your case. Simple cases may take 6-9 months, while more complex cases can take 12-18 months or longer. During your consultation, we'll provide a personalized treatment timeline."
+        },
+        {
+          "question": "Do clear aligners hurt?",
+          "answer": "You may experience some pressure or mild discomfort when switching to a new set of aligners, as this indicates the teeth are moving. This typically subsides within a few days. Overall, most patients find aligners more comfortable than traditional braces."
+        },
+        {
+          "question": "What happens if I lose or damage an aligner?",
+          "answer": "Contact us immediately if you lose or damage an aligner. Depending on where you are in your treatment, we may advise you to move to the next set or wear the previous set while a replacement is made. We keep digital records of all your aligners for easy replacement."
+        }
+      ],
+      "duration": "6-18 months average treatment",
+      "warranty": "Satisfaction guarantee included"
+    },
+    "orthodontics": {
+      "title": "Orthodontics",
+      "subtitle": "Expert Teeth Alignment for All Ages",
+      "heroDescription": "Modern orthodontic solutions including ceramic braces and advanced techniques for perfect alignment and a healthy, beautiful smile.",
+      "overview": "Orthodontics is about more than just straight teeth - it's about creating a healthy, functional bite that supports long-term oral health. At Zeo Dental Clinic, our orthodontic specialists treat patients of all ages, from children to adults, using the latest techniques and technologies.\n\nWhile clear aligners work well for many cases, traditional braces remain the gold standard for complex orthodontic issues. We offer several options including conventional metal braces, tooth-colored ceramic braces for a more discreet appearance, and self-ligating systems that can reduce treatment time and discomfort.\n\nOur approach to orthodontics is comprehensive. We don't just focus on aesthetics - we carefully analyze your jaw relationship, airway, and temporomandibular joint (TMJ) function to ensure that your treatment results in not just a beautiful smile, but optimal oral health and function.",
+      "benefitsTitle": "Advantages of Professional Orthodontics",
+      "benefits": [
+        "Corrects complex cases that aligners cannot treat",
+        "Precise control over tooth movement in all directions",
+        "Effective for severe crowding, spacing, and bite issues",
+        "Options for all ages - children, teens, and adults",
+        "Ceramic braces offer a more aesthetic alternative",
+        "Can address jaw alignment and TMJ issues",
+        "Improves oral health by making teeth easier to clean",
+        "Results that last a lifetime with proper retention"
+      ],
+      "processTitle": "Your Orthodontic Treatment Path",
+      "process": [
+        {
+          "title": "Comprehensive Evaluation",
+          "description": "We take digital X-rays, photographs, and 3D scans to thoroughly assess your teeth, jaw, and facial structure. We identify any underlying issues that need to be addressed."
+        },
+        {
+          "title": "Customized Treatment Plan",
+          "description": "Based on our evaluation, we create a detailed treatment plan outlining the recommended approach, expected timeline, and anticipated results. We discuss all options so you can make an informed decision."
+        },
+        {
+          "title": "Braces Placement",
+          "description": "Brackets are carefully bonded to each tooth, and the archwire is placed. The initial appointment takes about 1-2 hours. We ensure you understand how to care for your braces."
+        },
+        {
+          "title": "Regular Adjustments",
+          "description": "You'll visit us every 4-8 weeks for adjustments. During these visits, we replace wires, adjust brackets, and monitor progress. Each adjustment brings you closer to your goal."
+        },
+        {
+          "title": "Braces Removal & Retention",
+          "description": "Once treatment is complete, we remove the braces and take final records. You'll receive custom retainers to maintain your results. We schedule follow-up visits to ensure long-term success."
+        }
+      ],
+      "faqTitle": "Orthodontic Questions Answered",
+      "faqs": [
+        {
+          "question": "Am I too old for braces?",
+          "answer": "Absolutely not! Orthodontic treatment can be successful at any age. In fact, about 25% of orthodontic patients today are adults. As long as your teeth and gums are healthy, age is not a barrier to achieving a straighter smile."
+        },
+        {
+          "question": "How long will I need to wear braces?",
+          "answer": "Treatment time varies depending on the complexity of your case. On average, most patients wear braces for 18-24 months. Some simple cases may be completed in 12 months, while more complex cases might require 30 months or longer."
+        },
+        {
+          "question": "Do braces hurt?",
+          "answer": "You'll likely experience some discomfort for a few days after getting braces and after each adjustment as your teeth begin to move. This is normal and can be managed with over-the-counter pain relievers. The discomfort typically subsides within a week."
+        },
+        {
+          "question": "What foods should I avoid with braces?",
+          "answer": "You should avoid hard, sticky, and chewy foods that can damage brackets or wires. This includes hard candies, popcorn, nuts, ice, caramel, and gum. We'll provide a comprehensive list and tips for maintaining a healthy diet during treatment."
+        }
+      ],
+      "duration": "12-30 months average treatment",
+      "warranty": "Results guaranteed with retention"
+    },
+    "crowns": {
+      "title": "Dental Crowns",
+      "subtitle": "Restore & Protect Your Teeth",
+      "heroDescription": "Premium porcelain and zirconia crowns that restore damaged teeth to their natural beauty, strength, and function.",
+      "overview": "A dental crown is a custom-made cap that covers and protects a damaged, weakened, or cosmetically imperfect tooth. At Zeo Dental Clinic, we use only premium materials including all-ceramic and zirconia crowns that offer exceptional strength and natural aesthetics.\n\nModern crown technology has advanced significantly. Using digital impressions and CAD/CAM design, we can create crowns that precisely match the color, translucency, and shape of your natural teeth. In many cases, we can even provide same-day crowns using our in-office milling technology.\n\nWhether you need to restore a tooth after root canal treatment, protect a cracked tooth from further damage, or simply want to improve the appearance of a discolored or misshapen tooth, our crowns provide a long-lasting solution that looks and feels completely natural.",
+      "benefitsTitle": "Benefits of Quality Dental Crowns",
+      "benefits": [
+        "Restores full function to damaged or weakened teeth",
+        "Protects teeth after root canal treatment",
+        "Natural appearance that matches surrounding teeth",
+        "Long-lasting durability - can last 15-25 years or more",
+        "Metal-free options for optimal aesthetics and biocompatibility",
+        "Same-day crown options available for convenience",
+        "Strengthens and preserves remaining tooth structure",
+        "Improves bite alignment and jaw function"
+      ],
+      "processTitle": "Your Crown Treatment Process",
+      "process": [
+        {
+          "title": "Evaluation & Preparation",
+          "description": "We examine the tooth and take digital X-rays to assess its condition. If a crown is the best solution, we discuss material options and prepare the tooth by removing a thin layer of enamel to make room for the crown."
+        },
+        {
+          "title": "Digital Impressions",
+          "description": "Using an intraoral scanner, we capture precise 3D images of your prepared tooth and surrounding teeth. This eliminates the need for messy traditional impressions and ensures exceptional accuracy."
+        },
+        {
+          "title": "Custom Design",
+          "description": "Your crown is designed using CAD software, allowing us to perfect the shape, size, and fit. We carefully match the shade to your natural teeth for seamless integration."
+        },
+        {
+          "title": "Fabrication",
+          "description": "Depending on your case, your crown may be milled in our office the same day or crafted by our premium dental laboratory partner. A temporary crown protects your tooth during this period if needed."
+        },
+        {
+          "title": "Permanent Placement",
+          "description": "We verify the fit, bite, and aesthetics of your new crown before permanently cementing it in place. Final adjustments ensure comfort and optimal function."
+        }
+      ],
+      "faqTitle": "Crown FAQs",
+      "faqs": [
+        {
+          "question": "When do I need a dental crown?",
+          "answer": "Crowns are recommended for teeth that are significantly decayed, cracked, or weakened, after root canal treatment, to restore broken teeth, to cover severely discolored teeth, or as part of a dental bridge. During your examination, we'll explain why a crown is the best option for your situation."
+        },
+        {
+          "question": "How long do dental crowns last?",
+          "answer": "With proper care, dental crowns typically last 15-25 years, and many last even longer. Factors affecting longevity include oral hygiene habits, diet, whether you grind your teeth, and the material used. Regular dental check-ups help us monitor your crown's condition."
+        },
+        {
+          "question": "Will my crown look natural?",
+          "answer": "Absolutely. We use advanced ceramic and zirconia materials that mimic the translucency and color variations of natural teeth. We meticulously match your crown to your adjacent teeth so it's virtually indistinguishable. Most people, including dentists, can't tell the difference."
+        },
+        {
+          "question": "Is getting a crown painful?",
+          "answer": "The crown procedure is performed under local anesthesia, so you won't feel pain during preparation. You may experience some sensitivity for a few days after the procedure, but this is typically mild and temporary. If you're anxious, we offer sedation options."
+        }
+      ],
+      "duration": "1-2 appointments over 1-2 weeks",
+      "warranty": "10-year warranty on all crowns"
+    },
+    "aesthetics": {
+      "title": "Aesthetic Dentistry",
+      "subtitle": "The Art of Beautiful Smiles",
+      "heroDescription": "Transform your smile with our comprehensive aesthetic treatments including veneers, whitening, and bonding designed to enhance your natural beauty.",
+      "overview": "Aesthetic dentistry is where art meets science. At Zeo Dental Clinic, we believe that everyone deserves a smile they're proud to show. Our aesthetic treatments are designed not just to improve the appearance of your teeth, but to harmonize your smile with your facial features for a natural, confident result.\n\nOur aesthetic services include porcelain veneers for dramatic smile makeovers, professional whitening for a brighter smile, composite bonding for minor repairs and improvements, gum contouring for a balanced smile line, and complete smile design using digital technology to preview your transformation.\n\nWe take a conservative approach to aesthetic dentistry, always preserving as much natural tooth structure as possible while achieving your desired results. Using Digital Smile Design technology, you can see exactly how your new smile will look before any treatment begins, ensuring your complete satisfaction.",
+      "benefitsTitle": "Transform Your Smile",
+      "benefits": [
+        "Dramatic improvement in smile aesthetics",
+        "Boost in self-confidence and quality of life",
+        "Natural-looking results that enhance your features",
+        "Digital preview of your new smile before treatment",
+        "Conservative options that preserve tooth structure",
+        "Long-lasting results with proper care",
+        "Solutions for discoloration, chips, gaps, and shape issues",
+        "Customized treatment plans for your unique goals"
+      ],
+      "processTitle": "Your Aesthetic Transformation",
+      "process": [
+        {
+          "title": "Smile Analysis",
+          "description": "We conduct a comprehensive analysis of your smile, face, and lips using photographs and digital scans. We discuss what you like and don't like about your current smile and your aesthetic goals."
+        },
+        {
+          "title": "Digital Smile Design",
+          "description": "Using advanced software, we create a digital mockup of your new smile. You can see the projected results from multiple angles and provide feedback to refine the design until it's perfect."
+        },
+        {
+          "title": "Treatment Planning",
+          "description": "Based on your approved design, we create a detailed treatment plan. This might include a single procedure like whitening or a combination of treatments for a complete smile makeover."
+        },
+        {
+          "title": "Wax-Up or Trial Smile",
+          "description": "For major changes like veneers, we create a wax-up or temporary trial smile so you can 'test drive' your new look before committing to permanent restorations."
+        },
+        {
+          "title": "Final Treatment",
+          "description": "We execute the treatment plan with precision, whether it's whitening, bonding, or placing custom veneers. Every detail is perfected to achieve the smile you've always wanted."
+        }
+      ],
+      "faqTitle": "Aesthetic Dentistry Questions",
+      "faqs": [
+        {
+          "question": "What's the difference between veneers and bonding?",
+          "answer": "Veneers are thin porcelain shells custom-made in a laboratory and permanently bonded to the front of teeth - they're highly durable and stain-resistant. Bonding uses tooth-colored composite resin applied directly to teeth in a single visit - it's more affordable but may need replacement sooner. We'll recommend the best option based on your specific needs and budget."
+        },
+        {
+          "question": "How white can my teeth get with professional whitening?",
+          "answer": "Professional whitening can typically lighten teeth by 6-8 shades or more, depending on the initial color and type of staining. Results vary based on factors like the cause of discoloration and your natural tooth color. We'll assess your teeth and give you realistic expectations during your consultation."
+        },
+        {
+          "question": "How long do veneers last?",
+          "answer": "Quality porcelain veneers typically last 15-20 years or longer with proper care. Factors affecting longevity include oral hygiene, diet, habits like teeth grinding, and regular dental check-ups. We provide detailed care instructions to maximize the life of your veneers."
+        },
+        {
+          "question": "Will aesthetic treatments damage my natural teeth?",
+          "answer": "We prioritize conservative treatment that preserves as much natural tooth structure as possible. Whitening is non-invasive, bonding requires minimal preparation, and modern veneers require much less tooth reduction than older techniques. We'll always discuss what's involved before any treatment."
+        }
+      ],
+      "duration": "Varies by treatment type",
+      "warranty": "5-15 years depending on treatment"
+    }
   }
 }

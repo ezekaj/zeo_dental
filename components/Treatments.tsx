@@ -9,6 +9,7 @@ interface TreatmentItemProps {
   description: string;
   image: string;
   learnMoreText: string;
+  treatmentKey: string;
 }
 
 const TreatmentItem: React.FC<TreatmentItemProps> = ({
@@ -17,6 +18,7 @@ const TreatmentItem: React.FC<TreatmentItemProps> = ({
   description,
   image,
   learnMoreText,
+  treatmentKey,
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -64,7 +66,7 @@ const TreatmentItem: React.FC<TreatmentItemProps> = ({
           {/* Learn more link */}
           <div className="mt-4 sm:mt-6 overflow-hidden">
             <a
-              href="#booking-form"
+              href={`/treatments/${treatmentKey}`}
               className="inline-flex items-center gap-2 text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra text-white/60 group-hover:text-studio-gold transition-all duration-500 transform translate-y-8 group-hover:translate-y-0 py-2"
             >
               {learnMoreText}
@@ -191,6 +193,7 @@ export const Treatments: React.FC = () => {
                 description={t(`treatments.items.${treatment.key}.description`)}
                 image={treatment.image}
                 learnMoreText={t('treatments.learnMore')}
+                treatmentKey={treatment.key}
               />
             </div>
           ))}
