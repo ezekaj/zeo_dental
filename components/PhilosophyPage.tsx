@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Check, Heart, Shield, Sparkles, Users } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
+import { useScrollColorize } from '../hooks/useScrollColorize';
 import { Header } from './Header';
 import { Booking } from './Booking';
 import { ChatWidget } from './ChatWidget';
@@ -22,6 +23,7 @@ export const PhilosophyPage: React.FC = () => {
   const { t } = useTranslation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [slideshowRef, shouldColorize] = useScrollColorize<HTMLDivElement>(0.4);
 
   // Preload images
   useEffect(() => {
@@ -97,13 +99,18 @@ export const PhilosophyPage: React.FC = () => {
             {/* Image Slideshow */}
             <div className="w-full lg:w-5/12">
               <div className="lg:sticky lg:top-32">
-                <div className="relative aspect-[3/4] w-full overflow-hidden bg-gray-100 group/philosophy">
+                <div
+                  ref={slideshowRef}
+                  className="relative aspect-[3/4] w-full overflow-hidden bg-gray-100 group/philosophy"
+                >
                   {philosophyImages.map((img, index) => (
                     <img
                       key={img.src}
                       src={img.src}
                       alt={img.alt}
-                      className={`absolute inset-0 object-cover w-full h-full transition-all duration-1000 ease-in-out grayscale group-hover/philosophy:grayscale-0 ${
+                      className={`absolute inset-0 object-cover w-full h-full transition-all duration-1000 ease-in-out group-hover/philosophy:grayscale-0 ${
+                        shouldColorize ? 'grayscale-0' : 'grayscale'
+                      } ${
                         index === currentImageIndex && !isTransitioning
                           ? 'opacity-100'
                           : 'opacity-0'

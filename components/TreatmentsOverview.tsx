@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
+import { useScrollColorize } from '../hooks/useScrollColorize';
 import { Header } from './Header';
 import { Booking } from './Booking';
 import { ChatWidget } from './ChatWidget';
@@ -58,9 +59,11 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({
   learnMoreText,
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [cardRef, shouldColorize] = useScrollColorize<HTMLAnchorElement>(0.4);
 
   return (
     <a
+      ref={cardRef}
       href={href}
       className="group relative block aspect-[3/4] overflow-hidden bg-gray-100"
     >
@@ -69,9 +72,9 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({
         <img
           src={image}
           alt={title}
-          className={`w-full h-full object-cover transition-all duration-700 ease-out grayscale group-hover:grayscale-0 group-hover:scale-105 ${
-            imageLoaded ? 'opacity-100' : 'opacity-0'
-          }`}
+          className={`w-full h-full object-cover transition-all duration-700 ease-out group-hover:grayscale-0 group-hover:scale-105 ${
+            shouldColorize ? 'grayscale-0' : 'grayscale'
+          } ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
           onLoad={() => setImageLoaded(true)}
         />
         {/* Gradient Overlay */}
