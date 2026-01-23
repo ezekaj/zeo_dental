@@ -212,25 +212,6 @@ export const TreatmentsOverview: React.FC = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 sm:py-24 bg-studio-black text-white">
-        <div className="container mx-auto px-4 sm:px-6 md:px-12 text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6">
-            {t('services.readyToStart')}
-          </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto mb-10">
-            {t('booking.subtitle')}
-          </p>
-          <a
-            href="#booking-form"
-            className="inline-flex items-center gap-3 bg-studio-gold text-white px-8 py-4 text-sm uppercase tracking-wider hover:bg-studio-gold/90 transition-colors"
-          >
-            {t('services.bookAppointment')}
-            <ArrowRight size={18} />
-          </a>
-        </div>
-      </section>
-
       {/* Booking Section */}
       <Booking />
 
