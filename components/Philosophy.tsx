@@ -3,6 +3,20 @@ import { Reveal } from './ui/Reveal';
 import { TextReveal } from './ui/TextReveal';
 import { useTranslation } from '../hooks/useTranslation';
 
+/**
+ * Detect if device is touch-only (no hover capability)
+ */
+function isTouchDevice(): boolean {
+  if (typeof window === 'undefined') return false;
+  const cannotHover = window.matchMedia('(hover: none)').matches;
+  const hasCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+  const hasTouchCapability = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  const mobileUserAgent = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+  return cannotHover || hasCoarsePointer || (mobileUserAgent && hasTouchCapability);
+}
+
 // Philosophy section images - clinic and team photos
 const philosophyImages = [
   { src: '/images/philosophy/dorina-office.jpg', alt: 'Dr. Dorina at the clinic' },
@@ -20,6 +34,39 @@ export const Philosophy: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [imagesLoaded, setImagesLoaded] = useState<boolean[]>(new Array(philosophyImages.length).fill(false));
+  const [isMobile, setIsMobile] = useState(false);
+  const [isInView, setIsInView] = useState(false);
+  const imageContainerRef = React.useRef<HTMLDivElement>(null);
+
+  // Detect touch device on mount
+  useEffect(() => {
+    setIsMobile(isTouchDevice());
+  }, []);
+
+  // On mobile: detect when image is in view to colorize
+  useEffect(() => {
+    if (!isMobile || !imageContainerRef.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsInView(true);
+          }
+        });
+      },
+      {
+        rootMargin: '-20% 0px -20% 0px',
+        threshold: 0.3,
+      }
+    );
+
+    observer.observe(imageContainerRef.current);
+    return () => observer.disconnect();
+  }, [isMobile]);
+
+  // Determine if image should be colorized
+  const shouldColorize = isMobile ? isInView : false;
 
   // Preload all images
   useEffect(() => {
@@ -62,7 +109,7 @@ export const Philosophy: React.FC = () => {
                 <span className="text-studio-gold text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra mb-4 sm:mb-6 block font-semibold">
                   {t('philosophy.label')}
                 </span>
-                <div className="relative aspect-[3/4] w-full overflow-hidden mb-6 sm:mb-8 bg-gray-100 group/philosophy">
+                <div ref={imageContainerRef} className="relative aspect-[3/4] w-full overflow-hidden mb-6 sm:mb-8 bg-gray-100 group/philosophy">
                   {/* Image container with fade animation */}
                   <div className="absolute inset-0">
                     {philosophyImages.map((img, index) => (
@@ -70,7 +117,9 @@ export const Philosophy: React.FC = () => {
                         key={img.src}
                         src={img.src}
                         alt={img.alt}
-                        className={`absolute inset-0 object-cover w-full h-full transition-all duration-1000 ease-in-out grayscale group-hover/philosophy:grayscale-0 ${
+                        className={`absolute inset-0 object-cover w-full h-full transition-all duration-1000 ease-in-out ${
+                          shouldColorize ? 'grayscale-0' : 'grayscale'
+                        } ${!isMobile ? 'group-hover/philosophy:grayscale-0' : ''} ${
                           index === currentImageIndex && !isTransitioning
                             ? 'opacity-100'
                             : 'opacity-0'

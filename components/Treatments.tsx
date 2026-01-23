@@ -3,6 +3,20 @@ import { Reveal } from './ui/Reveal';
 import { useTranslation } from '../hooks/useTranslation';
 import { ArrowRight } from 'lucide-react';
 
+/**
+ * Detect if device is touch-only (no hover capability)
+ */
+function isTouchDevice(): boolean {
+  if (typeof window === 'undefined') return false;
+  const cannotHover = window.matchMedia('(hover: none)').matches;
+  const hasCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+  const hasTouchCapability = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  const mobileUserAgent = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+  return cannotHover || hasCoarsePointer || (mobileUserAgent && hasTouchCapability);
+}
+
 interface TreatmentItemProps {
   number: string;
   title: string;
@@ -10,6 +24,7 @@ interface TreatmentItemProps {
   image: string;
   learnMoreText: string;
   treatmentKey: string;
+  isMobile: boolean;
 }
 
 const TreatmentItem: React.FC<TreatmentItemProps> = ({
@@ -19,11 +34,41 @@ const TreatmentItem: React.FC<TreatmentItemProps> = ({
   image,
   learnMoreText,
   treatmentKey,
+  isMobile,
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [isInCenter, setIsInCenter] = useState(false);
+  const itemRef = useRef<HTMLDivElement>(null);
+
+  // On mobile: detect when item is in center of screen to colorize
+  useEffect(() => {
+    if (!isMobile || !itemRef.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // When element is intersecting (in center region), colorize it
+          setIsInCenter(entry.isIntersecting);
+        });
+      },
+      {
+        // Root margin creates a narrow "center" detection zone
+        // -40% from top and bottom means only middle 20% of screen triggers
+        rootMargin: '-40% 0px -40% 0px',
+        threshold: 0,
+      }
+    );
+
+    observer.observe(itemRef.current);
+    return () => observer.disconnect();
+  }, [isMobile]);
+
+  // Determine if image should be colorized
+  const shouldColorize = isMobile ? isInCenter : false;
 
   return (
     <div
+      ref={itemRef}
       className="group relative flex-shrink-0 w-[280px] sm:w-[300px] md:w-[350px] lg:w-[400px] h-[380px] sm:h-[400px] md:h-[450px] lg:h-[500px] overflow-hidden"
       data-cursor="hover"
     >
@@ -32,9 +77,9 @@ const TreatmentItem: React.FC<TreatmentItemProps> = ({
         <img
           src={image}
           alt={title}
-          className={`w-full h-full object-cover transition-all duration-700 ease-[0.22,1,0.36,1] group-hover:scale-110 grayscale group-hover:grayscale-0 ${
-            imageLoaded ? 'opacity-100' : 'opacity-0'
-          }`}
+          className={`w-full h-full object-cover transition-all duration-700 ease-[0.22,1,0.36,1] group-hover:scale-110 ${
+            shouldColorize ? 'grayscale-0' : 'grayscale'
+          } ${!isMobile ? 'group-hover:grayscale-0' : ''} ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
           onLoad={() => setImageLoaded(true)}
         />
         {/* Gradient Overlay */}
@@ -83,8 +128,14 @@ export const Treatments: React.FC = () => {
   const { t } = useTranslation();
   const trackRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const animationRef = useRef<number>();
   const positionRef = useRef(0);
+
+  // Detect touch device on mount
+  useEffect(() => {
+    setIsMobile(isTouchDevice());
+  }, []);
 
   const treatments = [
     {
@@ -194,6 +245,7 @@ export const Treatments: React.FC = () => {
                 image={treatment.image}
                 learnMoreText={t('treatments.learnMore')}
                 treatmentKey={treatment.key}
+                isMobile={isMobile}
               />
             </div>
           ))}

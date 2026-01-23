@@ -1,12 +1,107 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Reveal } from './ui/Reveal';
 import { DOCTORS } from '../constants';
 import { useTranslation } from '../hooks/useTranslation';
+
+/**
+ * Detect if device is touch-only (no hover capability)
+ */
+function isTouchDevice(): boolean {
+  if (typeof window === 'undefined') return false;
+  const cannotHover = window.matchMedia('(hover: none)').matches;
+  const hasCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+  const hasTouchCapability = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  const mobileUserAgent = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+  return cannotHover || hasCoarsePointer || (mobileUserAgent && hasTouchCapability);
+}
+
+/**
+ * Hook to detect when element is in view for mobile colorization
+ */
+function useScrollColorize(isMobile: boolean) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    if (!isMobile || !ref.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsInView(true);
+          }
+        });
+      },
+      {
+        rootMargin: '-20% 0px -20% 0px',
+        threshold: 0.3,
+      }
+    );
+
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [isMobile]);
+
+  return { ref, shouldColorize: isMobile ? isInView : false };
+}
+
+// Team member card with scroll colorization
+interface TeamMemberCardProps {
+  member: typeof DOCTORS[0];
+  isMobile: boolean;
+  t: (key: string) => string;
+}
+
+const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, isMobile, t }) => {
+  const colorize = useScrollColorize(isMobile);
+
+  return (
+    <div className="group cursor-pointer">
+      <div ref={colorize.ref} className="aspect-[3/4] overflow-hidden mb-4 sm:mb-6 relative bg-gray-50">
+        <picture>
+          <source srcSet={member.image} type="image/webp" />
+          <source srcSet={member.image.replace('.webp', '.jpg')} type="image/jpeg" />
+          <img
+            src={member.image.replace('.webp', '.jpg')}
+            alt={member.name}
+            className={`w-full h-full object-cover transition-all duration-1000 ease-out group-hover:scale-105 ${
+              colorize.shouldColorize ? 'grayscale-0' : 'grayscale'
+            } ${!isMobile ? 'group-hover:grayscale-0' : ''}`}
+            style={
+              member.id === 'dr-rien' || member.id === 'dr-kristi'
+                ? { objectPosition: '7% center' }
+                : { objectPosition: 'center' }
+            }
+          />
+        </picture>
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500"></div>
+      </div>
+      <div className="flex flex-col items-center text-center">
+        <h3 className="font-serif text-xl sm:text-2xl text-studio-black mb-2 group-hover:text-studio-gold transition-colors duration-300">
+          {member.name}
+        </h3>
+        <span className="text-studio-gray text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra">
+          {t(`team.doctors.${member.id}.role`)}
+        </span>
+      </div>
+    </div>
+  );
+};
 
 export const Team: React.FC = () => {
   const { t } = useTranslation();
   const founder = DOCTORS[0];
   const team = DOCTORS.slice(1);
+  const [isMobile, setIsMobile] = useState(false);
+  const founderColorize = useScrollColorize(isMobile);
+
+  // Detect touch device on mount
+  useEffect(() => {
+    setIsMobile(isTouchDevice());
+  }, []);
 
   return (
     <section id="team" className="py-16 sm:py-24 md:py-32 bg-white relative">
@@ -15,14 +110,16 @@ export const Team: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center mb-16 sm:mb-24 md:mb-32 border-b border-gray-100 pb-12 sm:pb-16 md:pb-24">
           <div className="w-full lg:w-5/12">
             <Reveal>
-              <div className="relative aspect-[3/4] overflow-hidden group">
+              <div ref={founderColorize.ref} className="relative aspect-[3/4] overflow-hidden group">
                 <picture>
                   <source srcSet={founder.image} type="image/webp" />
                   <source srcSet={founder.image.replace('.webp', '.jpg')} type="image/jpeg" />
                   <img
                     src={founder.image.replace('.webp', '.jpg')}
                     alt={founder.name}
-                    className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-[1.5s] ease-out"
+                    className={`w-full h-full object-cover object-center transition-all duration-[1.5s] ease-out ${
+                      founderColorize.shouldColorize ? 'grayscale-0' : 'grayscale'
+                    } ${!isMobile ? 'group-hover:grayscale-0' : ''}`}
                   />
                 </picture>
                 {/* Overlay Accent */}
@@ -98,34 +195,7 @@ export const Team: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-8 sm:gap-y-12 md:gap-y-16">
             {team.map((member, idx) => (
               <Reveal key={member.id} delay={idx * 100}>
-                <div className="group cursor-pointer">
-                  <div className="aspect-[3/4] overflow-hidden mb-4 sm:mb-6 relative bg-gray-50">
-                    <picture>
-                      <source srcSet={member.image} type="image/webp" />
-                      <source srcSet={member.image.replace('.webp', '.jpg')} type="image/jpeg" />
-                      <img
-                        src={member.image.replace('.webp', '.jpg')}
-                        alt={member.name}
-                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 ease-out group-hover:scale-105"
-                        style={
-                          member.id === 'dr-rien' || member.id === 'dr-kristi'
-                            ? { objectPosition: '7% center' }
-                            : { objectPosition: 'center' }
-                        }
-                      />
-                    </picture>
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500"></div>
-                  </div>
-                  <div className="flex flex-col items-center text-center">
-                    <h3 className="font-serif text-xl sm:text-2xl text-studio-black mb-2 group-hover:text-studio-gold transition-colors duration-300">
-                      {member.name}
-                    </h3>
-                    <div className="h-[1px] w-6 bg-gray-200 mb-2 group-hover:w-12 transition-all duration-500"></div>
-                    <p className="text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra text-studio-gray">
-                      {t(`team.doctors.${member.id}.role`)}
-                    </p>
-                  </div>
-                </div>
+                <TeamMemberCard member={member} isMobile={isMobile} t={t} />
               </Reveal>
             ))}
           </div>

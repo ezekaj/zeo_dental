@@ -1,11 +1,13 @@
 import { useState, useEffect, useRef, RefObject } from 'react';
 
 /**
- * Detect if device cannot hover (touch-only devices)
+ * Detect if device should use scroll-based colorization instead of hover
  * Returns true on mobile/tablet, false on desktop with mouse
  *
- * Uses (hover: none) media query which is the most reliable way to detect
- * devices that don't have hover capability (phones, tablets without mouse)
+ * Uses multiple detection methods for maximum compatibility:
+ * 1. Media queries (hover: none, pointer: coarse) - most reliable for actual devices
+ * 2. Touch capability detection (ontouchstart, maxTouchPoints)
+ * 3. Mobile user agent detection as fallback
  */
 function isTouchDevice(): boolean {
   if (typeof window === 'undefined') return false;
@@ -16,9 +18,19 @@ function isTouchDevice(): boolean {
   // Secondary check: coarse pointer (finger) as primary input
   const hasCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
 
-  // Device is touch-only if it can't hover OR has coarse pointer as primary
-  // This catches most mobile devices reliably
-  return cannotHover || hasCoarsePointer;
+  // Touch capability check
+  const hasTouchCapability = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+  // User agent check for mobile devices (fallback)
+  const mobileUserAgent = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+
+  // Device should use scroll colorization if:
+  // 1. Media queries indicate no hover capability
+  // 2. OR has coarse pointer (touch screen)
+  // 3. OR is detected as mobile via user agent AND has touch
+  return cannotHover || hasCoarsePointer || (mobileUserAgent && hasTouchCapability);
 }
 
 /**
