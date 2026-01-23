@@ -92,14 +92,20 @@ export const Header: React.FC = () => {
             </button>
           </div>
 
-          {/* Center: Brand */}
+          {/* Center: Brand Logo */}
           <div className="flex justify-center">
             <a
               href="/"
-              className="font-serif text-xl sm:text-2xl tracking-widest relative group"
+              className="relative group"
               data-cursor="hover"
             >
-              ZEO<span className="text-studio-gold">.</span>
+              <img
+                src="/images/zeo-logo.png"
+                alt="Zeo Dental Clinic"
+                className={`h-10 sm:h-12 w-auto transition-all duration-500 ${
+                  isScrolled ? '' : 'brightness-0 invert'
+                }`}
+              />
             </a>
           </div>
 
@@ -128,6 +134,17 @@ export const Header: React.FC = () => {
         }`}
       >
         <div className="container mx-auto px-6 md:px-12 h-full relative">
+          {/* Logo in menu */}
+          <div className="absolute top-8 left-6 md:top-10 md:left-12">
+            <a href="/" onClick={() => setIsMobileMenuOpen(false)}>
+              <img
+                src="/images/zeo-logo.png"
+                alt="Zeo Dental Clinic"
+                className="h-10 sm:h-12 w-auto"
+              />
+            </a>
+          </div>
+
           <div className="absolute top-8 right-6 md:top-10 md:right-12">
             <button
               onClick={() => setIsMobileMenuOpen(false)}
