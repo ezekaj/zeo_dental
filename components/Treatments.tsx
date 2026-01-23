@@ -167,7 +167,7 @@ export const Treatments: React.FC = () => {
 
           <Reveal delay={200}>
             <a
-              href="#booking-form"
+              href="/treatments"
               className="group hidden lg:flex items-center gap-4 text-[10px] uppercase tracking-ultra hover:text-studio-gold transition-colors"
               data-cursor="hover"
             >
@@ -204,7 +204,7 @@ export const Treatments: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12 py-10 sm:py-12 lg:hidden">
         <div className="flex justify-center">
           <a
-            href="#booking-form"
+            href="/treatments"
             className="group flex items-center gap-3 sm:gap-4 text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra hover:text-studio-gold transition-colors py-3 px-4"
             data-cursor="hover"
           >
