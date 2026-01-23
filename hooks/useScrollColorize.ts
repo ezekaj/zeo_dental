@@ -70,11 +70,8 @@ export function useScrollColorize<T extends HTMLElement = HTMLDivElement>(
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // Only toggle to true when entering, keep true once entered
-          // This creates a reveal effect as you scroll down
-          if (entry.isIntersecting) {
-            setIsInView(true);
-          }
+          // Toggle based on visibility - colorize when in view, grayscale when scrolled away
+          setIsInView(entry.isIntersecting);
         });
       },
       {

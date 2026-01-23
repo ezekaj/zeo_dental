@@ -43,16 +43,15 @@ export const Philosophy: React.FC = () => {
     setIsMobile(isTouchDevice());
   }, []);
 
-  // On mobile: detect when image is in view to colorize
+  // On mobile: detect when image is in view to colorize (toggles on/off)
   useEffect(() => {
     if (!isMobile || !imageContainerRef.current) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsInView(true);
-          }
+          // Toggle based on visibility - colorize when in view, grayscale when not
+          setIsInView(entry.isIntersecting);
         });
       },
       {

@@ -32,21 +32,20 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
     setIsMobile(isTouchDevice());
   }, []);
 
-  // On mobile: detect when slider is in view to colorize
+  // On mobile: detect when slider is in view to colorize (toggles on/off)
   useEffect(() => {
     if (!isMobile || !containerRef.current) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsInView(true);
-          }
+          // Toggle based on visibility - colorize when in view, grayscale when not
+          setIsInView(entry.isIntersecting);
         });
       },
       {
-        rootMargin: '-10% 0px -10% 0px',
-        threshold: 0.3,
+        rootMargin: '-15% 0px -15% 0px',
+        threshold: 0.5,
       }
     );
 
@@ -54,8 +53,11 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
     return () => observer.disconnect();
   }, [isMobile]);
 
-  // Determine if images should be colorized
-  const shouldColorize = isMobile ? isInView : false;
+  // Determine if images should be colorized (in view OR being interacted with)
+  const shouldColorize = isMobile ? (isInView || isResizing) : false;
+
+  // Show labels when interacting (touching/dragging) on mobile, or in view on desktop
+  const showLabels = isMobile ? (isInView || isResizing) : false;
 
   const handleMouseDown = () => setIsResizing(true);
   const handleMouseUp = () => setIsResizing(false);
@@ -178,7 +180,7 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
 
         {/* Labels attached to slider - Only visible on hover or interaction */}
         <div className={`absolute top-6 right-full mr-6 transition-opacity duration-500 flex items-center ${
-          shouldColorize ? 'opacity-100' : 'opacity-0'
+          showLabels ? 'opacity-100' : 'opacity-0'
         } ${!isMobile ? 'group-hover:opacity-100 group-hover/case:opacity-100' : ''}`}>
           <div className="bg-black/30 backdrop-blur-md px-3 py-1 text-[8px] tracking-ultra font-bold uppercase text-white shadow-lg whitespace-nowrap border border-white/10">
             Before
@@ -186,7 +188,7 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
         </div>
 
         <div className={`absolute top-6 left-full ml-6 transition-opacity duration-500 flex items-center ${
-          shouldColorize ? 'opacity-100' : 'opacity-0'
+          showLabels ? 'opacity-100' : 'opacity-0'
         } ${!isMobile ? 'group-hover:opacity-100 group-hover/case:opacity-100' : ''}`}>
           <div className="bg-studio-gold/90 backdrop-blur-md px-3 py-1 text-[8px] tracking-ultra font-bold uppercase text-white shadow-lg whitespace-nowrap">
             After

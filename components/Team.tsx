@@ -18,7 +18,7 @@ function isTouchDevice(): boolean {
 }
 
 /**
- * Hook to detect when element is in view for mobile colorization
+ * Hook to detect when element is in view for mobile colorization (toggles on/off)
  */
 function useScrollColorize(isMobile: boolean) {
   const ref = useRef<HTMLDivElement>(null);
@@ -30,9 +30,8 @@ function useScrollColorize(isMobile: boolean) {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsInView(true);
-          }
+          // Toggle based on visibility - colorize when in view, grayscale when not
+          setIsInView(entry.isIntersecting);
         });
       },
       {
