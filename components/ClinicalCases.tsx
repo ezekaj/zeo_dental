@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ComparisonSlider } from './ComparisonSlider';
 import { Reveal } from './ui/Reveal';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
+
+/**
+ * Detect if device is touch-only (no hover capability)
+ */
+function isTouchDevice(): boolean {
+  if (typeof window === 'undefined') return false;
+  const cannotHover = window.matchMedia('(hover: none)').matches;
+  const hasCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+  const hasTouchCapability = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  const mobileUserAgent = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+  return cannotHover || hasCoarsePointer || (mobileUserAgent && hasTouchCapability);
+}
 
 interface CaseDetail {
   label: string;
@@ -26,25 +40,66 @@ const CaseCard: React.FC<CaseCardProps> = ({
   afterImage,
   details,
 }) => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  // Detect touch device on mount
+  useEffect(() => {
+    setIsMobile(isTouchDevice());
+  }, []);
+
+  // On mobile: detect when card is in view to show description
+  useEffect(() => {
+    if (!isMobile || !cardRef.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setIsActive(entry.isIntersecting);
+        });
+      },
+      {
+        rootMargin: '-20% 0px -20% 0px',
+        threshold: 0.5,
+      }
+    );
+
+    observer.observe(cardRef.current);
+    return () => observer.disconnect();
+  }, [isMobile]);
+
+  // Classes for mobile active state (simulates hover)
+  const isExpanded = isMobile && isActive;
+
   return (
-    <div className="group/case relative w-full aspect-[3/4] bg-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-700 ease-[0.22,1,0.36,1] cursor-pointer">
+    <div
+      ref={cardRef}
+      className={`group/case relative w-full aspect-[3/4] bg-white overflow-hidden shadow-sm transition-all duration-700 ease-[0.22,1,0.36,1] cursor-pointer ${
+        isExpanded ? 'shadow-2xl' : 'hover:shadow-2xl'
+      }`}
+    >
       {/*
                 Image Container
                 - Initially: inset-0 (Full cover)
-                - Hover: Top 24px, Left 24px, Right 24px, Height 50%
+                - Hover/Active: Top 24px, Left 24px, Right 24px, Height 50%
                 This creates a 'frame' effect where the image shrinks and centers at the top
             */}
       <div
-        className="absolute top-0 left-0 right-0 h-full w-full
+        className={`absolute top-0 left-0 right-0 h-full w-full
                 transition-all duration-[800ms] cubic-bezier(0.22, 1, 0.36, 1)
-                group-hover/case:h-[55%] group-hover/case:w-[90%]
-                group-hover/case:top-[6%] group-hover/case:left-[5%]
-                z-20 overflow-hidden bg-gray-100 shadow-none group-hover/case:shadow-lg"
+                z-20 overflow-hidden bg-gray-100 shadow-none
+                ${isExpanded
+                  ? 'h-[55%] w-[90%] top-[6%] left-[5%] shadow-lg'
+                  : 'group-hover/case:h-[55%] group-hover/case:w-[90%] group-hover/case:top-[6%] group-hover/case:left-[5%] group-hover/case:shadow-lg'
+                }`}
       >
         <ComparisonSlider beforeImage={beforeImage} afterImage={afterImage} />
 
         {/* Number Badge - Always visible on image, moves with it */}
-        <div className="absolute top-4 left-4 z-30 opacity-100 transition-opacity duration-300 group-hover/case:opacity-0">
+        <div className={`absolute top-4 left-4 z-30 transition-opacity duration-300 ${
+          isExpanded ? 'opacity-0' : 'opacity-100 group-hover/case:opacity-0'
+        }`}>
           <span className="bg-black/20 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-ultra px-3 py-1 border border-white/20">
             {number}
           </span>
@@ -57,11 +112,12 @@ const CaseCard: React.FC<CaseCardProps> = ({
                 - Initially hidden and pushed down
             */}
       <div
-        className="absolute bottom-0 left-0 w-full h-[45%] z-10 flex flex-col items-center justify-center px-8 text-center
-                opacity-0 translate-y-8
-                group-hover/case:opacity-100 group-hover/case:translate-y-0
+        className={`absolute bottom-0 left-0 w-full h-[45%] z-10 flex flex-col items-center justify-center px-8 text-center
                 transition-all duration-[800ms] cubic-bezier(0.22, 1, 0.36, 1) delay-100
-            "
+                ${isExpanded
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-8 group-hover/case:opacity-100 group-hover/case:translate-y-0'
+                }`}
       >
         <span className="text-[10px] font-bold text-studio-gold uppercase tracking-ultra mb-4">
           {number}
