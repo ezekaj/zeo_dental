@@ -109,7 +109,7 @@ export const Treatments: React.FC = () => {
     },
     {
       key: 'aesthetics',
-      image: 'https://i.pinimg.com/originals/e1/9e/6c/e19e6c06f7723fc1752fa56a49c6aad9.jpg',
+      image: '/images/treatments/endodontics.jpg',
     },
   ];
 
