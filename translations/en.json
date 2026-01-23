@@ -314,7 +314,7 @@
     "text2": "Every treatment is a personalized journey, where your vision meets our expertise to create lasting, natural results.",
     "expertise": "Expertise",
     "expertiseList": {
-      "item1": "Aesthetic Dentistry",
+      "item1": "Endodontics",
       "item2": "Surgical Precision",
       "item3": "Implant Mastery"
     },
@@ -529,8 +529,8 @@
         "description": "Premium porcelain and zirconia crowns that restore damaged teeth while matching the natural color and translucency."
       },
       "aesthetics": {
-        "title": "Aesthetic Dentistry",
-        "description": "Transform your smile with veneers, whitening, and bonding designed to enhance natural beauty and facial harmony."
+        "title": "Endodontics",
+        "description": "Advanced root canal therapy to save damaged teeth and relieve pain using modern techniques and precision instruments."
       }
     }
   },
@@ -912,65 +912,65 @@
       "warranty": "10-year warranty on all crowns"
     },
     "aesthetics": {
-      "title": "Aesthetic Dentistry",
-      "subtitle": "The Art of Beautiful Smiles",
-      "heroDescription": "Transform your smile with our comprehensive aesthetic treatments including veneers, whitening, and bonding designed to enhance your natural beauty.",
-      "overview": "Aesthetic dentistry is where art meets science. At Zeo Dental Clinic, we believe that everyone deserves a smile they're proud to show. Our aesthetic treatments are designed not just to improve the appearance of your teeth, but to harmonize your smile with your facial features for a natural, confident result.\n\nOur aesthetic services include porcelain veneers for dramatic smile makeovers, professional whitening for a brighter smile, composite bonding for minor repairs and improvements, gum contouring for a balanced smile line, and complete smile design using digital technology to preview your transformation.\n\nWe take a conservative approach to aesthetic dentistry, always preserving as much natural tooth structure as possible while achieving your desired results. Using Digital Smile Design technology, you can see exactly how your new smile will look before any treatment begins, ensuring your complete satisfaction.",
-      "benefitsTitle": "Transform Your Smile",
+      "title": "Endodontics",
+      "subtitle": "Save Your Natural Teeth",
+      "heroDescription": "Advanced root canal therapy using modern techniques and precision instruments to eliminate infection, relieve pain, and preserve your natural teeth.",
+      "overview": "Endodontics is the branch of dentistry focused on treating the dental pulp and tissues surrounding the root of a tooth. At Zeo Dental Clinic, our endodontic treatments are designed to save teeth that might otherwise need extraction, relieving pain and restoring function.\n\nWhen the pulp inside your tooth becomes infected or inflamed due to deep decay, repeated dental procedures, cracks, or trauma, root canal treatment can save the tooth. Our advanced techniques and modern equipment make the procedure comfortable and highly successful.\n\nWe use rotary instrumentation, electronic apex locators, and magnification to ensure thorough cleaning and shaping of the root canal system. Our gentle approach and effective anesthesia mean that modern root canal treatment is no more uncomfortable than having a filling placed.",
+      "benefitsTitle": "Why Choose Root Canal Treatment",
       "benefits": [
-        "Dramatic improvement in smile aesthetics",
-        "Boost in self-confidence and quality of life",
-        "Natural-looking results that enhance your features",
-        "Digital preview of your new smile before treatment",
-        "Conservative options that preserve tooth structure",
-        "Long-lasting results with proper care",
-        "Solutions for discoloration, chips, gaps, and shape issues",
-        "Customized treatment plans for your unique goals"
+        "Save your natural tooth and avoid extraction",
+        "Eliminate pain and infection at the source",
+        "Prevent infection from spreading to other teeth",
+        "Maintain natural bite and chewing function",
+        "More cost-effective than extraction and replacement",
+        "High success rate with modern techniques",
+        "Comfortable procedure with local anesthesia",
+        "Preserves the natural appearance of your smile"
       ],
-      "processTitle": "Your Aesthetic Transformation",
+      "processTitle": "Your Endodontic Treatment",
       "process": [
         {
-          "title": "Smile Analysis",
-          "description": "We conduct a comprehensive analysis of your smile, face, and lips using photographs and digital scans. We discuss what you like and don't like about your current smile and your aesthetic goals."
+          "title": "Diagnosis & X-Ray",
+          "description": "We examine your tooth and take detailed X-rays to assess the extent of infection and root canal anatomy. We'll explain our findings and discuss the best treatment approach for your specific case."
         },
         {
-          "title": "Digital Smile Design",
-          "description": "Using advanced software, we create a digital mockup of your new smile. You can see the projected results from multiple angles and provide feedback to refine the design until it's perfect."
+          "title": "Anesthesia & Isolation",
+          "description": "The area is thoroughly numbed with local anesthesia for your comfort. A rubber dam is placed around the tooth to keep it clean and dry during the procedure."
         },
         {
-          "title": "Treatment Planning",
-          "description": "Based on your approved design, we create a detailed treatment plan. This might include a single procedure like whitening or a combination of treatments for a complete smile makeover."
+          "title": "Access & Cleaning",
+          "description": "We create a small opening in the crown of the tooth to access the pulp chamber. Using specialized instruments, we carefully remove the infected or damaged pulp tissue and thoroughly clean and shape the root canals."
         },
         {
-          "title": "Wax-Up or Trial Smile",
-          "description": "For major changes like veneers, we create a wax-up or temporary trial smile so you can 'test drive' your new look before committing to permanent restorations."
+          "title": "Disinfection & Filling",
+          "description": "The canals are disinfected with antibacterial solutions and filled with a biocompatible material called gutta-percha. This seals the canals to prevent reinfection."
         },
         {
-          "title": "Final Treatment",
-          "description": "We execute the treatment plan with precision, whether it's whitening, bonding, or placing custom veneers. Every detail is perfected to achieve the smile you've always wanted."
+          "title": "Restoration",
+          "description": "After the root canal is complete, the tooth is restored with a filling or crown to protect it and restore full function. A crown is typically recommended for back teeth to provide additional strength."
         }
       ],
-      "faqTitle": "Aesthetic Dentistry Questions",
+      "faqTitle": "Endodontics Questions",
       "faqs": [
         {
-          "question": "What's the difference between veneers and bonding?",
-          "answer": "Veneers are thin porcelain shells custom-made in a laboratory and permanently bonded to the front of teeth - they're highly durable and stain-resistant. Bonding uses tooth-colored composite resin applied directly to teeth in a single visit - it's more affordable but may need replacement sooner. We'll recommend the best option based on your specific needs and budget."
+          "question": "Is root canal treatment painful?",
+          "answer": "Modern root canal treatment is performed under effective local anesthesia and is typically no more uncomfortable than having a filling. Most patients report that the procedure relieves the pain they were experiencing from the infected tooth. We prioritize your comfort throughout the treatment."
         },
         {
-          "question": "How white can my teeth get with professional whitening?",
-          "answer": "Professional whitening can typically lighten teeth by 6-8 shades or more, depending on the initial color and type of staining. Results vary based on factors like the cause of discoloration and your natural tooth color. We'll assess your teeth and give you realistic expectations during your consultation."
+          "question": "How long does a root canal take?",
+          "answer": "Most root canal treatments can be completed in one to two appointments, each lasting 60-90 minutes. The number of visits depends on the complexity of the case and the tooth being treated. Front teeth typically require less time than molars with multiple roots."
         },
         {
-          "question": "How long do veneers last?",
-          "answer": "Quality porcelain veneers typically last 15-20 years or longer with proper care. Factors affecting longevity include oral hygiene, diet, habits like teeth grinding, and regular dental check-ups. We provide detailed care instructions to maximize the life of your veneers."
+          "question": "What happens if I don't get a root canal?",
+          "answer": "An untreated infected tooth will not heal on its own. The infection can spread to surrounding bone and tissue, potentially causing an abscess, bone loss, and severe pain. Eventually, the tooth may need to be extracted. Root canal treatment can save the tooth and prevent these complications."
         },
         {
-          "question": "Will aesthetic treatments damage my natural teeth?",
-          "answer": "We prioritize conservative treatment that preserves as much natural tooth structure as possible. Whitening is non-invasive, bonding requires minimal preparation, and modern veneers require much less tooth reduction than older techniques. We'll always discuss what's involved before any treatment."
+          "question": "How long do root canal treated teeth last?",
+          "answer": "With proper restoration and care, a root canal treated tooth can last a lifetime. The key factors are having the tooth properly restored with a crown when recommended, maintaining good oral hygiene, and attending regular dental check-ups."
         }
       ],
-      "duration": "Varies by treatment type",
-      "warranty": "5-15 years depending on treatment"
+      "duration": "1-2 appointments, 60-90 minutes each",
+      "warranty": "Treatment success rate over 95%"
     }
   },
   "philosophyPage": {

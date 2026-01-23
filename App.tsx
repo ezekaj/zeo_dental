@@ -41,9 +41,9 @@ const treatmentConfigs: Record<string, { key: string; heroImage: string }> = {
     key: 'crowns',
     heroImage: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2668&auto=format&fit=crop',
   },
-  '/treatments/aesthetics': {
+  '/treatments/endodontics': {
     key: 'aesthetics',
-    heroImage: 'https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?q=80&w=2670&auto=format&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=2670&auto=format&fit=crop',
   },
 };
 

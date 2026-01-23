@@ -314,7 +314,7 @@
     "text2": "Çdo trajtim është një udhëtim i personalizuar, ku vizioni juaj takon ekspertizën tonë për të krijuar rezultate natyrale dhe të qëndrueshme.",
     "expertise": "Ekspertiza",
     "expertiseList": {
-      "item1": "Stomatologji Estetike",
+      "item1": "Endodonci",
       "item2": "Precizitet Kirurgjik",
       "item3": "Mjeshtëri Implantesh"
     },
@@ -529,8 +529,8 @@
         "description": "Kurora premium porcelani dhe zirkoni që restaurojnë dhëmbët e dëmtuar duke përshtatur ngjyrën dhe transparencën natyrale."
       },
       "aesthetics": {
-        "title": "Stomatologji Estetike",
-        "description": "Transformoni buzëqeshjen tuaj me faseta, zbardhje dhe lidhje të dizajnuara për të rritur bukurinë natyrale dhe harmoninë e fytyrës."
+        "title": "Endodonci",
+        "description": "Terapi e avancuar e kanalit të rrënjës për të shpëtuar dhëmbët e dëmtuar dhe lehtësuar dhimbjen duke përdorur teknika moderne dhe instrumente precize."
       }
     }
   },
@@ -912,65 +912,65 @@
       "warranty": "Garanci 10-vjeçare për të gjitha kurorat"
     },
     "aesthetics": {
-      "title": "Stomatologji Estetike",
-      "subtitle": "Arti i Buzëqeshjeve të Bukura",
-      "heroDescription": "Transformoni buzëqeshjen tuaj me trajtimet tona gjithëpërfshirëse estetike përfshirë faseta, zbardhje dhe lidhje të dizajnuara për të rritur bukurinë tuaj natyrale.",
-      "overview": "Stomatologjia estetike është ku arti takon shkencën. Në Klinikën Dentare Zeo, besojmë se të gjithë meritojnë një buzëqeshje për të cilën janë krenarë ta tregojnë. Trajtimet tona estetike janë dizajnuar jo vetëm për të përmirësuar pamjen e dhëmbëve tuaj, por për të harmonizuar buzëqeshjen tuaj me tiparet fytyrore për një rezultat natyral dhe të sigurt.\n\nShërbimet tona estetike përfshijnë faseta porcelani për transformime dramatike të buzëqeshjes, zbardhje profesionale për një buzëqeshje më të ndritshme, lidhje kompoziti për riparime dhe përmirësime të vogla, konturim mishrat për një vijë buzëqeshjeje të balancuar, dhe dizajn të plotë buzëqeshjeje duke përdorur teknologji dixhitale për të parashikuar transformimin tuaj.\n\nMarrim një qasje konservative ndaj stomatologjisë estetike, duke ruajtur gjithmonë sa më shumë strukturë natyrale dhëmbi të jetë e mundur ndërsa arrijmë rezultatet tuaja të dëshiruara. Duke përdorur teknologjinë e Dizajnit Dixhital të Buzëqeshjes, mund të shihni saktësisht se si do të duket buzëqeshja juaj e re para se të fillojë çdo trajtim, duke siguruar kënaqësinë tuaj të plotë.",
-      "benefitsTitle": "Transformoni Buzëqeshjen Tuaj",
+      "title": "Endodonci",
+      "subtitle": "Ruani Dhëmbët Tuaj Natyralë",
+      "heroDescription": "Terapi e avancuar e kanalit të rrënjës duke përdorur teknika moderne dhe instrumente precize për të eliminuar infeksionin, lehtësuar dhimbjen dhe ruajtur dhëmbët tuaj natyralë.",
+      "overview": "Endodoncia është dega e stomatologjisë e fokusuar në trajtimin e pulpës dentare dhe indeve që rrethojnë rrënjën e dhëmbit. Në Klinikën Dentare Zeo, trajtimet tona endodontike janë dizajnuar për të shpëtuar dhëmbët që përndryshe do të kishin nevojë për nxjerrje, duke lehtësuar dhimbjen dhe rikthyer funksionin.\n\nKur pulpa brenda dhëmbit tuaj infektohet ose inflamohet për shkak të kariesit të thellë, procedurave të përsëritura dentare, çarjeve ose traumave, trajtimi i kanalit të rrënjës mund të shpëtojë dhëmbin. Teknikat tona të avancuara dhe pajisjet moderne e bëjnë procedurën komode dhe shumë të suksesshme.\n\nPërdorim instrumentim rrotullues, lokalizues elektronikë të apeksit dhe zmadhim për të siguruar pastrim dhe formësim të plotë të sistemit të kanalit të rrënjës. Qasja jonë e butë dhe anestezia efektive nënkuptojnë që trajtimi modern i kanalit të rrënjës nuk është më i pakëndshëm se vendosja e një mbushje.",
+      "benefitsTitle": "Pse të Zgjidhni Trajtimin e Kanalit të Rrënjës",
       "benefits": [
-        "Përmirësim dramatik në estetikën e buzëqeshjes",
-        "Rritje e vetëbesimit dhe cilësisë së jetës",
-        "Rezultate natyrale që rrisin tiparet tuaja",
-        "Parashikim dixhital i buzëqeshjes suaj të re para trajtimit",
-        "Opsione konservative që ruajnë strukturën e dhëmbit",
-        "Rezultate afatgjata me kujdes të duhur",
-        "Zgjidhje për ngjyrosje, thërrmime, hapësira dhe çështje forme",
-        "Plane trajtimi të personalizuara për qëllimet tuaja unike"
+        "Ruani dhëmbin tuaj natyral dhe shmangni nxjerrjen",
+        "Eliminoni dhimbjen dhe infeksionin në burim",
+        "Parandaloni përhapjen e infeksionit tek dhëmbët e tjerë",
+        "Ruani kafshimin natyral dhe funksionin e përtypsjes",
+        "Më ekonomik se nxjerrja dhe zëvendësimi",
+        "Shkallë e lartë suksesi me teknika moderne",
+        "Procedurë komode me anestezi lokale",
+        "Ruan pamjen natyrale të buzëqeshjes suaj"
       ],
-      "processTitle": "Transformimi Juaj Estetik",
+      "processTitle": "Trajtimi Juaj Endodontik",
       "process": [
         {
-          "title": "Analizë e Buzëqeshjes",
-          "description": "Kryejmë një analizë gjithëpërfshirëse të buzëqeshjes, fytyrës dhe buzëve tuaja duke përdorur fotografi dhe skanime dixhitale. Diskutojmë çfarë ju pëlqen dhe nuk ju pëlqen rreth buzëqeshjes suaj aktuale dhe qëllimet tuaja estetike."
+          "title": "Diagnozë & Rentgen",
+          "description": "Ekzaminojmë dhëmbin tuaj dhe marrim radiografi të detajuara për të vlerësuar shkallën e infeksionit dhe anatominë e kanalit të rrënjës. Do t'ju shpjegojmë gjetjet tona dhe do të diskutojmë qasjen më të mirë të trajtimit për rastin tuaj specifik."
         },
         {
-          "title": "Dizajn Dixhital i Buzëqeshjes",
-          "description": "Duke përdorur softuer të avancuar, krijojmë një makete dixhitale të buzëqeshjes suaj të re. Mund të shihni rezultatet e projektuara nga kënde të shumta dhe të jepni komente për të rafinuar dizajnin derisa të jetë perfekt."
+          "title": "Anestezi & Izolim",
+          "description": "Zona mpirret plotësisht me anestezi lokale për komoditetin tuaj. Një digë gome vendoset rreth dhëmbit për ta mbajtur të pastër dhe të thatë gjatë procedurës."
         },
         {
-          "title": "Planifikim Trajtimi",
-          "description": "Bazuar në dizajnin tuaj të miratuar, krijojmë një plan trajtimi të detajuar. Kjo mund të përfshijë një procedurë të vetme si zbardhja ose një kombinim trajtimesh për një transformim të plotë të buzëqeshjes."
+          "title": "Aksesim & Pastrim",
+          "description": "Krijojmë një hapje të vogël në kurorën e dhëmbit për të aksesuar dhomën e pulpës. Duke përdorur instrumente të specializuara, heqim me kujdes indin e pulpës së infektuar ose dëmtuar dhe pastrojmë dhe formësojmë plotësisht kanalet e rrënjës."
         },
         {
-          "title": "Modele Dylli ose Buzëqeshje Prove",
-          "description": "Për ndryshime të mëdha si fasetat, krijojmë një model dylli ose buzëqeshje prove të përkohshme në mënyrë që të mund të 'provoni' pamjen tuaj të re para se të angazhoheni për restaurime të përhershme."
+          "title": "Dezinfektim & Mbushje",
+          "description": "Kanalet dezinfektohen me zgjidhje antibakteriale dhe mbushen me një material biokompatibël të quajtur gutaperka. Kjo vulos kanalet për të parandaluar riinfeksionin."
         },
         {
-          "title": "Trajtimi Përfundimtar",
-          "description": "Ekzekutojmë planin e trajtimit me precizitet, qoftë zbardhje, lidhje ose vendosje fasetash me porosi. Çdo detaj është perfeksionuar për të arritur buzëqeshjen që keni dashur gjithmonë."
+          "title": "Restaurim",
+          "description": "Pasi kanali i rrënjës të përfundojë, dhëmbi restaurohet me një mbushje ose kurorë për ta mbrojtur dhe rikthyer funksionin e plotë. Një kurorë zakonisht rekomandohet për dhëmbët e pasmë për të siguruar forcë shtesë."
         }
       ],
-      "faqTitle": "Pyetje Stomatologjie Estetike",
+      "faqTitle": "Pyetje Endodoncie",
       "faqs": [
         {
-          "question": "Cili është ndryshimi midis fasetave dhe lidhjes?",
-          "answer": "Fasetat janë guaska të holla porcelani të bëra me porosi në laborator dhe të lidhura përgjithmonë në pjesën e përparme të dhëmbëve - ato janë shumë të qëndrueshme dhe rezistente ndaj njollave. Lidhja përdor rezinë kompoziti me ngjyrë dhëmbi të aplikuar drejtpërdrejt në dhëmbë në një vizitë të vetme - është më e përballueshme por mund të ketë nevojë për zëvendësim më shpejt. Do të rekomandojmë opsionin më të mirë bazuar në nevojat tuaja specifike dhe buxhetin."
+          "question": "A është i dhimbshëm trajtimi i kanalit të rrënjës?",
+          "answer": "Trajtimi modern i kanalit të rrënjës kryhet nën anestezi lokale efektive dhe zakonisht nuk është më i pakëndshëm se vendosja e një mbushjeje. Shumica e pacientëve raportojnë që procedura lehtëson dhimbjen që po përjetonin nga dhëmbi i infektuar. Prioritizojmë komoditetin tuaj gjatë gjithë trajtimit."
         },
         {
-          "question": "Sa të bardhë mund të bëhen dhëmbët e mi me zbardhje profesionale?",
-          "answer": "Zbardhja profesionale mund zakonisht të ndriçojë dhëmbët me 6-8 nuanca ose më shumë, në varësi të ngjyrës fillestare dhe llojit të njollosjes. Rezultatet variojnë bazuar në faktorë si shkaku i ngjyrosjes dhe ngjyra juaj natyrale e dhëmbit. Do të vlerësojmë dhëmbët tuaj dhe do t'ju japim pritshmëri realiste gjatë konsultës suaj."
+          "question": "Sa kohë zgjat një trajtim i kanalit të rrënjës?",
+          "answer": "Shumica e trajtimeve të kanalit të rrënjës mund të përfundojnë në një deri në dy takime, secila duke zgjatur 60-90 minuta. Numri i vizitave varet nga kompleksiteti i rastit dhe dhëmbit që po trajtohet. Dhëmbët e përparmë zakonisht kërkojnë më pak kohë se molarët me rrënjë të shumta."
         },
         {
-          "question": "Sa zgjatin fasetat?",
-          "answer": "Fasetat cilësore porcelani zakonisht zgjasin 15-20 vjet ose më shumë me kujdes të duhur. Faktorët që ndikojnë jetëgjatësinë përfshijnë higjenën orale, dietën, zakonet si gërvishja e dhëmbëve dhe kontrollet e rregullta dentare. Ofrojmë udhëzime të detajuara kujdesi për të maksimizuar jetën e fasetave tuaja."
+          "question": "Çfarë ndodh nëse nuk e bëj trajtimin e kanalit të rrënjës?",
+          "answer": "Një dhëmb i infektuar i patrajtuar nuk do të shërohet vetë. Infeksioni mund të përhapet tek kocka dhe indi përreth, duke shkaktuar potencialisht absces, humbje kocke dhe dhimbje të rëndë. Përfundimisht, dhëmbi mund të ketë nevojë të nxirret. Trajtimi i kanalit të rrënjës mund të shpëtojë dhëmbin dhe të parandalojë këto komplikime."
         },
         {
-          "question": "A do të dëmtojnë trajtimet estetike dhëmbët e mi natyralë?",
-          "answer": "Prioritizojmë trajtimin konservativ që ruan sa më shumë strukturë natyrale dhëmbi të jetë e mundur. Zbardhja është jo-invazive, lidhja kërkon përgatitje minimale, dhe fasetat moderne kërkojnë shumë më pak reduktim dhëmbi se teknikat e vjetra. Do të diskutojmë gjithmonë çfarë përfshihet para çdo trajtimi."
+          "question": "Sa zgjasin dhëmbët e trajtuar me kanal rrënje?",
+          "answer": "Me restaurim dhe kujdes të duhur, një dhëmb i trajtuar me kanal rrënje mund të zgjasë gjithë jetën. Faktorët kyçë janë që dhëmbi të restaurohet siç duhet me kurorë kur rekomandohet, të ruhet higjienë e mirë orale dhe të ndiqen kontrollet e rregullta dentare."
         }
       ],
-      "duration": "Varion sipas llojit të trajtimit",
-      "warranty": "5-15 vjet në varësi të trajtimit"
+      "duration": "1-2 takime, 60-90 minuta secila",
+      "warranty": "Shkallë suksesi e trajtimit mbi 95%"
     }
   },
   "philosophyPage": {
