@@ -1,5 +1,19 @@
 import React, { useState, useRef, useEffect } from 'react';
 
+/**
+ * Detect if device is touch-only (no hover capability)
+ */
+function isTouchDevice(): boolean {
+  if (typeof window === 'undefined') return false;
+  const cannotHover = window.matchMedia('(hover: none)').matches;
+  const hasCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+  const hasTouchCapability = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  const mobileUserAgent = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+  return cannotHover || hasCoarsePointer || (mobileUserAgent && hasTouchCapability);
+}
+
 interface ComparisonSliderProps {
   beforeImage: string;
   afterImage: string;
@@ -9,7 +23,39 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isResizing, setIsResizing] = useState(false);
   const [containerWidth, setContainerWidth] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isInView, setIsInView] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  // Detect touch device on mount
+  useEffect(() => {
+    setIsMobile(isTouchDevice());
+  }, []);
+
+  // On mobile: detect when slider is in view to colorize
+  useEffect(() => {
+    if (!isMobile || !containerRef.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsInView(true);
+          }
+        });
+      },
+      {
+        rootMargin: '-10% 0px -10% 0px',
+        threshold: 0.3,
+      }
+    );
+
+    observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, [isMobile]);
+
+  // Determine if images should be colorized
+  const shouldColorize = isMobile ? isInView : false;
 
   const handleMouseDown = () => setIsResizing(true);
   const handleMouseUp = () => setIsResizing(false);
@@ -74,7 +120,9 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
       <img
         src={afterImage}
         alt="After"
-        className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none select-none grayscale group-hover:grayscale-0 group-hover/case:grayscale-0 transition-all duration-[1.5s] ease-out"
+        className={`absolute top-0 left-0 w-full h-full object-cover pointer-events-none select-none transition-all duration-[1.5s] ease-out ${
+          shouldColorize ? 'grayscale-0' : 'grayscale'
+        } ${!isMobile ? 'group-hover:grayscale-0 group-hover/case:grayscale-0' : ''}`}
         draggable={false}
       />
 
@@ -91,7 +139,9 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
           <img
             src={beforeImage}
             alt="Before"
-            className="absolute top-0 left-0 w-full h-full object-cover select-none grayscale group-hover:grayscale-0 group-hover/case:grayscale-0 transition-all duration-[1.5s] ease-out"
+            className={`absolute top-0 left-0 w-full h-full object-cover select-none transition-all duration-[1.5s] ease-out ${
+              shouldColorize ? 'grayscale-0' : 'grayscale'
+            } ${!isMobile ? 'group-hover:grayscale-0 group-hover/case:grayscale-0' : ''}`}
             draggable={false}
           />
         </div>
@@ -127,13 +177,17 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
         </div>
 
         {/* Labels attached to slider - Only visible on hover or interaction */}
-        <div className="absolute top-6 right-full mr-6 opacity-0 group-hover:opacity-100 group-hover/case:opacity-100 transition-opacity duration-500 flex items-center">
+        <div className={`absolute top-6 right-full mr-6 transition-opacity duration-500 flex items-center ${
+          shouldColorize ? 'opacity-100' : 'opacity-0'
+        } ${!isMobile ? 'group-hover:opacity-100 group-hover/case:opacity-100' : ''}`}>
           <div className="bg-black/30 backdrop-blur-md px-3 py-1 text-[8px] tracking-ultra font-bold uppercase text-white shadow-lg whitespace-nowrap border border-white/10">
             Before
           </div>
         </div>
 
-        <div className="absolute top-6 left-full ml-6 opacity-0 group-hover:opacity-100 group-hover/case:opacity-100 transition-opacity duration-500 flex items-center">
+        <div className={`absolute top-6 left-full ml-6 transition-opacity duration-500 flex items-center ${
+          shouldColorize ? 'opacity-100' : 'opacity-0'
+        } ${!isMobile ? 'group-hover:opacity-100 group-hover/case:opacity-100' : ''}`}>
           <div className="bg-studio-gold/90 backdrop-blur-md px-3 py-1 text-[8px] tracking-ultra font-bold uppercase text-white shadow-lg whitespace-nowrap">
             After
           </div>
