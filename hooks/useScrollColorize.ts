@@ -1,19 +1,24 @@
 import { useState, useEffect, useRef, RefObject } from 'react';
 
 /**
- * Detect if device is touch-only (no hover capability)
+ * Detect if device cannot hover (touch-only devices)
  * Returns true on mobile/tablet, false on desktop with mouse
+ *
+ * Uses (hover: none) media query which is the most reliable way to detect
+ * devices that don't have hover capability (phones, tablets without mouse)
  */
 function isTouchDevice(): boolean {
   if (typeof window === 'undefined') return false;
 
-  // Check for touch capability AND no fine pointer (mouse)
-  // This ensures tablets with stylus or laptops with touchscreen still get hover
-  const hasTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-  const hasCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
-  const hasNoFinePointer = !window.matchMedia('(pointer: fine)').matches;
+  // Primary check: hover: none means device can't hover (mobile/tablet)
+  const cannotHover = window.matchMedia('(hover: none)').matches;
 
-  return hasTouch && hasCoarsePointer && hasNoFinePointer;
+  // Secondary check: coarse pointer (finger) as primary input
+  const hasCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+
+  // Device is touch-only if it can't hover OR has coarse pointer as primary
+  // This catches most mobile devices reliably
+  return cannotHover || hasCoarsePointer;
 }
 
 /**
