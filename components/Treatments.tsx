@@ -171,7 +171,7 @@ export const Treatments: React.FC = () => {
               className="group hidden lg:flex items-center gap-4 text-[10px] uppercase tracking-ultra hover:text-studio-gold transition-colors"
               data-cursor="hover"
             >
-              {t('treatments.bookConsultation')}
+              {t('treatments.viewAllTreatments')}
               <ArrowRight className="w-4 h-4 transform group-hover:translate-x-2 transition-transform" />
             </a>
           </Reveal>
@@ -208,7 +208,7 @@ export const Treatments: React.FC = () => {
             className="group flex items-center gap-3 sm:gap-4 text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra hover:text-studio-gold transition-colors py-3 px-4"
             data-cursor="hover"
           >
-            {t('treatments.bookConsultation')}
+            {t('treatments.viewAllTreatments')}
             <ArrowRight className="w-4 h-4 transform group-hover:translate-x-2 transition-transform" />
           </a>
         </div>
