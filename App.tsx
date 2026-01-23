@@ -43,7 +43,7 @@ const treatmentConfigs: Record<string, { key: string; heroImage: string }> = {
   },
   '/treatments/endodontics': {
     key: 'aesthetics',
-    heroImage: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=2670&auto=format&fit=crop',
+    heroImage: '/images/treatments/endodontics.jpg',
   },
 };
 

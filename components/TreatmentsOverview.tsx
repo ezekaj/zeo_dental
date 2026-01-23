@@ -36,7 +36,7 @@ const treatments = [
   },
   {
     key: 'aesthetics',
-    image: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=2670&auto=format&fit=crop',
+    image: '/images/treatments/endodontics.jpg',
     href: '/treatments/endodontics',
   },
 ];
