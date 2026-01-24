@@ -112,10 +112,11 @@ const CaseCard: React.FC<CaseCardProps> = ({
                 - Initially hidden and pushed down
             */}
       <div
+        style={isExpanded ? { opacity: 1, transform: 'translateY(0)' } : undefined}
         className={`absolute bottom-0 left-0 w-full h-[45%] z-10 flex flex-col items-center justify-center px-4 sm:px-8 text-center
                 transition-all duration-[800ms] cubic-bezier(0.22, 1, 0.36, 1) delay-100
                 ${isExpanded
-                  ? 'opacity-100 !translate-y-0'
+                  ? ''
                   : 'opacity-0 translate-y-8 group-hover/case:opacity-100 group-hover/case:translate-y-0'
                 }`}
       >
