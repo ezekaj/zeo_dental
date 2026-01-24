@@ -102,7 +102,7 @@ export const Header: React.FC = () => {
               <img
                 src="/images/zeo-logo.png"
                 alt="Zeo Dental Clinic"
-                className={`h-10 sm:h-12 w-auto transition-all duration-500 ${
+                className={`h-12 sm:h-14 md:h-16 w-auto transition-all duration-500 ${
                   isScrolled ? '' : 'brightness-0 invert'
                 }`}
               />
@@ -140,7 +140,7 @@ export const Header: React.FC = () => {
               <img
                 src="/images/zeo-logo.png"
                 alt="Zeo Dental Clinic"
-                className="h-10 sm:h-12 w-auto"
+                className="h-12 sm:h-14 md:h-16 w-auto"
               />
             </a>
           </div>
