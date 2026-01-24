@@ -122,7 +122,7 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
       <img
         src={afterImage}
         alt="After"
-        className={`absolute top-0 left-0 w-full h-full object-cover pointer-events-none select-none transition-all duration-[1.5s] ease-out ${
+        className={`absolute top-0 left-0 w-full h-full object-cover object-center pointer-events-none select-none transition-all duration-[1.5s] ease-out ${
           shouldColorize ? 'grayscale-0' : 'grayscale'
         } ${!isMobile ? 'group-hover:grayscale-0 group-hover/case:grayscale-0' : ''}`}
         draggable={false}
@@ -141,7 +141,7 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
           <img
             src={beforeImage}
             alt="Before"
-            className={`absolute top-0 left-0 w-full h-full object-cover select-none transition-all duration-[1.5s] ease-out ${
+            className={`absolute top-0 left-0 w-full h-full object-cover object-center select-none transition-all duration-[1.5s] ease-out ${
               shouldColorize ? 'grayscale-0' : 'grayscale'
             } ${!isMobile ? 'group-hover:grayscale-0 group-hover/case:grayscale-0' : ''}`}
             draggable={false}
