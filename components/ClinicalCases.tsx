@@ -165,7 +165,7 @@ export const ClinicalCases: React.FC = () => {
           </Reveal>
           <Reveal delay={200}>
             <a
-              href="#"
+              href="/cases"
               className="group hidden md:flex items-center gap-4 text-[10px] uppercase tracking-ultra hover:text-studio-gold transition-colors py-2"
               data-cursor="hover"
             >
@@ -175,32 +175,53 @@ export const ClinicalCases: React.FC = () => {
           </Reveal>
         </div>
 
-        {/*
-            Single Case Layout - Centered
-            Will expand to grid when more real cases are added
-        */}
-        <div className="flex justify-center">
-          <div className="w-full max-w-md">
-            <Reveal delay={0}>
-              <CaseCard
-                number={t('cases.case1.number')}
-                title={t('cases.case1.title')}
-                description={t('cases.case1.description')}
-                beforeImage="/images/cases/case1-before.jpg"
-                afterImage="/images/cases/case1-after.jpg"
-                details={[
-                  { label: t('cases.case1.detail1Label'), value: t('cases.case1.detail1Value') },
-                  { label: t('cases.case1.detail2Label'), value: t('cases.case1.detail2Value') },
-                ]}
-              />
-            </Reveal>
-          </div>
+        {/* Cases Grid - 3 columns on desktop, 1 on mobile */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <Reveal delay={0}>
+            <CaseCard
+              number={t('cases.case1.number')}
+              title={t('cases.case1.title')}
+              description={t('cases.case1.description')}
+              beforeImage="/images/cases/case1-before.jpg"
+              afterImage="/images/cases/case1-after.jpg"
+              details={[
+                { label: t('cases.case1.detail1Label'), value: t('cases.case1.detail1Value') },
+                { label: t('cases.case1.detail2Label'), value: t('cases.case1.detail2Value') },
+              ]}
+            />
+          </Reveal>
+          <Reveal delay={100}>
+            <CaseCard
+              number={t('cases.case2.number')}
+              title={t('cases.case2.title')}
+              description={t('cases.case2.description')}
+              beforeImage="/images/cases/case2-before.jpg"
+              afterImage="/images/cases/case2-after.jpg"
+              details={[
+                { label: t('cases.case2.detail1Label'), value: t('cases.case2.detail1Value') },
+                { label: t('cases.case2.detail2Label'), value: t('cases.case2.detail2Value') },
+              ]}
+            />
+          </Reveal>
+          <Reveal delay={200}>
+            <CaseCard
+              number={t('cases.case3.number')}
+              title={t('cases.case3.title')}
+              description={t('cases.case3.description')}
+              beforeImage="/images/cases/case3-before.jpg"
+              afterImage="/images/cases/case3-after.jpg"
+              details={[
+                { label: t('cases.case3.detail1Label'), value: t('cases.case3.detail1Value') },
+                { label: t('cases.case3.detail2Label'), value: t('cases.case3.detail2Value') },
+              ]}
+            />
+          </Reveal>
         </div>
 
         {/* Mobile-only CTA since the top one is hidden on mobile */}
         <div className="mt-8 sm:mt-10 md:mt-12 md:hidden flex justify-center">
           <a
-            href="#"
+            href="/cases"
             className="group flex items-center gap-3 sm:gap-4 text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra hover:text-studio-gold transition-colors py-3 px-4"
           >
             {t('cases.viewGallery')}

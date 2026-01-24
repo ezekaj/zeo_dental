@@ -340,21 +340,21 @@
     },
     "case2": {
       "number": "Rasti 02",
-      "title": "Drejtim Invisalign®",
-      "description": "Drejtim diskret duke përdorur alignerë të kthjellët. Korrigjimi i mbingarkesës dhe kafshimit të thellë për 14 muaj për të arritur koordinim perfekt të harkut.",
+      "title": "Kurora Zirkoni",
+      "description": "Restaurim premium me kurora zirkoni për qëndrueshmëri dhe estetikë të jashtëzakonshme. Rezultate natyrale me forcë superiore për transformim afatgjatë të buzëqeshjes.",
       "detail1Label": "Kohë",
-      "detail1Value": "14 Muaj",
-      "detail2Label": "Tipi",
-      "detail2Value": "I Plotë"
+      "detail1Value": "2 Javë",
+      "detail2Label": "Kurora",
+      "detail2Value": "6 Njësi"
     },
     "case3": {
       "number": "Rasti 03",
-      "title": "Lidhje me Kompozit",
-      "description": "Lidhje minimalisht invazive e skajeve për të restauruar simetrinë dhe vëllimin. Transformim në një seancë me zero reduktim të dhëmbit.",
+      "title": "Mbushje & Zbardhim",
+      "description": "Trajtim i kombinuar restaurues dhe estetik. Mbushje profesionale me kompozit së bashku me zbardhim dhëmbësh për një buzëqeshje më të shëndetshme dhe më të ndritshme.",
       "detail1Label": "Kohë",
-      "detail1Value": "1 Vizitë",
-      "detail2Label": "Ngjyrë",
-      "detail2Value": "B1"
+      "detail1Value": "1 Javë",
+      "detail2Label": "Trajtimi",
+      "detail2Value": "I Plotë"
     }
   },
   "reviews": {

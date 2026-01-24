@@ -340,21 +340,21 @@
     },
     "case2": {
       "number": "Case 02",
-      "title": "Invisalign® Align",
-      "description": "Discreet alignment using clear aligners. Correcting crowding and deep bite over 14 months to achieve perfect arch coordination.",
+      "title": "Zirconia Crowns",
+      "description": "Premium zirconia crown restoration for exceptional durability and aesthetics. Natural-looking results with superior strength for long-lasting smile transformation.",
       "detail1Label": "Time",
-      "detail1Value": "14 Mos",
-      "detail2Label": "Type",
-      "detail2Value": "Full"
+      "detail1Value": "2 Wks",
+      "detail2Label": "Crowns",
+      "detail2Value": "6 Units"
     },
     "case3": {
       "number": "Case 03",
-      "title": "Composite Bonding",
-      "description": "Minimally invasive edge bonding to restore symmetry and volume. Single session transformation with zero tooth reduction.",
+      "title": "Filling & Whitening",
+      "description": "Combined restorative and aesthetic treatment. Professional composite filling paired with teeth whitening for a healthier, brighter smile.",
       "detail1Label": "Time",
-      "detail1Value": "1 Visit",
-      "detail2Label": "Shade",
-      "detail2Value": "B1"
+      "detail1Value": "1 Wk",
+      "detail2Label": "Treatment",
+      "detail2Value": "Complete"
     }
   },
   "reviews": {
