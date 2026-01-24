@@ -112,28 +112,28 @@ const CaseCard: React.FC<CaseCardProps> = ({
                 - Initially hidden and pushed down
             */}
       <div
-        className={`absolute bottom-0 left-0 w-full h-[45%] z-10 flex flex-col items-center justify-center px-8 text-center
+        className={`absolute bottom-0 left-0 w-full h-[45%] z-10 flex flex-col items-center justify-center px-4 sm:px-8 text-center
                 transition-all duration-[800ms] cubic-bezier(0.22, 1, 0.36, 1) delay-100
                 ${isExpanded
-                  ? 'opacity-100 translate-y-0'
+                  ? 'opacity-100 !translate-y-0'
                   : 'opacity-0 translate-y-8 group-hover/case:opacity-100 group-hover/case:translate-y-0'
                 }`}
       >
-        <span className="text-[10px] font-bold text-studio-gold uppercase tracking-ultra mb-4">
+        <span className="text-[10px] font-bold text-studio-gold uppercase tracking-ultra mb-2 sm:mb-4">
           {number}
         </span>
-        <h3 className="font-serif text-2xl text-studio-black mb-4">{title}</h3>
-        <p className="text-xs text-studio-gray font-light leading-relaxed mb-6 text-balance line-clamp-3 max-w-[90%]">
+        <h3 className="font-serif text-xl sm:text-2xl text-studio-black mb-2 sm:mb-4">{title}</h3>
+        <p className="text-[11px] sm:text-xs text-studio-gray font-light leading-relaxed mb-3 sm:mb-6 line-clamp-2 sm:line-clamp-3 max-w-[95%] sm:max-w-[90%]">
           {description}
         </p>
 
-        <div className="flex gap-8 border-t border-gray-100 pt-5 justify-center w-full">
+        <div className="flex gap-4 sm:gap-8 border-t border-gray-100 pt-3 sm:pt-5 justify-center w-full">
           {details.map((detail, idx) => (
             <div key={idx} className="flex flex-col items-center">
-              <p className="text-[9px] uppercase tracking-ultra text-gray-400 mb-1">
+              <p className="text-[8px] sm:text-[9px] uppercase tracking-ultra text-gray-400 mb-1">
                 {detail.label}
               </p>
-              <p className="font-serif text-studio-black text-sm">{detail.value}</p>
+              <p className="font-serif text-studio-black text-xs sm:text-sm">{detail.value}</p>
             </div>
           ))}
         </div>
