@@ -86,12 +86,11 @@ const CaseCard: React.FC<CaseCardProps> = ({
                 This creates a 'frame' effect where the image shrinks and centers at the top
             */}
       <div
-        className={`absolute top-0 left-0 right-0 h-full w-full
-                transition-all duration-[800ms] cubic-bezier(0.22, 1, 0.36, 1)
-                z-20 overflow-hidden bg-gray-100 shadow-none
+        className={`absolute transition-all duration-[800ms] cubic-bezier(0.22, 1, 0.36, 1)
+                z-20 overflow-hidden bg-gray-100
                 ${isExpanded
                   ? 'h-[55%] w-[90%] top-[6%] left-[5%] shadow-lg'
-                  : 'group-hover/case:h-[55%] group-hover/case:w-[90%] group-hover/case:top-[6%] group-hover/case:left-[5%] group-hover/case:shadow-lg'
+                  : 'top-0 left-0 right-0 h-full w-full shadow-none group-hover/case:h-[55%] group-hover/case:w-[90%] group-hover/case:top-[6%] group-hover/case:left-[5%] group-hover/case:shadow-lg'
                 }`}
       >
         <ComparisonSlider beforeImage={beforeImage} afterImage={afterImage} />
