@@ -17,9 +17,16 @@ function isTouchDevice(): boolean {
 interface ComparisonSliderProps {
   beforeImage: string;
   afterImage: string;
+  beforePosition?: string; // e.g., "center 40%" to adjust vertical position
+  afterPosition?: string;  // e.g., "center 60%" to adjust vertical position
 }
 
-export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage, afterImage }) => {
+export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({
+  beforeImage,
+  afterImage,
+  beforePosition = 'center center',
+  afterPosition = 'center center'
+}) => {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isResizing, setIsResizing] = useState(false);
   const [containerWidth, setContainerWidth] = useState<number | null>(null);
@@ -122,9 +129,10 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
       <img
         src={afterImage}
         alt="After"
-        className={`absolute top-0 left-0 w-full h-full object-cover object-center pointer-events-none select-none transition-all duration-[1.5s] ease-out ${
+        className={`absolute top-0 left-0 w-full h-full object-cover pointer-events-none select-none transition-all duration-[1.5s] ease-out ${
           shouldColorize ? 'grayscale-0' : 'grayscale'
         } ${!isMobile ? 'group-hover:grayscale-0 group-hover/case:grayscale-0' : ''}`}
+        style={{ objectPosition: afterPosition }}
         draggable={false}
       />
 
@@ -141,9 +149,10 @@ export const ComparisonSlider: React.FC<ComparisonSliderProps> = ({ beforeImage,
           <img
             src={beforeImage}
             alt="Before"
-            className={`absolute top-0 left-0 w-full h-full object-cover object-center select-none transition-all duration-[1.5s] ease-out ${
+            className={`absolute top-0 left-0 w-full h-full object-cover select-none transition-all duration-[1.5s] ease-out ${
               shouldColorize ? 'grayscale-0' : 'grayscale'
             } ${!isMobile ? 'group-hover:grayscale-0 group-hover/case:grayscale-0' : ''}`}
+            style={{ objectPosition: beforePosition }}
             draggable={false}
           />
         </div>

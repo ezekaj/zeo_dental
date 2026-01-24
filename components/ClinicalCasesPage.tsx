@@ -13,6 +13,8 @@ interface CaseData {
   description: string;
   beforeImage: string;
   afterImage: string;
+  beforePosition?: string;
+  afterPosition?: string;
   details: { label: string; value: string }[];
 }
 
@@ -38,6 +40,8 @@ export const ClinicalCasesPage: React.FC = () => {
       description: t('cases.case2.description'),
       beforeImage: '/images/cases/case2-before.jpg',
       afterImage: '/images/cases/case2-after.jpg',
+      beforePosition: 'center 45%',
+      afterPosition: 'center 40%',
       details: [
         { label: t('cases.case2.detail1Label'), value: t('cases.case2.detail1Value') },
         { label: t('cases.case2.detail2Label'), value: t('cases.case2.detail2Value') },
@@ -49,6 +53,8 @@ export const ClinicalCasesPage: React.FC = () => {
       description: t('cases.case3.description'),
       beforeImage: '/images/cases/case3-before.jpg',
       afterImage: '/images/cases/case3-after.jpg',
+      beforePosition: 'center 40%',
+      afterPosition: 'center 45%',
       details: [
         { label: t('cases.case3.detail1Label'), value: t('cases.case3.detail1Value') },
         { label: t('cases.case3.detail2Label'), value: t('cases.case3.detail2Value') },
@@ -132,6 +138,8 @@ export const ClinicalCasesPage: React.FC = () => {
                     <ComparisonSlider
                       beforeImage={caseItem.beforeImage}
                       afterImage={caseItem.afterImage}
+                      beforePosition={caseItem.beforePosition}
+                      afterPosition={caseItem.afterPosition}
                     />
                   </div>
 

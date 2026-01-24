@@ -29,6 +29,8 @@ interface CaseCardProps {
   description: string;
   beforeImage: string;
   afterImage: string;
+  beforePosition?: string;
+  afterPosition?: string;
   details: CaseDetail[];
 }
 
@@ -38,6 +40,8 @@ const CaseCard: React.FC<CaseCardProps> = ({
   description,
   beforeImage,
   afterImage,
+  beforePosition,
+  afterPosition,
   details,
 }) => {
   const [isMobile, setIsMobile] = useState(false);
@@ -93,7 +97,12 @@ const CaseCard: React.FC<CaseCardProps> = ({
                   : 'top-0 left-0 right-0 h-full w-full shadow-none group-hover/case:h-[55%] group-hover/case:w-[90%] group-hover/case:top-[6%] group-hover/case:left-[5%] group-hover/case:shadow-lg'
                 }`}
       >
-        <ComparisonSlider beforeImage={beforeImage} afterImage={afterImage} />
+        <ComparisonSlider
+          beforeImage={beforeImage}
+          afterImage={afterImage}
+          beforePosition={beforePosition}
+          afterPosition={afterPosition}
+        />
 
         {/* Number Badge - Always visible on image, moves with it */}
         <div className={`absolute top-4 left-4 z-30 transition-opacity duration-300 ${
@@ -197,6 +206,8 @@ export const ClinicalCases: React.FC = () => {
               description={t('cases.case2.description')}
               beforeImage="/images/cases/case2-before.jpg"
               afterImage="/images/cases/case2-after.jpg"
+              beforePosition="center 45%"
+              afterPosition="center 40%"
               details={[
                 { label: t('cases.case2.detail1Label'), value: t('cases.case2.detail1Value') },
                 { label: t('cases.case2.detail2Label'), value: t('cases.case2.detail2Value') },
@@ -210,6 +221,8 @@ export const ClinicalCases: React.FC = () => {
               description={t('cases.case3.description')}
               beforeImage="/images/cases/case3-before.jpg"
               afterImage="/images/cases/case3-after.jpg"
+              beforePosition="center 40%"
+              afterPosition="center 45%"
               details={[
                 { label: t('cases.case3.detail1Label'), value: t('cases.case3.detail1Value') },
                 { label: t('cases.case3.detail2Label'), value: t('cases.case3.detail2Value') },
