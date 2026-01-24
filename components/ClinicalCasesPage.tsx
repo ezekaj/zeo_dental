@@ -19,7 +19,7 @@ interface CaseData {
 export const ClinicalCasesPage: React.FC = () => {
   const { t } = useTranslation();
 
-  // Case data - currently showing Case 1, can be expanded
+  // Case data - all 3 cases
   const cases: CaseData[] = [
     {
       number: t('cases.case1.number'),
@@ -30,6 +30,28 @@ export const ClinicalCasesPage: React.FC = () => {
       details: [
         { label: t('cases.case1.detail1Label'), value: t('cases.case1.detail1Value') },
         { label: t('cases.case1.detail2Label'), value: t('cases.case1.detail2Value') },
+      ],
+    },
+    {
+      number: t('cases.case2.number'),
+      title: t('cases.case2.title'),
+      description: t('cases.case2.description'),
+      beforeImage: '/images/cases/case2-before.jpg',
+      afterImage: '/images/cases/case2-after.jpg',
+      details: [
+        { label: t('cases.case2.detail1Label'), value: t('cases.case2.detail1Value') },
+        { label: t('cases.case2.detail2Label'), value: t('cases.case2.detail2Value') },
+      ],
+    },
+    {
+      number: t('cases.case3.number'),
+      title: t('cases.case3.title'),
+      description: t('cases.case3.description'),
+      beforeImage: '/images/cases/case3-before.jpg',
+      afterImage: '/images/cases/case3-after.jpg',
+      details: [
+        { label: t('cases.case3.detail1Label'), value: t('cases.case3.detail1Value') },
+        { label: t('cases.case3.detail2Label'), value: t('cases.case3.detail2Value') },
       ],
     },
   ];
@@ -149,13 +171,6 @@ export const ClinicalCasesPage: React.FC = () => {
             ))}
           </div>
 
-          {/* More Cases Coming Soon */}
-          <div className="mt-16 text-center">
-            <div className="inline-block border border-gray-200 rounded-lg p-8 bg-white">
-              <p className="text-studio-gray text-sm mb-2">{t('casesPage.moreComing')}</p>
-              <p className="font-serif text-xl text-studio-black">{t('casesPage.moreComingDesc')}</p>
-            </div>
-          </div>
         </div>
       </section>
 
