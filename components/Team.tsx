@@ -59,14 +59,18 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, isMobile, t }) 
 
   return (
     <div className="group cursor-pointer">
-      <div ref={colorize.ref} className="aspect-[3/4] overflow-hidden mb-4 sm:mb-6 relative bg-gray-50">
+      <div
+        ref={colorize.ref}
+        className="aspect-[3/4] overflow-hidden relative bg-gray-100"
+      >
+        {/* Image */}
         <picture>
           <source srcSet={member.image} type="image/webp" />
           <source srcSet={member.image.replace('.webp', '.jpg')} type="image/jpeg" />
           <img
             src={member.image.replace('.webp', '.jpg')}
             alt={member.name}
-            className={`w-full h-full object-cover transition-all duration-1000 ease-out group-hover:scale-105 ${
+            className={`w-full h-full object-cover transition-all duration-[1.2s] ease-out group-hover:scale-[1.03] ${
               colorize.shouldColorize ? 'grayscale-0' : 'grayscale'
             } ${!isMobile ? 'group-hover:grayscale-0' : ''}`}
             style={
@@ -76,15 +80,32 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, isMobile, t }) 
             }
           />
         </picture>
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500"></div>
-      </div>
-      <div className="flex flex-col items-center text-center">
-        <h3 className="font-serif text-xl sm:text-2xl text-studio-black mb-2 group-hover:text-studio-gold transition-colors duration-300">
-          {member.name}
-        </h3>
-        <span className="text-studio-gray text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra">
-          {t(`team.doctors.${member.id}.role`)}
-        </span>
+
+        {/* Gradient overlay - always visible on mobile when in view, hover on desktop */}
+        <div
+          className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity duration-700 ${
+            colorize.shouldColorize ? 'opacity-100' : 'opacity-0'
+          } ${!isMobile ? 'group-hover:opacity-100' : ''}`}
+        />
+
+        {/* Content overlay */}
+        <div
+          className={`absolute bottom-0 left-0 right-0 p-5 sm:p-6 md:p-8 transition-all duration-700 ${
+            colorize.shouldColorize ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+          } ${!isMobile ? 'group-hover:translate-y-0 group-hover:opacity-100' : ''}`}
+        >
+          <h3 className="font-serif text-xl sm:text-2xl md:text-3xl text-white mb-1 sm:mb-2">
+            {member.name}
+          </h3>
+          <span className="text-white/80 text-[11px] sm:text-xs uppercase tracking-wide sm:tracking-wider font-light">
+            {t(`team.doctors.${member.id}.role`)}
+          </span>
+        </div>
+
+        {/* Subtle border frame */}
+        <div className={`absolute inset-3 sm:inset-4 border border-white/0 transition-all duration-700 pointer-events-none ${
+          colorize.shouldColorize ? 'border-white/20' : ''
+        } ${!isMobile ? 'group-hover:border-white/20' : ''}`} />
       </div>
     </div>
   );
@@ -191,7 +212,7 @@ export const Team: React.FC = () => {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-8 sm:gap-y-12 md:gap-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {team.map((member, idx) => (
               <Reveal key={member.id} delay={idx * 100}>
                 <TeamMemberCard member={member} isMobile={isMobile} t={t} />
