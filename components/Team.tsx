@@ -130,20 +130,47 @@ export const Team: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center mb-16 sm:mb-24 md:mb-32 border-b border-gray-100 pb-12 sm:pb-16 md:pb-24">
           <div className="w-full lg:w-5/12">
             <Reveal>
-              <div ref={founderColorize.ref} className="relative aspect-[3/4] overflow-hidden group">
+              <div ref={founderColorize.ref} className="relative aspect-[3/4] overflow-hidden group cursor-pointer">
                 <picture>
                   <source srcSet={founder.image} type="image/webp" />
                   <source srcSet={founder.image.replace('.webp', '.jpg')} type="image/jpeg" />
                   <img
                     src={founder.image.replace('.webp', '.jpg')}
                     alt={founder.name}
-                    className={`w-full h-full object-cover object-center transition-all duration-[1.5s] ease-out ${
+                    className={`w-full h-full object-cover object-center transition-all duration-[1.5s] ease-out group-hover:scale-[1.03] ${
                       founderColorize.shouldColorize ? 'grayscale-0' : 'grayscale'
                     } ${!isMobile ? 'group-hover:grayscale-0' : ''}`}
                   />
                 </picture>
-                {/* Overlay Accent */}
-                <div className="absolute inset-0 border border-white/20 m-4 z-10 pointer-events-none"></div>
+
+                {/* Gradient overlay - always visible on mobile when in view, hover on desktop */}
+                <div
+                  className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity duration-700 ${
+                    founderColorize.shouldColorize ? 'opacity-100' : 'opacity-0'
+                  } ${!isMobile ? 'group-hover:opacity-100' : ''}`}
+                />
+
+                {/* Content overlay */}
+                <div
+                  className={`absolute bottom-0 left-0 right-0 p-6 sm:p-8 transition-all duration-700 ${
+                    founderColorize.shouldColorize ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+                  } ${!isMobile ? 'group-hover:translate-y-0 group-hover:opacity-100' : ''}`}
+                >
+                  <span className="text-studio-gold text-[10px] sm:text-[11px] uppercase tracking-wider font-semibold mb-2 block">
+                    {t('team.founderLabel')}
+                  </span>
+                  <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-white mb-1 sm:mb-2">
+                    {founder.name}
+                  </h3>
+                  <span className="text-white/80 text-[11px] sm:text-xs uppercase tracking-wider font-light">
+                    {t(`team.doctors.${founder.id}.role`)}
+                  </span>
+                </div>
+
+                {/* Subtle border frame */}
+                <div className={`absolute inset-4 sm:inset-5 border border-white/0 transition-all duration-700 pointer-events-none ${
+                  founderColorize.shouldColorize ? 'border-white/20' : ''
+                } ${!isMobile ? 'group-hover:border-white/20' : ''}`} />
               </div>
             </Reveal>
           </div>
