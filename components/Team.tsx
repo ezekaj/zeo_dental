@@ -249,7 +249,10 @@ export const Team: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {team.map((member, idx) => (
               <Reveal key={member.id} delay={idx * 100}>
-                <TeamMemberCard member={member} isMobile={isMobile} t={t} />
+                {/* Center Dr. Dorina on md screens (when 2-col grid) */}
+                <div className={idx === 0 ? 'md:col-span-2 md:max-w-[50%] md:mx-auto lg:col-span-1 lg:max-w-none' : ''}>
+                  <TeamMemberCard member={member} isMobile={isMobile} t={t} />
+                </div>
               </Reveal>
             ))}
           </div>
