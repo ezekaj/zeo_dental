@@ -250,7 +250,7 @@ export const Team: React.FC = () => {
             {team.map((member, idx) => (
               <Reveal key={member.id} delay={idx * 100}>
                 {/* Slide Dr. Dorina to the right on md screens (when 2-col grid) */}
-                <div className={idx === 0 ? 'md:col-span-2 md:max-w-[50%] md:ml-auto lg:col-span-1 lg:max-w-none lg:ml-0' : ''}>
+                <div className={idx === 0 ? 'md:col-span-2 md:max-w-[50%] md:ml-auto md:translate-x-4 lg:col-span-1 lg:max-w-none lg:ml-0 lg:translate-x-0' : ''}>
                   <TeamMemberCard member={member} isMobile={isMobile} t={t} />
                 </div>
               </Reveal>
