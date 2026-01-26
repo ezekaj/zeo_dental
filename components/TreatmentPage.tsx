@@ -49,7 +49,7 @@ export const TreatmentPage: React.FC<TreatmentPageProps> = ({ treatmentKey, hero
         {/* Content */}
         <div className="relative container mx-auto px-4 sm:px-6 md:px-12 pt-32 pb-16">
           <a
-            href="/#treatments"
+            href="/treatments"
             className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
