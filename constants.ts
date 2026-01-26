@@ -188,6 +188,15 @@ export const DOCTORS: Doctor[] = [
     fullBio:
       'Dr. Kristi Sulanjaku is a dedicated dental professional passionate about transforming smiles and improving oral health. With extensive experience in comprehensive dental care, Dr. Sulanjaku focuses on creating positive patient experiences through gentle, effective treatment. Their commitment to excellence and attention to detail ensures that each patient receives the highest quality care tailored to their individual needs.',
   },
+  {
+    id: 'dr-dorina',
+    name: 'Dr. Dorina Beqiraj',
+    role: 'Oral Surgery & Implantology Specialist',
+    image: '/images/team/dorina-beqiraj-card.jpg',
+    bio: 'Expert trained at the most prestigious hospital centers in Paris, Dr. Dorina delivers clinical precision and advanced French-certified treatments.',
+    fullBio:
+      'Dr. Dorina Beqiraj is a specialist in Oral Surgery and Implantology, trained at the most prestigious hospital centers in Paris. She brings clinical precision and advanced French-certified treatments to every procedure. Her expertise includes specialization in Oral Surgery and Occlusodontology at elite hospitals Pitié Salpêtrière and Charles Foix in Paris, as well as specialized training in Periodontology (gum diseases) at CHU-Nantes. Dr. Dorina holds the French CES certification (Certificat d\'Études Supérieures) with diplomas in surgery, implantology, and anatomy-physiology.',
+  },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
