@@ -20,18 +20,18 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, t }) => {
   return (
     <div
       ref={cardRef}
-      className="bg-white border border-gray-100 hover:border-studio-gold/30 transition-colors"
+      className="bg-white border border-gray-100 hover:border-studio-gold/30 transition-colors overflow-hidden"
     >
       <div className="flex flex-col sm:flex-row">
-        {/* Image */}
-        <div className="w-full sm:w-2/5 aspect-square sm:aspect-auto overflow-hidden group">
+        {/* Image with hover overlay */}
+        <div className="w-full sm:w-2/5 aspect-square sm:aspect-auto overflow-hidden relative group cursor-pointer">
           <picture>
             <source srcSet={member.image} type="image/webp" />
             <source srcSet={member.image.replace('.webp', '.jpg')} type="image/jpeg" />
             <img
               src={member.image.replace('.webp', '.jpg')}
               alt={member.name}
-              className={`w-full h-full object-cover group-hover:grayscale-0 transition-all duration-1000 ${
+              className={`w-full h-full object-cover group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-1000 ${
                 shouldColorize ? 'grayscale-0' : 'grayscale'
               }`}
               style={
@@ -41,6 +41,32 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, t }) => {
               }
             />
           </picture>
+
+          {/* Gradient overlay */}
+          <div
+            className={`absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent transition-opacity duration-700 group-hover:opacity-100 ${
+              shouldColorize ? 'opacity-100' : 'opacity-0'
+            }`}
+          />
+
+          {/* Content overlay on image */}
+          <div
+            className={`absolute bottom-0 left-0 right-0 p-4 sm:p-5 transition-all duration-700 group-hover:translate-y-0 group-hover:opacity-100 ${
+              shouldColorize ? 'translate-y-0 opacity-100' : 'translate-y-3 opacity-0'
+            }`}
+          >
+            <h3 className="font-serif text-lg sm:text-xl text-white mb-1">
+              {member.name}
+            </h3>
+            <span className="text-white/80 text-[10px] sm:text-[11px] uppercase tracking-wider font-light">
+              {t(`team.doctors.${member.id}.role`)}
+            </span>
+          </div>
+
+          {/* Subtle border frame */}
+          <div className={`absolute inset-3 border border-white/0 transition-all duration-700 pointer-events-none group-hover:border-white/20 ${
+            shouldColorize ? 'border-white/20' : ''
+          }`} />
         </div>
 
         {/* Content */}
@@ -128,19 +154,47 @@ export const TeamPage: React.FC = () => {
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
             {/* Image */}
             <div className="w-full lg:w-5/12">
-              <div ref={founderRef} className="relative aspect-[3/4] overflow-hidden group">
+              <div ref={founderRef} className="relative aspect-[3/4] overflow-hidden group cursor-pointer">
                 <picture>
                   <source srcSet={founder.image} type="image/webp" />
                   <source srcSet={founder.image.replace('.webp', '.jpg')} type="image/jpeg" />
                   <img
                     src={founder.image.replace('.webp', '.jpg')}
                     alt={founder.name}
-                    className={`w-full h-full object-cover object-center group-hover:grayscale-0 transition-all duration-[1.5s] ease-out ${
+                    className={`w-full h-full object-cover object-center group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-[1.5s] ease-out ${
                       shouldColorizeFounder ? 'grayscale-0' : 'grayscale'
                     }`}
                   />
                 </picture>
-                <div className="absolute inset-0 border border-white/20 m-4 pointer-events-none" />
+
+                {/* Gradient overlay */}
+                <div
+                  className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity duration-700 group-hover:opacity-100 ${
+                    shouldColorizeFounder ? 'opacity-100' : 'opacity-0'
+                  }`}
+                />
+
+                {/* Content overlay */}
+                <div
+                  className={`absolute bottom-0 left-0 right-0 p-6 sm:p-8 transition-all duration-700 group-hover:translate-y-0 group-hover:opacity-100 ${
+                    shouldColorizeFounder ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+                  }`}
+                >
+                  <span className="text-studio-gold text-[10px] sm:text-[11px] uppercase tracking-wider font-semibold mb-2 block">
+                    {t('team.founderLabel')}
+                  </span>
+                  <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-white mb-1 sm:mb-2">
+                    {founder.name}
+                  </h3>
+                  <span className="text-white/80 text-[11px] sm:text-xs uppercase tracking-wider font-light">
+                    {t(`team.doctors.${founder.id}.role`)}
+                  </span>
+                </div>
+
+                {/* Subtle border frame */}
+                <div className={`absolute inset-4 sm:inset-5 border border-white/0 transition-all duration-700 pointer-events-none group-hover:border-white/20 ${
+                  shouldColorizeFounder ? 'border-white/20' : ''
+                }`} />
               </div>
             </div>
 
