@@ -57,8 +57,13 @@ interface TeamMemberCardProps {
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, isMobile, t }) => {
   const colorize = useScrollColorize(isMobile);
 
+  const handleClick = () => {
+    // Navigate to team page with member id hash
+    window.location.href = `/team#${member.id}`;
+  };
+
   return (
-    <div className="group cursor-pointer">
+    <div className="group cursor-pointer" onClick={handleClick}>
       <div
         ref={colorize.ref}
         className="aspect-[3/4] overflow-hidden relative bg-gray-100"
@@ -130,6 +135,7 @@ export const Team: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center mb-16 sm:mb-24 md:mb-32 border-b border-gray-100 pb-12 sm:pb-16 md:pb-24">
           <div className="w-full lg:w-5/12">
             <Reveal>
+              <a href="/team#dr-emanuela" className="block">
               <div ref={founderColorize.ref} className="relative aspect-[3/4] overflow-hidden group cursor-pointer">
                 <picture>
                   <source srcSet={founder.image} type="image/webp" />
@@ -172,6 +178,7 @@ export const Team: React.FC = () => {
                   founderColorize.shouldColorize ? 'border-white/20' : ''
                 } ${!isMobile ? 'group-hover:border-white/20' : ''}`} />
               </div>
+              </a>
             </Reveal>
           </div>
           <div className="w-full lg:w-7/12 lg:pl-12">

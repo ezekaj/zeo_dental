@@ -19,27 +19,27 @@ import { PhilosophyPage } from './components/PhilosophyPage';
 import { TeamPage } from './components/TeamPage';
 import { ClinicalCasesPage } from './components/ClinicalCasesPage';
 
-// Treatment page configurations with hero images
+// Treatment page configurations with hero images (matching TreatmentsOverview)
 const treatmentConfigs: Record<string, { key: string; heroImage: string }> = {
   '/treatments/implantology': {
     key: 'implantology',
-    heroImage: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=2670&auto=format&fit=crop',
+    heroImage: 'https://i.pinimg.com/originals/60/04/b9/6004b9521440d181bde0a734d93b7184.jpg',
   },
   '/treatments/prosthetics': {
     key: 'prosthetics',
-    heroImage: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2574&auto=format&fit=crop',
+    heroImage: 'https://i.pinimg.com/originals/a1/30/09/a130095fbe716c5bb8e7be0713584fd0.jpg',
   },
   '/treatments/aligners': {
     key: 'aligners',
-    heroImage: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2670&auto=format&fit=crop',
+    heroImage: 'https://i.pinimg.com/originals/5a/9e/4b/5a9e4b3d06cecb638556ece73cb0417c.jpg',
   },
   '/treatments/orthodontics': {
     key: 'orthodontics',
-    heroImage: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2670&auto=format&fit=crop',
+    heroImage: 'https://i.pinimg.com/originals/d2/10/e6/d210e6d0cc27fca87fe4245aea34e071.jpg',
   },
   '/treatments/crowns': {
     key: 'crowns',
-    heroImage: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2668&auto=format&fit=crop',
+    heroImage: 'https://i.pinimg.com/originals/3d/90/fd/3d90fd9c0112b18067d6348072116872.jpg',
   },
   '/treatments/endodontics': {
     key: 'aesthetics',

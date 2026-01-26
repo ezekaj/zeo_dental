@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowLeft, ArrowRight, GraduationCap, Award, Quote } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { ArrowLeft, GraduationCap, Award, Quote } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { useScrollColorize } from '../hooks/useScrollColorize';
 import { Header } from './Header';
@@ -19,8 +19,9 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, t }) => {
 
   return (
     <div
+      id={member.id}
       ref={cardRef}
-      className="bg-white border border-gray-100 hover:border-studio-gold/30 transition-colors overflow-hidden"
+      className="bg-white border border-gray-100 hover:border-studio-gold/30 transition-colors overflow-hidden scroll-mt-24"
     >
       <div className="flex flex-col sm:flex-row">
         {/* Image with hover overlay */}
@@ -103,6 +104,20 @@ export const TeamPage: React.FC = () => {
   const team = DOCTORS.slice(1);
   const [founderRef, shouldColorizeFounder] = useScrollColorize<HTMLDivElement>(0.3);
 
+  // Handle scroll to member on page load (from hash)
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      // Small delay to ensure page is rendered
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -149,7 +164,7 @@ export const TeamPage: React.FC = () => {
       </section>
 
       {/* Founder Section */}
-      <section className="py-16 sm:py-24 bg-white border-b border-gray-100">
+      <section id="dr-emanuela" className="py-16 sm:py-24 bg-white border-b border-gray-100 scroll-mt-20">
         <div className="container mx-auto px-4 sm:px-6 md:px-12">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
             {/* Image */}

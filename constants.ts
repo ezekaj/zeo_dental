@@ -170,6 +170,16 @@ export const DOCTORS: Doctor[] = [
     fullBio:
       'Dr. Emanuela Velaj is the founder of Zeo Dental Clinic, having completed her studies at the Faculty of Medicine, Dentistry program, building a professional profile based on deep knowledge, clinical precision, and continuous commitment to quality. Her training has been enriched over the years with advanced postgraduate courses in key areas of modern dentistry, including endodontics, gnathology, implant-supported prosthetics, dental aesthetics, and orthodontics. She holds a diploma from UCAM – Universidad Católica de Murcia (Spain) in Orthodontics and Prosthetic Gnathological Rehabilitation, where she has acquired contemporary European standards and advanced treatment protocols, focused on functional harmony, sophisticated aesthetics, and long-term sustainability of clinical results. As the founder, she has conceptualized and built Zeo Dental Clinic on the principles of medical excellence, advanced technology, and maximum sterilization standards, creating a modern, refined, and completely safe environment, where every detail is designed for patient comfort and trust. Distinguished by professional elegance, clear communication, and a humane approach, the doctor works with precision, ethics, and maximum dedication, offering personalized treatments and high-level functional and aesthetic results. Personally, she is a mother of two children, a role that has strengthened her empathy, patience, and human sensitivity. Traveling and getting to know different cultures are a constant source of inspiration, while music, dancing, and contact with nature give her balance and positive energy, naturally reflected in her professional philosophy and special care for each patient.',
   },
+  // Dr. Dorina first - Oral Surgery & Implantology Specialist (Paris-trained)
+  {
+    id: 'dr-dorina',
+    name: 'Dr. Dorina Beqiraj',
+    role: 'Oral Surgery & Implantology Specialist',
+    image: '/images/team/dorina-beqiraj-card.jpg',
+    bio: 'Expert trained at the most prestigious hospital centers in Paris, Dr. Dorina delivers clinical precision and advanced French-certified treatments.',
+    fullBio:
+      'Dr. Dorina Beqiraj is a specialist in Oral Surgery and Implantology, trained at the most prestigious hospital centers in Paris. She brings clinical precision and advanced French-certified treatments to every procedure. Her expertise includes specialization in Oral Surgery and Occlusodontology at elite hospitals Pitié Salpêtrière and Charles Foix in Paris, as well as specialized training in Periodontology (gum diseases) at CHU-Nantes. Dr. Dorina holds the French CES certification (Certificat d\'Études Supérieures) with diplomas in surgery, implantology, and anatomy-physiology.',
+  },
   {
     id: 'dr-rien',
     name: 'Dr. Rien Stambolliu',
@@ -187,15 +197,6 @@ export const DOCTORS: Doctor[] = [
     bio: 'Dr. Sulanjaku combines clinical excellence with a compassionate approach, ensuring personalized care for every patient.',
     fullBio:
       'Dr. Kristi Sulanjaku is a dedicated dental professional passionate about transforming smiles and improving oral health. With extensive experience in comprehensive dental care, Dr. Sulanjaku focuses on creating positive patient experiences through gentle, effective treatment. Their commitment to excellence and attention to detail ensures that each patient receives the highest quality care tailored to their individual needs.',
-  },
-  {
-    id: 'dr-dorina',
-    name: 'Dr. Dorina Beqiraj',
-    role: 'Oral Surgery & Implantology Specialist',
-    image: '/images/team/dorina-beqiraj-card.jpg',
-    bio: 'Expert trained at the most prestigious hospital centers in Paris, Dr. Dorina delivers clinical precision and advanced French-certified treatments.',
-    fullBio:
-      'Dr. Dorina Beqiraj is a specialist in Oral Surgery and Implantology, trained at the most prestigious hospital centers in Paris. She brings clinical precision and advanced French-certified treatments to every procedure. Her expertise includes specialization in Oral Surgery and Occlusodontology at elite hospitals Pitié Salpêtrière and Charles Foix in Paris, as well as specialized training in Periodontology (gum diseases) at CHU-Nantes. Dr. Dorina holds the French CES certification (Certificat d\'Études Supérieures) with diplomas in surgery, implantology, and anatomy-physiology.',
   },
 ];
 
