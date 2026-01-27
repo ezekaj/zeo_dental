@@ -98,6 +98,95 @@ export async function receptionistRoutes(fastify: FastifyInstance) {
     }
   );
 
+  // GET /api/receptionist/chat-stats - Chatbot usage statistics
+  fastify.get(
+    '/receptionist/chat-stats',
+    { preHandler: authPreHandler },
+    async (request, reply) => {
+      try {
+        const pool = fastify.pg;
+
+        // Check if chat_usage table exists
+        const tableCheck = await pool.query(`
+          SELECT EXISTS (
+            SELECT FROM information_schema.tables
+            WHERE table_name = 'chat_usage'
+          )
+        `);
+
+        if (!tableCheck.rows[0].exists) {
+          return reply.send({
+            today: { tokens: 0, cost: 0, messages: 0 },
+            week: { tokens: 0, cost: 0, messages: 0 },
+            month: { tokens: 0, cost: 0, messages: 0 },
+            total: { tokens: 0, cost: 0, messages: 0 },
+          });
+        }
+
+        const [todayResult, weekResult, monthResult, totalResult] = await Promise.all([
+          pool.query(`
+            SELECT COALESCE(SUM(total_tokens), 0) as tokens,
+                   COALESCE(SUM(estimated_cost), 0) as cost,
+                   COUNT(*) as messages
+            FROM chat_usage
+            WHERE DATE(created_at) = CURRENT_DATE
+          `),
+          pool.query(`
+            SELECT COALESCE(SUM(total_tokens), 0) as tokens,
+                   COALESCE(SUM(estimated_cost), 0) as cost,
+                   COUNT(*) as messages
+            FROM chat_usage
+            WHERE created_at >= NOW() - INTERVAL '7 days'
+          `),
+          pool.query(`
+            SELECT COALESCE(SUM(total_tokens), 0) as tokens,
+                   COALESCE(SUM(estimated_cost), 0) as cost,
+                   COUNT(*) as messages
+            FROM chat_usage
+            WHERE created_at >= NOW() - INTERVAL '30 days'
+          `),
+          pool.query(`
+            SELECT COALESCE(SUM(total_tokens), 0) as tokens,
+                   COALESCE(SUM(estimated_cost), 0) as cost,
+                   COUNT(*) as messages
+            FROM chat_usage
+          `),
+        ]);
+
+        return reply.send({
+          today: {
+            tokens: parseInt(todayResult.rows[0].tokens, 10),
+            cost: parseFloat(todayResult.rows[0].cost),
+            messages: parseInt(todayResult.rows[0].messages, 10),
+          },
+          week: {
+            tokens: parseInt(weekResult.rows[0].tokens, 10),
+            cost: parseFloat(weekResult.rows[0].cost),
+            messages: parseInt(weekResult.rows[0].messages, 10),
+          },
+          month: {
+            tokens: parseInt(monthResult.rows[0].tokens, 10),
+            cost: parseFloat(monthResult.rows[0].cost),
+            messages: parseInt(monthResult.rows[0].messages, 10),
+          },
+          total: {
+            tokens: parseInt(totalResult.rows[0].tokens, 10),
+            cost: parseFloat(totalResult.rows[0].cost),
+            messages: parseInt(totalResult.rows[0].messages, 10),
+          },
+        });
+      } catch (err) {
+        fastify.log.error('Chat stats error: %s', err instanceof Error ? err.message : String(err));
+        return reply.send({
+          today: { tokens: 0, cost: 0, messages: 0 },
+          week: { tokens: 0, cost: 0, messages: 0 },
+          month: { tokens: 0, cost: 0, messages: 0 },
+          total: { tokens: 0, cost: 0, messages: 0 },
+        });
+      }
+    }
+  );
+
   // GET /api/receptionist/bookings - List bookings with filters
   fastify.get<{ Querystring: BookingFilters; Reply: BookingsListResponse }>(
     '/receptionist/bookings',

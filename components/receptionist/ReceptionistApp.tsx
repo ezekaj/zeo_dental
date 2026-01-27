@@ -43,6 +43,13 @@ interface DashboardStats {
   confirmed_today: number;
 }
 
+interface ChatStats {
+  today: { tokens: number; cost: number; messages: number };
+  week: { tokens: number; cost: number; messages: number };
+  month: { tokens: number; cost: number; messages: number };
+  total: { tokens: number; cost: number; messages: number };
+}
+
 export const ReceptionistApp: React.FC = () => {
   const { t, language, setLanguage } = useTranslation();
   const [token, setToken] = useState<string | null>(() =>
@@ -50,6 +57,7 @@ export const ReceptionistApp: React.FC = () => {
   );
   const [bookings, setBookings] = useState<Booking[]>([]);
   const [stats, setStats] = useState<DashboardStats | null>(null);
+  const [chatStats, setChatStats] = useState<ChatStats | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [statusFilter, setStatusFilter] = useState<string>('');
   const [searchQuery, setSearchQuery] = useState('');
@@ -154,6 +162,17 @@ export const ReceptionistApp: React.FC = () => {
     }
   }, [fetchWithAuth, playNotificationSound]);
 
+  // Fetch chat stats
+  const fetchChatStats = useCallback(async () => {
+    try {
+      const response = await fetchWithAuth('/api/receptionist/chat-stats');
+      const data = await response.json();
+      setChatStats(data);
+    } catch (err) {
+      console.error('Failed to fetch chat stats:', err);
+    }
+  }, [fetchWithAuth]);
+
   // Fetch bookings
   const fetchBookings = useCallback(async () => {
     setIsLoading(true);
@@ -179,6 +198,7 @@ export const ReceptionistApp: React.FC = () => {
   useEffect(() => {
     if (token) {
       fetchStats();
+      fetchChatStats();
       fetchBookings();
 
       // Poll every 15 seconds for new bookings
@@ -187,9 +207,17 @@ export const ReceptionistApp: React.FC = () => {
         fetchBookings();
       }, REFRESH_INTERVAL);
 
-      return () => clearInterval(interval);
+      // Poll chat stats every minute (less frequent)
+      const chatInterval = setInterval(() => {
+        fetchChatStats();
+      }, 60000);
+
+      return () => {
+        clearInterval(interval);
+        clearInterval(chatInterval);
+      };
     }
-  }, [token, fetchStats, fetchBookings]);
+  }, [token, fetchStats, fetchChatStats, fetchBookings]);
 
   // Refetch when filters change
   useEffect(() => {
@@ -336,7 +364,7 @@ export const ReceptionistApp: React.FC = () => {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Stats Cards */}
         {stats && (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
             <div className="bg-white p-5 border border-gray-100">
               <p className="text-xs uppercase tracking-ultra text-studio-gray mb-1">
                 {t('receptionist.stats.pending')}
@@ -361,6 +389,20 @@ export const ReceptionistApp: React.FC = () => {
               </p>
               <p className="font-serif text-3xl text-studio-black">{stats.confirmed_today}</p>
             </div>
+            {/* Chat Stats Card */}
+            {chatStats && (
+              <div className="bg-white p-5 border border-gray-100">
+                <p className="text-xs uppercase tracking-ultra text-studio-gray mb-1">
+                  Chatbot (Month)
+                </p>
+                <p className="font-serif text-3xl text-studio-black">
+                  ${chatStats.month.cost.toFixed(2)}
+                </p>
+                <p className="text-xs text-studio-gray mt-1">
+                  {chatStats.month.messages} msgs
+                </p>
+              </div>
+            )}
           </div>
         )}
 

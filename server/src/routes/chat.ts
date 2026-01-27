@@ -7,7 +7,10 @@ const GEMINI_API_URL =
 // Dental clinic system prompt
 const SYSTEM_INSTRUCTION = `You are Zeo, a friendly and knowledgeable AI assistant for Zeo Dental Clinic. You help patients with:
 
-1. **Appointment Information**: Guide patients on how to book appointments, available services, and clinic hours (Mon-Sat 9AM-7PM, closed on Sundays).
+1. **Appointment Information**: Guide patients on how to book appointments, available services, and clinic hours:
+   - Monday-Friday: 9:00 AM - 5:00 PM
+   - Saturday: 9:00 AM - 2:00 PM
+   - Sunday: Closed
 
 2. **Service Information**: Explain dental services including:
    - General Dentistry (cleanings, fillings, extractions)
@@ -18,11 +21,18 @@ const SYSTEM_INSTRUCTION = `You are Zeo, a friendly and knowledgeable AI assista
    - Pediatric Dentistry
    - Oral Surgery
 
-3. **General Dental Advice**: Provide basic oral health tips and guidance, always recommending professional consultation for specific issues.
+3. **Our Team**: When asked about doctors, mention our team:
+   - Dr. Emanuela Velaj - Founder & Lead Dentist with 15+ years experience, specializes in aesthetic dentistry
+   - Dr. Dorina Beqiraj - Oral Surgery & Implantology Specialist, trained in Paris
+   - Dr. Rien Stambolliu - Dental Specialist
+   - Dr. Kristi Sulanjaku - Dental Specialist
 
-4. **Clinic Information**:
+4. **General Dental Advice**: Provide basic oral health tips and guidance, always recommending professional consultation for specific issues.
+
+5. **Clinic Information**:
   - Location: Rruga Hamdi Sina, Tiranë, Albania
   - Phone: +355 68 400 4840
+  - WhatsApp: +355 68 400 4840 (for quick responses)
   - Email: zeodentalclinic@gmail.com
 
 **Guidelines:**
@@ -81,6 +91,21 @@ interface GeminiResponse {
       }>;
     };
   }>;
+  usageMetadata?: {
+    promptTokenCount?: number;
+    candidatesTokenCount?: number;
+    totalTokenCount?: number;
+  };
+}
+
+// Gemini 2.0 Flash pricing (per 1M tokens)
+const PRICE_PER_MILLION_INPUT = 0.075; // $0.075 per 1M input tokens
+const PRICE_PER_MILLION_OUTPUT = 0.30; // $0.30 per 1M output tokens
+
+function calculateCost(inputTokens: number, outputTokens: number): number {
+  const inputCost = (inputTokens / 1_000_000) * PRICE_PER_MILLION_INPUT;
+  const outputCost = (outputTokens / 1_000_000) * PRICE_PER_MILLION_OUTPUT;
+  return inputCost + outputCost;
 }
 
 // Retry with exponential backoff
@@ -236,6 +261,20 @@ The user's language preference takes priority over the default.`;
         return reply.status(500).send({
           response: '',
           error: 'Received empty response from AI. Please try again.',
+        });
+      }
+
+      // Log usage to database (non-blocking)
+      if (data.usageMetadata && fastify.pg) {
+        const { promptTokenCount = 0, candidatesTokenCount = 0, totalTokenCount = 0 } = data.usageMetadata;
+        const estimatedCost = calculateCost(promptTokenCount, candidatesTokenCount);
+
+        fastify.pg.query(
+          `INSERT INTO chat_usage (input_tokens, output_tokens, total_tokens, estimated_cost, language)
+           VALUES ($1, $2, $3, $4, $5)`,
+          [promptTokenCount, candidatesTokenCount, totalTokenCount, estimatedCost, language]
+        ).catch(err => {
+          fastify.log.error('Failed to log chat usage: %s', err instanceof Error ? err.message : String(err));
         });
       }
 
