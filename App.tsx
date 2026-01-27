@@ -5,9 +5,10 @@ import { Treatments } from './components/Treatments';
 import { Philosophy } from './components/Philosophy';
 import { Team } from './components/Team';
 import { ClinicalCases } from './components/ClinicalCases';
-import { Booking } from './components/Booking';
+import { Footer } from './components/Footer';
 import { ChatWidget } from './components/ChatWidget';
 import { WhatsAppButton } from './components/WhatsAppButton';
+import { BookingPage } from './components/BookingPage';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { ReceptionistApp } from './components/receptionist/ReceptionistApp';
@@ -79,8 +80,8 @@ const MainSite: React.FC = () => {
         <Philosophy />
         <Team />
         <ClinicalCases />
-        <Booking />
       </main>
+      <Footer />
       <ChatWidget />
       <WhatsAppButton />
     </div>
@@ -100,6 +101,8 @@ const App: React.FC = () => {
     switch (route) {
       case '/receptionist':
         return <ReceptionistApp />;
+      case '/book':
+        return <BookingPage />;
       case '/privacy-policy':
         return <PrivacyPolicy />;
       case '/terms-of-service':

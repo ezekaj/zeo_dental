@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowLeft, ArrowRight, Clock, Layers } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { Header } from './Header';
-import { Booking } from './Booking';
+import { Footer } from './Footer';
 import { ChatWidget } from './ChatWidget';
 import { WhatsAppButton } from './WhatsAppButton';
 import { ComparisonSlider } from './ComparisonSlider';
@@ -239,8 +239,8 @@ export const ClinicalCasesPage: React.FC = () => {
       </section>
 
 
-      {/* Booking Section */}
-      <Booking />
+      {/* Footer */}
+      <Footer />
 
       {/* Widgets */}
       <ChatWidget />

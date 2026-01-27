@@ -2,12 +2,12 @@ import React from 'react';
 import { useTranslation } from '../hooks/useTranslation';
 
 const NAV_ITEMS = [
-  { labelKey: 'nav.clinic', href: '#home' },
-  { labelKey: 'nav.treatments', href: '#services' },
-  { labelKey: 'nav.philosophy', href: '#philosophy' },
-  { labelKey: 'nav.team', href: '#team' },
-  { labelKey: 'nav.cases', href: '#cases' },
-  { labelKey: 'nav.contact', href: '#booking-form' },
+  { labelKey: 'nav.clinic', href: '/' },
+  { labelKey: 'nav.treatments', href: '/treatments' },
+  { labelKey: 'nav.philosophy', href: '/philosophy' },
+  { labelKey: 'nav.team', href: '/team' },
+  { labelKey: 'nav.cases', href: '/cases' },
+  { labelKey: 'nav.contact', href: '/book' },
 ];
 
 export const Footer: React.FC = () => {

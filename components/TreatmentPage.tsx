@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowLeft, ArrowRight, Check, Clock, Shield } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { Header } from './Header';
-import { Booking } from './Booking';
+import { Footer } from './Footer';
 import { ChatWidget } from './ChatWidget';
 import { WhatsAppButton } from './WhatsAppButton';
 
@@ -85,7 +85,7 @@ export const TreatmentPage: React.FC<TreatmentPageProps> = ({ treatmentKey, hero
             {/* CTA */}
             <div className="mt-10">
               <a
-                href="#booking-form"
+                href="/book"
                 className="inline-flex items-center gap-3 bg-studio-gold text-white px-8 py-4 text-sm uppercase tracking-wider hover:bg-studio-gold/90 transition-colors"
               >
                 {t('services.bookAppointment')}
@@ -235,8 +235,8 @@ export const TreatmentPage: React.FC<TreatmentPageProps> = ({ treatmentKey, hero
         </section>
       )}
 
-      {/* Booking Section */}
-      <Booking />
+      {/* Footer */}
+      <Footer />
 
       {/* Widgets */}
       <ChatWidget />

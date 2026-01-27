@@ -3,7 +3,7 @@ import { ArrowLeft, Check, Heart, Shield, Sparkles, Users } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { useScrollColorize } from '../hooks/useScrollColorize';
 import { Header } from './Header';
-import { Booking } from './Booking';
+import { Footer } from './Footer';
 import { ChatWidget } from './ChatWidget';
 import { WhatsAppButton } from './WhatsAppButton';
 
@@ -347,8 +347,8 @@ export const PhilosophyPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Booking Section */}
-      <Booking />
+      {/* Footer */}
+      <Footer />
 
       {/* Widgets */}
       <ChatWidget />
