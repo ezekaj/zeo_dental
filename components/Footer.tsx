@@ -44,10 +44,12 @@ export const Footer: React.FC = () => {
                 Instagram
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/people/ZEO-Dental-Clinic/61583768802581/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra text-studio-black hover:text-studio-gold transition-colors py-2"
               >
-                LinkedIn
+                Facebook
               </a>
             </div>
             <p className="text-left md:text-right text-studio-gray font-light text-sm max-w-xs">
