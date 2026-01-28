@@ -128,40 +128,40 @@ export const ChatWidget: React.FC = () => {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
       {/* Chat Window */}
       {isOpen && (
-        <div className="mb-4 w-[350px] sm:w-[400px] h-[500px] bg-white rounded-2xl shadow-2xl border border-primary-100 flex flex-col overflow-hidden animate-fade-in-up">
+        <div className="mb-4 w-[350px] sm:w-[400px] h-[500px] bg-white shadow-2xl border border-gray-100 flex flex-col overflow-hidden animate-fade-in-up">
           {/* Header */}
-          <div className="bg-primary-950 p-4 flex justify-between items-center">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary-300 relative">
-                <Bot size={24} />
-                <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-500 rounded-full border-2 border-primary-950"></span>
+          <div className="bg-studio-black p-5 flex justify-between items-center">
+            <div className="flex items-center gap-4">
+              <div className="w-10 h-10 border border-studio-gold/30 flex items-center justify-center text-studio-gold relative">
+                <Bot size={22} strokeWidth={1.5} />
+                <span className="absolute -bottom-0.5 -right-0.5 w-2 h-2 bg-studio-gold"></span>
               </div>
               <div>
-                <h3 className="text-white font-semibold">{t('chat.assistantName')}</h3>
-                <p className="text-primary-100 text-xs">{t('chat.status')}</p>
+                <h3 className="text-white font-serif text-lg">{t('chat.assistantName')}</h3>
+                <p className="text-studio-gray text-[10px] uppercase tracking-wider">{t('chat.status')}</p>
               </div>
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="text-primary-100 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-primary-400 rounded"
+              className="text-studio-gray hover:text-white transition-colors focus:outline-none"
               aria-label="Close chat"
             >
-              <X size={20} aria-hidden="true" />
+              <X size={20} strokeWidth={1.5} aria-hidden="true" />
             </button>
           </div>
 
           {/* Messages Area */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-primary-50">
+          <div className="flex-1 overflow-y-auto p-5 space-y-4 bg-studio-light">
             {messages.map(msg => (
               <div
                 key={msg.id}
                 className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-[80%] p-3 rounded-2xl text-sm leading-relaxed ${
+                  className={`max-w-[85%] p-4 text-sm leading-relaxed ${
                     msg.role === 'user'
-                      ? 'bg-primary-600 text-white rounded-tr-none'
-                      : 'bg-white text-primary-900 shadow-sm border border-primary-100 rounded-tl-none'
+                      ? 'bg-studio-black text-white'
+                      : 'bg-white text-studio-black border border-gray-100'
                   }`}
                 >
                   {msg.text}
@@ -170,9 +170,9 @@ export const ChatWidget: React.FC = () => {
             ))}
             {loadingState === LoadingState.LOADING && (
               <div className="flex justify-start">
-                <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-primary-100 flex items-center gap-2">
-                  <Loader2 size={16} className="animate-spin text-primary-500" />
-                  <span className="text-xs text-primary-700">{t('chat.typing')}</span>
+                <div className="bg-white p-4 border border-gray-100 flex items-center gap-3">
+                  <Loader2 size={14} className="animate-spin text-studio-gold" />
+                  <span className="text-xs text-studio-gray">{t('chat.typing')}</span>
                 </div>
               </div>
             )}
@@ -180,8 +180,8 @@ export const ChatWidget: React.FC = () => {
           </div>
 
           {/* Input Area */}
-          <div className="p-4 bg-white border-t border-primary-100">
-            <div className="flex items-center gap-2">
+          <div className="p-4 bg-white border-t border-gray-100">
+            <div className="flex items-center gap-3">
               <input
                 type="text"
                 value={inputText}
@@ -189,19 +189,19 @@ export const ChatWidget: React.FC = () => {
                 onKeyDown={handleKeyPress}
                 placeholder={t('chat.placeholder')}
                 aria-label="Type your message to the dental assistant"
-                className="flex-1 bg-primary-50 border border-primary-100 rounded-full px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all text-primary-900 placeholder:text-primary-500"
+                className="flex-1 bg-studio-light border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-studio-gold transition-all text-studio-black placeholder:text-studio-gray"
               />
               <button
                 onClick={handleSend}
                 disabled={!inputText.trim() || loadingState === LoadingState.LOADING}
-                className="p-2.5 bg-primary-600 text-white rounded-full hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors shadow-md focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2"
+                className="p-3 bg-studio-black text-white hover:bg-studio-gold disabled:opacity-40 disabled:cursor-not-allowed transition-colors focus:outline-none"
                 aria-label="Send message"
               >
-                <Send size={18} aria-hidden="true" />
+                <Send size={18} strokeWidth={1.5} aria-hidden="true" />
               </button>
             </div>
-            <div className="text-center mt-2">
-              <span className="text-[10px] text-primary-700">{t('chat.disclaimer')}</span>
+            <div className="text-center mt-3">
+              <span className="text-[10px] text-studio-gray tracking-wide">{t('chat.disclaimer')}</span>
             </div>
           </div>
         </div>
