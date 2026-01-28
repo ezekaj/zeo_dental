@@ -22,6 +22,16 @@ export const ChatWidget: React.FC = () => {
       const buttonRect = buttonRef.current.getBoundingClientRect();
       const buttonCenterY = buttonRect.top + buttonRect.height / 2;
 
+      // Check if over footer (white background)
+      const footer = document.querySelector('footer');
+      if (footer) {
+        const footerRect = footer.getBoundingClientRect();
+        if (buttonCenterY >= footerRect.top && buttonCenterY <= footerRect.bottom) {
+          setIsOverDark(false);
+          return;
+        }
+      }
+
       // Get all sections and check which one the button is over
       const sections = document.querySelectorAll('section');
       let isDark = true; // Default to dark (hero section)
