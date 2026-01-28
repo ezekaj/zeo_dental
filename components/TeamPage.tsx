@@ -38,6 +38,8 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, t }) => {
               style={
                 member.id === 'dr-rien' || member.id === 'dr-kristi'
                   ? { objectPosition: '7% center' }
+                  : member.id === 'dr-dorina'
+                  ? { objectPosition: '35% center' }
                   : { objectPosition: 'center' }
               }
             />
