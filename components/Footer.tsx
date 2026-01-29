@@ -58,11 +58,15 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Massive Brand Name */}
+        {/* Massive Brand Logo */}
         <div className="border-t border-gray-100 pt-6 sm:pt-8 relative">
-          <h1 className="font-serif text-[18vw] leading-none text-center text-studio-black opacity-[0.03] select-none pointer-events-none translate-y-4">
-            ZEO.STUDIO
-          </h1>
+          <div className="flex justify-center translate-y-4">
+            <img
+              src="/images/zeo-logo.png"
+              alt="Zeo Dental Clinic"
+              className="w-[60vw] max-w-[600px] opacity-[0.06] select-none pointer-events-none"
+            />
+          </div>
 
           <div className="absolute bottom-2 sm:bottom-4 w-full flex flex-col md:flex-row justify-between items-center md:items-end text-[10px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra text-gray-400 gap-2 px-4 sm:px-0">
             <div className="flex flex-col md:flex-row items-center gap-1 sm:gap-2 md:gap-3">
