@@ -1,0 +1,301 @@
+constant_name,definition
+A claim must be selected to enable this menu.,Duhet të zgjidhet një kërkesë për të aktivizuar këtë meny.
+A Clinical Decision Rule is patient specific information that is filtered and presented at appropriate times to enhance health and health care,Një Rregull i Vendimit Klinik është informacion specifik i pacientit që filtrohet dhe paraqitet në kohën e duhur për të përmirësuar shëndetin dhe kujdesin shëndetësor
+"A dated reminder message can be either forwarded by clicking the Forward button or removed from the dated reminders list by clicking on the Set As Completed button","Një mesazh kujtese me datë mund të përcillet duke klikuar butonin Përcill ose të hiqet nga lista e kujtesave me datë duke klikuar butonin Shëno Si Të Përfunduar"
+A dedicated security key needs to be purchased,Duhet të blihet një çelës i dedikuar sigurie
+A default code is optional as the needed code can be entered at the time of placing the actual order,Një kod i paracaktuar është opsional pasi kodi i nevojshëm mund të futet në momentin e vendosjes së porosisë aktuale
+A detailed guide on how to enable and setup a Clinical Decision rule is found here,Një udhëzues i detajuar se si të aktivizoni dhe konfiguroni një Rregull të Vendimit Klinik gjendet këtu
+A due date can be specified or a specific time period can be chosen for the dated reminder to to show up,Mund të specifikohet një datë afati ose mund të zgjidhet një periudhë kohore specifike që kujtesa me datë të shfaqet
+A few words to indicate the reason for the visit,Disa fjalë për të treguar arsyen e vizitës
+A followup appointment can also be scheduled right from the fee sheet.,Një takim kontrolli mund të caktohet gjithashtu direkt nga fleta e tarifave.
+"A HL7 v2.x message simply consists of several lines of text, each line is called a segment and is further divided into fields by using the pipe (|) character","Një mesazh HL7 v2.x përbëhet thjesht nga disa rreshta teksti, çdo rresht quhet segment dhe ndahet më tej në fusha duke përdorur karakterin pipe (|)"
+"A large application like openEMR is used by a multitude of users with varying roles and degrees of responsibility. It is imperative that access to various parts of the program be granted to users on a need to know basis. To achieve this - Access Control Lists (ACL) are used.","Një aplikacion i madh si openEMR përdoret nga një shumëllojshmëri përdoruesish me role dhe shkallë përgjegjësie të ndryshme. Është e domosdoshme që qasja në pjesë të ndryshme të programit t'u jepet përdoruesve sipas nevojës. Për ta arritur këtë - përdoren Listat e Kontrollit të Qasjes (ACL)."
+A New Appointment,Një Takim i Ri
+A new feature helps to group frequently ordered tests so that they can be ordered together,Një veçori e re ndihmon për të grupuar analizat e porositura shpesh në mënyrë që të mund të porositen së bashku
+"A new message can thus be sent to a single or multiple users and/or can be about a single or multiple patients","Një mesazh i ri mund t'i dërgohet kështu një ose disa përdoruesve dhe/ose mund të jetë për një ose disa pacientë"
+A new patients credentials could not be sent after portal registration.,Kredencialet e pacientit të ri nuk mund të dërgoheshin pas regjistrimit në portal.
+A new tab sub menu will be visible at the top of the Message center page,Një nën-meny e re me skedë do të jetë e dukshme në krye të faqes së Qendrës së Mesazheve
+A Payment is Required!. Please input a payment line item entry.,Një Pagesë Kërkohet!. Ju lutem vendosni një zë pagese.
+"A place to document and display the patient's past medical history, family history, personal history","Një vend për të dokumentuar dhe shfaqur historinë mjekësore të kaluar të pacientit, historinë familjare, historinë personale"
+A popup box will alert you about success or failure,Një dritare kërcyese do t'ju njoftojë për suksesin ose dështimin
+A product was selected but there is no product section in this form.,U zgjodh një produkt por nuk ka seksion produkti në këtë formular.
+"A provider or warehouse can be selected in the dropwdown box. For this option to be displayed 'Support provider in line item in fee sheet' box must be checked in Administration > Globals> Billing page","Një ofrues ose magazinë mund të zgjidhet në kutinë rënëse. Që ky opsion të shfaqet, kutia 'Mbështet ofruesin në zërin e fletës së tarifave' duhet të jetë e zgjedhur në Administrim > Globale > faqja e Faturimit"
+A quantity is required,Kërkohet një sasi
+A Recurring Appointment. Please contact your appointment desk for any changes.,Një Takim i Përsëritur. Ju lutem kontaktoni sportelin e takimeve për çdo ndryshim.
+A Referral has an additional action - to print the referral or save it as a pdf file,Një Referim ka një veprim shtesë - të printojë referimin ose ta ruajë si skedar pdf
+A Referral is the most common type of transaction,Një Referim është lloji më i zakonshëm i transaksionit
+A secure (HTTPS) web connection is required for U2F,Kërkohet një lidhje e sigurt (HTTPS) në ueb për U2F
+"A short description of this group that will appear when you hover over the newly created group (ARO).","Një përshkrim i shkurtër i këtij grupi që do të shfaqet kur të vendosni kursorin mbi grupin e krijuar rishtas (ARO)."
+"A short description of this group, Serum chemistry tests","Një përshkrim i shkurtër i këtij grupi, Analiza të kimisë së serumit"
+A short description of this procedure or result code,Një përshkrim i shkurtër i kësaj procedure ose kodi rezultati
+A signature is required for this document. Please sign document where required,Kërkohet një firmë për këtë dokument. Ju lutem firmosni dokumentin aty ku kërkohet
+A source lot is required,Kërkohet një lot burimi
+A standardized form called the Health Insurance Claim Form is used to submit claims,Një formular i standardizuar i quajtur Formulari i Kërkesës së Sigurimit Shëndetësor përdoret për të dorëzuar kërkesat
+"A third alternative is to scan the results and save it as a document - TIFF, JPEG or PDF in the patient's chart under documents","Alternativa e tretë është të skanoni rezultatet dhe t'i ruani si dokument - TIFF, JPEG ose PDF në kartelën e pacientit nën dokumente"
+A two tabbed form will be revealed,Do të shfaqet një formular me dy skeda
+A useful start would be to obtain a paper lab slip from a few labs and look at the way the tests are organized on the lab slip,Një fillim i dobishëm do të ishte të merrnit një fletë laboratori letre nga disa laboratorë dhe të shikonit mënyrën se si janë organizuar analizat në fletën e laboratorit
+A valid UDI has not been processed yet.,Një UDI i vlefshëm nuk është përpunuar ende.
+"A visit already exists for this group today. Click Cancel to open it, or OK to proceed with creating a new one.","Një vizitë ekziston tashmë për këtë grup sot. Klikoni Anulo për ta hapur, ose OK për të vazhduar me krijimin e një të reje."
+A warehouse is required,Kërkohet një magazinë
+A/C{{anterior chamber}},A/C{{dhoma e përparme}}
+AAA Segments,Segmentet AAA
+ABN is required but not signed!,ABN kërkohet por nuk është firmosur!
+ABN Status,Statusi ABN
+ABNL,ABNL
+"Aborted since querystring hash was invalid","Ndërprerë sepse hash i querystring ishte i pavlefshëm"
+Aborted since unable to complete transaction,Ndërprerë sepse nuk arriti të përfundonte transaksionin
+Aborted since unable to obtain token,Ndërprerë sepse nuk arriti të merrte token
+Aborted since unable to submit transaction,Ndërprerë sepse nuk arriti të dorëzonte transaksionin
+About,Rreth
+About Portal Dashboard,Rreth Panelit të Portalit
+About Your Portal,Rreth Portalit Tuaj
+Absolute path to node binary,Shtegu absolut drejt binarit node
+Accept,Prano
+Accept Credit Card transactions from Front Payments,Prano transaksione me Kartë Krediti nga Pagesat e Pritjes
+Accept Payment,Prano Pagesën
+"Access can be given to other groups by editing User Memberships or Groups and Access Controls in Administration > ACL","Qasja mund t'u jepet grupeve të tjera duke ndryshuar Anëtarësimet e Përdoruesve ose Grupet dhe Kontrollet e Qasjes në Administrim > ACL"
+Access Control List Help,Ndihmë për Listën e Kontrollit të Qasjes
+Access Control Lists,Listat e Kontrollit të Qasjes
+"Access core data set of patient information at the beginning of an encounter","Qasu grupit bazë të të dhënave të pacientit në fillim të një vizite"
+Access denied,Qasja e refuzuar
+"Access is then granted selectively to portions of the program on a need to know basis.","Qasja më pas jepet në mënyrë selektive në pjesë të programit sipas nevojës."
+access not allowed,qasja nuk lejohet
+Access Tokens,Tokenët e Qasjes
+Access Your Medical Records,Qasuni Regjistrimeve Tuaja Mjekësore
+Account,Llogaria
+Account Id,ID e Llogarisë
+Account Id issued for Weno eRx service.,ID e Llogarisë e lëshuar për shërbimin Weno eRx.
+Account Id issued for Your clinics eRx service.,ID e Llogarisë e lëshuar për shërbimin eRx të klinikës suaj.
+Account is validated. Send new credentials?,Llogaria është vërtetuar. Të dërgohen kredenciale të reja?
+Account Registration,Regjistrimi i Llogarisë
+Accounting (acct),Kontabiliteti (acct)
+Accounting Transactions Export,Eksporti i Transaksioneve të Kontabilitetit
+Accounting transactions export to CSV,Eksporti i transaksioneve të kontabilitetit në CSV
+Accountings,Kontabilitetet
+ACD{{anterior chamber depth}},ACD{{thellësia e dhomës së përparme}}
+Acknowledge as my Electronic Signature,Pranoj si Firmën time Elektronike
+ACL Administration (acl),Administrimi ACL (acl)
+ACL check failed,Kontrolli ACL dështoi
+ACL Fine Granular Control,Kontrolli i Hollësishëm ACL
+ACO,ACO
+ACOM{{Anterior Segment}},ACOM{{Segmenti i Përparmë}}
+Action Taken,Veprimi i Ndërmarrë
+Action Taken Time,Koha e Veprimit të Ndërmarrë
+Action User,Përdoruesi i Veprimit
+activate to sort column ascending,aktivizo për të renditur kolonën në rend rritës
+activate to sort column descending,aktivizo për të renditur kolonën në rend zbritës
+Activate UB04/837I Claim Support,Aktivizo Mbështetjen e Kërkesave UB04/837I
+Activates custom work flow logic,Aktivizon logjikën e personalizuar të rrjedhës së punës
+"Active - By default any value added here will be set to Active, to prevent/remove an item from showing up in the drop-down list just uncheck and deactivate","Aktiv - Si parazgjedhje çdo vlerë e shtuar këtu do të vendoset si Aktive, për të parandaluar/hequr një zë nga shfaqja në listën rënëse thjesht hiqni zgjedhjen dhe çaktivizoni"
+Active Alert - that presents as a pop-up notification when a patient's chart is entered,Njoftim Aktiv - që paraqitet si njoftim kërcyes kur hyhet në kartelën e pacientit
+Active Chart,Kartela Aktive
+Active Codes,Kodet Aktive
+Active Directory - Domains Base,Active Directory - Baza e Domaineve
+Active Directory - Domains Controllers,Active Directory - Kontrolluesit e Domaineve
+Active Directory - Suffix Of Account,Active Directory - Prapashtesa e Llogarisë
+Active Messages,Mesazhet Aktive
+Active Templates,Shablonet Aktive
+Active{{Appointment}},Aktiv{{Takim}}
+Active{{Code}},Aktiv{{Kod}}
+Active{{Drug}},Aktiv{{Ilaç}}
+Active{{Issue}},Aktiv{{Çështje}}
+Active{{Item}},Aktiv{{Zë}}
+Active{{Note}},Aktiv{{Shënim}}
+Active{{Plan}},Aktiv{{Plan}}
+Active{{Service}},Aktiv{{Shërbim}}
+Acuity,Mprehtësia
+ACUITY,MPREHTËSIA
+Acuity with Autorefraction,Mprehtësia me Autorefraktim
+Acuity with Contact Lenses,Mprehtësia me Lente Kontakti
+Acuity with correction,Mprehtësia me korrigjim
+Acuity with Cycloplegic Refraction,Mprehtësia me Refraktim Cikloplegik
+Acuity with Manifest Refraction,Mprehtësia me Refraktim Manifest
+Acuity with Pinhole,Mprehtësia me Pinhole
+Acuity without correction,Mprehtësia pa korrigjim
+Ad Reviewed,Reklama e Shqyrtuar
+ADD A NEW RECALL,SHTO NJË RIKUJTIM TË RI
+Add a New Recall,Shto një Rikujtim të Ri
+Add a note to the biller,Shto një shënim për faturuesin
+"Add all needed providers in a similar manner","Shtoni të gjithë ofruesit e nevojshëm në mënyrë të ngjashme"
+Add as a new message,Shto si mesazh të ri
+Add Bottom Border Row,Shto Rreshtin e Kufirit të Poshtëm
+Add Data Bottom Border,Shto Kufirin e Poshtëm të të Dhënave
+"Add desired privileges by moving items (ACOs) from the 'Inactive' column to the 'Active' column.","Shtoni privilegjet e dëshiruara duke lëvizur zërat (ACO) nga kolona 'Joaktive' në kolonën 'Aktive'."
+Add Edit Transactions Help,Ndihmë për Shtimin dhe Ndryshimin e Transaksioneve
+Add encounter,Shto vizitë
+Add group,Shto grup
+Add Lot,Shto Lot
+Add manually,Shto manualisht
+Add Missing Context Template.,Shto Shablonin e Kontekstit të Munguar.
+Add Mode,Mënyra e Shtimit
+"Add modifiers for this field type. You may select more than one.","Shto modifikues për këtë lloj fushe. Mund të zgjidhni më shumë se një."
+Add More Items,Shto Më Shumë Zëra
+Add new database,Shto bazë të dhënash të re
+Add New Entry,Shto Hyrje të Re
+Add New Event,Shto Ngjarje të Re
+Add New Form,Shto Formular të Ri
+ADD NEW GROUP,SHTO GRUP TË RI
+Add New Message,Shto Mesazh të Ri
+Add New Plan,Shto Plan të Ri
+Add New...,Shto të Ri...
+Add New{{Event}},Shto të Ri{{Ngjarje}}
+Add New{{Message}},Shto të Ri{{Mesazh}}
+Add New{{Provider}},Shto të Ri{{Ofrues}}
+Add new{{Rule}},Shto të ri{{Rregull}}
+Add New{{Type}},Shto të Ri{{Lloj}}
+Add Onsite Portal Activity,Shto Aktivitetin e Portalit në Vend
+Add Package,Shto Paketë
+Add Patient,Shto Pacient
+Add Recall,Shto Rikujtim
+Add Row,Shto Rresht
+"Add the remaining codes, in order to do so the CPT code must already exist in the database","Shtoni kodet e mbetura, për ta bërë këtë kodi CPT duhet të ekzistojë tashmë në bazën e të dhënave"
+Add Time to Date,Shto Kohë në Datë
+ADD TO EXISTING MESSAGE,SHTO NË MESAZHIN EKZISTUES
+Add To Existing Message,Shto në Mesazhin Ekzistues
+Add to History,Shto në Histori
+Add to list,Shto në listë
+Add.{{Additional Measurements}},Shto.{{Matje Shtesë}}
+Add/Edit Issue,Shto/Ndrysho Çështjen
+Adding,Duke shtuar
+Adding a participant,Duke shtuar një pjesëmarrës
+Additional Data Points,Pika Shtesë të Dhënash
+Additional Date:,Data Shtesë:
+Additional Findings,Gjetje Shtesë
+"Additional functionality including the ability to send SMS text messages, automated phone dialing, emails etc. can be accessed by enabling the optional MedEx Communication Service","Funksionaliteti shtesë duke përfshirë mundësinë e dërgimit të mesazheve SMS, thirrjeve telefonike automatike, emaileve etj. mund të qaset duke aktivizuar Shërbimin Opsional të Komunikimit MedEx"
+"Additional help to fill out this form is available by hovering over labels of each box and clicking on the dark blue help ? icon that is revealed","Ndihmë shtesë për plotësimin e këtij formulari është e disponueshme duke vendosur kursorin mbi etiketat e çdo kutie dhe duke klikuar ikonën blu të errët të ndihmës ? që shfaqet"
+"Additional help to fill out this form is available by hovering over labels of each box and clicking on the dark blue help ? icon that is revealed. On mobile devices tap once on the label to reveal the help icon and tap on the icon to show the help section","Ndihmë shtesë për plotësimin e këtij formulari është e disponueshme duke vendosur kursorin mbi etiketat e çdo kutie dhe duke klikuar ikonën blu të errët të ndihmës ? që shfaqet. Në pajisjet celulare prekni një herë mbi etiketën për të shfaqur ikonën e ndihmës dhe prekni ikonën për të treguar seksionin e ndihmës"
+"Additional information about the individual pages can be found in their respective help files","Informacion shtesë rreth faqeve individuale mund të gjendet në skedarët përkatës të ndihmës"
+Additional information may be available,Informacion shtesë mund të jetë i disponueshëm
+Additional information to process paper claims,Informacion shtesë për përpunimin e kërkesave në letër
+Additional Notes field is for local use in openEMR,Fusha e Shënimeve Shtesë është për përdorim lokal në openEMR
+additional scopes,fusha shtesë
+"Additionally, to the right is a toggle to select if you want to use the pop out window or dialog editor. The window allows having multiple editors open at the same time where the dialog is more appropriate for making quick edits","Për më tepër, në të djathtë ndodhet një çelës për të zgjedhur nëse dëshironi të përdorni dritaren kërcyese ose redaktorin e dialogut. Dritarja lejon hapjen e disa redaktorëve njëkohësisht ndërsa dialogu është më i përshtatshëm për ndryshime të shpejta"
+Additonal Rx{{Additional glasses}},Rx Shtesë{{Syze shtesë}}
+addonly - can read and add but not modify,vetëm shtim - mund të lexojë dhe shtojë por jo të modifikojë
+Address Line 1,Rreshti i Adresës 1
+Address Line 2,Rreshti i Adresës 2
+"Address, City, State and Postal Code","Adresa, Qyteti, Shteti dhe Kodi Postar"
+"Address, City, State, Postal Code, Payer ID","Adresa, Qyteti, Shteti, Kodi Postar, ID e Paguesit"
+ADDRESSED TO,DREJTUAR
+ADD{{Bifocal Add}},ADD{{Shtim Bifokal}}
+ADD{{Near Add}},ADD{{Shtim i Afërt}}
+Adj Amt,Shuma Rregj
+Adj Type,Lloji i Rregj
+Adjust Type,Lloji i Rregullimit
+Adjustment type is required for each line with an adjustment.,Lloji i rregullimit kërkohet për çdo rresht me rregullim.
+Adjustment type is required for every line item.,Lloji i rregullimit kërkohet për çdo zë.
+Adjustment value for code,Vlera e rregullimit për kodin
+"Adjustment, Consumption, Return, or Edit","Rregullim, Konsum, Kthim, ose Ndryshim"
+Adjustments at Checkout,Rregullimet në Arkë
+Administer Via is not relevant in this context and can be left Unassigned,Administro Përmes nuk është relevante në këtë kontekst dhe mund të lihet Pa Caktuar
+Administration (admin),Administrimi (admin)
+Administrator Assign,Caktimi nga Administratori
+Adnexa,Adneksa
+Advanced - Finer Access Control,I Avancuar - Kontroll Më i Hollësishëm i Qasjes
+Advantages and Disadvantages of TOTP and U2F,Përparësitë dhe Disavantazhet e TOTP dhe U2F
+after,pas
+after (PM),pas (PM)
+After saving the PDF,Pas ruajtjes së PDF
+"After saving the PDF, click[View Log] to check for errors.","Pas ruajtjes së PDF, klikoni [Shiko Regjistrin] për të kontrolluar gabimet."
+After saving the TEXT file,Pas ruajtjes së skedarit TEXT
+"After saving the TEXT file(s), click[View Log] to check for errors.","Pas ruajtjes së skedarit(ëve) TEXT, klikoni [Shiko Regjistrin] për të kontrolluar gabimet."
+After saving your batch,Pas ruajtjes së grupit tuaj
+"After saving your batch, click[View Log] to check for errors.","Pas ruajtjes së grupit tuaj, klikoni [Shiko Regjistrin] për të kontrolluar gabimet."
+"After Uploading, click ""Import""","Pas Ngarkimit, klikoni ""Import"""
+"After you filled in the spreadsheet with the relevant ICD categories and ICD codes go to Administration > Lists. Select 'Service Category' from the dropdown box","Pasi të keni plotësuar tabelën me kategoritë përkatëse ICD dhe kodet ICD shkoni në Administrim > Lista. Zgjidhni 'Kategoria e Shërbimit' nga kutia rënëse"
+"After you have finished entering all the ICD 10 codes go to Adminstration > Lists and select 'Code Types' from the dropdown box. Select 'ICD10 Diagnosis' from the last dropdown box under ICD 10","Pasi të keni përfunduar futjen e të gjitha kodeve ICD 10 shkoni në Administrim > Lista dhe zgjidhni 'Llojet e Kodeve' nga kutia rënëse. Zgjidhni 'Diagnoza ICD10' nga kutia e fundit rënëse nën ICD 10"
+"Afterwards however, you may change your portal credentials anytime from portal menu.","Megjithatë më pas, mund t'i ndryshoni kredencialet tuaja të portalit në çdo kohë nga menyja e portalit."
+Age at death,Mosha në vdekje
+Aging Days,Ditët e Moshimit
+Alert,Njoftim
+Alert Notice,Njoftim Paralajmërues
+Alert on and after birthday,Njofto në ditëlindjen dhe pas saj
+Alert on and up to 28 days after birthday,Njofto në ditëlindje dhe deri në 28 ditë pas saj
+Alert on patient birthday,Njofto në ditëlindjen e pacientit
+Alert only on birthday,Njofto vetëm në ditëlindje
+Alert{{Mental Status}},Vigjilent{{Gjendja Mendore}}
+all,të gjitha
+All credential fields are case sensitive!,Të gjitha fushat e kredencialeve janë të ndjeshme ndaj shkronjave!
+All Dates,Të Gjitha Datat
+All done.,U krye.
+All Encounters,Të Gjitha Vizitat
+All Labs,Të Gjitha Laboratorët
+All Messages,Të Gjitha Mesazhet
+"All patient interactions in OpenEMR are linked to encounters","Të gjitha ndërveprimet me pacientin në OpenEMR janë të lidhura me vizitat"
+All pending messages are displayed on the MY MESSAGES pane,Të gjitha mesazhet në pritje shfaqen në panelin MESAZHET E MIA
+All Product Types,Të Gjitha Llojet e Produkteve
+All scores have been cleared.,Të gjitha rezultatet janë pastruar.
+All search inputs are case sensitive and must match entries in your profile.,Të gjitha hyrjet e kërkimit janë të ndjeshme ndaj shkronjave dhe duhet të përputhen me zërat në profilin tuaj.
+"All sections are not required, rather, they are available based on the information a practitioner believes is critical data for the patient at any given moment in time","Jo të gjitha seksionet kërkohen, përkundrazi, ato janë të disponueshme bazuar në informacionin që mjeku beson se janë të dhëna kritike për pacientin në çdo moment të dhënë kohor"
+All set. Click Send Request below to finish registration,Gjithçka gati. Klikoni Dërgo Kërkesën më poshtë për të përfunduar regjistrimin
+All set. Click Send Request below to finish registration.,Gjithçka gati. Klikoni Dërgo Kërkesën më poshtë për të përfunduar regjistrimin.
+All TOTP authenticator apps use the same algorithm and secure hash function - HMAC-SHA1 to generate the unique key,Të gjitha aplikacionet e vërtetimit TOTP përdorin të njëjtin algoritëm dhe funksion hash të sigurt - HMAC-SHA1 për të gjeneruar çelësin unik
+All Transactions for the patient will appear on the Transactions page in descending order of its date of creation,Të gjitha Transaksionet e pacientit do të shfaqen në faqen e Transaksioneve në rend zbritës sipas datës së krijimit
+All Warehouses,Të Gjitha Magazinat
+Allergic to,Alergjik ndaj
+Allergies - will show the allergies listed under Issues > Allergies. If eRx is enabled the allergy list has to be entered on the eRx page,Alergjitë - do të tregojë alergjitë e listuara nën Çështje > Alergjitë. Nëse eRx është i aktivizuar lista e alergjive duhet të futet në faqen eRx
+Allergies/Alerting Data,Alergjitë/Të Dhënat e Njoftimeve
+Allow Administrators to Delete Patients,Lejo Administratorët të Fshijnë Pacientët
+Allow Check In before the appointment's time.,Lejo Regjistrimin para kohës së takimit.
+"Allow Double Click to select Nation Note text template from any encounter form text area","Lejo Klikim të Dyfishtë për të zgjedhur shablonin e tekstit të Shënimit Kombëtar nga çdo fushë teksti e formularit të vizitës"
+Allow Early Check In,Lejo Regjistrimin e Hershëm
+Allow Encounter For Each Appointment,Lejo Vizitë Për Çdo Takim
+Allow Health Info Exchange,Lejo Shkëmbimin e Informacionit Shëndetësor
+Allow Immunization Info Share,Lejo Ndarjen e Informacionit të Imunizimit
+"Allow in person credit card payments using Stripe Verifone P400. Ensure Stripe gateway is enabled.","Lejo pagesat me kartë krediti personalisht duke përdorur Stripe Verifone P400. Sigurohuni që porta Stripe është e aktivizuar."
+Allow institutional claims support.,Lejo mbështetjen e kërkesave institucionale.
+Allow insurance eligibility checks using Office Ally,Lejo kontrollet e përshtatshmërisë së sigurimit duke përdorur Office Ally
+Allow manual entry and authorise credit card payments. Ensure a gateway is enabled.,Lejo hyrjen manuale dhe autorizoni pagesat me kartë krediti. Sigurohuni që një portë është e aktivizuar.
+Allow more than one insurance,Lejo më shumë se një sigurim
+Allow More than one MA/IPPF code mapping,Lejo më shumë se një hartëzim kodesh MA/IPPF
+Allow multiple databases,Lejo baza të dhënash të shumëfishta
+Allow New Patient Registration Widget,Lejo Widget-in e Regjistrimit të Pacientit të Ri
+Allow Notice,Lejo Njoftimin
+Allow Online Appointments,Lejo Takimet Online
+Allow Online Payments,Lejo Pagesat Online
+Allow Online Secure Chat,Lejo Bisedën e Sigurt Online
+Allow only one insurance,Lejo vetëm një sigurim
+Allow Onsite New Patient Registration Widget,Lejo Widget-in e Regjistrimit të Pacientit të Ri në Vend
+Allow Onsite Online Appointments,Lejo Takimet Online në Vend
+Allow Onsite Online Payments,Lejo Pagesat Online në Vend
+Allow Onsite Online Secure Chat,Lejo Bisedën e Sigurt Online në Vend
+Allow Onsite Patient Ledger,Lejo Librin e Pacientit në Vend
+Allow Onsite Patient to make and view appointments online.,Lejo Pacientin në Vend të caktojë dhe shikojë takimet online.
+Allow Onsite Patient to make payments online.,Lejo Pacientin në Vend të bëjë pagesa online.
+Allow Onsite Patient to use Secure Chat Application.,Lejo Pacientin në Vend të përdorë Aplikacionin e Bisedës së Sigurt.
+Allow Onsite Patient to view their accounting ledger online.,Lejo Pacientin në Vend të shikojë librin e tij të kontabilitetit online.
+Allow Onsite Patients to Reset Credentials,Lejo Pacientët në Vend të Rivendosin Kredencialet
+Allow Patient Ledger,Lejo Librin e Pacientit
+Allow Patient to make and view appointments online.,Lejo Pacientin të caktojë dhe shikojë takimet online.
+Allow Patient to make payments online.,Lejo Pacientin të bëjë pagesa online.
+Allow Patient to use Secure Chat Application.,Lejo Pacientin të përdorë Aplikacionin e Bisedës së Sigurt.
+Allow Patient to view their accounting ledger online.,Lejo Pacientin të shikojë librin e tij të kontabilitetit online.
+Allow Patients to Reset Credentials,Lejo Pacientët të Rivendosin Kredencialet
+Allow Postal Mail,Lejo Postën
+Allow self-signed certificate for SSL (encrypted) connection to CouchDB,Lejo certifikatën e vetë-firmosur për lidhjen SSL (të enkriptuar) me CouchDB
+Allow Statement Exclusions from Printing,Lejo Përjashtimet e Deklaratave nga Printimi
+Allow to use with multiple database,Lejo përdorimin me baza të dhënash të shumëfishta
+Allow Version 2 Onsite New Patient Registration Widget,Lejo Widget-in Versioni 2 të Regjistrimit të Pacientit të Ri në Vend
+Allow Version 2 Onsite Online Payments,Lejo Pagesat Online në Vend Versioni 2
+Allow Version 2 Onsite Patient to make payments online.,Lejo Pacientin në Vend Versioni 2 të bëjë pagesa online.
+Allow Version 2 Patients to Reset Credentials,Lejo Pacientët Versioni 2 të Rivendosin Kredencialet
+Allow Voice Call,Lejo Thirrjen me Zë
+Allowed to discount prices (in Fee Sheet or Checkout form) (disc),Lejuar të zbresë çmimet (në Fletën e Tarifave ose formularin e Arkës) (disc)
+All{{Mails}},Të gjitha{{Postat}}
+All{{Recipients}},Të gjithë{{Marrësit}}
+Already a Care Plan form for this encounter. Using existing Care Plan form.,Ekziston tashmë një formular Plani Kujdesi për këtë vizitë. Duke përdorur formularin ekzistues të Planit të Kujdesit.
+Already a Clinical Notes form for this encounter. Using existing Clinical Notes form.,Ekziston tashmë një formular i Shënimeve Klinike për këtë vizitë. Duke përdorur formularin ekzistues të Shënimeve Klinike.
+Already at the top of the page,Tashmë në krye të faqes
+already exists! Please try again.,ekziston tashmë! Ju lutem provoni përsëri.
+Already registered,Tashmë i regjistruar
+Also provides a short description of the visit in Patient Reports,Gjithashtu ofron një përshkrim të shkurtër të vizitës në Raportet e Pacientit
+Alt City,Qyteti Alt
+Alt Postal code,Kodi Postar Alt
+Alt State,Shteti Alt
+Alternate Cover Test,Testi i Mbulimit Alternues
+Alternatively a CPT code can be used. It is 84550 for Serum Uric Acid,Alternativsht mund të përdoret një kod CPT. Ai është 84550 për Acidin Urik të Serumit
+Alternatively download a sample spreadsheet by clicking on the Download button,Alternativsht shkarkoni një tabelë mostër duke klikuar butonin Shkarko
+Alternatively it can be accessed by clicking in the Messages menu item in the top navigation bar,Alternativsht mund të qaset duke klikuar në zërin e menysë Mesazhet në shiritin e navigimit të sipërm
+Alternatively you could clear all selections and select only the items that you want to be a part of the report,Alternativsht mund të pastroni të gjitha zgjedhjet dhe të zgjidhni vetëm zërat që dëshironi të jenë pjesë e raportit
+"Alternatively, you may choose to upload an electronic remittance (X12 835) file that you have obtained from your payer or clearinghouse. You can do this by first selecting the 'ERA upload' option in the initial 'Select Method' section. This brings up the 'ERA Upload' Section.","Alternativsht, mund të zgjidhni të ngarkoni një skedar dërgese elektronike (X12 835) që keni marrë nga paguesi ose qendra e pastrimit. Këtë mund ta bëni duke zgjedhur fillimisht opsionin 'Ngarkim ERA' në seksionin fillestar 'Zgjidh Metodën'. Kjo shfaq Seksionin 'Ngarkimi ERA'."
+"Although the HCFA-1500 originally was developed for submitting Medicare claims, it eventually was accepted by all commercial/ private insurance carriers to facilitate the standardization of the claims process","Megjithëse HCFA-1500 fillimisht u zhvillua për dorëzimin e kërkesave Medicare, përfundimisht u pranua nga të gjithë mbartësit e sigurimit tregtar/privat për të lehtësuar standardizimin e procesit të kërkesave"
