@@ -1,0 +1,301 @@
+constant_name,definition
+Enter defaults values for OS{{left eye}},Vendos vlerat e paracaktuara per OS{{left eye}}
+Enter Details,Vendos Detajet
+Enter Details for Custom Favorite Group,Vendos Detajet per Grupin e Personalizuar te Preferuar
+Enter Details for Discrete Results,Vendos Detajet per Rezultatet Diskrete
+Enter Details for Group,Vendos Detajet per Grupin
+Enter Details for Individual Custom Favorite Item,Vendos Detajet per Elementin Individual te Preferuar te Personalizuar
+Enter Details for Individual Procedures,Vendos Detajet per Procedurat Individuale
+Enter Details for Recommendation,Vendos Detajet per Rekomandimin
+Enter E-Mail Address,Vendos Adresen E-Mail
+Enter email address to receive registration.,Vendos adresen e email per te marre regjistrimin.
+Enter Encounter,Vendos Viziten
+Enter Encounter Number,Vendos Numrin e Vizites
+Enter Facility Name,Vendos Emrin e Institucionit
+Enter Gift Card number in the Reference field,Vendos numrin e Kartes se Dhurates ne fushen e References
+Enter ID,Vendos ID
+Enter Key,Vendos Celesin
+Enter Last,Vendos te Fundit
+Enter name,Vendos emrin
+"Enter needed information to help process this particular claim",Vendos informacionin e nevojshem per te ndihmuar ne perpunimin e kesaj kerkese
+Enter new data,Vendos te dhena te reja
+Enter new office note here,Vendos shenimin e ri te zyres ketu
+Enter new State,Vendos Gjendjen e re
+"Enter Occurrence if appropriate",Vendos Ndodhinё nese eshte e pershtatshme
+"Enter or select the options in the various boxes to filter the results according to need and press Filter","Vendos ose zgjidh opsionet ne kutite e ndryshme per te filtruar rezultatet sipas nevajes dhe shtyp Filtro"
+Enter Password,Vendos Fjalekalimin
+Enter PIN code,Vendos kodin PIN
+Enter Provider Details,Vendos Detajet e Ofruesit
+Enter Recipient's Direct Address,Vendos Adresen Direkte te Marresit
+Enter required authentication code,Vendos kodin e kerkuar te verifikimit
+Enter Self if None,Vendos Veten nese Asnje
+Enter Serum Uric Acid in the Name box,Vendos Acidin Urik te Serumit ne kutine e Emrit
+Enter Serum Uric Acid order in the Description box,Vendos porosine e Acidit Urik te Serumit ne kutine e Pershkrimit
+Enter Serum Uric Acid result under Description,Vendos rezultatin e Acidit Urik te Serumit nen Pershkrimin
+Enter Serum Uric Acid under Name,Vendos Acidin Urik te Serumit nen Emrin
+"Enter the category data in the appropriate fields and click 'Save'. These will be used to group the ICD codes and will be displayed on the buttons in the 'Select Codes' section","Vendos te dhenat e kategorise ne fushat perkatese dhe kliko 'Ruaj'. Keto do te perdoren per te grupuar kodet ICD dhe do te shfaqen ne butonat ne seksionin 'Zgjidh Kodet'"
+Enter the code from your authentication application on your device,Vendos kodin nga aplikacioni i verifikimit ne pajisjen tuaj
+"Enter the default range values if applicable, used in manual entry of results.","Vendos vlerat e paracaktuara te diapazonit nese eshte e aplikueshme, te perdorura ne futjen manuale te rezultateve."
+Enter the default units for this test.,Vendos njesite e paracaktuara per kete test.
+"Enter the details - Name - Well Woman Tests, Description - Well Woman Tests, an appropriate sequence number depending on the procedure orders already entered, Order From - Local Lab","Vendos detajet - Emri - Testet e Shendetit te Gruas, Pershkrimi - Testet e Shendetit te Gruas, nje numer sekuence te pershtatshme ne varesi te porosive te procedurave te vendosura me pare, Porosite Nga - Laboratori Lokal"
+"Enter the details as follows Name - Blood Glucose, Description - Fasting Glucose result, Sequence - 1, Identifying Code - any unique value - WWT01R, Default Units - mg/dL, Default Range - 70-100, leave Followup Services blank and click Save","Vendos detajet si me poshte Emri - Glukoza ne Gjak, Pershkrimi - Rezultati i Glukozes ne Agjerim, Sekuenca - 1, Kodi Identifikues - cdo vlere unike - WWT01R, Njesite e Paracaktuara - mg/dL, Diapazoni i Paracaktuar - 70-100, le Sherbimet Pasuese bosh dhe kliko Ruaj"
+Enter the Direct address and click Send CCR/Send CCD as the case may be,Vendos adresen Direkte dhe kliko Dergo CCR/Dergo CCD sipas rastit
+"Enter the following: Name - Blood Glucose, Description - Fasting Blood Glucose, Sequence - 1, Order From - Local Lab","Vendos sa me poshte: Emri - Glukoza ne Gjak, Pershkrimi - Glukoza ne Gjak ne Agjerim, Sekuenca - 1, Porosite Nga - Laboratori Lokal"
+"Enter the laterality of this procedure, if applicable.","Vendos lateralitetin e kesaj procedure, nese eshte e aplikueshme."
+Enter the Logical Observation Identifiers Names and Codes (LOINC) code for this procedure,Vendos kodin e Emrave dhe Kodeve te Identifikuesve te Vezhgimit Logjik (LOINC) per kete procedure
+"Enter the Logical Observation Identifiers Names and Codes (LOINC) code for this procedure. LOINC is a database and universal standard for identifying medical laboratory observations.",Vendos kodin LOINC per kete procedure. LOINC eshte nje baze te dhenash dhe standard universal per identifikimin e vezhgimeve te laboratorit mjekesor.
+Enter the LOINC code for this procedure,Vendos kodin LOINC per kete procedure
+Enter the OpenEMR login password for the user and click Submit,Vendos fjalekalimin e hyrjes ne OpenEMR per perdoruesin dhe kliko Dergo
+Enter the Re Identification code,Vendos kodin e Ri-Identifikimit
+"Enter the relevant site if applicable.",Vendos faqen perkatese nese eshte e aplikueshme.
+"Enter the Server Address, Username, and Password provided to you","Vendos Adresen e Serverit, Emrin e Perdoruesit dhe Fjalekalimin e dhene per ju"
+Enter the Severity of the allergy,Vendos Ashpersine e alergjise
+Enter the specimen type if applicable.,Vendos llojin e specimens nese eshte e aplikueshme.
+"Enter the values 3.4 - 7.2 - Men, 2.4–6.1 - Women","Vendos vlerat 3.4 - 7.2 - Burra, 2.4–6.1 - Gra"
+Enter their OpenEMR username in the notification user field,Vendos emrin e perdoruesit OpenEMR ne fushen e perdoruesit te njoftimeve
+Enter User Login ID,Vendos ID e Hyrjes se Perdoruesit
+Enter values in this section to create a new group also known as Access Request Object (ARO),Vendos vlera ne kete seksion per te krijuar nje grup te ri i njohur edhe si Objekti i Kerkeses se Aksesit (ARO)
+Enter your credentials,Vendos kredencialet tuaja
+Enter your existing current password used to login.,Vendos fjalekalimin tuaj aktual ekzistues te perdorur per hyrje.
+Enter your password to sign the form,Vendos fjalekalimin tuaj per te nenshkruar formularin
+Enter your search criteria above,Vendos kriteret e kerkimit tuaj me lart
+Enter Your Zip,Vendos Kodin Tuaj Postar
+Entered,Vendosur
+Entered By,Vendosur Nga
+Entered in Error,Vendosur me Gabim
+Entered User Name is unavalable!,Emri i Perdoruesit i vendosur nuk eshte i disponueshem!
+"entries with the oldest dated",regjistrime me daten me te vjeter
+Entry Status,Statusi i Regjistrimit
+Envelope Height in mm,Lartesia e Zarfit ne mm
+Envelope Width in mm,Gjeresia e Zarfit ne mm
+Envelope x-axis starting pt,Pika fillestare e boshtit x te Zarfit
+Envelope y-axis starting pt,Pika fillestare e boshtit y te Zarfit
+Environmental,Mjedisor
+EOB Data Entry,Futja e te Dhenave EOB
+EOB Data Entry (eob),Futja e te Dhenave EOB (eob)
+EOB Id,EOB Id
+EOB Invoice,Fatura EOB
+EOB Posting - Electronic Remittances,Postimi EOB - Dergesa Elektronike
+EOB Posting - Instructions,Postimi EOB - Udhezime
+EOB Posting - Invoice,Postimi EOB - Fature
+EOB Posting - Patient Note,Postimi EOB - Shenim i Pacientit
+EOB Posting - Search,Postimi EOB - Kerko
+EOBs,EOB-te
+Episode,Episodi
+EPSDT,EPSDT
+EPSDT:,EPSDT:
+Equivalent contact lens power at the corneal level,Fuqia ekuivalente e lentes se kontaktit ne nivelin korneal
+ERA,ERA
+ERA Files,Skedaret ERA
+ERA Posting,Postimi ERA
+ERA Upload,Ngarkimi ERA
+Eraser,Fshiresi
+Error confirming receipt of lab results,Gabim ne konfirmimin e marrjes se rezultateve te laboratorit
+Error creating directory!,Gabim ne krijimin e dosjes!
+Error finding diagnosis element. Try again.,Gabim ne gjetjen e elementit te diagnozes. Provo perseri.
+Error Generating Batch File,Gabim ne Gjenerimin e Skedarit Batch
+Error getting lab results from Lab Exchange Network,Gabim ne marrjen e rezultateve te laboratorit nga Rrjeti i Shkembimit te Laboratorit
+"Error in ""Gender"" selection","Gabim ne zgjedhjen e ""Gjinise"""
+"Error in ""HIPAA"" selection","Gabim ne zgjedhjen e ""HIPAA"""
+"Error in ""Process"" selection","Gabim ne zgjedhjen e ""Procesit"""
+"Error in ""SMS Gateway"" selection","Gabim ne zgjedhjen e ""SMS Gateway"""
+"Error in ""Sort By"" selection","Gabim ne zgjedhjen e ""Rendit Sipas"""
+"Error in gzip compression of file: ",Gabim ne kompresimin gzip te skedarit:
+Error in YES or NO option,Gabim ne opsionin PO ose JO
+Error Message,Mesazh Gabimi
+ERROR Missing Patient ID,GABIM Mungon ID e Pacientit
+Error No selected Readers,Gabim Asnje Lexues i zgjedhur
+Error number,Numri i gabimit
+Error opening uploaded file for reading,Gabim ne hapjen e skedarit te ngarkuar per lexim
+Error processing file,Gabim ne perpunimin e skedarit
+Error processing upload,Gabim ne perpunimin e ngarkimit
+Error Removing Message,Gabim ne Heqjen e Mesazhit
+Error retrieving results from Lab Exchange Network,Gabim ne marrjen e rezultateve nga Rrjeti i Shkembimit te Laboratorit
+Error retrieving values.,Gabim ne marrjen e vlerave.
+Error saving document,Gabim ne ruajtjen e dokumentit
+"Error when granting file privilege to the OpenEMR user.",Gabim gjate dhenies se privilegjit te skedarit per perdoruesin OpenEMR.
+Error while adding new plan,Gabim gjate shtimit te planit te ri
+Error while deleting the plan,Gabim gjate fshirjes se planit
+error while registering form!,gabim gjate regjistrimit te formularit!
+Error while saving to the file,Gabim gjate ruajtjes ne skedar
+Error while updating the plan,Gabim gjate perditesimit te planit
+Error while writing to file,Gabim gjate shkrimit ne skedar
+Error! Groups save failed. Check your Group lists.,Gabim! Ruajtja e Grupeve deshtoi. Kontrolloni listat e Grupeve.
+Error! Images state save failed.,Gabim! Ruajtja e gjendjes se Imazheve deshtoi.
+Error! Profiles save failed. Check your Profile lists.,Gabim! Ruajtja e Profileve deshtoi. Kontrolloni listat e Profileve.
+ERROR!... in Update,GABIM!... ne Perditesim
+error(s) encountered from new results,gabim(e) te hasura nga rezultatet e reja
+"Error, Class ZipArchive does not exist","Gabim, Klasa ZipArchive nuk ekziston"
+"Error, Could not create file archive","Gabim, Nuk mund te krijohej arkiva e skedarit"
+"Error, the CA Certificate File doesn't exist","Gabim, Skedari i Certifikates CA nuk ekziston"
+"Error, the CA Key File doesn't exist","Gabim, Skedari i Celesit CA nuk ekziston"
+"Error, the file does not exist","Gabim, skedari nuk ekziston"
+"ERROR, unable to collect data from server","GABIM, nuk mund te mblidhen te dhenat nga serveri"
+"Error, unable to create client certificate.","Gabim, nuk mund te krijohet certifikata e klientit."
+"Error, unable to create the admin.p12 certificate.","Gabim, nuk mund te krijohet certifikata admin.p12."
+"Error, unable to create the Certificate Authority certificate.","Gabim, nuk mund te krijohet certifikata e Autoritetit te Certifikimit."
+"Error, unable to create the Server certificate.","Gabim, nuk mund te krijohet certifikata e Serverit."
+"Error, unable to create zip file with all the certificates","Gabim, nuk mund te krijohet skedari zip me te gjitha certifikatat"
+"Error, unable to open file","Gabim, nuk mund te hapet skedari"
+"Error, User Certificate Authentication is not enabled in OpenEMR","Gabim, Verifikimi i Certifikates se Perdoruesit nuk eshte aktivizuar ne OpenEMR"
+ERROR. Could not open,GABIM. Nuk mund te hapej
+Error. Not authorized,Gabim. Nuk jeni i autorizuar
+Error. Not Authorized.,Gabim. Nuk Jeni i Autorizuar.
+Error. Nothing to do.,Gabim. Asgje per te bere.
+Error. Problem sending one or more templates.,Gabim. Problem ne dergimin e nje ose me shume shablloneve.
+Error. Problem setting one or more profiles.,Gabim. Problem ne vendosjen e nje ose me shume profileve.
+Error. Try again later,Gabim. Provoni perseri me vone
+Error. You need to install the Archive/Tar.php php module.,Gabim. Duhet te instaloni modulin php Archive/Tar.php.
+"ERROR: could not open table.sql, broken form?","GABIM: nuk mund te hapej table.sql, formular i demtuar?"
+Error: Duplicated field ID,Gabim: ID e fushes e dyfishte
+Error: duplicated ID,Gabim: ID e dyfishte
+Error: duplicated ID on line,Gabim: ID e dyfishte ne rreshtin
+Error: duplicated name on line,Gabim: emer i dyfishte ne rreshtin
+ERROR: Missing ZipArchive PHP Module,GABIM: Mungon Moduli PHP ZipArchive
+ERROR: No ICD import directory.,GABIM: Asnje direktori importi ICD.
+Error: passwords don't match. Please check your typing.,Gabim: fjalekalimiet nuk perputhen. Ju lutem kontrolloni shkrimin tuaj.
+Error: passwords don't match. Please check your typing.,Gabim: fjalekalimiet nuk perputhen. Ju lutem kontrolloni shkrimin tuaj.
+"Error: the file does not exist",Gabim: skedari nuk ekziston
+"ERROR: The following variable contains invalid characters",GABIM: Variabli i meposhtem permban karaktere te pavlefshme
+ERROR: Unable to Create Zip Archive.,GABIM: Nuk Mund te Krijohet Arkiva Zip.
+ERROR: Unable to load the file into the database.,GABIM: Nuk mund te ngarkohet skedari ne bazen e te dhenave.
+ERROR: Unable to set the version number.,GABIM: Nuk mund te vendoset numri i versionit.
+eRx,eRx
+eRx Account Status,Statusi i Llogarise eRx
+eRx Logs,Regjistrat eRx
+ERX Name,Emri ERX
+ERX Password,Fjalekalimi ERX
+ERX Role,Roli ERX
+ERX User,Perdoruesi ERX
+Erythema:,Eritema:
+eSign,eSign
+eSign Log,Regjistri eSign
+Eskimo,Eskimez
+Esophoria,Ezofori
+Esotropia,Ezotropi
+Est,Vler
+Established,I vendosur
+Ethnicity-Race List (write,addonly optional) (ethrace),"Lista e Perkatësisë Etnike-Racës (shkruaj,vetem shto opsionale) (ethrace)"
+Ethnoracial,Etnoracial
+ETIN,ETIN
+ETOH,ETOH
+ET{{esotropia}},ET{{esotropia}}
+event,ngjarje
+event date or starting date,data e ngjarjes ose data e fillimit
+Events Scheduled,Ngjarjet e Planifikuara
+Eventually file name becomes a Pending document selection in Portal Documents.,Perfundimisht emri i skedarit behet nje zgjedhje dokumenti ne Pritje ne Dokumentet e Portalit.
+Every 2nd,Cdo te 2-tin
+Every 3rd,Cdo te 3-tin
+Every 4th,Cdo te 4-tin
+Every 5th,Cdo te 5-tin
+Every 6th,Cdo te 6-tin
+"Every name in the address book appears here, not only physicians.","Cdo emer ne librin e adresave shfaqet ketu, jo vetem mjeket."
+Ewe,Ewe
+Exam or Test,Ekzaminim ose Test
+Example authenticator apps include,Shembuj te aplikacioneve te verifikuesit perfshijne
+Example Privacy_Agreement.txt becomes Privacy Agreement button in Patient Documents,Shembull Privacy_Agreement.txt behet butoni Marreveshja e Privatesise ne Dokumentet e Pacientit
+"Examples of Sections are - Medications, Allergies, Vital Signs","Shembuj te Seksioneve jane - Medikamente, Alergji, Shenja Jetesore"
+Exam{{Physical Exam}},Exam{{Physical Exam}}
+Exclude All E-Sign Logs On Report,Perjashtoni te Gjitha Regjistrat E-Sign ne Raport
+Exclude in Portal,Perjashtoni ne Portal
+Excluded Appointments - Tooltip - Number to Display,Takimet e Perjashtuara - Tooltip - Numri per Shfaqje
+Exclusive Provider Organization (EPO),Organizata Ekskluzive e Ofruesve (EPO)
+Executables not allowed,Ekzekutuesit nuk lejohen
+existing claim status is not altered.,statusi i kerkeses ekzistuese nuk ndryshohet.
+Existing Forms,Formularët Ekzistues
+Exit,Dil
+Exit Mail,Dil nga Posta
+Exophoria,Ekzofori
+Exotropia,Ekzotropi
+Exp,Skadon
+Exp Date,Data e Skadimit
+Expand,Zgjero
+expand,zgjero
+Expand / Collapse,Zgjero / Tkurr
+Expand All,Zgjero te Gjitha
+Expand All Document Categories,Zgjero te Gjitha Kategorite e Dokumenteve
+Expand All Document Categories by Default,Zgjero te Gjitha Kategorite e Dokumenteve si Parazgjedhje
+Expand Form,Zgjero Formularin
+Expand/Collapse this form,Zgjero/Tkurr kete formular
+Expanded View,Pamja e Zgjeruar
+Expected form_encounter.pid to be ,Pritej form_encounter.pid te ishte
+Expired,Skaduar
+Expiry,Skadim
+Export Billing,Eksporto Faturimin
+Export File,Eksporto Skedarin
+Export OFX,Eksporto OFX
+Export Patient Demographics XML,Eksporto XML e Demografise se Pacientit
+Export PQRI Report,Eksporto Raportin PQRI
+Export process timed out,Procesi i eksportimit ka skaduar
+Export QRDA Report,Eksporto Raportin QRDA
+Export to external billing system,Eksporto ne sistemin e jashtem te faturimit
+Export Zero Balances,Eksporto Bilancet Zero
+Ext,Ext
+Ext Time Collected,Koha e Jashme e Mbledhjes
+Extended family,Familja e zgjeruar
+External Data - any external data linked to either encounters or procedures,Te Dhena te Jashtme - cdo e dhene e jashtme e lidhur me vizita ose procedura
+External Database Import Utility,Vegla e Importimit te Bazes se te Dhenave te Jashtme
+External Draw Panel,Paneli i Vizatimit te Jashtem
+External Exam,Ekzaminimi i Jashtem
+External Exam Default Values,Vlerat e Paracaktuara te Ekzaminimit te Jashtem
+External identifier,Identifikuesi i jashtem
+External Lab,Laboratori i Jashtem
+External Procedure,Procedura e Jashtme
+External Provider,Ofruesi i Jashtem
+External Referral Followups,Ndjekjet e Referimeve te Jashtme
+External URL,URL e Jashtme
+Extract the zip file,Ekstrako skedarin zip
+Extracting the file. This will take some time...,Duke ekstraktuar skedarin. Kjo do te marre pak kohe...
+Extremely difficult,Jashtezakonisht e veshtire
+Exudate:,Eksudat:
+Eye,Syri
+Eye Coding Fields,Fushat e Kodimit te Syrit
+Eye Coding Terms,Termat e Kodimit te Syrit
+Eye Contact Lens Brand list,Lista e Markave te Lenteve te Kontaktit te Syrit
+Eye Contact Lens Manufacturer list,Lista e Prodhuesve te Lenteve te Kontaktit te Syrit
+Eye Contact Lens Supplier list,Lista e Furnizuesve te Lenteve te Kontaktit te Syrit
+Eye Dx{{eye diagnosis}},Eye Dx{{eye diagnosis}}
+Eye Exam,Ekzaminimi i Syrit
+Eye Exam Default Values for New Providers,Vlerat e Paracaktuara te Ekzaminimit te Syrit per Ofruesit e Rinj
+Eye Lens Material,Materiali i Lentes se Syrit
+Eye Lens Treatments,Trajtimet e Lenles se Syrit
+Eye Med,Ilaqi i Syrit
+Eye Meds,Ilaqet e Syrit
+Eye Orders Defaults,Parazgjedhjet e Porosive te Syrit
+Eye QP List ANTSEG for New Providers,Lista Eye QP ANTSEG per Ofruesit e Rinj
+Eye QP List EXT for New Providers,Lista Eye QP EXT per Ofruesit e Rinj
+Eye QP List RETINA for New Providers,Lista Eye QP RETINA per Ofruesit e Rinj
+Eye Surgery,Kirurgjia e Syrit
+Eyedropper,Pikatore
+E{{esophoria}},E{{esophoria}}
+F,F
+F/H Blood Problems,H/F Probleme te Gjakut
+F/H Female Hirsutism/Striae,H/F Hirsutizmi/Striat Femra
+Facility and warehouse permissions,Lejet e institucionit dhe magazines
+Facility Color Schema,Skema e Ngjyrave te Institucionit
+Facility Details,Detajet e Institucionit
+Facility ID,ID e Institucionit
+Facility ID is missing,ID e Institucionit mungon
+Facility ID's,ID-te e Institucionit
+Facility NPI,NPI i Institucionit
+Facility permissions,Lejet e Institucionit
+"Facility reflects the facility in which the visit occurred",Institucioni pasqyron institucionin ku ndodhi vizita
+Facility Specific User Information,Informacioni i Perdoruesit Specifik per Institucionin
+Facility Taxonomy,Taksonomia e Institucionit
+Facility Zip,Kodi Postar i Institucionit
+Facility Zip Code,Kodi Postar i Institucionit
+Failed - already has group with the same name,Deshtoi - ka tashme nje grup me te njejtin emer
+Failed Registration,Regjistrimi Deshtoi
+Failed since file already exists,Deshtoi pasi skedari ekziston tashme
+Failed to add patient to portal,Deshtoi shtimi i pacientit ne portal
+Failed to create folder,Deshtoi krijimi i dosjes
+Failed to create new group,Deshtoi krijimi i grupit te ri
+Failed to create temporary folder. CouchDB will not work.,Deshtoi krijimi i dosjes se perkohshme. CouchDB nuk do te funksionoje.
+Failed to generate,Deshtoi gjenerimi
+Failed to get URL:,Deshtoi marrja e URL:
+Failed to unregister module.,Deshtoi c'regjistrimi i modulit.
+Failed UTF8 encoding check! Could not automatically fix.,Deshtoi kontrolli i kodimit UTF8! Nuk mund te rregullohej automatikisht.
+failure,deshtim
+Failure,Deshtim
+"FAILURE NOTICE: Direct Message Send Failed.",NJOFTIM DESHTIMI: Dergimi i Mesazhit Direkt Deshtoi.
+"FAILURE: Couldn't create the zip",DESHTIM: Nuk mund te krijohej zip-i
