@@ -1,0 +1,301 @@
+constant_name,definition
+The messaging center will open with the Messages tab activated and will display the logged in user's messages as indicated by the caption My Messages,"Qendra e mesazheve do të hapet me skedën Mesazhet të aktivizuar dhe do të shfaqë mesazhet e përdoruesit të identifikuar siç tregohet nga titulli Mesazhet e Mia"
+The minimum information required to create a new encounter is to select a visit category,"Informacioni minimal i nevojshëm për të krijuar një vizitë të re është të zgjidhni një kategori vizite"
+The miscellaneous billing options for HCFA-1500 form is used to provide additional information for an individual claim,"Opsionet e ndryshme të faturimit për formularin HCFA-1500 përdoren për të ofruar informacion shtesë për një kërkesë individuale"
+The most common method is called 2-Factor Authorization or 2FA,"Metoda më e zakonshme quhet Autorizim me 2 Faktorë ose 2FA"
+"The most important issue that needs to be addressed is who you are trying to connect to and what needs to happen at their end. Most major labs will not deal with individuals practices, in such cases a third party vendor will act an an intermediary who will be responsible for setting up a connection between the practice and the lab through their (the intermediary's) interface","Çështja më e rëndësishme që duhet adresuar është me kë po përpiqeni të lidheni dhe çfarë duhet të ndodhë në anën e tyre. Shumica e laboratorëve të mëdhenj nuk do të merren me praktika individuale, në raste të tilla një furnizues i palës së tretë do të veprojë si ndërmjetës i cili do të jetë përgjegjës për vendosjen e një lidhjeje midis praktikës dhe laboratorit përmes ndërfaqes së tyre (ndërmjetësit)"
+"The most popular maker of Security Keys is Yubico it offers regular USB versions as well as those made for devices that require USB-C connections, such as Apple's newer Mac OS systems","Prodhuesi më i njohur i Çelësave të Sigurisë është Yubico i cili ofron versione të rregullta USB si dhe ato të bëra për pajisje që kërkojnë lidhje USB-C, si sistemet më të reja Mac OS të Apple"
+The most popular open-source Electronic Health Record and Medical Practice Management solution.,Zgjidhja më e njohur me burim të hapur për Regjistrin Elektronik Shëndetësor dhe Menaxhimin e Praktikës Mjekësore.
+"The Name cell contains the name, date of birth, patient ID and date of last visit","Qeliza Emri përmban emrin, datën e lindjes, ID-në e pacientit dhe datën e vizitës së fundit"
+The Narrative Block contains information that is rendered as readable text,Blloku Narrativ përmban informacion që shfaqet si tekst i lexueshëm
+The National Uniform Claim Committee (NUCC) is responsible for the maintenance of the 1500 Claim Form,Komiteti Kombëtar i Unifikuar i Kërkesave (NUCC) është përgjegjës për mirëmbajtjen e Formularit të Kërkesës 1500
+The Nav Bar allows one to quickly navigate to various parts of the patient's medical record,Shiriti i Navigimit ju lejon të navigoni shpejt në pjesë të ndryshme të regjistrit mjekësor të pacientit
+The new category will be a sub-category of ,Kategoria e re do të jetë një nën-kategori e
+The new list,Lista e re
+The new password can not be the same as the current password.,Fjalëkalimi i ri nuk mund të jetë i njëjtë me fjalëkalimin aktual.
+The new password fields are not the same.,Fushat e fjalëkalimit të ri nuk janë të njëjta.
+The new password is the same as the current password. Click Okay to accept anyway.,Fjalëkalimi i ri është i njëjtë me fjalëkalimin aktual. Klikoni Në rregull për ta pranuar gjithsesi.
+"The NewCrop eRx Partner Name, NewCrop eRx Name and NewCrop eRx Password will be provided by the vendor","Emri i Partnerit NewCrop eRx, Emri NewCrop eRx dhe Fjalëkalimi NewCrop eRx do të ofrohen nga furnizuesi"
+"The next box is Body Site, not relevant for a blood test but may be more useful in say tracking injections or ordering X-rays","Kutia tjetër është Vendi i Trupit, jo relevant për një analizë gjaku por mund të jetë më e dobishme për gjurmimin e injeksioneve ose porositjen e radiografive"
+"The next few lines will list all the E/M and CPT codes that were billed, one line per code","Rreshtat e ardhshëm do të listojnë të gjitha kodet E/M dhe CPT që u faturuan, një rresht për kod"
+The next group consists of the ICD codes,Grupi tjetër përbëhet nga kodet ICD
+The next three cells are the action cells that let you perform some recall activity,Tre qelizat e ardhshme janë qelizat e veprimit që ju lejojnë të kryeni disa aktivitete rikujtimi
+The next two boxes denoting the Identifying Code and Standard Code are very important,Dy kutitë e ardhshme që tregojnë Kodin Identifikues dhe Kodin Standard janë shumë të rëndësishme
+The Notes cell lets you add a note to an action that you take in the 3 action cells or just a note without any association to the action,Qeliza Shënime ju lejon të shtoni një shënim për një veprim që ndërmerrni në 3 qelizat e veprimit ose thjesht një shënim pa asnjë lidhje me veprimin
+The Number of Future Appointments to Display on the Statement.,Numri i Takimeve të Ardhshme për t'u Shfaqur në Pasqyrë.
+"The number of staged files is incorrect. Only place the file that you wish to install/upgrade to.","Numri i skedarëve të përgatitur është i pasaktë. Vendosni vetëm skedarin që dëshironi të instaloni/përditësoni."
+"The number of staged files is incorrect. Only place the files that you wish to install/upgrade to.","Numri i skedarëve të përgatitur është i pasaktë. Vendosni vetëm skedarët që dëshironi të instaloni/përditësoni."
+The Office: Phone cell lets you indicate a phone call was made,Qeliza Zyra: Telefoni ju lejon të tregoni se është bërë një telefonatë
+"The option Span Entire Row is useful when using Static Text in allowing text to wrap and span entire row regardless of column settings. Another use could be to create an empty row as spacer or add additional option Add Bottom Border to create a line break.Only Bottom Border Row is useful here.","Opsioni Shtrije Rreshtin e Plotë është i dobishëm kur përdorni Tekst Statik për të lejuar tekstin të mbështillet dhe të shtrihet në të gjithë rreshtin pavarësisht cilësimeve të kolonës. Një përdorim tjetër mund të jetë krijimi i një rreshti bosh si hapësirë ose shtimi i opsionit Shto Kufi Poshtë për të krijuar një ndërprerje rreshti. Vetëm Rreshti me Kufi Poshtë është i dobishëm këtu."
+The options for Outline and Border will either wrap a row in thin border or add a border to the bottom of an item.,Opsionet për Kontur dhe Kufi do të mbështjellin një rresht me kufi të hollë ose do të shtojnë një kufi në fund të një elementi.
+"The order in which the Category, Procedure or Result appears","Radhitja në të cilën shfaqet Kategoria, Procedura ose Rezultati"
+"The other 4 transaction types are simple transaction types - Patient Request, Physician Request, Legal and Billing","4 llojet e tjera të transaksioneve janë lloje të thjeshta transaksionesh - Kërkesa e Pacientit, Kërkesa e Mjekut, Ligjore dhe Faturimi"
+The other Segments contain additional information in a strictly structured fashion,Segmentet e tjera përmbajnë informacion shtesë në një format rreptësisht të strukturuar
+"The page will be redirected to Demographics. You can edit the country field and clickthrough to NewCrop again.","Faqja do të ridrejtohet te Demografitë. Mund të ndryshoni fushën e vendit dhe të klikoni përsëri te NewCrop."
+The page you requested was not found. Please check that you typed the URL correctly.,Faqja që kërkuat nuk u gjet. Ju lutem kontrolloni nëse e keni shkruar URL-në saktë.
+"The parts of the program to which access can be controlled are called Access Control Objects (ACOs). ","Pjesët e programit ku aksesi mund të kontrollohet quhen Objekte të Kontrollit të Aksesit (ACOs). "
+"The password must be at least eight characters, and should","Fjalëkalimi duhet të ketë të paktën tetë karaktere, dhe duhet"
+The password you entered is invalid,Fjalëkalimi që futët është i pavlefshëm
+The Past Ocular History (POH) and Past Medical History (PMH) are negative.,Historia e Kaluar Okulare (POH) dhe Historia e Kaluar Mjekësore (PMH) janë negative.
+The patient already registered to the group,Pacienti është regjistruar tashmë në grup
+The patient record request has been recorded.,Kërkesa për regjistrin e pacientit është regjistruar.
+The patient reminders have been sent,Kujtuesit e pacientit janë dërguar
+The patient reminders have been updated,Kujtuesit e pacientit janë përditësuar
+The patient was not logged in when submitting this form,Pacienti nuk ishte i identifikuar kur dorëzoi këtë formular
+The patient will have to change their credentials at the first login,Pacienti do të duhet të ndryshojë kredencialet e tij në identifikimin e parë
+The Patients Rights,Të Drejtat e Pacientëve
+"The Payment, Adjustment and Balance will be blank as these lines reflect only the charges being made","Pagesa, Rregullimi dhe Bilanci do të jenë bosh pasi këto rreshta pasqyrojnë vetëm tarifat e bëra"
+The payments posted cannot go below this date.This ensures that after taking the final report nobody post for previous dates.,Pagesat e regjistruara nuk mund të shkojnë nën këtë datë. Kjo siguron që pas marrjes së raportit përfundimtar askush nuk regjistron për data të mëparshme.
+The pop-up form heading will now read Enter Details for Individual Custom Favorite Item,Titulli i formularit pop-up tani do të lexohet Vendosni Detajet për Elementin Individual të Preferuar të Personalizuar
+The portal has data for this patient and form. Load it now?,Portali ka të dhëna për këtë pacient dhe formular. Të ngarkohen tani?
+The previous message can however be viewed by clicking on the View Log button,Mesazhi i mëparshëm megjithatë mund të shikohet duke klikuar butonin Shiko Regjistrin
+The Procedure Order page lists the following procedure types,Faqja e Porosisë së Procedurës liston llojet e mëposhtme të procedurave
+The procedure request needs to be structured in a hierarchical manner and a unique identifying code assigned to it that will then be used to track and tabulate the result,Kërkesa e procedurës duhet të strukturohet në mënyrë hierarkike dhe t'i caktohet një kod unik identifikues që do të përdoret për të gjurmuar dhe tabeluar rezultatin
+The Procedures module is used to place and review orders,Moduli i Procedurave përdoret për të vendosur dhe rishikuar porositë
+The process for forwarding the message is quite similar to that of creating a new message,Procesi i përcjelljes së mesazhit është mjaft i ngjashëm me atë të krijimit të një mesazhi të ri
+The Progress cell lists all the actions along with any associated notes if any,Qeliza Progresi liston të gjitha veprimet së bashku me çdo shënim të lidhur nëse ka
+The providers office has been notified. Thank you.,Zyra e ofruesit është njoftuar. Faleminderit.
+"The public access key for secure tokenize of credit or debit card authorization. PCI compliance","Çelësi publik i aksesit për tokenizimin e sigurt të autorizimit të kartës së kreditit ose debitit. Përputhshmëri PCI"
+The QR code also contains the user name and needs to be captured by the user on to their mobile device using an authenticator app,Kodi QR gjithashtu përmban emrin e përdoruesit dhe duhet të kapet nga përdoruesi në pajisjen e tij celulare duke përdorur një aplikacion vërtetimi
+The raw data feed release can be obtained from,Publikimi i furnizimit të të dhënave të papërpunuara mund të merret nga
+"The Recall cell has the date of recall and the reason for recall","Qeliza Rikujtimi ka datën e rikujtimit dhe arsyen e rikujtimit"
+The Recalls tab has two buttons New Recall and Recall Board,Skeda Rikujtimet ka dy butona Rikujtim i Ri dhe Tabela e Rikujtimeve
+The Recommendation Tier is optional,Niveli i Rekomandimit është opsional
+"The remaining information below applies only if you are posting manually, or if you are doing manual corrections.","Informacioni i mbetur më poshtë zbatohet vetëm nëse po regjistroni manualisht, ose nëse po bëni korrigjime manuale."
+The reminder for the current day will have an orange exclamation icon,Kujtuesja e ditës aktuale do të ketë një ikonë pikëçuditëse portokalli
+The reminders that are past the due date will have a red exclamation triangle icon,Kujtuesit që kanë kaluar datën e duhur do të kenë një ikonë trekëndëshi të kuq me pikëçuditëse
+The requested document is not present at the expected location on the filesystem or there are not sufficient permissions to access it,Dokumenti i kërkuar nuk ndodhet në vendndodhjen e pritur në sistemin e skedarëve ose nuk ka leje të mjaftueshme për ta aksesuar
+The requested document is not present at the expected location on the filesystem or there are not sufficient permissions to access it.,Dokumenti i kërkuar nuk ndodhet në vendndodhjen e pritur në sistemin e skedarëve ose nuk ka leje të mjaftueshme për ta aksesuar.
+The rest may be left blank if so preferred,Pjesa tjetër mund të lihet bosh nëse preferohet
+The rest of the boxes related to the NewCrop eRx service can be left at default values,Kutitë e tjera që lidhen me shërbimin NewCrop eRx mund të lihen në vlerat e paracaktuara
+"The Result Line will begin with a Name Serum Uric Acid that will be preceded by a vertical bar indicating no successors or children","Rreshti i Rezultatit do të fillojë me një Emër Acid Urik në Serum që do të paraprihet nga një shirit vertikal që tregon se nuk ka pasardhës ose fëmijë"
+The results could not be loaded,Rezultatet nuk mundën të ngarkoheshin
+"The results, Discrete Result, will be the fruit on this branch and we will create one such Discrete Result for each of the component tests, Sodium, Potassium, Chloride and Carbon Dioxide","Rezultatet, Rezultati Diskret, do të jenë fruti i kësaj dege dhe do të krijojmë një Rezultat Diskret të tillë për secilin nga testet përbërëse, Natrium, Kalium, Klorur dhe Dioksid Karboni"
+The rows containing the CPT4 codes has several boxes that need to be filled to ensure proper billing of claims,Rreshtat që përmbajnë kodet CPT4 kanë disa kuti që duhet të plotësohen për të siguruar faturimin e duhur të kërkesave
+The saved Medical Problem will now be listed as a single line in the main Issues page under Medical Problems,Problemi Mjekësor i ruajtur tani do të listohet si një rresht i vetëm në faqjen kryesore të Çështjeve nën Problemet Mjekësore
+"The Scope toolbar is global to the entire view. It consists of Location, Category and action buttons.","Shiriti i mjeteve Scope është global për të gjithë pamjen. Ai përbëhet nga Vendndodhja, Kategoria dhe butonat e veprimit."
+The screen refresh time in Seconds for the Patient Flow Board Screen.,Koha e rifreskimit të ekranit në Sekonda për Ekranin e Tabelës së Rrjedhës së Pacientëve.
+"The search field cannot be empty. Please enter a search term","Fusha e kërkimit nuk mund të jetë bosh. Ju lutem vendosni një term kërkimi"
+The Search results are displayed in the section 'Search Results'.,Rezultatet e Kërkimit shfaqen në seksionin 'Rezultatet e Kërkimit'.
+"The second (""source"") chart will have its demographics, history and insurance sections discarded.  Its other data will be merged into the target chart.","Grafiku i dytë (""burimi"") do të ketë seksionet e demografisë, historisë dhe sigurimeve të hedhura poshtë. Të dhënat e tjera do të bashkohen në grafikun e synuar."
+The second column contains the options that will be displayed when the button is clicked,Kolona e dytë përmban opsionet që do të shfaqen kur klikohet butoni
+"The second column is Category and should say Top Group to indicate its position as the top item in this particular hierarchical tree that we will be constructing","Kolona e dytë është Kategoria dhe duhet të thotë Grupi Kryesor për të treguar pozicionin e tij si elementi kryesor në këtë pemë hierarkike të veçantë që do të ndërtojmë"
+The second section lets you choose to whom you wish to send the message,Seksioni i dytë ju lejon të zgjidhni kujt dëshironi t'i dërgoni mesazhin
+"The second tab, is somewhat ambiguously named as Counter-Referral, is the place to document the received reply to the referral being made","Skeda e dytë, e emërtuar disi në mënyrë të paqartë si Kundër-Referim, është vendi për të dokumentuar përgjigjen e marrë ndaj referimit të bërë"
+"The section labeled 'Invoice Search' is where you put in your search parameters. You can search by patient name, chart number, encounter number or date of service, or any combination of these. You may also select whether you want to see all invoices, open invoices, or only invoices that are due (by the patient). Click the 'Search' button to perform the search.","Seksioni i etiketuar 'Kërkimi i Faturës' është vendi ku vendosni parametrat e kërkimit. Mund të kërkoni sipas emrit të pacientit, numrit të grafikut, numrit të vizitës ose datës së shërbimit, ose çdo kombinim i tyre. Gjithashtu mund të zgjidhni nëse doni të shihni të gjitha faturat, faturat e hapura, ose vetëm faturat e papaguara (nga pacienti). Klikoni butonin 'Kërko' për të kryer kërkimin."
+The selected code will be added to the coding text-box and the Description on the code will be added to the Title text-box,Kodi i zgjedhur do të shtohet në kutinë e tekstit të kodimit dhe Përshkrimi i kodit do të shtohet në kutinë e tekstit të Titullit
+The selected codes will then appear in the 'Selected Fee Sheet Codes and Charges for Current Encounter' section,Kodet e zgjedhura do të shfaqen në seksionin 'Kodet dhe Tarifat e Zgjedhura të Fletës së Tarifave për Vizitën Aktuale'
+The selections in this section will be used in charging for this encounter,Zgjedhjet në këtë seksion do të përdoren për tarifimin e kësaj vizite
+"The sequence is the order in which this top order item will be displayed on the page, 1 to denote the first top level group","Sekuenca është radhitja në të cilën ky element i nivelit të lartë do të shfaqet në faqe, 1 për të treguar grupin e parë të nivelit të lartë"
+The server address will be of the form ,Adresa e serverit do të jetë në formën
+"The setup for lab tests will be described in detail, minor modification to these steps will be needed to setup in-office procedures and other procedure types","Konfigurimi për testet laboratorike do të përshkruhet në detaje, do të nevojiten ndryshime të vogla në këto hapa për të konfiguruar procedurat në zyrë dhe lloje të tjera procedurash"
+"The somewhat ambiguously named Counter-Referral is the space where the reply to the referral being made can be documented","Kundër-Referimi i emërtuar disi në mënyrë të paqartë është hapësira ku përgjigja ndaj referimit të bërë mund të dokumentohet"
+"The Source and Date columns are copied from the first page, so normally you will not need to touch those.  You can put a payment amount in the Pay column, an adjustment amount in the Adjust column, or both.  You can also click the ""W"" on the right to automatically compute an adjustment value that writes off the remainder of the charge for that line item.","Kolonat Burimi dhe Data janë kopjuar nga faqja e parë, kështu që normalisht nuk do të keni nevojë t'i prekni. Mund të vendosni një shumë pagese në kolonën Pagesë, një shumë rregullimi në kolonën Rregullim, ose të dyja. Gjithashtu mund të klikoni ""W"" në të djathtë për të llogaritur automatikisht një vlerë rregullimi që fshin mbetjen e tarifës për atë zë."
+"The Source and Date columns are copied from the first page, so normally you will not need to touch those. You can put a payment amount in the Pay column, an adjustment amount in the Adjust column, or both. You can also click the 'W' on the right to automatically compute an adjustment value that writes off the remainder of the charge for that line item.","Kolonat Burimi dhe Data janë kopjuar nga faqja e parë, kështu që normalisht nuk do të keni nevojë t'i prekni. Mund të vendosni një shumë pagese në kolonën Pagesë, një shumë rregullimi në kolonën Rregullim, ose të dyja. Gjithashtu mund të klikoni 'W' në të djathtë për të llogaritur automatikisht një vlerë rregullimi që fshin mbetjen e tarifës për atë zë."
+"The Specimen Type will be Blood, this drop-down list can also be edited as needed","Lloji i Mostrës do të jetë Gjak, kjo listë rënëse gjithashtu mund të ndryshohet sipas nevojës"
+The staged files release dates are not all from the same release.,Datat e publikimit të skedarëve të përgatitur nuk janë të gjitha nga i njëjti publikim.
+The staged files revisions are not all from the same release.,Revizionet e skedarëve të përgatitur nuk janë të gjitha nga i njëjti publikim.
+The staged US Extension SNOMED package can not be installed until after the International SNOMED package has been installed.,Paketa e përgatitur e Zgjerimit Amerikan SNOMED nuk mund të instalohet derisa të jetë instaluar paketa Ndërkombëtare SNOMED.
+The Standard Code is optional if using a local i.e. practice based lab but recommended when using an external lab,Kodi Standard është opsional nëse përdorni një laborator lokal p.sh. bazuar në praktikë por rekomandohet kur përdorni një laborator të jashtëm
+"The Standard Code will be the LOINC code if sending to an external lab or can be any unique number. We will enter the LOINC code for Fasting Glucose 1558-6","Kodi Standard do të jetë kodi LOINC nëse dërgohet në një laborator të jashtëm ose mund të jetë çdo numër unik. Do të vendosim kodin LOINC për Glukozën Agjëruese 1558-6"
+the status of three chronic/inactive problems,statusi i tre problemeve kronike/joaktive
+"The subsequent lines will indicate the details of the payments received, adjustments made and the balance due","Rreshtat pasues do të tregojnë detajet e pagesave të marra, rregullimet e bëra dhe bilancin e mbetur"
+The suffix of the account.,Prapashtesa e llogarisë.
+The system does not permit uploading files of with size 0.,Sistemi nuk lejon ngarkimin e skedarëve me madhësi 0.
+The system does not permit uploading files with MIME content type,Sistemi nuk lejon ngarkimin e skedarëve me lloj përmbajtjeje MIME
+"The system is also designed to parse incoming HL7 messages and place the results in the appropriate patient chart, failing which it will give you an opportunity to manually link it to a patient chart","Sistemi është gjithashtu i projektuar për të analizuar mesazhet hyrëse HL7 dhe për të vendosur rezultatet në grafikun e duhur të pacientit, në të kundërt do t'ju japë mundësinë për ta lidhur manualisht me një grafik pacienti"
+The system is designed to both place orders electronically and receive the results electronically,Sistemi është projektuar si për të vendosur porosi elektronikisht ashtu edhe për të marrë rezultatet elektronikisht
+The third column will contain the CPT code,Kolona e tretë do të përmbajë kodin CPT
+"The Tier column value will be 1 indicating it is a top level item","Vlera e kolonës Nivel do të jetë 1 duke treguar se është një element i nivelit të lartë"
+"The Tier column value will be 3, indicating this is a successor or child to the first line above it having a value of 2","Vlera e kolonës Nivel do të jetë 3, duke treguar se ky është pasardhës ose fëmijë i rreshtit të parë mbi të me vlerë 2"
+"The Tier Column will be 2, indicating this is a successor or child to the first line above it having a value of 1","Kolona Nivel do të jetë 2, duke treguar se ky është pasardhës ose fëmijë i rreshtit të parë mbi të me vlerë 1"
+The Tier Column would be 1 indicating it is the Top Group,Kolona Nivel do të jetë 1 duke treguar se është Grupi Kryesor
+The time granularity of the calendar and the smallest interval in minutes for an appointment slot.,Granulariteti kohor i kalendarit dhe intervali më i vogël në minuta për një slot takimi.
+The Title will be the name of the new group (ARO) that you are going to create.,Titulli do të jetë emri i grupit të ri (ARO) që do të krijoni.
+The top group consists of charges for the encounter - one row per charge,Grupi kryesor përbëhet nga tarifat e vizitës - një rresht për tarifë
+The top portion of the Recall Board allows the setting of filters to display specified data,Pjesa e sipërme e Tabelës së Rikujtimeve lejon vendosjen e filtrave për të shfaqur të dhëna të specifikuara
+The traditional mechanism of using a login and password is no longer considered to be sufficient to prevent an unauthorized user from gaining access to the application,Mekanizmi tradicional i përdorimit të identifikimit dhe fjalëkalimit nuk konsiderohet më i mjaftueshëm për të parandaluar një përdorues të paautorizuar nga aksesimi i aplikacionit
+The Transaction ID for the credit was,ID e Transaksionit për kreditin ishte
+The transaction_id for the void was,transaction_id për anulimin ishte
+The translated label that will appear on the form in current language,Etiketa e përkthyer që do të shfaqet në formular në gjuhën aktuale
+The translated Title that will appear in current language,Titulli i përkthyer që do të shfaqet në gjuhën aktuale
+The translation of description in current language,Përkthimi i përshkrimit në gjuhën aktuale
+The translation tables are synchronized.,Tabelat e përkthimit janë sinkronizuar.
+The type of this entity,Lloji i kësaj njësie
+The Type will be blank,Lloji do të jetë bosh
+The Type will Insurance or Patient,Lloji do të jetë Sigurim ose Pacient
+The Type would be Allergy,Lloji do të jetë Alergjia
+The Type would be Dental Issues,Lloji do të jetë Çështjet Dentare
+The Type would be Medication,Lloji do të jetë Medikamenti
+The Type would be Problem indicating a medical problem,Lloji do të jetë Problem duke treguar një problem mjekësor
+The Type would be Surgery,Lloji do të jetë Kirurgjia
+"The UB-04 (CMS 1450) is a claim form used by hospitals, nursing facilities, in-patient, and other facility providers","UB-04 (CMS 1450) është një formular kërkese i përdorur nga spitalet, objektet e infermierisë, pacientët e shtruar, dhe ofruesit e tjerë të objekteve"
+The Unit column would be blank,Kolona Njësia do të jetë bosh
+The Units will be 1 as each code is billed only once for the encounter,Njësitë do të jenë 1 pasi çdo kod faturohet vetëm një herë për vizitën
+The upcoming reminders have a green exclamation icon,Kujtuesit e ardhshëm kanë një ikonë pikëçuditëse të gjelbër
+"The USB devices communicate with the host computer using the human interface device (HID) protocol, essentially mimicking a keyboard","Pajisjet USB komunikojnë me kompjuterin pritës duke përdorur protokollin e pajisjes së ndërfaqes njerëzore (HID), në thelb duke imituar një tastierë"
+The USB key needs to be plugged in to the computer and then registered with OpenEMR,Çelësi USB duhet të futet në kompjuter dhe pastaj të regjistrohet me OpenEMR
+"The USB key takes this the nonce supplied by the application after confirming the checksum and generates a private key using the process similar to that used in the registration process","Çelësi USB merr këtë nonce të furnizuar nga aplikacioni pas konfirmimit të checksumit dhe gjeneron një çelës privat duke përdorur procesin e ngjashëm me atë të përdorur në procesin e regjistrimit"
+"The user's actual privileges are determined by the access to the parts of the program i.e. (ACO) that each group (ARO) has.","Privilegjet aktuale të përdoruesit përcaktohen nga aksesi në pjesët e programit p.sh. (ACO) që ka çdo grup (ARO)."
+The Username fields are not the same.,Fushat e Emrit të Përdoruesit nuk janë të njëjta.
+The Username is your Direct Address,Emri i Përdoruesit është Adresa juaj Direkte
+The values in the drop-down box can be edited by following the steps outlined in the Procedures > Providers help file,Vlerat në kutinë rënëse mund të ndryshohen duke ndjekur hapat e përshkruara në skedarin e ndihmës Procedurat > Ofruesit
+The values listed here will show up in the drop-down boxes that will be used to process orders,Vlerat e listuara këtu do të shfaqen në kutitë rënëse që do të përdoren për të përpunuar porositë
+The vendor-specific code identifying this procedure or result,Kodi specifik i furnizuesit që identifikon këtë procedurë ose rezultat
+"The vendor-specific code identifying this procedure or result. If no vendor enter any arbitrary unique number, preferably a 5 digit zero-padded e.g. 00211","Kodi specifik i furnizuesit që identifikon këtë procedurë ose rezultat. Nëse nuk ka furnizues vendosni çdo numër unik arbitrar, mundësisht me 5 shifra me zero përpara p.sh. 00211"
+"The very first step would be install the ICD codes. Go to Administraion > Other > External Data Loads. Select the Code sets you want to install and click Install","Hapi i parë do të jetë instalimi i kodeve ICD. Shkoni te Administrimi > Tjetër > Ngarkimet e të Dhënave të Jashtme. Zgjidhni grupet e Kodeve që doni të instaloni dhe klikoni Instalo"
+"The very last line of this report will give the Grand Total of Charges, Payments, Adjustments and the Balance","Rreshti i fundit i këtij raporti do të japë Totalin e Përgjithshëm të Tarifave, Pagesave, Rregullimeve dhe Bilancit"
+The Weno Exchange is well integrated with openEMR and is not subscription based,Weno Exchange është i integruar mirë me openEMR dhe nuk është me abonim
+"The X12 files as well as the resulting HTML output reports are archived in the ""era"" subdirectory of the main OpenEMR installation directory.  You will want to refer to these archives from time to time.  The URL is ","Skedarët X12 si dhe raportet dalëse HTML rezultuese janë arkivuar në nën-direktorinë ""era"" të direktorisë kryesore të instalimit OpenEMR. Do të dëshironi t'i referoheni këtyre arkivave herë pas here. URL-ja është "
+The X12 files as well as the resulting HTML output reports are archived in the 'era' subdirectory of the main OpenEMR installation directory. You will want to refer to these archives from time to time.,Skedarët X12 si dhe raportet dalëse HTML rezultuese janë arkivuar në nën-direktorinë 'era' të direktorisë kryesore të instalimit OpenEMR. Do të dëshironi t'i referoheni këtyre arkivave herë pas here.
+The zip file will contain the following items,Skedari zip do të përmbajë elementet e mëposhtme
+Theme of the tabs layout (need to logout and then login to see this new setting).,Tema e paraqitjes së skedave (duhet të dilni dhe pastaj të identifikoheni për të parë këtë cilësim të ri).
+Theme of the tabs layout (need to logout and then login to see this new setting). Note this is only applicable if use the Light or Manila general theme below.,Tema e paraqitjes së skedave (duhet të dilni dhe pastaj të identifikoheni për të parë këtë cilësim të ri). Vini re se kjo zbatohet vetëm nëse përdorni temën e përgjithshme Light ose Manila më poshtë.
+Then pass it's name as a value to the element,Pastaj kaloni emrin e tij si vlerë te elementi
+Then press the flashing button on your key within 1 minute to complete registration,Pastaj shtypni butonin që pulson në çelësin tuaj brenda 1 minute për të përfunduar regjistrimin
+Then press the flashing button on your key within 1 minute.,Pastaj shtypni butonin që pulson në çelësin tuaj brenda 1 minute.
+Then the raw data feed release can be obtained from,Pastaj publikimi i furnizimit të të dhënave të papërpunuara mund të merret nga
+Therapy,Terapi
+Therapy group,Grup terapie
+Therapy Group,Grup Terapie
+Therapy Group Encounter,Vizita e Grupit të Terapisë
+Therapy Group Finder,Kërkuesi i Grupit të Terapisë
+There are 10 settings that are related to procedures included in the standard release of openEMR,Ka 10 cilësime që lidhen me procedurat e përfshira në publikimin standard të openEMR
+"There are 3 forms in the Core category - Demographics, Facility Specific User Information and History and all 5 forms in Transactions that can be edited ","Ka 3 formulare në kategorinë Bërthamë - Demografitë, Informacioni Specifik i Përdoruesit të Objektit dhe Historia dhe të gjitha 5 formularët në Transaksione që mund të ndryshohen "
+There are currently no prescriptions,Aktualisht nuk ka receta
+There are errors with your submission.  These are outlined below.,Ka gabime me dorëzimin tuaj. Këto janë përshkruar më poshtë.
+"There are four message statuses - New, Forwarded, Read and Done","Ka katër statuse mesazhesh - I Ri, I Përcjellë, I Lexuar dhe I Përfunduar"
+There are multiple options regarding patient portals and information on how to setup the patient portal is available here,Ka opsione të shumta në lidhje me portalet e pacientëve dhe informacioni se si të konfiguroni portalin e pacientit është i disponueshëm këtu
+There are multiple patients with portal login,Ka pacientë të shumtë me identifikim portali
+There are nine C-CDA templates that are currently defined,Ka nëntë shabllone C-CDA që janë aktualisht të përcaktuara
+There are no charts checked out.,Nuk ka grafiqe të nxjerra.
+There are no clients registered in the system,Nuk ka klientë të regjistruar në sistem
+There are no disclosures recorded for this patient.,Nuk ka zbulime të regjistruara për këtë pacient.
+There are no Glasses or Contact Lens Presciptions on file for this patient,Nuk ka Receta për Syze ose Lente Kontakti në skedar për këtë pacient
+There are no messages on file for this patient.,Nuk ka mesazhe në skedar për këtë pacient.
+There are no New Submissions,Nuk ka Dorëzime të Reja
+There are no notes on file for this patient.,Nuk ka shënime në skedar për këtë pacient.
+There are no record(s) found.,Nuk u gjetën regjistrime.
+There are no transactions on file for this patient.,Nuk ka transaksione në skedar për këtë pacient.
+"There are several versions of HL7, versions 2.x and version 3","Ka disa versione të HL7, versionet 2.x dhe versioni 3"
+There are several ways to customize the fee sheet. It depends on how comfortable you are in adding information to the database itself,Ka disa mënyra për të personalizuar fletën e tarifave. Varet sa të rehatshëm jeni në shtimin e informacionit direkt në bazën e të dhënave
+"There are three actions that are possible - Create a New Dated Reminder, Forward and Set as Completed","Ka tre veprime të mundshme - Krijo një Kujtues të Ri me Datë, Përcill dhe Vendos si të Përfunduar"
+"There are three actions that can be performed here - edit an existing group (ARO), add a new group (ARO) or delete an existing group (ARO).","Ka tre veprime që mund të kryhen këtu - ndryshoni një grup ekzistues (ARO), shtoni një grup të ri (ARO) ose fshini një grup ekzistues (ARO)."
+"There are three main template views. The first is the Repository where you store templates for future edits and disposal. ","Ka tre pamje kryesore shabllonesh. E para është Depoja ku ruani shabllonet për ndryshime dhe hedhje të ardhshme. "
+"There are three main types of reports that can be created, two pertain to continuity of ongoing care - Continuity of Care Record (CCR) and Continuity of Care Document (CCD) and the third - Patient Report that creates a document containing various sections of the patient's medical record including demographics, medical issues, procedures and encounters. It also has the ability to include all or any of the scanned documents in the patient's chart","Ka tre lloje kryesore raportesh që mund të krijohen, dy lidhen me vazhdimësinë e kujdesit të vazhdueshëm - Regjistri i Vazhdimësisë së Kujdesit (CCR) dhe Dokumenti i Vazhdimësisë së Kujdesit (CCD) dhe i treti - Raporti i Pacientit që krijon një dokument që përmban seksione të ndryshme të regjistrit mjekësor të pacientit përfshirë demografitë, çështjet mjekësore, procedurat dhe vizitat. Gjithashtu ka aftësinë për të përfshirë të gjitha ose cilindo nga dokumentet e skanuara në grafikun e pacientit"
+There are three options available when you create a Continuity of Care Document (CCD),Ka tre opsione të disponueshme kur krijoni një Dokument të Vazhdimësisë së Kujdesit (CCD)
+There are three options available when you create a Continuity of Care Record (CCR),Ka tre opsione të disponueshme kur krijoni një Regjistër të Vazhdimësisë së Kujdesit (CCR)
+"There are three sets of actions that can be performed on this page, in addition the form can be customized","Ka tre grupe veprimesh që mund të kryhen në këtë faqe, përveç kësaj formulari mund të personalizohet"
+There are two buttons that enable you to Check or Clear all available check-boxes,Ka dy butona që ju mundësojnë të Zgjidhni ose Pastroni të gjitha kutitë e kontrollit të disponueshme
+There are two options for the records that will be created,Ka dy opsione për regjistrimet që do të krijohen
+There are two sections that are visible,Ka dy seksione që janë të dukshme
+There are two sources that can be searched - MedlinePlus Connect or Local Content,Ka dy burime që mund të kërkohen - MedlinePlus Connect ose Përmbajtja Lokale
+"There are two ways this can be accomplished, either by the manual method, by searching and entering data for individual invoices or by uploading an entire electronic remittance advice ERA file.","Ka dy mënyra si mund të realizohet kjo, ose me metodën manuale, duke kërkuar dhe vendosur të dhëna për fatura individuale ose duke ngarkuar një skedar të plotë ERA të këshillës elektronike të dërgesës."
+"There are various selections to be filled, the minimum data needed to successfully save the referral is Referral Date, Refer To and Reason","Ka zgjedhje të ndryshme për t'u plotësuar, të dhënat minimale të nevojshme për të ruajtur me sukses referimin janë Data e Referimit, Refero Te dhe Arsyeja"
+There has been a mail error sending to,Ka pasur një gabim emaili gjatë dërgimit te
+There is a charge transaction that has not been captured.,Ka një transaksion tarife që nuk është kapur.
+there is a contraception form new method but no contraception service,ka një formular kontracepsioni metodë e re por nuk ka shërbim kontracepsioni
+there is a contraception service but no contraception form new method,ka një shërbim kontracepsioni por nuk ka formular kontracepsioni metodë e re
+There is a lab order,Ka një porosi laboratorike
+There is a Post error,Ka një gabim Postimi
+There is already a category named,Ekziston tashmë një kategori me emrin
+There is already a subcategory named,Ekziston tashmë një nën-kategori me emrin
+There is already an item named,Ekziston tashmë një element me emrin
+There is already an open patient record request.,Ekziston tashmë një kërkesë e hapur për regjistrin e pacientit.
+There is no COA entry for AR account ,Nuk ka hyrje COA për llogarinë AR
+There is no COA entry for cash account ,Nuk ka hyrje COA për llogarinë e arkës
+There is no COA entry for income account ,Nuk ka hyrje COA për llogarinë e të ardhurave
+There is no current patient,Nuk ka pacient aktual
+There is no local content for this topic.,Nuk ka përmbajtje lokale për këtë temë.
+There is no match for invoice id,Nuk ka përputhje për id-në e faturës
+There is no match for invoice id = ,Nuk ka përputhje për id-në e faturës =
+There is no parts entry for services ID ,Nuk ka hyrje pjesësh për ID-në e shërbimeve
+There is no patient with portal login,Nuk ka pacient me identifikim portali
+There was a problem registering you. Recommend contacting clinic for assistance.,Pati një problem gjatë regjistrimit tuaj. Rekomandojmë të kontaktoni klinikën për ndihmë.
+There was a problem sending the message.,Pati një problem gjatë dërgimit të mesazhit.
+There was an error while processing your request.,Pati një gabim gjatë përpunimit të kërkesës suaj.
+There was an OpenEMR SQL Escaping ERROR of the following string,Pati një GABIM të Escapimit SQL të OpenEMR për vargun e mëposhtëm
+Therefore each user has to individually activate this feature,Prandaj çdo përdorues duhet ta aktivizojë individualisht këtë veçori
+"These ACOs are grouped into ten broad categories that are part of the default installation. They are - Administration, Accounting, Patient Information, Encounter Information, Squads, Sensitivities, Lists, Placeholder, Nation Notes and Patient Portal. Each of these categories has one or several sub-categories that provide access to specific parts of the program.","Këto ACO janë grupuar në dhjetë kategori të gjera që janë pjesë e instalimit të paracaktuar. Ato janë - Administrimi, Kontabiliteti, Informacioni i Pacientit, Informacioni i Vizitës, Skuadrat, Ndjeshmëritë, Listat, Vendmbajtësi, Shënimet Kombëtare dhe Portali i Pacientit. Secila nga këto kategori ka një ose disa nën-kategori që ofrojnë akses në pjesë specifike të programit."
+These are free and can be downloaded from the respective app store for ios and android devices,Këto janë falas dhe mund të shkarkohen nga dyqani përkatës i aplikacioneve për pajisjet ios dhe android
+These are the 2012 links,Këto janë lidhjet e 2012
+These are used to populate fields 3 and 4 in the HL7 MSH - message header,Këto përdoren për të plotësuar fushat 3 dhe 4 në HL7 MSH - kokën e mesazhit
+These are used to populate fields 5 and 6 in the HL7 MSH - message header,Këto përdoren për të plotësuar fushat 5 dhe 6 në HL7 MSH - kokën e mesazhit
+These credentials will be used by the patient to login to the patient portal for the first time,Këto kredenciale do të përdoren nga pacienti për t'u identifikuar në portalin e pacientit për herë të parë
+These custom groups are application specific and not user specific,Këto grupe të personalizuara janë specifike për aplikacionin dhe jo për përdoruesin
+These entries will be used to define the Providers in the Procedures module,Këto hyrje do të përdoren për të përcaktuar Ofruesit në modulin e Procedurave
+These groups (AROs) can then be given a set of privileges by assigning different categories (ACOs).,Këtyre grupeve (ARO) mund t'u jepen pastaj një grup privilegjesh duke caktuar kategori të ndryshme (ACO).
+These items can be edited if the user has sufficient privilege,Këto elemente mund të ndryshohen nëse përdoruesi ka privilegje të mjaftueshme
+"These lists are used to determine who can access what in openEMR. They work in a top down manner, i.e. initially everybody is denied access to those parts of the program controlled by the ACL.","Këto lista përdoren për të përcaktuar kush mund të aksesojë çfarë në openEMR. Ato funksionojnë në mënyrë nga lart poshtë, d.m.th. fillimisht të gjithëve u mohohet aksesi në ato pjesë të programit të kontrolluara nga ACL."
+These numbers need to match to successfully authenticate the user,Këto numra duhet të përputhen për të vërtetuar me sukses përdoruesin
+These Patient notes are sent without an assigned patient,Këto shënime të Pacientit dërgohen pa një pacient të caktuar
+These sub-categories represent the actual Access Control Objects (ACOs).,Këto nën-kategori përfaqësojnë Objektet aktuale të Kontrollit të Aksesit (ACO).
+These templates are text only and will not render any other formatting other than pure text.,Këto shabllone janë vetëm tekst dhe nuk do të shfaqin asnjë formatim tjetër përveç tekstit të pastër.
+These three steps are essential before orders can be placed and received results linked to a patient's chart,Këto tre hapa janë thelbësorë përpara se porositë të mund të vendosen dhe rezultatet e marra të lidhen me grafikun e pacientit
+These Transactions are generally used to document events that have already occurred,Këto Transaksione përdoren përgjithësisht për të dokumentuar ngjarje që kanë ndodhur tashmë
+These two actions are available for all transactions,Këto dy veprime janë të disponueshme për të gjitha transaksionet
+They are displayed in rows and are sub divided into three groups,Ato shfaqen në rreshta dhe janë të nën-ndara në tre grupe
+"They are Electrolyte Panel, Basic Metabolic Panel, Comprehensive Metabolic Panel, Renal Function Panel, General Health Panel, Obstetric Panel, Acute Hepatitis panel, Hepatic Function Panel and Lipid Panel","Ato janë Paneli i Elektroliteve, Paneli Bazë Metabolik, Paneli Metabolik Gjithëpërfshirës, Paneli i Funksionit Renal, Paneli i Shëndetit të Përgjithshëm, Paneli Obstetrik, Paneli i Hepatitit Akut, Paneli i Funksionit Hepatik dhe Paneli i Lipideve"
+They are listed in ascending order by encounter date,Ato janë listuar në rendin rritës sipas datës së vizitës
+They do not share the vulnerabilities of SMS based methods and generally do not require an internet connection except to keep their clocks synchronized with the current time,Ato nuk ndajnë dobësitë e metodave të bazuara në SMS dhe përgjithësisht nuk kërkojnë lidhje interneti përveçse për të mbajtur orët e tyre të sinkronizuara me kohën aktuale
+They will be provided by the facility that you will be connecting to,Ato do të ofrohen nga objekti me të cilin do të lidheni
+Thickened Right:,E trashur Djathtas:
+Thigh + hamstring,Kofsha + tendini i pasëm
+Things that back office can only read,Gjëra që zyra e pasme mund vetëm të lexojë
+Things that back office can read and enter but not modify,Gjëra që zyra e pasme mund të lexojë dhe vendosë por jo të ndryshojë
+Things that back office can read and modify,Gjëra që zyra e pasme mund të lexojë dhe ndryshojë
+Things that back office can read and partly modify,Gjëra që zyra e pasme mund të lexojë dhe pjesërisht ndryshojë
+Things that clinicians can only read,Gjëra që klinicistët mund vetëm të lexojnë
+Things that clinicians can read and enter but not modify,Gjëra që klinicistët mund të lexojnë dhe vendosin por jo të ndryshojnë
+Things that clinicians can read and modify,Gjëra që klinicistët mund të lexojnë dhe ndryshojnë
+Things that clinicians can read and partly modify,Gjëra që klinicistët mund të lexojnë dhe pjesërisht ndryshojnë
+Things that front office can only read,Gjëra që zyra e përparme mund vetëm të lexojë
+Things that front office can read and enter but not modify,Gjëra që zyra e përparme mund të lexojë dhe vendosë por jo të ndryshojë
+Things that front office can read and partly modify,Gjëra që zyra e përparme mund të lexojë dhe pjesërisht ndryshojë
+Things that physicians can only read,Gjëra që mjekët mund vetëm të lexojnë
+Things that physicians can read and enter but not modify,Gjëra që mjekët mund të lexojnë dhe vendosin por jo të ndryshojnë
+Things that physicians can read and modify,Gjëra që mjekët mund të lexojnë dhe ndryshojnë
+Things that physicians can read and partly modify,Gjëra që mjekët mund të lexojnë dhe pjesërisht ndryshojnë
+This account already exists.,Kjo llogari ekziston tashmë.
+This action cannot be undone. Are you sure you wish to delete this form?,Ky veprim nuk mund të zhbëhet. Jeni i sigurt që dëshironi të fshini këtë formular?
+This action will be logged,Ky veprim do të regjistrohet
+This action will reset your claim!,Ky veprim do të rivendosë kërkesën tuaj!
+This administration page is for managing the list of OAUTH2 registered applications that are authorized to use the APIs.,Kjo faqe administrimi është për menaxhimin e listës së aplikacioneve të regjistruara OAUTH2 që janë të autorizuara të përdorin API-të.
+This Allows a Date Range to be Selected in Patient Flow Board.,Kjo Lejon Zgjedhjen e një Diapazoni Datash në Tabelën e Rrjedhës së Pacientëve.
+This application has requested offline access to your data. This permission will allow the data you authorize below to be accessed for an extended period of time,Ky aplikacion ka kërkuar akses jashtë linje në të dhënat tuaja. Kjo leje do të lejojë që të dhënat që autorizoni më poshtë të aksesohen për një periudhë të zgjatur kohore
+"This appointment slot is already used, please choose another.","Ky slot takimi është përdorur tashmë, ju lutem zgjidhni një tjetër."
+"This appointment slot is already used, use it anyway?","Ky slot takimi është përdorur tashmë, ta përdorni gjithsesi?"
+"This appointment slot is not available, please choose another.","Ky slot takimi nuk është i disponueshëm, ju lutem zgjidhni një tjetër."
+This charge was reversed via credit on following date,Kjo tarifë u kthye përmes kreditit në datën e mëposhtme
+This charge was reversed via void on following date,Kjo tarifë u kthye përmes anulimit në datën e mëposhtme
+This claim has been canceled.,Kjo kërkesë është anuluar.
+This claim has been closed.,Kjo kërkesë është mbyllur.
+This claim has been denied.Reason:-,Kjo kërkesë është refuzuar. Arsyeja:-
+This claim has been forwarded to next level.,Kjo kërkesë është përcjellë në nivelin tjetër.
+This claim has HCFA 1500 miscellaneous billing options,Kjo kërkesë ka opsione të ndryshme faturimi HCFA 1500
+This Client ID Is Provided By Google For Your App (Required For Google Sign-in),Ky ID Klienti Ofrohet nga Google për Aplikacionin Tuaj (I Nevojshëm për Identifikimin me Google)
+This client is currently disabled,Ky klient është aktualisht i çaktivizuar
+This code is optional if only using manual lab data entry,Ky kod është opsional nëse përdorni vetëm hyrje manuale të të dhënave laboratorike
+"This code is optional, but is a good practice to do so.","Ky kod është opsional, por është praktikë e mirë ta bëni."
+"This code is optional, but is a good practice.","Ky kod është opsional, por është praktikë e mirë."
+This code is optional.,Ky kod është opsional.
+This code type does not accept relations.,Ky lloj kodi nuk pranon lidhje.
+This completes a basic setup and will let use use the Fee Sheet to document charges for billing purposes,Kjo përfundon një konfigurim bazë dhe do t'ju lejojë të përdorni Fletën e Tarifave për të dokumentuar tarifat për qëllime faturimi
+"This context contains categories, which will be deleted. Do you still want to continue?","Ky kontekst përmban kategori, të cilat do të fshihen. Dëshironi ende të vazhdoni?"
+This Conversation,Kjo Bisedë
+"This Custom Favorite item can only be sent to the displayed lab, the one that was chosen in the Custom Favorite Group","Ky element i Preferuar i Personalizuar mund të dërgohet vetëm në laboratorin e shfaqur, atë që u zgjodh në Grupin e Preferuarve të Personalizuara"
+This determines how appointments display on the calendar.,Kjo përcakton si shfaqen takimet në kalendar.
+This determines which color schema used for appointment,Kjo përcakton cilën skemë ngjyrash përdoret për takimin
+"This device is labeled as a Human Cell, Tissue or Cellular or Tissue-Based Product (HCT/P).","Kjo pajisje etiketohet si Produkt i Qelizës Njerëzore, Indit ose Produkt i Bazuar në Qeliza ose Inde (HCT/P)."
+This device is required to be labeled as containing natural rubber latex or dry natural rubber.,Kjo pajisje kërkohet të etiketohet si përmbajëse e lateksit natyror të gomës ose gomës natyrale të thatë.
+This dialog is generated from patient problem diagnoses and the accumulated diagnoses of all past procedures.,Ky dialog gjenerohet nga diagnozat e problemeve të pacientit dhe diagnozat e akumuluara të të gjitha procedurave të kaluara.
+This Enables provider in line item in the fee sheet,Kjo Aktivizon ofruesin në zërin e rreshtit në fletën e tarifave
+This Encounter,Kjo Vizitë
+"This encounter has been billed. If you need to change it, it must be re-opened.","Kjo vizitë është faturuar. Nëse duhet ta ndryshoni, duhet të rihapet."
+"This encounter has been billed. To make changes, re-open it or select Add More Items.","Kjo vizitë është faturuar. Për të bërë ndryshime, rihapeni ose zgjidhni Shto Më Shumë Zëra."
+This encounter is locked. No new forms can be added.,Kjo vizitë është bllokuar. Nuk mund të shtohen formularë të rinj.
+This EOB item does not meet minimum print requirements setup in Globals or there is an unknown error.,Ky zë EOB nuk plotëson kërkesat minimale të printimit të vendosura në Globale ose ka një gabim të panjohur.
+This fax has already been sent to,Ky faks është dërguar tashmë te
+This fax has already been sent.,Ky faks është dërguar tashmë.
+This feature is not yet available,Kjo veçori nuk është ende e disponueshme
+"This feature is used to add patients to a recall list, i.e those that need an appointment at a future date but the appointment has not yet been scheduled","Kjo veçori përdoret për të shtuar pacientë në një listë rikujtimi, d.m.th. ata që kanë nevojë për një takim në një datë të ardhshme por takimi nuk është caktuar ende"
