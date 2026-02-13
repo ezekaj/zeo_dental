@@ -1,0 +1,301 @@
+constant_name,definition
+Name of zend template for pdf export,Emri i shabllonit zend per eksportin PDF
+"Name of zend template for pdf export, possible to add custom template in the PrescriptionTemplate module","Emri i shabllonit zend per eksportin PDF, e mundur te shtoni shabllon te personalizuar ne modulin PrescriptionTemplate"
+Name on Card,Emri ne Karte
+Name Translation,Perkthimi i Emrit
+Name/Username,Emri/Perdoruesi
+Names,Emrat
+Namespace,Hapesira e emrave
+Narcotic drugs imported,Barna narkotike te importuara
+NARES:,NARES:
+NARES: Normal Right,NARES: Normale Djathtas
+Narrative,Tregimi
+nasal,nazal
+"Nasal mucosa pink, septum midline","Mukoza nazale roze, septumi ne vijne e mesit"
+Nation Notes,Shenime Kombetare
+Nation Notes (nationnotes),Shenime Kombetare (nationnotes)
+Nation Notes (nn_configure),Shenime Kombetare (nn_configure)
+Nation Notes Configure,Konfigurimi i Shenimeve Kombetare
+Nation Notes Replace Buttons,Butonat e Zevendesimit te Shenimeve Kombetare
+Nationality,Kombesia
+NationNotes,ShenimeKombetare
+Native Data Loads,Ngarkimet e te Dhenave Vendase
+Native Hawaiian or Other Pacific Islander,Vendas i Havait ose Ishullor tjeter i Paqesorit
+Natural Child,Femije Natyral
+Natural child,Femije natyral
+Natural Parent,Prind Natyral
+Natural Sibling,Motër/Vella Natyral
+Nauru,Nauru
+Nausea,Nauze
+Nav Bar,Shiriti i Navigimit
+"Navajo, Navaho","Navaho, Navaho"
+Navigation,Navigimi
+Navigation area includes encounter forms,Zona e navigimit perfshine format e vizitave
+Navigation area uses full height of frameset,Zona e navigimit perdor lartesine e plote te kornizes
+Navigation Area Visit Forms,Format e Vizitave te Zones se Navigimit
+Navigation Area Width,Gjeresia e Zones se Navigimit
+Navigation Area Width for Frames,Gjeresia e Zones se Navigimit per Korniza
+Navigation menu consists of pairs of radio buttons,Menyja e navigimit perbehet nga cifte butonash radio
+Navigation menu is a tree view,Menyja e navigimit eshte pamje peme
+Navigation uses a sliding menu,Navigimi perdor nje meny rrëshqitëse
+NCI CONCEPT ID,NCI CONCEPT ID
+NCOM{{Neuro comments}},NCOM{{Komente neurologjike}}
+NCPDP,NCPDP
+NDC,NDC
+NDC Data,Te Dhena NDC
+NDC Number,Numri NDC
+Ndonga,Ndonga
+Near,Afer
+Near Acuity AutoRefraction,Mprehti Afer Autorefrakcion
+Near Acuity Manifest Refraction,Mprehti Afer Refrakcion Manifest
+Near Acuity with Autorefraction,Mprehti Afer me Autorefrakcion
+Near Acuity with Correction,Mprehti Afer me Korrigjim
+Near Acuity with Manifest (Dry) refraction,Mprehti Afer me Refrakcion Manifest (te Thate)
+Near Acuity without Correction,Mprehti Afer pa Korrigjim
+Near Point of Accomodation,Pika Afer e Akomodimit
+Near Point of Convergence,Pika Afer e Konvergjences
+Nearly every day,Pothuajse cdo dite
+Necessary Medical Equipment,Pajisje Mjekesore te Nevojshme
+Neck supple,Qafa e bute
+Need more than one drug.,Nevojitet me shume se nje bar.
+Need to enter a description,Duhet te vendosni nje pershkrim
+Need to enter a Return Value,Duhet te vendosni nje Vlere Kthimi
+Need to enter identifier,Duhet te vendosni identifikuesin
+Need to enter title,Duhet te vendosni titullin
+need to logout/login after changing these settings,duhet te dilni/hyni pas ndryshimit te ketyre cilësimeve
+Needs a Smartphone,Kerkon nje Smartphone
+Needs Auth,Kerkon Autorizim
+Needs Justify,Kerkon Justifikim
+Needs secondary billing,Kerkon faturim dytesor
+Neg/Nrml,Neg/Nrml
+Negative payments not accepted,Pagesat negative nuk pranohen
+Neg{{negative}},Neg{{negativ}}
+Neighbor,Fqinj
+Neo 10%,Neo 10%
+Neo 2.5%,Neo 2.5%
+Nerve injury,Demtim i nervit
+NetSuite Reports,Raporte NetSuite
+Network Indicator,Treguesi i Rrjetit
+Neural condition / nerve damage,Gjendje neurologjike / demtim i nervit
+Neuro,Neuro
+Neuro Numbness,Mpirje Neurologjike
+Neuro Weakness,Dobesi Neurologjike
+Neuro-physiology,Neuro-fiziologji
+Neuro/Phys Exam Default Values,Vlerat e Paracaktuara te Ekzaminimit Neuro/Fizik
+Neurologic,Neurologjik
+Neurology,Neurologji
+Neuro{{neurologic}},Neuro{{neurologjik}}
+NEURO{{Neurology}},NEURO{{Neurologji}}
+New Acceptor Policy,Politika e Pranuesve te Rinj
+New Acceptors,Pranues te Rinj
+New Alerts,Njoftime te Reja
+New amendment request,Kerkese e re ndryshimi
+New Appointment,Takim i Ri
+New Crop,Crop i Ri
+New Definition set added,Grup i ri perkufizimesh u shtua
+New Due Clinical Reminders,Kujtese te Reja Klinike te Afatit
+New Dx{{new diagnosis}},Dg e Re{{diagnoza e re}}
+New Encounter,Vizite e Re
+New encounter created with id,Vizite e re e krijuar me id
+New Encounter Form,Forme e Vizites se Re
+New encounters not authorized,Vizitat e reja nuk jane te autorizuara
+New Enctr,Viz e Re
+New Facility Information,Informacion i Ri i Objektit
+New file,Skedar i ri
+New Files,Skedare te Rinj
+New form validation,Validimi i formes se re
+New group encounter created with id,Vizite grupi e re e krijuar me id
+New Group Encounter Form,Forme e Vizites se Re te Grupit
+New group was saved successfully,Grupi i ri u ruajt me sukses
+New Immunization Record,Regjistrim i Ri i Imunizimit
+New in ACL Ver 4,E re ne ACL Ver 4
+New in ACL Ver 5,E re ne ACL Ver 5
+New in ACL Ver 6,E re ne ACL Ver 6
+New in ACL Ver 7,E re ne ACL Ver 7
+New in ACL Ver 8,E re ne ACL Ver 8
+New in openEMR ver 5.0.2 ,E re ne openEMR ver 5.0.2
+New Inj/Status,Demtim/Status i Ri
+New Items (see above for details),Artikuj te Rinj (shiko me lart per detaje)
+New Layout,Paraqitje e Re
+New Limit of Events,Kufiri i Ri i Ngjarjeve
+New Message,Mesazh i Ri
+new messages,mesazhe te reja
+new method in contraception form does not match the contraception service,metoda e re ne formen e kontraceptiveve nuk perputhet me sherbimin e kontraceptiveve
+New Note,Shenim i Ri
+New or Current Password,Fjalekalimi i Ri ose Aktual
+New or Current Username,Perdoruesi i Ri ose Aktual
+New Patient Encounter,Vizite e Re e Pacientit
+New patient registration received from patient portal. Reminder to check for possible new appointment,Regjistrimi i pacientit te ri u mor nga portali i pacientit. Kujtese per te kontrolluar per takim te ri te mundshem
+New Patients,Paciente te Rinj
+New payment,Pagese e re
+New Portal Login,Hyrje e Re ne Portal
+New Procedure Order,Porosi e Re e Procedures
+New Pt,Pac i Ri
+New Recall,Rikujtim i Ri
+New results from Lab Exchange,Rezultate te reja nga Lab Exchange
+New Submissions,Dergesa te Reja
+New to openEMR 5.0.2,E re ne openEMR 5.0.2
+NewCrop Account Status,Statusi i Llogarise NewCrop
+NewCrop Admin,Administrator NewCrop
+NewCrop call failed,Thirrja NewCrop deshtoi
+NewCrop Doctor,Mjeku NewCrop
+NewCrop eRx Account Id,Id e Llogarise NewCrop eRx
+NewCrop eRx Account Name,Emri i Llogarise NewCrop eRx
+NewCrop eRx Debug Setting,Cilësimi i Korrigjimit NewCrop eRx
+NewCrop eRx Default Patient Country,Shteti i Paracaktuar i Pacientit NewCrop eRx
+NewCrop eRx Name,Emri NewCrop eRx
+NewCrop eRx Partner Name,Emri i Partnerit NewCrop eRx
+NewCrop eRx Password,Fjalekalimi NewCrop eRx
+NewCrop eRX Role,Roli NewCrop eRX
+NewCrop eRx Role,Roli NewCrop eRx
+NewCrop eRx Site Address,Adresa e Faqes NewCrop eRx
+NewCrop eRx SOAP Request Time-To-Live for Allergies,Koha e Jeteses se Kerkeses SOAP NewCrop eRx per Alergjite
+NewCrop eRx SOAP Request Time-To-Live for Medications,Koha e Jeteses se Kerkeses SOAP NewCrop eRx per Medikamentet
+NewCrop eRx User Role,Roli i Perdoruesit NewCrop eRx
+NewCrop eRx User Role * invalid selection *,Roli i Perdoruesit NewCrop eRx * zgjedhje e pavlefshme *
+NewCrop eRx Web Service Address,Adresa e Sherbimit Web NewCrop eRx
+NewCrop Manager,Menaxheri NewCrop
+NewCrop MedEntry,NewCrop MedEntry
+NewCrop Midlevel Prescriber,Pershkrues i Nivelit te Mesem NewCrop
+NewCrop Nurse,Infermierja NewCrop
+NewCrop Supervising Doctor,Mjeku Mbikqyres NewCrop
+NewRx,NewRx
+Next Appointment Date,Data e Takimit te Ardhshem
+Next Due,I Ardhshmi i Afatit
+Next month (hold for menu),Muaji i ardhshem (mbaj per meny)
+Next of Kin Relationship,Marredhenia e te Afermit me te Afert
+Next Scheduled Run,Ekzekutimi i Ardhshem i Planifikuar
+Next Visit,Vizita e Ardhshme
+Next Visit Orders,Porosi te Vizites se Ardhshme
+Nick Name,Nofke
+Nickname,Nofke
+Niece/Nephew,Mbese/Nip
+Night Sweats,Djerse Nate
+NKDA{{No known drug allergies}},NKDA{{Nuk ka alergji te njohura ndaj barnave}}
+"Nl ext genitalia, vag mucosa, cervix","Genitale te jashtme normale, mukoza vaginale, qafa e mitres"
+no,jo
+No access,Pa akses
+No active access tokens found,Nuk u gjeten tokena aktivë aksesi
+No active patient reminders.,Nuk ka kujtesa aktive per pacientin.
+No active refresh tokens found,Nuk u gjeten tokena aktivë rifreskimi
+No adenopathy (2 areas required),Pa adenopati (kerkohen 2 zona)
+No adjustment reason type found for,Nuk u gjet lloji i arsyes se rregullimit per
+No adnexal tenderness/masses,Pa ndjeshmeri/masa aneksiale
+No alert,Pa njoftim
+No amendment requests available,Nuk ka kerkesa ndryshimi te disponueshme
+No anxiety disorder,Pa crregullim ankthi
+No Appointments,Pa Takime
+No archive files present,Nuk ka skedare arkive te pranishem
+No Archives,Pa Arkiva
+No Assessment to Display.,Nuk ka Vleresim per te Shfaqur.
+No audit log tampering detected in the selected date range.,Nuk u zbulua nderhyrje ne regjistrin e auditimit ne periudhen e zgjedhur.
+No authorized users found for this client,Nuk u gjeten perdorues te autorizuar per kete klient
+No automatic refresh,Pa rifreshkim automatik
+No available readers.,Nuk ka lexues te disponueshem.
+No billing system is currently active,Asnje sistem faturimi nuk eshte aktiv aktualisht
+No Bills Found to Include in OFX Export,Nuk u Gjeten Fatura per t'u Perfshire ne Eksportin OFX
+No Bills Found to Include in OFX Export<br>,Nuk u Gjeten Fatura per t'u Perfshire ne Eksportin OFX<br>
+No Changes Detected,Nuk u Zbuluan Ndryshime
+No code was specified!,Nuk u specifikua asnje kod!
+No Configuration Defined for this Module,Nuk ka Konfigurim te Percaktuar per kete Modul
+No data available in table,Nuk ka te dhena te disponueshme ne tabele
+No Data to Process,Nuk ka te Dhena per Perpunim
+No Diagnosis,Pa Diagnoze
+no diagnosis was auto-generated from the clinical findings.,nuk u gjenerua automatikisht asnje diagnoze nga gjetjet klinike.
+No directory for X12 partner ,Nuk ka direktori per partnerin X12
+No Documents,Pa Dokumente
+No Documents Found,Nuk u Gjeten Dokumente
+No Encounter could be created,Vizita nuk mund te krijohej
+No encounter...,Pa vizite...
+No end date,Pa date perfundimi
+"No entries found, use the form below to add an entry.","Nuk u gjeten regjistrime, perdorni formen me poshte per te shtuar nje regjistrim."
+No errors found,Nuk u gjeten gabime
+No Events,Pa Ngjarje
+No Fax Number Saved For The Selected Organization,Nuk ka Numer Faksi te Ruajtur per Organizaten e Zgjedhur
+No file specified,Nuk u specifikua skedari
+No files staged for installation,Nuk ka skedare te pergatitur per instalim
+No form selected to order!,Nuk u zgjodh asnje forme per porosi!
+No group was selected,Nuk u zgjodh asnje grup
+No hernia,Pa hernie
+No history recorded,Nuk ka histori te regjistruar
+No Hooks Available in this Module,Nuk ka Hooks te Disponueshme ne kete Modul
+No Hooks enabled for this Module,Nuk ka Hooks te Aktivizuara per kete Modul
+No injury/illness,Pa demtim/semundje
+No Insurance Companies Found,Nuk u Gjeten Kompani Sigurimi
+No interactions found,Nuk u gjeten nderveprime
+No invoices were checked.,Nuk u kontrolluan faturat.
+No Issues,Pa Probleme
+No issues in this encounter.,Pa probleme ne kete vizite.
+No items under selected category,Nuk ka artikuj nen kategorine e zgjedhur
+No items were selected!,Nuk u zgjodhën artikuj!
+No Known Allergies,Pa Alergji te Njohura
+No Known Clinical Instructions,Pa Udhezime Klinike te Njohura
+No Known Encounters,Pa Vizita te Njohura
+No Known Immunizations,Pa Imunizime te Njohura
+No Known Lab Results,Pa Rezultate Laboratorike te Njohura
+No Known Medications,Pa Medikamente te Njohura
+No Known Plan of Care,Pa Plan Kujdesi te Njohur
+No Known Problems,Pa Probleme te Njohura
+No Known Procedures,Pa Procedura te Njohura
+No Known Referrals,Pa Referime te Njohura
+No Known Social Functional Status,Pa Status Funksional Shoqeror te Njohur
+No Known Social History,Pa Histori Shoqerore te Njohur
+No Known Vitals,Pa Tregues Jetesore te Njohur
+No lab data documented.,Nuk ka te dhena laboratorike te dokumentuara.
+No Language ID specified,Nuk u specifikua ID e Gjuhes
+No log file exist for the selected date,Nuk ekziston skedar regjistri per daten e zgjedhur
+No logging,Pa regjistrim
+No logs older than 7 days,Nuk ka regjistra me te vjeter se 7 dite
+"No masses, tenderness","Pa masa, pa ndjeshmeri"
+No match Patient record found for the given Re Idenitification code,Nuk u gjet regjistrim perputhjeje i Pacientit per kodin e Ri-identifikimit te dhene
+No matches for,Nuk ka perputhjeje per
+No matches found. Try search again.,Nuk u gjeten perputhjeje. Provoni te kerkoni perseri.
+No matches were found.,Nuk u gjeten perputhjeje.
+No matches were found. Create the new patient now?,Nuk u gjeten perputhjeje. Te krijohet pacienti i ri tani?
+No Maximum,Pa Maksimum
+No member fields found for,Nuk u gjeten fusha anetaresie per
+No method enabled,Asnje metode e aktivizuar
+No Minimum,Pa Minimum
+No Name,Pa Emer
+No new messages on,Nuk ka mesazhe te reja me
+No new results found,Nuk u gjeten rezultate te reja
+No notes,Pa shenime
+No ogrganomegoly,Pa organomegali
+No openings were found for this period.,Nuk u gjeten hapesira per kete periudhe.
+"No Order found, please enter procedure order first","Nuk u gjet Porosi, ju lutem vendosni porosine e procedures fillimisht"
+No organomegaly,Pa organomegali
+No other phone numbers listed,Nuk ka numra te tjere telefoni te listuara
+No parameters selected,Nuk ka parametra te zgjedhur
+No Partners Found,Nuk u Gjeten Partnere
+No Patient record found for given Selection criteria,Nuk u gjet regjistrim i Pacientit per kriteret e dhena te Zgjedhjes
+No Patient record found for the given Re Identification code,Nuk u gjet regjistrim i Pacientit per kodin e dhene te Ri-identifikimit
+No patients to select,Nuk ka paciente per te zgjedhur
+No patients without scores were found.,Nuk u gjeten paciente pa rezultate.
+No peripheral edema,Pa edeme periferike
+No Pharmacies Found,Nuk u Gjeten Farmaci
+No Prescriptions Found,Nuk u Gjeten Receta
+No prescriptions selected,Nuk u zgjodhën receta
+No presenting illness/injury,Pa semundje/demtim prezantues
+No previous entries.,Nuk ka regjistrime te meparshme.
+No Primary Business Entity selected in facility list,Nuk u zgjodh Entiteti Primar i Biznesit ne listen e objekteve
+No prior encounters.,Nuk ka vizita te meparshme.
+No procedures in this encounter.,Nuk ka procedura ne kete vizite.
+No provider was matched,Nuk u perputhet asnje ofrues
+No Providers Found,Nuk u Gjeten Ofrues
+No rash or abnormal lesions,Pa skuqje ose lezione anormale
+No Recall,Pa Rikujtim
+No records available,Nuk ka regjistrime te disponueshme
+No records found,Nuk u gjeten regjistrime
+No records found.,Nuk u gjeten regjistrime.
+"No records found. Please expand your search criteria.",Nuk u gjeten regjistrime. Ju lutem zgjeroni kriteret e kerkimit.
+No registered SMART apps in the system,Nuk ka aplikacione SMART te regjistruara ne sistem
+No reminder/recall,Pa kujtese/rikujtim
+No Reminders,Pa Kujtesa
+"No Result Found, for the above search criteria.","Nuk u Gjet Rezultat, per kriteret e kerkimit me lart."
+No Results,Pa Rezultate
+No results found,Nuk u gjeten rezultate
+No results found for,Nuk u gjeten rezultate per
+No Results Found For Search,Nuk u Gjeten Rezultate per Kerkimin
+"No results found, please try again.","Nuk u gjeten rezultate, ju lutem provoni perseri."
+"No results, please tray again.","Nuk ka rezultate, ju lutem provoni perseri."
+"No results, please try again.","Nuk ka rezultate, ju lutem provoni perseri."
