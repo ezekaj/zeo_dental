@@ -34,8 +34,18 @@ docker cp "$SCRIPT_DIR/branding/logos/favicon/favicon.ico" "$CONTAINER":/var/www
 docker exec "$CONTAINER" rm -f /var/www/localhost/htdocs/openemr/public/images/logos/core/menu/primary/logo.svg
 
 # Patch navbar link
-echo "[4/4] Updating navbar brand link..."
+echo "[4/5] Updating navbar brand link..."
 docker exec "$CONTAINER" sed -i 's|href="https://www.open-emr.org" title="OpenEMR.*" rel="noopener" target="_blank"|href="/interface/main/tabs/main.php" title="crmZ.E"|g' /var/www/localhost/htdocs/openemr/interface/main/tabs/main.php
+
+# Replace OpenEMR Foundation with Z.E Digital Tech in registration modal
+echo "[5/5] Applying Z.E Digital Tech branding..."
+docker exec "$CONTAINER" sed -i \
+  -e 's/OpenEMR Foundation/Z.E Digital Tech/g' \
+  -e 's/improving OpenEMR/improving crmZ.E/g' \
+  /var/www/localhost/htdocs/openemr/templates/product_registration/product_registration_modal.html.twig
+docker exec "$CONTAINER" sed -i \
+  's/OpenEMR Product Registration/crmZ.E Registration/g' \
+  /var/www/localhost/htdocs/openemr/templates/product_registration/product_reg.js.twig
 
 echo ""
 echo "=== crmZ.E Setup Complete ==="
