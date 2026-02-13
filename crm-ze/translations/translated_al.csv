@@ -1,0 +1,301 @@
+constant_name,definition
+is a root node and can not be deleted.,eshte nje nyje rrenjore dhe nuk mund te fshihet.
+is an extension of the following database,eshte nje zgjerim i bazes se te dhenave te meposhtme
+Is Authorizing Signature,Eshte Nenshkrim Autorizues
+Is Confidential,Eshte Konfidenciale
+Is Enabled,Eshte e Aktivizuar
+Is it ok to map these CVX codes to already existent immunizations?,A eshte ne rregull te lidhen keto kode CVX me vaksinat ekzistuese?
+is misplaced or unknown,eshte e vendosur gabimisht ose e panjohur
+is not a number,nuk eshte nje numer
+is not a valid email address,nuk eshte nje adrese email e vlefshme
+Is not selected,Nuk eshte zgjedhur
+is not valid,nuk eshte e vlefshme
+"is not valid (decimal fractions are OK).",nuk eshte e vlefshme (fraksionet dhjetore jane ne rregull).
+Is PHP using Safe Mode?,A po perdor PHP Safe Mode?
+Is Required. Contact Provider.,Eshte e Detyrueshme. Kontaktoni Ofruesin.
+Is Required. Please Add in Contacts.,Eshte e Detyrueshme. Ju lutem Shtoni ne Kontakte.
+Is selected,Eshte e zgjedhur
+Is text from form layouts to be translated?,A duhet te perkthehet teksti nga formatet e formulareve?
+Is text from lists to be translated?,A duhet te perkthehet teksti nga listat?
+Is The File Encrypted?,A Eshte Skedari i Enkriptuar?
+"Is this a Clinical Term code type?",A eshte ky nje lloj kodi i Termit Klinik?
+"Is this a diagnosis type?",A eshte ky nje lloj diagnoze?
+"Is this a Medical Problem code type?",A eshte ky nje lloj kodi i Problemit Mjekesor?
+"Is this a Medication type?",A eshte ky nje lloj medikamenti?
+"Is this a procedure/service type?",A eshte ky nje lloj procedure/sherbimi?
+Is this active?,A eshte kjo aktive?
+Is this code type active?,A eshte ky lloj kodi aktiv?
+Is this code type used in claims?,A perdoret ky lloj kodi ne kerkesa?
+Is this Okay?,A eshte kjo ne rregull?
+Is this really OK?,A eshte kjo vertet ne rregull?
+"Is this type hidden in the fee sheet?",A eshte ky lloj i fshehur ne fleten e tarifave?
+"Is this using external sql tables? If it is, then choose the format.","A perdor kjo tabela te jashtme sql? Nese po, zgjidhni formatin."
+is too long,eshte shume e gjate
+ISO 639-2 Code,Kodi ISO 639-2
+Issue Date,Data e Leshimit
+Issue Subtypes,Nenllojet e Ceshtjes
+Issues (Injuries/Medical/Allergy),Ceshtje (Demtime/Mjekesore/Alergji)
+Issues (Injuries/Medical/Allergy):,Ceshtje (Demtime/Mjekesore/Alergji):
+"Issues - summarizes the patient's medical problems, allergies, medications, surgeries and dental issues","Ceshtje - permbledh problemet mjekesore te pacientit, alergjite, medikamentet, nderhyrjet kirurgjikale dhe ceshtjet dentare"
+Issues and Encounters,Ceshtje dhe Vizita
+Issues and Encounters for,Ceshtje dhe Vizita per
+Issues and Immunizations wiki page,Faqja wiki e Ceshtjeve dhe Vaksinimeve
+Issues can also be linked to zero or more encounters,Ceshtjet mund te lidhen gjithashtu me zero ose me shume vizita
+Issues Help,Ndihme per Ceshtjet
+Issues List,Lista e Ceshtjeve
+Issues not authorized,Ceshtjet nuk jane te autorizuara
+Issuing Agency,Agjencia Leshuese
+"It allows the browser to communicate directly to the USB device avoiding the need for the user to do anything more than insert the device into an USB port and tap it to activate it","Kjo i lejon shfletuesit te komunikoje drejtperdrejt me pajisjen USB duke shmangur neveojen qe perdoruesi te beje dicka me shume se te fuse pajisjen ne nje porte USB dhe ta prekë per ta aktivizuar"
+It also lets you create new groups (AROs) as well as remove existing ones.,Gjithashtu ju lejon te krijoni grupe te reja (AROs) si dhe te hiqni ato ekzistuese.
+It can also just receive results electronically,Mund te marre gjithashtu rezultate ne menyre elektronike
+It can be either linked to a patient or just be a message addressed to another user(s),Mund te lidhet me nje pacient ose thjesht te jete nje mesazh i drejtuar perdoruesve te tjere
+"It combines what the user knows i.e. user password with what the user has i.e. a device that is unique or a mechanism to generate/receive a unique code to be used at each login","Kombinon ate qe perdoruesi di p.sh. fjalekalimin me ate qe perdoruesi ka p.sh. nje pajisje unike ose nje mekanizem per te gjeneruar/marre nje kod unik per t'u perdorur ne cdo hyrje"
+It consists of three sections ,Perbehet nga tre seksione
+It consists of two parts - defining a Provider and configuring the Orders and Results,"Perbehet nga dy pjese - percaktimi i nje Ofruesi dhe konfigurimi i Porosive dhe Rezultateve"
+It consists of two parts - the Receiving application and Receiving facility,"Perbehet nga dy pjese - aplikacioni Marres dhe objekti Marres"
+It consists of two parts - the Sending application and Sending facility,"Perbehet nga dy pjese - aplikacioni Dergues dhe objekti Dergues"
+It contains a left and right section,Permban nje seksion te majte dhe te djathte
+It contains a QR code that needs to be captured by the authenticator app,Permban nje kod QR qe duhet te kapet nga aplikacioni i autentifikimit
+"It contains structured data that is included in the Continuity of Care Record (CCR) set to the the Clinical Document Architecture standard","Permban te dhena te strukturuara qe perfshihen ne Regjistrin e Vazhdimesise se Kujdesit (CCR) te vendosur sipas standardit te Arkitektures se Dokumentit Klinik"
+It does not refer to the actual referral that has been created,Nuk i referohet referimit aktual qe eshte krijuar
+It does so by using an algorithm to combine the current UNIX time with the secret key to generate an ever changing unique key,E ben kete duke perdorur nje algoritem per te kombinuar kohen aktuale UNIX me celesin sekret per te gjeneruar nje celes unik qe ndryshon vazhdimisht
+It has four tabs,Ka kater skeda
+It has three tiers ,Ka tre nivele
+"It is a commercial messaging module available to openEMR practices utilizing version 5.0.1 and higher","Eshte nje modul komercial mesazhesh i disponueshem per praktikat openEMR qe perdorin versionin 5.0.1 e me lart"
+It is a field in the HL7 Message header known as Processing ID,Eshte nje fushe ne koken e Mesazhit HL7 e njohur si Processing ID
+It is a part of the medical record,Eshte pjese e regjistrit mjekesor
+It is also a subscription based service,Eshte gjithashtu nje sherbim me abonim
+"It is also necessary to list an ICD10 code in order for the problem to be listed in Continuity of Care Report (CCR) and Continuity of Care Document (CCD)","Eshte gjithashtu e nevojshme te listohet nje kod ICD10 ne menyre qe problemi te listohet ne Raportin e Vazhdimesise se Kujdesit (CCR) dhe Dokumentin e Vazhdimesise se Kujdesit (CCD)"
+It is divided into two sections,Eshte e ndare ne dy seksione
+It is essential that you read through the first four sections to understand the underlying principles,Eshte thelbësore qe te lexoni kater seksionet e para per te kuptuar parimet themelore
+"It is far easier and intuitive to make major changes and reorganize the data on the spreadsheet before you start entering the data in openEMR","Eshte shume me e lehte dhe intuitive te beni ndryshime te medha dhe te riorganizoni te dhenat ne tabele perpara se te filloni te futni te dhenat ne openEMR"
+It is important to realize that this manages the MFA for the logged in user,Eshte e rendesishme te kuptoni qe kjo menaxhon MFA per perdoruesin e identifikuar
+"It is important to understand the function of these two icons as all subsequent steps needed to properly set up the hierarchy will depend on the correct use of these two icons","Eshte e rendesishme te kuptoni funksionin e ketyre dy ikonave pasi te gjitha hapat e metejshme te nevojshme per te vendosur sakte hierarkine do te varen nga perdorimi i sakte i ketyre dy ikonave"
+It is intended to include only the information that is critical to effectively continue care,Synohet te perfshije vetem informacionin qe eshte kritik per te vazhduar kujdesin ne menyre efektive
+It is issued to health care providers in the United States by the Centers for Medicare and Medicaid Services (CMS),Leshohet per ofruesit e kujdesit shendetesor ne Shtetet e Bashkuara nga Qendrat per Sherbimet Medicare dhe Medicaid (CMS)
+"It is not necessary for local lab, instead you can use any arbitrary unique number","Nuk eshte e nevojshme per laboratorin lokal, ne vend te kesaj mund te perdorni cdo numer unik arbitrar"
+It is not necessary to fill default Diagnosis Codes as ICD10 codes can be entered at the time of the actual ordering of the test,Nuk eshte e nevojshme te plotesoni Kodet e Diagnozes te paracaktuara pasi kodet ICD10 mund te futen ne momentin e porositjes aktuale te testit
+It is not submitted with the claim,Nuk dergohet me kerkesen
+"It is not uncommon to order several blood tests together, grouping them as a panel of tests facilitates this process","Nuk eshte e pazakonte te porosisni disa analiza gjaku se bashku, grupimi i tyre si nje panel testesh e lehteson kete proces"
+It is prudent to follow up with provider if not contacted.,Eshte e arsyeshme te ndiqni ofruesin nese nuk jeni kontaktuar.
+"It is the basic paper claim form prescribed by many payers for claims submitted by individual doctors & practices, nurses, and professionals, including therapists, chiropractors, and out-patient clinics, and in some cases, for ambulance services","Eshte formulari baze i kerkeses ne leter i percaktuar nga shume paguesit per kerkesat e derguara nga mjeke dhe praktika individuale, infermiere, dhe profesioniste, perfshire terapiste, kiropraktore, dhe klinika ambulatore, dhe ne disa raste, per sherbime ambulance"
+"It is used to link problems with encounters and is also used to see which encounters are associated to a particular issue","Perdoret per te lidhur problemet me vizitat dhe gjithashtu per te pare se cilat vizita jane te lidhura me nje ceshtje te caktuar"
+"It is useful to practice on a trial site to become familiar with the process before doing so on the production openEMR application","Eshte e dobishme te praktikoni ne nje faqe prove per t'u njohur me procesin perpara se ta beni ne aplikacionin e prodhimit openEMR"
+"It lets you search by ICD 9 and ICD 10 diagnostic codes and CPT4 and HCPCS service/procedure codes","Ju lejon te kerkoni sipas kodeve diagnostike ICD 9 dhe ICD 10 dhe kodeve te sherbimit/procedures CPT4 dhe HCPCS"
+"It lets you send messages and dated reminders to staff members, add patient to the recall list and send SMS text messages to patients","Ju lejon te dergoni mesazhe dhe kujtesa me date per anetaret e stafit, te shtoni pacientin ne listen e rikujtimit dhe te dergoni mesazhe SMS per pacientet"
+"It serves as a necessary bridge to a different environment, often with new clinicians who know nothing about the patient, enabling next provider to easily","Sherben si nje ure e nevojshme per nje mjedis te ndryshem, shpesh me kliniciste te rinj qe nuk dine asgje per pacientin, duke i mundesuar ofruesit te rradhes me lehte"
+It should be UTF-8 encoded with comma separated values.,Duhet te jete e koduar ne UTF-8 me vlera te ndara me presje.
+It therefore stands to reason that you cannot create a Counter-Referral by itself,Prandaj eshte e arsyeshme qe nuk mund te krijoni nje Kunder-Referim vetem
+It uses an open standard and therefore available from various manufactures,Perdor nje standard te hapur dhe per kete arsye eshte i disponueshem nga prodhues te ndryshem
+It uses the HMAC-SHA256 hash function to generate a unique private key for the account,Perdor funksionin hash HMAC-SHA256 per te gjeneruar nje celes privat unik per llogarine
+It uses this private key to sign the challenge and sends the response back to the application,Perdor kete celes privat per te nenshkruar sfiden dhe dergon pergjigjen prapa ne aplikacion
+It will be displayed in the visit summary,Do te shfaqet ne permbledhjen e vizites
+It will bring up the Enter Details pop-up form,Do te hape formularin pop-up te Futjes se Detajeve
+It will bring up the Multi patient finder  popup,Do te hape dritaren pop-up te Gjetesit te Pacienteve te Shumefishte
+"It will display the justify display pop-up. It has a search box that wil let you search for a ICD code.  It will also display the 10 most commonly used ICD codes. You can select any or all codes by checking the J (justify) checkbox and pressing update","Do te shfaqe dritaren pop-up te justifikimit. Ka nje kuti kerkimi qe ju lejon te kerkoni per nje kod ICD. Do te shfaqe gjithashtu 10 kodet ICD me te perdorura. Mund te zgjidhni cilindo ose te gjitha kodet duke kontrolluar kutine J (justifiko) dhe duke shtypur perditeso"
+"It will have a value of 2 in the Tier column indicating it is a successor or child on the first line above having a Tier value of 1 which in this case is Serum Chemistry","Do te kete nje vlere 2 ne kolonen Tier duke treguar qe eshte nje pasardhes ose femije ne rreshtin e pare me siper qe ka nje vlere Tier prej 1 qe ne kete rast eshte Kimia e Serumit"
+It will have two sections - the Issues Section and the Encounters Section,Do te kete dy seksione - Seksioni i Ceshtjeve dhe Seksioni i Vizitave
+It will help later in troubleshooting problems that may arise with your configuration of the Procedure Orders module,Do te ndihmoje me vone ne zgjidhjen e problemeve qe mund te lindin me konfigurimin tuaj te modulit te Porosive te Procedurave
+It will open the Create New Message section,Do te hape seksionin e Krijimit te Mesazhit te Ri
+It will take you to the MedEx sign-up page,Do t'ju coje ne faqen e regjistrimit te MedEx
+"It will then appear in the Allergies widget on the Patient Dashboard as well as under allergies in the Issues page","Pastaj do te shfaqet ne widget-in e Alergjive ne Panelin e Pacientit si dhe nen alergjite ne faqen e Ceshtjeve"
+"It will then appear in the Medications widget on the Patient Dashboard as well as under Medications in the Issues page","Pastaj do te shfaqet ne widget-in e Medikamenteve ne Panelin e Pacientit si dhe nen Medikamentet ne faqen e Ceshtjeve"
+Item added,Artikulli u shtua
+Item Adjustment,Rregullimi i Artikullit
+Item deleted,Artikulli u fshi
+Item Details,Detajet e Artikullit
+Items load failed,Ngarkimi i artikujve deshtoi
+IU/L,IU/L
+IUD,IUD
+IV,IV
+IVE Client List,Lista e Klienteve IVE
+IV{{patient suffix}},IV{{patient suffix}}
+Jaeger,Jaeger
+Jaeger{{Near Acuity Type Jaeger}},Jaeger{{Near Acuity Type Jaeger}}
+Jaundice,Verdheza
+Javanese,Javaneze
+Joint dislocations,Dislokime te nyjeve
+Joint Pain,Dhimbje Nyjesh
+Joint sprains,Ndrydhje nyjesh
+Jr,Jr
+Jr.,Jr.
+JSON Web Key Set,JSON Web Key Set
+"JSON Web Key Set (Note a hosted web URI is preferred and this feature may be removed in future SMART versions)","JSON Web Key Set (Shenim: preferohet nje URI web e strehuar dhe kjo veçori mund te hiqet ne versionet e ardhshme SMART)"
+JSON Web Key Set URI,JSON Web Key Set URI
+Jump to Next Row,Kalo ne Rreshtin Tjeter
+"Just below the check information is a blue area where you put in your search parameters.  You can search by patient name, chart number, encounter number or date of service, or any combination of these.  You may also select whether you want to see all invoices, open invoices, or only invoices that are due (by the patient).  Click the Search button to perform the search.","Pikerisht posht informacionit te kontrollit eshte nje zone blu ku vendosni parametrat e kerkimit. Mund te kerkoni sipas emrit te pacientit, numrit te kartes, numrit te vizites ose dates se sherbimit, ose çdo kombinim te ketyre. Mund te zgjidhni gjithashtu nese doni te shihni te gjitha faturat, faturat e hapura, ose vetem faturat qe jane per t'u paguar (nga pacienti). Klikoni butonin Kerko per te kryer kerkimin."
+Justification Entries,Hyrjet e Justifikimit
+Justify,Justifiko
+Justify Dx,Justifiko Dx
+"Justify each CPT code with one or more justifications using the dropdown box. These will reflect the diagnosis codes that was previously selected in 'Select Codes'","Justifikoni cdo kod CPT me nje ose me shume justifikime duke perdorur kutine zbritese. Keto do te pasqyrojne kodet e diagnozes qe jane zgjedhur me pare ne 'Zgjidhni Kodet'"
+Justify/Save,Justifiko/Ruaj
+JWT not found in system,JWT nuk u gjet ne sistem
+J{{Justify Header}},J{{Justify Header}}
+"k, here's the rest ","k, ja pjesa tjeter "
+K1{{Keratometry 1}},K1{{Keratometry 1}}
+K2{{Keratometry 2}},K2{{Keratometry 2}}
+"Kalaallisut, Greenlandic","Kalaallisut, Groenlandeze"
+Kannada,Kanada
+Kanuri,Kanuri
+Kashmiri,Kashmire
+Kazakh,Kazake
+key,celes
+Key access failed with error,Aksesi i celesit deshtoi me gabim
+Key for multiple database credentials encryption,Celesi per enkriptimin e kredencialeve te bazes se te dhenave te shumefishta
+Key Name,Emri i Celesit
+Khmer,Kmere
+Kidney Cancer,Kanceri i Veshkave
+Kidney Failure,Deshtimi i Veshkave
+Kidney Infections,Infeksione te Veshkave
+Kidney Stones,Guret e Veshkave
+Kidney Transplant,Transplanti i Veshkave
+"Kikuyu, Gikuyu","Kikuyu, Gikuyu"
+"Kindle Fire HDX, Laptop MDPI, WXGA","Kindle Fire HDX, Laptop MDPI, WXGA"
+Kinyarwanda,Kinyarwanda
+Kiosk,Kiosk
+Kirundi,Kirundi
+Knee,Gju
+Knee Problems,Probleme te Gjurit
+Knee Replacement,Zevendesimi i Gjurit
+Komi,Komi
+"Kwanyama, Kuanyama","Kwanyama, Kuanyama"
+l/min,l/min
+Lab,Laborator
+Lab Configuration,Konfigurimi i Laboratorit
+Lab Documents,Dokumentet e Laboratorit
+Lab Exchange Site Address,Adresa e Faqes se Shkembimit te Laboratorit
+Lab Exchange Site ID,ID e Faqes se Shkembimit te Laboratorit
+Lab Exchange Token ID,ID e Tokenit te Shkembimit te Laboratorit
+Lab Order,Porosi Laboratori
+Lab overview,Permbledhje e laboratorit
+Lab Overview,Permbledhje e Laboratorit
+Lab Query Status,Statusi i Kerkeses se Laboratorit
+Lab Reference ID,ID e References se Laboratorit
+"Lab Results (write,addonly optional)","Rezultatet e Laboratorit (shkruaj, vetem shtim opsional)"
+Lab Results Category Name,Emri i Kategorise se Rezultateve te Laboratorit
+Lab Test Results,Rezultatet e Testeve te Laboratorit
+Lab/File,Laborator/Skedar
+Label,Etikete
+Label cannot be blank,Etiketa nuk mund te jete bosh
+Label Cols,Kolonat e Etiketes
+Label for this type,Etiketa per kete lloj
+Label printed by,Etiketa e printuar nga
+LabelCols must be a number between 1 and 999,LabelCols duhet te jete nje numer midis 1 dhe 999
+Labels,Etiketa
+"Labels can be printed either for one patient or for all the selected patients","Etiketat mund te printohen ose per nje pacient ose per te gjithe pacientet e zgjedhur"
+Laceration / skin condition,Prerje / gjendje e lekures
+Laceration/abrasion,Prerje/gervishje
+LAC{{left anterior chamber}},LAC{{left anterior chamber}}
+LADate,LADate
+LAD{{left adnexa}},LAD{{left adnexa}}
+Laminas Module,Moduli Laminas
+Landscape,Horizontale
+Language definition added,Percaktimi i gjuhes u shtua
+Language Interface Tool,Mjeti i Nderfaces se Gjuhes
+Language Interface Tool (language),Mjeti i Nderfaces se Gjuhes (gjuhe)
+"Language List (write,addonly optional)","Lista e Gjuheve (shkruaj, vetem shtim opsional)"
+"Language List (write,addonly optional) (language)","Lista e Gjuheve (shkruaj, vetem shtim opsional) (gjuhe)"
+Lao,Laosiane
+"Laptop HiDPI, WXGA+","Laptop HiDPI, WXGA+"
+Laser Interferometry,Interferometri Lazer
+Laser Interferometry Acuity,Mprehtesia e Interferometrise Lazer
+Last Action,Veprimi i Fundit
+Last Activity Date,Data e Aktivitetit te Fundit
+Last Appendectomy,Apendektomia e Fundit
+Last Bill Date,Data e Fatures se Fundit
+Last Bill Date:,Data e Fatures se Fundit:
+Last Breast Exam,Ekzaminimi i Fundit i Gjirit
+Last Calendar Year,Viti i Fundit Kalendarik
+Last Cataract Surgery,Operacioni i Fundit i Kataraktes
+Last Cholecystestomy,Kolecistektomia e Fundit
+last date of this event,data e fundit e ketij eventi
+Last Encounter,Vizita e Fundit
+Last Gyn. Exam,Ekzaminimi i Fundit Gjinekologjik
+Last Heart Surgery,Operacioni i Fundit i Zemres
+Last Hernia Repair,Riparimi i Fundit i Hernies
+Last Hip Replacement,Zevendesimi i Fundit i Ijeve
+Last Hysterectomy,Histerektomia e Fundit
+Last Knee Replacement,Zevendesimi i Fundit i Gjurit
+Last Level Billed,Niveli i Fundit i Faturuar
+Last Mammogram,Mamografia e Fundit
+Last Menstrual Period,Periudha e Fundit Menstruale
+Last Modified,Modifikimi i Fundit
+Last Name Missing,Mbiemri Mungon
+"Last name, First name","Mbiemri, Emri"
+"Last name, first name","Mbiemri, emri"
+"Last name, first name (title)","Mbiemri, emri (titulli)"
+"Last name, first name (title: comments)","Mbiemri, emri (titulli: komente)"
+Last Physical Exam,Ekzaminimi i Fundit Fizik
+Last Prostate Exam,Ekzaminimi i Fundit i Prostates
+Last Rectal Exam,Ekzaminimi i Fundit Rektal
+Last Reviewed,Rishikimi i Fundit
+Last Run Started At,Ekzekutimi i Fundit Filloi Me
+Last Saved,Ruajtja e Fundit
+Last Sigmoid/Colonoscopy,Sigmoidoskopia/Kolonoskopia e Fundit
+Last Stmt,Deklarata e Fundit
+Last Tonsillectomy,Tonsilektomia e Fundit
+Last Tx Date,Data e Fundit e Tx
+Last update,Perditesimi i fundit
+Last Update,Perditesimi i Fundit
+Last update by,Perditesimi i fundit nga
+Last Verified On,Verifikuar per Here te Fundit Me
+Last X-ray,Radiografia e Fundit
+Lastly is the view to show templates assigned to patients.,Se fundi eshte pamja per te shfaqur shabllonet e caktuara per pacientet.
+Last{{Name}},Last{{Name}}
+Late Recurrence (2-12 Mo),Rikthim i Vonuar (2-12 Muaj)
+Lateral Malleolus,Malleoli Lateral
+Lateral malleolus:,Malleoli lateral:
+Laterality,Lateraliteti
+"Laterality of this procedure, if applicable","Lateraliteti i kesaj procedure, nese eshte i aplikueshem"
+laterally displaced PMI:,PMI i zhvendosur lateralisht:
+Latest Health Alerts,Njoftimet me te Fundit te Shendetit
+Latest Medical Records,Regjistrimet Mjekesore me te Fundit
+Latest Results Only,Vetem Rezultatet me te Fundit
+Latest Visit or Consultation,Vizita ose Konsultimi me i Fundit
+lat{{lateral}},lat{{lateral}}
+Launch,Hap
+Launch URI,URI e Hapjes
+Layout (need to logout/login after change this setting),Paraqitja (duhet te dilni/hyni pasi te ndryshoni kete cilesim)
+Layout Based,E Bazuar ne Paraqitje
+Layout Columns,Kolonat e Paraqitjes
+Layout Editor,Redaktori i Paraqitjes
+Layout groups,Grupet e paraqitjes
+Layout ID,ID e Paraqitjes
+Layout ID is required,ID e Paraqitjes eshte e detyrueshme
+Layout Properties,Vetite e Paraqitjes
+Layout Style,Stili i Paraqitjes
+Layout-Based Transaction Forms,Formularet e Transaksioneve te Bazuara ne Paraqitje
+Layout-Based Visit Forms,Formularet e Vizitave te Bazuara ne Paraqitje
+Layouts,Paraqitjet
+lb,lb
+LBF Encounter Form Preview,Parashikimi i Formularit te Vizites LBF
+LBF_Validations,LBF_Validations
+lbs,lbs
+LB{{left brow}},LB{{left brow}}
+LCMT{{left Central Macular Thickness}},LCMT{{left Central Macular Thickness}}
+LCUP{{left cup}},LCUP{{left cup}}
+LC{{left conjunctiva}},LC{{left conjunctiva}}
+LDAP - Distinguished Name of User,LDAP - Emri i Dalluar i Perdoruesit
+LDAP - Login Exclusions,LDAP - Perjashtimetnga Hyrja
+LDAP - Server Name or URI,LDAP - Emri i Serverit ose URI
+LDL,LDL
+LD{{left disc}},LD{{left disc}}
+leave blank if still active,lini bosh nese eshte ende aktive
+Leave Blank To Keep Original Filename,Lini Bosh per te Ruajtur Emrin Origjinal te Skedarit
+Leave blank to keep password unchanged.,Lini bosh per te mbajtur fjalekalimin te pandryshuar.
+Leave Coding Blank,Lini Kodimin Bosh
+"Leave coding blank as currently you can only enter ICD10 codes",Lini kodimin bosh pasi aktualisht mund te futni vetem kode ICD10
+Leave Destination blank,Lini Destinacionin bosh
+Leave it blank if the problem is still active,Leni bosh nese problemi eshte ende aktiv
+Leave the Followup Services blank and click Save,Lini Sherbimet Pasues bosh dhe klikoni Ruaj
+Leave The Form,Lini Formularin
+Leaving the pass phrase blank will not encrypt the document,Lenimi bosh i frazes se kalimit nuk do ta enkriptoje dokumentin
+Ledger,Libri i Llogarive
+"Ledger - Summarizes and tabulates all the charges, payments, adjustments and balances for all encounters pertaining to the patient","Libri i Llogarive - Permbledh dhe tabelon te gjitha tarifat, pagesat, rregullimet dhe bilancet per te gjitha vizitat qe i perkasin pacientit"
+Left Arm,Krahu i Majte
+Left Deltoid,Deltoidi i Majte
+Left Ear,Veshi i Majte
+left ear,veshi i majte
+Left Gluteus Medius,Gluteus Medius i Majte
+Left Lens,Thjerreza e Majte
+Left Lower Forearm,Parakrahu i Poshtem i Majte
