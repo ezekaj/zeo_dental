@@ -25,3 +25,9 @@ dist-ssr
 
 # Playwright MCP testing artifacts
 .playwright-mcp/
+
+# crmZ.E
+crm-ze/.env
+crm-ze/data/
+crm-ze/logs/
+docker-compose.override.yml

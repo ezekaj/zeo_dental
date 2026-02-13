@@ -1,0 +1,47 @@
+diff --git a/interface/globals.php b/interface/globals.php
+index 00a658586..b94ddec40 100644
+--- a/interface/globals.php
++++ b/interface/globals.php
+@@ -643,7 +643,7 @@ if (!empty($glrow)) {
+     $globalsBag->set('translate_document_categories', true);
+     $globalsBag->set('translate_appt_categories', true);
+     $globalsBag->set('timeout', 7200);
+-    $openemr_name = 'OpenEMR';
++    $openemr_name = 'crmZ.E';
+     $css_header = "$web_root/public/themes/style_default.css";
+     $globalsBag->set('openemr_name', $openemr_name);
+     $globalsBag->set('css_header', $css_header);
+diff --git a/interface/main/tabs/main.php b/interface/main/tabs/main.php
+index efe2ed8cf..2ffeaf61f 100644
+--- a/interface/main/tabs/main.php
++++ b/interface/main/tabs/main.php
+@@ -460,7 +460,7 @@ $twig = (new TwigContainer(null, OEGlobalsBag::getInstance()->getKernel()))->get
+     <div id="mainBox" <?php echo $disp_mainBox ?>>
+         <nav class="navbar navbar-expand-xl navbar-light bg-light py-0">
+             <?php if ($GLOBALS['display_main_menu_logo'] === '1') : ?>
+-                <a class="navbar-brand" href="https://www.open-emr.org" title="OpenEMR <?php echo xla("Website"); ?>" rel="noopener" target="_blank">
++                <a class="navbar-brand" href="<?php echo $GLOBALS['webroot']; ?>/interface/main/tabs/main.php" title="crmZ.E">
+                     <img src="<?php echo $menuLogo; ?>" class="d-inline-block align-middle" height="16" alt="<?php echo xlt('Main Menu Logo'); ?>">
+                 </a>
+             <?php endif; ?>
+diff --git a/library/globals.inc.php b/library/globals.inc.php
+index 6b044dddd..7cfec0f89 100644
+--- a/library/globals.inc.php
++++ b/library/globals.inc.php
+@@ -442,14 +442,14 @@ $GLOBALS_METADATA = [
+         'openemr_name' => [
+             xl('Application Title'),
+             'text',
+-            'OpenEMR',
++            'crmZ.E',
+             xl('Application name used throughout the user interface.')
+         ],
+
+         'machine_name' => [
+             xl('Application Machine Name'),
+             'text',
+-            'openemr',
++            'crm-ze',
+             xl('The machine name of the application. Used to identify the EMR in various messaging systems like HL7. Should not contain spaces'),
+         ],
+

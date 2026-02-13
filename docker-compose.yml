@@ -1,0 +1,112 @@
+# Local development: Zeo Dental website + crmZ.E
+# Usage: docker compose up -d
+# Then:  cd crm-ze && ./setup.sh
+
+services:
+  # Zeo Dental Website
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      DATABASE_URL: ${DATABASE_URL:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+      CRM_ZE_BASE_URL: http://crm-ze-app:80
+    depends_on:
+      crm-ze-app:
+        condition: service_healthy
+        required: false
+    networks:
+      - zeo-network
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 3s
+      start_period: 5s
+      retries: 3
+
+  # crmZ.E Database
+  crm-ze-db:
+    restart: always
+    image: mariadb:11.8
+    command: ['mariadbd','--character-set-server=utf8mb4']
+    ports:
+      - "${CRM_ZE_DB_PORT:-8320}:3306"
+    volumes:
+      - crm-ze-db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-openemr}
+      MYSQL_USER: ${MYSQL_USER:-openemr}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-openemr}
+    healthcheck:
+      test:
+        - CMD
+        - /usr/local/bin/healthcheck.sh
+        - --su-mysql
+        - --connect
+        - --innodb_initialized
+      start_period: 1m
+      start_interval: 10s
+      interval: 1m
+      timeout: 5s
+      retries: 3
+    networks:
+      - zeo-network
+
+  # crmZ.E Application
+  crm-ze-app:
+    restart: always
+    image: openemr/openemr:flex
+    ports:
+      - "${CRM_ZE_HTTP_PORT:-8300}:80"
+      - "${CRM_ZE_HTTPS_PORT:-9300}:443"
+    volumes:
+      - crm-ze-sites:/var/www/localhost/htdocs/openemr/sites:rw
+      - crm-ze-logs:/var/log
+    environment:
+      MYSQL_HOST: crm-ze-db
+      MYSQL_ROOT_PASS: ${MYSQL_ROOT_PASSWORD:-root}
+      MYSQL_USER: ${MYSQL_USER:-openemr}
+      MYSQL_PASS: ${MYSQL_PASSWORD:-openemr}
+      OE_USER: ${CRM_ZE_USER:-admin}
+      OE_PASS: ${CRM_ZE_PASS:-pass}
+      OPENEMR_SETTING_rest_api: 1
+      OPENEMR_SETTING_rest_fhir_api: 1
+      OPENEMR_SETTING_rest_portal_api: 1
+      OPENEMR_SETTING_portal_onsite_two_enable: 1
+    depends_on:
+      crm-ze-db:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD
+        - /usr/bin/curl
+        - --fail
+        - --insecure
+        - --location
+        - --show-error
+        - --silent
+        - https://localhost/meta/health/readyz
+      start_period: 3m
+      start_interval: 10s
+      interval: 1m
+      timeout: 5s
+      retries: 3
+    networks:
+      - zeo-network
+
+volumes:
+  crm-ze-db: {}
+  crm-ze-sites: {}
+  crm-ze-logs: {}
+
+networks:
+  zeo-network:
+    name: zeo-network
+    driver: bridge

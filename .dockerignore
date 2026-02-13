@@ -10,3 +10,7 @@ dist
 .cache
 coverage
 .nyc_output
+
+# crmZ.E (not needed in website container)
+crm-ze/
+docker-compose*.yml
