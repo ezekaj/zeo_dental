@@ -1,0 +1,301 @@
+constant_name,definition
+Updated Definitions List,Lista e Përkufizimeve të Përditësuara
+Updated fields will be purple.,Fushat e përditësuara do të jenë me ngjyrë vjollcë.
+Updated!,Përditësuar!
+Updates Successful,Përditësimet me Sukses
+Updating Access Controls,Përditësimi i Kontrolleve të Aksesit
+Updating demographics is not authorized.,Përditësimi i të dhënave demografike nuk është i autorizuar.
+Updating global configuration defaults,Përditësimi i parazgjedhjeve të konfigurimit global
+Upgrade ACL,Përmirëso ACL
+Upgrade SQL,Përmirëso SQL
+"Upgrades the OpenEMR database to include Procedures, Functions and tables needed for De-identification process","Përmirëson bazën e të dhënave OpenEMR për të përfshirë Procedurat, Funksionet dhe tabelat e nevojshme për procesin e De-identifikimit"
+Upgrading will continue,Përmirësimi do të vazhdojë
+UPIN,UPIN
+Upload / Save,Ngarko / Ruaj
+Upload and Apply,Ngarko dhe Apliko
+Upload configuration data,Ngarko të dhënat e konfigurimit
+Upload For,Ngarko Për
+Upload Image to,Ngarko Imazhin te
+"Upload import file:","Ngarko skedarin e importit:"
+Upload Item,Ngarko Artikullin
+Upload Patient Education PDF to,Ngarko PDF-në Edukative të Pacientit te
+Upload processed successfully,Ngarkimi u përpunua me sukses
+Upload Template for,Ngarko Shabllonin për
+"Upload this file:","Ngarko këtë skedar:"
+Uploaded,Ngarkuar
+"Upon a successful search you are presented with a list of invoices. You may click on one of the invoice numbers to open a second window, which is the data entry page for manual posting. You may also click on a patient name if you want to enter a note that the front office staff will see when the patient checks in, and you may select invoices to appear on patient statements and print those statements.","Pas një kërkimi të suksesshëm ju paraqitet një listë faturash. Mund të klikoni mbi një nga numrat e faturës për të hapur një dritare të dytë, e cila është faqja e futjes së të dhënave për postimin manual. Gjithashtu mund të klikoni mbi emrin e pacientit nëse dëshironi të vendosni një shënim që stafi i recepcionit do ta shohë kur pacienti regjistrohet, dhe mund të zgjidhni faturat për t'u shfaqur në deklaratat e pacientit dhe t'i printoni ato deklarata."
+"Upon clicking an invoice number the ""manual posting window"" appears. Here you can change the due date and notes for the invoice, select the party for whom you are posting, and select the insurances for which all expected paymants have been received.  Most importantly, for each billing code for which an amount was charged, you can enter payment and adjustment information.","Pas klikimit të një numri fature shfaqet ""dritarja e postimit manual"". Këtu mund të ndryshoni datën e afatit dhe shënimet për faturën, të zgjidhni palën për të cilën po postoni, dhe të zgjidhni sigurimet për të cilat janë marrë të gjitha pagesat e pritura. Më e rëndësishmja, për çdo kod faturimi për të cilin është ngarkuar një shumë, mund të futni informacionin e pagesës dhe rregullimit."
+"Upon clicking an invoice number the 'manual posting window' appears. Here you can change the due date and notes for the invoice, select the party for whom you are posting, and select the insurances for which all expected payments have been received. Most importantly, for each billing code for which an amount was charged, you can enter payment and adjustment information.","Pas klikimit të një numri fature shfaqet 'dritarja e postimit manual'. Këtu mund të ndryshoni datën e afatit dhe shënimet për faturën, të zgjidhni palën për të cilën po postoni, dhe të zgjidhni sigurimet për të cilat janë marrë të gjitha pagesat e pritura. Më e rëndësishmja, për çdo kod faturimi për të cilin është ngarkuar një shumë, mund të futni informacionin e pagesës dhe rregullimit."
+Upon entering the page there are two buttons visible below the navigation bar,Pas hyrjes në faqe ka dy butona të dukshëm poshtë shiritit të navigimit
+"Upon logging in to openEMR a small envelope icon is visible on the top right. It shows the number of pending messages and dated reminders","Pas hyrjes në openEMR një ikonë e vogël zarfi është e dukshme në këndin e sipërm djathtas. Ajo tregon numrin e mesazheve në pritje dhe kujtuesve me datë"
+"Upon reaching a predetermined point, either a date or value, the rule will trigger one or more events","Pas arritjes në një pikë të paracaktuar, qoftë datë apo vlerë, rregulli do të aktivizojë një ose më shumë ngjarje"
+"Upon searching you are presented with a list of invoices.  You may click on one of the invoice numbers to open a second window, which is the data entry page for manual posting.  You may also click on a patient name if you want to enter a note that the front office staff will see when the patient checks in, and you may select invoices to appear on patient statements and print those statements.","Pas kërkimit ju paraqitet një listë faturash. Mund të klikoni mbi një nga numrat e faturës për të hapur një dritare të dytë, e cila është faqja e futjes së të dhënave për postimin manual. Gjithashtu mund të klikoni mbi emrin e pacientit nëse dëshironi të vendosni një shënim që stafi i recepcionit do ta shohë kur pacienti regjistrohet, dhe mund të zgjidhni faturat për t'u shfaqur në deklaratat e pacientit dhe t'i printoni ato deklarata."
+"Upon selecting a list to edit the edit page with the list values will be displayed","Pas zgjedhjes së një liste për ndryshim do të shfaqet faqja e ndryshimit me vlerat e listës"
+Upon successful registration you will be taken back to the Manage Multi Factor Authentication landing page,Pas regjistrimit të suksesshëm do të ktheheni në faqen kryesore të Menaxhimit të Vërtetimit me Shumë Faktorë
+Upper arm,Krahu i sipërm
+Upper Lids,Qepallat e Sipërme
+Urgent Care Facility,Qendra e Kujdesit Urgjent
+URI,URI
+Urine Dribbling,Rrjedhje Urine
+Urine Frequency,Frekuenca e Urinimit
+Urine Hesitancy,Hezitim në Urinim
+Urine Microalbumin,Mikroalbumina në Urinë
+Urine Stream,Rrjedha e Urinës
+Urine Urgency,Urgjenca e Urinimit
+URL,URL
+URL for NewCrop eRx Site Address.,URL për Adresën e Faqes NewCrop eRx.
+URL for OpenEMR support.,URL për mbështetjen e OpenEMR.
+URL for Phone Gateway.,URL për Portën e Telefonisë.
+"URL for Phone Gateway. Automated VOIP service provided by Maviq. Please visit http://signup.maviq.com for more information.","URL për Portën e Telefonisë. Shërbim i automatizuar VOIP i ofruar nga Maviq. Ju lutemi vizitoni http://signup.maviq.com për më shumë informacion."
+URL for the WordPress site that supports the portal,URL për faqen WordPress që mbështet portalin
+"URL of ASSE SOAP server. Must be blank if not a Uruguay site. Enter ""test"" for dummy data.","URL e serverit ASSE SOAP. Duhet të jetë bosh nëse nuk është faqe e Uruguait. Shkruani ""test"" për të dhëna provë."
+URL to a support page.,URL për një faqe mbështetjeje.
+"URLs for NewCrop eRx Service Address, separated by a semi-colon.","URL-të për Adresën e Shërbimit NewCrop eRx, të ndara me pikëpresje."
+Uruguay ASSE Token,Token Uruguay ASSE
+Uruguay ASSE URL,URL Uruguay ASSE
+Uruguay SINADI statistical report.,Raporti statistikor Uruguay SINADI.
+Usage - is only required if you are submitting an electronic order to an external facility,Përdorimi - kërkohet vetëm nëse po dërgoni një porosi elektronike në një strukturë të jashtme
+Usage Indicator (ISA15),Treguesi i Përdorimit (ISA15)
+Usage Tips,Këshilla Përdorimi
+"USB based tokens are used for Universal 2nd Factor - U2F authentication and as they are connected to a computer do not need batteries","Tokenat bazuar në USB përdoren për Vërtetimin Universal me Faktorin e 2-të - U2F dhe meqenëse janë të lidhura me kompjuterin nuk kanë nevojë për bateri"
+Use % alone in a field to just sort on that column,Përdorni % vetëm në një fushë për të renditur vetëm atë kolonë
+Use 24 hour time format?,Të përdoret formati kohor 24 orësh?
+Use a pdf template from zend module,Përdorni një shablon pdf nga moduli zend
+"Use a unique word to identify this group, it has to be a single word, if using two words link them together with an underscore or hyphen.","Përdorni një fjalë unike për të identifikuar këtë grup, duhet të jetë një fjalë e vetme, nëse përdorni dy fjalë lidhini ato me nënvizë ose vizë."
+Use Active Directory,Përdorni Active Directory
+Use an html template from zend module,Përdorni një shablon html nga moduli zend
+Use Avery Labels,Përdorni Etiketat Avery
+Use Blood or Serum as Specimen Type,Përdorni Gjakun ose Serumin si Lloj Kampioni
+"Use certified EHR technology to identify patient-specific education resources and provide those resources to the patient if appropriate(New).","Përdorni teknologjinë e certifikuar EHR për të identifikuar burimet edukative specifike për pacientin dhe t'ia ofroni ato burime pacientit nëse është e përshtatshme(E re)."
+"Use certified EHR technology to identify patient-specific education resources and provide those resources to the patient if appropriate.","Përdorni teknologjinë e certifikuar EHR për të identifikuar burimet edukative specifike për pacientin dhe t'ia ofroni ato burime pacientit nëse është e përshtatshme."
+Use Charges Panel,Përdorni Panelin e Tarifave
+"Use CPOE for medication orders directly entered by any licensed healthcare professional who can enter orders into the medical record per state, local and professional guidelines.","Përdorni CPOE për porositë e medikamenteve të futura drejtpërdrejt nga çdo profesionist i licencuar shëndetësor që mund të fusë porosi në dosjen mjekësore sipas udhëzimeve shtetërore, vendore dhe profesionale."
+Use CPOE for medication orders.,Përdorni CPOE për porositë e medikamenteve.
+Use CPOE for medication orders.(Alternative),Përdorni CPOE për porositë e medikamenteve.(Alternativë)
+Use CPOE for procedure orders.,Përdorni CPOE për porositë e procedurave.
+Use CPOE for radiology orders.,Përdorni CPOE për porositë e radiologjisë.
+Use Custom Dunning Messages,Përdorni Mesazhe Përshtatura të Ndjekjes
+Use Custom End of Day Report,Përdorni Raportin e Përshtatur të Fundit të Ditës
+Use Custom Immunization List,Përdorni Listën e Përshtatur të Vaksinimit
+Use Custom Statement,Përdorni Deklaratë të Përshtatur
+Use Date Range,Përdorni Intervalin e Datave
+Use Default,Përdorni Parazgjedhjen
+Use Defaults,Përdorni Parazgjedhjet
+Use Delete Option to Remove.,Përdorni Opsionin Fshi për të Hequr.
+Use international date style?,Të përdoret stili ndërkombëtar i datës?
+Use LDAP for Authentication,Përdorni LDAP për Vërtetim
+Use Portal Dashboard to confirm with patient.,Përdorni Panelin e Portalit për të konfirmuar me pacientin.
+Use RxCUI,Përdorni RxCUI
+Use RxNorm,Përdorni RxNorm
+Use servers protocol and host in urls (portal internal only).,Përdorni protokollin dhe hostin e serverit në url (vetëm portali i brendshëm).
+Use source filename,Përdorni emrin e skedarit burimor
+Use SSL (encrypted) connection to CouchDB,Përdorni lidhje SSL (të kriptuar) me CouchDB
+"Use the fee sheet to charge for services or products. ","Përdorni fletën e tarifave për të faturuar shërbime ose produkte. "
+Use the fields below for a purchase or transfer.,Përdorni fushat më poshtë për një blerje ose transfertë.
+Use the help file on that page for further help,Përdorni skedarin e ndihmës në atë faqe për ndihmë të mëtejshme
+"Use the latest versions of the following modern browsers - Chrome, Firefox, Safari, Edge and Opera","Përdorni versionet më të fundit të shfletuesve modernë në vijim - Chrome, Firefox, Safari, Edge dhe Opera"
+Use the Select User dropdown box to select the user(s) to whom the message will be sent,Përdorni kutinë rënëse Zgjidh Përdoruesin për të zgjedhur përdoruesin(ët) të cilëve do t'u dërgohet mesazhi
+"Use this feature only with newly installed sites, ","Përdoreni këtë veçori vetëm me faqe të sapoinstaluara, "
+Use this image,Përdorni këtë imazh
+Use this section to delete existing groups or Access Request Objects (AROs),Përdorni këtë seksion për të fshirë grupet ekzistuese ose Objektet e Kërkesës së Aksesit (AROs)
+Use topics?,Të përdoren temat?
+Use Username,Përdorni Emrin e Përdoruesit
+Used on the login and about pages,Përdoret në faqet e hyrjes dhe rreth nesh
+Used to enter information that pertains to this particular claim in order to facilitate processing and submitting this claim,Përdoret për të futur informacion që ka të bëjë me këtë pretendim specifik në mënyrë që të lehtësohet përpunimi dhe dërgimi i këtij pretendimi
+user,përdorues
+User Administration,Administrimi i Përdoruesve
+User and Facility Administration,Administrimi i Përdoruesve dhe Strukturave
+User and Group Administration,Administrimi i Përdoruesve dhe Grupeve
+User Cannot be Deleted,Përdoruesi Nuk Mund të Fshihet
+User Certificate Authentication is disabled,Vërtetimi me Certifikatë Përdoruesi është çaktivizuar
+User Debug Error Catch,Kapja e Gabimeve të Korrigjimit të Përdoruesit
+User Debugging Mode.,Modaliteti i Korrigjimit të Përdoruesit.
+User Debugging Options,Opsionet e Korrigjimit të Përdoruesit
+User Id,Id e Përdoruesit
+User is required to have this access control for Active Alerts and Passive Alerts,Përdoruesi duhet të ketë këtë kontroll aksesi për Njoftimet Aktive dhe Njoftimet Pasive
+"User Logon (If 03 above, else leave spaces) (ISA02)","Hyrja e Përdoruesit (Nëse 03 më sipër, përndryshe lini boshllëqe) (ISA02)"
+User logon Required Indicator (ISA01~ use 00 or 03),Treguesi i Detyrueshëm i Hyrjes së Përdoruesit (ISA01~ përdorni 00 ose 03)
+User Manual Link Override,Mbivendosja e Linkut të Manualit të Përdoruesit
+User Name must be at least 12 characters!,Emri i Përdoruesit duhet të ketë të paktën 12 karaktere!
+User name or Host name cannot be empty,Emri i përdoruesit ose emri i hostit nuk mund të jetë bosh
+User or Host name,Emri i përdoruesit ose i hostit
+User Password,Fjalëkalimi i Përdoruesit
+"User Password (ISA04~ if 01 above, else leave spaces)","Fjalëkalimi i Përdoruesit (ISA04~ nëse 01 më sipër, përndryshe lini boshllëqe)"
+User password required Indicator (ISA03~ use 00 or 01),Treguesi i Fjalëkalimit të Detyrueshëm të Përdoruesit (ISA03~ përdorni 00 ose 01)
+User Settings,Cilësimet e Përdoruesit
+User Signature,Nënshkrimi i Përdoruesit
+User Specific Setting,Cilësim Specifik i Përdoruesit
+User UUID,UUID i Përdoruesit
+User's New Password,Fjalëkalimi i Ri i Përdoruesit
+user_notes,user_notes
+Userlist1,Userlist1
+Userlist2,Userlist2
+Userlist3,Userlist3
+Userlist4,Userlist4
+Userlist5,Userlist5
+Userlist6,Userlist6
+Userlist7,Userlist7
+username,emripërdoruesit
+Username for Phone Gateway.,Emri i përdoruesit për Portën e Telefonisë.
+"Username for Phone Gateway. Automated VOIP service provided by Maviq. Please visit http://signup.maviq.com for more information.","Emri i përdoruesit për Portën e Telefonisë. Shërbim i automatizuar VOIP i ofruar nga Maviq. Ju lutemi vizitoni http://signup.maviq.com për më shumë informacion."
+Username for SMS Gateway,Emri i përdoruesit për Portën SMS
+Username for SMS Gateway.,Emri i përdoruesit për Portën SMS.
+Username to connect to CouchDB,Emri i përdoruesit për t'u lidhur me CouchDB
+"Users is the standard windows CN, replace the DC stuff with your domain.","Users është CN standarde e windows, zëvendësoni gjërat DC me domenin tuaj."
+Users may leave it plugged in at all times thus negating its function in 2FA,Përdoruesit mund ta lënë të lidhur gjithmonë duke e bërë të pavlefshme funksionin e saj në 2FA
+Users with appropriate privileges can edit these items by clicking on the Edit button,Përdoruesit me privilegje të përshtatshme mund t'i ndryshojnë këto elemente duke klikuar mbi butonin Ndrysho
+Users/Groups/Logs Administration,Administrimi i Përdoruesve/Grupeve/Regjistrave
+Users/Groups/Logs Administration (users),Administrimi i Përdoruesve/Grupeve/Regjistrave (përdorues)
+Usertext1,Usertext1
+Usertext2,Usertext2
+Usertext3,Usertext3
+Usertext4,Usertext4
+Usertext5,Usertext5
+Usertext6,Usertext6
+Usertext7,Usertext7
+Usertext8,Usertext8
+"uses php <a href=""http://php.net/strftime"">strftime</a> format","përdor formatin php <a href=""http://php.net/strftime"">strftime</a>"
+Using 2FA,Përdorimi i 2FA
+"Using a fruit tree as an easier to visualize analogy will explain the concept of this hierarchy better, the trunk of the tree is the Group (Serum Chemistry), the fruit bearing branch is the actual order, Procedure Order (Serum Uric acid) and the fruit is the result, Discrete Result, also called (Serum Uric Acid) that will hold the value of the returned result. Just as the fruit is not borne on the main trunk you should not place a Discrete Result as a direct descendant or child of a Top Group. Similarly the fruit bearing branch (Procedure Order) cannot be placed as a direct descendant or child of a fruit (Discrete Result)","Përdorimi i një peme frutore si një analogji më e lehtë për t'u vizualizuar do ta shpjegojë më mirë konceptin e kësaj hierarkie, trungu i pemës është Grupi (Kimia e Serumit), dega frutdhënëse është porosia aktuale, Porosia e Procedurës (Acidi Urik i Serumit) dhe fruti është rezultati, Rezultati Diskret, i quajtur gjithashtu (Acidi Urik i Serumit) që do të mbajë vlerën e rezultatit të kthyer. Ashtu si fruti nuk lind në trungun kryesor nuk duhet të vendosni një Rezultat Diskret si pasardhës ose fëmijë direkt të një Grupi Kryesor. Në mënyrë të ngjashme dega frutdhënëse (Porosia e Procedurës) nuk mund të vendoset si pasardhës ose fëmijë direkt i një fruti (Rezultat Diskret)"
+Using technology to improve productivity,Përdorimi i teknologjisë për përmirësimin e produktivitetit
+"Using the details entered into the system openEMR will generate valid HL7 v2.3 messages in 3 formats, a text file that is automatically downloaded to the downloads folder of your browser, a HL7 message that is written to a folder or directory on the server running openEMR or use SFTP - Secure File Transfer Protocol, which is a network protocol that provides file access, file transfer, and file management over a secure connection and transfer this message to a lab","Duke përdorur detajet e futura në sistem, openEMR do të gjenerojë mesazhe të vlefshme HL7 v2.3 në 3 formate, një skedar teksti që shkarkohet automatikisht në dosjen e shkarkimeve të shfletuesit tuaj, një mesazh HL7 që shkruhet në një dosje ose direktori në serverin që ekzekuton openEMR ose përdorni SFTP - Protokollin e Transferimit të Sigurt të Skedarëve, i cili është një protokoll rrjeti që ofron akses skedarësh, transferim skedarësh dhe menaxhim skedarësh përmes një lidhjeje të sigurt dhe transferon këtë mesazh në një laborator"
+Using the Feesheet,Përdorimi i Fletës së Tarifave
+"Using the main headings on the lab slip will help start this process - Organ/Disease Panels, Hematology, Individual Tests, Microbiology, Other","Përdorimi i titujve kryesorë në fletën e laboratorit do të ndihmojë fillimin e këtij procesi - Panelet Organ/Sëmundje, Hematologjia, Testet Individuale, Mikrobiologjia, Tjetër"
+Using this fruit tree analogy we can get a better understanding of the steps needed to create an order for a panel of tests,Duke përdorur këtë analogji të pemës frutore mund të kuptojmë më mirë hapat e nevojshëm për të krijuar një porosi për një panel testesh
+Utilize at your own risk. Always verify data received,Përdoreni me rrezikun tuaj. Verifikoni gjithmonë të dhënat e marra
+UTIs,UTIs
+UUID,UUID
+"Uyghur, Uighur","Ujgure, Ujgure"
+VABiNoc{{Binocular visual acuity}},VABiNoc{{Mprehtësia vizuale binokulare}}
+VABiNoc{{Binocular Visual Acuity}},VABiNoc{{Mprehtësia Vizuale Binokulare}}
+Vaccine funding program eligibility category,Kategoria e pranueshmërisë së programit të financimit të vaksinave
+Vaccine Type,Lloji i Vaksinës
+Valedictory,Lamtumirës
+Validate,Valido
+Validate and Clear,Valido dhe Pastro
+"Validate and Clear validates then sets claims status only, to billed, leaving billing process unaltered and claim submission resets to unsubmitted.","Valido dhe Pastro validon pastaj vendos statusin e pretendimeve vetëm si të faturuara, duke e lënë procesin e faturimit të pandryshuar dhe dërgimi i pretendimit rivendoset si i padërguar."
+Validate Log,Valido Regjistrin
+Validate Only,Vetëm Valido
+Validate Only does a claim validation dry run for errors leaving claim status unaltered.,Vetëm Valido bën një ekzekutim provë të validimit të pretendimit për gabime duke e lënë statusin e pretendimit të pandryshuar.
+Validating,Duke Validuar
+Validating Claim,Duke Validuar Pretendimin
+"Validation error: Fix and resubmit.","Gabim validimi: Korrigjoni dhe ridërgoni."
+"Validation error: Fix and resubmit. Payment values are preserved!","Gabim validimi: Korrigjoni dhe ridërgoni. Vlerat e pagesës janë ruajtur!"
+"Validation error: Fix and resubmit. This popup info is preserved!","Gabim validimi: Korrigjoni dhe ridërgoni. Informacioni i kësaj dritareje është ruajtur!"
+Validation mechanism for when modifying patient demographics.,Mekanizmi i validimit kur modifikohen të dhënat demografike të pacientit.
+Validation rule,Rregulli i validimit
+Value if comparing,Vlera nëse krahasohet
+Value Should be Numeric,Vlera Duhet të Jetë Numerike
+Var1,Var1
+Var2,Var2
+variable to one to run de-identification upgrade script,vendosni variablën në një për të ekzekutuar skriptin e përmirësimit të de-identifikimit
+"Variation in red color discrimination between the eyes (eg. OD=100, OS=75)","Ndryshimi në dallimin e ngjyrës së kuqe midis syve (p.sh. OD=100, OS=75)"
+"Variation in white (muscle) light brightness discrimination between the eyes (eg. OD=$1.00, OS=$0.75)","Ndryshimi në dallimin e ndriçimit të dritës së bardhë (muskulore) midis syve (p.sh. OD=$1.00, OS=$0.75)"
+Varicose Veins,Venat Varikoze
+Various text fields and drop-down boxes will be displayed,Do të shfaqen fusha të ndryshme teksti dhe kutia rënëse
+Vascular condition,Gjendje vaskulare
+Vascular injury,Dëmtim vaskular
+Vascular Surgery,Kirurgjia Vaskulare
+Va{{Visual Acuities}},Va{{Mprehtësitë Vizuale}}
+VB{{abbreviation for Vertical Prism Base}},VB{{shkurtesë për Bazën e Prizmit Vertikal}}
+VD{{abbreviation for Vertex Distance}},VD{{shkurtesë për Distancën Verteksit}}
+Venda,Venda
+Vendor,Furnizuesi
+Verification Status,Statusi i Verifikimit
+Verified On,Verifikuar Më
+Verify,Verifiko
+Verify Contents to apply to,Verifiko Përmbajtjet për t'u aplikuar te
+Verify Email,Verifiko Email-in
+Verify your email for patient portal registration,Verifiko email-in tuaj për regjistrimin në portalin e pacientit
+Version 1 Onsite Patient Portal Site Address,Adresa e Faqes së Portalit të Pacientit në Vend Versioni 1
+Version 2 Onsite Patient Portal Site Address,Adresa e Faqes së Portalit të Pacientit në Vend Versioni 2
+Version 2.x is widely used in the healthcare industry and openEMR uses HL7 version 2.3 ,Versioni 2.x përdoret gjerësisht në industrinë e kujdesit shëndetësor dhe openEMR përdor versionin HL7 2.3
+Version Number,Numri i Versionit
+Version/Model Number,Numri i Versionit/Modelit
+Vert Base{{abbreviation for Vertical Prism Base}},Vert Base{{shkurtesë për Bazën e Prizmit Vertikal}}
+Vert Distance{{abbreviation for Vertex Distance}},Vert Distance{{shkurtesë për Distancën Verteksit}}
+Vert Fissure{{vertical fissure height}},Vert Fissure{{lartësia e çarjes vertikale}}
+Vert Fissure{{vertical fissure}},Vert Fissure{{çarja vertikale}}
+Vert Fusional Amps,Vert Fusional Amps
+Vert Prism{{abbreviation for Vertical Prism Power}},Vert Prism{{shkurtesë për Fuqinë e Prizmit Vertikal}}
+Vertex Distance,Distanca e Verteksit
+"Vertical Fissure: central height between lid margins","Çarja Vertikale: lartësia qendrore midis buzëve të qepallave"
+Vertical Fusional,Fuzional Vertikal
+Vertical Menu Style,Stili i Menysë Vertikale
+Vertical Menu Style for frame based layouts,Stili i Menysë Vertikale për paraqitjet me korniza
+Vertical Menu Style for Frames,Stili i Menysë Vertikale për Kornizat
+Vertical Prism Base,Baza e Prizmit Vertikal
+Vertical Prism Power,Fuqia e Prizmit Vertikal
+Vertigo,Vertigo
+Very difficult,Shumë e vështirë
+Very secure,Shumë e sigurt
+Vessels,Enët
+Veteran`s Administration,Administrata e Veteranëve
+Veterans Administration Plan,Plani i Administratës së Veteranëve
+VFC,VFC
+Vfc,Vfc
+VFC eligible- American Indian/Alaskan Native,VFC i pranueshëm- Indian Amerikan/Vendas i Alaskës
+VFC eligible- Uninsured,VFC i pranueshëm- I pasiguruar
+VFC eligible-Federally Qualified Health Center Patient (under-insured),VFC i pranueshëm-Pacient i Qendrës Shëndetësore të Kualifikuar Federalisht (nën-siguruar)
+VFC eligible-Medicaid/Medicaid Managed Care,VFC i pranueshëm-Medicaid/Kujdesi i Menaxhuar Medicaid
+VF{{vertical fissure}},VF{{çarja vertikale}}
+via,nëpërmjet
+via{{shipped by/supplier}},nëpërmjet{{dërguar nga/furnizuesi}}
+view - can only read but not add or modify,shikim - mund vetëm të lexojë por jo të shtojë ose ndryshojë
+View an x12-835 ERA file,Shiko një skedar x12-835 ERA
+View Batch Claim x12 text,Shiko tekstin x12 të Pretendimit në Grup
+View Blank Referral Form,Shiko Formularin Bosh të Referimit
+View CCD,Shiko CCD
+View CCDA,Shiko CCDA
+View Comprehensive Patient Report,Shiko Raportin Gjithëpërfshirës të Pacientit
+View CSV tables,Shiko tabelat CSV
+View EDI x12 file,Shiko skedarin EDI x12
+View encounter,Shiko vizitën
+View ERA x12 text,Shiko tekstin ERA x12
+View events in a popup window?,Të shfaqen ngjarjet në një dritare kërcyese?
+View Four Panel,Shiko Katër Panele
+View local x12 file,Shiko skedarin lokal x12
+View Log,Shiko Regjistrin
+View Messages,Shiko Mesazhet
+View mode - only administrator can edit another administrator user,Modaliteti i shikimit - vetëm administratori mund të ndryshojë një përdorues tjetër administrator
+View Past and Future Reminders,Shiko Kujtesat e Kaluara dhe të Ardhshme
+View Past Encounter,Shiko Vizitën e Kaluar
+View Past Encounters,Shiko Vizitat e Kaluara
+View related encounters,Shiko vizitat e lidhura
+View the README file,Shiko skedarin README
+View the Summary Report sent to,Shiko Raportin Përmbledhës dërguar te
+View the Summary Report sent to Fax Server.,Shiko Raportin Përmbledhës dërguar te Serveri i Faksit.
+View the Summary Report sent via Fax Server on,Shiko Raportin Përmbledhës dërguar nëpërmjet Serverit të Faksit më
+"View, Download, Transmit (VDT)  (Measure B)","Shiko, Shkarko, Transmeto (VDT) (Masa B)"
+"View, Download, Transmit (VDT) (Measure A)","Shiko, Shkarko, Transmeto (VDT) (Masa A)"
+View/Add/Update groups,Shiko/Shto/Përditëso grupet
+View/Add/Update groups (gadd),Shiko/Shto/Përditëso grupet (gadd)
+View/Create/Update groups appointment in calendar,Shiko/Krijo/Përditëso takimin e grupeve në kalendar
+View/Create/Update groups appointment in calendar (gcalendar),Shiko/Krijo/Përditëso takimin e grupeve në kalendar (gcalendar)
+View/Edit,Shiko/Ndrysho
+View/Edit Allergies,Shiko/Ndrysho Alergjitë
+View/edit issue,Shiko/ndrysho çështjen
+View/Print Blank Referral Form,Shiko/Printo Formularin Bosh të Referimit
+View/Print Blank Referral Form - that can be filled by hand,Shiko/Printo Formularin Bosh të Referimit - që mund të plotësohet me dorë
+VISA,VISA
+VISA/MC/AMEX/Dis,VISA/MC/AMEX/Dis
+VISA/MC/Discovery/HSA,VISA/MC/Discovery/HSA
+Visceral damage/trauma/surgery,Dëmtim/traumë/kirurgji viscerale
+VisForm,VisForm
+Vision,Shikimi
+Visit Details,Detajet e Vizitës
+Visit form ID must start with LBF. Transaction form ID must start with LBT.,ID-ja e formularit të vizitës duhet të fillojë me LBF. ID-ja e formularit të transaksionit duhet të fillojë me LBT.
+Visit Forum,Vizito Forumin
+Visit Patient Home Page,Vizito Faqen Kryesore të Pacientit
+Visit Provider Home Page,Vizito Faqen Kryesore të Ofruesit
+Visit Reason,Arsyeja e Vizitës
+Visit Status,Statusi i Vizitës
+Visit Summary,Përmbledhja e Vizitës
+Visit Test Server,Vizito Serverin e Testimit
+Visited Patients,Pacientët e Vizituar
+Visits by Item Report,Raporti i Vizitave sipas Artikullit
+Visual Acuities,Mprehtësitë Vizuale
+Visual Acuity,Mprehtësia Vizuale
+Visual Fields,Fushat Vizuale
+"Visualize this as not making a fruit hang off another fruit. Instead it should hang off the fruit bearing branch","Vizualizojeni këtë si mos varjen e një fruti nga një frut tjetër. Në vend të kësaj ai duhet të varet nga dega frutdhënëse"
+Vital Signs,Shenjat Jetësore
