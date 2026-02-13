@@ -1,0 +1,301 @@
+constant_name,definition
+Improved,Përmirësuar
+IMP{{impression}},IMP{{përshtypja}}
+"In a likewise fashion you will create a Discrete Result for Potassium, Chloride and Carbon Dioxide","Në mënyrë të ngjashme do të krijoni një Rezultat Diskret për Kaliumin, Kloridin dhe Dioksidin e Karbonit"
+"In a likewise manner create a Custom Favorite Item each for TSH (Sequence 2, Identifying Code WWT02, Standard Code 30166-3) and Vitamin D (Sequence 3, Identifying Code WWT03, Standard Code 35365-6)","Në mënyrë të ngjashme krijoni një Artikull të Personalizuar Favorit për secilën TSH (Sekuenca 2, Kodi Identifikues WWT02, Kodi Standard 30166-3) dhe Vitamina D (Sekuenca 3, Kodi Identifikues WWT03, Kodi Standard 35365-6)"
+"In a likewise manner create a Discrete Result each for TSH (Sequence - 2, Identifying Code - WWT02R, Default Units - mU/L, Default Range - 0.4-4, leave Followup Services blank) and Vitamin D (Sequence - 3, Identifying Code - WWT03R, Default Units - ng/mL, Default Range - 0-20, leave Followup Services blank)","Në mënyrë të ngjashme krijoni një Rezultat Diskret për secilën TSH (Sekuenca - 2, Kodi Identifikues - WWT02R, Njësitë e Paracaktuara - mU/L, Diapazoni i Paracaktuar - 0.4-4, lini bosh Shërbimet Pasardhëse) dhe Vitamina D (Sekuenca - 3, Kodi Identifikues - WWT03R, Njësitë e Paracaktuara - ng/mL, Diapazoni i Paracaktuar - 0-20, lini bosh Shërbimet Pasardhëse)"
+In addition there are 2 checkboxes,Përveç kësaj ka 2 kutiza kontrolli
+"In addition to creating a Referral the system also allows you to print a blank referral form that can be manually filled to generate a Referral","Përveç krijimit të një Referimi sistemi gjithashtu ju lejon të printoni një formular referimi bosh që mund të plotësohet manualisht për të gjeneruar një Referim"
+"In any case establishing a connection, ensuring HIPAA compliance, data security etc will require coding, the cost of which is generally borne by the lab. They however will only approve if the volume of business justifies their investment","Në çdo rast vendosja e një lidhjeje, sigurimi i përputhshmërisë HIPAA, siguria e të dhënave etj do të kërkojë kodim, kostoja e të cilit zakonisht mbulohet nga laboratori. Megjithatë ata do ta miratojnë vetëm nëse vëllimi i biznesit justifikon investimin e tyre"
+in category,në kategori
+In Current Chat,Në Bisedën Aktuale
+In exam room,Në dhomën e ekzaminimit
+In General,Në Përgjithësi
+In House,Brenda
+In House Authorize Payments,Autorizimi i Pagesave Brenda
+in nostril,në hundë
+"In openEMR the Continuity of Care Record (CCR) reports to be generated can be limited to a specific date range by checking the Use Date Range check-box and entering the desired date range","Në openEMR raportet e Regjistrit të Vazhdimësisë së Kujdesit (CCR) që do të gjenerohen mund të kufizohen në një diapazon specifik datash duke shënuar kutizën Përdor Diapazonin e Datave dhe duke futur diapazonin e dëshiruar të datave"
+"In order to fulfill Meaningful Use requirements for Computerized Provider Order Entry (CPOE) for lab and radiology tests this module needs to be used","Për të përmbushur kërkesat e Përdorimit Kuptimplotë për Futjen e Porosive Kompjuterike të Ofruesit (CPOE) për testet laboratorike dhe radiologjike duhet të përdoret ky modul"
+"In order to properly store and retrieve test results and place new orders, tests/orders have to be setup in a hierarchical manner","Për të ruajtur dhe rikthyer siç duhet rezultatet e testeve dhe për të vendosur porosi të reja, testet/porositë duhet të konfigurohen në mënyrë hierarkike"
+"In order to record the values of the results returned you have to create a separate Discrete Result (Tier 4) for each of the panel's constituents, the fruit, as direct descendants of this (General Health Panel) branch (Tier 3). Examples of the results being CBC - Hemoglobin, CBC - Hematocrit, CMP - Sodium, CMP - Potassium, TSH etc. ","Për të regjistruar vlerat e rezultateve të kthyera duhet të krijoni një Rezultat Diskret të veçantë (Niveli 4) për secilin përbërës të panelit, fruti, si pasardhës të drejtpërdrejtë të kësaj dege (Paneli i Përgjithshëm i Shëndetit) (Niveli 3). Shembuj të rezultateve janë CBC - Hemoglobina, CBC - Hematokriti, CMP - Natriumi, CMP - Kaliumi, TSH etj. "
+"In order to register your device, please provide your OpenEMR login password","Për të regjistruar pajisjen tuaj, ju lutemi jepni fjalëkalimin tuaj të hyrjes në OpenEMR"
+"In order to send Continuity of Care Record (CCR) and /or Continuity of Care Document (CCD) optionally check phiMail Allow CCD Send and/or phiMail Allow CCR Send to enable the Transmit feature for these data types","Për të dërguar Regjistrin e Vazhdimësisë së Kujdesit (CCR) dhe/ose Dokumentin e Vazhdimësisë së Kujdesit (CCD) opsionalisht shënoni phiMail Lejo Dërgimin CCD dhe/ose phiMail Lejo Dërgimin CCR për të aktivizuar veçorinë e Transmetimit për këto lloje të dhënash"
+In our case we will choose Local Lab that was setup previously,Në rastin tonë do të zgjedhim Laboratorin Lokal që u konfigurua më parë
+In our case we will leave it as Unassigned,Në rastin tonë do ta lëmë si të Pacaktuar
+In person payments with Stripe Verifone P400,Pagesa personale me Stripe Verifone P400
+"In Portrait mode, determines the height of the envelope along the y-axis in mm","Në modalitetin Portret, përcakton lartësinë e zarfit përgjatë boshtit y në mm"
+"In Portrait mode, determines the width of the envelope along the x-axis in mm","Në modalitetin Portret, përcakton gjerësinë e zarfit përgjatë boshtit x në mm"
+"In short electronic orders can be done, it involves a significant amount of testing and customization to be certified by the lab, generally through a third party and can only happen if the lab agrees to give the green light to the project","Shkurtimisht porositë elektronike mund të bëhen, por kjo përfshin një sasi të konsiderueshme testimi dhe personalizimi për t'u çertifikuar nga laboratori, zakonisht përmes një pale të tretë dhe mund të ndodhë vetëm nëse laboratori pranon të japë dritën jeshile për projektin"
+"In the 'Post Item' section that is displayed at the top you may enter a source (e.g. check number), pay date and check amount. The reason for the source and pay date is so that you don't have to enter them over and over again for each claim. The amount that you enter will be decreased for each invoice that is given part of the payment, and hopefully will end at zero when you are done.","Në seksionin 'Posto Artikullin' që shfaqet në krye mund të futni një burim (p.sh. numrin e çekut), datën e pagesës dhe shumën e çekut. Arsyeja për burimin dhe datën e pagesës është që të mos keni nevojë t'i futni ato vazhdimisht për çdo kërkesë. Shuma që futni do të zvogëlohet për çdo faturë që i jepet një pjesë e pagesës, dhe shpresojmë do të përfundojë në zero kur të keni mbaruar."
+"In the above example an order for a single test was created, i.e. Serum Uric Acid","Në shembullin e mësipërm u krijua një porosi për një test të vetëm, p.sh. Acidi Urik Serik"
+"In the default installation click on Add to bring up the Add/Edit Issue pop-up page","Në instalimin e paracaktuar klikoni Shto për të shfaqur faqen pop-up Shto/Ndrysho Çështjen"
+In the patient's words,Në fjalët e pacientit
+"In the second stage of Meaningful Use, the CCD, but not the CCR, was included as part of the standard for clinical document exchange","Në fazën e dytë të Përdorimit Kuptimplotë, CCD, por jo CCR, u përfshi si pjesë e standardit për shkëmbimin e dokumenteve klinike"
+"In this case the Custom Favorite Group will be called Preop Labs and the two recognized panels will be direct descendants, each in a Custom Favorite Item Tier named CBC and Renal Panel respectively","Në këtë rast Grupi i Personalizuar i Favoriteve do të quhet Preop Labs dhe dy panelet e njohura do të jenë pasardhës të drejtpërdrejtë, secili në një Nivel Artikulli Favorit të Personalizuar të quajtur CBC dhe Paneli Renal përkatësisht"
+"In this case you will create a Procedure Order, the fruit bearing branch called General Health Panel (Tier 3)","Në këtë rast do të krijoni një Porosi Procedure, degën frutidhënëse të quajtur Paneli i Përgjithshëm i Shëndetit (Niveli 3)"
+"In total, there are seventeen sections that can be included within a Continuity of Care Record (CCR)","Në total, ka shtatëmbëdhjetë seksione që mund të përfshihen brenda një Regjistri të Vazhdimësisë së Kujdesit (CCR)"
+In Use,Në Përdorim
+In-process,Në proces
+inactive,joaktiv
+Inactive - Lost to follow - up,Joaktiv - I humbur nga ndjekja
+Inactive - Moved or gone elsewhere,Joaktiv - Transferuar ose larguar diku tjetër
+Inactive - Permanently inactive,Joaktiv - Përgjithmonë joaktiv
+Inactive - Unspecified,Joaktiv - I paspecifikuar
+Inactive Messages,Mesazhe Joaktive
+Inbox,Kutia Hyrëse
+INCITS Code,Kodi INCITS
+Include all lists referenced in chosen layouts,Përfshi të gjitha listat e referuara në paraqitjet e zgjedhura
+Include all values reported for each result code,Përfshi të gjitha vlerat e raportuara për çdo kod rezultati
+Include Checksum,Përfshi Checksum
+Include Completed,Përfshi të Përfunduarat
+Include Customers in checkout and receipts. See the Customers list.,Përfshi Klientët në arkë dhe fatura. Shih listën e Klientëve.
+Include Inactive,Përfshi Joaktivët
+Include inactive,Përfshi joaktivët
+Include Inactive Providers,Përfshi Ofruesit Joaktivë
+Include inactive providers in the fee sheet,Përfshi ofruesit joaktivë në fletën e tarifave
+Include inactive providers in the fee sheet.,Përfshi ofruesit joaktivë në fletën e tarifave.
+Include inactive users,Përfshi përdoruesit joaktivë
+Include line item unit price amounts in checkout and receipts.,Përfshi shumat e çmimit për njësi të artikullit në arkë dhe fatura.
+Include Uncategorized,Përfshi të Pakategorizuarat
+Include Unstructured data,Përfshi të dhënat e Pastrukturuara
+Include Vitals,Përfshi Shenjat Vitale
+Include vitals data?,Përfshi të dhënat e shenjave vitale?
+Include your initials and details of reason for transaction.,Përfshi inicialet tuaja dhe detajet e arsyes për transaksionin.
+Included Providers,Ofruesit e Përfshirë
+"including CVF{{Confrontational Visual Fields}} and Pupils","përfshirë CVF{{Fushat Vizuale Konfrontuese}} dhe Pupilat"
+Inclusion,Përfshirje
+Incoming results requiring attention:,Rezultate hyrëse që kërkojnë vëmendje:
+Incontinence,Inkontinencë
+Incorporate clinical lab-test results into certified EHR technology as structured data.,Inkorporo rezultatet e testeve laboratorike klinike në teknologjinë e çertifikuar EHR si të dhëna të strukturuara.
+Incorrect confirmation PIN,PIN konfirmimi i pasaktë
+"Increase the limit to a larger number say 100 so that you can decide on which ones to act upon","Rritni kufirin në një numër më të madh p.sh. 100 në mënyrë që të vendosni se cilat do të veproni"
+Independent Clinic,Klinikë e Pavarur
+Independent Laboratory,Laborator i Pavarur
+Indian Health Service Free-standing Facility,Objekti i Pavarur i Shërbimit Shëndetësor Indian
+Indian Health Service Provider-based Facility,Objekti i Bazuar te Ofruesi i Shërbimit Shëndetësor Indian
+Indicates abnormality,Tregon anomali
+Indicates if this issue is an ophthalmic-specific medication,Tregon nëse kjo çështje është një ilaç specifik oftalmologjik
+Indicates if this issue is currently active,Tregon nëse kjo çështje është aktualisht aktive
+Indications,Indikacione
+"Individual access can be tailored to fit the needs by assigning a user to one or more groups (AROs). The user will then inherit all the privileges, i.e have access to parts of the program (ACO), of each group (ARO) the user belongs to.","Aksesi individual mund të përshtatet sipas nevojave duke caktuar një përdorues në një ose më shumë grupe (ARO). Përdoruesi pastaj do të trashëgojë të gjitha privilegjet, p.sh. do të ketë akses në pjesë të programit (ACO), të çdo grupi (ARO) ku përket përdoruesi."
+Individual pages can override 2nd and 3rd options by implementing a log message.,Faqet individuale mund të anashkalojnë opsionin e 2-të dhe të 3-të duke implementuar një mesazh log.
+Individual tests or even individual recognized panel of tests can be grouped together as a Custom Favorite Group,Testet individuale ose edhe panele të njohura individuale testesh mund të grupohen së bashku si një Grup i Personalizuar Favoritesh
+Ineligible,I Pakualifikuar
+Infection / Abscess,Infeksion / Absces
+Infert Couns,Këshillim Infertiliteti
+Influenza 1,Gripi 1
+Influenza 2,Gripi 2
+Influenza Immunization for Patients >= 50 Years Old,Imunizimi kundër Gripit për Pacientët >= 50 Vjeç
+Influenza Immunization for Patients >= 50 Years Old (CQM),Imunizimi kundër Gripit për Pacientët >= 50 Vjeç (CQM)
+Influenza Vaccine,Vaksina e Gripit
+Informant,Informator
+Information,Informacion
+Information regarding the Patient Portal is also shown in the header section,Informacioni në lidhje me Portalin e Pacientit shfaqet gjithashtu në seksionin e kokës
+Information Source,Burimi i Informacionit
+inf{{inferior}},inf{{inferior}}
+inhalations,inhalime
+Inhale,Thithi
+inhilations,inhalime
+Initial Patient Population,Popullata Fillestare e Pacientëve
+Initial Treatment,Trajtimi Fillestar
+Initial User,Përdoruesi Fillestar
+Initially Open Group,Grupi Fillimisht i Hapur
+Initially Open Sections,Seksionet Fillimisht të Hapura
+Inj/Rehab,Inj/Rehab
+Injectables,Injektabël
+Injured Body Part,Pjesa e Lënduar e Trupit
+Injured Out,Lënduar Jashtë
+Injury,Lëndim
+Injury Log,Regjistri i Lëndimeve
+Injury Mechanism,Mekanizmi i Lëndimit
+Injury Overview Report,Raporti Përmbledhës i Lëndimeve
+Injury Surveillance,Mbikëqyrja e Lëndimeve
+Injury Type,Lloji i Lëndimit
+Injury/illness-related,I lidhur me lëndimin/sëmundjen
+Inline,Brenda rreshtit
+Inpatient Hospital,Spital me Shtrim
+Inpatient Psychiatric Facility,Objekt Psikiatrik me Shtrim
+Input does not begin with a MSH segment,Hyrja nuk fillon me një segment MSH
+Input Fields,Fushat e Hyrjes
+INR,INR
+Ins 1,Sig 1
+Ins 2 or Ins 3,Sig 2 ose Sig 3
+Ins Address,Adresa e Sigurimit
+Ins adjust,Rregullimi i Sigurimit
+Ins bundling,Grupimi i Sigurimit
+Ins Code,Kodi i Sigurimit
+Ins Group,Grupi i Sigurimit
+Ins Name,Emri i Sigurimit
+Ins overpaid,Sigurimi mbipaguar
+Ins Policy,Polica e Sigurimit
+Ins refund,Rimbursimi i Sigurimit
+Ins Summary,Përmbledhja e Sigurimit
+Ins/fin issue,Çështje sigurimi/financiare
+Ins1,Sig1
+Ins2,Sig2
+Ins3,Sig3
+Insert,Fut
+"Insert failed: ","Futja dështoi: "
+Insert in Form,Fut në Formular
+Insert normals,Fut normalet
+Insert normals - 100/100,Fut normalet - 100/100
+Insert normals - 11/11,Fut normalet - 11/11
+Insert old events into tables,Fut ngjarjet e vjetra në tabela
+Insert special field,Fut fushë speciale
+Insert the key into the USB port,Futni çelësin në portën USB
+Insert U2F Key,Fut Çelësin U2F
+Insert your key into a USB port and click the Authenticate button below.,Futni çelësin tuaj në një portë USB dhe klikoni butonin Autentifiko më poshtë.
+Inserted,Futur
+Insomnia,Pagjumësi
+Inspect the log,Inspekto regjistrin
+Inspection,Inspektim
+Instability / subluxation,Paqëndrueshmëri / subluksacion
+Install ACL,Instalo ACL
+Install Code Set,Instalo Setin e Kodeve
+"Install it by going to Administration > Other > External Data Loads > ICD10 > Staged Releases and click Install","Instalojeni duke shkuar te Administrimi > Të tjera > Ngarkesat e të Dhënave të Jashtme > ICD10 > Publikimet e Etapizuara dhe klikoni Instalo"
+Install Layout Service Codes,Instalo Kodet e Shërbimit të Paraqitjes
+Install RxCUI monthly via Native Load or enable in Lists!,Instalo RxCUI çdo muaj përmes Ngarkesës Vendase ose aktivizo në Lista!
+Install SQL,Instalo SQL
+Install the EMR Direct trust anchor certificate,Instalo çertifikatën e ankorimit të besimit EMR Direct
+Installation Details,Detajet e Instalimit
+Installations processing a large number of Direct messages may want a shorter interval,Instalimet që përpunojnë një numër të madh mesazhesh Direct mund të dëshirojnë një interval më të shkurtër
+Installed Release,Publikimi i Instaluar
+Installing codes in openEMR,Instalimi i kodeve në openEMR
+Instructed,Udhëzuar
+Instruction,Udhëzim
+Instructions,Udhëzime
+Instructions:,Udhëzime:
+Insufficient inventory for product,Inventar i pamjaftueshëm për produktin
+Insufficient inventory for product ID,Inventar i pamjaftueshëm për ID-në e produktit
+Insulin Dependent Diabetes,Diabeti i Varur nga Insulina
+Insurance Address,Adresa e Sigurimit
+Insurance Adj,Rregullimi i Sigurimit
+Insurance Adjustment,Rregullimi i Sigurimit
+Insurance Balance Due,Bilanci i Papaguar i Sigurimit
+Insurance ID,ID e Sigurimit
+Insurance Information,Informacioni i Sigurimit
+Insurance Name,Emri i Sigurimit
+Insurance payment,Pagesa e Sigurimit
+Insurance Search/Select/Add,Kërko/Zgjidh/Shto Sigurim
+Intake Conclusion,Përfundimi i Pranimit
+Intake Date,Data e Pranimit
+Integers1-100,Numra të plotë 1-100
+"Integrating lab results into a patient's chart in openEMR can be done manually i.e. both ordering tests and uploading the received results or electronically","Integrimi i rezultateve laboratorike në kartelën e pacientit në openEMR mund të bëhet manualisht p.sh. si porositja e testeve ashtu edhe ngarkimi i rezultateve të marra ose elektronikisht"
+Intellectual Decline,Rënie Intelektuale
+Inter-pupillary distance,Distanca ndër-pupilore
+Interact with created transactions,Ndërvepro me transaksionet e krijuara
+Interlingua,Interlingua
+Interlingue,Interlingue
+Intermediate Care Facility/Mentally Retarded,Objekti i Kujdesit të Ndërmjetëm/Me Aftësi të Kufizuara Mendore
+Intermittent Esotropia,Ezotropi e Ndërprerë
+Intermittent Exotropia,Ekzotropi e Ndërprerë
+intermittent hyperphoria,hiperfori e ndërprerë
+Intermittent hypotropia,Hipotropi e ndërprerë
+Internal Allergies,Alergjitë e Brendshme
+Internal error - no pages were selected!,Gabim i brendshëm - asnjë faqe nuk u zgjodh!
+Internal error - patient ID was not provided!,Gabim i brendshëm - ID e pacientit nuk u dha!
+Internal error accessing uploaded file!,Gabim i brendshëm gjatë aksesimit të skedarit të ngarkuar!
+Internal error in tableNameFromLayout,Gabim i brendshëm në tableNameFromLayout
+Internal error!,Gabim i brendshëm!
+"Internal error, no drug ID specified!","Gabim i brendshëm, nuk u specifikua ID e ilaçit!"
+Internal error: Cannot find MSH-10,Gabim i brendshëm: Nuk gjendet MSH-10
+"Internal error: claim ","Gabim i brendshëm: kërkesa "
+"Internal error: encounter '","Gabim i brendshëm: vizita '"
+Internal error: pid or encounter is missing.,Gabim i brendshëm: pid ose vizita mungon.
+Internal error: the referenced encounter no longer exists.,Gabim i brendshëm: vizita e referuar nuk ekziston më.
+Internal error: we do not seem to be in an encounter!,Gabim i brendshëm: nuk duket se jemi në një vizitë!
+Internal Identifier (pid),Identifikuesi i Brendshëm (pid)
+Internal Medications,Medikamentet e Brendshme
+Internal Problems,Problemet e Brendshme
+Internal Referrals,Referimet e Brendshme
+Internal Time Collected,Koha e Brendshme e Mbledhur
+International Duty,Detyrë Ndërkombëtare
+"Internet Explorer browser version 6 to Internet Explorer browser version 11 does not support FIDO U2F API","Shfletuesi Internet Explorer versioni 6 deri në versionin 11 nuk mbështet FIDO U2F API"
+Interpreter,Përkthyes
+Interpreter needed?,Nevojitet përkthyes?
+Interstitial Lung Disease,Sëmundja Intersticiale e Mushkërive
+"Interval between message checks (set to zero for manual checks only)","Intervali ndërmjet kontrolleve të mesazheve (vendosni në zero vetëm për kontrolle manuale)"
+Intervention,Ndërhyrje
+Intervention Provided,Ndërhyrja e Ofruar
+Intolerance,Intolerancë
+Intradermal,Intradermale
+Intramuscular,Intramuskulare
+intramuscularly,intramuskularisht
+Intraocular Pressures,Presionet Intraokulare
+Intraocular Pressures (mmHg) by Date,Presionet Intraokulare (mmHg) sipas Datës
+intravenously,intravenoze
+Introduction,Hyrje
+Inuktitut,Inuktitut
+Inupiaq,Inupiaq
+Invalid character in,Karakter i pavlefshëm në
+Invalid Content,Përmbajtje e Pavlefshme
+Invalid Credit Card Number,Numri i Kartës së Kreditit i Pavlefshëm
+Invalid Credit Card Values: Please correct,Vlera të Pavlefshme të Kartës së Kreditit: Ju lutemi korrigjoni
+Invalid Current Credentials Error.,Gabim i Kredencialeve Aktuale të Pavlefshme.
+Invalid Date format or value! Type date as YYYY-MM-DD or use the calendar.,Formati ose vlera e datës e pavlefshme! Shkruani datën si YYYY-MM-DD ose përdorni kalendarin.
+Invalid date range,Diapazon datash i pavlefshëm
+Invalid encapsulated data encoding type,Lloji i kodimit të të dhënave të kapsuluara i pavlefshëm
+Invalid File,Skedar i Pavlefshëm
+Invalid file type.,Lloji i skedarit i pavlefshëm.
+Invalid layout ID,ID e paraqitjes e pavlefshme
+Invalid length for,Gjatësi e pavlefshme për
+Invalid non-numeric character in,Karakter jonumerik i pavlefshëm në
+"Invalid or missing payer in source for code ","Pagues i pavlefshëm ose i munguar në burim për kodin "
+Invalid password,Fjalëkalim i pavlefshëm
+Invalid recipient address. Please try again.,Adresa e marrësit e pavlefshme. Ju lutemi provoni përsëri.
+Invalid Request,Kërkesë e Pavlefshme
+Invalid Request Parameters,Parametra Kërkese të Pavlefshëm
+Invalid Service Codes,Kode Shërbimi të Pavlefshme
+"Invalid source designation ""","Përcaktim burimi i pavlefshëm """
+Invalid Total!,Totali i Pavlefshëm!
+Invalid username or password,Emri i përdoruesit ose fjalëkalimi i pavlefshëm
+InvAmt,InvAmt
+Inventory Activity,Aktiviteti i Inventarit
+Inventory Administration,Administrimi i Inventarit
+Inventory and sell both drugs and non-drug products,Inventarizo dhe shit si ilaçe ashtu edhe produkte jo-ilaçe
+Inventory and sell drugs only,Inventarizo dhe shit vetëm ilaçe
+Inventory is not available for this order.,Inventari nuk është i disponueshëm për këtë porosi.
+Inventory List,Lista e Inventarit
+Inventory Management,Menaxhimi i Inventarit
+Inventory Transactions,Transaksionet e Inventarit
+Invoice Actions,Veprimet e Faturës
+Invoice Adjustment,Rregullimi i Faturës
+Invoice and Line Levels,Nivelet e Faturës dhe Rreshtit
+Invoice Balance cannot be posted. No Encounter is created.,Bilanci i Faturës nuk mund të postohet. Asnjë Vizitë nuk u krijua.
+Invoice Details,Detajet e Faturës
+Invoice Level Only,Vetëm Niveli i Faturës
+"Invoice reference number pool, if used","Grupi i numrave të referencës së faturës, nëse përdoret"
+Invoice Reference Number Pools,Grupet e Numrave të Referencës së Faturës
+Invoice Refno Pool,Grupi i Nr. Ref. të Faturës
+Invoice Search,Kërkimi i Faturës
+IOP Chart,Grafiku IOP
+IOP Dilated{{Dilated Intraocular Pressure}},IOP e Zgjeruar{{Presioni Intraokular i Zgjeruar}}
+IOP Graph,Grafiku IOP
+ios,ios
+"iPad Pro 10.5 inches","iPad Pro 10.5 inç"
+"iPad Pro 12.5 inches","iPad Pro 12.5 inç"
+"iPad/iPad Mini, XGA","iPad/iPad Mini, XGA"
+iPhone 6/7/8 Plus,iPhone 6/7/8 Plus
+iPhone X/XS,iPhone X/XS
+iPhone XR/XS Max,iPhone XR/XS Max
+IPPF,IPPF
+IPPF Abortion,Aborti IPPF
+IPPF Contraception,Kontracepsioni IPPF
+IPPF SRH Data for,Të dhënat IPPF SRH për
+IPPF statistical reports.,Raportet statistikore IPPF.
+IPPF Statistics Report,Raporti Statistikor IPPF
+IPPF Statistics Reporting,Raportimi Statistikor IPPF
+IPPF Stats,Statistikat IPPF
+IPV 1,IPV 1
+IPV 2,IPV 2
+IPV 3,IPV 3
+IPV 4,IPV 4
+Iris,Irisi
+Irregular Heart Beat,Rrahje e Parregullt e Zemrës
+Irritability,Nervozizëm
+Irritation,Acarim
+is a different language version of the following database,është një version në gjuhë të ndryshme i bazës së të dhënave të mëposhtme
+is a different version of the following database,është një version i ndryshëm i bazës së të dhënave të mëposhtme
+is a more recent version of the following database,është një version më i fundit i bazës së të dhënave të mëposhtme
+Is a record of all financial transactions between the patient and the practice,Është një regjistër i të gjitha transaksioneve financiare ndërmjet pacientit dhe praktikës
+is a required field.,është një fushë e detyrueshme.
