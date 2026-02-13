@@ -1,0 +1,301 @@
+constant_name,definition
+Reminder/recall - no calls,Kujtesë/rikujtim - pa thirrje
+Reminder/recall - to provider,Kujtesë/rikujtim - te ofruesi
+REMIT TO,DËRGO TEK
+Remote Host,Hosti i Largët
+"Remote Host - is only required if you are submitting an electronic order to an external facility or just receiving results from it","Hosti i Largët - kërkohet vetëm nëse po dërgoni një porosi elektronike në një strukturë të jashtme ose thjesht po merrni rezultate prej saj"
+Remove,Hiq
+Remove all rules from plan,Hiq të gjitha rregullat nga plani
+Remove Bottom Pane,Hiq Panelin e Poshtëm
+REMOVE GROUP,HIQ GRUPIN
+Remove Group,Hiq Grupin
+Remove Group Form,Hiq Formularin e Grupit
+Remove multi-factor authentications for this person.,Hiq autentifikimin me shumë faktorë për këtë person.
+Remove Tab,Hiq Skedën
+Remove this Prescription from the list of RXs dispensed,Hiq këtë Recetë nga lista e recetave të shpërndara
+Removes support for immunizations,Heq mbështetjen për vaksinat
+Removes support for phpMyAdmin,Heq mbështetjen për phpMyAdmin
+Removes support for prescriptions,Heq mbështetjen për recetat
+Removes the bottom pane by default on start up.,Heq panelin e poshtëm si parazgjedhje gjatë nisjes.
+Removes the Chart Tracker feature,Heq veçorinë e Gjurmimit të Kartës
+Renal Stones,Gurë në Veshka
+Rename,Riemërto
+Rename Group,Riemërto Grupin
+Rendering,Përpunimi
+Rendering Provider,Ofruesi Përpunues
+Rendering Provider Number,Numri i Ofruesit Përpunues
+Rendering Provider Number (Type),Numri i Ofruesit Përpunues (Lloji)
+Reorder,Riporosit
+Reorder At,Riporosit Në
+Reorder point has been reached,Pika e riporosisë është arritur
+Reorder point has been reached for warehouse,Pika e riporosisë është arritur për magazinën
+"Reorder point, 0 if not applicable","Pika e riporosisë, 0 nëse nuk aplikohet"
+Reorder Qty,Sasia e Riporosisë
+Rep,Përfaqësues
+Repeat,Përsërit
+Repeat password,Përsërit fjalëkalimin
+Repeating event,Ngjarje e përsëritur
+Repeating Info:,Info e Përsëritjes:
+Repeats,Përsëritje
+REPLACE,ZËVENDËSO
+Replace,Zëvendëso
+Replace all exam findings with Default values?  Are you sure?,Zëvendëso të gjitha gjetjet e ekzaminimit me vlerat e parazgjedhura? Jeni i sigurt?
+Replace entire code set,Zëvendëso të gjithë setin e kodeve
+"Replace the existing group and option values with these ones taking care to match the E/M codes","Zëvendëso vlerat ekzistuese të grupit dhe opsioneve me këto duke pasur kujdes të përputhen kodet E/M"
+"Replace the hostname and port with the values provided to you by EMR Direct","Zëvendëso hostname-in dhe portin me vlerat e dhëna nga EMR Direct"
+replaced,zëvendësuar
+Replies,Përgjigje
+Replies from patients are displayed directly in your EHR,Përgjigjet nga pacientët shfaqen drejtpërdrejt në EHR-në tuaj
+Replies retrieved,Përgjigjet u morën
+Reply,Përgjigju
+Reply Date,Data e Përgjigjes
+Reply From,Përgjigje Nga
+Reply to this message,Përgjigju këtij mesazhi
+Report,Raport
+report,raport
+Report - Clinical,Raport - Klinik
+"Report - Generates and downloads the patient's Continuity of Care Record (CCR), Continuity of Care Document (CCD) and Patient Report","Raport - Gjeneron dhe shkarkon Regjistrin e Vazhdimësisë së Kujdesit (CCR), Dokumentin e Vazhdimësisë së Kujdesit (CCD) dhe Raportin e Pacientit"
+Report - Patient List Creation,Raport - Krijimi i Listës së Pacientëve
+Report by,Raport nga
+Report Content,Përmbajtja e Raportit
+Report End (Relinquished Care Date),Fundi i Raportit (Data e Lëshimit të Kujdesit)
+Report has been sent to the patient.,Raporti u dërgua te pacienti.
+Report History/Results,Historiku/Rezultatet e Raportit
+Report of visit,Raport i vizitës
+Report Results,Rezultatet e Raportit
+Report Results/History,Rezultatet/Historiku i Raportit
+Report Start (Assumed Care Date),Fillimi i Raportit (Data e Marrjes së Kujdesit)
+Report Status,Statusi i Raportit
+Report Totals,Totalet e Raportit
+Report was faxed to,Raporti u dërgua me faks te
+Report was faxed. Click to view.,Raporti u dërgua me faks. Klikoni për të parë.
+Report/ Form,Raport/ Formular
+Report?,Raport?
+Reporting,Raportimi
+"Reports consisting of various portions of the patient's medical record can be created here","Raportet që përbëhen nga pjesë të ndryshme të dosjes mjekësore të pacientit mund të krijohen këtu"
+Repository always.,Depoja gjithmonë.
+Request & Response,Kërkesë & Përgjigje
+Request Content Fails Integrity Test,Përmbajtja e Kërkesës Dështon Testin e Integritetit
+Request Eligibility,Kërko Përshtatshmërinë
+Request ID is missing!,ID e Kërkesës mungon!
+"Request ignored - claims processing is already running!","Kërkesa u injorua - përpunimi i pretendimeve tashmë po ekzekutohet!"
+Request is not same origin!,Kërkesa nuk ka të njëjtën origjinë!
+Request Message,Mesazhi i Kërkesës
+Request New Appointment,Kërko Takim të Ri
+Request Only,Vetëm Kërkesë
+Request Status,Statusi i Kërkesës
+Request Type,Lloji i Kërkesës
+Request type not implemented,Lloji i kërkesës nuk është implementuar
+request was received from portal patient,kërkesa u mor nga pacienti i portalit
+Requested template does not exist,Shablloni i kërkuar nuk ekziston
+Requests Sent,Kërkesat u Dërguan
+Require Audit,Kërko Auditim
+required,e detyrueshme
+Required Co Pay,Bashkëpagesa e Detyrueshme
+"Required Field Missing: Please choose the EDI-271 file to upload","Fusha e Detyrueshme Mungon: Ju lutem zgjidhni skedarin EDI-271 për ngarkim"
+"Required field missing: Please enter the First name","Fusha e detyrueshme mungon: Ju lutem shkruani Emrin"
+"Required field missing: Please enter the Last name","Fusha e detyrueshme mungon: Ju lutem shkruani Mbiemrin"
+"Required field missing: Please enter the User Name","Fusha e detyrueshme mungon: Ju lutem shkruani Emrin e Përdoruesit"
+Required fields,Fushat e detyrueshme
+Required in,E detyrueshme në
+"Required Primary Diagnosis for Order. This will be automatically added to any missing test order diagnosis.","Diagnoza Primare e Detyrueshme për Porosinë. Kjo do të shtohet automatikisht në çdo diagnozë të munguar të porosisë së testit."
+Requirements,Kërkesat
+Requisition Number,Numri i Kërkesës
+Resending this report.,Duke ridërguar këtë raport.
+RESERVED,E REZERVUAR
+Reserved,E Rezervuar
+"Reserved for use to define Scheduled Vacation Time","E rezervuar për përdorim në përcaktimin e Kohës së Pushimeve të Planifikuara"
+Reserved to define when a provider may not have available appointments after.,E rezervuar për të përcaktuar kur një ofrues mund të mos ketë takime të disponueshme pas.
+Reserved to define when an event did not occur as specified.,E rezervuar për të përcaktuar kur një ngjarje nuk ndodhi siç ishte specifikuar.
+Reserved todefine when a provider may haveavailable appointments after.,E rezervuar për të përcaktuar kur një ofrues mund të ketë takime të disponueshme pas.
+Reset,Rivendos
+"Reset button resets the edited claim to the fee sheet version. If subsequently saved, it will replace last claim version and be considered reviewed. Otherwise, claim is reset to fee sheet version.","Butoni i rivendosjes rivendos pretendimin e modifikuar në versionin e fletës së tarifave. Nëse ruhet më pas, do të zëvendësojë versionin e fundit të pretendimit dhe do të konsiderohet i rishikuar. Përndryshe, pretendimi rivendoset në versionin e fletës së tarifave."
+Reset claim form to Fee Sheet Version,Rivendos formularin e pretendimit në Versionin e Fletës së Tarifave
+Reset Credentials,Rivendos Kredencialet
+Reset Offsite Portal Credentials,Rivendos Kredencialet e Portalit të Jashtëm
+Reset Online Portal Credentials,Rivendos Kredencialet e Portalit Online
+Reset Onsite Portal Credentials,Rivendos Kredencialet e Portalit Lokal
+Reset to no patient,Rivendos pa pacient
+Reset Version,Rivendos Versionin
+Resident physician,Mjek rezident
+Residential Substance Abuse Treatment Facility,Qendër e Trajtimit Rezidencial të Abuzimit me Substanca
+Resist the temptation to start entering data in an unorganized manner,Rezistoni tundimit për të filluar futjen e të dhënave në mënyrë të paorganizuar
+Resn,Resn
+Resolve Orphan Results,Zgjidh Rezultatet Jetime
+Resolve Orphans,Zgjidh Jetimet
+Resolved,Zgjidhur
+Resource (select one),Burimi (zgjidhni një)
+Resources,Burimet
+Respiration,Frymëmarrja
+Respirator effort unlabored,Përpjekja e frymëmarrjes e lehtë
+Respiratory,Frymëmarrës
+Response,Përgjigje
+Response Only,Vetëm Përgjigje
+Responsible Party,Pala Përgjegjëse
+Responsive Vertical Menu Style for Tabs,Stili i Menusë Vertikale Responsive për Skedat
+Restore,Rikthe
+Restore Archive,Rikthe Arkivin
+"Restrict non-authorized users to the Schedule Facilities set in User admin.","Kufizo përdoruesit e paautorizuar në Strukturat e Orareve të vendosura në Administratën e Përdoruesve."
+Restrict Providers by Facility,Kufizo Ofruesit sipas Strukturës
+Restrict Users to Facilities,Kufizo Përdoruesit në Struktura
+Restricted Projects Reporting,Raportimi i Projekteve të Kufizuara
+Restricted Training,Trajnim i Kufizuar
+Result,Rezultat
+Result Name,Emri i Rezultatit
+Result Status,Statusi i Rezultatit
+"Result status or abnormality is missing","Statusi i rezultatit ose anomalia mungon"
+"Result, use % as a wildcard","Rezultat, përdorni % si wildcard"
+Results,Rezultatet
+Results and,Rezultatet dhe
+Results Found For Search,Rezultate të Gjetura për Kërkimin
+Results Group,Grupi i Rezultateve
+Results Only,Vetëm Rezultatet
+"Results Path","Shtegu i Rezultateve"
+"Results Path - is only required if you are submitting an electronic order to an external facility or just receiving results from it","Shtegu i Rezultateve - kërkohet vetëm nëse po dërgoni një porosi elektronike në një strukturë të jashtme ose thjesht po merrni rezultate prej saj"
+Results Per Lab,Rezultate për Laborator
+Results per page,Rezultate për faqe
+Results/Details,Rezultatet/Detajet
+Resuming status checks.,Duke rifilluar kontrollet e statusit.
+Retina,Retina
+Retina Default Values,Vlerat e Parazgjedhura të Retinës
+Retinal Exam,Ekzaminimi i Retinës
+Retracted Right:,E tërhequr Djathtas:
+Return above part with your payment,Ktheni pjesën e mësipërme me pagesën tuaj
+"Return button simply returns, then refreshes billing manager","Butoni i kthimit thjesht kthehet, pastaj rifreskon menaxherin e faturimit"
+Return Home,Kthehu në Kryefaqe
+Return To Report Results,Kthehu te Rezultatet e Raportit
+"Return to this page and you will be able to complete the ICD10 installation process by clicking on the ICD10 section header","Kthehuni në këtë faqe dhe do të mund të përfundoni procesin e instalimit të ICD10 duke klikuar mbi kokën e seksionit ICD10"
+"Return to this page and you will be able to complete the ICD9 installation process by clicking on the ICD9 section header","Kthehuni në këtë faqe dhe do të mund të përfundoni procesin e instalimit të ICD9 duke klikuar mbi kokën e seksionit ICD9"
+"Return to this page and you will be able to complete the RxNorm installation process by clicking on the RXNORM section header","Kthehuni në këtë faqe dhe do të mund të përfundoni procesin e instalimit të RxNorm duke klikuar mbi kokën e seksionit RXNORM"
+"Return to this page and you will be able to complete the Snomed installation process by clicking on the SNOMED section header","Kthehuni në këtë faqe dhe do të mund të përfundoni procesin e instalimit të Snomed duke klikuar mbi kokën e seksionit SNOMED"
+"Return to this page and you will be able to complete the Valueset installation process by clicking on the VALUESET section header","Kthehuni në këtë faqe dhe do të mund të përfundoni procesin e instalimit të Valueset duke klikuar mbi kokën e seksionit VALUESET"
+Returned to Play,Kthyer në Lojë
+"Returned: ","Kthyer: "
+Reuse of previous passwords not allowed!,Ripërdorimi i fjalëkalimeve të mëparshme nuk lejohet!
+Reuse of three previous passwords not allowed!,Ripërdorimi i tre fjalëkalimeve të mëparshme nuk lejohet!
+Rev.,Rev.
+Revenue,Të Ardhura
+Revenue Code,Kodi i të Ardhurave
+"Revenue Code for this item. Type for hints/search","Kodi i të Ardhurave për këtë artikull. Shkruani për sugjerime/kërkim"
+"Revenue Code for this item. Type to search","Kodi i të Ardhurave për këtë artikull. Shkruani për të kërkuar"
+"Revenue Code for this item. Type to search or double click for list","Kodi i të Ardhurave për këtë artikull. Shkruani për të kërkuar ose klikoni dy herë për listën"
+Revert,Rikthe
+Revert Edits,Rikthe Ndryshimet
+Revert Error,Gabim Rikthimi
+"Review all the parameters that are entered and only then move to the next step. This is because once you create a group (ARO) you will NOT be able of modify any of the data that you have entered in THIS section. You can only delete the entire group (ARO) and start afresh.","Rishikoni të gjithë parametrat e futur dhe vetëm pastaj kaloni në hapin tjetër. Kjo sepse pasi të krijoni një grup (ARO) NUK do të mund të modifikoni asnjë nga të dhënat që keni futur në KËTË seksion. Mund të fshini vetëm të gjithë grupin (ARO) dhe të filloni nga e para."
+Review Audits,Rishiko Auditimet
+Review of PMH:,Rishikimi i PMH:
+Review of System,Rishikimi i Sistemit
+Review of Systems,Rishikimi i Sistemeve
+Review of Systems Checks,Kontrollet e Rishikimit të Sistemeve
+Review Status,Statusi i Rishikimit
+Review UB04,Rishiko UB04
+Reviewed Date,Data e Rishikimit
+Revise,Riviziono
+Revoke Token,Revokoj Token-in
+Revoke User,Revokoj Përdoruesin
+Rheumatoid Arthritis,Artriti Reumatoid
+Rheumotoid Arthritis,Artriti Reumatoid
+RH{{right hertel measurement}},RH{{matja e djathtë hertel}}
+Right,Djathtas
+Right Arm,Krahu i Djathtë
+Right Deltoid,Deltoidi i Djathtë
+Right Ear,Veshi i Djathtë
+right ear,veshi i djathtë
+Right Gluteus Medius,Gluteus Medius i Djathtë
+Right Lens,Thjerrëza e Djathtë
+Right Lower Forearm,Parakrahu i Poshtëm i Djathtë
+Right Margin (mm),Margjina e Djathtë (mm)
+Right Thigh,Kofsha e Djathtë
+Right Vastus Lateralis,Vastus Lateralis i Djathtë
+Right-Form Layout,Paraqitja Formular-Djathtas
+Right:,Djathtas:
+Ringing in Ears,Zhurmë në Veshë
+Ringing In Ears,Zhurmë Në Veshë
+Risk Category Assessment,Vlerësimi i Kategorisë së Rrezikut
+Risk Factors,Faktorët e Rrezikut
+Risk Level,Niveli i Rrezikut
+Risky Beh.,Sjell. e Rrezikshme
+RI{{right iris}},RI{{irisi i djathtë}}
+RK{{right cornea}},RK{{kornea e djathtë}}
+RLL:,RLL:
+RLL{{right lower eyelid}},RLL{{qepalla e poshtme e djathtë}}
+RL{{right lens}},RL{{thjerrëza e djathtë}}
+RMAC{{right macula}},RMAC{{makula e djathtë}}
+RMC{{right medial canthus}},RMC{{kantusi medial i djathtë}}
+Role,Roli
+ROM,ROM
+Romanian,Rumanisht
+Romansh,Romansh
+Room 1,Dhoma 1
+Room 2,Dhoma 2
+Room 3,Dhoma 3
+Room Number,Numri i Dhomës
+Roommate,Shoku/ja i/e Dhomës
+Roster,Lista
+ROS{{Review of Systems}},ROS{{Rishikimi i Sistemeve}}
+Round and Reactive,E Rrumbullakët dhe Reaktive
+Route,Rruga
+"Route of administration, if applicable","Rruga e administrimit, nëse aplikohet"
+Routed,Drejtuar
+RP{{right peripheral retina}},RP{{retina periferike e djathtë}}
+RRR without MOR,RRR pa MOR
+Rub:,Fërkim:
+Rubs:,Fërkime:
+Rule Bibliographic Citation,Citimi Bibliografik i Rregullës
+Rule Edit,Ndrysho Rregullën
+Rule Funding Source,Burimi i Financimit të Rregullës
+Rule Release,Publikimi i Rregullës
+Rule Set,Seti i Rregullave
+"Rule Set and Plan Set selections are not consistent. Please fix and Submit again.","Zgjedhjet e Setit të Rregullave dhe Setit të Planit nuk janë konsistente. Ju lutem rregulloni dhe Dërgoni përsëri."
+Rule Title,Titulli i Rregullës
+rules already in plan,rregullat tashmë në plan
+Rules Configuration,Konfigurimi i Rregullave
+RUL{{right upper eyelid}},RUL{{qepalla e sipërme e djathtë}}
+Run Setup again or contact support for assistance,Ekzekutoni Setup-in përsëri ose kontaktoni mbështetjen për ndihmë
+"Running Command: ","Duke Ekzekutuar Komandën: "
+Rupture,Rupturë
+Rural Health Clinic,Klinikë Shëndetësore Rurale
+Russian,Rusisht
+RVIT{{right vitreous}},RVIT{{vitreusi i djathtë}}
+RV{{right vessels}},RV{{enët e djathta}}
+Rx,Rx
+RX,RX
+Rx Bottom Margin (px),Margjina e Poshtme e Rx (px)
+RX Date,Data e RX
+Rx Details,Detajet e Rx
+Rx Dispensed History,Historiku i Recetave të Shpërndara
+Rx Enable DEA #,Rx Aktivizo DEA #
+Rx Enable NPI,Rx Aktivizo NPI
+Rx Enable State Lic. #,Rx Aktivizo Lic. Shtetërore #
+Rx History,Historiku i Rx
+Rx html print - zend module,Rx printim html - modul zend
+Rx ID,ID e Rx
+Rx Left Margin (px),Margjina e Majtë e Rx (px)
+Rx Log,Regjistri i Rx
+Rx NLM Drug-Drug,Rx NLM Ilaç-Ilaç
+Rx Paper Size,Madhësia e Letrës Rx
+Rx pdf - zend template,Rx pdf - shablon zend
+RX Print Date,Data e Printimit RX
+Rx Right Margin (px),Margjina e Djathtë e Rx (px)
+Rx Show DEA #,Rx Shfaq DEA #
+Rx Show NPI,Rx Shfaq NPI
+Rx Show State Lic. #,Rx Shfaq Lic. Shtetërore #
+Rx Top Margin (px),Margjina e Sipërme e Rx (px)
+Rx Type,Lloji i Rx
+Rx Type{{Type of glasses prescription}},Rx Lloji{{Lloji i recetës së syzeve}}
+Rx/Distance,Rx/Distanca
+RXCUI Code,Kodi RXCUI
+RXCUI Medication,Medikamenti RXCUI
+RxNorm,RxNorm
+RxNorm Database,Databaza RxNorm
+R{{History of Refraction}},R{{Historiku i Refraksionit}}
+R{{right side}},R{{ana e djathtë}}
+R{{right}},R{{djathtas}}
+S,S
+S.S.,S.S.
+S3:,S3:
+S4:,S4:
+"SA  *  * To read the license please read the docs/license.txt or visit  * http://www.gnu.org/copyleft/gpl.html  *  */  //========================================================================= // ","SA  *  * Për të lexuar licencën ju lutem lexoni docs/license.txt ose vizitoni  * http://www.gnu.org/copyleft/gpl.html  *  */  //========================================================================= // "
+Safe key database,Databaza e çelësave të sigurt
+Sale,Shitje
