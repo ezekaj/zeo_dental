@@ -1,0 +1,244 @@
+constant_name,definition
+You must enter a reason to cancel this appointment?,Duhet te vendosni nje arsye per te anuluar kete takim?
+"You must enter your own password to change user passwords. Leave blank to keep password unchanged.","Duhet te vendosni fjalekalimin tuaj per te ndryshuar fjalekalimin e perdoruesve. Lini bosh per te mbajtur fjalekalimin te pandryshuar."
+You must first select an item in the section whose radio button is checked.,Fillimisht duhet te zgjidhni nje element ne seksionin ku butoni radio eshte i zgjedhur.
+You must first select or add a patient or therapy group.,Fillimisht duhet te zgjidhni ose shtoni nje pacient ose grup terapie.
+You must first select or add a patient.,Fillimisht duhet te zgjidhni ose shtoni nje pacient.
+You must first select or create an encounter.,Fillimisht duhet te zgjidhni ose krijoni nje vizite.
+You must provide a patient name or id to add to the list,Duhet te jepni emrin ose ID-ne e pacientit per ta shtuar ne liste
+You must select a visit category,Duhet te zgjidhni nje kategori vizite
+You must select a visit category.,Duhet te zgjidhni nje kategori vizite.
+You must select some fields to continue.,Duhet te zgjidhni disa fusha per te vazhduar.
+You need administrator privileges to add more options,Ju nevojiten privilegje administratori per te shtuar me shume opsione
+You need administrator privileges to disable the default Recall Board,Ju nevojiten privilegje administratori per te c'aktivizuar Tabelen e Rikujtimeve te parazgjedhur
+You need administrator privileges to enable the MedEx Communication Service,Ju nevojiten privilegje administratori per te aktivizuar Sherbimin e Komunikimit MedEx
+You need administrator privileges to give access to other groups,Ju nevojiten privilegje administratori per te dhene akses grupeve te tjera
+You need administrator privileges to increase the number of reminders to show,Ju nevojiten privilegje administratori per te rritur numrin e kujtesave per t'u shfaqur
+You need administrator privileges to perform the changes to the values in the drop-down boxes.,Ju nevojiten privilegje administratori per te kryer ndryshimet ne vlerat e kutive rena.
+You need administrator privileges to perform the setup,Ju nevojiten privilegje administratori per te kryer konfigurimin
+You need administrator privileges to perform this action,Ju nevojiten privilegje administratori per te kryer kete veprim
+You need to go back and and create a provider,Duhet te ktheheni mbrapa dhe te krijoni nje ofrues
+"You should be running this test if this claim appeared to generate successfully but the actual claim file does not contain any data or only an unfinished portion of the amount of data it is supposed to contain. It is obvious with HCFA claims because they are human readable, with X12 claims it is a more difficult process to determine if the claim is properly complete.","Duhet ta ekzekutoni kete test nese kjo kerkese dukej se u gjenerua me sukses por skedari aktual i kerkeses nuk permban asnje te dhene ose vetem nje pjese te paperfunduar te sasise se te dhenave qe supozohet te permbaje. Eshte e dukshme me kerkesat HCFA sepse jane te lexueshme nga njerezit, me kerkesat X12 eshte nje proces me i veshtire per te percaktuar nese kerkesa eshte e plote ne menyre te duhur."
+"You should not make Discrete Result for Potassium be a descendant of a preceding Discrete Result i.e Sodium , i.e have a Tier value of 5","Nuk duhet ta beni Rezultatin Diskret per Kaliumin pasardhes te nje Rezultati Diskret te meparshem p.sh. Natriumi, p.sh. te kete nje vlere Niveli 5"
+You should select at least one context,Duhet te zgjidhni te pakten nje kontekst
+You should select at least one Provider,Duhet te zgjidhni te pakten nje Ofrues
+"You will be automatically redirected to Demographics. You may make the necessary corrections and navigate to NewCrop again.","Do te ridrejtoheni automatikisht te Demografite. Mund te beni korrigjimet e nevojshme dhe te navigoni perseri te NewCrop."
+You will be notified when the payment transaction is confirmed.,Do te njoftoheni kur transaksioni i pageses te konfirmohet.
+You will be notified when your payment is applied for this invoice.,Do te njoftoheni kur pagesa juaj te aplikohet per kete fature.
+You will need Administrator privileges to edit this form,Ju nevojiten privilegje Administratori per te ndryshuar kete formular
+You will need Administrator privileges to enable the patient portal,Ju nevojiten privilegje Administratori per te aktivizuar portalin e pacientit
+You will need Administrator Privileges to install the ICD10 code set,Ju nevojiten Privilegje Administratori per te instaluar setin e kodeve ICD10
+You will need Administrator privileges to setup phiMail Direct Messaging,Ju nevojiten privilegje Administratori per te konfiguruar Mesazhet Direkte phiMail
+"You will need Administrator privileges to setup the NewCrop service and has to be setup in conjunction with technical support from the NewCrop eRx service","Ju nevojiten privilegje Administratori per te konfiguruar sherbimin NewCrop dhe duhet te konfigurohet ne bashkepunim me mbeshtetjen teknike te sherbimit NewCrop eRx"
+"Your account has been successfully created however, we were unable to send the account information.","Llogaria juaj u krijua me sukses megjithate, nuk mundëm te dergonim informacionin e llogarise."
+Your browser does not support HTML5 audio,Shfletuesi juaj nuk mbeshtet audion HTML5
+Your credentials are provided by your provider,Kredencialet tuaja sigurohen nga ofruesi juaj
+Your current log on session will expire in 30 seconds.,Sesioni juaj aktual i hyrjes do te skadoje ne 30 sekonda.
+Your current TOTP key QR code is displayed below.,Kodi QR i celësit tuaj aktual TOTP shfaqet me poshte.
+Your Document History,Historia e Dokumenteve Tuaja
+your email address,adresa juaj e emailit
+Your email has been verified. Click Next.,Emaili juaj eshte verifikuar. Klikoni Vazhdo.
+Your email verification link has expired. Reset and try again.,Lidhja juaj e verifikimit te emailit ka skaduar. Rivendosni dhe provoni perseri.
+Your end date is invalid,Data juaj e perfundimit eshte e pavlefshme
+Your event has been deleted.,Ngjarja juaj eshte fshire.
+Your event has been modified.,Ngjarja juaj eshte ndryshuar.
+Your event has been submitted.,Ngjarja juaj eshte derguar.
+Your file doesn't have an extension,Skedari juaj nuk ka nje shtese
+Your first day of the week.,Dita juaj e pare e javes.
+Your Id is missing. Cancel and try again.,ID-ja juaj mungon. Anuloni dhe provoni perseri.
+Your installation of OpenEMR has been registered,Instalimi juaj i OpenEMR eshte regjistruar
+Your JWKS is invalid,JWKS juaj eshte e pavlefshme
+Your list name has been changed to meet naming requirements.,Emri i listes suaj eshte ndryshuar per te permbushur kerkesat e emerimit.
+Your message was submitted for delivery to,Mesazhi juaj u dergua per dorezim te
+"Your name for this category, procedure or result","Emri juaj per kete kategori, procedure ose rezultat"
+"Your new credentials have been sent. Check your email inbox and also possibly your spam folder. Once you log into your patient portal feel free to make an appointment or send us a secure message. We look forward to seeing you soon.","Kredencialet tuaja te reja jane derguar. Kontrolloni kutine tuaj te emailit dhe gjithashtu ndoshta dosjen e postës se padëshiruar. Pasi te hyni ne portalin tuaj te pacientit mund te caktoni nje takim ose te na dergoni nje mesazh te sigurt. Presim me padurim t'ju shohim se shpejti."
+your next appointment at,takimi juaj i rradhes ne
+Your on file email address,Adresa juaj e emailit ne dosje
+Your one time credential reset link has expired. Reset and try again.,Lidhja juaj e njehershme e rivendosjes se kredencialeve ka skaduar. Rivendosni dhe provoni perseri.
+Your Password Expired. Please change your password.,Fjalekalimi juaj ka skaduar. Ju lutem ndryshoni fjalekalimin tuaj.
+Your Password Expires on,Fjalekalimi juaj skadon me
+Your password expires today. Please change your password now.,Fjalekalimi juaj skadon sot. Ju lutem ndryshoni fjalekalimin tuaj tani.
+Your Password Expires today. Please change your password.,Fjalekalimi juaj skadon sot. Ju lutem ndryshoni fjalekalimin tuaj.
+Your password is your signature,Fjalekalimi juaj eshte nenshkrimi juaj
+Your Portal Login Web Address. Bookmark for future logins.,Adresa juaj e Hyrjes ne Portal. Ruajeni ne faqeshenues per hyrjet e ardhshme.
+Your PostCalendar configuration has been reset to use defaults.,Konfigurimi juaj i PostCalendar eshte rivendosur ne vlerat e parazgjedhura.
+Your PostCalendar configuration has been updated.,Konfigurimi juaj i PostCalendar eshte perditesuar.
+Your repeating frequency must be an integer.,Frekuenca juaj e persëritjes duhet te jete nje numer i plote.
+Your repeating frequency must be at least 1.,Frekuenca juaj e persëritjes duhet te jete te pakten 1.
+Your safe key is,Celësi juaj i sigurt eshte
+Your start date is greater than your end date,Data juaj e fillimit eshte me e madhe se data juaj e perfundimit
+Your start date is invalid,Data juaj e fillimit eshte e pavlefshme
+Your submission failed.,Dergimi juaj deshtoi.
+Your weekend days,Ditet tuaja te fundjavës
+"Yubikey also sells more expensive U2F keys designed to work with mobile devices","Yubikey gjithashtu shet celësa U2F me te shtrenjte te projektuar per te punuar me pajisje celulare"
+yyyy-mm-dd End Date,yyyy-mm-dd Data e Perfundimit
+yyyy-mm-dd Start Date,yyyy-mm-dd Data e Fillimit
+ZEF segment internal error,Gabim i brendshem i segmentit ZEF
+Zend Module,Moduli Zend
+Zend Module check in addition to standard check,Kontrolli i Modulit Zend pervec kontrollit standard
+Zero length attachment,Bashkengjitje me gjatesi zero
+Zero Stock Days,Dite me Stok Zero
+"Zhuang, Chuang","Zhuang, Chuang"
+ZIP Code,Kodi Postar
+Zip Code Missing,Kodi Postar Mungon
+Zoom,Zmadhim
+Zoom in,Zmadho
+Zoom out,Zvogëlo
+"Zoom: click-drag, Pan: shift-click-drag, Restore: double-click","Zmadhim: kliko-terheq, Leviz: shift-kliko-terheq, Rivendos: dopio-klik"
+Zulu,Zulu
+ but was , por ishte
+ could not be accessed., nuk mund te aksesohej.
+ has been created. , eshte krijuar.
+ has been re-opened., eshte rihapur.
+ is not a number, nuk eshte nje numer
+ is ready for re-billing., eshte gati per ri-faturim.
+ LLL:, LLL:
+ Lot, Loti
+ Medicaid Original Reference No. , Medicaid Nr. Origjinal i Referimit
+ min, min
+ not found!, nuk u gjet!
+" Pecularities in many browsers may mean that the output below enters your screen in sudden jerks and that there are long pauses of several seconds where it  appears as though things may have crashed. That is not the case, you will eventually see output coming out line by line. There may be sequential numbers appearing  below, this is to indicate that even though nothing else may be displaying there is activity going on. These numbers will be interspersed with the content of the  billing and that is normal."," Vecoritesite ne shume shfletues mund te nenkuptojne qe dalja me poshte hyn ne ekranin tuaj me levizje te papritura dhe qe ka pauza te gjata prej disa sekondash ku duket sikur gjerat mund te kene deshtuar. Nuk eshte keshtu, perfundimisht do te shihni daljen rresht pas rreshti. Mund te shfaqen numra te njepasnjeshëm me poshte, kjo eshte per te treguar qe edhe pse asgje tjeter mund te mos po shfaqet ka aktivitet ne vazhdim. Keta numra do te nderthuren me permbajtjen e faturimit dhe kjo eshte normale."
+ prescription has reached its limit of, receta ka arritur limitin e saj prej
+" update failed, not in database?"," perditesimi deshtoi, nuk eshte ne database?"
+ was marked as billed only., u shenua si vetem e faturuar.
+ was queued successfully., u vendos ne radhe me sukses.
+! Left w/o visit,! Iku pa vizite
+""" for code ",""" per kodin "
+""" is CHECKED in PostCalendar Settings!",""" eshte E ZGJEDHUR ne Cilësimet e PostCalendar!"
+# Ins/fin issue,# Ceshtje sigurimesh/financiare
+# of tablets:,# i tabletave:
+$ Coding done,$ Kodimi i perfunduar
+"$label (yyyy-mm-dd): ","$label (yyyy-mm-dd): "
+%,%
+% Canceled < 24h,% Anuluar < 24h
+% Cancelled <  24h ,% Anuluar <  24h
+"' should exist but does not.","' duhet te ekzistoje por nuk ekziston."
+"(% matches any string, _ matches any character)","(% perputhet me cdo varg, _ perputhet me cdo karakter)"
+([ctrl] + click to select multiple recipients),([ctrl] + kliko per te zgjedhur marres te shumte)
+(Back),(Mbrapa)
+(Click to edit),(Kliko per te ndryshuar)
+"(Email delivery is immediate, while automated VOIP is sent to the service provider for further processing.)","(Dergimi i emailit eshte i menjehershem, ndersa VOIP i automatizuar dergohet te ofruesi i sherbimit per perpunim te metejshem.)"
+(Notes and Authorizations),(Shënime dhe Autorizime)
+(Patient Notes),(Shënime te Pacientit)
+"(Select one of these, or type your own title)","(Zgjidhni nje nga keto, ose shkruani titullin tuaj)"
+(Shift-)Click or drag to change value,(Shift-)Kliko ose terheq per te ndryshuar vleren
+* Reminder done,* Kujtuesi i perfunduar
+** Please move surgeries to Issues!,** Ju lutem zhvendosni nderhyrjet kirurgjikale te Ceshtjet!
+*Required,*E detyrueshme
++ Chart pulled,+ Kartela e terhjekur
++1,+1
++2,+2
++3,+3
+- None,- Asnje
+- Not Reported,- E Paraportuar
+-- All --,-- Te gjitha --
+--Select Role--,--Zgjidhni Rolin--
+.,.
+0,0
+02/12{{CMS 1500 format date revision setting in globals}},02/12{{CMS 1500 format date revision setting in globals}}
+08/05{{CMS 1500 format date revision setting in globals}},08/05{{CMS 1500 format date revision setting in globals}}
+1,1
+"1 = North America. See http://www.wtng.info/ for a list of other country codes.","1 = Amerika e Veriut. Shikoni http://www.wtng.info/ per nje liste te kodeve te vendeve te tjera."
+1 Day From Now,1 Dite Nga Tani
+1 Month From Now,1 Muaj Nga Tani
+1 Week From Now,1 Jave Nga Tani
+1 Year From Now,1 Vit Nga Tani
+"1.Rest 2. Ice for two days 3. Compression, leave the dressing in place unless the foot develops numbness or pale color 4. Elevate the foot and leg","1.Pushim 2. Akull per dy dite 3. Kompresion, lini fashon ne vend pervec nese kemba zhvillon mpirje ose ngjyre te zbehte 4. Ngrini kemben dhe kercirin"
+12 hr,12 ore
+1mm,1mm
+1st,I pare
+1st{{nth}},I pare{{nth}}
+2 Days From Now,2 Dite Nga Tani
+2 Months From Now,2 Muaj Nga Tani
+2 Weeks From Now,2 Jave Nga Tani
+2 Years From Now,2 Vjet Nga Tani
+2-20 years,2-20 vjet
+2011 Official Clinical Quality Measures (CQM) Measure Groups,2011 Grupet Zyrtare te Masave te Cilesise Klinike (CQM)
+2014 Official Clinical Quality Measures (CQM) Measure Groups,2014 Grupet Zyrtare te Masave te Cilesise Klinike (CQM)
+24 hr,24 ore
+271 Returned,271 E Kthyer
+2mm,2mm
+2nd,I dyte
+2nd{{every}},I dyte{{every}}
+2nd{{nth}},I dyte{{nth}}
+3 Days From Now,3 Dite Nga Tani
+3 months,3 muaj
+3 Months From Now,3 Muaj Nga Tani
+3 times daily,3 here ne dite
+3 Weeks From Now,3 Jave Nga Tani
+3mm,3mm
+3rd,I trete
+3rd{{every}},I trete{{every}}
+3rd{{nth}},I trete{{nth}}
+4 Days From Now,4 Dite Nga Tani
+4 months,4 muaj
+4 Months From Now,4 Muaj Nga Tani
+4 times daily,4 here ne dite
+4 Weeks From Now,4 Jave Nga Tani
+"465.9, URI","465.9, URI"
+"466.0, Bronchitis, Acute NOS","466.0, Bronkit, Akut NOS"
+"486.0, Pneumonia, Acute","486.0, Pneumoni, Akute"
+"491.21, COPD Exacerbation","491.21, Perkeqesim COPD"
+"491.8, Bronchitis, Chronic","491.8, Bronkit, Kronike"
+"493.92, Asthma, Acute Exac.","493.92, Astme, Perkeqesim Akut"
+"496.0, COPD","496.0, COPD"
+4K UHD,4K UHD
+4mm,4mm
+4th,I katert
+4th{{every}},I katert{{every}}
+4th{{nth}},I katert{{nth}}
+5 Days From Now,5 Dite Nga Tani
+5 Months From Now,5 Muaj Nga Tani
+5 Weeks From Now,5 Jave Nga Tani
+"519.7, Bronchospasm","519.7, Bronkospazem"
+5mm,5mm
+5th,I peste
+5th{{every}},I peste{{every}}
+6 Days From Now,6 Dite Nga Tani
+6 months,6 muaj
+6 Months From Now,6 Muaj Nga Tani
+6 Weeks From Now,6 Jave Nga Tani
+6th,I gjashte
+6th{{every}},I gjashte{{every}}
+7 Months From Now,7 Muaj Nga Tani
+8 Months From Now,8 Muaj Nga Tani
+"8-12 characters long, including at least one upper case letter, one lower case letter, one number, one special character and no common strings","8-12 karaktere te gjata, duke perfshire te pakten nje shkronje te madhe, nje shkronje te vogel, nje numer, nje karakter special dhe asnje varg te zakonshem"
+"824.0 Fracture, medial malleolus, closed","824.0 Frakture, maleoli medial, e mbyllur"
+"824.2 Fracture, lateral malleolus, closed","824.2 Frakture, maleoli lateral, e mbyllur"
+"824.6 Fracture, Trimalleolar, closed","824.6 Frakture, Trimaleolare, e mbyllur"
+"825.32 Fracture, of Navicular (ankle)","825.32 Frakture, e Navikularit (nyje e kembes)"
+"825.35 Fracture, Base of fifth (5th) Metatarsal","825.35 Frakture, Baza e metatarsalit te peste (te 5-te)"
+845.00 ankle sprain NOS,845.00 ndrydhje e nyjes se kembes NOS
+845.01 Sprain Medial (Deltoid) Lig.,845.01 Ndrydhje e Lig. Medial (Deltoid)
+"845.02 Sprain, Calcaneal fibular","845.02 Ndrydhje, Kalcaneal fibulare"
+9 Months From Now,9 Muaj Nga Tani
+99212 Established - Uncomplicated,99212 I vendosur - I pakomplikuar
+99213 Established - Low Complexity,99213 I vendosur - Kompleksitet i ulet
+< Not Reported,< E Paraportuar
+= Took Place,= U Realizua
+> 3 HPI elements,> 3 elemente HPI
+> Checked out,> I larguar
+> Did Not Take Place,> Nuk U Realizua
+? Did Not Attend,? Nuk Mori Pjese
+? No show,? Nuk u paraqit
+@ Arrived,@ Mberritur
+@ Attended,@ Mori Pjese
+[Change View],[Ndrysho Pamjen]
+[Date of Last Encounter],[Data e Vizites se Fundit]
+[Days Since Last Encounter],[Dite Nga Vizita e Fundit]
+[EOBs],[EOBs]
+[Export OFX],[Eksporto OFX]
+[not recommended],[nuk rekomandohet]
+[Number Of Encounters],[Numri i Vizitave]
+[Reports],[Raporte]
+[Select All],[Zgjidh te Gjitha]
+[SQL-Ledger],[SQL-Ledger]
+[Start Batch Processing],[Fillo Perpunimin ne Grupe]
+[View Log],[Shiko Regjistrin]
+[View Printable Report],[Shiko Raportin e Printueshëm]
+^ Pending,^ Ne Pritje
+_PC_DUR_HOURS,_PC_DUR_HOURS
+_PC_DUR_MINUTES,_PC_DUR_MINUTES
+_PC_LOCALE,_PC_LOCALE
+~ Arrived late,~ Mberritur me vonese
+~ Late Arrival,~ Mberritje e Vonuar
