@@ -1,0 +1,301 @@
+constant_name,definition
+Due Status,Statusi i Afatit
+Due Status Update,Përditësimi i Statusit të Afatit
+Dumping OpenEMR web directory tree,Po eksportohet pema e drejtorisë web të OpenEMR
+Dumping phpGACL database,Po eksportohet baza e të dhënave phpGACL
+Dumping phpGACL web directory tree,Po eksportohet pema e drejtorisë web phpGACL
+Dumping SQL-Ledger database,Po eksportohet baza e të dhënave SQL-Ledger
+Dumping SQL-Ledger web directory tree,Po eksportohet pema e drejtorisë web SQL-Ledger
+Dup Check,Kontroll Dublikatash
+Dup Check on only Edit,Kontroll Dublikatash vetëm në Ndryshim
+"Dup Check on only Edit, or Extra billing codes OK","Kontroll Dublikatash vetëm në Ndryshim, ose Kodet shtesë të faturimit OK"
+Dup Check on only New,Kontroll Dublikatash vetëm në të Re
+"Duplicate codes are deleted from editor list otherwise, code will append to list.","Kodet e dyfishta fshihen nga lista e redaktorit përndryshe, kodi do t'i shtohet listës."
+Duplicate Patient Management,Menaxhimi i Pacientëve të Dyfishtë
+"Duplicate Rx -- unchanged from current Rx{{The refraction did not change, New Rx=old Rx}}","Rx e Dyfishtë -- e pandryshuar nga Rx aktuale{{The refraction did not change, New Rx=old Rx}}"
+Duplicated ID on line,ID e dyfishtë në rreshtin
+Duplicated name on line,Emër i dyfishtë në rreshtin
+"During the work-day, syncs occurs every","Gjatë ditës së punës, sinkronizimi ndodh çdo"
+Dx Codes,Kodet Dx
+Dx Rep,Raporti Dx
+Dzongkha,Dzongkha
+E(T){{intermittent esotropia}},E(T){{ezotropi intermitente}}
+E-Mail,E-Mail
+E-mail,E-mail
+E-Mail Address,Adresa E-Mail
+E-mail Messaging,Mesazhet me E-mail
+E-mail OK,E-mail OK
+E-PRESCRIBING,E-PËRSHKRIM
+e-Rx,e-Rx
+e-Rx EPCS,e-Rx EPCS
+e-Rx Renewal,Rinovimi i e-Rx
+e-signed,e-nënshkruar
+Each of these groups (AROs) has access to pre-determined parts of the program (ACOs).,Secili nga këto grupe (AROs) ka akses në pjesë të paracaktuara të programit (ACOs).
+"Each provider needs to set this under user settings. This should be blank","Çdo ofrues duhet ta vendosë këtë nën cilësimet e përdoruesit. Kjo duhet të jetë bosh"
+Each Section has one Narrative Block and zero to many coded Entries,Çdo Seksion ka një Bllok Narrativ dhe zero deri në shumë Regjistrime të koduara
+"Each segment is identified by a unique three letter header that constitutes the first three letters on that line","Çdo segment identifikohet nga një titull unik me tre shkronja që përbën tre shkronjat e para në atë rresht"
+Each test in order gets a label.,Çdo test sipas radhës merr një etiketë.
+Each test or panel in this group has to be in an individual Custom Favorite Item tier,Çdo test ose panel në këtë grup duhet të jetë në një nivel individual të Artikujve të Preferuar të Personalizuar
+Each Transaction is listed on a separate line,Çdo Transaksion listohet në një rresht të veçantë
+Easipro Server,Serveri Easipro
+Easipro Server Password,Fjalëkalimi i Serverit Easipro
+Easipro Server Username,Emri i Përdoruesit të Serverit Easipro
+Easy to forget on the computer used to login,E lehtë për t'u harruar në kompjuterin e përdorur për hyrje
+Easy to setup,E lehtë për t'u konfiguruar
+Easy to use,E lehtë për t'u përdorur
+eClaims,eClaims
+ECL{{equivalent contact lens power at the corneal level}},ECL{{fuqia ekuivalente e lenteve të kontaktit në nivelin korneal}}
+ECOM{{external comments abbreviation}},ECOM{{shkurtesa e komenteve të jashtme}}
+EDI File,Skedari EDI
+EDI History (under Fees) for storing and interpreting EDI claim response files,Historia EDI (nën Tarifat) për ruajtjen dhe interpretimin e skedarëve të përgjigjes së kërkesave EDI
+EDI-271 File Upload,Ngarkimi i Skedarit EDI-271
+EDI-271 Response File Upload,Ngarkimi i Skedarit të Përgjigjes EDI-271
+Edit Appointment,Ndrysho Takimin
+Edit Current Patient,Ndrysho Pacientin Aktual
+Edit Document,Ndrysho Dokumentin
+Edit Entry,Ndrysho Regjistrimin
+Edit Event,Ndrysho Ngjarjen
+EDIT EXISTING GROUP,NDRYSHO GRUPIN EKZISTUES
+Edit Facility Specific User Information,Ndrysho Informacionin e Përdoruesit Specifik të Objektit
+Edit History and Lifestyle,Ndrysho Historikun dhe Stilin e Jetës
+Edit Issue,Ndrysho Çështjen
+Edit layout,Ndrysho paraqitjen
+Edit Layout Properties,Ndrysho Vetitë e Paraqitjes
+Edit Mode,Modaliteti i Ndryshimit
+Edit Only,Vetëm Ndryshim
+Edit Onsite Portal Activity,Ndrysho Aktivitetin e Portalit në Vend
+Edit Signature,Ndrysho Nënshkrimin
+Edit Template,Ndrysho Shabllonin
+Edit this form,Ndrysho këtë formular
+Editing,Ndryshim
+"ee the  * GNU General Public License for more details.  *   * You should have received a copy of the GNU General Public License  * along with this program; if not, write to the Free ","shih  * Licencën e Përgjithshme Publike GNU për më shumë detaje.  *   * Ju duhet të keni marrë një kopje të Licencës së Përgjithshme Publike GNU  * bashkë me këtë program; nëse jo, shkruani te Free "
+"eg. aching, burning, radiating pain","p.sh. dhimbje, djegie, dhimbje rrezatuese"
+EIN,EIN
+Either type a search term in appropriate box or double click box to see available codes.,Ose shkruani një term kërkimi në kutinë e duhur ose klikoni dy herë kutinë për të parë kodet e disponueshme.
+Either way data entered by any method will feature in both locations,Sido që të jetë të dhënat e futura me çdo metodë do të shfaqen në të dyja vendndodhjet
+Electronic orders,Porositë elektronike
+Electronic results can be bidirectional - both order tests and receive results electronically or unidirectional - only receive the results electronically,Rezultatet elektronike mund të jenë dydrejtimëshe - si porositja e testeve ashtu edhe marrja e rezultateve elektronikisht ose njëdrejtimëshe - vetëm marrja e rezultateve elektronikisht
+electronically signed on,nënshkruar elektronikisht më
+Eligibility 270 Inquiry Batch,Grupi i Kërkesës për Përshtatshmëri 270
+Eligibility Service Date (270 DTP03),Data e Shërbimit të Përshtatshmërisë (270 DTP03)
+Eligibility status for Vaccine for Children supplied vaccine,Statusi i përshtatshmërisë për vaksinën e furnizuar nga Vaksina për Fëmijët
+Ellipse,Elips
+EMAIL,EMAIL
+"Email address of the sender for patient reminders. Replies to patient reminders will be directed to this address. It is important to use an address from your clinic's domain to avoid help prevent patient reminders from going to junk mail folders.","Adresa e email-it të dërguesit për kujtesat e pacientëve. Përgjigjet ndaj kujtesave të pacientëve do të drejtohen në këtë adresë. Është e rëndësishme të përdorni një adresë nga domeni i klinikës suaj për të ndihmuar në parandalimin e kujtesave të pacientëve nga shkuarja në dosjet e postës së padëshiruar."
+EMAIL Confimed,EMAIL i Konfirmuar
+Email Direct,Email Direkt
+Email from Batchcom,Email nga Batchcom
+Email if required,Email nëse kërkohet
+Email Notification Settings Updated Successfully,Cilësimet e Njoftimeve me Email u Përditësuan me Sukses
+Email Selected,Email të Zgjedhura
+Email Selected Statements,Dërgo me Email Deklaratat e Zgjedhura
+email subject,subjekti i email-it
+Email Text Usable Tags,Etiketat e Përdorshme të Tekstit Email
+emails not sent,email-et nuk u dërguan
+"Embed {login} where the OpenEMR login name of the user is to be; for example: uid={login},dc=example,dc=com","Vendosni {login} ku duhet të jetë emri i hyrjes OpenEMR i përdoruesit; për shembull: uid={login},dc=example,dc=com"
+Emergency contact,Kontakti i urgjencës
+"Emergency Login ACL is chosen. The user is still in active state, please de-activate the user and activate the same when required during emergency situations. Visit Administration->Users for activation or de-activation.","ACL e Hyrjes së Urgjencës është zgjedhur. Përdoruesi është ende në gjendje aktive, ju lutem çaktivizoni përdoruesin dhe aktivizojeni kur të nevojitet gjatë situatave të urgjencës. Vizitoni Administrimin->Përdoruesit për aktivizim ose çaktivizim."
+Emergency Login activation email will be circulated only if following settings in the interface/globals.php file are configured:,Email-i i aktivizimit të Hyrjes së Urgjencës do të qarkullohet vetëm nëse cilësimet e mëposhtme në skedarin interface/globals.php janë konfiguruar:
+Emergency Login Email Address,Adresa Email e Hyrjes së Urgjencës
+Emergency Login user can do anything,Përdoruesi i Hyrjes së Urgjencës mund të bëjë çdo gjë
+Emergency Room - Hospital,Dhoma e Urgjencës - Spitali
+Empty Definition,Përkufizim Bosh
+Empty Definitions,Përkufizime Boshe
+empty file received,skedari bosh u pranua
+Empty table,Tabela boshe
+"EMR Direct phiMail is a secure, scalable, standards-based way for participants to send authenticated, encrypted health information directly to known, trusted recipients over the Internet","EMR Direct phiMail është një mënyrë e sigurt, e shkallëzueshme, e bazuar në standarde për pjesëmarrësit për të dërguar informacion shëndetësor të vërtetuar, të enkriptuar direkt te marrësit e njohur, të besuar përmes Internetit"
+Enable a Payment Gateway Service for processing credit card transactions,Aktivizo një Shërbim të Portës së Pagesave për përpunimin e transaksioneve me karta krediti
+Enable Alert Log,Aktivizo Regjistrin e Alarmeve
+Enable Alert Logging,Aktivizo Regjistrimin e Alarmeve
+Enable Allergy Check,Aktivizo Kontrollin e Alergjisë
+Enable Allergy Check Against Medications and Prescriptions,Aktivizo Kontrollin e Alergjisë kundrejt Medikamenteve dhe Recetave
+Enable AMC Prompting,Aktivizo Nxitjen AMC
+Enable AMC Report Itemization,Aktivizo Detajimin e Raportit AMC
+Enable AMC Reporting,Aktivizo Raportimin AMC
+Enable AMC Tracking,Aktivizo Gjurmimin AMC
+Enable amendments feature,Aktivizo veçorinë e ndryshimeve
+Enable ATNA Auditing,Aktivizo Auditimin ATNA
+Enable Audit Log Encryption,Aktivizo Enkriptimin e Regjistrit të Auditimit
+Enable Audit Logging,Aktivizo Regjistrimin e Auditimit
+Enable Audit Trail and Node Authentication (ATNA).,Aktivizo Gjurmën e Auditimit dhe Vërtetimin e Nyjës (ATNA).
+Enable Authentication Using Google Sign-in,Aktivizo Vërtetimin Duke Përdorur Hyrjen me Google
+Enable Automated Measure Calculations (AMC) Reporting,Aktivizo Raportimin e Llogaritjeve Automatike të Matjeve (AMC)
+Enable Batch Payment,Aktivizo Pagesën në Grup
+Enable C-CDA Alternate Service,Aktivizo Shërbimin Alternativ C-CDA
+Enable C-CDA Service,Aktivizo Shërbimin C-CDA
+Enable Client,Aktivizo Klientin
+Enable Client SSL,Aktivizo SSL të Klientit
+Enable client SSL certificate authentication.,Aktivizo vërtetimin e çertifikatës SSL të klientit.
+Enable Clinical Active Reminder Popup,Aktivizo Dritaren e Kujtesës Klinike Aktive
+Enable Clinical Decisions Rules (CDR),Aktivizo Rregullat e Vendimeve Klinike (CDR)
+Enable Clinical Passive New Reminder(s) Popup,Aktivizo Dritaren e Kujtesës(ave) të Re Klinike Pasive
+Enable Clinical Passive Reminder Widget,Aktivizo Widget-in e Kujtesës Klinike Pasive
+Enable Clinical Quality Measure (CQM) Reporting,Aktivizo Raportimin e Matjes së Cilësisë Klinike (CQM)
+Enable Clinical Reminder Popup,Aktivizo Dritaren e Kujtesës Klinike
+Enable Clinical Reminder Widget,Aktivizo Widget-in e Kujtesës Klinike
+Enable CMS Portal,Aktivizo Portalin CMS
+Enable Compact Mode,Aktivizo Modalitetin Kompakt
+Enable CQM Report Itemization,Aktivizo Detajimin e Raportit CQM
+Enable CQM Reporting,Aktivizo Raportimin CQM
+Enable Database Connection Pooling,Aktivizo Grumbullimin e Lidhjeve të Bazës së të Dhënave
+Enable Easipro,Aktivizo Easipro
+"Enable Easipro. For licensing options for this feature, please contact","Aktivizo Easipro. Për opsionet e licencimit për këtë veçori, ju lutem kontaktoni"
+Enable EDI History,Aktivizo Historinë EDI
+Enable EDI History In Left Menu,Aktivizo Historinë EDI në Menunë e Majtë
+Enable Encryption of Items Stored on CouchDB,Aktivizo Enkriptimin e Artikujve të Ruajtur në CouchDB
+Enable Encryption of Items Stored on Drive,Aktivizo Enkriptimin e Artikujve të Ruajtur në Disk
+Enable Facility,Aktivizo Objektin
+Enable Facility/Warehouse Permissions,Aktivizo Lejet e Objektit/Magazinës
+Enable facility/warehouse restrictions in the user administration form.,Aktivizo kufizimet e objektit/magazinës në formularin e administrimit të përdoruesit.
+Enable Fees In Left Menu,Aktivizo Tarifat në Menunë e Majtë
+Enable Fees Submenu,Aktivizo Nënmenunë e Tarifave
+Enable FHIR Provider Client Service,Aktivizo Shërbimin e Klientit të Ofruesit FHIR
+Enable follow-up encounters,Aktivizo vizitat e ndjekjes
+Enable follow-up encounters feature,Aktivizo veçorinë e vizitave të ndjekjes
+Enable Google Sign-In,Aktivizo Hyrjen me Google
+Enable Group Therapy,Aktivizo Terapinë në Grup
+Enable Help Modal,Aktivizo Dritaren e Ndihmës
+Enable Hylafax Support,Aktivizo Mbështetjen Hylafax
+Enable import status message after visiting NewCrop eRx.,Aktivizo mesazhin e statusit të importit pas vizitës në NewCrop eRx.
+Enable import status message for NewCrop erx,Aktivizo mesazhin e statusit të importit për NewCrop eRx
+Enable Itemization of AMC Reports,Aktivizo Detajimin e Raporteve AMC
+Enable Itemization of CQM Reports,Aktivizo Detajimin e Raporteve CQM
+Enable Itemization of Standard Clinical Rules Reports,Aktivizo Detajimin e Raporteve të Rregullave Klinike Standarde
+Enable Lab Exchange,Aktivizo Shkëmbimin e Laboratorit
+Enable lock toggle,Aktivizo ndërrimin e bllokimit
+Enable log for document uploads/downloads to CouchDB,Aktivizo regjistrin për ngarkimet/shkarkimet e dokumenteve në CouchDB
+Enable logging of all SQL SELECT queries.,Aktivizo regjistrimin e të gjitha pyetjeve SQL SELECT.
+Enable logging of backup related activities.,Aktivizo regjistrimin e aktiviteteve të lidhura me kopjen rezervë.
+Enable logging of CDR Engine Queries.,Aktivizo regjistrimin e pyetjeve të Motorit CDR.
+Enable logging of miscellaneous activities.,Aktivizo regjistrimin e aktiviteteve të ndryshme.
+Enable logging of ordering activities.,Aktivizo regjistrimin e aktiviteteve të porosive.
+Enable logging of patient record modifications.,Aktivizo regjistrimin e modifikimeve të regjistrave të pacientëve.
+Enable logging of scheduling activities.,Aktivizo regjistrimin e aktiviteteve të planifikimit.
+Enable logging of security and administration activities.,Aktivizo regjistrimin e aktiviteteve të sigurisë dhe administrimit.
+Enable MedEx Communication Service,Aktivizo Shërbimin e Komunikimit MedEx
+Enable NewCrop eRx import status message,Aktivizo mesazhin e statusit të importit NewCrop eRx
+Enable NewCrop eRx Service,Aktivizo Shërbimin NewCrop eRx
+Enable NewCrop eRx Service.,Aktivizo Shërbimin NewCrop eRx.
+Enable OAuth2 Password Grant (Not considered secure),Aktivizo Dhënien e Fjalëkalimit OAuth2 (Nuk konsiderohet e sigurt)
+"Enable OAuth2 Password Grant. Recommend turning this setting off for production server. Recommend only using for testing.","Aktivizo Dhënien e Fjalëkalimit OAuth2. Rekomandohet çaktivizimi i këtij cilësimi për serverin e prodhimit. Rekomandohet përdorimi vetëm për testim."
+Enable Office Ally Insurance Eligibility,Aktivizo Përshtatshmërinë e Sigurimit Office Ally
+Enable Offsite Patient Portal,Aktivizo Portalin e Pacientit Jashtë Vendit
+Enable Offsite Patient Portal.,Aktivizo Portalin e Pacientit Jashtë Vendit.
+Enable only one type of portal by checking the relevant check-box,Aktivizo vetëm një lloj portali duke shënuar kutinë përkatëse
+Enable Onsite Patient Portal,Aktivizo Portalin e Pacientit në Vend
+Enable Onsite Patient Portal Document Download,Aktivizo Shkarkimin e Dokumenteve të Portalit të Pacientit në Vend
+Enable Onsite Patient Portal new patient to self register.,Aktivizo regjistrimin e vetë të pacientit të ri në Portalin e Pacientit në Vend.
+Enable Onsite Patient Portal.,Aktivizo Portalin e Pacientit në Vend.
+"Enable OpenEMR FHIR System Scopes (Recommended Off, Turn on only if you know what you are doing)","Aktivizo Fushëveprimin e Sistemit FHIR të OpenEMR (Rekomandohet Joaktiv, Aktivizoni vetëm nëse e dini çfarë po bëni)"
+Enable OpenEMR FHIR System Scopes.,Aktivizo Fushëveprimin e Sistemit FHIR të OpenEMR.
+Enable OpenEMR Patient Portal FHIR REST API (EXPERIMENTAL),Aktivizo API-n FHIR REST të Portalit të Pacientit OpenEMR (EKSPERIMENTALE)
+Enable OpenEMR Patient Portal FHIR RESTful API.,Aktivizo API-n FHIR RESTful të Portalit të Pacientit OpenEMR.
+Enable OpenEMR Patient Portal REST API (EXPERIMENTAL),Aktivizo API-n REST të Portalit të Pacientit OpenEMR (EKSPERIMENTALE)
+Enable OpenEMR Patient Portal RESTful API.,Aktivizo API-n RESTful të Portalit të Pacientit OpenEMR.
+Enable OpenEMR REST API,Aktivizo API-n REST të OpenEMR
+Enable OpenEMR RESTful API. SSL Required,Aktivizo API-n RESTful të OpenEMR. Kërkohet SSL
+Enable OpenEMR Standard FHIR REST API,Aktivizo API-n Standarde FHIR REST të OpenEMR
+Enable OpenEMR Standard FHIR RESTful API.,Aktivizo API-n Standarde FHIR RESTful të OpenEMR.
+Enable OpenEMR Standard REST API,Aktivizo API-n Standarde REST të OpenEMR
+Enable OpenEMR Standard RESTful API.,Aktivizo API-n Standarde RESTful të OpenEMR.
+Enable Patient Portal,Aktivizo Portalin e Pacientit
+Enable Patient Portal Document Download,Aktivizo Shkarkimin e Dokumenteve të Portalit të Pacientit
+Enable Patient Portal new patient to self register.,Aktivizo regjistrimin e vetë të pacientit të ri në Portalin e Pacientit.
+Enable Patient Reminder Widget,Aktivizo Widget-in e Kujtesës së Pacientit
+Enable percent-based price levels,Aktivizo nivelet e çmimeve të bazuara në përqindje
+Enable phiMail Direct Messaging Service,Aktivizo Shërbimin e Mesazheve Direkte phiMail
+Enable Posting,Aktivizo Postimin
+Enable Prompting For Automated Measure Calculations (AMC) Required Data,Aktivizo Nxitjen për të Dhënat e Kërkuara të Llogaritjeve Automatike të Matjeve (AMC)
+Enable Random Drug Testing,Aktivizo Testimin e Rastësishëm të Drogës
+Enable Reporting of Tracking Date For Automated Measure Calculations (AMC),Aktivizo Raportimin e Datës së Gjurmimit për Llogaritjet Automatike të Matjeve (AMC)
+Enable Save and Close,Aktivizo Ruaj dhe Mbyll
+Enable Standard Report Itemization,Aktivizo Detajimin e Raportit Standard
+Enable support for the open source WordPress Portal by Sunset Systems,Aktivizo mbështetjen për Portalin WordPress me burim të hapur nga Sunset Systems
+Enable Text Templates in Encounter Forms,Aktivizo Shablonet e Tekstit në Formularët e Vizitave
+"Enable the Medical Information Integration, LLC Lab Exchange Service.","Aktivizo Shërbimin e Shkëmbimit të Laboratorit të Medical Information Integration, LLC."
+Enable the OpenEMR Support LLC Lab Exchange Service.,Aktivizo Shërbimin e Shkëmbimit të Laboratorit të OpenEMR Support LLC.
+Enable User Certificate Authentication,Aktivizo Vërtetimin e Çertifikatës së Përdoruesit
+Enable Version 1 Onsite Patient Portal,Aktivizo Versionin 1 të Portalit të Pacientit në Vend
+Enable Version 2 Onsite Patient Portal,Aktivizo Versionin 2 të Portalit të Pacientit në Vend
+Enable Version 2 Onsite Patient Portal new patient to self register.,Aktivizo regjistrimin e vetë të pacientit të ri në Versionin 2 të Portalit të Pacientit në Vend.
+Enable Weno eRx Service,Aktivizo Shërbimin Weno eRx
+Enable Weno eRx Service Test mode,Aktivizo modalitetin e testimit të Shërbimit Weno eRx
+"Enable ZMG, LLC eRx service","Aktivizo shërbimin eRx të ZMG, LLC"
+Enabled,Aktivizuar
+Enabled Client,Klienti i Aktivizuar
+Enabled Services,Shërbimet e Aktivizuara
+Enables choose due date to message,Mundëson zgjedhjen e datës së afatit për mesazhin
+Enables groups module in system.,Mundëson modulin e grupeve në sistem.
+Enables the ability to download documents in the Onsite Patient Portal by the user.,Mundëson aftësinë e përdoruesit për të shkarkuar dokumente në Portalin e Pacientit në Vend.
+Enables the ability to download documents in the Patient Portal by the user.,Mundëson aftësinë e përdoruesit për të shkarkuar dokumente në Portalin e Pacientit.
+"Enables the old Charges panel for entering billing codes and payments. Not recommended, use the Fee Sheet instead.","Mundëson panelin e vjetër të Tarifave për futjen e kodeve të faturimit dhe pagesave. Nuk rekomandohet, përdorni Fletën e Tarifave në vend."
+Enables to submit changes for all appointments of a recurrence at once.,Mundëson dërgimin e ndryshimeve për të gjitha takimet e një përsëritjeje njëherësh.
+Enabling EMR Direct phiMail,Aktivizimi i EMR Direct phiMail
+Enc,Viz
+Enc#,Viz#
+encounter acute inpatient or ED,vizitë pacienti akut i shtruar ose Urgjencë
+Encounter Checkup Procedure,Procedura e Kontrollit të Vizitës
+Encounter Dt / Rsn,Data / Arsyeja e Vizitës
+Encounter EDI Record,Regjistrimi EDI i Vizitës
+Encounter Esigned,Vizita e Nënshkruar Elektronikisht
+Encounter Information,Informacioni i Vizitës
+Encounter Information (encounters),Informacioni i Vizitës (vizitat)
+encounter nursing discharge,vizitë lëshimi infermieror
+encounter nursing facility,vizitë objekt infermieror
+encounter occupational therapy,vizitë terapi okupacionale
+encounter office visit,vizitë në zyrë
+encounter outpatient,vizitë pacienti ambulantor
+encounter outpatient w/PCP & obgyn,vizitë ambulantore me PCP & obgyn
+Encounter Page Size,Madhësia e Faqes së Vizitës
+Encounter Payment,Pagesa e Vizitës
+encounter pregnancy,vizitë shtatzënie
+encounter preventive medicine - individual counseling,vizitë mjekësi parandaluese - këshillim individual
+encounter preventive medicine 40 and older,vizitë mjekësi parandaluese 40 vjeç e lart
+encounter preventive medicine group counseling,vizitë mjekësi parandaluese këshillim në grup
+encounter preventive medicine other services,vizitë mjekësi parandaluese shërbime të tjera
+encounter preventive medicine services 18 and older,vizitë shërbime mjekësi parandaluese 18 vjeç e lart
+Encounter Preview,Pamja Paraprake e Vizitës
+Encounter Provider,Ofruesi i Vizitës
+encounter psychiatric & psychologic,vizitë psikiatrike & psikologjike
+Encounter statistics,Statistikat e vizitave
+Encounter Summary,Përmbledhja e Vizitës
+Encounter type,Lloji i vizitës
+Encounter was coded,Vizita u kodua
+"Encounter: encounter non-acute inpt, outpatient, or ophthalmology","Vizitë: vizitë joakute e shtruar, ambulantore, ose oftalmologji"
+Encounters &amp; Forms,Vizitat &amp; Formularët
+Encounters not authorized,Vizitat nuk janë të autorizuara
+Encounters Report,Raporti i Vizitave
+Encounters Section,Seksioni i Vizitave
+Encryption key issued by Weno eRx service.,Çelësi i enkriptimit i lëshuar nga shërbimi Weno eRx.
+Encryption Pass Phrase,Fraza e Kalimit të Enkriptimit
+End Date From,Data e Mbarimit Nga
+End date is missing!,Data e mbarimit mungon!
+End Date leave blank if ongoing,Data e Mbarimit lëreni bosh nëse vazhdon
+End date must be equal or bigger than start date,Data e mbarimit duhet të jetë e barabartë ose më e madhe se data e fillimit
+End Date To,Data e Mbarimit Deri
+End of Day by Provider or allow Totals Only,Fundi i Ditës sipas Ofruesit ose lejo vetëm Totalet
+End of Requisition,Fundi i Kërkesës
+End watching server processes for upgrade version,Përfundo monitorimin e proceseve të serverit për versionin e përditësimit
+End-Stage Renal Disease Beneficiary in MCP with Employer`s Group Plan,Përfituesi i Sëmundjes Renale në Fazën Përfundimtare në MCP me Planin e Grupit të Punëdhënësit
+End-Stage Renal Disease Treatment Facility,Objekti i Trajtimit të Sëmundjes Renale në Fazën Përfundimtare
+Ending Account Balance,Bilanci Përfundimtar i Llogarisë
+Ending date,Data përfundimtare
+Ending DOS mm/dd/yyyy if you wish to enter a range,DOS përfundimtare mm/dd/yyyy nëse dëshironi të futni një interval
+Endo Abnormal Blood,Gjak Anormal Endo
+ENDO{{Endocrine}},ENDO{{Endokrin}}
+Enforce E-Mail in Portal Log On Dialog,Detyro E-Mail-in në Dialogun e Hyrjes së Portalit
+English (Australian),Anglisht (Australiane)
+Enscript command used by Hylafax.,Komanda Enscript e përdorur nga Hylafax.
+Ensure OpenEMR has write privileges to directory,Sigurohuni që OpenEMR ka privilegje shkrimi në drejtori
+Ensure that Identifying Codes are unique,Sigurohuni që Kodet Identifikuese janë unike
+ENT Discharge,Lëshimi ORL
+ENT Pain,Dhimbje ORL
+"Enter 1 under sequence, more about sequence numbers later","Futni 1 nën sekuencë, më shumë rreth numrave të sekuencës më vonë"
+Enter a Begin Date,Futni një Datë Fillimi
+Enter a sequence 1,Futni një sekuencë 1
+Enter an End Date if the problem has been resolved,Futni një Datë Mbarimi nëse problemi është zgjidhur
+Enter Application Name,Futni Emrin e Aplikacionit
+Enter City,Futni Qytetin
+Enter default values for OD{{right eye}},Futni vlerat e paracaktuara për OD{{syri i djathtë}}
+Enter defaults for Right side,Futni vlerat e paracaktuara për anën e Djathtë
+Enter defaults values for Left side,Futni vlerat e paracaktuara për anën e Majtë
