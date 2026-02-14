@@ -1,5 +1,5 @@
 #!/bin/bash
-# Export missing Albanian translations from crmZ.E
+# Export missing Albanian translations from ManagerCRM
 set -e
 
 CONTAINER="${COMPOSE_PROJECT_NAME:-crm-ze}-crm-ze-app-1"

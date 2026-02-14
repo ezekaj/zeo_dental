@@ -1,5 +1,5 @@
-# crmZ.E - Clinic Management System
-# Based on OpenEMR flex image with ZeoDentalClinic branding
+# ManagerCRM - Clinic Management System by Z.E Digital Tech
+# Based on OpenEMR flex image with custom branding
 
 services:
   crm-ze-db:

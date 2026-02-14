@@ -1,7 +1,7 @@
 <?php
 
 /**
- * crmZ.E Guided Tour - Status API
+ * ManagerCRM Guided Tour - Status API
  *
  * GET  ?action=check  - Returns {"completed": true/false}
  * POST ?action=complete - Marks tour as completed for current user

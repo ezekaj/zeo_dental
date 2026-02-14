@@ -1,7 +1,7 @@
 /**
- * crmZ.E Albanian Translation Generator
+ * ManagerCRM Albanian Translation Generator
  *
- * Uses Google Gemini API to batch-translate missing OpenEMR UI strings
+ * Uses Google Gemini API to batch-translate missing ManagerCRM UI strings
  * from English to Albanian.
  *
  * Usage: GEMINI_API_KEY=your_key node translate.mjs

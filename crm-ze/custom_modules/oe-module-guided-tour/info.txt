@@ -1,1 +1,1 @@
-crmZ.E Guided Tour v1.0.0
+ManagerCRM Guided Tour v1.0.0

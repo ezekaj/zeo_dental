@@ -1,7 +1,7 @@
 <?php
 
 /**
- * crmZ.E Albanian Translation Importer
+ * ManagerCRM Albanian Translation Importer
  *
  * Reads a CSV file (constant_name,definition) and inserts missing
  * Albanian translations into the lang_definitions table.
