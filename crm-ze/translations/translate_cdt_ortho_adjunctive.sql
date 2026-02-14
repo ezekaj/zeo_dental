@@ -1,0 +1,63 @@
+-- CDT Orthodontic & Adjunctive Codes - Albanian Translation
+
+-- Orthodontics (D8xxx)
+UPDATE codes SET code_text='Trajtim ortodontik i kufizuar - dhëmbë qumështi', code_text_short='Orto Kufizuar Qumështi' WHERE code='D8010';
+UPDATE codes SET code_text='Trajtim ortodontik i kufizuar - denticion tranzitor', code_text_short='Orto Kufizuar Tranzitor' WHERE code='D8020';
+UPDATE codes SET code_text='Trajtim ortodontik i kufizuar - adoleshent', code_text_short='Orto Kufizuar Adoleshent' WHERE code='D8030';
+UPDATE codes SET code_text='Trajtim ortodontik i kufizuar - i rritur', code_text_short='Orto Kufizuar i Rritur' WHERE code='D8040';
+UPDATE codes SET code_text='Trajtim ortodontik gjithëpërfshirës - tranzitor', code_text_short='Orto Gjithëpërf. Tranzitor' WHERE code='D8070';
+UPDATE codes SET code_text='Trajtim ortodontik gjithëpërfshirës - adoleshent', code_text_short='Orto Gjithëpërf. Adoleshent' WHERE code='D8080';
+UPDATE codes SET code_text='Trajtim ortodontik gjithëpërfshirës - i rritur', code_text_short='Orto Gjithëpërf. i Rritur' WHERE code='D8090';
+UPDATE codes SET code_text='Terapi me pajisje të lëvizshme', code_text_short='Pajisje e Lëvizshme' WHERE code='D8210';
+UPDATE codes SET code_text='Terapi me pajisje fikse', code_text_short='Pajisje Fikse' WHERE code='D8220';
+UPDATE codes SET code_text='Ekzaminim para-ortodontik', code_text_short='Ekzaminim Para-Orto' WHERE code='D8660';
+UPDATE codes SET code_text='Vizitë periodike ortodontike', code_text_short='Vizitë Periodike Orto' WHERE code='D8670';
+UPDATE codes SET code_text='Retencioni ortodontik (heqje pajisje, vendosje mbajtësi)', code_text_short='Retencion Ortodontik' WHERE code='D8680';
+UPDATE codes SET code_text='Rregullim i mbajtësit', code_text_short='Rregullim Mbajtësi' WHERE code='D8681';
+UPDATE codes SET code_text='Trajtim ortodontik (faturim alternativ)', code_text_short='Orto Faturim Alt.' WHERE code='D8690';
+UPDATE codes SET code_text='Heqje e pajisjes fikse ortodontike', code_text_short='Heqje Pajisje Orto' WHERE code='D8695';
+UPDATE codes SET code_text='Procedurë ortodontike e paspecifikuar', code_text_short='Orto e Paspecifikuar' WHERE code='D8999';
+
+-- Adjunctive General Services (D9xxx)
+UPDATE codes SET code_text='Trajtim paliativ (urgjent) i dhimbjes dentare', code_text_short='Trajtim Urgjent Dhimbjeje' WHERE code='D9110';
+UPDATE codes SET code_text='Prerje e urës fikse', code_text_short='Prerje Ure' WHERE code='D9120';
+UPDATE codes SET code_text='Anestezi lokale jo në lidhje me procedurë', code_text_short='Anestezi Lokale Vetëm' WHERE code='D9210';
+UPDATE codes SET code_text='Anestezi bllokuese rajonale', code_text_short='Bllok Rajonal' WHERE code='D9211';
+UPDATE codes SET code_text='Anestezi bllokuese trigeminale', code_text_short='Bllok Trigeminal' WHERE code='D9212';
+UPDATE codes SET code_text='Anestezi lokale me procedurë', code_text_short='Anestezi Lokale me Proc.' WHERE code='D9215';
+UPDATE codes SET code_text='Vlerësim për sedacion', code_text_short='Vlerësim Sedacioni' WHERE code='D9219';
+UPDATE codes SET code_text='Anestezi e përgjithshme - 15 min. e parë', code_text_short='Anestezi Përgjithshme 15min' WHERE code='D9222';
+UPDATE codes SET code_text='Anestezi e përgjithshme - çdo 15 min. shtesë', code_text_short='Anestezi Shtesë 15min' WHERE code='D9223';
+UPDATE codes SET code_text='Inhalim oksidit të azotit', code_text_short='Oksid Azoti' WHERE code='D9230';
+UPDATE codes SET code_text='Sedacion IV - 15 min. e parë', code_text_short='Sedacion IV 15min' WHERE code='D9239';
+UPDATE codes SET code_text='Sedacion IV - çdo 15 min. shtesë', code_text_short='Sedacion IV Shtesë 15min' WHERE code='D9243';
+UPDATE codes SET code_text='Konsultë - shërbim diagnostik nga dentist tjetër', code_text_short='Konsultë' WHERE code='D9310';
+UPDATE codes SET code_text='Konsultë me profesionist të kujdesit shëndetësor', code_text_short='Konsultë Mjekësore' WHERE code='D9311';
+UPDATE codes SET code_text='Vizitë në zyrë për vëzhgim', code_text_short='Vizitë Vëzhgimi' WHERE code='D9430';
+UPDATE codes SET code_text='Vizitë jashtë orarit', code_text_short='Vizitë Jashtë Orarit' WHERE code='D9440';
+UPDATE codes SET code_text='Prezantim rasti dhe planifikim trajtimi', code_text_short='Planifikim Trajtimi' WHERE code='D9450';
+UPDATE codes SET code_text='Ilaç terapeutik parenteral, administrim i vetëm', code_text_short='Administrim Ilaci' WHERE code='D9610';
+UPDATE codes SET code_text='Ilaçe terapeutike parenterale, dy+ administrime', code_text_short='Administrim Shumë Ilaçesh' WHERE code='D9612';
+UPDATE codes SET code_text='Ilaçe të dhëna në zyrë për përdorim shtëpiak', code_text_short='Ilaçe për Shtëpi' WHERE code='D9630';
+UPDATE codes SET code_text='Aplikim i agjentit desensibilizues', code_text_short='Agjent Desensibilizues' WHERE code='D9910';
+UPDATE codes SET code_text='Aplikim i rezinës desensibilizuese', code_text_short='Rezinë Desensibilizuese' WHERE code='D9911';
+UPDATE codes SET code_text='Menaxhim i sjelljes', code_text_short='Menaxhim Sjelljes' WHERE code='D9920';
+UPDATE codes SET code_text='Trajtim i komplikimeve pas-kirurgjikale', code_text_short='Komplikime Pas-Kirurgjikale' WHERE code='D9930';
+UPDATE codes SET code_text='Mbrojtës okluzal', code_text_short='Mbrojtës Nate' WHERE code='D9940';
+UPDATE codes SET code_text='Riparim i mbrojtësit okluzal', code_text_short='Riparim Mbrojtësi Nate' WHERE code='D9942';
+UPDATE codes SET code_text='Rregullim i mbrojtësit okluzal', code_text_short='Rregullim Mbrojtësi' WHERE code='D9943';
+UPDATE codes SET code_text='Mbrojtës okluzal i fortë - hark i plotë', code_text_short='Mbrojtës i Fortë Plotë' WHERE code='D9944';
+UPDATE codes SET code_text='Mbrojtës okluzal i butë - hark i plotë', code_text_short='Mbrojtës i Butë Plotë' WHERE code='D9945';
+UPDATE codes SET code_text='Mbrojtës okluzal i fortë - hark i pjesshëm', code_text_short='Mbrojtës i Fortë Pjesshëm' WHERE code='D9946';
+UPDATE codes SET code_text='Analizë e okluzionit', code_text_short='Analizë Okluzioni' WHERE code='D9950';
+UPDATE codes SET code_text='Rregullim okluzal - i kufizuar', code_text_short='Rregullim Okluzal Kufizuar' WHERE code='D9951';
+UPDATE codes SET code_text='Rregullim okluzal - i plotë', code_text_short='Rregullim Okluzal i Plotë' WHERE code='D9952';
+UPDATE codes SET code_text='Mikroabrazion i smaltit', code_text_short='Mikroabrazion Smalti' WHERE code='D9970';
+UPDATE codes SET code_text='Odontoplastikë 1-2 dhëmbë', code_text_short='Odontoplastikë' WHERE code='D9971';
+UPDATE codes SET code_text='Zbardhim - për hark', code_text_short='Zbardhim për Hark' WHERE code='D9972';
+UPDATE codes SET code_text='Zbardhim - për dhëmb', code_text_short='Zbardhim për Dhëmb' WHERE code='D9973';
+UPDATE codes SET code_text='Zbardhim i brendshëm - për dhëmb', code_text_short='Zbardhim i Brendshëm' WHERE code='D9974';
+UPDATE codes SET code_text='Zbardhim në shtëpi - për hark', code_text_short='Kit Zbardhimi Shtëpie' WHERE code='D9975';
+UPDATE codes SET code_text='Takim i humbur', code_text_short='Takim i Humbur' WHERE code='D9986';
+UPDATE codes SET code_text='Takim i anuluar', code_text_short='Takim i Anuluar' WHERE code='D9987';
+UPDATE codes SET code_text='Procedurë ndihmëse e paspecifikuar', code_text_short='Procedurë e Paspecifikuar' WHERE code='D9999';
