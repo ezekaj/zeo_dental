@@ -5,173 +5,132 @@
     if (!config) return;
 
     var STORAGE_KEY = 'crmze_tour_completed_' + config.userId;
+    var sq = config.langCode === 'sq';
 
-    var t = config.langCode === 'sq' ? {
+    var t = sq ? {
         skip: 'Kalo',
+        skip_step: 'Kalo hapin',
         next: 'Tjetri',
         back: 'Mbrapa',
         done: 'Perfundo',
-        restart: 'Rifillo Udh\u00ebzuesin',
+        start: 'Fillo',
+        click_hint: 'Klikoni elementin e theksuar p\u00ebr t\u00eb vazhduar',
+        or_skip: 'ose klikoni "Kalo hapin"',
         step: 'Hapi',
         of: 'nga',
 
-        welcome_title: 'Mir\u00eb se vini n\u00eb crmZ.E',
-        welcome_text: 'Ky udh\u00ebzues do t\'ju ndihmoj\u00eb t\u00eb m\u00ebsoni se si t\u00eb p\u00ebrdorni sistemin e menaxhimit t\u00eb klinik\u00ebs. Do t\u00eb kalojm\u00eb n\u00ebp\u00ebr t\u00eb gjitha funksionet kryesore.<br><br>Mund ta kaloni n\u00eb \u00e7do koh\u00eb duke klikuar "Kalo".',
+        welcome_title: 'Mir\u00eb se vini n\u00eb Klinika Dentare ZEO!',
+        welcome_text: 'Ky udh\u00ebzues interaktiv do t\'ju mund\u00ebsoj\u00eb t\u00eb m\u00ebsoni sistemin hap pas hapi.<br><br><strong>Si funksionon:</strong> Ndiqni udh\u00ebzimet n\u00eb secilin hap. Kur ju k\u00ebrkohet t\u00eb klikoni diku, klikoni elementin e theksuar p\u00ebr t\u00eb vazhduar.',
 
-        nav_title: 'Navigimi Kryesor',
-        nav_text: 'Kjo \u00ebsht\u00eb shiriti i navigimit kryesor. K\u00ebtu mund t\u00eb aksesoni t\u00eb gjitha seksionet e sistemit: Pacient\u00ebt, Kalendari, Vizitat, Faturimi, Raportet dhe m\u00eb shum\u00eb.',
+        nav_title: 'Shiriti i Navigimit',
+        nav_text: 'Ky \u00ebsht\u00eb shiriti kryesor i navigimit t\u00eb Klinik\u00ebs Dentare ZEO. K\u00ebtu do t\u00eb gjeni t\u00eb gjitha seksionet: Pacient\u00ebt, Kalendari, Vizitat, Faturimi, Raportet dhe Administrimi.<br><br>Le t\'i eksplorojm\u00eb s\u00eb bashku!',
 
-        search_title: 'K\u00ebrko Pacient\u00ebt',
-        search_text: 'P\u00ebrdorni k\u00ebt\u00eb fush\u00eb p\u00ebr t\u00eb k\u00ebrkuar pacient\u00ebt sipas emrit, mbiemrit ose numrit t\u00eb kartel\u00ebs. Shkruani t\u00eb pakt\u00ebn 2 shkronja p\u00ebr t\u00eb filluar k\u00ebrkimin.',
+        search_title: '\ud83d\udd0d Provoni K\u00ebrkimin',
+        search_text: '<strong>Klikoni n\u00eb fush\u00ebn e k\u00ebrkimit</strong> p\u00ebr t\u00eb k\u00ebrkuar pacient\u00ebt sipas emrit, mbiemrit ose numrit t\u00eb kartel\u00ebs.<br><br>Shkruani t\u00eb pakt\u00ebn 2 shkronja p\u00ebr t\u00eb filluar k\u00ebrkimin.',
 
-        patient_menu_title: 'Menuja e Pacientit',
-        patient_menu_text: 'Nga ky men\u00fc mund t\u00eb:<br>\u2022 Shikoni list\u00ebn e pacient\u00ebve<br>\u2022 Shtoni nj\u00eb pacient t\u00eb ri<br>\u2022 Aksesoni kartel\u00ebn e pacientit',
+        patient_click_title: '\ud83d\udc64 Hapni Menun\u00eb e Pacientit',
+        patient_click_text: '<strong>Klikoni "Pacienti/Klienti"</strong> n\u00eb meny p\u00ebr t\u00eb par\u00eb opsionet e disponueshme.',
 
-        new_patient_title: 'Pacient i Ri',
-        new_patient_text: 'P\u00ebr t\u00eb shtuar nj\u00eb pacient t\u00eb ri, klikoni <strong>Pacienti > I Ri/e Re</strong> nga menuja. Do t\u00eb hapet nj\u00eb formular ku mund t\u00eb vendosni t\u00eb dh\u00ebnat demografike.',
+        patient_info_title: 'Menaxhimi i Pacient\u00ebve',
+        patient_info_text: 'Nga kjo meny mund t\u00eb:<br><br>\u2022 <strong>I Ri/K\u00ebrko</strong> \u2013 Regjistroni pacient t\u00eb ri ose k\u00ebrkoni ekzistues\u00ebt<br>\u2022 <strong>P\u00ebrmbledhje</strong> \u2013 Shikoni kartel\u00ebn e pacientit t\u00eb zgjedhur<br>\u2022 <strong>Dokumentet</strong> \u2013 Ngarkoni r\u00ebntgen\u00eb, skanime, raporte<br><br>Provoni t\u00eb klikoni <strong>I Ri/K\u00ebrko</strong> p\u00ebr t\u00eb par\u00eb formularin e regjistrimit!',
 
-        demographics_title: 'T\u00eb Dh\u00ebnat Demografike',
-        demographics_text: 'K\u00ebtu regjistrohen t\u00eb dh\u00ebnat personale t\u00eb pacientit: emri, mbiemri, dat\u00eblindja, adresa, numri i telefonit, email-i dhe informacionet e sigurimit sh\u00ebndet\u00ebsor.',
+        calendar_click_title: '\ud83d\udcc5 Hapni Kalendarin',
+        calendar_click_text: '<strong>Klikoni "Kalendari"</strong> n\u00eb meny p\u00ebr t\u00eb par\u00eb orarin e tak\u00edmeve.',
 
-        calendar_menu_title: 'Kalendari',
-        calendar_menu_text: 'Kalendari ju lejon t\u00eb menaxhoni t\u00eb gjitha tak\u00edmet. Klikoni <strong>Kalendari</strong> n\u00eb meny p\u00ebr ta hapur.',
+        calendar_info_title: 'Menaxhimi i Tak\u00edmeve',
+        calendar_info_text: 'N\u00eb kalendar mund t\u00eb:<br><br>\u2022 <strong>Klikoni n\u00eb nj\u00eb slot bosh</strong> p\u00ebr t\u00eb caktuar tak\u00edm t\u00eb ri<br>\u2022 <strong>Klikoni n\u00eb nj\u00eb tak\u00edm</strong> p\u00ebr ta modifikuar ose anuluar<br>\u2022 Ndryshoni pamjen: dit\u00eb, jav\u00eb, muaj<br>\u2022 Regjistroni pacientin kur vjen n\u00eb klinik\u00eb (Check In)',
 
-        calendar_desc_title: 'Pun\u00ebs me Kalendarin',
-        calendar_desc_text: 'N\u00eb kalendar mund t\u00eb:<br>\u2022 Shikoni tak\u00edmet dit\u00ebve, jav\u00ebs ose muajit<br>\u2022 Klikoni n\u00eb nj\u00eb slot kohor p\u00ebr t\u00eb shtuar tak\u00edm t\u00eb ri<br>\u2022 Z\u00ebrvend\u00ebsoni ose anuloni tak\u00edmet ekzistuese',
+        encounter_click_title: '\ud83e\ude7a Vizitat Klinike',
+        encounter_click_text: '<strong>Klikoni seksionin e vizitave klinike</strong> n\u00eb meny.',
 
-        new_appt_title: 'Tak\u00edm i Ri',
-        new_appt_text: 'P\u00ebr t\u00eb caktuar nj\u00eb tak\u00edm t\u00eb ri, klikoni n\u00eb nj\u00eb slot t\u00eb lir\u00eb n\u00eb kalendar. Zgjidhni pacientin, mjekun, sh\u00ebrbimin dhe koh\u00ebzgjatjen.',
+        encounter_info_title: 'Dokumentimi i Vizitave',
+        encounter_info_text: 'P\u00ebr \u00e7do vizit\u00eb t\u00eb pacientit n\u00eb Klinik\u00ebn Dentare ZEO, krijoni nj\u00eb "Encounter":<br><br>\u2022 <strong>Sh\u00ebnime SOAP</strong> \u2013 Dokumentoni ankes\u00ebn, ekzaminimin, diagnoz\u00ebn<br>\u2022 <strong>Procedurat dentare</strong> \u2013 Regjistroni trajtimin e kryer<br>\u2022 <strong>Recetat</strong> \u2013 Shkruani receta p\u00ebr medikamente<br>\u2022 <strong>Vitalet</strong> \u2013 Presioni, tempertura etj.',
 
-        checkin_title: 'Regjistrimi i Pacientit',
-        checkin_text: 'Kur pacienti vjen n\u00eb klinik\u00eb, mund ta regjistroni duke klikuar n\u00eb tak\u00edmin e tij n\u00eb kalendar dhe duke zgjedhur "Check In".',
+        fees_click_title: '\ud83d\udcb0 Faturimi',
+        fees_click_text: '<strong>Klikoni "Tarifa"</strong> n\u00eb meny p\u00ebr seksionin e faturimit.',
 
-        encounter_menu_title: 'Vizitat Klinike',
-        encounter_menu_text: 'Seksioni i vizitave ju lejon t\u00eb krijoni dhe menaxhoni vizitat klinike t\u00eb pacient\u00ebve.',
+        fees_info_title: 'Menaxhimi i Faturave',
+        fees_info_text: 'Seksioni i faturimit ju lejon t\u00eb:<br><br>\u2022 <strong>Fleta e Tarifave</strong> \u2013 Shtoni kodet e procedurave (CPT) p\u00ebr sh\u00ebrbimet dentare<br>\u2022 <strong>Faturat</strong> \u2013 Krijoni dhe d\u00ebrgoni fatura<br>\u2022 <strong>Pagesat</strong> \u2013 Regjistroni pagesat e pacient\u00ebve',
 
-        encounter_desc_title: 'Krijimi i Vizit\u00ebs',
-        encounter_desc_text: 'P\u00ebr \u00e7do vizit\u00eb t\u00eb pacientit krijohet nj\u00eb "Encounter" (Vizit\u00eb). K\u00ebtu regjistrohen:<br>\u2022 Sh\u00ebnimet klinike<br>\u2022 Diagnoza<br>\u2022 Trajtimi i kryer<br>\u2022 Receta',
+        reports_click_title: '\ud83d\udcca Raportet',
+        reports_click_text: '<strong>Klikoni "Raportet"</strong> p\u00ebr t\u00eb par\u00eb analitik\u00ebn e klinik\u00ebs.',
 
-        clinical_forms_title: 'Formular\u00ebt Klinik\u00eb',
-        clinical_forms_text: 'Brenda nj\u00eb vizite mund t\u00eb plot\u00ebsoni formular\u00eb t\u00eb ndryshme klinike: SOAP, sh\u00ebnime vitale, ekzaminim fizik dhe formular\u00eb t\u00eb personalizuar.',
+        reports_info_title: 'Analitika e Klinik\u00ebs',
+        reports_info_text: 'Raportet e disponueshme p\u00ebrfshijn\u00eb:<br><br>\u2022 <strong>Raportet e pacient\u00ebve</strong> \u2013 Lista, demografit\u00eb, historiku<br>\u2022 <strong>Raportet financiare</strong> \u2013 T\u00eb ardhurat, pagesat, bilancet<br>\u2022 <strong>Raportet e vizitave</strong> \u2013 Statistikat e tak\u00edmeve<br>\u2022 <strong>Raportet e personalizuara</strong>',
 
-        prescriptions_title: 'Recetat',
-        prescriptions_text: 'Sistemi i recetave ju lejon t\u00eb:<br>\u2022 Shkruani receta p\u00ebr medikamente<br>\u2022 Shikoni historikun e recetave<br>\u2022 Menaxhoni bar\u00ebrat e pacientit',
+        user_title: '\ud83d\udc64 Profili Juaj',
+        user_text: '<strong>Klikoni emrin tuaj</strong> p\u00ebr t\u00eb aksesuar:<br><br>\u2022 Ndryshoni fjal\u00ebkalimin<br>\u2022 Cil\u00ebsimet personale<br>\u2022 Dil nga sistemi',
 
-        fees_menu_title: 'Faturimi',
-        fees_menu_text: 'Seksioni i faturimit p\u00ebrfshin flet\u00ebn e tarifave, faturat dhe pagesat.',
+        patient_bar_title: 'Shiriti i Pacientit t\u00eb Zgjedhur',
+        patient_bar_text: 'Kur zgjidhni nj\u00eb pacient, informacioni i tij shfaqet k\u00ebtu: emri, mosha, numri i kartel\u00ebs. Klikoni p\u00ebr detaje t\u00eb plota.',
 
-        billing_desc_title: 'Fleta e Tarifave',
-        billing_desc_text: 'Fleta e tarifave p\u00ebrdoret p\u00ebr t\u00eb regjistruar sh\u00ebrbimet e kryera gjat\u00eb vizit\u00ebs. \u00c7do sh\u00ebrbim ka nj\u00eb kod CPT dhe \u00e7mimin p\u00ebrkat\u00ebs.',
+        tabs_title: 'Skedat e Pun\u00ebs',
+        tabs_text: 'Sistemi hap faqe n\u00eb skeda t\u00eb ndryshme \u2013 nj\u00eblloj si n\u00eb shfletues. Mund t\u00eb punoni me disa pacient\u00eb ose seksione nj\u00ebkoh\u00ebsisht duke klikuar skedat k\u00ebtu.',
 
-        documents_title: 'Dokument\u00ebt',
-        documents_text: 'Mund t\u00eb ngarkoni dhe menaxhoni dokumente p\u00ebr \u00e7do pacient: r\u00ebntgen\u00eb, skanime, raporte laboratorike, formular\u00eb p\u00eblqimi dhe dokumente t\u00eb tjera.',
-
-        reports_menu_title: 'Raportet',
-        reports_menu_text: 'Seksioni i raporteve ju jep akses n\u00eb raporte t\u00eb ndryshme p\u00ebr klinik\u00ebn.',
-
-        reports_desc_title: 'Llojet e Raporteve',
-        reports_desc_text: 'Raportet e disponueshme p\u00ebrfshijn\u00eb:<br>\u2022 Raportet e pacient\u00ebve<br>\u2022 Raportet e vizitave<br>\u2022 Raportet financiare<br>\u2022 Statistikat e klinik\u00ebs',
-
-        admin_menu_title: 'Administrimi',
-        admin_menu_text: 'Nga menuja e administrimit mund t\u00eb konfiguroni sistemin.',
-
-        admin_desc_title: 'Cilesimet e Sistemit',
-        admin_desc_text: 'N\u00eb seksionin e administrimit mund t\u00eb:<br>\u2022 Menaxhoni p\u00ebrdoruesit dhe rolet<br>\u2022 Konfiguroni cil\u00ebsimet globale<br>\u2022 Menaxhoni list\u00ebn e sh\u00ebrbimeve<br>\u2022 Kontrolloni gjuh\u00ebn e nderfaqes',
-
-        user_title: 'Profili i P\u00ebrdoruesit',
-        user_text: 'K\u00ebtu mund t\u00eb shikoni informacionin tuaj, t\u00eb ndryshoni fjal\u00ebkalimin dhe t\u00eb dil\u00ebni nga sistemi.',
-
-        patient_bar_title: 'Shiriti i Pacientit',
-        patient_bar_text: 'Kur zgjidhni nj\u00eb pacient, informacioni i tij shfaqet k\u00ebtu. Mund t\u00eb klikoni p\u00ebr t\u00eb par\u00eb detajet e plota.',
-
-        tabs_title: 'Skedat',
-        tabs_text: 'Sistemi p\u00ebrdor skeda p\u00ebr t\u00eb hapur disa faqe nj\u00ebkoh\u00ebsisht. Mund t\u00eb kaloni midis tyre duke klikuar n\u00eb skedat n\u00eb krye.',
-
-        finish_title: 'Udh\u00ebzuesi P\u00ebrfundoi!',
-        finish_text: 'Tani jeni gati t\u00eb p\u00ebrdorni crmZ.E! N\u00ebse doni ta rifilloni udh\u00ebzuesin, klikoni butonin <strong>?</strong> n\u00eb fund t\u00eb faqes.'
+        finish_title: '\u2705 Jeni Gati!',
+        finish_text: 'Tani i njihni t\u00eb gjitha funksionet kryesore t\u00eb sistemit t\u00eb Klinik\u00ebs Dentare ZEO!<br><br>N\u00ebse keni nevoj\u00eb ndihm\u00eb, klikoni butonin <strong>?</strong> n\u00eb k\u00ebndin e posht\u00ebm djathtas p\u00ebr ta rifilluar k\u00ebt\u00eb udh\u00ebzues n\u00eb \u00e7do koh\u00eb.'
     } : {
-        skip: 'Skip',
+        skip: 'Skip Tour',
+        skip_step: 'Skip step',
         next: 'Next',
         back: 'Back',
-        done: 'Done',
-        restart: 'Restart Tour',
+        done: 'Finish',
+        start: 'Let\'s Start',
+        click_hint: 'Click the highlighted element to continue',
+        or_skip: 'or click "Skip step"',
         step: 'Step',
         of: 'of',
 
-        welcome_title: 'Welcome to crmZ.E',
-        welcome_text: 'This guided tour will help you learn how to use the clinic management system. We\'ll walk through all the key features.<br><br>You can skip at any time by clicking "Skip".',
+        welcome_title: 'Welcome to ZEO Dental Clinic!',
+        welcome_text: 'This interactive guide will walk you through the system step by step.<br><br><strong>How it works:</strong> Follow the instructions at each step. When asked to click something, click the highlighted element to continue.',
 
-        nav_title: 'Main Navigation',
-        nav_text: 'This is the main navigation bar. From here you can access all sections of the system: Patients, Calendar, Encounters, Billing, Reports and more.',
+        nav_title: 'Navigation Bar',
+        nav_text: 'This is ZEO Dental Clinic\'s main navigation bar. Here you\'ll find all sections: Patients, Calendar, Encounters, Billing, Reports, and Administration.<br><br>Let\'s explore them together!',
 
-        search_title: 'Patient Search',
-        search_text: 'Use this field to search for patients by name, surname, or chart number. Type at least 2 characters to begin searching.',
+        search_title: '\ud83d\udd0d Try the Search',
+        search_text: '<strong>Click on the search box</strong> to search for patients by name, surname, or chart number.<br><br>Type at least 2 characters to start searching.',
 
-        patient_menu_title: 'Patient Menu',
-        patient_menu_text: 'From this menu you can:<br>\u2022 View the patient list<br>\u2022 Add a new patient<br>\u2022 Access patient charts',
+        patient_click_title: '\ud83d\udc64 Open the Patient Menu',
+        patient_click_text: '<strong>Click "Patient/Client"</strong> in the menu to see the available options.',
 
-        new_patient_title: 'New Patient',
-        new_patient_text: 'To add a new patient, click <strong>Patient > New/Search</strong> from the menu. A form will open where you can enter demographic information.',
+        patient_info_title: 'Patient Management',
+        patient_info_text: 'From this menu you can:<br><br>\u2022 <strong>New/Search</strong> \u2013 Register a new patient or search existing ones<br>\u2022 <strong>Summary</strong> \u2013 View the selected patient\'s chart<br>\u2022 <strong>Documents</strong> \u2013 Upload X-rays, scans, reports<br><br>Try clicking <strong>New/Search</strong> to see the registration form!',
 
-        demographics_title: 'Demographics',
-        demographics_text: 'This is where you register patient personal data: name, surname, date of birth, address, phone number, email, and insurance information.',
+        calendar_click_title: '\ud83d\udcc5 Open the Calendar',
+        calendar_click_text: '<strong>Click "Calendar"</strong> in the menu to see the appointment schedule.',
 
-        calendar_menu_title: 'Calendar',
-        calendar_menu_text: 'The calendar lets you manage all appointments. Click <strong>Calendar</strong> in the menu to open it.',
+        calendar_info_title: 'Appointment Management',
+        calendar_info_text: 'In the calendar you can:<br><br>\u2022 <strong>Click an empty slot</strong> to schedule a new appointment<br>\u2022 <strong>Click an appointment</strong> to modify or cancel it<br>\u2022 Switch views: day, week, month<br>\u2022 Check in patients when they arrive',
 
-        calendar_desc_title: 'Working with the Calendar',
-        calendar_desc_text: 'In the calendar you can:<br>\u2022 View appointments by day, week, or month<br>\u2022 Click on a time slot to add a new appointment<br>\u2022 Reschedule or cancel existing appointments',
+        encounter_click_title: '\ud83e\ude7a Clinical Encounters',
+        encounter_click_text: '<strong>Click the encounters section</strong> in the menu.',
 
-        new_appt_title: 'New Appointment',
-        new_appt_text: 'To schedule a new appointment, click on an empty time slot in the calendar. Select the patient, provider, service, and duration.',
+        encounter_info_title: 'Documenting Visits',
+        encounter_info_text: 'For each patient visit at ZEO Dental Clinic, create an "Encounter":<br><br>\u2022 <strong>SOAP Notes</strong> \u2013 Document complaint, exam, diagnosis<br>\u2022 <strong>Dental Procedures</strong> \u2013 Record treatments performed<br>\u2022 <strong>Prescriptions</strong> \u2013 Write medication prescriptions<br>\u2022 <strong>Vitals</strong> \u2013 Blood pressure, temperature, etc.',
 
-        checkin_title: 'Patient Check-In',
-        checkin_text: 'When a patient arrives at the clinic, you can check them in by clicking on their appointment in the calendar and selecting "Check In".',
+        fees_click_title: '\ud83d\udcb0 Billing',
+        fees_click_text: '<strong>Click "Fees"</strong> in the menu to access billing.',
 
-        encounter_menu_title: 'Encounters',
-        encounter_menu_text: 'The encounters section lets you create and manage clinical visits for patients.',
+        fees_info_title: 'Managing Billing',
+        fees_info_text: 'The billing section lets you:<br><br>\u2022 <strong>Fee Sheet</strong> \u2013 Add procedure codes (CPT) for dental services<br>\u2022 <strong>Invoices</strong> \u2013 Create and send invoices<br>\u2022 <strong>Payments</strong> \u2013 Record patient payments',
 
-        encounter_desc_title: 'Creating an Encounter',
-        encounter_desc_text: 'For each patient visit, an "Encounter" is created. This records:<br>\u2022 Clinical notes<br>\u2022 Diagnosis<br>\u2022 Treatment performed<br>\u2022 Prescriptions',
+        reports_click_title: '\ud83d\udcca Reports',
+        reports_click_text: '<strong>Click "Reports"</strong> to view clinic analytics.',
 
-        clinical_forms_title: 'Clinical Forms',
-        clinical_forms_text: 'Within an encounter you can fill out various clinical forms: SOAP notes, vitals, physical exam, and custom forms.',
+        reports_info_title: 'Clinic Analytics',
+        reports_info_text: 'Available reports include:<br><br>\u2022 <strong>Patient reports</strong> \u2013 Lists, demographics, history<br>\u2022 <strong>Financial reports</strong> \u2013 Revenue, payments, balances<br>\u2022 <strong>Visit reports</strong> \u2013 Appointment statistics<br>\u2022 <strong>Custom reports</strong>',
 
-        prescriptions_title: 'Prescriptions',
-        prescriptions_text: 'The prescription system lets you:<br>\u2022 Write prescriptions for medications<br>\u2022 View prescription history<br>\u2022 Manage patient medications',
+        user_title: '\ud83d\udc64 Your Profile',
+        user_text: '<strong>Click your name</strong> to access:<br><br>\u2022 Change your password<br>\u2022 Personal settings<br>\u2022 Log out',
 
-        fees_menu_title: 'Billing',
-        fees_menu_text: 'The billing section includes the fee sheet, invoices, and payments.',
+        patient_bar_title: 'Selected Patient Bar',
+        patient_bar_text: 'When you select a patient, their info appears here: name, age, chart number. Click for full details.',
 
-        billing_desc_title: 'Fee Sheet',
-        billing_desc_text: 'The fee sheet is used to record services performed during a visit. Each service has a CPT code and corresponding price.',
+        tabs_title: 'Work Tabs',
+        tabs_text: 'The system opens pages in separate tabs \u2013 just like a browser. You can work with multiple patients or sections at once by clicking the tabs here.',
 
-        documents_title: 'Documents',
-        documents_text: 'You can upload and manage documents for each patient: X-rays, scans, lab reports, consent forms, and other documents.',
-
-        reports_menu_title: 'Reports',
-        reports_menu_text: 'The reports section gives you access to various clinic reports.',
-
-        reports_desc_title: 'Report Types',
-        reports_desc_text: 'Available reports include:<br>\u2022 Patient reports<br>\u2022 Encounter reports<br>\u2022 Financial reports<br>\u2022 Clinic statistics',
-
-        admin_menu_title: 'Administration',
-        admin_menu_text: 'From the administration menu you can configure the system.',
-
-        admin_desc_title: 'System Settings',
-        admin_desc_text: 'In the administration section you can:<br>\u2022 Manage users and roles<br>\u2022 Configure global settings<br>\u2022 Manage service lists<br>\u2022 Control interface language',
-
-        user_title: 'User Profile',
-        user_text: 'Here you can view your information, change your password, and log out of the system.',
-
-        patient_bar_title: 'Patient Bar',
-        patient_bar_text: 'When you select a patient, their information appears here. You can click to see full details.',
-
-        tabs_title: 'Tabs',
-        tabs_text: 'The system uses tabs to open multiple pages at once. You can switch between them by clicking the tabs at the top.',
-
-        finish_title: 'Tour Complete!',
-        finish_text: 'You\'re now ready to use crmZ.E! If you want to see this tour again, click the <strong>?</strong> button at the bottom of the page.'
+        finish_title: '\u2705 You\'re All Set!',
+        finish_text: 'You now know all the key features of ZEO Dental Clinic\'s system!<br><br>If you ever need help, click the <strong>?</strong> button in the bottom-right corner to restart this guide anytime.'
     };
 
     function findMenuByText(text) {
@@ -184,270 +143,228 @@
         return null;
     }
 
-    function makeButtons(stepNum, totalSteps, tour) {
-        var progress = '<span class="crmze-tour-progress">' + t.step + ' ' + stepNum + ' ' + t.of + ' ' + totalSteps + '</span>';
-        var buttons = [];
+    function clickToAdvance(tour, getElement) {
+        var el, handler;
+        return {
+            show: function () {
+                el = typeof getElement === 'function' ? getElement() : getElement;
+                if (el) {
+                    handler = function () {
+                        setTimeout(function () { tour.next(); }, 400);
+                    };
+                    el.addEventListener('click', handler, { once: true });
+                }
+            },
+            hide: function () {
+                if (el && handler) {
+                    el.removeEventListener('click', handler);
+                }
+                el = null;
+                handler = null;
+            }
+        };
+    }
 
-        if (stepNum === 1) {
-            buttons.push({ text: t.skip, action: tour.cancel, classes: 'shepherd-button shepherd-button-secondary' });
-            buttons.push({ text: t.next + ' ' + progress, action: tour.next, classes: 'shepherd-button shepherd-button-primary' });
-        } else if (stepNum === totalSteps) {
-            buttons.push({ text: t.back, action: tour.back, classes: 'shepherd-button shepherd-button-secondary' });
-            buttons.push({ text: t.done + ' ' + progress, action: tour.complete, classes: 'shepherd-button shepherd-button-primary' });
-        } else {
-            buttons.push({ text: t.back, action: tour.back, classes: 'shepherd-button shepherd-button-secondary' });
-            buttons.push({ text: t.next + ' ' + progress, action: tour.next, classes: 'shepherd-button shepherd-button-primary' });
-        }
-        return buttons;
+    function progress(num, total) {
+        return ' <span class="crmze-tour-progress">' + t.step + ' ' + num + ' ' + t.of + ' ' + total + '</span>';
     }
 
     function buildTour() {
-        var totalSteps = 25;
+        var total = 16;
         var tour = new Shepherd.Tour({
             useModalOverlay: true,
             defaultStepOptions: {
                 cancelIcon: { enabled: true },
-                scrollTo: { behavior: 'smooth', block: 'center' },
+                scrollTo: false,
                 classes: 'crmze-tour-step'
             }
         });
+
+        // Helper for interactive step buttons (skip only, click element advances)
+        function interactiveButtons(num) {
+            return [
+                { text: t.skip_step + progress(num, total), action: tour.next, classes: 'shepherd-button shepherd-button-secondary' }
+            ];
+        }
+
+        // Helper for info step buttons
+        function infoButtons(num) {
+            var btns = [];
+            if (num > 1) btns.push({ text: t.back, action: tour.back, classes: 'shepherd-button shepherd-button-secondary' });
+            btns.push({ text: t.next + progress(num, total), action: tour.next, classes: 'shepherd-button shepherd-button-primary' });
+            return btns;
+        }
+
+        // Find menu elements
+        var patientEl = findMenuByText('Patient') || findMenuByText('Pacienti');
+        var calendarEl = findMenuByText('Calendar') || findMenuByText('Kalendar');
+        var encounterEl = findMenuByText('Encounter') || findMenuByText('Vizit');
+        var feesEl = findMenuByText('Fees') || findMenuByText('Tarif');
+        var reportsEl = findMenuByText('Report') || findMenuByText('Raport');
 
         // 1. Welcome
         tour.addStep({
             id: 'welcome',
             title: t.welcome_title,
             text: t.welcome_text,
-            buttons: makeButtons(1, totalSteps, tour)
+            buttons: [
+                { text: t.skip, action: tour.cancel, classes: 'shepherd-button shepherd-button-secondary' },
+                { text: t.start + progress(1, total), action: tour.next, classes: 'shepherd-button shepherd-button-primary' }
+            ]
         });
 
-        // 2. Main Navigation
+        // 2. Navigation bar overview
         tour.addStep({
-            id: 'main-nav',
+            id: 'navbar',
             title: t.nav_title,
             text: t.nav_text,
-            attachTo: { element: '#mainMenu', on: 'bottom' },
-            buttons: makeButtons(2, totalSteps, tour)
+            attachTo: { element: '.navbar', on: 'bottom' },
+            buttons: infoButtons(2)
         });
 
-        // 3. Patient Search
+        // 3. Search box (interactive - click to focus)
         tour.addStep({
-            id: 'patient-search',
+            id: 'search',
             title: t.search_title,
-            text: t.search_text,
+            text: t.search_text + '<br><br><em class="crmze-click-hint">\u261d ' + t.click_hint + ' ' + t.or_skip + '</em>',
             attachTo: { element: '#anySearchBox', on: 'bottom' },
-            buttons: makeButtons(3, totalSteps, tour)
+            buttons: interactiveButtons(3),
+            when: clickToAdvance(tour, function () { return document.getElementById('anySearchBox'); })
         });
 
-        // 4. Patient Menu
+        // 4. Patient menu (interactive - click to open)
         tour.addStep({
-            id: 'patient-menu',
-            title: t.patient_menu_title,
-            text: t.patient_menu_text,
-            attachTo: { element: findMenuByText('Patient') || findMenuByText('Pacienti'), on: 'bottom' },
-            buttons: makeButtons(4, totalSteps, tour)
+            id: 'click-patient',
+            title: t.patient_click_title,
+            text: t.patient_click_text + '<br><br><em class="crmze-click-hint">\u261d ' + t.click_hint + '</em>',
+            attachTo: patientEl ? { element: patientEl, on: 'bottom' } : undefined,
+            buttons: interactiveButtons(4),
+            when: clickToAdvance(tour, function () { return findMenuByText('Patient') || findMenuByText('Pacienti'); })
         });
 
-        // 5. New Patient
+        // 5. Patient info (after clicking)
         tour.addStep({
-            id: 'new-patient',
-            title: t.new_patient_title,
-            text: t.new_patient_text,
-            buttons: makeButtons(5, totalSteps, tour)
+            id: 'patient-info',
+            title: t.patient_info_title,
+            text: t.patient_info_text,
+            buttons: infoButtons(5)
         });
 
-        // 6. Demographics
+        // 6. Calendar (interactive)
         tour.addStep({
-            id: 'demographics',
-            title: t.demographics_title,
-            text: t.demographics_text,
-            buttons: makeButtons(6, totalSteps, tour)
+            id: 'click-calendar',
+            title: t.calendar_click_title,
+            text: t.calendar_click_text + '<br><br><em class="crmze-click-hint">\u261d ' + t.click_hint + '</em>',
+            attachTo: calendarEl ? { element: calendarEl, on: 'bottom' } : undefined,
+            buttons: interactiveButtons(6),
+            when: clickToAdvance(tour, function () { return findMenuByText('Calendar') || findMenuByText('Kalendar'); })
         });
 
-        // 7. Calendar Menu
+        // 7. Calendar info
         tour.addStep({
-            id: 'calendar-menu',
-            title: t.calendar_menu_title,
-            text: t.calendar_menu_text,
-            attachTo: { element: findMenuByText('Calendar') || findMenuByText('Kalendar'), on: 'bottom' },
-            buttons: makeButtons(7, totalSteps, tour)
+            id: 'calendar-info',
+            title: t.calendar_info_title,
+            text: t.calendar_info_text,
+            buttons: infoButtons(7)
         });
 
-        // 8. Calendar Description
+        // 8. Encounters (interactive)
         tour.addStep({
-            id: 'calendar-desc',
-            title: t.calendar_desc_title,
-            text: t.calendar_desc_text,
-            buttons: makeButtons(8, totalSteps, tour)
+            id: 'click-encounter',
+            title: t.encounter_click_title,
+            text: t.encounter_click_text + '<br><br><em class="crmze-click-hint">\u261d ' + t.click_hint + '</em>',
+            attachTo: encounterEl ? { element: encounterEl, on: 'bottom' } : undefined,
+            buttons: interactiveButtons(8),
+            when: clickToAdvance(tour, function () { return findMenuByText('Encounter') || findMenuByText('Vizit'); })
         });
 
-        // 9. New Appointment
+        // 9. Encounter info
         tour.addStep({
-            id: 'new-appointment',
-            title: t.new_appt_title,
-            text: t.new_appt_text,
-            buttons: makeButtons(9, totalSteps, tour)
+            id: 'encounter-info',
+            title: t.encounter_info_title,
+            text: t.encounter_info_text,
+            buttons: infoButtons(9)
         });
 
-        // 10. Check-in
+        // 10. Fees (interactive)
         tour.addStep({
-            id: 'checkin',
-            title: t.checkin_title,
-            text: t.checkin_text,
-            buttons: makeButtons(10, totalSteps, tour)
+            id: 'click-fees',
+            title: t.fees_click_title,
+            text: t.fees_click_text + '<br><br><em class="crmze-click-hint">\u261d ' + t.click_hint + '</em>',
+            attachTo: feesEl ? { element: feesEl, on: 'bottom' } : undefined,
+            buttons: interactiveButtons(10),
+            when: clickToAdvance(tour, function () { return findMenuByText('Fees') || findMenuByText('Tarif'); })
         });
 
-        // 11. Encounter Menu
+        // 11. Fees info
         tour.addStep({
-            id: 'encounter-menu',
-            title: t.encounter_menu_title,
-            text: t.encounter_menu_text,
-            attachTo: { element: findMenuByText('Encounter') || findMenuByText('Vizit'), on: 'bottom' },
-            buttons: makeButtons(11, totalSteps, tour)
+            id: 'fees-info',
+            title: t.fees_info_title,
+            text: t.fees_info_text,
+            buttons: infoButtons(11)
         });
 
-        // 12. Encounter Description
+        // 12. Reports (interactive)
         tour.addStep({
-            id: 'encounter-desc',
-            title: t.encounter_desc_title,
-            text: t.encounter_desc_text,
-            buttons: makeButtons(12, totalSteps, tour)
+            id: 'click-reports',
+            title: t.reports_click_title,
+            text: t.reports_click_text + '<br><br><em class="crmze-click-hint">\u261d ' + t.click_hint + '</em>',
+            attachTo: reportsEl ? { element: reportsEl, on: 'bottom' } : undefined,
+            buttons: interactiveButtons(12),
+            when: clickToAdvance(tour, function () { return findMenuByText('Report') || findMenuByText('Raport'); })
         });
 
-        // 13. Clinical Forms
+        // 13. Reports info
         tour.addStep({
-            id: 'clinical-forms',
-            title: t.clinical_forms_title,
-            text: t.clinical_forms_text,
-            buttons: makeButtons(13, totalSteps, tour)
+            id: 'reports-info',
+            title: t.reports_info_title,
+            text: t.reports_info_text,
+            buttons: infoButtons(13)
         });
 
-        // 14. Prescriptions
-        tour.addStep({
-            id: 'prescriptions',
-            title: t.prescriptions_title,
-            text: t.prescriptions_text,
-            buttons: makeButtons(14, totalSteps, tour)
-        });
-
-        // 15. Fees Menu
-        tour.addStep({
-            id: 'fees-menu',
-            title: t.fees_menu_title,
-            text: t.fees_menu_text,
-            attachTo: { element: findMenuByText('Fees') || findMenuByText('Tarif'), on: 'bottom' },
-            buttons: makeButtons(15, totalSteps, tour)
-        });
-
-        // 16. Billing Description
-        tour.addStep({
-            id: 'billing-desc',
-            title: t.billing_desc_title,
-            text: t.billing_desc_text,
-            buttons: makeButtons(16, totalSteps, tour)
-        });
-
-        // 17. Documents
-        tour.addStep({
-            id: 'documents',
-            title: t.documents_title,
-            text: t.documents_text,
-            buttons: makeButtons(17, totalSteps, tour)
-        });
-
-        // 18. Reports Menu
-        tour.addStep({
-            id: 'reports-menu',
-            title: t.reports_menu_title,
-            text: t.reports_menu_text,
-            attachTo: { element: findMenuByText('Report') || findMenuByText('Raport'), on: 'bottom' },
-            buttons: makeButtons(18, totalSteps, tour)
-        });
-
-        // 19. Reports Description
-        tour.addStep({
-            id: 'reports-desc',
-            title: t.reports_desc_title,
-            text: t.reports_desc_text,
-            buttons: makeButtons(19, totalSteps, tour)
-        });
-
-        // 20. Admin Menu
-        tour.addStep({
-            id: 'admin-menu',
-            title: t.admin_menu_title,
-            text: t.admin_menu_text,
-            attachTo: { element: findMenuByText('Admin'), on: 'bottom' },
-            buttons: makeButtons(20, totalSteps, tour)
-        });
-
-        // 21. Admin Description
-        tour.addStep({
-            id: 'admin-desc',
-            title: t.admin_desc_title,
-            text: t.admin_desc_text,
-            buttons: makeButtons(21, totalSteps, tour)
-        });
-
-        // 22. User Profile
+        // 14. User profile (interactive)
         tour.addStep({
             id: 'user-profile',
             title: t.user_title,
-            text: t.user_text,
+            text: t.user_text + '<br><br><em class="crmze-click-hint">\u261d ' + t.click_hint + '</em>',
             attachTo: { element: '#userData', on: 'bottom-end' },
-            buttons: makeButtons(22, totalSteps, tour)
+            buttons: interactiveButtons(14),
+            when: clickToAdvance(tour, function () { return document.getElementById('userData'); })
         });
 
-        // 23. Patient Bar
-        tour.addStep({
-            id: 'patient-bar',
-            title: t.patient_bar_title,
-            text: t.patient_bar_text,
-            attachTo: { element: '#attendantData', on: 'bottom' },
-            buttons: makeButtons(23, totalSteps, tour)
-        });
-
-        // 24. Tabs
+        // 15. Tabs
         tour.addStep({
             id: 'tabs',
             title: t.tabs_title,
             text: t.tabs_text,
             attachTo: { element: '#tabs_div', on: 'bottom' },
-            buttons: makeButtons(24, totalSteps, tour)
+            buttons: infoButtons(15)
         });
 
-        // 25. Finish
+        // 16. Finish
         tour.addStep({
             id: 'finish',
             title: t.finish_title,
             text: t.finish_text,
-            buttons: makeButtons(25, totalSteps, tour)
+            buttons: [
+                { text: t.back, action: tour.back, classes: 'shepherd-button shepherd-button-secondary' },
+                { text: t.done + progress(16, total), action: tour.complete, classes: 'shepherd-button shepherd-button-primary' }
+            ]
         });
 
         return tour;
     }
 
     function isTourCompleted() {
-        try {
-            return localStorage.getItem(STORAGE_KEY) === '1';
-        } catch (e) {
-            return false;
-        }
+        try { return localStorage.getItem(STORAGE_KEY) === '1'; } catch (e) { return false; }
     }
 
     function setTourCompleted() {
-        try {
-            localStorage.setItem(STORAGE_KEY, '1');
-        } catch (e) {}
-    }
-
-    function resetTourStatus() {
-        try {
-            localStorage.removeItem(STORAGE_KEY);
-        } catch (e) {}
+        try { localStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
     }
 
     window.crmzeTourRestart = function () {
-        resetTourStatus();
+        try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
         var tour = buildTour();
         tour.on('cancel', setTourCompleted);
         tour.on('complete', setTourCompleted);
@@ -455,27 +372,18 @@
     };
 
     // Auto-start on first visit (wait for KnockoutJS to render menus)
-    if (typeof jQuery !== 'undefined') {
-        jQuery(document).ready(function () {
-            setTimeout(function () {
-                if (!isTourCompleted()) {
-                    var tour = buildTour();
-                    tour.on('cancel', setTourCompleted);
-                    tour.on('complete', setTourCompleted);
-                    tour.start();
-                }
-            }, 3000);
-        });
-    } else {
-        document.addEventListener('DOMContentLoaded', function () {
-            setTimeout(function () {
-                if (!isTourCompleted()) {
-                    var tour = buildTour();
-                    tour.on('cancel', setTourCompleted);
-                    tour.on('complete', setTourCompleted);
-                    tour.start();
-                }
-            }, 3000);
-        });
-    }
+    var ready = typeof jQuery !== 'undefined'
+        ? function (fn) { jQuery(document).ready(fn); }
+        : function (fn) { document.addEventListener('DOMContentLoaded', fn); };
+
+    ready(function () {
+        setTimeout(function () {
+            if (!isTourCompleted()) {
+                var tour = buildTour();
+                tour.on('cancel', setTourCompleted);
+                tour.on('complete', setTourCompleted);
+                tour.start();
+            }
+        }, 3000);
+    });
 })();
