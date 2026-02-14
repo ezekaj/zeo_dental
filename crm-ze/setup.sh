@@ -81,10 +81,11 @@ docker exec "$CONTAINER" sed -i '/<\/body>/i\
 ?>\
 <link rel="stylesheet" href="<?php echo attr($tourModulePath); ?>/public/assets/shepherd/shepherd.min.css">\
 <link rel="stylesheet" href="<?php echo attr($tourModulePath); ?>/public/assets/tour.css">\
+<link rel="stylesheet" href="<?php echo attr($tourModulePath); ?>/public/assets/helpbot.css">\
 <script src="<?php echo attr($tourModulePath); ?>/public/assets/shepherd/shepherd.min.js"><\/script>\
 <script>window.crmzeTourConfig = <?php echo $tourConfig; ?>;<\/script>\
 <script src="<?php echo attr($tourModulePath); ?>/public/assets/tour.js"><\/script>\
-<button id="crmze-tour-btn" onclick="window.crmzeTourRestart()" title="<?php echo attr($tourBtnLabel); ?>" style="position:fixed;bottom:20px;right:20px;z-index:99999;width:50px;height:50px;border-radius:50%;background:#1a5276;color:#fff;border:none;cursor:pointer;font-size:20px;box-shadow:0 2px 10px rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;">?<\/button>
+<script src="<?php echo attr($tourModulePath); ?>/public/assets/helpbot.js"><\/script>
 ' "$MAIN_PHP"
 echo "  Tour injected into main.php!"
 
