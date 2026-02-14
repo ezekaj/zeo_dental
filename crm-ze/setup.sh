@@ -23,6 +23,15 @@ echo "[2/11] Setting application name to ManagerCRM..."
 docker exec "$CONTAINER" mysql -h crm-ze-db -u root -proot openemr -e "
   UPDATE globals SET gl_value='ManagerCRM' WHERE gl_name='openemr_name';
   UPDATE globals SET gl_value='managercrm' WHERE gl_name='machine_name';
+  UPDATE facility SET
+    name='Zeo Dental Clinic',
+    street='Rruga Hamdi Sina',
+    city='Tiranë',
+    state='',
+    country_code='AL',
+    phone='+355 68 400 4840',
+    color='#1a5276'
+  WHERE id=(SELECT MIN(id) FROM (SELECT id FROM facility) AS f);
 "
 
 # Copy logos
