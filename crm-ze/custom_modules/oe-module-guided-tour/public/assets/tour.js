@@ -7,6 +7,7 @@
     var STORAGE_KEY = 'crmze_tour_completed_' + config.userId;
     var sq = config.langCode === 'sq';
     var webroot = config.webroot || '';
+    var TOTAL_STEPS = 29;
 
     // ─── IframeBridge: cross-iframe navigation & highlighting ───
 
@@ -39,10 +40,16 @@
                     });
                 } catch (e) {}
 
-                var iframe = document.querySelector("iframe[name='" + iframeName + "']");
-                if (iframe) {
-                    iframe.addEventListener('load', done, { once: true });
-                }
+                // Wait for iframe to appear and load (it may be created dynamically)
+                var checkIframe = function (attempts) {
+                    var iframe = document.querySelector("iframe[name='" + iframeName + "']");
+                    if (iframe) {
+                        iframe.addEventListener('load', done, { once: true });
+                    } else if (attempts > 0) {
+                        setTimeout(function () { checkIframe(attempts - 1); }, 200);
+                    }
+                };
+                checkIframe(10);
                 setTimeout(done, 6000);
             });
         },
@@ -62,11 +69,19 @@
         },
 
         highlightField: function (iframeName, selector, labelText) {
-            var doc = this.getIframeDoc(iframeName);
+            var self = this;
+            var doc = self.getIframeDoc(iframeName);
             if (!doc) return function () {};
 
-            this.injectStyles(doc);
-            var el = doc.querySelector(selector);
+            self.injectStyles(doc);
+
+            // Try multiple selectors separated by comma
+            var el = null;
+            var selectors = selector.split(',');
+            for (var i = 0; i < selectors.length; i++) {
+                el = doc.querySelector(selectors[i].trim());
+                if (el) break;
+            }
             if (!el) return function () {};
 
             el.classList.add('crmze-field-highlight', 'crmze-field-highlight-pulse');
@@ -122,8 +137,8 @@
         ch2: 'Regjistrimi i Pacientit',
         pat_click_title: '\ud83d\udc64 Hapni Menun\u00eb e Pacientit',
         pat_click_text: '<strong>Klikoni "Pacienti/Klienti"</strong> n\u00eb shiritin e navigimit.',
-        pat_new_title: 'Klikoni "I Ri/K\u00ebrko"',
-        pat_new_text: '<strong>Klikoni "I Ri/K\u00ebrko"</strong> n\u00eb n\u00ebn-menun\u00eb q\u00eb u hap p\u00ebr t\u00eb hapur formularin e regjistrimit.',
+        pat_new_title: 'Klikoni "K\u00ebrkim/i Ri"',
+        pat_new_text: '<strong>Klikoni "K\u00ebrkim/i Ri"</strong> n\u00eb n\u00ebn-menun\u00eb q\u00eb u hap p\u00ebr t\u00eb hapur formularin e regjistrimit.',
         fname_title: '\u270d Emri i Pacientit',
         fname_text: 'Kjo \u00ebsht\u00eb fusha e <strong>Emrit</strong>. K\u00ebtu shkruani emrin e pacientit, p.sh. "Arta".',
         fname_label: 'Emri',
@@ -140,25 +155,25 @@
         phone_text: 'Shkruani <strong>numrin e celularit</strong> t\u00eb pacientit p\u00ebr kontakt.',
         phone_label: 'Celulari',
         email_title: '\ud83d\udce7 Email-i',
-        email_text: 'Shkruani <strong>adresen e email-it</strong> t\u00eb pacientit (opsionale).',
+        email_text: 'Shkruani <strong>adres\u00ebn e email-it</strong> t\u00eb pacientit (opsionale).',
         email_label: 'Email',
         create_title: '\u2705 Ruaj Pacientin',
         create_text: 'Pasi t\u00eb keni plot\u00ebsuar t\u00eb gjitha fushat, klikoni <strong>"Krijo Pacientin e Ri"</strong> p\u00ebr ta ruajtur n\u00eb sistem.',
         create_label: 'Krijo Pacientin e Ri',
         pat_done_title: '\ud83c\udf89 Regjistrimi i Pacientit!',
-        pat_done_text: 'Tani e dini si t\u00eb regjistroni nj\u00eb pacient t\u00eb ri n\u00eb Klinik\u00ebn Dentare ZEO!<br><br>Le t\u00eb m\u00ebsojm\u00eb si t\u00eb caktojm\u00eb tak\u00edme...',
+        pat_done_text: 'Tani e dini si t\u00eb regjistroni nj\u00eb pacient t\u00eb ri n\u00eb Klinik\u00ebn Dentare ZEO!<br><br>Le t\u00eb m\u00ebsojm\u00eb si t\u00eb caktojm\u00eb takime...',
 
         // Chapter 3: Scheduling
-        ch3: 'Caktimi i Tak\u00edmeve',
+        ch3: 'Caktimi i Takimeve',
         cal_click_title: '\ud83d\udcc5 Hapni Kalendarin',
-        cal_click_text: '<strong>Klikoni "Kalendari"</strong> n\u00eb meny p\u00ebr t\u00eb par\u00eb orarin e tak\u00edmeve.',
-        cal_view_title: 'Kalendari i Tak\u00edmeve',
-        cal_view_text: 'Ky \u00ebsht\u00eb kalendari ku shfaqen t\u00eb gjitha tak\u00edmet e klinik\u00ebs.<br><br>\u2022 <strong>Pamja dit\u00eb/jav\u00eb/muaj</strong> \u2013 ndryshoni me butonat n\u00eb krye<br>\u2022 <strong>Ngjyrat</strong> tregojn\u00eb kategorit\u00eb e ndryshme t\u00eb tak\u00edmeve',
-        cal_slot_title: 'Caktoni nj\u00eb Tak\u00edm',
-        cal_slot_text: 'P\u00ebr t\u00eb caktuar nj\u00eb tak\u00edm t\u00eb ri:<br><br>1\ufe0f\u20e3 <strong>Klikoni n\u00eb nj\u00eb slot bosh</strong> n\u00eb kalendar<br>2\ufe0f\u20e3 Zgjidhni <strong>pacientin</strong> nga lista<br>3\ufe0f\u20e3 Zgjidhni <strong>mjekun</strong> dhe <strong>kategorin\u00eb</strong><br>4\ufe0f\u20e3 Vendosni <strong>koh\u00ebzgjatjen</strong><br>5\ufe0f\u20e3 Klikoni <strong>Ruaj</strong>',
+        cal_click_text: '<strong>Klikoni "Kalendari"</strong> n\u00eb meny p\u00ebr t\u00eb par\u00eb orarin e takimeve.',
+        cal_view_title: 'Kalendari i Takimeve',
+        cal_view_text: 'Ky \u00ebsht\u00eb kalendari ku shfaqen t\u00eb gjitha takimet e klinik\u00ebs.<br><br>\u2022 <strong>Pamja dit\u00eb/jav\u00eb/muaj</strong> \u2013 ndryshoni me butonat n\u00eb krye<br>\u2022 <strong>Ngjyrat</strong> tregojn\u00eb kategorit\u00eb e ndryshme t\u00eb takimeve',
+        cal_slot_title: 'Caktoni nj\u00eb Takim',
+        cal_slot_text: 'P\u00ebr t\u00eb caktuar nj\u00eb takim t\u00eb ri:<br><br>1\ufe0f\u20e3 <strong>Klikoni n\u00eb nj\u00eb slot bosh</strong> n\u00eb kalendar<br>2\ufe0f\u20e3 Zgjidhni <strong>pacientin</strong> nga lista<br>3\ufe0f\u20e3 Zgjidhni <strong>mjekun</strong> dhe <strong>kategorin\u00eb</strong><br>4\ufe0f\u20e3 Vendosni <strong>koh\u00ebzgjatjen</strong><br>5\ufe0f\u20e3 Klikoni <strong>Ruaj</strong>',
         cal_checkin_title: 'Regjistrimi n\u00eb Klinik\u00eb (Check-In)',
-        cal_checkin_text: 'Kur pacienti vjen n\u00eb klinik\u00eb:<br><br>1\ufe0f\u20e3 Gjeni tak\u00edmin e tij n\u00eb kalendar<br>2\ufe0f\u20e3 Klikoni mbi tak\u00edmin<br>3\ufe0f\u20e3 Zgjidhni <strong>"Check In"</strong><br><br>Statusi i tak\u00edmit ndryshon n\u00eb "\u00cb regjistruar".',
-        cal_done_title: '\ud83c\udf89 Caktimi i Tak\u00edmeve!',
+        cal_checkin_text: 'Kur pacienti vjen n\u00eb klinik\u00eb:<br><br>1\ufe0f\u20e3 Gjeni takimin e tij n\u00eb kalendar<br>2\ufe0f\u20e3 Klikoni mbi takimin<br>3\ufe0f\u20e3 Zgjidhni <strong>"Check In"</strong><br><br>Statusi i takimit ndryshon n\u00eb "I regjistruar".',
+        cal_done_title: '\ud83c\udf89 Caktimi i Takimeve!',
         cal_done_text: 'Tani e dini si t\u00eb p\u00ebrdorni kalendarin! Le t\u00eb shohim vizitat klinike...',
 
         // Chapter 4: Encounters
@@ -168,7 +183,7 @@
         enc_what_title: '\u00c7far\u00eb \u00ebsht\u00eb nj\u00eb "Vizit\u00eb"?',
         enc_what_text: 'P\u00ebr \u00e7do her\u00eb q\u00eb pacienti vjen n\u00eb klinik\u00eb, krijohet nj\u00eb <strong>Vizit\u00eb (Encounter)</strong>.<br><br>P\u00ebr ta krijuar:<br>1\ufe0f\u20e3 Zgjidhni nj\u00eb pacient<br>2\ufe0f\u20e3 Klikoni <strong>"Vizit\u00eb e Re"</strong><br>3\ufe0f\u20e3 Plot\u00ebsoni arsyen e vizit\u00ebs',
         enc_forms_title: 'Formular\u00ebt Klinik\u00eb',
-        enc_forms_text: 'Brenda nj\u00eb vizite mund t\u00eb shtoni:<br><br>\u2022 <strong>Sh\u00ebnime SOAP</strong> \u2013 Ankesa, ekzaminimi, diagnoza, plani<br>\u2022 <strong>Procedurat Dentare</strong> \u2013 Pastrim, mbushje, nx\u00ebrrje etj.<br>\u2022 <strong>Recetat</strong> \u2013 Medikamente p\u00ebr pacientin<br>\u2022 <strong>Sh\u00ebnime Vitale</strong> \u2013 Presioni, temperatura<br><br>\u00c7do gjë ruhet n\u00eb kartel\u00ebn e p\u00ebrhersh\u00ebn t\u00eb pacientit.',
+        enc_forms_text: 'Brenda nj\u00eb vizite mund t\u00eb shtoni:<br><br>\u2022 <strong>Sh\u00ebnime SOAP</strong> \u2013 Ankesa, ekzaminimi, diagnoza, plani<br>\u2022 <strong>Procedurat Dentare</strong> \u2013 Pastrim, mbushje, nx\u00ebrrje etj.<br>\u2022 <strong>Recetat</strong> \u2013 Medikamente p\u00ebr pacientin<br>\u2022 <strong>Sh\u00ebnime Vitale</strong> \u2013 Presioni, temperatura<br><br>\u00c7do gj\u00eb ruhet n\u00eb kartel\u00ebn e p\u00ebrhershme t\u00eb pacientit.',
         enc_done_title: '\ud83c\udf89 Vizitat Klinike!',
         enc_done_text: 'Tani e kuptoni si dokumentohen vizitat! Le t\u00eb shohim faturimin...',
 
@@ -188,7 +203,7 @@
         user_title: '\ud83d\udc64 Profili Juaj',
         user_text: '<strong>Klikoni emrin tuaj</strong> p\u00ebr t\u00eb aksesuar profilin, ndryshuar fjal\u00ebkalimin ose dal\u00eb nga sistemi.',
         finish_title: '\u2705 Jeni Gati!',
-        finish_text: 'Tani i njihni t\u00eb gjitha funksionet kryesore t\u00eb Klinik\u00ebs Dentare ZEO!<br><br><strong>\u00c7far\u00eb m\u00ebsuat:</strong><br>\u2022 Si t\u00eb regjistroni pacient\u00eb t\u00eb rinj<br>\u2022 Si t\u00eb caktoni tak\u00edme n\u00eb kalendar<br>\u2022 Si t\u00eb dokumentoni vizitat klinike<br>\u2022 Si t\u00eb menaxhoni faturimin<br>\u2022 Si t\u00eb shikoni raportet<br><br>Klikoni butonin <strong>?</strong> n\u00eb k\u00ebndin e posht\u00ebm djathtas p\u00ebr ta rifilluar k\u00ebt\u00eb udh\u00ebzues n\u00eb \u00e7do koh\u00eb.'
+        finish_text: 'Tani i njihni t\u00eb gjitha funksionet kryesore t\u00eb Klinik\u00ebs Dentare ZEO!<br><br><strong>\u00c7far\u00eb m\u00ebsuat:</strong><br>\u2022 Si t\u00eb regjistroni pacient\u00eb t\u00eb rinj<br>\u2022 Si t\u00eb caktoni takime n\u00eb kalendar<br>\u2022 Si t\u00eb dokumentoni vizitat klinike<br>\u2022 Si t\u00eb menaxhoni faturimin<br>\u2022 Si t\u00eb shikoni raportet<br><br>Klikoni butonin <strong>?</strong> n\u00eb k\u00ebndin e posht\u00ebm djathtas p\u00ebr ta rifilluar k\u00ebt\u00eb udh\u00ebzues n\u00eb \u00e7do koh\u00eb.'
     } : {
         skip: 'Skip Tour', start: 'Let\'s Start!', next: 'Next', back: 'Back',
         done: 'Finish', skip_step: 'Skip step', chapter: 'Chapter', step: 'Step', of: 'of',
@@ -316,7 +331,29 @@
     }
 
     function prog(num) {
-        return ' <span class="crmze-tour-progress">' + t.step + ' ' + num + '/30</span>';
+        return ' <span class="crmze-tour-progress">' + t.step + ' ' + num + '/' + TOTAL_STEPS + '</span>';
+    }
+
+    // Dynamic attachTo - evaluates at show time, not build time
+    function dynamicAttach(getElement, position) {
+        return {
+            beforeShowPromise: function () {
+                return new Promise(function (resolve) {
+                    var el = typeof getElement === 'function' ? getElement() : getElement;
+                    if (el) {
+                        // Shepherd needs the element to exist before attaching
+                        resolve();
+                    } else {
+                        // Wait briefly for dynamic menus to render
+                        setTimeout(resolve, 500);
+                    }
+                });
+            },
+            getAttachTo: function () {
+                var el = typeof getElement === 'function' ? getElement() : getElement;
+                return el ? { element: el, on: position || 'bottom' } : {};
+            }
+        };
     }
 
     // ─── Build Tour ───
@@ -385,12 +422,20 @@
 
         // === CHAPTER 2: PATIENT REGISTRATION ===
 
-        // 5. Click Patient menu (interactive)
+        // 5. Click Patient menu (interactive - dynamic attach)
         tour.addStep({
             id: 'click-patient', title: t.pat_click_title,
             text: chapterBadge(2, t.ch2) + t.pat_click_text + '<br><br><em class="crmze-click-hint">' + t.click_hint + '</em>',
-            attachTo: (function () { var el = findMenuByText('Patient') || findMenuByText('Pacienti'); return el ? { element: el, on: 'bottom' } : undefined; })(),
             buttons: interactiveBtn(5),
+            beforeShowPromise: function () {
+                return new Promise(function (resolve) {
+                    var el = findMenuByText('Patient') || findMenuByText('Pacienti');
+                    if (el) {
+                        tour.getCurrentStep().updateStepOptions({ attachTo: { element: el, on: 'bottom' } });
+                    }
+                    resolve();
+                });
+            },
             when: clickToAdvance(tour, function () {
                 return findMenuByText('Patient') || findMenuByText('Pacienti');
             })
@@ -403,30 +448,29 @@
             buttons: interactiveBtn(6),
             when: {
                 show: function () {
-                    var el = findSubmenuByText('New/Search') || findSubmenuByText('I Ri') || findSubmenuByText('K\u00ebrko');
+                    var el = findSubmenuByText('New/Search') || findSubmenuByText('Kerkim') || findSubmenuByText('I Ri');
                     if (el) {
                         el.addEventListener('click', function h() {
                             el.removeEventListener('click', h);
                             setTimeout(function () { tour.next(); }, 800);
                         }, { once: true });
-                        try { this.updateStepOptions({ attachTo: { element: el, on: 'right' } }); } catch (e) {}
                     }
                 }
             }
         });
 
-        // 7. First Name field (iframe highlight)
+        // 7. First Name field (iframe highlight) - target: pat, url: /interface/new/new.php
         tour.addStep({
             id: 'fname', title: t.fname_title,
             text: chapterBadge(2, t.ch2) + t.fname_text,
             buttons: infoBtn(7),
             beforeShowPromise: function () {
                 doCleanup();
-                return IframeBridge.navigateAndWait('/interface/new/new_comprehensive.php', 'fin');
+                return IframeBridge.navigateAndWait('/interface/new/new.php', 'pat');
             },
             when: {
                 show: function () {
-                    cleanup = IframeBridge.highlightField('fin', "input[name='form_fname']", t.fname_label);
+                    cleanup = IframeBridge.highlightField('pat', "input[name='form_fname']", t.fname_label);
                 },
                 hide: function () { doCleanup(); }
             }
@@ -438,7 +482,7 @@
             text: chapterBadge(2, t.ch2) + t.lname_text,
             buttons: infoBtn(8),
             when: {
-                show: function () { cleanup = IframeBridge.highlightField('fin', "input[name='form_lname']", t.lname_label); },
+                show: function () { cleanup = IframeBridge.highlightField('pat', "input[name='form_lname']", t.lname_label); },
                 hide: function () { doCleanup(); }
             }
         });
@@ -449,7 +493,7 @@
             text: chapterBadge(2, t.ch2) + t.dob_text,
             buttons: infoBtn(9),
             when: {
-                show: function () { cleanup = IframeBridge.highlightField('fin', "input[name='form_DOB'], #form_DOB, #DOB", t.dob_label); },
+                show: function () { cleanup = IframeBridge.highlightField('pat', "input[name='form_DOB'], #form_DOB, #DOB", t.dob_label); },
                 hide: function () { doCleanup(); }
             }
         });
@@ -460,7 +504,7 @@
             text: chapterBadge(2, t.ch2) + t.sex_text,
             buttons: infoBtn(10),
             when: {
-                show: function () { cleanup = IframeBridge.highlightField('fin', "select[name='form_sex'], #form_sex", t.sex_label); },
+                show: function () { cleanup = IframeBridge.highlightField('pat', "select[name='form_sex'], #form_sex", t.sex_label); },
                 hide: function () { doCleanup(); }
             }
         });
@@ -471,7 +515,7 @@
             text: chapterBadge(2, t.ch2) + t.phone_text,
             buttons: infoBtn(11),
             when: {
-                show: function () { cleanup = IframeBridge.highlightField('fin', "input[name='form_phone_cell']", t.phone_label); },
+                show: function () { cleanup = IframeBridge.highlightField('pat', "input[name='form_phone_cell']", t.phone_label); },
                 hide: function () { doCleanup(); }
             }
         });
@@ -482,7 +526,7 @@
             text: chapterBadge(2, t.ch2) + t.email_text,
             buttons: infoBtn(12),
             when: {
-                show: function () { cleanup = IframeBridge.highlightField('fin', "input[name='form_email']", t.email_label); },
+                show: function () { cleanup = IframeBridge.highlightField('pat', "input[name='form_email']", t.email_label); },
                 hide: function () { doCleanup(); }
             }
         });
@@ -493,7 +537,7 @@
             text: chapterBadge(2, t.ch2) + t.create_text,
             buttons: infoBtn(13),
             when: {
-                show: function () { cleanup = IframeBridge.highlightField('fin', "#create, .btn-save, input[name='create']", t.create_label); },
+                show: function () { cleanup = IframeBridge.highlightField('pat', "#create, .btn-save, input[name='create']", t.create_label); },
                 hide: function () { doCleanup(); }
             }
         });
@@ -503,29 +547,37 @@
             id: 'pat-done', title: t.pat_done_title,
             text: chapterBadge(2, t.ch2) + t.pat_done_text,
             buttons: infoBtn(14),
-            when: { show: function () { IframeBridge.clearHighlights('fin'); } }
+            when: { show: function () { IframeBridge.clearHighlights('pat'); } }
         });
 
         // === CHAPTER 3: SCHEDULING ===
 
-        // 15. Click Calendar (interactive)
+        // 15. Click Calendar (interactive - dynamic attach)
         tour.addStep({
             id: 'click-calendar', title: t.cal_click_title,
             text: chapterBadge(3, t.ch3) + t.cal_click_text + '<br><br><em class="crmze-click-hint">' + t.click_hint + '</em>',
-            attachTo: (function () { var el = findMenuByText('Calendar') || findMenuByText('Kalendar'); return el ? { element: el, on: 'bottom' } : undefined; })(),
             buttons: interactiveBtn(15),
+            beforeShowPromise: function () {
+                return new Promise(function (resolve) {
+                    var el = findMenuByText('Calendar') || findMenuByText('Kalendar');
+                    if (el) {
+                        tour.getCurrentStep().updateStepOptions({ attachTo: { element: el, on: 'bottom' } });
+                    }
+                    resolve();
+                });
+            },
             when: clickToAdvance(tour, function () {
                 return findMenuByText('Calendar') || findMenuByText('Kalendar');
             })
         });
 
-        // 16. Calendar loaded
+        // 16. Calendar loaded - target: cal, url: /interface/main/main_info.php
         tour.addStep({
             id: 'cal-view', title: t.cal_view_title,
             text: chapterBadge(3, t.ch3) + t.cal_view_text,
             buttons: infoBtn(16),
             beforeShowPromise: function () {
-                return IframeBridge.navigateAndWait('/interface/main/calendar/index.php', 'lst');
+                return IframeBridge.navigateAndWait('/interface/main/main_info.php', 'cal');
             }
         });
 
@@ -552,12 +604,20 @@
 
         // === CHAPTER 4: ENCOUNTERS ===
 
-        // 20. Click Encounters (interactive)
+        // 20. Click Encounters (interactive - dynamic attach)
         tour.addStep({
             id: 'click-encounter', title: t.enc_click_title,
             text: chapterBadge(4, t.ch4) + t.enc_click_text + '<br><br><em class="crmze-click-hint">' + t.click_hint + '</em>',
-            attachTo: (function () { var el = findMenuByText('Encounter') || findMenuByText('Vizit'); return el ? { element: el, on: 'bottom' } : undefined; })(),
             buttons: interactiveBtn(20),
+            beforeShowPromise: function () {
+                return new Promise(function (resolve) {
+                    var el = findMenuByText('Encounter') || findMenuByText('Vizit');
+                    if (el) {
+                        tour.getCurrentStep().updateStepOptions({ attachTo: { element: el, on: 'bottom' } });
+                    }
+                    resolve();
+                });
+            },
             when: clickToAdvance(tour, function () {
                 return findMenuByText('Encounter') || findMenuByText('Vizit');
             })
@@ -586,12 +646,20 @@
 
         // === CHAPTER 5: BILLING & REPORTS ===
 
-        // 24. Click Fees (interactive)
+        // 24. Click Fees (interactive - dynamic attach)
         tour.addStep({
             id: 'click-fees', title: t.fees_click_title,
             text: chapterBadge(5, t.ch5) + t.fees_click_text + '<br><br><em class="crmze-click-hint">' + t.click_hint + '</em>',
-            attachTo: (function () { var el = findMenuByText('Fees') || findMenuByText('Tarif'); return el ? { element: el, on: 'bottom' } : undefined; })(),
             buttons: interactiveBtn(24),
+            beforeShowPromise: function () {
+                return new Promise(function (resolve) {
+                    var el = findMenuByText('Fees') || findMenuByText('Tarif');
+                    if (el) {
+                        tour.getCurrentStep().updateStepOptions({ attachTo: { element: el, on: 'bottom' } });
+                    }
+                    resolve();
+                });
+            },
             when: clickToAdvance(tour, function () {
                 return findMenuByText('Fees') || findMenuByText('Tarif');
             })
@@ -604,12 +672,20 @@
             buttons: infoBtn(25)
         });
 
-        // 26. Click Reports (interactive)
+        // 26. Click Reports (interactive - dynamic attach)
         tour.addStep({
             id: 'click-reports', title: t.rep_click_title,
             text: chapterBadge(5, t.ch5) + t.rep_click_text + '<br><br><em class="crmze-click-hint">' + t.click_hint + '</em>',
-            attachTo: (function () { var el = findMenuByText('Report') || findMenuByText('Raport'); return el ? { element: el, on: 'bottom' } : undefined; })(),
             buttons: interactiveBtn(26),
+            beforeShowPromise: function () {
+                return new Promise(function (resolve) {
+                    var el = findMenuByText('Report') || findMenuByText('Raport');
+                    if (el) {
+                        tour.getCurrentStep().updateStepOptions({ attachTo: { element: el, on: 'bottom' } });
+                    }
+                    resolve();
+                });
+            },
             when: clickToAdvance(tour, function () {
                 return findMenuByText('Report') || findMenuByText('Raport');
             })
