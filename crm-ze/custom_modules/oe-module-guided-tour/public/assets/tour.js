@@ -4,8 +4,9 @@
     var config = window.crmzeTourConfig;
     if (!config) return;
 
+    var STORAGE_KEY = 'crmze_tour_completed_' + config.userId;
+
     var t = config.langCode === 'sq' ? {
-        // Albanian translations
         skip: 'Kalo',
         next: 'Tjetri',
         back: 'Mbrapa',
@@ -39,7 +40,7 @@
         calendar_desc_text: 'N\u00eb kalendar mund t\u00eb:<br>\u2022 Shikoni tak\u00edmet dit\u00ebve, jav\u00ebs ose muajit<br>\u2022 Klikoni n\u00eb nj\u00eb slot kohor p\u00ebr t\u00eb shtuar tak\u00edm t\u00eb ri<br>\u2022 Z\u00ebrvend\u00ebsoni ose anuloni tak\u00edmet ekzistuese',
 
         new_appt_title: 'Tak\u00edm i Ri',
-        new_appt_text: 'P\u00ebr t\u00eb caktuar nj\u00eb tak\u00edm t\u00eb ri, klikoni n\u00eb nj\u00eb slot t\u00eb lir\u00eb n\u00eb kalendar. Zgjidhni pacientin, mjekun, sh\u00ebrbimin dhe koh\u00ebzgjatjen.',
+        new_appt_text: 'P\u00ebr t\u00eb caktuar nj\u00eb tak\u00idm t\u00eb ri, klikoni n\u00eb nj\u00eb slot t\u00eb lir\u00eb n\u00eb kalendar. Zgjidhni pacientin, mjekun, sh\u00ebrbimin dhe koh\u00ebzgjatjen.',
 
         checkin_title: 'Regjistrimi i Pacientit',
         checkin_text: 'Kur pacienti vjen n\u00eb klinik\u00eb, mund ta regjistroni duke klikuar n\u00eb tak\u00idmin e tij n\u00eb kalendar dhe duke zgjedhur "Check In".',
@@ -87,9 +88,8 @@
         tabs_text: 'Sistemi p\u00ebrdor skeda p\u00ebr t\u00eb hapur disa faqe nj\u00ebkoh\u00ebsisht. Mund t\u00eb kaloni midis tyre duke klikuar n\u00eb skedat n\u00eb krye.',
 
         finish_title: 'Udh\u00ebzuesi P\u00ebrfundoi!',
-        finish_text: 'Tani jeni gati t\u00eb p\u00ebrdorni crmZ.E! N\u00ebse doni ta shikoni p\u00ebrs\u00ebri udh\u00ebzuesin, klikoni butonin "Rifillo Udh\u00ebzuesin" n\u00eb men\u00fcn\u00eb e p\u00ebrdoruesit.'
+        finish_text: 'Tani jeni gati t\u00eb p\u00ebrdorni crmZ.E! N\u00ebse doni ta rifilloni udh\u00ebzuesin, klikoni butonin <strong>?</strong> n\u00eb fund t\u00eb faqes.'
     } : {
-        // English translations
         skip: 'Skip',
         next: 'Next',
         back: 'Back',
@@ -171,7 +171,7 @@
         tabs_text: 'The system uses tabs to open multiple pages at once. You can switch between them by clicking the tabs at the top.',
 
         finish_title: 'Tour Complete!',
-        finish_text: 'You\'re now ready to use crmZ.E! If you want to see this tour again, click the "Restart Tour" button in the user menu.'
+        finish_text: 'You\'re now ready to use crmZ.E! If you want to see this tour again, click the <strong>?</strong> button at the bottom of the page.'
     };
 
     function findMenuByText(text) {
@@ -426,49 +426,56 @@
         return tour;
     }
 
-    function checkTourStatus(callback) {
-        $.ajax({
-            url: config.modulePath + '/public/api/tour_status.php',
-            method: 'GET',
-            data: { action: 'check' },
-            dataType: 'json',
-            success: function (data) { callback(data); },
-            error: function () { callback({ completed: true }); }
-        });
+    function isTourCompleted() {
+        try {
+            return localStorage.getItem(STORAGE_KEY) === '1';
+        } catch (e) {
+            return false;
+        }
     }
 
     function setTourCompleted() {
-        $.ajax({
-            url: config.modulePath + '/public/api/tour_status.php',
-            method: 'POST',
-            data: { action: 'complete' }
-        });
+        try {
+            localStorage.setItem(STORAGE_KEY, '1');
+        } catch (e) {}
     }
 
-    // Expose restart function globally
+    function resetTourStatus() {
+        try {
+            localStorage.removeItem(STORAGE_KEY);
+        } catch (e) {}
+    }
+
     window.crmzeTourRestart = function () {
-        $.ajax({
-            url: config.modulePath + '/public/api/tour_status.php',
-            method: 'POST',
-            data: { action: 'reset' },
-            success: function () {
-                var tour = buildTour();
-                tour.start();
-            }
-        });
+        resetTourStatus();
+        var tour = buildTour();
+        tour.on('cancel', setTourCompleted);
+        tour.on('complete', setTourCompleted);
+        tour.start();
     };
 
-    // Initialize when DOM and KnockoutJS are ready
-    $(document).ready(function () {
-        setTimeout(function () {
-            checkTourStatus(function (data) {
-                if (!data.completed) {
+    // Auto-start on first visit (wait for KnockoutJS to render menus)
+    if (typeof jQuery !== 'undefined') {
+        jQuery(document).ready(function () {
+            setTimeout(function () {
+                if (!isTourCompleted()) {
                     var tour = buildTour();
                     tour.on('cancel', setTourCompleted);
                     tour.on('complete', setTourCompleted);
                     tour.start();
                 }
-            });
-        }, 3000);
-    });
+            }, 3000);
+        });
+    } else {
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+                if (!isTourCompleted()) {
+                    var tour = buildTour();
+                    tour.on('cancel', setTourCompleted);
+                    tour.on('complete', setTourCompleted);
+                    tour.start();
+                }
+            }, 3000);
+        });
+    }
 })();
