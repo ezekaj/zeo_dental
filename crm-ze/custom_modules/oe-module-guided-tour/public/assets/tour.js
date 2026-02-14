@@ -179,7 +179,7 @@
         // Chapter 4: Encounters
         ch4: 'Vizitat Klinike',
         enc_click_title: '\ud83e\ude7a Vizitat Klinike',
-        enc_click_text: '<strong>Klikoni seksionin e vizitave klinike</strong> n\u00eb meny.',
+        enc_click_text: 'P\u00ebr t\u00eb krijuar nj\u00eb vizit\u00eb klinike, s\u00eb pari zgjidhni nj\u00eb pacient, pastaj klikoni <strong>"Vizitat" > "Krijo Vizit\u00eb"</strong> n\u00eb menyn\u00eb e pacientit.<br><br>\u2022 Vizitat shfaqen vet\u00ebm kur keni zgjedhur nj\u00eb pacient<br>\u2022 \u00c7do vizit\u00eb dokumenton nj\u00eb takim klinik',
         enc_what_title: '\u00c7far\u00eb \u00ebsht\u00eb nj\u00eb "Vizit\u00eb"?',
         enc_what_text: 'P\u00ebr \u00e7do her\u00eb q\u00eb pacienti vjen n\u00eb klinik\u00eb, krijohet nj\u00eb <strong>Vizit\u00eb (Encounter)</strong>.<br><br>P\u00ebr ta krijuar:<br>1\ufe0f\u20e3 Zgjidhni nj\u00eb pacient<br>2\ufe0f\u20e3 Klikoni <strong>"Vizit\u00eb e Re"</strong><br>3\ufe0f\u20e3 Plot\u00ebsoni arsyen e vizit\u00ebs',
         enc_forms_title: 'Formular\u00ebt Klinik\u00eb',
@@ -262,7 +262,7 @@
 
         ch4: 'Clinical Encounters',
         enc_click_title: '\ud83e\ude7a Clinical Encounters',
-        enc_click_text: '<strong>Click the encounters section</strong> in the menu.',
+        enc_click_text: 'To create a clinical visit, first select a patient, then click <strong>"Visits" > "Create Visit"</strong> in the patient menu.<br><br>\u2022 Visits only appear when a patient is selected<br>\u2022 Each visit documents a clinical encounter',
         enc_what_title: 'What is an "Encounter"?',
         enc_what_text: 'Every time a patient visits the clinic, an <strong>Encounter</strong> is created.<br><br>To create one:<br>1\ufe0f\u20e3 Select a patient<br>2\ufe0f\u20e3 Click <strong>"New Encounter"</strong><br>3\ufe0f\u20e3 Fill in the reason for the visit',
         enc_forms_title: 'Clinical Forms',
@@ -604,23 +604,11 @@
 
         // === CHAPTER 4: ENCOUNTERS ===
 
-        // 20. Click Encounters (interactive - dynamic attach)
+        // 20. Encounters intro (info step - Visits is a patient-context submenu)
         tour.addStep({
             id: 'click-encounter', title: t.enc_click_title,
-            text: chapterBadge(4, t.ch4) + t.enc_click_text + '<br><br><em class="crmze-click-hint">' + t.click_hint + '</em>',
-            buttons: interactiveBtn(20),
-            beforeShowPromise: function () {
-                return new Promise(function (resolve) {
-                    var el = findMenuByText('Encounter') || findMenuByText('Vizit');
-                    if (el) {
-                        tour.getCurrentStep().updateStepOptions({ attachTo: { element: el, on: 'bottom' } });
-                    }
-                    resolve();
-                });
-            },
-            when: clickToAdvance(tour, function () {
-                return findMenuByText('Encounter') || findMenuByText('Vizit');
-            })
+            text: chapterBadge(4, t.ch4) + t.enc_click_text,
+            buttons: infoBtn(20)
         });
 
         // 21. What is an encounter
