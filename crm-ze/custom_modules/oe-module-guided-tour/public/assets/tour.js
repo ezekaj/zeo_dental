@@ -40,10 +40,10 @@
         calendar_desc_text: 'N\u00eb kalendar mund t\u00eb:<br>\u2022 Shikoni tak\u00edmet dit\u00ebve, jav\u00ebs ose muajit<br>\u2022 Klikoni n\u00eb nj\u00eb slot kohor p\u00ebr t\u00eb shtuar tak\u00edm t\u00eb ri<br>\u2022 Z\u00ebrvend\u00ebsoni ose anuloni tak\u00edmet ekzistuese',
 
         new_appt_title: 'Tak\u00edm i Ri',
-        new_appt_text: 'P\u00ebr t\u00eb caktuar nj\u00eb tak\u00idm t\u00eb ri, klikoni n\u00eb nj\u00eb slot t\u00eb lir\u00eb n\u00eb kalendar. Zgjidhni pacientin, mjekun, sh\u00ebrbimin dhe koh\u00ebzgjatjen.',
+        new_appt_text: 'P\u00ebr t\u00eb caktuar nj\u00eb tak\u00edm t\u00eb ri, klikoni n\u00eb nj\u00eb slot t\u00eb lir\u00eb n\u00eb kalendar. Zgjidhni pacientin, mjekun, sh\u00ebrbimin dhe koh\u00ebzgjatjen.',
 
         checkin_title: 'Regjistrimi i Pacientit',
-        checkin_text: 'Kur pacienti vjen n\u00eb klinik\u00eb, mund ta regjistroni duke klikuar n\u00eb tak\u00idmin e tij n\u00eb kalendar dhe duke zgjedhur "Check In".',
+        checkin_text: 'Kur pacienti vjen n\u00eb klinik\u00eb, mund ta regjistroni duke klikuar n\u00eb tak\u00edmin e tij n\u00eb kalendar dhe duke zgjedhur "Check In".',
 
         encounter_menu_title: 'Vizitat Klinike',
         encounter_menu_text: 'Seksioni i vizitave ju lejon t\u00eb krijoni dhe menaxhoni vizitat klinike t\u00eb pacient\u00ebve.',
