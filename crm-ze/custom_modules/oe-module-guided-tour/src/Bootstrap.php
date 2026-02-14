@@ -2,7 +2,7 @@
 
 namespace OpenEMR\Modules\GuidedTour;
 
-use OpenEMR\Events\Core\RenderEvent;
+use OpenEMR\Events\Main\Tabs\RenderEvent;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class Bootstrap
@@ -46,12 +46,15 @@ class Bootstrap
             'langCode' => $langCode,
         ]);
 
+        $btnLabel = ($langCode === 'sq') ? 'Udhëzuesi' : 'Tour';
+
         echo <<<HTML
 <link rel="stylesheet" href="{$modulePath}/public/assets/shepherd/shepherd.min.css">
 <link rel="stylesheet" href="{$modulePath}/public/assets/tour.css">
 <script src="{$modulePath}/public/assets/shepherd/shepherd.min.js"></script>
 <script>window.crmzeTourConfig = {$config};</script>
 <script src="{$modulePath}/public/assets/tour.js"></script>
+<button id="crmze-tour-btn" onclick="window.crmzeTourRestart()" title="{$btnLabel}" style="position:fixed;bottom:20px;right:20px;z-index:99999;width:50px;height:50px;border-radius:50%;background:#1a5276;color:#fff;border:none;cursor:pointer;font-size:20px;box-shadow:0 2px 10px rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;">?</button>
 HTML;
     }
 }

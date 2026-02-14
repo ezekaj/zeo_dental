@@ -78,7 +78,7 @@ fi
 # Set Albanian as default language
 echo "[8/9] Configuring Albanian as default language..."
 docker exec "$CONTAINER" mysql -h crm-ze-db -u root -proot openemr -e "
-  UPDATE globals SET gl_value = 'Albanian' WHERE gl_name = 'default_language';
+  UPDATE globals SET gl_value = 'Albanian' WHERE gl_name = 'language_default';
 "
 
 # Clear template caches
