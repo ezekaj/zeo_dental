@@ -1,0 +1,20 @@
+# Initial config - HTTP only (use this for first certbot certificate request)
+# After obtaining certificate, replace with crm.conf
+
+server {
+    listen 80;
+    server_name crm.zeodentalclinic.com;
+
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+    }
+
+    location / {
+        proxy_pass https://crm-ze-app:443;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_ssl_verify off;
+    }
+}

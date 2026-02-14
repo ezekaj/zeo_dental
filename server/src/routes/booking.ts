@@ -1,6 +1,7 @@
 import { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify';
 import type { BookingRequest, BookingResponse } from '../types.js';
 import { sendClinicNotification } from '../services/emailTemplates.js';
+import { getCrmSync } from '../services/crmSync.js';
 
 // Validation helpers
 function isValidEmail(email: string): boolean {
@@ -130,6 +131,37 @@ export async function bookingRoutes(fastify: FastifyInstance) {
         },
         fastify
       ).catch(() => {});
+
+      // Sync to ManagerCRM (fire-and-forget)
+      const crm = getCrmSync();
+      if (crm) {
+        crm
+          .syncBooking({
+            name: name.trim(),
+            email: email ? email.trim().toLowerCase() : undefined,
+            phone: phone ? phone.trim() : undefined,
+            service: service.trim(),
+            date,
+            time: time.toLowerCase(),
+            notes: notes?.trim() || undefined,
+          })
+          .then(syncResult => {
+            if (syncResult.patientPid) {
+              fastify.log.info(
+                'Booking %s synced to CRM (patient: %s)',
+                booking.id,
+                syncResult.patientPid
+              );
+            }
+          })
+          .catch(err => {
+            fastify.log.error(
+              'CRM sync error for booking %s: %s',
+              booking.id,
+              err instanceof Error ? err.message : String(err)
+            );
+          });
+      }
 
       return reply.status(201).send({
         success: true,

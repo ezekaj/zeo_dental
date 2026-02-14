@@ -9,6 +9,7 @@ import { chatRoutes } from './routes/chat.js';
 import { bookingRoutes } from './routes/booking.js';
 import { receptionistRoutes } from './routes/receptionist.js';
 import { postgresPlugin } from './plugins/postgres.js';
+import { initCrmSync } from './services/crmSync.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -91,6 +92,9 @@ async function start() {
 
     // Register Postgres plugin
     await fastify.register(postgresPlugin);
+
+    // Initialize CRM sync (optional - only if env vars are set)
+    initCrmSync(fastify.log);
 
     // Register API routes
     await fastify.register(chatRoutes, { prefix: '/api' });
