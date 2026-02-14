@@ -26,9 +26,10 @@
                 billing: 'Faturimi',
                 reports: 'Raportet',
                 admin: 'Administrimi',
+                dental: 'Dentare',
                 general: 'T\u00eb P\u00ebrgjithshme'
             },
-            chips: ['Regjistro pacient', 'Cakto takim', 'Krijo vizit\u00eb', 'Faturimi', 'Raportet', 'Cil\u00ebsimet']
+            chips: ['Regjistro pacient', 'Ngarko skanim', 'Cakto takim', 'Kodet dentare', 'Faturimi', 'Cil\u00ebsimet']
         },
         en: {
             title: 'Help',
@@ -44,9 +45,10 @@
                 billing: 'Billing',
                 reports: 'Reports',
                 admin: 'Admin',
+                dental: 'Dental',
                 general: 'General'
             },
-            chips: ['Register patient', 'Schedule appointment', 'Create visit', 'Billing', 'Reports', 'Settings']
+            chips: ['Register patient', 'Upload scan', 'Schedule appointment', 'Dental codes', 'Billing', 'Settings']
         }
     };
 
@@ -170,11 +172,11 @@
             syn: { en: {}, sq: {} },
             title: { en: 'Add dental procedures', sq: 'Shto procedura dentare' },
             answer: {
-                en: '<ol><li>Open the patient\'s encounter</li><li>Go to clinical forms</li><li>Select the dental procedure form</li><li>Choose: cleaning, filling, extraction, etc.</li><li>Select tooth number if applicable</li><li>Click <strong>"Save"</strong></li></ol>',
-                sq: '<ol><li>Hapni vizit\u00ebn e pacientit</li><li>Shkoni te formular\u00ebt klinik\u00eb</li><li>Zgjidhni formularin e procedur\u00ebs dentare</li><li>Zgjidhni: pastrim, mbushje, nx\u00ebrrje, etj.</li><li>Zgjidhni numrin e dh\u00ebmbit n\u00ebse nevojitet</li><li>Klikoni <strong>"Ruaj"</strong></li></ol>'
+                en: '<ol><li>Open the patient\'s encounter</li><li>Click <strong>"Fees" > "Fee Sheet"</strong></li><li>Search for the <strong>CDT code</strong> (e.g. D1110 for cleaning, D2391 for filling, D7140 for extraction)</li><li>The procedure and price in Lek loads automatically</li><li>Click <strong>"Save"</strong></li></ol><p>See <strong>"Dental procedure codes"</strong> for the full list of 227 CDT codes.</p>',
+                sq: '<ol><li>Hapni vizit\u00ebn e pacientit</li><li>Klikoni <strong>"Tarifa" > "Fleta e Tarifave"</strong></li><li>K\u00ebrkoni <strong>kodin CDT</strong> (p.sh. D1110 p\u00ebr pastrim, D2391 p\u00ebr mbushje, D7140 p\u00ebr nx\u00ebrrje)</li><li>Procedura dhe \u00e7mimi n\u00eb Lek\u00eb ngarkohet automatikisht</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Shikoni <strong>"Kodet e procedurave dentare"</strong> p\u00ebr list\u00ebn e plot\u00eb me 227 kode CDT.</p>'
             },
-            actions: [],
-            related: ['encounter-create', 'billing-feesheet']
+            actions: [{ label: { en: 'Open Fee Sheet', sq: 'Hap Flet\u00ebn e Tarifave' }, target: 'enc', url: '/interface/patient_file/encounter/load_form.php?formname=fee_sheet' }],
+            related: ['dental-codes', 'dental-billing', 'encounter-create']
         },
         {
             id: 'encounter-prescriptions', category: 'encounter',
@@ -343,6 +345,118 @@
             },
             actions: [],
             related: ['general-navigation']
+        },
+        // ─── Dental-Specific Topics ───
+        {
+            id: 'dental-upload-scan', category: 'dental',
+            kw: { en: ['upload','scan','photo','image','xray','x-ray','radiograph','picture','panoramic','intraoral','camera','file','document','cbct'], sq: ['ngarko','skanim','foto','imazh','radiografi','fotografi','panoramike','intraorale','kamer\u00eb','dokument','sked\u00eb'] },
+            syn: { en: {picture:'photo',pic:'photo',radiograph:'xray',panoramic:'xray',bitewing:'xray',periapical:'xray',cbct:'xray',image:'photo',file:'document',doc:'document'}, sq: {fotografi:'foto',pamje:'foto'} },
+            title: { en: 'Upload dental scans & photos', sq: 'Ngarko skanime dhe foto dentare' },
+            answer: {
+                en: '<ol><li>Search and select the <strong>patient</strong></li><li>In the patient dashboard, click <strong>"Documents"</strong></li><li>Select a category: <strong>Dental Scans</strong>, <strong>X-Rays</strong>, <strong>Treatment Photos</strong>, <strong>Impressions</strong>, or <strong>Lab Reports</strong></li><li>Click <strong>"Upload"</strong> or drag files into the area</li><li>Select the file(s) from your computer</li><li>Add a description (optional)</li><li>Click <strong>"Upload"</strong> to save</li></ol><p>Supported formats: JPG, PNG, PDF, DICOM</p>',
+                sq: '<ol><li>K\u00ebrkoni dhe zgjidhni <strong>pacientin</strong></li><li>N\u00eb dashboard-in e pacientit, klikoni <strong>"Dokumentet"</strong></li><li>Zgjidhni kategorin\u00eb: <strong>Skanime Dentare</strong>, <strong>Radiografi</strong>, <strong>Foto Trajtimi</strong>, <strong>Kalep</strong>, ose <strong>Raporte Laboratori</strong></li><li>Klikoni <strong>"Ngarko"</strong> ose terhiqni skedar\u00ebt</li><li>Zgjidhni skedarin/skedar\u00ebt nga kompjuteri</li><li>Shtoni p\u00ebrshkrim (opsionale)</li><li>Klikoni <strong>"Ngarko"</strong> p\u00ebr t\u00eb ruajtur</li></ol><p>Formatet: JPG, PNG, PDF, DICOM</p>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['dental-xray', 'dental-treatment-photos', 'dental-impressions']
+        },
+        {
+            id: 'dental-xray', category: 'dental',
+            kw: { en: ['xray','x-ray','radiograph','panoramic','bitewing','periapical','cephalometric','cbct','ort','opg'], sq: ['radiografi','panoramike','ort','opg','rentgen'] },
+            syn: { en: {ort:'xray',opg:'panoramic',rentgen:'xray'}, sq: {rentgen:'radiografi'} },
+            title: { en: 'Upload dental X-rays', sq: 'Ngarko radiografi dentare' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>Go to <strong>"Documents"</strong></li><li>Choose the <strong>"X-Rays"</strong> category</li><li>Click <strong>"Upload"</strong></li><li>Select the X-ray file (periapical, bitewing, panoramic, CBCT)</li><li>Add a note: tooth number, type of X-ray, date taken</li><li>Click <strong>"Upload"</strong></li></ol><p><strong>Tip:</strong> Name files clearly, e.g. "panoramic_2024-01-15.jpg"</p>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>Shkoni te <strong>"Dokumentet"</strong></li><li>Zgjidhni kategorin\u00eb <strong>"Radiografi"</strong></li><li>Klikoni <strong>"Ngarko"</strong></li><li>Zgjidhni skedarin (periapikale, bitewing, panoramike, CBCT)</li><li>Shtoni sh\u00ebnim: numri dh\u00ebmbit, lloji, data</li><li>Klikoni <strong>"Ngarko"</strong></li></ol><p><strong>K\u00ebshill\u00eb:</strong> Em\u00ebrtoni skedar\u00ebt qart\u00eb, p.sh. "panoramike_2024-01-15.jpg"</p>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['dental-upload-scan', 'dental-treatment-photos']
+        },
+        {
+            id: 'dental-treatment-photos', category: 'dental',
+            kw: { en: ['treatment','photo','before','after','progress','comparison','result','smile'], sq: ['trajtim','foto','para','pas','progres','krahasim','rezultat','buzëqeshje'] },
+            syn: { en: {smile:'photo',result:'after',outcome:'after'}, sq: {} },
+            title: { en: 'Before/after treatment photos', sq: 'Foto para/pas trajtimit' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>Go to <strong>"Documents"</strong></li><li>Choose <strong>"Treatment Photos"</strong> category</li><li>Upload the <strong>before</strong> photo with note "Before - [procedure] - [date]"</li><li>After treatment, upload the <strong>after</strong> photo with "After - [procedure] - [date]"</li><li>Both photos are stored in the patient\'s record for comparison</li></ol><p><strong>Tip:</strong> Use consistent lighting and angles for better comparisons.</p>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>Shkoni te <strong>"Dokumentet"</strong></li><li>Zgjidhni kategorin\u00eb <strong>"Foto Trajtimi"</strong></li><li>Ngarkoni foton <strong>para</strong> me sh\u00ebnim "Para - [procedura] - [data]"</li><li>Pas trajtimit, ngarkoni foton <strong>pas</strong> me "Pas - [procedura] - [data]"</li><li>T\u00eb dyja fotot ruhen n\u00eb kartel\u00ebn e pacientit</li></ol><p><strong>K\u00ebshill\u00eb:</strong> P\u00ebrdorni ndri\u00e7im dhe k\u00ebnd t\u00eb nj\u00ebjt\u00eb p\u00ebr krahasime m\u00eb t\u00eb mira.</p>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['dental-upload-scan', 'dental-xray']
+        },
+        {
+            id: 'dental-impressions', category: 'dental',
+            kw: { en: ['impression','mold','cast','3d','scan','digital','itero','cerec','intraoral','scanner','stl'], sq: ['kalep','forma','3d','skanim','dixhital','skaner'] },
+            syn: { en: {mold:'impression',cast:'impression',itero:'scanner',cerec:'scanner',stl:'scan'}, sq: {forma:'kalep'} },
+            title: { en: 'Store digital impressions', sq: 'Ruaj kalep dixhitale' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>Go to <strong>"Documents"</strong></li><li>Choose <strong>"Impressions"</strong> category</li><li>Upload the scan file (STL, PLY, or screenshot)</li><li>Add notes: arch (upper/lower), purpose (crown, aligner, denture)</li><li>Click <strong>"Upload"</strong></li></ol>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>Shkoni te <strong>"Dokumentet"</strong></li><li>Zgjidhni kategorin\u00eb <strong>"Kalep"</strong></li><li>Ngarkoni skedarin (STL, PLY, ose screenshot)</li><li>Shtoni sh\u00ebnime: harku (sip\u00ebr/posht\u00eb), q\u00ebllimi (kuror\u00eb, aligner, protez\u00eb)</li><li>Klikoni <strong>"Ngarko"</strong></li></ol>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['dental-upload-scan', 'dental-lab-reports']
+        },
+        {
+            id: 'dental-lab-reports', category: 'dental',
+            kw: { en: ['lab','laboratory','report','technician','prosthetic','work','order','shade','material'], sq: ['laborator','raport','teknik','protetik\u00eb','pun\u00eb','porosi','ngjyr\u00eb','material'] },
+            syn: { en: {technician:'lab',prosthetic:'lab'}, sq: {teknik:'laborator'} },
+            title: { en: 'Upload lab reports', sq: 'Ngarko raporte laboratori' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>Go to <strong>"Documents"</strong></li><li>Choose <strong>"Lab Reports"</strong> category</li><li>Upload the lab prescription or report</li><li>Note: shade selection, material, lab name, due date</li><li>Click <strong>"Upload"</strong></li></ol>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>Shkoni te <strong>"Dokumentet"</strong></li><li>Zgjidhni kategorin\u00eb <strong>"Raporte Laboratori"</strong></li><li>Ngarkoni recet\u00ebn ose raportin e laboratorit</li><li>Sh\u00ebnim: ngjyra, materiali, emri laboratorit, data</li><li>Klikoni <strong>"Ngarko"</strong></li></ol>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['dental-impressions', 'dental-upload-scan']
+        },
+        {
+            id: 'dental-codes', category: 'dental',
+            kw: { en: ['cdt','code','codes','dental','procedure','d0','d1','d2','d3','d4','d5','d6','d7','d8','d9','fee','price','service'], sq: ['kodi','kodet','procedur\u00eb','dentare','tarif\u00eb','\u00e7mim','sh\u00ebrbim'] },
+            syn: { en: {price:'fee',charge:'fee',cost:'fee'}, sq: {cmim:'tarif\u00eb'} },
+            title: { en: 'Dental procedure codes (CDT)', sq: 'Kodet e procedurave dentare (CDT)' },
+            answer: {
+                en: '<p>The system has <strong>227 CDT dental codes</strong> loaded:</p><ul><li><strong>D0xxx</strong> \u2013 Diagnostic (exams, X-rays)</li><li><strong>D1xxx</strong> \u2013 Preventive (cleanings, fluoride, sealants)</li><li><strong>D2xxx</strong> \u2013 Restorative (fillings, crowns, veneers)</li><li><strong>D3xxx</strong> \u2013 Endodontics (root canals)</li><li><strong>D4xxx</strong> \u2013 Periodontics (scaling, gum surgery)</li><li><strong>D5xxx</strong> \u2013 Prosthodontics (dentures)</li><li><strong>D6xxx</strong> \u2013 Implants & bridges</li><li><strong>D7xxx</strong> \u2013 Oral surgery (extractions)</li><li><strong>D8xxx</strong> \u2013 Orthodontics (braces)</li><li><strong>D9xxx</strong> \u2013 Adjunctive (anesthesia, whitening)</li></ul><p>Use them in the <strong>Fee Sheet</strong> when billing a patient.</p>',
+                sq: '<p>Sistemi ka <strong>227 kode CDT dentare</strong> t\u00eb ngarkuara:</p><ul><li><strong>D0xxx</strong> \u2013 Diagnostike (ekzaminime, radiografi)</li><li><strong>D1xxx</strong> \u2013 Parandaluese (pastrime, fluorur, mbyll\u00ebs)</li><li><strong>D2xxx</strong> \u2013 Restauruese (mbushje, kurora, faseta)</li><li><strong>D3xxx</strong> \u2013 Endodonti (kanale rrënjore)</li><li><strong>D4xxx</strong> \u2013 Periodonti (pastrim, kirurgji mishrave)</li><li><strong>D5xxx</strong> \u2013 Protetik\u00eb (proteza)</li><li><strong>D6xxx</strong> \u2013 Implante & ura</li><li><strong>D7xxx</strong> \u2013 Kirurgji orale (nx\u00ebrrje)</li><li><strong>D8xxx</strong> \u2013 Ortodonci (aparatura)</li><li><strong>D9xxx</strong> \u2013 Shërbime (anestezi, zbardhim)</li></ul><p>P\u00ebrdorni ato n\u00eb <strong>Flet\u00ebn e Tarifave</strong> kur faturoni pacientin.</p>'
+            },
+            actions: [{ label: { en: 'Open Fee Sheet', sq: 'Hap Flet\u00ebn e Tarifave' }, target: 'enc', url: '/interface/patient_file/encounter/load_form.php?formname=fee_sheet' }],
+            related: ['dental-billing', 'billing-feesheet']
+        },
+        {
+            id: 'dental-billing', category: 'dental',
+            kw: { en: ['bill','billing','dental','charge','invoice','receipt','payment','lek','all','currency'], sq: ['faturim','fatur\u00eb','dentare','pagues\u00eb','d\u00ebshmi','lek'] },
+            syn: { en: {invoice:'bill',receipt:'bill',charge:'bill'}, sq: {} },
+            title: { en: 'Bill for dental procedures', sq: 'Faturo procedura dentare' },
+            answer: {
+                en: '<ol><li>Open the patient\'s <strong>encounter</strong></li><li>Click <strong>"Fees" > "Fee Sheet"</strong></li><li>Search for the CDT code (e.g. D2391 for composite filling)</li><li>The procedure name and <strong>fee in ALL (Lek)</strong> loads automatically</li><li>Adjust quantity if needed</li><li>Click <strong>"Save"</strong></li><li>Go to <strong>"Billing Manager"</strong> to finalize</li></ol>',
+                sq: '<ol><li>Hapni <strong>vizit\u00ebn</strong> e pacientit</li><li>Klikoni <strong>"Tarifa" > "Fleta e Tarifave"</strong></li><li>K\u00ebrkoni kodin CDT (p.sh. D2391 p\u00ebr mbushje kompozite)</li><li>Emri i procedur\u00ebs dhe <strong>tarifa n\u00eb Lek\u00eb</strong> ngarkohet automatikisht</li><li>Rregulloni sasin\u00eb n\u00ebse nevojitet</li><li>Klikoni <strong>"Ruaj"</strong></li><li>Shkoni te <strong>"Menaxheri i Faturimit"</strong> p\u00ebr t\u00eb p\u00ebrfunduar</li></ol>'
+            },
+            actions: [
+                { label: { en: 'Open Fee Sheet', sq: 'Hap Flet\u00ebn e Tarifave' }, target: 'enc', url: '/interface/patient_file/encounter/load_form.php?formname=fee_sheet' },
+                { label: { en: 'Open Billing', sq: 'Hap Faturimin' }, target: 'bil0', url: '/interface/billing/billing_report.php' }
+            ],
+            related: ['dental-codes', 'billing-payment']
+        },
+        {
+            id: 'dental-appointment', category: 'dental',
+            kw: { en: ['dental','appointment','schedule','cleaning','extraction','root','canal','crown','implant','orthodontic','whitening','emergency','veneer','denture','filling','pediatric','perio'], sq: ['takim','dentar','cakto','pastrim','nx\u00ebrrje','kanal','kuror\u00eb','implant','ortodonci','zbardhim','urgjenc\u00eb','faset\u00eb','protez\u00eb','mbushje','f\u00ebmij\u00eb','perio'] },
+            syn: { en: {book:'schedule',reserve:'schedule'}, sq: {rezervo:'cakto'} },
+            title: { en: 'Schedule a dental appointment', sq: 'Cakto takim dentar' },
+            answer: {
+                en: '<ol><li>Click <strong>"Calendar"</strong></li><li>Click an empty time slot</li><li>Select the patient</li><li>Choose a <strong>dental category</strong>:</li></ol><ul><li><strong>Dental Cleaning</strong> (45 min)</li><li><strong>Dental Exam</strong> (30 min)</li><li><strong>Filling</strong> (45 min)</li><li><strong>Root Canal</strong> (90 min)</li><li><strong>Extraction</strong> (45 min)</li><li><strong>Crown</strong> (60 min)</li><li><strong>Implant</strong> (90 min)</li><li><strong>Orthodontic</strong> (30-45 min)</li><li><strong>Teeth Whitening</strong> (60 min)</li><li><strong>Emergency Dental</strong> (30 min)</li></ul><ol start="5"><li>Click <strong>"Save"</strong></li></ol>',
+                sq: '<ol><li>Klikoni <strong>"Kalendari"</strong></li><li>Klikoni n\u00eb nj\u00eb slot t\u00eb lir\u00eb</li><li>Zgjidhni pacientin</li><li>Zgjidhni <strong>kategorin\u00eb dentare</strong>:</li></ol><ul><li><strong>Pastrim Dentar</strong> (45 min)</li><li><strong>Ekzaminim Dentar</strong> (30 min)</li><li><strong>Mbushje</strong> (45 min)</li><li><strong>Kanal Rr\u00ebnj\u00ebsh</strong> (90 min)</li><li><strong>Nx\u00ebrrje</strong> (45 min)</li><li><strong>Kuror\u00eb</strong> (60 min)</li><li><strong>Implant</strong> (90 min)</li><li><strong>Ortodonci</strong> (30-45 min)</li><li><strong>Zbardhim</strong> (60 min)</li><li><strong>Urgjenc\u00eb Dentare</strong> (30 min)</li></ul><ol start="5"><li>Klikoni <strong>"Ruaj"</strong></li></ol>'
+            },
+            actions: [{ label: { en: 'Open Calendar', sq: 'Hap Kalendarin' }, target: 'cal', url: '/interface/main/main_info.php' }],
+            related: ['calendar-add', 'dental-codes']
+        },
+        {
+            id: 'dental-encounter', category: 'dental',
+            kw: { en: ['dental','visit','encounter','exam','examination','clinical','chart','record','notes','treatment','plan'], sq: ['vizit\u00eb','dentare','ekzaminim','klinike','kartel\u00eb','regjistrim','sh\u00ebnime','trajtim','plan'] },
+            syn: { en: {chart:'record',notes:'encounter'}, sq: {} },
+            title: { en: 'Create a dental encounter', sq: 'Krijo vizit\u00eb dentare' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>Click <strong>"New Encounter"</strong></li><li>Select reason: dental exam, cleaning, procedure, etc.</li><li>The encounter opens \u2013 now you can:</li></ol><ul><li>Add <strong>SOAP notes</strong> (findings, treatment plan)</li><li>Record <strong>procedures</strong> via Fee Sheet (CDT codes)</li><li>Upload <strong>X-rays and photos</strong> via Documents</li><li>Write <strong>prescriptions</strong> if needed</li><li>Add <strong>vitals</strong> (blood pressure before procedure)</li></ul>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>Klikoni <strong>"Vizit\u00eb e Re"</strong></li><li>Zgjidhni arsyen: ekzaminim, pastrim, procedur\u00eb, etj.</li><li>Vizita hapet \u2013 tani mund t\u00eb:</li></ol><ul><li>Shtoni <strong>sh\u00ebnime SOAP</strong> (gjetjet, plani trajtimit)</li><li>Regjistroni <strong>procedurat</strong> n\u00ebp\u00ebrm\u00ebt Flet\u00ebs s\u00eb Tarifave (kodet CDT)</li><li>Ngarkoni <strong>radiografi dhe foto</strong> te Dokumentet</li><li>Shkruani <strong>receta</strong> n\u00ebse nevojitet</li><li>Shtoni <strong>vitale</strong> (presioni para procedur\u00ebs)</li></ul>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['encounter-create', 'dental-codes', 'dental-upload-scan']
         }
     ];
 
