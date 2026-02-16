@@ -2,7 +2,52 @@
 -- Replaces transliterations and bad translations with natural Albanian
 
 -- ============================================
--- 1. PROVIDER → DOKTOR (all Albanian forms)
+-- 1a. PROVAJDER → DOKTOR (transliteration forms)
+-- ============================================
+
+-- Plural: Provajderët → Doktorët
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Provajderëve', 'Doktorëve')
+WHERE lang_id = 32 AND definition LIKE '%Provajderëve%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'provajderëve', 'doktorëve')
+WHERE lang_id = 32 AND definition LIKE '%provajderëve%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Provajderët', 'Doktorët')
+WHERE lang_id = 32 AND definition LIKE '%Provajderët%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'provajderët', 'doktorët')
+WHERE lang_id = 32 AND definition LIKE '%provajderët%';
+
+-- Accusative: Provajderin → Doktorin
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Provajderin', 'Doktorin')
+WHERE lang_id = 32 AND definition LIKE '%Provajderin%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'provajderin', 'doktorin')
+WHERE lang_id = 32 AND definition LIKE '%provajderin%';
+
+-- Genitive/Dative: Provajderit → Doktorit
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Provajderit', 'Doktorit')
+WHERE lang_id = 32 AND definition LIKE '%Provajderit%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'provajderit', 'doktorit')
+WHERE lang_id = 32 AND definition LIKE '%provajderit%';
+
+-- Nominative definite: Provajderi → Doktori
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Provajderi', 'Doktori')
+WHERE lang_id = 32 AND definition LIKE '%Provajderi%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'provajderi', 'doktori')
+WHERE lang_id = 32 AND definition LIKE '%provajderi%';
+
+-- Indefinite: Provajder → Doktor (catch remaining)
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Provajder', 'Doktor')
+WHERE lang_id = 32 AND definition LIKE '%Provajder%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'provajder', 'doktor')
+WHERE lang_id = 32 AND definition LIKE '%provajder%';
+
+-- ============================================
+-- 1b. OFRUES → DOKTOR (translation forms)
 -- ============================================
 
 -- Handle known PLURAL patterns first (where "Ofruesit" means "Providers")
