@@ -326,7 +326,7 @@
         },
         {
             id: 'general-navigation', category: 'general',
-            kw: { en: ['navigate','menu','navigation','how','use','help','interface','tabs','layout','where'], sq: ['navigo','meny','navigim','si','p\u00ebrdor','ndihm\u00eb','nd\u00ebrfaqe','skeda','ku'] },
+            kw: { en: ['navigate','menu','navigation','interface','tabs','layout','toolbar','sidebar'], sq: ['navigo','meny','navigim','nd\u00ebrfaqe','skeda','shiriti','an\u00ebn'] },
             syn: { en: {}, sq: {} },
             title: { en: 'How to navigate', sq: 'Si t\u00eb navigoni' },
             answer: {
@@ -733,8 +733,8 @@
         },
         {
             id: 'admin-providers', category: 'admin',
-            kw: { en: ['provider','providers','doctor','doctors','dentist','dentists','schedule','calendar','color','staff'], sq: ['mjek','mjek\u00eb','dentist','dentist\u00eb','orar','kalendar','ngjyr\u00eb','staf'] },
-            syn: { en: {doctor:'provider',dentist:'provider'}, sq: {} },
+            kw: { en: ['provider','providers','doctor','doctors','dentist','dentists','schedule','calendar','color','staff','list','roster','team','who'], sq: ['mjek','mjek\u00eb','dentist','dentist\u00eb','doktor','doktor\u00eb','orar','kalendar','ngjyr\u00eb','staf','lista','list\u00eb','ekip','kush'] },
+            syn: { en: {doctor:'provider',dentist:'provider',physician:'provider',roster:'list',team:'staff'}, sq: {doktor:'mjek',doktor\u00eb:'mjek\u00eb'} },
             title: { en: 'Manage providers/doctors', sq: 'Menaxho mjek\u00ebt/dentist\u00ebt' },
             answer: {
                 en: '<ol><li>Click <strong>"Admin" > "Users"</strong></li><li>Click on a provider or "Add User"</li><li>Set: name, credentials (DMD, DDS), specialty</li><li>Check <strong>"Authorized"</strong> and <strong>"Calendar"</strong> checkboxes</li><li>Assign a calendar <strong>color</strong> for easy identification</li><li>Set their <strong>schedule/availability</strong></li><li>Click <strong>"Save"</strong></li></ol><p>Providers with "Calendar" enabled will appear in the appointment calendar.</p>',
