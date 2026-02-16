@@ -397,3 +397,33 @@ UPDATE globals SET gl_value = 'info@zeodental.com' WHERE gl_name = 'practice_ret
 
 -- Set patient reminder sender email
 UPDATE globals SET gl_value = 'reminders@zeodental.com' WHERE gl_name = 'patient_reminder_sender_email' AND (gl_value = '' OR gl_value IS NULL);
+
+-- ═══════════════════════════════════════════════════════════
+-- 5. MAKE INSURANCE OPTIONAL (not relevant for Albanian dental clinics)
+-- ═══════════════════════════════════════════════════════════
+
+-- Hide employer section (not relevant for dental)
+UPDATE globals SET gl_value = '1' WHERE gl_name = 'omit_employers';
+
+-- Make all insurance layout fields optional (uor: 2=required → 1=optional)
+-- This covers primary, secondary, and tertiary insurance sections
+UPDATE layout_options SET uor = 1 WHERE form_id = 'DEM' AND uor = 2
+  AND (group_id LIKE '%Insurance%' OR group_id LIKE '%3%' OR group_id LIKE '%4%' OR group_id LIKE '%5%')
+  AND field_id LIKE '%ins%';
+
+-- Also make specific insurance fields optional by field name
+UPDATE layout_options SET uor = 1 WHERE form_id = 'DEM' AND uor = 2
+  AND field_id IN (
+    'insurance_company', 'insurance_id', 'ins_policy_number',
+    'policy_number', 'group_number', 'subscriber_lname',
+    'subscriber_fname', 'subscriber_mname', 'subscriber_DOB',
+    'subscriber_ss', 'subscriber_relationship', 'subscriber_employer',
+    'subscriber_employer_city', 'subscriber_employer_state',
+    'subscriber_employer_zip', 'subscriber_employer_country',
+    'subscriber_phone', 'subscriber_street', 'subscriber_city',
+    'subscriber_state', 'subscriber_postal_code', 'subscriber_country',
+    'copay', 'accept_assignment'
+  );
+
+-- Disable "force billing" for encounters (don't require insurance before creating encounters)
+UPDATE globals SET gl_value = '0' WHERE gl_name = 'force_billing_widget_open';
