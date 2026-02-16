@@ -166,21 +166,11 @@ fi
 echo "[13/16] Configuring document management..."
 docker exec "$CONTAINER" mysql -h crm-ze-db -u root -proot openemr -e "
   UPDATE globals SET gl_value='1' WHERE gl_name='generate_doc_thumb';
-  INSERT INTO categories (id, name, parent, lft, rght, aco_spec)
-  SELECT 100, 'Dental Scans', 1, 0, 0, 'patients|docs'
-  FROM DUAL WHERE NOT EXISTS (SELECT 1 FROM categories WHERE name='Dental Scans');
-  INSERT INTO categories (id, name, parent, lft, rght, aco_spec)
-  SELECT 101, 'X-Rays', 1, 0, 0, 'patients|docs'
-  FROM DUAL WHERE NOT EXISTS (SELECT 1 FROM categories WHERE name='X-Rays');
-  INSERT INTO categories (id, name, parent, lft, rght, aco_spec)
-  SELECT 102, 'Treatment Photos', 1, 0, 0, 'patients|docs'
-  FROM DUAL WHERE NOT EXISTS (SELECT 1 FROM categories WHERE name='Treatment Photos');
-  INSERT INTO categories (id, name, parent, lft, rght, aco_spec)
-  SELECT 103, 'Impressions', 1, 0, 0, 'patients|docs'
-  FROM DUAL WHERE NOT EXISTS (SELECT 1 FROM categories WHERE name='Impressions');
-  INSERT INTO categories (id, name, parent, lft, rght, aco_spec)
-  SELECT 104, 'Lab Reports', 1, 0, 0, 'patients|docs'
-  FROM DUAL WHERE NOT EXISTS (SELECT 1 FROM categories WHERE name='Lab Reports');
+  INSERT IGNORE INTO categories (id, name, parent, lft, rght, aco_spec) VALUES (100, 'Dental Scans', 1, 0, 0, 'patients|docs');
+  INSERT IGNORE INTO categories (id, name, parent, lft, rght, aco_spec) VALUES (101, 'X-Rays', 1, 0, 0, 'patients|docs');
+  INSERT IGNORE INTO categories (id, name, parent, lft, rght, aco_spec) VALUES (102, 'Treatment Photos', 1, 0, 0, 'patients|docs');
+  INSERT IGNORE INTO categories (id, name, parent, lft, rght, aco_spec) VALUES (103, 'Impressions', 1, 0, 0, 'patients|docs');
+  INSERT IGNORE INTO categories (id, name, parent, lft, rght, aco_spec) VALUES (104, 'Lab Reports', 1, 0, 0, 'patients|docs');
 "
 echo "  Document categories created: Dental Scans, X-Rays, Treatment Photos, Impressions, Lab Reports"
 
