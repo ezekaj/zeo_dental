@@ -27,9 +27,10 @@
                 reports: 'Raportet',
                 admin: 'Administrimi',
                 dental: 'Dentare',
+                documents: 'Dokumentet',
                 general: 'T\u00eb P\u00ebrgjithshme'
             },
-            chips: ['Regjistro pacient', 'Ngarko skanim', 'Cakto takim', 'Kodet dentare', 'Faturimi', 'Cil\u00ebsimet']
+            chips: ['Regjistro pacient', 'Ngarko dokument', 'Cakto takim', 'Procedura dentare', 'Faturimi', 'Rreth sistemit']
         },
         en: {
             title: 'Help',
@@ -46,9 +47,10 @@
                 reports: 'Reports',
                 admin: 'Admin',
                 dental: 'Dental',
+                documents: 'Documents',
                 general: 'General'
             },
-            chips: ['Register patient', 'Upload scan', 'Schedule appointment', 'Dental codes', 'Billing', 'Settings']
+            chips: ['Register patient', 'Upload document', 'Schedule appointment', 'Common procedures', 'Billing', 'About system']
         }
     };
 
@@ -457,6 +459,435 @@
             },
             actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
             related: ['encounter-create', 'dental-codes', 'dental-upload-scan']
+        },
+        // ─── Patient Extended Topics ───
+        {
+            id: 'patient-summary', category: 'patient',
+            kw: { en: ['summary','dashboard','overview','patient','chart','demographic','info','details','cartel'], sq: ['p\u00ebrmbledh\u00eb','dashboard','pasqyr\u00eb','pacient','kartel\u00eb','demografike','info','detaje'] },
+            syn: { en: {chart:'summary',overview:'summary',demographic:'details',cartel:'summary'}, sq: {} },
+            title: { en: 'Patient dashboard overview', sq: 'Pasqyra e pacientit' },
+            answer: {
+                en: '<p>When you select a patient, the <strong>Patient Dashboard</strong> shows:</p><ul><li><strong>Demographics</strong> \u2013 name, DOB, phone, address</li><li><strong>Appointments</strong> \u2013 upcoming and past</li><li><strong>Encounters</strong> \u2013 all clinical visits</li><li><strong>Documents</strong> \u2013 uploaded files (X-rays, photos, etc.)</li><li><strong>Insurance</strong> \u2013 coverage details</li><li><strong>Billing</strong> \u2013 balance and payment history</li><li><strong>Alerts</strong> \u2013 allergies, medical issues</li></ul>',
+                sq: '<p>Kur zgjidhni nj\u00eb pacient, <strong>Dashboard-i i Pacientit</strong> tregon:</p><ul><li><strong>Demografike</strong> \u2013 emri, dat\u00eblindja, telefoni, adresa</li><li><strong>Takimet</strong> \u2013 t\u00eb ardhshme dhe t\u00eb kaluara</li><li><strong>Vizitat</strong> \u2013 t\u00eb gjitha vizitat klinike</li><li><strong>Dokumentet</strong> \u2013 skedar\u00eb t\u00eb ngarkuar (radiografi, foto, etj.)</li><li><strong>Sigurimi</strong> \u2013 detaje mbulimi</li><li><strong>Faturimi</strong> \u2013 bilanci dhe historiku pagesave</li><li><strong>Alarmet</strong> \u2013 alergji, \u00e7\u00ebshtje mj\u00ebk\u00ebsore</li></ul>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['patient-search', 'patient-edit', 'patient-history']
+        },
+        {
+            id: 'patient-insurance', category: 'patient',
+            kw: { en: ['insurance','coverage','policy','insurer','company','plan','subscriber'], sq: ['sigurim','mbulim','polic\u00eb','kompani','plan','pajtimtar'] },
+            syn: { en: {insurer:'insurance',policy:'insurance',plan:'insurance',coverage:'insurance'}, sq: {} },
+            title: { en: 'Add/edit patient insurance', sq: 'Shto/ndrysho sigurimin e pacientit' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>Click <strong>"Demographics"</strong></li><li>Scroll to the <strong>Insurance</strong> section</li><li>Click <strong>"Primary Insurance"</strong></li><li>Enter: insurance company, policy number, group number</li><li>Add subscriber info if different from patient</li><li>Click <strong>"Save"</strong></li></ol><p>You can add Primary, Secondary, and Tertiary insurance.</p>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>Klikoni <strong>"Demografike"</strong></li><li>Shkoni te seksioni <strong>Sigurimi</strong></li><li>Klikoni <strong>"Sigurimi Primar"</strong></li><li>Vendosni: kompania, numri polic\u00ebs, numri grupit</li><li>Shtoni info pajtimtarit n\u00ebse ndryshon nga pacienti</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Mund t\u00eb shtoni sigurim Primar, Sekondar, dhe Terciar.</p>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['patient-edit', 'billing-manager']
+        },
+        {
+            id: 'patient-allergies', category: 'patient',
+            kw: { en: ['allergy','allergies','allergic','reaction','adverse','drug','food','latex','penicillin'], sq: ['alergji','alergjike','reagim','ila\u00e7','ushqim','lateks','penicilin\u00eb'] },
+            syn: { en: {adverse:'allergy',reaction:'allergy'}, sq: {} },
+            title: { en: 'Record patient allergies', sq: 'Regjistro alergji t\u00eb pacientit' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>In the patient dashboard, find <strong>"Allergies"</strong></li><li>Click <strong>"Add"</strong></li><li>Enter: allergen name, reaction type, severity</li><li>Common dental allergies: Latex, Penicillin, Lidocaine, Iodine, Metals</li><li>Click <strong>"Save"</strong></li></ol><p><strong>Important:</strong> Allergies show as alerts on the patient dashboard and during encounters.</p>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>N\u00eb dashboard, gjeni <strong>"Alergji t\u00eb"</strong></li><li>Klikoni <strong>"Shto"</strong></li><li>Vendosni: emri alergjenit, lloji reagimit, ashp\u00ebrsia</li><li>Alergji t\u00eb zakonshme dentare: Lateks, Penicilin\u00eb, Lidokain\u00eb, Jod, Metale</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p><strong>E r\u00ebnd\u00ebsishme:</strong> Alergji t\u00eb shfaqen si alarme n\u00eb dashboard dhe gjat\u00eb vizitave.</p>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['patient-summary', 'patient-problems']
+        },
+        {
+            id: 'patient-problems', category: 'patient',
+            kw: { en: ['problem','problems','medical','issue','condition','diagnosis','active','chronic','disease','diabetes','hypertension'], sq: ['problem','probleme','mj\u00ebk\u00ebsor','\u00e7\u00ebshtje','gjendje','diagnoz\u00eb','aktiv','kronik','s\u00ebmundje','diabet','hipertension'] },
+            syn: { en: {condition:'problem',disease:'problem',chronic:'problem',issue:'problem'}, sq: {} },
+            title: { en: 'Medical problems list', sq: 'Lista e problemeve mj\u00ebk\u00ebsore' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>Find <strong>"Medical Problems"</strong> or <strong>"Issues"</strong> in the dashboard</li><li>Click <strong>"Add"</strong></li><li>Search for the condition (e.g., Diabetes, Hypertension)</li><li>Set status: Active or Resolved</li><li>Add date of onset</li><li>Click <strong>"Save"</strong></li></ol><p>Medical problems are important for dental treatment planning (e.g., bleeding disorders, heart conditions, diabetes affect dental procedures).</p>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>Gjeni <strong>"Problemet Mj\u00ebk\u00ebsore"</strong> n\u00eb dashboard</li><li>Klikoni <strong>"Shto"</strong></li><li>K\u00ebrkoni gjendjen (p.sh., Diabet, Hipertension)</li><li>Vendosni statusin: Aktiv ose i Zgjidhur</li><li>Shtoni dat\u00ebn e fillimit</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Problemet mj\u00ebk\u00ebsore jan\u00eb t\u00eb r\u00ebnd\u00ebsishme p\u00ebr planifikimin e trajtimit dentar (p.sh., \u00e7rregullime gjakut, gjendjet kardiake, diabeti ndikojn\u00eb procedurat dentare).</p>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['patient-allergies', 'patient-medications']
+        },
+        {
+            id: 'patient-medications', category: 'patient',
+            kw: { en: ['medication','medications','current','drugs','medicines','list','active','taking'], sq: ['medikament','medikamente','aktual','ila\u00e7e','barna','list\u00eb','aktiv','merr'] },
+            syn: { en: {drugs:'medications',medicines:'medications',meds:'medications'}, sq: {barna:'medikamente'} },
+            title: { en: 'Current medications list', sq: 'Lista e medikamenteve aktuale' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>Find <strong>"Medications"</strong> in the dashboard</li><li>Click <strong>"Add"</strong></li><li>Enter: medication name, dosage, frequency, route</li><li>Set start date and prescriber</li><li>Click <strong>"Save"</strong></li></ol><p><strong>Tip:</strong> Always review medications before dental procedures to check for blood thinners (Warfarin, Aspirin) and bisphosphonates.</p>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>Gjeni <strong>"Medikamentet"</strong> n\u00eb dashboard</li><li>Klikoni <strong>"Shto"</strong></li><li>Vendosni: emri medikamentit, dozimi, frekuenca, rruga</li><li>Vendosni dat\u00ebn e fillimit dhe p\u00ebrshkruesin</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p><strong>K\u00ebshill\u00eb:</strong> Gjithmon\u00eb rishikoni medikamentet para procedurave dentare p\u00ebr antikoagulant\u00eb (Warfarin, Aspirin\u00eb) dhe bifosfonat\u00eb.</p>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['patient-problems', 'patient-allergies', 'encounter-prescriptions']
+        },
+        {
+            id: 'patient-notes', category: 'patient',
+            kw: { en: ['note','notes','patient','comment','remark','annotation','memo'], sq: ['sh\u00ebnim','sh\u00ebnime','pacient','koment','v\u00ebrejtje','memo'] },
+            syn: { en: {comment:'note',remark:'note',memo:'note',annotation:'note'}, sq: {} },
+            title: { en: 'Add patient notes', sq: 'Shto sh\u00ebnime pacientit' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>In the dashboard, find <strong>"Notes"</strong></li><li>Click <strong>"Add Note"</strong></li><li>Type your note (e.g., "Patient prefers morning appointments", "Anxious \u2013 needs extra care")</li><li>Click <strong>"Save"</strong></li></ol><p>Notes appear on the patient dashboard for all staff to see.</p>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>N\u00eb dashboard, gjeni <strong>"Sh\u00ebnimet"</strong></li><li>Klikoni <strong>"Shto Sh\u00ebnim"</strong></li><li>Shkruani sh\u00ebnimin (p.sh., "Pacienti preferon takime n\u00eb m\u00ebngjes", "I shqet\u00ebsuar \u2013 k\u00ebrkon kujdes shtes\u00eb")</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Sh\u00ebnimet shfaqen n\u00eb dashboard p\u00ebr t\u00eb gjith\u00eb stafin.</p>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['patient-summary', 'patient-edit']
+        },
+        // ─── Document Topics ───
+        {
+            id: 'docs-overview', category: 'documents',
+            kw: { en: ['document','documents','file','files','manage','management','storage','upload','category','folder','cartel','kartela'], sq: ['dokument','dokumentet','skedar','skedar\u00eb','menaxho','menaxhim','ruajtje','ngarko','kategori','dosje','kartel\u00eb','kartela'] },
+            syn: { en: {folder:'category',storage:'documents',files:'documents',cartel:'documents',kartela:'documents'}, sq: {dosje:'kategori'} },
+            title: { en: 'Document management overview', sq: 'Pasqyra e menaxhimit t\u00eb dokumenteve' },
+            answer: {
+                en: '<p>ManagerCRM has <strong>5 dental document categories</strong>:</p><ol><li><strong>Dental Scans</strong> \u2013 digital impressions, CBCT, 3D scans</li><li><strong>X-Rays</strong> \u2013 periapical, bitewing, panoramic, cephalometric</li><li><strong>Treatment Photos</strong> \u2013 before/after photos, progress photos</li><li><strong>Impressions</strong> \u2013 digital molds, STL files</li><li><strong>Lab Reports</strong> \u2013 lab prescriptions, shade selections, material specs</li></ol><p>To upload: select patient \u2192 Documents \u2192 choose category \u2192 Upload.</p><p>All documents are stored in the patient\'s chart and can be viewed, downloaded, or printed.</p>',
+                sq: '<p>ManagerCRM ka <strong>5 kategori dokumentesh dentare</strong>:</p><ol><li><strong>Skanime Dentare</strong> \u2013 kal\u00ebpe dixhitale, CBCT, skanime 3D</li><li><strong>Radiografi</strong> \u2013 periapikale, bitewing, panoramike, cefalometrike</li><li><strong>Foto Trajtimi</strong> \u2013 foto para/pas, foto progresi</li><li><strong>Kal\u00ebpe</strong> \u2013 forma dixhitale, skedar\u00eb STL</li><li><strong>Raporte Laboratori</strong> \u2013 receta laboratori, zgjedhje ngjyrash, specifika materialesh</li></ol><p>P\u00ebr t\u00eb ngarkuar: zgjidhni pacientin \u2192 Dokumentet \u2192 zgjidhni kategorin\u00eb \u2192 Ngarko.</p><p>T\u00eb gjitha dokumentet ruhen n\u00eb kartel\u00ebn e pacientit dhe mund t\u00eb shikohen, shkarkohen ose printohen.</p>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['dental-upload-scan', 'dental-xray', 'dental-treatment-photos', 'dental-impressions']
+        },
+        {
+            id: 'docs-view', category: 'documents',
+            kw: { en: ['view','download','open','see','look','document','file','print','preview'], sq: ['shiko','shkarko','hap','shih','dokument','skedar','printo','pamje'] },
+            syn: { en: {see:'view',look:'view',preview:'view',open:'view'}, sq: {shih:'shiko'} },
+            title: { en: 'View & download documents', sq: 'Shiko & shkarko dokumentet' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>Click <strong>"Documents"</strong> in the sidebar</li><li>Browse by category or see all</li><li>Click a document to <strong>preview</strong> it</li><li>Use the <strong>Download</strong> button to save to your computer</li><li>Use the <strong>Print</strong> button for printing</li></ol><p>You can view JPG, PNG, PDF files directly in the browser. DICOM files may need a viewer.</p>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>Klikoni <strong>"Dokumentet"</strong> n\u00eb an\u00ebn</li><li>Shfletoni sipas kategoris\u00eb ose shikoni t\u00eb gjitha</li><li>Klikoni nj\u00eb dokument p\u00ebr <strong>pamje paraprake</strong></li><li>P\u00ebrdorni butonin <strong>Shkarko</strong> p\u00ebr ta ruajtur n\u00eb kompjuter</li><li>P\u00ebrdorni butonin <strong>Printo</strong> p\u00ebr printim</li></ol><p>Mund t\u00eb shikoni skedar\u00eb JPG, PNG, PDF direkt n\u00eb shfletues. Skedar\u00ebt DICOM mund t\u00eb k\u00ebrkojn\u00eb program ve\u00e7ant\u00eb.</p>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['docs-overview', 'dental-upload-scan']
+        },
+        // ─── Calendar Extended Topics ───
+        {
+            id: 'calendar-status', category: 'calendar',
+            kw: { en: ['status','appointment','arrived','pending','complete','completed','noshow','no-show','cancel','cancelled','confirmed'], sq: ['status','takim','mb\u00ebrrit','pritje','p\u00ebrfunduar','munguar','anuluar','konfirmuar'] },
+            syn: { en: {cancelled:'cancel',confirmed:'status'}, sq: {} },
+            title: { en: 'Appointment statuses', sq: 'Statuset e takimeve' },
+            answer: {
+                en: '<p>Appointments have these <strong>statuses</strong>:</p><ul><li><strong>Scheduled</strong> \u2013 booked but patient hasn\'t arrived</li><li><strong>Checked In</strong> \u2013 patient has arrived at clinic</li><li><strong>In Exam Room</strong> \u2013 patient is being seen</li><li><strong>Completed</strong> \u2013 visit is done</li><li><strong>No Show</strong> \u2013 patient didn\'t come</li><li><strong>Cancelled</strong> \u2013 appointment was cancelled</li></ul><p>Change status by clicking the appointment in the calendar.</p>',
+                sq: '<p>Takimet kan\u00eb k\u00ebto <strong>statuse</strong>:</p><ul><li><strong>I planifikuar</strong> \u2013 i rezervuar por pacienti nuk ka mb\u00ebrritur</li><li><strong>I regjistruar</strong> \u2013 pacienti ka mb\u00ebrritur</li><li><strong>N\u00eb dhom\u00ebn e ekzaminimit</strong> \u2013 pacienti po shikohet</li><li><strong>I p\u00ebrfunduar</strong> \u2013 vizita ka mbaruar</li><li><strong>Munges\u00eb</strong> \u2013 pacienti nuk erdhi</li><li><strong>I anuluar</strong> \u2013 takimi u anulua</li></ul><p>Ndryshoni statusin duke klikuar takimin n\u00eb kalendar.</p>'
+            },
+            actions: [{ label: { en: 'Open Calendar', sq: 'Hap Kalendarin' }, target: 'cal', url: '/interface/main/main_info.php' }],
+            related: ['calendar-view', 'calendar-checkin', 'calendar-noshow']
+        },
+        {
+            id: 'calendar-provider', category: 'calendar',
+            kw: { en: ['provider','doctor','dentist','filter','schedule','who','available','column'], sq: ['mjek','dentist','filtro','orar','kush','disponuesh\u00ebm','kolona'] },
+            syn: { en: {doctor:'provider',dentist:'provider',physician:'provider'}, sq: {dentist:'mjek'} },
+            title: { en: 'Filter calendar by provider', sq: 'Filtro kalendarin sipas mjekut' },
+            answer: {
+                en: '<ol><li>Open the <strong>Calendar</strong></li><li>Use the <strong>provider filter</strong> at the top or sidebar</li><li>Select one or more providers to view</li><li>Each provider can have their own color/column</li><li>This helps see who is available for scheduling</li></ol>',
+                sq: '<ol><li>Hapni <strong>Kalendarin</strong></li><li>P\u00ebrdorni <strong>filtrin e mjekut</strong> n\u00eb krye ose an\u00ebn</li><li>Zgjidhni nj\u00eb ose m\u00eb shum\u00eb mjek\u00eb</li><li>\u00c7do mjek ka ngjyr\u00ebn/kolon\u00ebn e vet</li><li>Kjo ndihmon t\u00eb shihni kush \u00ebsht\u00eb i disponuesh\u00ebm</li></ol>'
+            },
+            actions: [{ label: { en: 'Open Calendar', sq: 'Hap Kalendarin' }, target: 'cal', url: '/interface/main/main_info.php' }],
+            related: ['calendar-view', 'calendar-add']
+        },
+        {
+            id: 'calendar-noshow', category: 'calendar',
+            kw: { en: ['noshow','no-show','miss','missed','didnt','come','absent','reschedule'], sq: ['munges\u00eb','mungoi','nuk','erdhi','munguar','ricakto'] },
+            syn: { en: {missed:'noshow',absent:'noshow'}, sq: {} },
+            title: { en: 'Handle no-shows', sq: 'Menaxho mungesat' },
+            answer: {
+                en: '<ol><li>Open the <strong>Calendar</strong></li><li>Click on the missed appointment</li><li>Change status to <strong>"No Show"</strong></li><li>Optionally add a note</li><li>To reschedule: create a new appointment for the patient</li></ol><p><strong>Tip:</strong> Run the Appointment Report under Reports to track frequent no-shows.</p>',
+                sq: '<ol><li>Hapni <strong>Kalendarin</strong></li><li>Klikoni mbi takimin e humbur</li><li>Ndryshoni statusin n\u00eb <strong>"Munges\u00eb"</strong></li><li>Opsionalisht shtoni nj\u00eb sh\u00ebnim</li><li>P\u00ebr ricaktim: krijoni takim t\u00eb ri p\u00ebr pacientin</li></ol><p><strong>K\u00ebshill\u00eb:</strong> Ekzekutoni Raportin e Takimeve te Raportet p\u00ebr t\u00eb ndjekur mungesat e shpeshta.</p>'
+            },
+            actions: [{ label: { en: 'Open Calendar', sq: 'Hap Kalendarin' }, target: 'cal', url: '/interface/main/main_info.php' }],
+            related: ['calendar-status', 'calendar-add']
+        },
+        {
+            id: 'calendar-recurring', category: 'calendar',
+            kw: { en: ['recurring','repeat','repeating','series','weekly','monthly','follow','followup','recall','periodic'], sq: ['p\u00ebrs\u00ebritje','p\u00ebrs\u00ebrit','seri','javor','mujor','ndjekje','kontrolli','periodik'] },
+            syn: { en: {followup:'recurring',recall:'recurring',repeat:'recurring'}, sq: {} },
+            title: { en: 'Recurring appointments & follow-ups', sq: 'Takime p\u00ebrs\u00ebritje & ndjekje' },
+            answer: {
+                en: '<ol><li>Schedule an appointment normally</li><li>In the appointment details, check <strong>"Recurring"</strong> if available</li><li>Set frequency: weekly, bi-weekly, monthly</li><li>Set number of occurrences or end date</li><li>Click <strong>"Save"</strong></li></ol><p><strong>For orthodontic patients:</strong> Set up monthly recurring visits for adjustments.</p><p><strong>Alternative:</strong> Use the <strong>Recall</strong> system to set follow-up reminders that generate appointment requests.</p>',
+                sq: '<ol><li>Caktoni takimin normalisht</li><li>N\u00eb detajet e takimit, zgjidhni <strong>"P\u00ebrs\u00ebritje"</strong> n\u00ebse disponohet</li><li>Vendosni frekuenc\u00ebn: javor, dy-javor, mujor</li><li>Vendosni numrin e p\u00ebrs\u00ebritjeve ose dat\u00ebn e fundit</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p><strong>P\u00ebr pacient\u00ebt ortodontik\u00eb:</strong> Vendosni vizita mujore p\u00ebr rregullime.</p><p><strong>Alternativ\u00eb:</strong> P\u00ebrdorni sistemin e <strong>Rikujtimit</strong> p\u00ebr kujtesa q\u00eb gjenerojn\u00eb k\u00ebrkesa takimesh.</p>'
+            },
+            actions: [{ label: { en: 'Open Calendar', sq: 'Hap Kalendarin' }, target: 'cal', url: '/interface/main/main_info.php' }],
+            related: ['calendar-add', 'general-recall']
+        },
+        // ─── Encounter Extended Topics ───
+        {
+            id: 'encounter-close', category: 'encounter',
+            kw: { en: ['close','finalize','complete','end','finish','encounter','visit','sign','lock'], sq: ['mbyll','p\u00ebrfundo','fund','mbaroj','vizit\u00eb','n\u00ebnshkruaj','blloko'] },
+            syn: { en: {finish:'close',complete:'close',end:'close',finalize:'close'}, sq: {} },
+            title: { en: 'Close/finalize an encounter', sq: 'Mbyll/p\u00ebrfundo nj\u00eb vizit\u00eb' },
+            answer: {
+                en: '<ol><li>Open the patient\'s active encounter</li><li>Ensure all documentation is complete (SOAP notes, procedures, billing)</li><li>Click <strong>"Close"</strong> or the lock icon</li><li>The encounter becomes read-only</li><li>A closed encounter can still be viewed but not edited</li></ol><p><strong>Best practice:</strong> Close encounters at the end of each patient visit to keep records organized.</p>',
+                sq: '<ol><li>Hapni vizit\u00ebn aktive t\u00eb pacientit</li><li>Sigurohuni q\u00eb dokumentimi \u00ebsht\u00eb i plot\u00eb (sh\u00ebnime SOAP, procedura, faturim)</li><li>Klikoni <strong>"Mbyll"</strong> ose ikon\u00ebn e dr\u00ebs</li><li>Vizita b\u00ebhet vet\u00ebm p\u00ebr lexim</li><li>Nj\u00eb vizit\u00eb e mbyllur mund t\u00eb shikohet por jo t\u00eb modifikohet</li></ol><p><strong>Praktik\u00eb e mir\u00eb:</strong> Mbyllni vizitat n\u00eb fund t\u00eb \u00e7do vizite pacienti p\u00ebr organizim.</p>'
+            },
+            actions: [],
+            related: ['encounter-create', 'encounter-soap']
+        },
+        {
+            id: 'encounter-list', category: 'encounter',
+            kw: { en: ['list','encounters','visits','history','past','previous','all','record'], sq: ['list\u00eb','vizita','historik','kaluar','m\u00ebparshme','gjitha','regjistrim'] },
+            syn: { en: {past:'previous',history:'list'}, sq: {} },
+            title: { en: 'View encounter history', sq: 'Shiko historikun e vizitave' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>Click <strong>"Encounters"</strong> in the sidebar</li><li>See a list of all past encounters with dates</li><li>Click any encounter to view full details</li><li>Each encounter shows: reason, SOAP notes, procedures, billing</li></ol>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>Klikoni <strong>"Vizitat"</strong> n\u00eb an\u00ebn</li><li>Shihni list\u00ebn e t\u00eb gjitha vizitave me data</li><li>Klikoni ndonj\u00eb vizit\u00eb p\u00ebr detaje t\u00eb plota</li><li>\u00c7do vizit\u00eb tregon: arsyen, sh\u00ebnimet SOAP, procedurat, faturimin</li></ol>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['encounter-create', 'patient-history']
+        },
+        {
+            id: 'encounter-forms', category: 'encounter',
+            kw: { en: ['form','forms','questionnaire','intake','consent','clinical','template'], sq: ['form\u00eb','forma','pyet\u00ebsor','pranim','p\u00eblqim','klinike','model'] },
+            syn: { en: {questionnaire:'form',intake:'form',consent:'form',template:'form'}, sq: {pyet\u00ebsor:'form\u00eb'} },
+            title: { en: 'Clinical forms & questionnaires', sq: 'Format klinike & pyet\u00ebsor\u00ebt' },
+            answer: {
+                en: '<ol><li>Open the patient\'s encounter</li><li>Click <strong>"Clinical"</strong> or <strong>"Forms"</strong></li><li>Select the form type: SOAP, Vitals, Review of Systems, etc.</li><li>Fill in the form fields</li><li>Click <strong>"Save"</strong></li></ol><p>Available forms include: SOAP Notes, Vitals, Review of Systems, and custom forms configured by your admin.</p>',
+                sq: '<ol><li>Hapni vizit\u00ebn e pacientit</li><li>Klikoni <strong>"Klinike"</strong> ose <strong>"Format"</strong></li><li>Zgjidhni llojin e form\u00ebs: SOAP, Vitale, Rishikim i Sistemeve, etj.</li><li>Plot\u00ebsoni fushat e form\u00ebs</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Format e disponueshme: Sh\u00ebnime SOAP, Vitale, Rishikim i Sistemeve, dhe forma t\u00eb personalizuara nga administratori.</p>'
+            },
+            actions: [],
+            related: ['encounter-create', 'encounter-soap', 'encounter-vitals']
+        },
+        {
+            id: 'encounter-referral', category: 'encounter',
+            kw: { en: ['referral','refer','specialist','transfer','orthodontist','endodontist','surgeon','oral','send','letter'], sq: ['referim','refero','specialist','transfer','ortodontist','endodontist','kirurg','oral','d\u00ebrgo','let\u00ebr'] },
+            syn: { en: {transfer:'referral',specialist:'referral'}, sq: {} },
+            title: { en: 'Create a referral', sq: 'Krijo nj\u00eb referim' },
+            answer: {
+                en: '<ol><li>Open the patient\'s encounter</li><li>Click <strong>"Referrals"</strong> or find it under <strong>"Miscellaneous"</strong></li><li>Select the <strong>referring provider</strong> (you)</li><li>Select the <strong>referred-to provider</strong> (specialist)</li><li>Enter reason for referral and clinical notes</li><li>Click <strong>"Save"</strong></li></ol><p>Common dental referrals: Orthodontist, Oral Surgeon, Endodontist, Periodontist, Prosthodontist.</p>',
+                sq: '<ol><li>Hapni vizit\u00ebn e pacientit</li><li>Klikoni <strong>"Referimet"</strong> ose gjeni n\u00ebn <strong>"T\u00eb ndryshme"</strong></li><li>Zgjidhni <strong>mjekun referues</strong> (ju)</li><li>Zgjidhni <strong>mjekun e referuar</strong> (specialistin)</li><li>Vendosni arsyen e referimit dhe sh\u00ebnimet klinike</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Referime t\u00eb zakonshme dentare: Ortodontist, Kirurg Oral, Endodontist, Periodontist, Prostodontist.</p>'
+            },
+            actions: [],
+            related: ['encounter-create', 'general-address-book']
+        },
+        // ─── Billing Extended Topics ───
+        {
+            id: 'billing-collections', category: 'billing',
+            kw: { en: ['collections','collection','outstanding','overdue','unpaid','balance','debt','owe','aged'], sq: ['mbledhje','borxh','papaguar','mbetur','bilanc','detyr\u00eb'] },
+            syn: { en: {debt:'outstanding',owe:'outstanding',overdue:'outstanding',unpaid:'outstanding'}, sq: {} },
+            title: { en: 'Collections & outstanding balances', sq: 'Mbledhjet & bilancet e mbetura' },
+            answer: {
+                en: '<ol><li>Go to <strong>"Reports"</strong></li><li>Select <strong>"Collections Report"</strong> or <strong>"Patient Ledger"</strong></li><li>Filter by date range, provider, or amount</li><li>See all patients with outstanding balances</li><li>Click a patient to view detailed ledger</li><li>Send payment reminders or statements</li></ol>',
+                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Raporti i Mbledhjeve"</strong> ose <strong>"Libri i Pacientit"</strong></li><li>Filtroni sipas dat\u00ebs, mjekut, ose shum\u00ebs</li><li>Shihni t\u00eb gjith\u00eb pacient\u00ebt me bilance t\u00eb mbetura</li><li>Klikoni pacientin p\u00ebr librin e detajuar</li><li>D\u00ebrgoni kujtesa pagese ose pasqyra</li></ol>'
+            },
+            actions: [{ label: { en: 'Open Billing', sq: 'Hap Faturimin' }, target: 'bil0', url: '/interface/billing/billing_report.php' }],
+            related: ['billing-manager', 'billing-payment', 'billing-statement']
+        },
+        {
+            id: 'billing-statement', category: 'billing',
+            kw: { en: ['statement','print','invoice','receipt','generate','pdf','patient','account'], sq: ['pasqyr\u00eb','printo','fatur\u00eb','d\u00ebshmi','gjenero','pdf','llogari'] },
+            syn: { en: {receipt:'statement',invoice:'statement'}, sq: {fatur\u00eb:'pasqyr\u00eb'} },
+            title: { en: 'Generate patient statements', sq: 'Gjenero pasqyra pacient\u00ebsh' },
+            answer: {
+                en: '<ol><li>Go to <strong>"Fees" > "Billing Manager"</strong></li><li>Select the patient(s) or encounters</li><li>Click <strong>"Create Statement"</strong></li><li>The statement generates as a PDF</li><li>Print or email the statement to the patient</li></ol><p>Statements show: procedures performed, amounts charged, payments made, and balance due.</p>',
+                sq: '<ol><li>Shkoni te <strong>"Tarifa" > "Menaxheri i Faturimit"</strong></li><li>Zgjidhni pacientin/et ose vizitat</li><li>Klikoni <strong>"Krijo Pasqyr\u00ebn"</strong></li><li>Pasqyra gjenerohet si PDF</li><li>Printoni ose d\u00ebrgoni me email pasqyr\u00ebn</li></ol><p>Pasqyrat tregojn\u00eb: procedurat e kryera, shumat e faturuara, pagesat e b\u00ebra, dhe bilancin.</p>'
+            },
+            actions: [{ label: { en: 'Open Billing', sq: 'Hap Faturimin' }, target: 'bil0', url: '/interface/billing/billing_report.php' }],
+            related: ['billing-manager', 'billing-payment']
+        },
+        // ─── Reports Extended Topics ───
+        {
+            id: 'reports-appointments', category: 'reports',
+            kw: { en: ['appointment','appointments','report','schedule','daily','weekly','monthly','list'], sq: ['takim','takime','raport','orar','ditor','javor','mujor','list\u00eb'] },
+            syn: { en: {schedule:'appointments'}, sq: {} },
+            title: { en: 'Appointment reports', sq: 'Raportet e takimeve' },
+            answer: {
+                en: '<ol><li>Go to <strong>"Reports"</strong></li><li>Select <strong>"Appointments Report"</strong></li><li>Filter by: date range, provider, appointment category, status</li><li>Click <strong>"Submit"</strong></li><li>See the full list of appointments</li><li>Export to CSV or print</li></ol><p>Use this to plan daily schedules, review completed visits, and track no-shows.</p>',
+                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Raporti i Takimeve"</strong></li><li>Filtroni sipas: periudh\u00ebs, mjekut, kategoris\u00eb, statusit</li><li>Klikoni <strong>"D\u00ebrgo"</strong></li><li>Shihni list\u00ebn e plot\u00eb t\u00eb takimeve</li><li>Eksportoni n\u00eb CSV ose printoni</li></ol><p>P\u00ebrdorni p\u00ebr planifikimin e orareve ditore, rishikimin e vizitave, dhe ndjekjen e mungesave.</p>'
+            },
+            actions: [],
+            related: ['reports-overview', 'calendar-view']
+        },
+        {
+            id: 'reports-encounters', category: 'reports',
+            kw: { en: ['encounter','encounters','visit','visits','statistics','stats','clinical','count'], sq: ['vizit\u00eb','vizita','statistika','klinike','num\u00ebr'] },
+            syn: { en: {visit:'encounter',stats:'statistics'}, sq: {} },
+            title: { en: 'Encounter statistics', sq: 'Statistikat e vizitave' },
+            answer: {
+                en: '<ol><li>Go to <strong>"Reports"</strong></li><li>Select <strong>"Encounter Report"</strong> or <strong>"Visits"</strong></li><li>Filter by date range, provider, facility</li><li>See: total encounters, procedures performed, diagnoses</li><li>Export or print</li></ol>',
+                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Raporti i Vizitave"</strong></li><li>Filtroni sipas periudh\u00ebs, mjekut, klinik\u00ebs</li><li>Shihni: total vizitat, procedurat e kryera, diagnozat</li><li>Eksportoni ose printoni</li></ol>'
+            },
+            actions: [],
+            related: ['reports-overview', 'reports-financial']
+        },
+        {
+            id: 'reports-prescriptions', category: 'reports',
+            kw: { en: ['prescription','prescriptions','rx','medication','drug','report','dispensed'], sq: ['recet\u00eb','receta','medikament','ila\u00e7','raport'] },
+            syn: { en: {rx:'prescriptions',drug:'medication'}, sq: {} },
+            title: { en: 'Prescription reports', sq: 'Raportet e recetave' },
+            answer: {
+                en: '<ol><li>Go to <strong>"Reports"</strong></li><li>Select <strong>"Prescriptions Report"</strong></li><li>Filter by: patient, provider, medication, date range</li><li>See all prescriptions issued</li><li>Export or print for records</li></ol>',
+                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Raporti i Recetave"</strong></li><li>Filtroni sipas: pacientit, mjekut, medikamentit, periudh\u00ebs</li><li>Shihni t\u00eb gjitha recetat e l\u00ebshuara</li><li>Eksportoni ose printoni</li></ol>'
+            },
+            actions: [],
+            related: ['reports-overview', 'encounter-prescriptions']
+        },
+        // ─── Admin Extended Topics ───
+        {
+            id: 'admin-facility', category: 'admin',
+            kw: { en: ['facility','clinic','office','practice','name','address','phone','location','info'], sq: ['klinik\u00eb','ordinanc\u00eb','zyr\u00eb','praktik\u00eb','em\u00ebr','adres\u00eb','telefon','vendndodhje','info'] },
+            syn: { en: {clinic:'facility',office:'facility',practice:'facility'}, sq: {ordinanc\u00eb:'klinik\u00eb'} },
+            title: { en: 'Facility/clinic settings', sq: 'Cil\u00ebsimet e klinik\u00ebs' },
+            answer: {
+                en: '<ol><li>Click <strong>"Admin"</strong></li><li>Click <strong>"Facilities"</strong></li><li>Click on your facility name (Zeo Dental Clinic)</li><li>Edit: name, address, phone, email, color</li><li>Click <strong>"Save"</strong></li></ol><p>The facility info appears on printed documents, statements, and reports.</p>',
+                sq: '<ol><li>Klikoni <strong>"Admin"</strong></li><li>Klikoni <strong>"Klinikat"</strong></li><li>Klikoni mbi emrin e klinik\u00ebs (Zeo Dental Clinic)</li><li>Modifikoni: emri, adresa, telefoni, email, ngjyra</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Info e klinik\u00ebs shfaqet n\u00eb dokumentet e printuara, pasqyrat, dhe raportet.</p>'
+            },
+            actions: [{ label: { en: 'Open Facilities', sq: 'Hap Klinikat' }, target: 'adm', url: '/interface/usergroup/facilities.php' }],
+            related: ['admin-config', 'admin-providers']
+        },
+        {
+            id: 'admin-providers', category: 'admin',
+            kw: { en: ['provider','providers','doctor','doctors','dentist','dentists','schedule','calendar','color','staff'], sq: ['mjek','mjek\u00eb','dentist','dentist\u00eb','orar','kalendar','ngjyr\u00eb','staf'] },
+            syn: { en: {doctor:'provider',dentist:'provider'}, sq: {} },
+            title: { en: 'Manage providers/doctors', sq: 'Menaxho mjek\u00ebt/dentist\u00ebt' },
+            answer: {
+                en: '<ol><li>Click <strong>"Admin" > "Users"</strong></li><li>Click on a provider or "Add User"</li><li>Set: name, credentials (DMD, DDS), specialty</li><li>Check <strong>"Authorized"</strong> and <strong>"Calendar"</strong> checkboxes</li><li>Assign a calendar <strong>color</strong> for easy identification</li><li>Set their <strong>schedule/availability</strong></li><li>Click <strong>"Save"</strong></li></ol><p>Providers with "Calendar" enabled will appear in the appointment calendar.</p>',
+                sq: '<ol><li>Klikoni <strong>"Admin" > "P\u00ebrdoruesit"</strong></li><li>Klikoni mbi nj\u00eb mjek ose "Shto P\u00ebrdorues"</li><li>Vendosni: emri, kredencialet (DMD, DDS), specialiteti</li><li>Zgjidhni <strong>"I autorizuar"</strong> dhe <strong>"Kalendari"</strong></li><li>Caktoni nj\u00eb <strong>ngjyr\u00eb</strong> kalendari</li><li>Vendosni <strong>orarin/disponueshm\u00ebrin\u00eb</strong></li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Mjek\u00ebt me "Kalendarin" t\u00eb aktivizuar shfaqen n\u00eb kalendarin e takimeve.</p>'
+            },
+            actions: [{ label: { en: 'Open Users', sq: 'Hap P\u00ebrdoruesit' }, target: 'adm', url: '/interface/usergroup/usergroup_admin.php' }],
+            related: ['admin-users', 'admin-acl']
+        },
+        {
+            id: 'admin-acl', category: 'admin',
+            kw: { en: ['acl','access','control','permission','permissions','role','roles','security','restrict','group'], sq: ['akses','kontroll','leje','rol','role','siguri','kufizo','grup'] },
+            syn: { en: {permission:'acl',security:'acl',role:'acl'}, sq: {} },
+            title: { en: 'Access control & permissions', sq: 'Kontrolli i aksesit & lejet' },
+            answer: {
+                en: '<ol><li>Click <strong>"Admin" > "ACL"</strong></li><li>See predefined roles: Administrators, Physicians, Clinicians, Front Office, Billing</li><li>Click a role to see its permissions</li><li>Toggle access to: patients, encounters, billing, admin, documents</li><li>Create custom roles if needed</li></ol><p><strong>Recommended roles for dental clinic:</strong></p><ul><li><strong>Dentist</strong> \u2013 full clinical access</li><li><strong>Hygienist</strong> \u2013 encounters and scheduling</li><li><strong>Receptionist</strong> \u2013 scheduling and check-in only</li><li><strong>Billing</strong> \u2013 billing and financial reports</li></ul>',
+                sq: '<ol><li>Klikoni <strong>"Admin" > "ACL"</strong></li><li>Shihni rolet: Administrator\u00eb, Mjek\u00eb, Klinicist\u00eb, Recepsion, Faturim</li><li>Klikoni nj\u00eb rol p\u00ebr lejet</li><li>Aktivizoni aksesin: pacient\u00eb, vizita, faturim, admin, dokumentet</li><li>Krijoni role t\u00eb personalizuara n\u00ebse nevojitet</li></ol><p><strong>Rolet e rekomanduara p\u00ebr klinik\u00eb dentare:</strong></p><ul><li><strong>Dentist</strong> \u2013 akses i plot\u00eb klinik</li><li><strong>Higjienist</strong> \u2013 vizita dhe caktim</li><li><strong>Recepsionist</strong> \u2013 caktim dhe regjistrim vet\u00ebm</li><li><strong>Faturim</strong> \u2013 faturim dhe raporte financiare</li></ul>'
+            },
+            actions: [{ label: { en: 'Open ACL', sq: 'Hap ACL' }, target: 'adm', url: '/interface/usergroup/adminacl.php' }],
+            related: ['admin-users', 'admin-providers']
+        },
+        {
+            id: 'admin-lists', category: 'admin',
+            kw: { en: ['list','lists','custom','dropdown','option','options','code','lookup','setup'], sq: ['list\u00eb','lista','personalizuar','menu','opsion','opsione','kodi','k\u00ebrko','vendos'] },
+            syn: { en: {dropdown:'list',lookup:'list',option:'list'}, sq: {} },
+            title: { en: 'Manage custom lists', sq: 'Menaxho listat e personalizuara' },
+            answer: {
+                en: '<ol><li>Click <strong>"Admin" > "Lists"</strong></li><li>Select a list from the dropdown (e.g., Race, Ethnicity, Marital Status, Drug Routes)</li><li>Add, edit, or reorder items</li><li>To add a new item: enter title, ID, and order</li><li>Click <strong>"Save"</strong></li></ol><p>Lists control the options available in dropdown menus throughout the system.</p>',
+                sq: '<ol><li>Klikoni <strong>"Admin" > "Listat"</strong></li><li>Zgjidhni nj\u00eb list\u00eb nga menuja (p.sh., Raca, Etnia, Statusi Martesor, Rrug\u00ebt e Ila\u00e7eve)</li><li>Shtoni, modifikoni, ose rirendisni elementet</li><li>P\u00ebr shtim: vendosni titullin, ID, dhe rendin</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Listat kontrollojn\u00eb opsionet e menuve n\u00eb t\u00eb gjith\u00eb sistemin.</p>'
+            },
+            actions: [{ label: { en: 'Open Lists', sq: 'Hap Listat' }, target: 'adm', url: '/interface/super/edit_list.php' }],
+            related: ['admin-config']
+        },
+        {
+            id: 'admin-backup', category: 'admin',
+            kw: { en: ['backup','restore','export','database','data','save','protect','disaster','recovery'], sq: ['kopje','restauro','eksporto','baz\u00eb','t\u00eb dh\u00ebna','ruaj','mbro','fatkeq\u00ebsi','rikuperim'] },
+            syn: { en: {restore:'backup',recovery:'backup',export:'backup'}, sq: {} },
+            title: { en: 'Backup & data protection', sq: 'Kopje sigurie & mbrojtje e t\u00eb dh\u00ebnave' },
+            answer: {
+                en: '<p>ManagerCRM data should be backed up regularly:</p><ol><li><strong>Automatic daily backup</strong> is configured at 3:00 AM via Windows Task Scheduler</li><li>Backups are saved to <code>C:\\ManagerCRM\\backups\\</code></li><li>Each backup is a compressed SQL file with the date</li></ol><p><strong>Manual backup:</strong></p><ol><li>Open PowerShell or WSL terminal</li><li>Run: <code>docker exec crm-ze-db mysqldump -u root -proot openemr > backup.sql</code></li></ol><p><strong>Important:</strong> Also back up the documents folder for uploaded files (X-rays, photos).</p>',
+                sq: '<p>T\u00eb dh\u00ebnat e ManagerCRM duhet t\u00eb kopjohen rregullisht:</p><ol><li><strong>Kopje automatike ditore</strong> \u00ebsht\u00eb konfiguruar n\u00eb or\u00ebn 3:00 nga Windows Task Scheduler</li><li>Kopjet ruhen n\u00eb <code>C:\\ManagerCRM\\backups\\</code></li><li>\u00c7do kopje \u00ebsht\u00eb skedar SQL i kompresuar me dat\u00ebn</li></ol><p><strong>Kopje manuale:</strong></p><ol><li>Hapni PowerShell ose terminalin WSL</li><li>Ekzekutoni: <code>docker exec crm-ze-db mysqldump -u root -proot openemr > backup.sql</code></li></ol><p><strong>E r\u00ebnd\u00ebsishme:</strong> Kopjoni gjithashtu dosjen e dokumenteve p\u00ebr skedar\u00ebt e ngarkuar.</p>'
+            },
+            actions: [],
+            related: ['admin-config']
+        },
+        {
+            id: 'admin-language', category: 'admin',
+            kw: { en: ['language','albanian','english','translate','translation','switch','locale','shqip'], sq: ['gjuh\u00eb','shqip','anglisht','p\u00ebrkthe','p\u00ebrkthim','ndrysho'] },
+            syn: { en: {locale:'language',translate:'language',shqip:'albanian'}, sq: {} },
+            title: { en: 'Language settings', sq: 'Cil\u00ebsimet e gjuh\u00ebs' },
+            answer: {
+                en: '<ol><li>Go to <strong>"Admin" > "Config" > "Globals"</strong></li><li>Find <strong>"Language"</strong> section</li><li>Default language is set to <strong>Albanian</strong></li><li>Users can switch language from login or their profile</li><li>All dental content (procedures, categories, documents) is translated to Albanian</li></ol><p>The system supports both <strong>Albanian</strong> and <strong>English</strong>. The chatbot (this help) also supports both languages \u2013 use the SQ/EN toggle above.</p>',
+                sq: '<ol><li>Shkoni te <strong>"Admin" > "Konfigurim" > "Globale"</strong></li><li>Gjeni seksionin <strong>"Gjuha"</strong></li><li>Gjuha e parazgjedhur \u00ebsht\u00eb <strong>Shqip</strong></li><li>P\u00ebrdoruesit mund t\u00eb ndryshojn\u00eb gjuh\u00ebn nga hyrja ose profili</li><li>I gjith\u00eb p\u00ebrmbajtja dentare (procedura, kategori, dokumentet) \u00ebsht\u00eb p\u00ebrkthyer n\u00eb Shqip</li></ol><p>Sistemi mb\u00ebshtet <strong>Shqip</strong> dhe <strong>Anglisht</strong>. Chatbot-i (kjo ndihm\u00eb) gjithashtu mb\u00ebshtet t\u00eb dyja gjuh\u00ebt \u2013 p\u00ebrdorni butonin SQ/EN sip\u00ebr.</p>'
+            },
+            actions: [{ label: { en: 'Open Settings', sq: 'Hap Cil\u00ebsimet' }, target: 'adm', url: '/interface/super/edit_globals.php' }],
+            related: ['admin-config']
+        },
+        // ─── Dental Extended Topics ───
+        {
+            id: 'dental-treatment-plan', category: 'dental',
+            kw: { en: ['treatment','plan','planning','phase','estimate','cost','proposal','comprehensive','course'], sq: ['trajtim','plan','planifikim','faz\u00eb','vler\u00ebsim','kosto','propozim','gjith\u00ebp\u00ebrfshir\u00ebs'] },
+            syn: { en: {proposal:'plan',estimate:'plan',course:'plan'}, sq: {} },
+            title: { en: 'Create a treatment plan', sq: 'Krijo plan trajtimi' },
+            answer: {
+                en: '<ol><li>Select the patient and create an encounter</li><li>After examination, document findings in <strong>SOAP notes</strong></li><li>In the Assessment/Plan section, outline the treatment plan</li><li>Add procedures to the <strong>Fee Sheet</strong> with CDT codes for estimated costs</li><li>Common treatment plan phases:</li></ol><ul><li><strong>Phase 1:</strong> Emergency care (pain relief, infections)</li><li><strong>Phase 2:</strong> Disease control (cleanings, fillings, root canals)</li><li><strong>Phase 3:</strong> Rehabilitation (crowns, bridges, implants)</li><li><strong>Phase 4:</strong> Maintenance (regular check-ups, cleanings)</li></ul><p>Print the treatment plan for the patient to review and sign.</p>',
+                sq: '<ol><li>Zgjidhni pacientin dhe krijoni vizit\u00eb</li><li>Pas ekzaminimit, dokumentoni gjetjet n\u00eb <strong>sh\u00ebnimet SOAP</strong></li><li>N\u00eb seksionin Vler\u00ebsim/Plan, skiconi planin e trajtimit</li><li>Shtoni procedurat n\u00eb <strong>Flet\u00ebn e Tarifave</strong> me kodet CDT p\u00ebr kosto</li><li>Fazat e zakonshme t\u00eb planit:</li></ol><ul><li><strong>Faza 1:</strong> Kujdes urgjent (leht\u00ebsim dhimbjeje, infeksione)</li><li><strong>Faza 2:</strong> Kontroll s\u00ebmundjeje (pastrime, mbushje, kanale)</li><li><strong>Faza 3:</strong> Rehabilitim (kurora, ura, implante)</li><li><strong>Faza 4:</strong> Mir\u00ebmbajtje (kontrolle, pastrime)</li></ul><p>Printoni planin e trajtimit q\u00eb pacienti ta rishikoj\u00eb dhe n\u00ebnshkruaj\u00eb.</p>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['encounter-soap', 'dental-codes', 'dental-billing']
+        },
+        {
+            id: 'dental-common', category: 'dental',
+            kw: { en: ['common','popular','frequent','procedure','procedures','what','available','offer','price','prices','pricelist'], sq: ['zakonshme','popullar','shpesh','procedur\u00eb','procedura','\u00e7far\u00eb','disponueshme','ofro','\u00e7mim','\u00e7mime','lista'] },
+            syn: { en: {popular:'common',frequent:'common',pricelist:'prices'}, sq: {} },
+            title: { en: 'Common dental procedures & prices', sq: 'Procedurat e zakonshme & \u00e7mimet' },
+            answer: {
+                en: '<p>Most common dental procedures in ManagerCRM:</p><ul><li><strong>D0120</strong> \u2013 Periodic Exam (3,000 Lek)</li><li><strong>D0220</strong> \u2013 Periapical X-ray (1,500 Lek)</li><li><strong>D0330</strong> \u2013 Panoramic X-ray (5,000 Lek)</li><li><strong>D1110</strong> \u2013 Adult Cleaning (4,000 Lek)</li><li><strong>D1120</strong> \u2013 Child Cleaning (3,000 Lek)</li><li><strong>D2391</strong> \u2013 Composite Filling (5,000 Lek)</li><li><strong>D2740</strong> \u2013 Porcelain Crown (35,000 Lek)</li><li><strong>D3310</strong> \u2013 Root Canal Anterior (15,000 Lek)</li><li><strong>D6010</strong> \u2013 Implant (80,000 Lek)</li><li><strong>D7140</strong> \u2013 Simple Extraction (3,000 Lek)</li><li><strong>D8080</strong> \u2013 Orthodontics (150,000 Lek)</li><li><strong>D9972</strong> \u2013 Whitening (15,000 Lek)</li></ul><p>All 227 CDT codes with prices in <strong>ALL (Albanian Lek)</strong>.</p>',
+                sq: '<p>Procedurat m\u00eb t\u00eb zakonshme n\u00eb ManagerCRM:</p><ul><li><strong>D0120</strong> \u2013 Ekzaminim Periodik (3,000 Lek)</li><li><strong>D0220</strong> \u2013 Radiografi Periapikale (1,500 Lek)</li><li><strong>D0330</strong> \u2013 Radiografi Panoramike (5,000 Lek)</li><li><strong>D1110</strong> \u2013 Pastrim p\u00ebr t\u00eb Rritur (4,000 Lek)</li><li><strong>D1120</strong> \u2013 Pastrim p\u00ebr F\u00ebmij\u00eb (3,000 Lek)</li><li><strong>D2391</strong> \u2013 Mbushje Kompozite (5,000 Lek)</li><li><strong>D2740</strong> \u2013 Kuror\u00eb Porcelani (35,000 Lek)</li><li><strong>D3310</strong> \u2013 Kanal Anterior (15,000 Lek)</li><li><strong>D6010</strong> \u2013 Implant (80,000 Lek)</li><li><strong>D7140</strong> \u2013 Nx\u00ebrrje e Thjesht\u00eb (3,000 Lek)</li><li><strong>D8080</strong> \u2013 Ortodonci (150,000 Lek)</li><li><strong>D9972</strong> \u2013 Zbardhim (15,000 Lek)</li></ul><p>T\u00eb gjitha 227 kodet CDT me \u00e7mime n\u00eb <strong>ALL (Lek Shqiptar)</strong>.</p>'
+            },
+            actions: [{ label: { en: 'Open Fee Sheet', sq: 'Hap Flet\u00ebn e Tarifave' }, target: 'enc', url: '/interface/patient_file/encounter/load_form.php?formname=fee_sheet' }],
+            related: ['dental-codes', 'dental-billing']
+        },
+        {
+            id: 'dental-emergency', category: 'dental',
+            kw: { en: ['emergency','urgent','pain','swelling','trauma','broken','cracked','abscess','bleeding','accident','knocked'], sq: ['urgjenc\u00eb','urgjent','dhimbje','\u00ebnjtje','traum\u00eb','thyer','\u00e7ar\u00eb','absces','gjakosje','aksident'] },
+            syn: { en: {abscess:'emergency',trauma:'emergency',broken:'cracked'}, sq: {} },
+            title: { en: 'Handle dental emergencies', sq: 'Menaxho urgjenca dentare' },
+            answer: {
+                en: '<ol><li>Go to <strong>Calendar</strong> and find the first available slot</li><li>Create appointment with category <strong>"Emergency Dental"</strong> (30 min)</li><li>Check in the patient immediately</li><li>Create an encounter</li><li>Document in SOAP notes: chief complaint, history, examination findings</li><li>Common emergencies and CDT codes:</li></ol><ul><li><strong>D9110</strong> \u2013 Palliative treatment (pain relief)</li><li><strong>D7140</strong> \u2013 Simple extraction</li><li><strong>D7210</strong> \u2013 Surgical extraction</li><li><strong>D3220</strong> \u2013 Pulpotomy (temporary)</li><li><strong>D2940</strong> \u2013 Temporary filling</li></ul>',
+                sq: '<ol><li>Shkoni te <strong>Kalendari</strong> dhe gjeni slotin e par\u00eb t\u00eb lir\u00eb</li><li>Krijoni takim me kategorin\u00eb <strong>"Urgjenc\u00eb Dentare"</strong> (30 min)</li><li>Regjistroni pacientin menj\u00ebher\u00eb</li><li>Krijoni vizit\u00eb</li><li>Dokumentoni n\u00eb SOAP: ankesa kryesore, historiku, gjetjet</li><li>Urgjenca t\u00eb zakonshme dhe kodet CDT:</li></ol><ul><li><strong>D9110</strong> \u2013 Trajtim paliativ (leht\u00ebsim dhimbjeje)</li><li><strong>D7140</strong> \u2013 Nx\u00ebrrje e thjesht\u00eb</li><li><strong>D7210</strong> \u2013 Nx\u00ebrrje kirurgjikale</li><li><strong>D3220</strong> \u2013 Pulpotomi (e p\u00ebrkohshme)</li><li><strong>D2940</strong> \u2013 Mbushje e p\u00ebrkohshme</li></ul>'
+            },
+            actions: [{ label: { en: 'Open Calendar', sq: 'Hap Kalendarin' }, target: 'cal', url: '/interface/main/main_info.php' }],
+            related: ['dental-appointment', 'dental-codes']
+        },
+        // ─── General Extended Topics ───
+        {
+            id: 'general-printing', category: 'general',
+            kw: { en: ['print','printing','printer','pdf','paper','hard','copy','output'], sq: ['printo','printim','printer','pdf','let\u00ebr','kopje'] },
+            syn: { en: {hardcopy:'print',output:'print'}, sq: {} },
+            title: { en: 'Printing documents', sq: 'Printimi i dokumenteve' },
+            answer: {
+                en: '<p>You can print from many places in ManagerCRM:</p><ul><li><strong>Patient Summary</strong> \u2013 click Print to get patient overview</li><li><strong>Encounter</strong> \u2013 print clinical notes and forms</li><li><strong>Billing Statement</strong> \u2013 print patient statements/invoices</li><li><strong>Reports</strong> \u2013 all reports have a Print button</li><li><strong>Prescriptions</strong> \u2013 print prescriptions for patients</li><li><strong>Documents</strong> \u2013 open and print uploaded files</li></ul><p><strong>Tip:</strong> Use Ctrl+P as a shortcut from any page.</p>',
+                sq: '<p>Mund t\u00eb printoni nga shum\u00eb vende n\u00eb ManagerCRM:</p><ul><li><strong>P\u00ebrmbledhja e Pacientit</strong> \u2013 printoni p\u00ebr pasqyr\u00eb</li><li><strong>Vizita</strong> \u2013 printoni sh\u00ebnimet klinike</li><li><strong>Pasqyra e Faturimit</strong> \u2013 printoni pasqyra/fatura</li><li><strong>Raportet</strong> \u2013 t\u00eb gjitha raportet kan\u00eb buton Printo</li><li><strong>Recetat</strong> \u2013 printoni recetat p\u00ebr pacient\u00eb</li><li><strong>Dokumentet</strong> \u2013 hapni dhe printoni skedar\u00eb</li></ul><p><strong>K\u00ebshill\u00eb:</strong> P\u00ebrdorni Ctrl+P si shkurtore nga \u00e7do faqe.</p>'
+            },
+            actions: [],
+            related: ['billing-statement', 'reports-overview']
+        },
+        {
+            id: 'general-address-book', category: 'general',
+            kw: { en: ['address','book','contacts','directory','referral','specialist','lab','laboratory','pharmacy'], sq: ['adres\u00eb','lib\u00ebr','kontakte','drejtori','referim','specialist','laborator','farmaci'] },
+            syn: { en: {contacts:'address',directory:'address'}, sq: {} },
+            title: { en: 'Address book & contacts', sq: 'Libri i adresave & kontaktet' },
+            answer: {
+                en: '<ol><li>Go to <strong>"Miscellaneous" > "Address Book"</strong></li><li>See all saved contacts: labs, specialists, pharmacies</li><li>Click <strong>"Add New"</strong> to add a contact</li><li>Enter: name, type (lab, specialist, pharmacy), phone, address</li><li>Click <strong>"Save"</strong></li></ol><p>Useful contacts for dental clinic: dental labs, orthodontist referrals, oral surgeons, pharmacies.</p>',
+                sq: '<ol><li>Shkoni te <strong>"T\u00eb ndryshme" > "Libri i Adresave"</strong></li><li>Shihni t\u00eb gjitha kontaktet: laborator\u00eb, specialist\u00eb, farmaci</li><li>Klikoni <strong>"Shto t\u00eb Ri"</strong></li><li>Vendosni: emri, lloji (laborator, specialist, farmaci), telefon, adres\u00eb</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Kontakte t\u00eb dobishme: laborator\u00eb dentar, referime ortodontike, kirurg\u00eb oral\u00eb, farmaci.</p>'
+            },
+            actions: [],
+            related: ['encounter-referral']
+        },
+        {
+            id: 'general-recall', category: 'general',
+            kw: { en: ['recall','reminder','follow','followup','follow-up','cleaning','checkup','6month','routine','periodic','maintenance'], sq: ['rikujtim','kujtes\u00eb','ndjekje','kontrolli','pastrim','6mujor','rutin\u00eb','periodik','mir\u00ebmbajtje'] },
+            syn: { en: {followup:'recall',checkup:'recall',reminder:'recall',maintenance:'recall'}, sq: {} },
+            title: { en: 'Recalls & patient reminders', sq: 'Rikujtime & kujtesa pacient\u00ebsh' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>Go to <strong>"Recalls"</strong> or <strong>"Reminders"</strong></li><li>Click <strong>"Add Recall"</strong></li><li>Set: type (cleaning, checkup), interval (6 months), next date</li><li>Add provider name</li><li>Click <strong>"Save"</strong></li></ol><p><strong>Standard dental recalls:</strong></p><ul><li>Cleaning/checkup: every 6 months</li><li>Periodontal maintenance: every 3\u20134 months</li><li>Orthodontic follow-up: every 4\u20136 weeks</li></ul><p>Run the <strong>Recall Report</strong> (under Reports) to see patients due for recall.</p>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>Shkoni te <strong>"Rikujtimet"</strong></li><li>Klikoni <strong>"Shto Rikujtim"</strong></li><li>Vendosni: lloji (pastrim, kontroll), intervali (6 muaj), data e radh\u00ebs</li><li>Shtoni emrin e mjekut</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p><strong>Rikujtime standarde dentare:</strong></p><ul><li>Pastrim/kontroll: \u00e7do 6 muaj</li><li>Mir\u00ebmbajtje periodontale: \u00e7do 3\u20134 muaj</li><li>Ndjekje ortodontike: \u00e7do 4\u20136 jav\u00eb</li></ul><p>Ekzekutoni <strong>Raportin e Rikujtimeve</strong> (te Raportet) p\u00ebr pacient\u00ebt q\u00eb u duhet rikujtim.</p>'
+            },
+            actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
+            related: ['calendar-recurring', 'calendar-add']
+        },
+        {
+            id: 'general-letter', category: 'general',
+            kw: { en: ['letter','letters','generate','correspondence','patient','template','word'], sq: ['let\u00ebr','letra','gjenero','korrespondenc\u00eb','pacient','model'] },
+            syn: { en: {correspondence:'letter'}, sq: {} },
+            title: { en: 'Generate patient letters', sq: 'Gjenero letra pacient\u00ebsh' },
+            answer: {
+                en: '<ol><li>Select the patient</li><li>Go to <strong>"Miscellaneous" > "Letter Generator"</strong></li><li>Select a <strong>letter template</strong></li><li>The template auto-fills patient details (name, DOB, address)</li><li>Edit the body text as needed</li><li>Click <strong>"Generate"</strong></li><li>Print or save as PDF</li></ol><p>Common dental letters: referral letters, treatment summaries, appointment reminders, consent forms.</p>',
+                sq: '<ol><li>Zgjidhni pacientin</li><li>Shkoni te <strong>"T\u00eb ndryshme" > "Gjenerues Letrash"</strong></li><li>Zgjidhni nj\u00eb <strong>model letre</strong></li><li>Modeli plot\u00ebson automatikisht detajet e pacientit</li><li>Modifikoni tekstin sipas nevoj\u00ebs</li><li>Klikoni <strong>"Gjenero"</strong></li><li>Printoni ose ruani si PDF</li></ol><p>Letra t\u00eb zakonshme: letra referimi, p\u00ebrmbledhje trajtimi, kujtesa takimesh, formular\u00eb p\u00eblqimi.</p>'
+            },
+            actions: [],
+            related: ['encounter-referral', 'general-printing']
+        },
+        {
+            id: 'general-about', category: 'general',
+            kw: { en: ['about','version','what','system','managercrm','crm','manager','zeo','dental','software','program','application'], sq: ['rreth','version','\u00e7far\u00eb','sistem','managercrm','crm','menaxher','zeo','dental','program','aplikacion'] },
+            syn: { en: {software:'system',application:'system',program:'system'}, sq: {program:'sistem'} },
+            title: { en: 'About ManagerCRM', sq: 'Rreth ManagerCRM' },
+            answer: {
+                en: '<p><strong>ManagerCRM</strong> is the clinic management system for <strong>Zeo Dental Clinic</strong>.</p><p>Features include:</p><ul><li>Patient registration and records management</li><li>Appointment scheduling with 16 dental categories</li><li>Clinical encounters with SOAP documentation</li><li>227 CDT dental procedure codes with prices in Albanian Lek</li><li>Document management (X-rays, photos, scans, lab reports)</li><li>Billing and payment tracking</li><li>Reports and analytics</li><li>Internal messaging between staff</li><li>Bilingual interface (Albanian and English)</li><li>Guided tour for new users</li><li>Built-in help assistant (you\'re using it now!)</li></ul><p>Developed by <strong>Z.E Digital Tech</strong></p>',
+                sq: '<p><strong>ManagerCRM</strong> \u00ebsht\u00eb sistemi i menaxhimit t\u00eb klinik\u00ebs p\u00ebr <strong>Zeo Dental Clinic</strong>.</p><p>Ve\u00e7orit\u00eb p\u00ebrfshijn\u00eb:</p><ul><li>Regjistrimi i pacient\u00ebve dhe menaxhimi i kartelave</li><li>Caktimi i takimeve me 16 kategori dentare</li><li>Vizita klinike me dokumentim SOAP</li><li>227 kode CDT me \u00e7mime n\u00eb Lek Shqiptar</li><li>Menaxhimi i dokumenteve (radiografi, foto, skanime, raporte)</li><li>Faturimi dhe ndjekja e pagesave</li><li>Raporte dhe analitik\u00eb</li><li>Mesazhe t\u00eb brendshme mes stafit</li><li>Nd\u00ebrfaqe dygjuh\u00ebshe (Shqip dhe Anglisht)</li><li>Udh\u00ebzues p\u00ebr p\u00ebrdorues t\u00eb rinj</li><li>Asistent ndihme (po e p\u00ebrdorni tani!)</li></ul><p>Zhvilluar nga <strong>Z.E Digital Tech</strong></p>'
+            },
+            actions: [],
+            related: ['general-navigation', 'admin-config']
         }
     ];
 
