@@ -248,3 +248,94 @@ WHERE lc.constant_name = 'Multi-Select Provider' AND ld.lang_id = 32;
 
 -- "Manage modules" - keep as is, "Modulet" is fine Albanian
 -- "Patient/Client" menu - keep "Pacienti/Klienti" as is
+
+-- ============================================
+-- 7. REMOVE OpenEMR-SPECIFIC MODULE REFERENCES
+-- ============================================
+
+-- Replace "NewCrop" with generic "Recetë Elektronike" (e-prescription)
+UPDATE lang_definitions SET definition = REPLACE(definition, 'NewCrop eRx', 'Recetë Elektronike')
+WHERE lang_id = 32 AND definition LIKE '%NewCrop eRx%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'NewCrop MedEntry', 'Hyrje Medikamentesh')
+WHERE lang_id = 32 AND definition LIKE '%NewCrop MedEntry%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'NewCrop', 'Receta Elektronike')
+WHERE lang_id = 32 AND definition LIKE '%NewCrop%';
+
+-- Replace "Weno" (another e-prescribing service)
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Weno eRx', 'Recetë Elektronike')
+WHERE lang_id = 32 AND definition LIKE '%Weno eRx%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Weno', 'Receta Elektronike')
+WHERE lang_id = 32 AND definition LIKE '%Weno%';
+
+-- Replace remaining openEMR/OpenEMR in Albanian translations (catch-all)
+UPDATE lang_definitions SET definition = REPLACE(definition, 'openEMR', 'ManagerCRM')
+WHERE lang_id = 32 AND definition LIKE '%openEMR%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'OpenEMR', 'ManagerCRM')
+WHERE lang_id = 32 AND definition LIKE '%OpenEMR%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'OPENEMR', 'ManagerCRM')
+WHERE lang_id = 32 AND definition LIKE '%OPENEMR%';
+
+-- Also fix OpenEMR references in the ENGLISH constants shown as fallback
+-- (when no Albanian translation exists, the English constant_name shows)
+-- We can't change constant_name, but we can ensure translations exist
+
+-- Replace "FHIR" with "API" (simpler for non-technical users)
+UPDATE lang_definitions SET definition = REPLACE(definition, 'FHIR', 'API')
+WHERE lang_id = 32 AND definition LIKE '%FHIR%';
+
+-- Replace "Laminas" and "Zend" (PHP framework names - meaningless to users)
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Laminas', 'Sistem')
+WHERE lang_id = 32 AND definition LIKE '%Laminas%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Zend', 'Sistem')
+WHERE lang_id = 32 AND definition LIKE '%Zend%';
+
+-- Replace "Meaningful Use" (US healthcare regulation - irrelevant in Albania)
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Përdorimit Kuptimplotë', 'Standardeve Klinike')
+WHERE lang_id = 32 AND definition LIKE '%Përdorimit Kuptimplotë%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Perdorimit Kuptimplote', 'Standardeve Klinike')
+WHERE lang_id = 32 AND definition LIKE '%Perdorimit Kuptimplote%';
+
+-- Replace "CouchDB" (database engine - technical)
+UPDATE lang_definitions SET definition = REPLACE(definition, 'CouchDB', 'Databaza')
+WHERE lang_id = 32 AND definition LIKE '%CouchDB%';
+
+-- ============================================
+-- 8. FIX open-emr.org URLs in translations
+-- ============================================
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'open-emr.org', 'zeodentalclinic.com')
+WHERE lang_id = 32 AND definition LIKE '%open-emr.org%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'www.open-emr.org', 'zeodentalclinic.com')
+WHERE lang_id = 32 AND definition LIKE '%www.open-emr.org%';
+
+-- ============================================
+-- 9. ALSO FIX ENGLISH FALLBACK DEFINITIONS
+-- (lang_id=1 for English, shown when no Albanian exists)
+-- ============================================
+
+-- Replace OpenEMR in English definitions too
+UPDATE lang_definitions SET definition = REPLACE(definition, 'openEMR', 'ManagerCRM')
+WHERE lang_id = 1 AND definition LIKE '%openEMR%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'OpenEMR', 'ManagerCRM')
+WHERE lang_id = 1 AND definition LIKE '%OpenEMR%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'open-emr.org', 'zeodentalclinic.com')
+WHERE lang_id = 1 AND definition LIKE '%open-emr.org%';
+
+-- Replace Provider→Doctor in English definitions
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Provider', 'Doctor')
+WHERE lang_id = 1 AND definition LIKE '%Provider%'
+AND definition NOT LIKE '%Internet Service Provider%'
+AND definition NOT LIKE '%NPI%';
+
+UPDATE lang_definitions SET definition = REPLACE(definition, 'Providers', 'Doctors')
+WHERE lang_id = 1 AND definition LIKE '%Providers%';
