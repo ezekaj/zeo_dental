@@ -127,7 +127,7 @@
             title: { en: 'Schedule an appointment', sq: 'Cakto nj\u00eb takim' },
             answer: {
                 en: '<ol><li>Click <strong>"Calendar"</strong> in the menu</li><li>Click an <strong>empty time slot</strong></li><li>Select the <strong>patient</strong></li><li>Choose the <strong>provider</strong> and <strong>category</strong></li><li>Set the <strong>duration</strong></li><li>Click <strong>"Save"</strong></li></ol>',
-                sq: '<ol><li>Klikoni <strong>"Kalendari"</strong> n\u00eb meny</li><li>Klikoni n\u00eb nj\u00eb <strong>slot t\u00eb lir\u00eb</strong></li><li>Zgjidhni <strong>pacientin</strong></li><li>Zgjidhni <strong>mjekun</strong> dhe <strong>kategorin\u00eb</strong></li><li>Vendosni <strong>koh\u00ebzgjatjen</strong></li><li>Klikoni <strong>"Ruaj"</strong></li></ol>'
+                sq: '<ol><li>Klikoni <strong>"Kalendari"</strong> n\u00eb meny</li><li>Klikoni n\u00eb nj\u00eb <strong>slot t\u00eb lir\u00eb</strong></li><li>Zgjidhni <strong>pacientin</strong></li><li>Zgjidhni <strong>doktorin</strong> dhe <strong>kategorin\u00eb</strong></li><li>Vendosni <strong>koh\u00ebzgjatjen</strong></li><li>Klikoni <strong>"Ruaj"</strong></li></ol>'
             },
             actions: [{ label: { en: 'Open Calendar', sq: 'Hap Kalendarin' }, target: 'cal', url: '/interface/main/main_info.php' }],
             related: ['calendar-view', 'calendar-checkin']
@@ -259,7 +259,7 @@
             title: { en: 'Patient list report', sq: 'Raporti i list\u00ebs s\u00eb pacient\u00ebve' },
             answer: {
                 en: '<ol><li>Go to <strong>"Reports"</strong></li><li>Select <strong>"Patient List"</strong></li><li>Apply filters: date, provider, insurance</li><li>Click <strong>"Submit"</strong></li><li>Export to CSV if needed</li></ol>',
-                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Lista e Pacient\u00ebve"</strong></li><li>Aplikoni filtrat: periudha, mjeku, sigurimi</li><li>Klikoni <strong>"D\u00ebrgo"</strong></li><li>Eksportoni n\u00eb CSV n\u00ebse nevojitet</li></ol>'
+                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Lista e Pacient\u00ebve"</strong></li><li>Aplikoni filtrat: periudha, doktori, sigurimi</li><li>Klikoni <strong>"D\u00ebrgo"</strong></li><li>Eksportoni n\u00eb CSV n\u00ebse nevojitet</li></ol>'
             },
             actions: [],
             related: ['reports-overview', 'reports-financial']
@@ -271,7 +271,7 @@
             title: { en: 'Financial reports', sq: 'Raportet financiare' },
             answer: {
                 en: '<ol><li>Go to <strong>"Reports"</strong></li><li>Find financial options: Collections, Summary, Receipts</li><li>Set the date range</li><li>Select provider or view all</li><li>Click <strong>"Submit"</strong></li></ol>',
-                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Gjeni opsionet financiare: Mbledhjet, P\u00ebrmbledhja, Faturat</li><li>Vendosni periudh\u00ebn kohore</li><li>Zgjidhni mjekun ose shikoni t\u00eb gjitha</li><li>Klikoni <strong>"D\u00ebrgo"</strong></li></ol>'
+                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Gjeni opsionet financiare: Mbledhjet, P\u00ebrmbledhja, Faturat</li><li>Vendosni periudh\u00ebn kohore</li><li>Zgjidhni doktorin ose shikoni t\u00eb gjitha</li><li>Klikoni <strong>"D\u00ebrgo"</strong></li></ol>'
             },
             actions: [],
             related: ['reports-overview', 'reports-patients']
@@ -573,12 +573,12 @@
         },
         {
             id: 'calendar-provider', category: 'calendar',
-            kw: { en: ['provider','doctor','dentist','filter','schedule','who','available','column'], sq: ['mjek','dentist','filtro','orar','kush','disponuesh\u00ebm','kolona'] },
-            syn: { en: {doctor:'provider',dentist:'provider',physician:'provider'}, sq: {dentist:'mjek'} },
-            title: { en: 'Filter calendar by provider', sq: 'Filtro kalendarin sipas mjekut' },
+            kw: { en: ['provider','doctor','dentist','filter','schedule','who','available','column'], sq: ['doktor','dentist','filtro','orar','kush','disponuesh\u00ebm','kolona'] },
+            syn: { en: {doctor:'provider',dentist:'provider',physician:'provider'}, sq: {dentist:'doktor',mjek:'doktor'} },
+            title: { en: 'Filter calendar by provider', sq: 'Filtro kalendarin sipas doktorit' },
             answer: {
                 en: '<ol><li>Open the <strong>Calendar</strong></li><li>Use the <strong>provider filter</strong> at the top or sidebar</li><li>Select one or more providers to view</li><li>Each provider can have their own color/column</li><li>This helps see who is available for scheduling</li></ol>',
-                sq: '<ol><li>Hapni <strong>Kalendarin</strong></li><li>P\u00ebrdorni <strong>filtrin e mjekut</strong> n\u00eb krye ose an\u00ebn</li><li>Zgjidhni nj\u00eb ose m\u00eb shum\u00eb mjek\u00eb</li><li>\u00c7do mjek ka ngjyr\u00ebn/kolon\u00ebn e vet</li><li>Kjo ndihmon t\u00eb shihni kush \u00ebsht\u00eb i disponuesh\u00ebm</li></ol>'
+                sq: '<ol><li>Hapni <strong>Kalendarin</strong></li><li>P\u00ebrdorni <strong>filtrin e doktorit</strong> n\u00eb krye ose an\u00ebn</li><li>Zgjidhni nj\u00eb ose m\u00eb shum\u00eb doktor\u00eb</li><li>\u00c7do doktor ka ngjyr\u00ebn/kolon\u00ebn e vet</li><li>Kjo ndihmon t\u00eb shihni kush \u00ebsht\u00eb i disponuesh\u00ebm</li></ol>'
             },
             actions: [{ label: { en: 'Open Calendar', sq: 'Hap Kalendarin' }, target: 'cal', url: '/interface/main/main_info.php' }],
             related: ['calendar-view', 'calendar-add']
@@ -651,7 +651,7 @@
             title: { en: 'Create a referral', sq: 'Krijo nj\u00eb referim' },
             answer: {
                 en: '<ol><li>Open the patient\'s encounter</li><li>Click <strong>"Referrals"</strong> or find it under <strong>"Miscellaneous"</strong></li><li>Select the <strong>referring provider</strong> (you)</li><li>Select the <strong>referred-to provider</strong> (specialist)</li><li>Enter reason for referral and clinical notes</li><li>Click <strong>"Save"</strong></li></ol><p>Common dental referrals: Orthodontist, Oral Surgeon, Endodontist, Periodontist, Prosthodontist.</p>',
-                sq: '<ol><li>Hapni vizit\u00ebn e pacientit</li><li>Klikoni <strong>"Referimet"</strong> ose gjeni n\u00ebn <strong>"T\u00eb ndryshme"</strong></li><li>Zgjidhni <strong>mjekun referues</strong> (ju)</li><li>Zgjidhni <strong>mjekun e referuar</strong> (specialistin)</li><li>Vendosni arsyen e referimit dhe sh\u00ebnimet klinike</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Referime t\u00eb zakonshme dentare: Ortodontist, Kirurg Oral, Endodontist, Periodontist, Prostodontist.</p>'
+                sq: '<ol><li>Hapni vizit\u00ebn e pacientit</li><li>Klikoni <strong>"Referimet"</strong> ose gjeni n\u00ebn <strong>"T\u00eb ndryshme"</strong></li><li>Zgjidhni <strong>doktorin referues</strong> (ju)</li><li>Zgjidhni <strong>doktorin e referuar</strong> (specialistin)</li><li>Vendosni arsyen e referimit dhe sh\u00ebnimet klinike</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Referime t\u00eb zakonshme dentare: Ortodontist, Kirurg Oral, Endodontist, Periodontist, Prostodontist.</p>'
             },
             actions: [],
             related: ['encounter-create', 'general-address-book']
@@ -664,7 +664,7 @@
             title: { en: 'Collections & outstanding balances', sq: 'Mbledhjet & bilancet e mbetura' },
             answer: {
                 en: '<ol><li>Go to <strong>"Reports"</strong></li><li>Select <strong>"Collections Report"</strong> or <strong>"Patient Ledger"</strong></li><li>Filter by date range, provider, or amount</li><li>See all patients with outstanding balances</li><li>Click a patient to view detailed ledger</li><li>Send payment reminders or statements</li></ol>',
-                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Raporti i Mbledhjeve"</strong> ose <strong>"Libri i Pacientit"</strong></li><li>Filtroni sipas dat\u00ebs, mjekut, ose shum\u00ebs</li><li>Shihni t\u00eb gjith\u00eb pacient\u00ebt me bilance t\u00eb mbetura</li><li>Klikoni pacientin p\u00ebr librin e detajuar</li><li>D\u00ebrgoni kujtesa pagese ose pasqyra</li></ol>'
+                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Raporti i Mbledhjeve"</strong> ose <strong>"Libri i Pacientit"</strong></li><li>Filtroni sipas dat\u00ebs, doktorit, ose shum\u00ebs</li><li>Shihni t\u00eb gjith\u00eb pacient\u00ebt me bilance t\u00eb mbetura</li><li>Klikoni pacientin p\u00ebr librin e detajuar</li><li>D\u00ebrgoni kujtesa pagese ose pasqyra</li></ol>'
             },
             actions: [{ label: { en: 'Open Billing', sq: 'Hap Faturimin' }, target: 'bil0', url: '/interface/billing/billing_report.php' }],
             related: ['billing-manager', 'billing-payment', 'billing-statement']
@@ -689,7 +689,7 @@
             title: { en: 'Appointment reports', sq: 'Raportet e takimeve' },
             answer: {
                 en: '<ol><li>Go to <strong>"Reports"</strong></li><li>Select <strong>"Appointments Report"</strong></li><li>Filter by: date range, provider, appointment category, status</li><li>Click <strong>"Submit"</strong></li><li>See the full list of appointments</li><li>Export to CSV or print</li></ol><p>Use this to plan daily schedules, review completed visits, and track no-shows.</p>',
-                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Raporti i Takimeve"</strong></li><li>Filtroni sipas: periudh\u00ebs, mjekut, kategoris\u00eb, statusit</li><li>Klikoni <strong>"D\u00ebrgo"</strong></li><li>Shihni list\u00ebn e plot\u00eb t\u00eb takimeve</li><li>Eksportoni n\u00eb CSV ose printoni</li></ol><p>P\u00ebrdorni p\u00ebr planifikimin e orareve ditore, rishikimin e vizitave, dhe ndjekjen e mungesave.</p>'
+                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Raporti i Takimeve"</strong></li><li>Filtroni sipas: periudh\u00ebs, doktorit, kategoris\u00eb, statusit</li><li>Klikoni <strong>"D\u00ebrgo"</strong></li><li>Shihni list\u00ebn e plot\u00eb t\u00eb takimeve</li><li>Eksportoni n\u00eb CSV ose printoni</li></ol><p>P\u00ebrdorni p\u00ebr planifikimin e orareve ditore, rishikimin e vizitave, dhe ndjekjen e mungesave.</p>'
             },
             actions: [],
             related: ['reports-overview', 'calendar-view']
@@ -701,7 +701,7 @@
             title: { en: 'Encounter statistics', sq: 'Statistikat e vizitave' },
             answer: {
                 en: '<ol><li>Go to <strong>"Reports"</strong></li><li>Select <strong>"Encounter Report"</strong> or <strong>"Visits"</strong></li><li>Filter by date range, provider, facility</li><li>See: total encounters, procedures performed, diagnoses</li><li>Export or print</li></ol>',
-                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Raporti i Vizitave"</strong></li><li>Filtroni sipas periudh\u00ebs, mjekut, klinik\u00ebs</li><li>Shihni: total vizitat, procedurat e kryera, diagnozat</li><li>Eksportoni ose printoni</li></ol>'
+                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Raporti i Vizitave"</strong></li><li>Filtroni sipas periudh\u00ebs, doktorit, klinik\u00ebs</li><li>Shihni: total vizitat, procedurat e kryera, diagnozat</li><li>Eksportoni ose printoni</li></ol>'
             },
             actions: [],
             related: ['reports-overview', 'reports-financial']
@@ -713,7 +713,7 @@
             title: { en: 'Prescription reports', sq: 'Raportet e recetave' },
             answer: {
                 en: '<ol><li>Go to <strong>"Reports"</strong></li><li>Select <strong>"Prescriptions Report"</strong></li><li>Filter by: patient, provider, medication, date range</li><li>See all prescriptions issued</li><li>Export or print for records</li></ol>',
-                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Raporti i Recetave"</strong></li><li>Filtroni sipas: pacientit, mjekut, medikamentit, periudh\u00ebs</li><li>Shihni t\u00eb gjitha recetat e l\u00ebshuara</li><li>Eksportoni ose printoni</li></ol>'
+                sq: '<ol><li>Shkoni te <strong>"Raportet"</strong></li><li>Zgjidhni <strong>"Raporti i Recetave"</strong></li><li>Filtroni sipas: pacientit, doktorit, medikamentit, periudh\u00ebs</li><li>Shihni t\u00eb gjitha recetat e l\u00ebshuara</li><li>Eksportoni ose printoni</li></ol>'
             },
             actions: [],
             related: ['reports-overview', 'encounter-prescriptions']
@@ -733,12 +733,12 @@
         },
         {
             id: 'admin-providers', category: 'admin',
-            kw: { en: ['provider','providers','doctor','doctors','dentist','dentists','schedule','calendar','color','staff','list','roster','team','who'], sq: ['mjek','mjek\u00eb','dentist','dentist\u00eb','doktor','doktor\u00eb','orar','kalendar','ngjyr\u00eb','staf','lista','list\u00eb','ekip','kush'] },
-            syn: { en: {doctor:'provider',dentist:'provider',physician:'provider',roster:'list',team:'staff'}, sq: {doktor:'mjek',doktor\u00eb:'mjek\u00eb'} },
-            title: { en: 'Manage providers/doctors', sq: 'Menaxho mjek\u00ebt/dentist\u00ebt' },
+            kw: { en: ['provider','providers','doctor','doctors','dentist','dentists','schedule','calendar','color','staff','list','roster','team','who'], sq: ['doktor','doktor\u00eb','dentist','dentist\u00eb','mjek','mjek\u00eb','orar','kalendar','ngjyr\u00eb','staf','lista','list\u00eb','ekip','kush'] },
+            syn: { en: {doctor:'provider',dentist:'provider',physician:'provider',roster:'list',team:'staff'}, sq: {mjek:'doktor',mjek\u00eb:'doktor\u00eb'} },
+            title: { en: 'Manage providers/doctors', sq: 'Menaxho Doktor\u00ebt' },
             answer: {
                 en: '<ol><li>Click <strong>"Admin" > "Users"</strong></li><li>Click on a provider or "Add User"</li><li>Set: name, credentials (DMD, DDS), specialty</li><li>Check <strong>"Authorized"</strong> and <strong>"Calendar"</strong> checkboxes</li><li>Assign a calendar <strong>color</strong> for easy identification</li><li>Set their <strong>schedule/availability</strong></li><li>Click <strong>"Save"</strong></li></ol><p>Providers with "Calendar" enabled will appear in the appointment calendar.</p>',
-                sq: '<ol><li>Klikoni <strong>"Admin" > "P\u00ebrdoruesit"</strong></li><li>Klikoni mbi nj\u00eb mjek ose "Shto P\u00ebrdorues"</li><li>Vendosni: emri, kredencialet (DMD, DDS), specialiteti</li><li>Zgjidhni <strong>"I autorizuar"</strong> dhe <strong>"Kalendari"</strong></li><li>Caktoni nj\u00eb <strong>ngjyr\u00eb</strong> kalendari</li><li>Vendosni <strong>orarin/disponueshm\u00ebrin\u00eb</strong></li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Mjek\u00ebt me "Kalendarin" t\u00eb aktivizuar shfaqen n\u00eb kalendarin e takimeve.</p>'
+                sq: '<ol><li>Klikoni <strong>"Admin" > "P\u00ebrdoruesit"</strong></li><li>Klikoni mbi nj\u00eb doktor ose "Shto P\u00ebrdorues"</li><li>Vendosni: emri, kredencialet (DMD, DDS), specialiteti</li><li>Zgjidhni <strong>"I autorizuar"</strong> dhe <strong>"Kalendari"</strong></li><li>Caktoni nj\u00eb <strong>ngjyr\u00eb</strong> kalendari</li><li>Vendosni <strong>orarin/disponueshm\u00ebrin\u00eb</strong></li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p>Doktor\u00ebt me "Kalendarin" t\u00eb aktivizuar shfaqen n\u00eb kalendarin e takimeve.</p>'
             },
             actions: [{ label: { en: 'Open Users', sq: 'Hap P\u00ebrdoruesit' }, target: 'adm', url: '/interface/usergroup/usergroup_admin.php' }],
             related: ['admin-users', 'admin-acl']
@@ -750,7 +750,7 @@
             title: { en: 'Access control & permissions', sq: 'Kontrolli i aksesit & lejet' },
             answer: {
                 en: '<ol><li>Click <strong>"Admin" > "ACL"</strong></li><li>See predefined roles: Administrators, Physicians, Clinicians, Front Office, Billing</li><li>Click a role to see its permissions</li><li>Toggle access to: patients, encounters, billing, admin, documents</li><li>Create custom roles if needed</li></ol><p><strong>Recommended roles for dental clinic:</strong></p><ul><li><strong>Dentist</strong> \u2013 full clinical access</li><li><strong>Hygienist</strong> \u2013 encounters and scheduling</li><li><strong>Receptionist</strong> \u2013 scheduling and check-in only</li><li><strong>Billing</strong> \u2013 billing and financial reports</li></ul>',
-                sq: '<ol><li>Klikoni <strong>"Admin" > "ACL"</strong></li><li>Shihni rolet: Administrator\u00eb, Mjek\u00eb, Klinicist\u00eb, Recepsion, Faturim</li><li>Klikoni nj\u00eb rol p\u00ebr lejet</li><li>Aktivizoni aksesin: pacient\u00eb, vizita, faturim, admin, dokumentet</li><li>Krijoni role t\u00eb personalizuara n\u00ebse nevojitet</li></ol><p><strong>Rolet e rekomanduara p\u00ebr klinik\u00eb dentare:</strong></p><ul><li><strong>Dentist</strong> \u2013 akses i plot\u00eb klinik</li><li><strong>Higjienist</strong> \u2013 vizita dhe caktim</li><li><strong>Recepsionist</strong> \u2013 caktim dhe regjistrim vet\u00ebm</li><li><strong>Faturim</strong> \u2013 faturim dhe raporte financiare</li></ul>'
+                sq: '<ol><li>Klikoni <strong>"Admin" > "ACL"</strong></li><li>Shihni rolet: Administrator\u00eb, Doktor\u00eb, Klinicist\u00eb, Recepsion, Faturim</li><li>Klikoni nj\u00eb rol p\u00ebr lejet</li><li>Aktivizoni aksesin: pacient\u00eb, vizita, faturim, admin, dokumentet</li><li>Krijoni role t\u00eb personalizuara n\u00ebse nevojitet</li></ol><p><strong>Rolet e rekomanduara p\u00ebr klinik\u00eb dentare:</strong></p><ul><li><strong>Dentist</strong> \u2013 akses i plot\u00eb klinik</li><li><strong>Higjienist</strong> \u2013 vizita dhe caktim</li><li><strong>Recepsionist</strong> \u2013 caktim dhe regjistrim vet\u00ebm</li><li><strong>Faturim</strong> \u2013 faturim dhe raporte financiare</li></ul>'
             },
             actions: [{ label: { en: 'Open ACL', sq: 'Hap ACL' }, target: 'adm', url: '/interface/usergroup/adminacl.php' }],
             related: ['admin-users', 'admin-providers']
@@ -860,7 +860,7 @@
             title: { en: 'Recalls & patient reminders', sq: 'Rikujtime & kujtesa pacient\u00ebsh' },
             answer: {
                 en: '<ol><li>Select the patient</li><li>Go to <strong>"Recalls"</strong> or <strong>"Reminders"</strong></li><li>Click <strong>"Add Recall"</strong></li><li>Set: type (cleaning, checkup), interval (6 months), next date</li><li>Add provider name</li><li>Click <strong>"Save"</strong></li></ol><p><strong>Standard dental recalls:</strong></p><ul><li>Cleaning/checkup: every 6 months</li><li>Periodontal maintenance: every 3\u20134 months</li><li>Orthodontic follow-up: every 4\u20136 weeks</li></ul><p>Run the <strong>Recall Report</strong> (under Reports) to see patients due for recall.</p>',
-                sq: '<ol><li>Zgjidhni pacientin</li><li>Shkoni te <strong>"Rikujtimet"</strong></li><li>Klikoni <strong>"Shto Rikujtim"</strong></li><li>Vendosni: lloji (pastrim, kontroll), intervali (6 muaj), data e radh\u00ebs</li><li>Shtoni emrin e mjekut</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p><strong>Rikujtime standarde dentare:</strong></p><ul><li>Pastrim/kontroll: \u00e7do 6 muaj</li><li>Mir\u00ebmbajtje periodontale: \u00e7do 3\u20134 muaj</li><li>Ndjekje ortodontike: \u00e7do 4\u20136 jav\u00eb</li></ul><p>Ekzekutoni <strong>Raportin e Rikujtimeve</strong> (te Raportet) p\u00ebr pacient\u00ebt q\u00eb u duhet rikujtim.</p>'
+                sq: '<ol><li>Zgjidhni pacientin</li><li>Shkoni te <strong>"Rikujtimet"</strong></li><li>Klikoni <strong>"Shto Rikujtim"</strong></li><li>Vendosni: lloji (pastrim, kontroll), intervali (6 muaj), data e radh\u00ebs</li><li>Shtoni emrin e doktorit</li><li>Klikoni <strong>"Ruaj"</strong></li></ol><p><strong>Rikujtime standarde dentare:</strong></p><ul><li>Pastrim/kontroll: \u00e7do 6 muaj</li><li>Mir\u00ebmbajtje periodontale: \u00e7do 3\u20134 muaj</li><li>Ndjekje ortodontike: \u00e7do 4\u20136 jav\u00eb</li></ul><p>Ekzekutoni <strong>Raportin e Rikujtimeve</strong> (te Raportet) p\u00ebr pacient\u00ebt q\u00eb u duhet rikujtim.</p>'
             },
             actions: [{ label: { en: 'Find Patient', sq: 'Gjej Pacientin' }, target: 'fin', url: '/interface/main/finder/dynamic_finder.php' }],
             related: ['calendar-recurring', 'calendar-add']
