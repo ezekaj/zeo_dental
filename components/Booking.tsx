@@ -290,7 +290,7 @@ export const Booking: React.FC = () => {
               <Button
                 type="submit"
                 variant="outline"
-                className="text-white border-white hover:bg-white hover:text-black px-16 py-5 text-xs w-full md:w-auto disabled:opacity-50"
+                className="!text-white !border-white hover:!bg-white hover:!text-black px-16 py-5 text-xs w-full md:w-auto disabled:opacity-50"
                 data-cursor="hover"
                 disabled={status === 'SUBMITTING'}
               >
