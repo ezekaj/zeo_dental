@@ -1025,5 +1025,18 @@
     "step3Desc": "Sie verlassen uns mit einem verwandelten Lächeln und dem Selbstvertrauen, das mit dem Wissen einhergeht, die höchste Versorgungsqualität erhalten zu haben.",
     "ctaTitle": "Starten Sie Ihre Transformation",
     "ctaSubtitle": "Bereit zu sehen, was für Ihr Lächeln möglich ist? Buchen Sie eine Beratung und lassen Sie uns Ihren personalisierten Behandlungsplan erstellen."
+  },
+  "stats": {
+    "label": "In Zahlen",
+    "years": "Jahre Erfahrung",
+    "patients": "Behandelte Patienten",
+    "satisfaction": "Zufriedenheitsrate",
+    "languages": "Gesprochene Sprachen"
+  },
+  "ctScan": {
+    "label": "Begrenztes Angebot",
+    "title": "Kostenloses 3D-CT",
+    "description": "Buchen Sie Ihre erste Beratung und erhalten Sie einen kostenlosen 3D-CBCT-Scan. Fortschrittliche Diagnostik fur eine prazise Behandlungsplanung.",
+    "cta": "Kostenlosen Scan Sichern"
   }
 }

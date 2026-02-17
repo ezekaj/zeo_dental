@@ -1029,5 +1029,18 @@
     "step3Desc": "You leave with a transformed smile and the confidence that comes with knowing you received the highest quality care.",
     "ctaTitle": "Start Your Transformation",
     "ctaSubtitle": "Ready to see what's possible for your smile? Book a consultation and let us create your personalized treatment plan."
+  },
+  "stats": {
+    "label": "By The Numbers",
+    "years": "Years of Experience",
+    "patients": "Patients Treated",
+    "satisfaction": "Satisfaction Rate",
+    "languages": "Languages Spoken"
+  },
+  "ctScan": {
+    "label": "Limited Offer",
+    "title": "Free 3D CT Scan",
+    "description": "Book your first consultation and receive a complimentary 3D CBCT scan. Advanced diagnostics for precise treatment planning, at no extra cost.",
+    "cta": "Claim Your Free Scan"
   }
 }

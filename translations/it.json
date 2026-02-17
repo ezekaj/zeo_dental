@@ -1028,5 +1028,18 @@
     "step3Desc": "Te ne vai con un sorriso trasformato e la sicurezza che deriva dal sapere di aver ricevuto cure della massima qualità.",
     "ctaTitle": "Inizia la Tua Trasformazione",
     "ctaSubtitle": "Pronto a scoprire cosa è possibile per il tuo sorriso? Prenota una consulenza e lasciaci creare il tuo piano di trattamento personalizzato."
+  },
+  "stats": {
+    "label": "I Nostri Numeri",
+    "years": "Anni di Esperienza",
+    "patients": "Pazienti Trattati",
+    "satisfaction": "Tasso di Soddisfazione",
+    "languages": "Lingue Parlate"
+  },
+  "ctScan": {
+    "label": "Offerta Limitata",
+    "title": "TAC 3D Gratuita",
+    "description": "Prenota la tua prima visita e ricevi una TAC 3D CBCT gratuita. Diagnostica avanzata per una pianificazione precisa del trattamento.",
+    "cta": "Richiedi la TAC Gratuita"
   }
 }

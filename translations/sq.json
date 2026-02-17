@@ -1029,5 +1029,18 @@
     "step3Desc": "Largoheni me një buzëqeshje të transformuar dhe besimin që vjen me dijen se keni marrë kujdesin e cilësisë më të lartë.",
     "ctaTitle": "Filloni Transformimin Tuaj",
     "ctaSubtitle": "Gati të shihni çfarë është e mundur për buzëqeshjen tuaj? Rezervoni një konsultë dhe na lini të krijojmë planin tuaj të personalizuar të trajtimit."
+  },
+  "stats": {
+    "label": "Ne Numra",
+    "years": "Vite Eksperience",
+    "patients": "Paciente te Trajtuar",
+    "satisfaction": "Shkalle Kenaqesie",
+    "languages": "Gjuhe te Folura"
+  },
+  "ctScan": {
+    "label": "Oferte e Kufizuar",
+    "title": "Skanim 3D CT Falas",
+    "description": "Rezervoni konsulten tuaj te pare dhe merrni nje skanim 3D CBCT falas. Diagnostikim i avancuar per planifikim te sakte te trajtimit.",
+    "cta": "Merrni Skanimin Falas"
   }
 }
