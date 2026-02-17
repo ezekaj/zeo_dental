@@ -36,7 +36,14 @@ const fastify = Fastify({
 
 const BASE_URL = process.env.BASE_URL || 'https://zeodentalclinic.com';
 const publicPath = join(__dirname, '..', 'public');
-const indexHtmlTemplate = readFileSync(join(publicPath, 'index.html'), 'utf-8');
+
+let indexHtmlTemplate: string;
+try {
+  indexHtmlTemplate = readFileSync(join(publicPath, 'index.html'), 'utf-8');
+} catch (err) {
+  console.error(`Failed to read index.html from ${join(publicPath, 'index.html')}:`, err);
+  indexHtmlTemplate = '<!DOCTYPE html><html lang="en"><head><title>Zeo Dental Clinic</title></head><body><div id="root"></div><script type="module" src="/assets/index.js"></script></body></html>';
+}
 
 const PUBLIC_ROUTES = [
   '/',
@@ -317,10 +324,14 @@ async function start() {
       return { language: lang };
     });
 
-    // Root redirect - detect language and redirect to /:lang/
-    fastify.get('/', async (request, reply) => {
+    // Root "/" redirect hook - runs before static file serving
+    // Intercepts bare "/" to redirect to /:lang/ based on cookie or IP detection
+    fastify.addHook('onRequest', async (request, reply) => {
+      const url = request.url.split('?')[0];
+      if (url !== '/') return;
+
       // Check cookie for saved language preference
-      const cookieLang = request.cookies['zeo-lang'];
+      const cookieLang = (request as any).cookies?.['zeo-lang'];
       if (cookieLang && (SUPPORTED_LANGUAGES as readonly string[]).includes(cookieLang)) {
         return reply.redirect(302, `/${cookieLang}/`);
       }
@@ -338,7 +349,7 @@ async function start() {
       wildcard: false,
     });
 
-    // SPA fallback - language-aware HTML serving
+    // SPA fallback - handles root redirect, lang routing, and 404s
     fastify.setNotFoundHandler(async (request, reply) => {
       const url = request.url.split('?')[0]; // strip query string
 
@@ -356,8 +367,7 @@ async function start() {
       const lang = getLangFromPath(url);
       if (!lang) {
         // No lang prefix - redirect to /en/ + path for backward compat
-        const cleanUrl = url === '/' ? '' : url;
-        return reply.redirect(302, `/en${cleanUrl}`);
+        return reply.redirect(302, `/en${url}`);
       }
 
       // Serve index.html with injected SEO tags
