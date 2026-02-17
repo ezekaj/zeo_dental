@@ -63,7 +63,7 @@ async function start() {
       timeWindow: process.env.RATE_LIMIT_WINDOW || '1 minute',
       allowList: req => {
         // Allow internal health checks and optionally authenticated admin calls
-        if (req.url === '/health') return true;
+        if (req.url === '/health' || req.url === '/api/detect-language') return true;
         if (adminToken && req.headers.authorization === `Bearer ${adminToken}`) return true;
         return false;
       },
