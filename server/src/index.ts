@@ -58,6 +58,7 @@ const PUBLIC_ROUTES = [
   '/team',
   '/cases',
   '/book',
+  '/packages',
   '/privacy-policy',
   '/terms-of-service',
 ];

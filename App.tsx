@@ -23,6 +23,7 @@ import { CookieConsent } from './components/CookieConsent';
 import { Statistics } from './components/Statistics';
 import { CtScanCTA } from './components/CtScanCTA';
 import { GoogleReviews } from './components/GoogleReviews';
+import { PackagesPage } from './components/PackagesPage';
 import { stripLangPrefix } from './utils/i18n';
 
 // Treatment page configurations with hero images (matching TreatmentsOverview)
@@ -123,6 +124,8 @@ const App: React.FC = () => {
         return <TeamPage />;
       case '/cases':
         return <ClinicalCasesPage />;
+      case '/packages':
+        return <PackagesPage />;
       default:
         return <MainSite />;
     }

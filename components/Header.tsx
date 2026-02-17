@@ -10,6 +10,7 @@ const NAV_ITEMS = [
   { labelKey: 'nav.philosophy', href: '/philosophy', isPage: true },
   { labelKey: 'nav.team', href: '/team', isPage: true },
   { labelKey: 'nav.cases', href: '/cases', isPage: true },
+  { labelKey: 'nav.packages', href: '/packages', isPage: true },
   { labelKey: 'nav.contact', href: '/book', isPage: true },
 ];
 

@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { labelKey: 'nav.philosophy', href: '/philosophy' },
   { labelKey: 'nav.team', href: '/team' },
   { labelKey: 'nav.cases', href: '/cases' },
+  { labelKey: 'nav.packages', href: '/packages' },
   { labelKey: 'nav.contact', href: '/book' },
 ];
 
