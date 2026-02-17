@@ -1025,5 +1025,18 @@
     "step3Desc": "Φεύγετε με ένα μεταμορφωμένο χαμόγελο και την αυτοπεποίθηση που προέρχεται από φροντίδα υψηλότατης ποιότητας.",
     "ctaTitle": "Ξεκινήστε τη Μεταμόρφωσή Σας",
     "ctaSubtitle": "Έτοιμοι να δείτε τι είναι δυνατό για το χαμόγελό σας; Κλείστε συνεδρία και αφήστε μας να δημιουργήσουμε το εξατομικευμένο σχέδιο θεραπείας σας."
+  },
+  "stats": {
+    "label": "Se Arithmous",
+    "years": "Chronia Empeirias",
+    "patients": "Asthenis pou Therapeftikan",
+    "satisfaction": "Pososto Ikanopoiisis",
+    "languages": "Glosses pou Milountai"
+  },
+  "ctScan": {
+    "label": "Periorismenei Prosfora",
+    "title": "Dorean 3D Aksonomiki",
+    "description": "Kleiste to proto sas rantevou kai apokteiste mia dorean 3D CBCT aksonomiki. Proegmeni diagnostiki gia akrivi schediasmo therapeias.",
+    "cta": "Apoktiste ti Dorean Aksonomiki"
   }
 }

@@ -667,5 +667,18 @@
     "step3Desc": "Dönüştürülmüş bir gülüş ve özgüven.",
     "ctaTitle": "Dönüşümünüze Başlayın",
     "ctaSubtitle": "Neler mümkün olduğunu görmeye hazır mısınız? Konsültasyon randevusu alın."
+  },
+  "stats": {
+    "label": "Rakamlarla",
+    "years": "Yillik Deneyim",
+    "patients": "Tedavi Edilen Hasta",
+    "satisfaction": "Memnuniyet Orani",
+    "languages": "Konusulan Dil"
+  },
+  "ctScan": {
+    "label": "Sinirli Teklif",
+    "title": "Ucretsiz 3D BT Taramasi",
+    "description": "Ilk konsultasyonunuzu rezerve edin ve ucretsiz 3D CBCT taramasi alin. Kesin tedavi planlamasi icin ileri tani teknolojisi.",
+    "cta": "Ucretsiz Taramanizi Alin"
   }
 }

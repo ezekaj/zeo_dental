@@ -1028,5 +1028,18 @@
     "step3Desc": "Vous repartez avec un sourire transformé et la confiance de savoir que vous avez reçu des soins de la plus haute qualité.",
     "ctaTitle": "Commencez Votre Transformation",
     "ctaSubtitle": "Prêt à voir ce qui est possible pour votre sourire ? Prenez rendez-vous et laissez-nous créer votre plan de traitement personnalisé."
+  },
+  "stats": {
+    "label": "En Chiffres",
+    "years": "Annees d'Experience",
+    "patients": "Patients Traites",
+    "satisfaction": "Taux de Satisfaction",
+    "languages": "Langues Parlees"
+  },
+  "ctScan": {
+    "label": "Offre Limitee",
+    "title": "Scanner 3D Gratuit",
+    "description": "Reservez votre premiere consultation et beneficiez d'un scanner 3D CBCT gratuit. Diagnostic avance pour une planification precise du traitement.",
+    "cta": "Obtenez Votre Scanner Gratuit"
   }
 }
