@@ -36,7 +36,7 @@ async function start() {
       contentSecurityPolicy: {
         directives: {
           defaultSrc: ["'self'"],
-          scriptSrc: ["'self'", "'unsafe-inline'"],
+          scriptSrc: ["'self'"],
           styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
           fontSrc: ["'self'", 'https://fonts.gstatic.com'],
           imgSrc: [
@@ -57,13 +57,17 @@ async function start() {
       referrerPolicy: { policy: 'strict-origin-when-cross-origin' },
     });
 
-    // Basic rate limiting to protect public endpoints
+    // Global rate limiting with per-IP tracking
     await fastify.register(rateLimit, {
       max: parseInt(process.env.RATE_LIMIT_MAX || '200', 10),
       timeWindow: process.env.RATE_LIMIT_WINDOW || '1 minute',
+      keyGenerator: req => {
+        return (req.headers['fly-client-ip']
+          || req.headers['x-forwarded-for']?.toString().split(',')[0]?.trim()
+          || req.ip) as string;
+      },
       allowList: req => {
-        // Allow internal health checks and optionally authenticated admin calls
-        if (req.url === '/health' || req.url === '/api/detect-language') return true;
+        if (req.url === '/health') return true;
         if (adminToken && req.headers.authorization === `Bearer ${adminToken}`) return true;
         return false;
       },
@@ -134,13 +138,20 @@ async function start() {
 
     fastify.get('/api/detect-language', async (request) => {
       // Get client IP from Fly.io headers or fallback
-      const clientIp = (request.headers['fly-client-ip']
+      let clientIp = (request.headers['fly-client-ip']
         || request.headers['x-forwarded-for']?.toString().split(',')[0]?.trim()
         || request.ip) as string;
 
+      // Validate IP format to prevent SSRF
+      const ipv4Regex = /^(\d{1,3}\.){3}\d{1,3}$/;
+      const ipv6Regex = /^[0-9a-fA-F:]+$/;
+      if (!ipv4Regex.test(clientIp) && !ipv6Regex.test(clientIp)) {
+        return { language: 'en' };
+      }
+
       try {
         // Server-side geo-IP lookup (ip-api.com: free, no key needed, 45 req/min)
-        const res = await fetch(`http://ip-api.com/json/${clientIp}?fields=countryCode`, {
+        const res = await fetch(`http://ip-api.com/json/${encodeURIComponent(clientIp)}?fields=countryCode`, {
           signal: AbortSignal.timeout(2000),
         });
         if (res.ok) {

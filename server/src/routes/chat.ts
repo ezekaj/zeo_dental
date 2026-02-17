@@ -306,7 +306,14 @@ export async function chatRoutes(fastify: FastifyInstance) {
   fastify.post<{
     Body: ChatRequest;
     Reply: ChatResponse;
-  }>('/chat', async (request: FastifyRequest<{ Body: ChatRequest }>, reply: FastifyReply) => {
+  }>('/chat', {
+    config: {
+      rateLimit: {
+        max: 15,
+        timeWindow: '1 minute',
+      },
+    },
+  }, async (request: FastifyRequest<{ Body: ChatRequest }>, reply: FastifyReply) => {
     const apiKey = process.env.GEMINI_API_KEY;
 
     if (!apiKey) {
@@ -319,6 +326,10 @@ export async function chatRoutes(fastify: FastifyInstance) {
 
     const { message, history = [], language = 'sq' } = request.body;
 
+    // Validate language parameter to prevent prompt injection
+    const validLanguages = ['sq', 'en', 'it', 'de', 'fr', 'tr', 'el', 'es'];
+    const safeLang = validLanguages.includes(language) ? language : 'en';
+
     if (!message || typeof message !== 'string' || message.trim().length === 0) {
       return reply.status(400).send({
         response: '',
@@ -326,11 +337,19 @@ export async function chatRoutes(fastify: FastifyInstance) {
       });
     }
 
-    // Language-specific instruction
-    const languageInstruction = getLanguageInstruction(language);
+    // Limit message length to prevent token abuse
+    if (message.length > 5000) {
+      return reply.status(400).send({
+        response: '',
+        error: 'Message is too long. Please keep it under 5000 characters.',
+      });
+    }
+
+    // Language-specific instruction (using validated language)
+    const languageInstruction = getLanguageInstruction(safeLang);
 
     // Initial greeting based on language
-    const initialGreeting = getInitialGreeting(language);
+    const initialGreeting = getInitialGreeting(safeLang);
 
     // Build conversation contents
     const contents = [

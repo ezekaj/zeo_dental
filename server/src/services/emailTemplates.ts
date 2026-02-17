@@ -2,6 +2,15 @@ import type { Booking } from '../types.js';
 import type { FastifyInstance } from 'fastify';
 import { Resend } from 'resend';
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;');
+}
+
 // Initialize Resend
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
@@ -31,7 +40,7 @@ function getConfirmationEmailHtml(booking: Booking, language: 'sq' | 'en' = 'sq'
     language === 'sq'
       ? {
           subject: `Takimi juaj është konfirmuar - Zeo Dental`,
-          greeting: `I/E nderuar ${booking.name}`,
+          greeting: `I/E nderuar ${escapeHtml(booking.name)}`,
           intro: `Takimi juaj është konfirmuar me sukses.`,
           detailsTitle: `Detajet e takimit`,
           service: `Shërbimi`,
@@ -46,7 +55,7 @@ function getConfirmationEmailHtml(booking: Booking, language: 'sq' | 'en' = 'sq'
         }
       : {
           subject: `Your Appointment is Confirmed - Zeo Dental`,
-          greeting: `Dear ${booking.name}`,
+          greeting: `Dear ${escapeHtml(booking.name)}`,
           intro: `Your appointment has been successfully confirmed.`,
           detailsTitle: `Appointment Details`,
           service: `Service`,
@@ -242,9 +251,9 @@ function getCancellationEmailHtml(booking: Booking, language: 'sq' | 'en' = 'sq'
     language === 'sq'
       ? {
           subject: `Takimi juaj është anuluar - Zeo Dental`,
-          greeting: `I/E nderuar ${booking.name}`,
+          greeting: `I/E nderuar ${escapeHtml(booking.name)}`,
           intro: `Ju informojmë që takimi juaj është anuluar.`,
-          reason: booking.cancellation_reason ? `Arsyeja: ${booking.cancellation_reason}` : '',
+          reason: booking.cancellation_reason ? `Arsyeja: ${escapeHtml(booking.cancellation_reason)}` : '',
           reschedule: `Për të ricaktuar një takim të ri, na kontaktoni:`,
           phone: `+355 68 400 4840`,
           email: `zeodentalclinic@gmail.com`,
@@ -252,9 +261,9 @@ function getCancellationEmailHtml(booking: Booking, language: 'sq' | 'en' = 'sq'
         }
       : {
           subject: `Your Appointment has been Cancelled - Zeo Dental`,
-          greeting: `Dear ${booking.name}`,
+          greeting: `Dear ${escapeHtml(booking.name)}`,
           intro: `We inform you that your appointment has been cancelled.`,
-          reason: booking.cancellation_reason ? `Reason: ${booking.cancellation_reason}` : '',
+          reason: booking.cancellation_reason ? `Reason: ${escapeHtml(booking.cancellation_reason)}` : '',
           reschedule: `To reschedule a new appointment, contact us:`,
           phone: `+355 68 400 4840`,
           email: `zeodentalclinic@gmail.com`,
@@ -494,24 +503,24 @@ export async function sendClinicNotification(
             <div class="content">
               <div class="field">
                 <div class="label">Emri</div>
-                <div class="value">${booking.name}</div>
+                <div class="value">${escapeHtml(booking.name)}</div>
               </div>
               <div class="field">
                 <div class="label">Email</div>
-                <div class="value">${booking.email || 'N/A'}</div>
+                <div class="value">${booking.email ? escapeHtml(booking.email) : 'N/A'}</div>
               </div>
               <div class="field">
                 <div class="label">Telefon</div>
-                <div class="value">${booking.phone || 'N/A'}</div>
+                <div class="value">${booking.phone ? escapeHtml(booking.phone) : 'N/A'}</div>
               </div>
               <div class="field">
                 <div class="label">Shërbimi</div>
-                <div class="value">${booking.service}</div>
+                <div class="value">${escapeHtml(booking.service)}</div>
               </div>
-              ${booking.description ? `<div class="field"><div class="label">Përshkrimi i Nevojave</div><div class="description">${booking.description}</div></div>` : ''}
+              ${booking.description ? `<div class="field"><div class="label">Përshkrimi i Nevojave</div><div class="description">${escapeHtml(booking.description)}</div></div>` : ''}
               ${booking.preferred_date ? `<div class="field"><div class="label">Data e preferuar</div><div class="value">${formatDate(booking.preferred_date)}</div></div>` : ''}
-              ${booking.preferred_time ? `<div class="field"><div class="label">Ora e preferuar</div><div class="value">${booking.preferred_time}</div></div>` : ''}
-              ${booking.notes ? `<div class="field"><div class="label">Shënime</div><div class="value">${booking.notes}</div></div>` : ''}
+              ${booking.preferred_time ? `<div class="field"><div class="label">Ora e preferuar</div><div class="value">${escapeHtml(booking.preferred_time)}</div></div>` : ''}
+              ${booking.notes ? `<div class="field"><div class="label">Shënime</div><div class="value">${escapeHtml(booking.notes)}</div></div>` : ''}
               <div class="cta">
                 <a href="https://zeodentalclinic.com/receptionist" class="button">Shko te Paneli →</a>
               </div>
@@ -524,7 +533,7 @@ export async function sendClinicNotification(
     const { error } = await resend.emails.send({
       from: mailFrom,
       to: recipients,
-      subject: `Kërkesë e Re: ${booking.name} - ${booking.service}`,
+      subject: `Kërkesë e Re: ${escapeHtml(booking.name)} - ${escapeHtml(booking.service)}`,
       html: notificationHtml,
     });
 

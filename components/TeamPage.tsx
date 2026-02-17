@@ -7,6 +7,7 @@ import { Footer } from './Footer';
 import { ChatWidget } from './ChatWidget';
 import { WhatsAppButton } from './WhatsAppButton';
 import { DOCTORS } from '../constants';
+import { sanitizeHtml } from '../utils/sanitize';
 
 // Individual team member card with scroll-based colorization
 interface TeamMemberCardProps {
@@ -80,12 +81,9 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, t }) => {
           <p className="text-studio-gold text-xs uppercase tracking-wider mb-4">
             {t(`team.doctors.${member.id}.role`)}
           </p>
-          <div
-            className="text-studio-gray text-sm leading-relaxed mb-6 [&_strong]:font-semibold"
-            dangerouslySetInnerHTML={{
-              __html: t(`team.doctors.${member.id}.bio`),
-            }}
-          />
+          <div className="text-studio-gray text-sm leading-relaxed mb-6 [&_strong]:font-semibold">
+            {sanitizeHtml(t(`team.doctors.${member.id}.bio`))}
+          </div>
 
           {/* Education */}
           <div className="pt-4 border-t border-gray-100">
@@ -231,12 +229,9 @@ export const TeamPage: React.FC = () => {
                 {t(`team.doctors.${founder.id}.role`)}
               </p>
 
-              <div
-                className="font-serif text-lg sm:text-xl text-studio-black mb-8 leading-relaxed opacity-80 [&_strong]:font-bold [&_strong]:text-studio-black"
-                dangerouslySetInnerHTML={{
-                  __html: t(`team.doctors.${founder.id}.fullBio`),
-                }}
-              />
+              <div className="font-serif text-lg sm:text-xl text-studio-black mb-8 leading-relaxed opacity-80 [&_strong]:font-bold [&_strong]:text-studio-black">
+                {sanitizeHtml(t(`team.doctors.${founder.id}.fullBio`))}
+              </div>
 
               {/* Education & Memberships */}
               <div className="grid md:grid-cols-2 gap-8 pt-8 border-t border-gray-100">

@@ -33,9 +33,9 @@ const postgresPluginAsync: FastifyPluginAsync = async (fastify: FastifyInstance)
   const pool = new Pool({
     connectionString: databaseUrl,
     ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : undefined,
-    max: 10,
+    max: 20,
     idleTimeoutMillis: 30000,
-    connectionTimeoutMillis: 2000,
+    connectionTimeoutMillis: 5000,
   });
 
   // Test connection

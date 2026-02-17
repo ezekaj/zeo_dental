@@ -203,6 +203,11 @@ export async function bookingRoutes(fastify: FastifyInstance) {
     },
     async (request, reply) => {
       try {
+        const clientIp = (request.headers['fly-client-ip']
+          || request.headers['x-forwarded-for']?.toString().split(',')[0]?.trim()
+          || request.ip) as string;
+        fastify.log.info('Admin bookings accessed from IP: %s', clientIp);
+
         const pool = fastify.pg;
         const result = await pool.query(
           'SELECT * FROM bookings ORDER BY created_at DESC LIMIT 100'

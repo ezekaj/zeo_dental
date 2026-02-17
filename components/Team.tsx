@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Reveal } from './ui/Reveal';
 import { DOCTORS } from '../constants';
 import { useTranslation } from '../hooks/useTranslation';
+import { sanitizeHtml } from '../utils/sanitize';
 
 /**
  * Detect if device is touch-only (no hover capability)
@@ -196,12 +197,9 @@ export const Team: React.FC = () => {
                 {founder.name}
               </h2>
 
-              <p
-                className="font-serif text-base sm:text-lg md:text-xl lg:text-2xl text-studio-black mb-6 sm:mb-8 md:mb-10 leading-relaxed opacity-80 max-w-2xl [&_strong]:font-bold [&_strong]:text-studio-black"
-                dangerouslySetInnerHTML={{
-                  __html: t(`team.doctors.${founder.id}.bio`),
-                }}
-              />
+              <p className="font-serif text-base sm:text-lg md:text-xl lg:text-2xl text-studio-black mb-6 sm:mb-8 md:mb-10 leading-relaxed opacity-80 max-w-2xl [&_strong]:font-bold [&_strong]:text-studio-black">
+                {sanitizeHtml(t(`team.doctors.${founder.id}.bio`))}
+              </p>
 
               <div className="flex flex-col md:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-16">
                 <div>
