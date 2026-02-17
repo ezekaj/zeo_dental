@@ -15,7 +15,8 @@
     "clinic": "Die Klinik",
     "treatments": "Behandlungen",
     "philosophy": "Philosophie",
-    "cases": "Klinische Fälle"
+    "cases": "Klinische Fälle",
+    "packages": "Pakete"
   },
   "hero": {
     "welcome": "Willkommen bei Zeo Dental",
@@ -1038,5 +1039,47 @@
     "title": "Kostenloses 3D-CT",
     "description": "Buchen Sie Ihre erste Beratung und erhalten Sie einen kostenlosen 3D-CBCT-Scan. Fortschrittliche Diagnostik fur eine prazise Behandlungsplanung.",
     "cta": "Kostenlosen Scan Sichern"
+  },
+  "packages": {
+    "label": "Zahntourismus",
+    "title": "Ihre Lacheln-Reise",
+    "subtitle": "All-inclusive Zahnpflegepakete fur internationale Patienten. Premium-Behandlung mit dem Komfort eines kompletten Reiseerlebnisses.",
+    "popular": "Am Beliebtesten",
+    "essential": {
+      "name": "Essential",
+      "tagline": "Alles was Sie fur Qualitatsversorgung brauchen",
+      "includes": ["Kostenloses 3D-CT", "Personalisierter Behandlungsplan", "Flughafentransfer", "Behandlungskoordinator", "WhatsApp-Betreuung"]
+    },
+    "premium": {
+      "name": "Premium",
+      "tagline": "Das komplette Zahntourismus-Erlebnis",
+      "includes": ["Alles in Essential", "3 Nachte Hotelunterkunft", "Gefuhrte Stadttour durch Tirana", "Tagliche Kliniktransfers", "Notfall-Hotline", "Nachsorge-Kit"]
+    },
+    "vip": {
+      "name": "VIP",
+      "tagline": "Luxuspflege, aussergewohnliche Ergebnisse",
+      "includes": ["Alles in Premium", "5 Nachte 4-Sterne-Hotel", "Personlicher Guide & Dolmetscher", "Spa-Behandlung", "Gourmet-Dinner", "Erweiterte Nachsorge", "Prioritats-Terminplanung"]
+    },
+    "cta": "Personalisiertes Angebot Anfordern",
+    "processLabel": "Ihre Reise",
+    "howItWorks": "So Funktioniert Es",
+    "step1": { "title": "Rontgenbild Senden", "desc": "Teilen Sie Ihr Panorama-Rontgenbild per WhatsApp oder E-Mail fur eine kostenlose Bewertung." },
+    "step2": { "title": "Plan Erhalten", "desc": "Erhalten Sie einen detaillierten Behandlungsplan innerhalb von 24 Stunden." },
+    "step3": { "title": "Reise Buchen", "desc": "Wir helfen bei der Organisation Ihrer Reise und Unterkunft." },
+    "step4": { "title": "Lacheln Verwandeln", "desc": "Ankommen, behandelt werden und Tirana geniessen." },
+    "travelLabel": "Praktische Infos",
+    "travelTitle": "Reisen Leicht Gemacht",
+    "travel": {
+      "flightsTitle": "Direktfluge",
+      "flights": "Rom, Mailand, Wien, Istanbul, London, Athen. Billigfluglinien verfugbar.",
+      "hotelsTitle": "Unterkunft",
+      "hotels": "Partnerhotels nahe der Klinik, von Boutique bis 4-Sterne.",
+      "transferTitle": "Flughafentransfer",
+      "transfer": "Vom Flughafen Tirana zur Klinik in ~25 Minuten. Wir organisieren alles.",
+      "supportTitle": "24/7 Betreuung",
+      "support": "Dedizierter Koordinator per WhatsApp wahrend Ihres gesamten Aufenthalts."
+    },
+    "ctaTitle": "Bereit Loszulegen?",
+    "ctaDesc": "Senden Sie uns Ihr Rontgenbild oder Fotos und erhalten Sie einen personalisierten Behandlungsplan innerhalb von 24 Stunden. Unverbindlich."
   }
 }

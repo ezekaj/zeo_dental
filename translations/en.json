@@ -15,7 +15,8 @@
     "clinic": "The Clinic",
     "treatments": "Treatments",
     "philosophy": "Philosophy",
-    "cases": "Clinical Cases"
+    "cases": "Clinical Cases",
+    "packages": "Packages"
   },
   "hero": {
     "welcome": "Welcome to Zeo Dental",
@@ -1042,5 +1043,68 @@
     "title": "Free 3D CT Scan",
     "description": "Book your first consultation and receive a complimentary 3D CBCT scan. Advanced diagnostics for precise treatment planning, at no extra cost.",
     "cta": "Claim Your Free Scan"
+  },
+  "packages": {
+    "label": "Dental Tourism",
+    "title": "Your Smile Journey",
+    "subtitle": "All-inclusive dental care packages designed for international patients. Premium treatment with the comfort of a complete travel experience.",
+    "popular": "Most Popular",
+    "essential": {
+      "name": "Essential",
+      "tagline": "Everything you need for quality care",
+      "includes": [
+        "Free 3D CT Scan",
+        "Personalized treatment plan",
+        "Airport transfer",
+        "Treatment coordinator",
+        "WhatsApp follow-up support"
+      ]
+    },
+    "premium": {
+      "name": "Premium",
+      "tagline": "The complete dental tourism experience",
+      "includes": [
+        "Everything in Essential",
+        "3 nights hotel accommodation",
+        "Guided city tour of Tirana",
+        "Daily clinic transfers",
+        "Emergency support line",
+        "Post-treatment care kit"
+      ]
+    },
+    "vip": {
+      "name": "VIP",
+      "tagline": "Luxury care, exceptional results",
+      "includes": [
+        "Everything in Premium",
+        "5 nights 4-star hotel",
+        "Personal guide & translator",
+        "Spa treatment session",
+        "Gourmet dinner experience",
+        "Extended follow-up care",
+        "Priority scheduling"
+      ]
+    },
+    "cta": "Request Your Personalized Quote",
+    "processLabel": "Your Journey",
+    "howItWorks": "How It Works",
+    "step1": { "title": "Send Your X-Ray", "desc": "Share your panoramic X-ray via WhatsApp or email for a free assessment." },
+    "step2": { "title": "Get Your Plan", "desc": "Receive a detailed treatment plan within 24 hours." },
+    "step3": { "title": "Book Your Trip", "desc": "We help arrange your travel and accommodation." },
+    "step4": { "title": "Transform Your Smile", "desc": "Arrive, get treated, and enjoy Tirana." },
+    "travelLabel": "Practical Info",
+    "travelTitle": "Travel Made Easy",
+    "travel": {
+      "flightsTitle": "Direct Flights",
+      "flights": "Rome, Milan, Vienna, Istanbul, London, Athens. Budget airlines available.",
+      "hotelsTitle": "Accommodation",
+      "hotels": "Partner hotels near the clinic, from boutique to 4-star.",
+      "transferTitle": "Airport Transfer",
+      "transfer": "Tirana airport to clinic in ~25 minutes. We arrange everything.",
+      "supportTitle": "24/7 Support",
+      "support": "Dedicated coordinator via WhatsApp throughout your stay."
+    },
+    "ctaTitle": "Ready to Start?",
+    "ctaDesc": "Send us your X-ray or photos and receive a personalized treatment plan within 24 hours. No commitment required."
   }
 }

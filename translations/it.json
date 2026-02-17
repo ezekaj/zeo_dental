@@ -15,7 +15,8 @@
     "clinic": "La Clinica",
     "treatments": "Trattamenti",
     "philosophy": "Filosofia",
-    "cases": "Casi Clinici"
+    "cases": "Casi Clinici",
+    "packages": "Pacchetti"
   },
   "hero": {
     "welcome": "Benvenuti a Zeo Dental",
@@ -1041,5 +1042,47 @@
     "title": "TAC 3D Gratuita",
     "description": "Prenota la tua prima visita e ricevi una TAC 3D CBCT gratuita. Diagnostica avanzata per una pianificazione precisa del trattamento.",
     "cta": "Richiedi la TAC Gratuita"
+  },
+  "packages": {
+    "label": "Turismo Dentale",
+    "title": "Il Viaggio del Tuo Sorriso",
+    "subtitle": "Pacchetti di cure dentali all-inclusive pensati per pazienti internazionali. Trattamenti premium con il comfort di un'esperienza di viaggio completa.",
+    "popular": "Piu Popolare",
+    "essential": {
+      "name": "Essenziale",
+      "tagline": "Tutto il necessario per cure di qualita",
+      "includes": ["TAC 3D Gratuita", "Piano di trattamento personalizzato", "Transfer aeroportuale", "Coordinatore del trattamento", "Supporto WhatsApp"]
+    },
+    "premium": {
+      "name": "Premium",
+      "tagline": "L'esperienza completa del turismo dentale",
+      "includes": ["Tutto in Essenziale", "3 notti in hotel", "Tour guidato di Tirana", "Transfer giornalieri alla clinica", "Linea di emergenza", "Kit di cura post-trattamento"]
+    },
+    "vip": {
+      "name": "VIP",
+      "tagline": "Cure di lusso, risultati eccezionali",
+      "includes": ["Tutto in Premium", "5 notti in hotel 4 stelle", "Guida personale e traduttore", "Sessione spa", "Cena gourmet", "Assistenza post-cura estesa", "Programmazione prioritaria"]
+    },
+    "cta": "Richiedi il Tuo Preventivo Personalizzato",
+    "processLabel": "Il Tuo Percorso",
+    "howItWorks": "Come Funziona",
+    "step1": { "title": "Invia la Tua Radiografia", "desc": "Condividi la tua radiografia panoramica via WhatsApp o email per una valutazione gratuita." },
+    "step2": { "title": "Ricevi il Piano", "desc": "Ricevi un piano di trattamento dettagliato entro 24 ore." },
+    "step3": { "title": "Prenota il Viaggio", "desc": "Ti aiutiamo a organizzare viaggio e alloggio." },
+    "step4": { "title": "Trasforma il Tuo Sorriso", "desc": "Arrivi, ti curi e ti godi Tirana." },
+    "travelLabel": "Info Pratiche",
+    "travelTitle": "Viaggiare e Facile",
+    "travel": {
+      "flightsTitle": "Voli Diretti",
+      "flights": "Roma, Milano, Vienna, Istanbul, Londra, Atene. Compagnie low-cost disponibili.",
+      "hotelsTitle": "Alloggio",
+      "hotels": "Hotel partner vicino alla clinica, dal boutique al 4 stelle.",
+      "transferTitle": "Transfer Aeroportuale",
+      "transfer": "Dall'aeroporto di Tirana alla clinica in ~25 minuti. Organizziamo tutto noi.",
+      "supportTitle": "Supporto 24/7",
+      "support": "Coordinatore dedicato via WhatsApp durante tutto il soggiorno."
+    },
+    "ctaTitle": "Pronto a Iniziare?",
+    "ctaDesc": "Inviaci la tua radiografia o foto e ricevi un piano di trattamento personalizzato entro 24 ore. Senza impegno."
   }
 }

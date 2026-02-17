@@ -15,7 +15,8 @@
     "clinic": "Klinik",
     "treatments": "Tedaviler",
     "philosophy": "Felsefemiz",
-    "cases": "Klinik Vakalar"
+    "cases": "Klinik Vakalar",
+    "packages": "Paketler"
   },
   "hero": {
     "welcome": "Zeo Dental'e Hoş Geldiniz",
@@ -680,5 +681,47 @@
     "title": "Ucretsiz 3D BT Taramasi",
     "description": "Ilk konsultasyonunuzu rezerve edin ve ucretsiz 3D CBCT taramasi alin. Kesin tedavi planlamasi icin ileri tani teknolojisi.",
     "cta": "Ucretsiz Taramanizi Alin"
+  },
+  "packages": {
+    "label": "Dis Turizmi",
+    "title": "Gulumseme Yolculugunuz",
+    "subtitle": "Uluslararasi hastalar icin tasarlanmis her sey dahil dis bakim paketleri. Eksiksiz bir seyahat deneyiminin konforuyla premium tedavi.",
+    "popular": "En Populer",
+    "essential": {
+      "name": "Temel",
+      "tagline": "Kaliteli bakim icin ihtiyaciniz olan her sey",
+      "includes": ["Ucretsiz 3D BT Taramasi", "Kisisellestirilmis tedavi plani", "Havalimani transferi", "Tedavi koordinatoru", "WhatsApp destek"]
+    },
+    "premium": {
+      "name": "Premium",
+      "tagline": "Eksiksiz dis turizmi deneyimi",
+      "includes": ["Temel'deki her sey", "3 gece otel konaklamasi", "Tirana sehir turu", "Gunluk klinik transferleri", "Acil destek hatti", "Tedavi sonrasi bakim kiti"]
+    },
+    "vip": {
+      "name": "VIP",
+      "tagline": "Luks bakim, olaganustu sonuclar",
+      "includes": ["Premium'daki her sey", "5 gece 4 yildizli otel", "Kisisel rehber ve tercuman", "Spa seansi", "Gurme aksam yemegi", "Uzatilmis tedavi sonrasi bakim", "Oncelikli randevu"]
+    },
+    "cta": "Kisisel Teklifinizi Isteyin",
+    "processLabel": "Yolculugunuz",
+    "howItWorks": "Nasil Calisir",
+    "step1": { "title": "Rontgeninizi Gonderin", "desc": "Ucretsiz degerlendirme icin panoramik rontgeninizi WhatsApp veya e-posta ile paylasin." },
+    "step2": { "title": "Planinizi Alin", "desc": "24 saat icinde detayli tedavi plani alin." },
+    "step3": { "title": "Seyahatinizi Rezerve Edin", "desc": "Seyahat ve konaklamanizi organize etmenize yardimci oluyoruz." },
+    "step4": { "title": "Gulumsemenizi Donusturun", "desc": "Gelin, tedavi olun ve Tirana'nin tadini cikarin." },
+    "travelLabel": "Pratik Bilgiler",
+    "travelTitle": "Seyahat Kolaylastirildi",
+    "travel": {
+      "flightsTitle": "Direkt Ucuslar",
+      "flights": "Roma, Milano, Viyana, Istanbul, Londra, Atina. Butce havayollari mevcut.",
+      "hotelsTitle": "Konaklama",
+      "hotels": "Klinige yakin partner oteller, butikten 4 yildiza.",
+      "transferTitle": "Havalimani Transferi",
+      "transfer": "Tirana havalimanindan klinige ~25 dakika. Her seyi biz organize ediyoruz.",
+      "supportTitle": "7/24 Destek",
+      "support": "Tum konaklamaniz boyunca WhatsApp uzerinden ozel koordinator."
+    },
+    "ctaTitle": "Baslamaya Hazir Misiniz?",
+    "ctaDesc": "Rontgeninizi veya fotograflarinizi gonderin, 24 saat icinde kisisellestirilmis tedavi plani alin. Baglayici degil."
   }
 }

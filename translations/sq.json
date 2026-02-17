@@ -15,7 +15,8 @@
     "clinic": "Klinika",
     "treatments": "Trajtimet",
     "philosophy": "Filozofia",
-    "cases": "Raste Klinike"
+    "cases": "Raste Klinike",
+    "packages": "Paketat"
   },
   "hero": {
     "welcome": "Mirësevini në Zeo Dental",
@@ -1042,5 +1043,47 @@
     "title": "Skanim 3D CT Falas",
     "description": "Rezervoni konsulten tuaj te pare dhe merrni nje skanim 3D CBCT falas. Diagnostikim i avancuar per planifikim te sakte te trajtimit.",
     "cta": "Merrni Skanimin Falas"
+  },
+  "packages": {
+    "label": "Turizmi Dentar",
+    "title": "Udhetimi i Buzequeshjes",
+    "subtitle": "Paketa te plota kujdesi dentar te dizenjuara per pacientet nderkombetar. Trajtim premium me komoditetin e nje eksperience te plote udhetimi.",
+    "popular": "Me i Popullarizuari",
+    "essential": {
+      "name": "Esencial",
+      "tagline": "Gjithcka qe ju duhet per kujdes cilesor",
+      "includes": ["Skanim 3D CT Falas", "Plan trajtimi i personalizuar", "Transfer nga aeroporti", "Koordinator trajtimi", "Mbeshtetje WhatsApp"]
+    },
+    "premium": {
+      "name": "Premium",
+      "tagline": "Eksperienca e plote e turizmit dentar",
+      "includes": ["Gjithcka ne Esencial", "3 net akomodim ne hotel", "Tur i guiduar ne Tirane", "Transferta ditore ne klinike", "Linje emergjence", "Kit kujdesi pas trajtimit"]
+    },
+    "vip": {
+      "name": "VIP",
+      "tagline": "Kujdes luksoz, rezultate te jashtezakonshme",
+      "includes": ["Gjithcka ne Premium", "5 net hotel 4-yjesh", "Guid personal & perkthyes", "Seance spa", "Darke gourmet", "Kujdes i zgjeruar pas trajtimit", "Programim prioritar"]
+    },
+    "cta": "Kerkoni Oferten Tuaj te Personalizuar",
+    "processLabel": "Udhetimi Juaj",
+    "howItWorks": "Si Funksionon",
+    "step1": { "title": "Dergoni Rontgenin", "desc": "Ndani rontgenin tuaj panoramik nepermjet WhatsApp ose email per nje vleresim falas." },
+    "step2": { "title": "Merrni Planin", "desc": "Merrni nje plan trajtimi te detajuar brenda 24 oreve." },
+    "step3": { "title": "Rezervoni Udhetimin", "desc": "Ne ndihmojme te organizojme udhetimin dhe akomodimin tuaj." },
+    "step4": { "title": "Transformoni Buzequeshjen", "desc": "Arrini, trajtohuni, dhe shijoni Tiranen." },
+    "travelLabel": "Info Praktike",
+    "travelTitle": "Udhetimi i Lehte",
+    "travel": {
+      "flightsTitle": "Fluturime Direkte",
+      "flights": "Rome, Milan, Viene, Stamboll, Londer, Athine. Linja ajrore buxhetore te disponueshme.",
+      "hotelsTitle": "Akomodimi",
+      "hotels": "Hotele partnere prane klinikes, nga boutique ne 4-yjesh.",
+      "transferTitle": "Transfer Aeroporti",
+      "transfer": "Nga aeroporti i Tiranes ne klinike ne ~25 minuta. Ne organizojme gjithcka.",
+      "supportTitle": "Mbeshtetje 24/7",
+      "support": "Koordinator i dedikuar nepermjet WhatsApp gjate gjithe qendrimit tuaj."
+    },
+    "ctaTitle": "Gati per te Filluar?",
+    "ctaDesc": "Dergoni rontgenin ose fotot tuaja dhe merrni nje plan trajtimi te personalizuar brenda 24 oreve. Nuk kerkohet angazhim."
   }
 }
