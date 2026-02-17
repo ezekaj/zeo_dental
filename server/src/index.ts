@@ -312,11 +312,6 @@ async function start() {
       return { status: 'ok', timestamp: new Date().toISOString() };
     });
 
-    // Dynamic sitemap (registered BEFORE static files so it takes priority)
-    fastify.get('/sitemap.xml', async (_request, reply) => {
-      return reply.type('application/xml').send(sitemapXml);
-    });
-
     // Language detection API endpoint (kept for backwards compatibility)
     fastify.get('/api/detect-language', async (request) => {
       const clientIp = getClientIp(request);
@@ -324,10 +319,16 @@ async function start() {
       return { language: lang };
     });
 
-    // Root "/" redirect hook - runs before static file serving
-    // Intercepts bare "/" to redirect to /:lang/ based on cookie or IP detection
+    // onRequest hook - intercepts routes before @fastify/static to avoid conflicts
+    // Handles: root "/" redirect, dynamic /sitemap.xml
     fastify.addHook('onRequest', async (request, reply) => {
       const url = request.url.split('?')[0];
+
+      // Dynamic sitemap
+      if (url === '/sitemap.xml') {
+        return reply.type('application/xml').send(sitemapXml);
+      }
+
       if (url !== '/') return;
 
       // Check cookie for saved language preference
