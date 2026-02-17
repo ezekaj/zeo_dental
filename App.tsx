@@ -19,6 +19,7 @@ import { TreatmentsOverview } from './components/TreatmentsOverview';
 import { PhilosophyPage } from './components/PhilosophyPage';
 import { TeamPage } from './components/TeamPage';
 import { ClinicalCasesPage } from './components/ClinicalCasesPage';
+import { CookieConsent } from './components/CookieConsent';
 
 // Treatment page configurations with hero images (matching TreatmentsOverview)
 const treatmentConfigs: Record<string, { key: string; heroImage: string }> = {
@@ -122,7 +123,10 @@ const App: React.FC = () => {
 
   return (
     <LanguageProvider>
-      <ErrorBoundary>{renderRoute()}</ErrorBoundary>
+      <ErrorBoundary>
+        {renderRoute()}
+        <CookieConsent />
+      </ErrorBoundary>
     </LanguageProvider>
   );
 };

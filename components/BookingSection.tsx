@@ -448,6 +448,14 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ onNavigate, init
                   <span className="text-sm text-primary-700">{t('booking.consentHealth')}</span>
                 </label>
               )}
+              <label className="flex items-start gap-3 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="consentWhatsApp"
+                  className="mt-1 w-4 h-4 rounded border-primary-300 text-primary-600 focus:ring-primary-500"
+                />
+                <span className="text-sm text-primary-700">{t('booking.consentWhatsApp')}</span>
+              </label>
             </div>
 
             <div className="pt-4">

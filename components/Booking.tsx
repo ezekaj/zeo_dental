@@ -285,7 +285,18 @@ export const Booking: React.FC = () => {
               )}
             </div>
 
-            <div className="flex flex-col md:flex-row justify-between items-center mt-20 gap-8">
+            <div className="mt-12 space-y-3">
+              <label className="flex items-start gap-3 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="consentWhatsApp"
+                  className="mt-1 w-4 h-4 rounded border-white/30 bg-transparent text-studio-gold focus:ring-studio-gold"
+                />
+                <span className="text-sm text-white/60">{t('booking.consentWhatsApp')}</span>
+              </label>
+            </div>
+
+            <div className="flex flex-col md:flex-row justify-between items-center mt-8 gap-8">
               <p className="text-xs text-white/40 max-w-xs">{t('booking.privacyNotice')}</p>
               <Button
                 type="submit"
