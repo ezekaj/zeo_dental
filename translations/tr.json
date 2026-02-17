@@ -5,43 +5,43 @@
     "experience": "Deneyim",
     "gallery": "Galeri",
     "team": "Ekip",
-    "testimonials": "Değerlendirmeler",
+    "testimonials": "Referanslar",
     "contact": "İletişim",
-    "booking": "Şimdi Randevu Al",
+    "booking": "Randevu Al",
     "menu": "Menü",
     "close": "Kapat",
     "location": "Tiran, Arnavutluk",
     "book": "Randevu",
     "clinic": "Klinik",
     "treatments": "Tedaviler",
-    "philosophy": "Felsefe",
+    "philosophy": "Felsefemiz",
     "cases": "Klinik Vakalar"
   },
   "hero": {
     "welcome": "Zeo Dental'e Hoş Geldiniz",
     "redefining": "Yeniden Tanımlıyoruz",
-    "artOfSmiles": "Gülümseme Sanatı",
+    "artOfSmiles": "Gülüşün Sanatı",
     "artOf": "Sanatı",
     "dentistry": "DİŞ HEKİMLİĞİ",
     "subtitle": "Mükemmellik, Hassasiyet, Estetik",
     "explore": "Keşfet",
-    "bookConsultation": "Danışma Randevusu Al",
+    "bookConsultation": "Konsültasyon Randevusu",
     "exploreServices": "Hizmetleri Keşfet",
     "yearsExp": "Yıl Den.",
-    "smiles": "Gülümseme"
+    "smiles": "Gülüş"
   },
   "services": {
     "label": "Uzmanlığımız",
     "title": "Kapsamlı Bakım",
-    "subtitle": "Benzersiz ihtiyaçlarınıza göre uyarlanmış kapsamlı diş tedavileri sunmak için sanatı bilimle birleştiriyoruz.",
-    "learnMore": "Daha Fazla Bilgi",
+    "subtitle": "Benzersiz ihtiyaçlarınıza göre uyarlanmış eksiksiz bir diş tedavisi yelpazesi sunmak için sanatı bilimle birleştiriyoruz.",
+    "learnMore": "Daha Fazla",
     "backToServices": "Hizmetlere Dön",
     "overview": "Genel Bakış",
     "aboutTreatment": "Bu Tedavi Hakkında",
-    "keyBenefits": "Temel Faydalar",
+    "keyBenefits": "Temel Avantajlar",
     "theProcess": "Süreç",
     "readyToStart": "Başlamaya hazır mısınız?",
-    "bookConsultation": "{service} tedavisinin sizin için uygun olup olmadığını görüşmek üzere uzmanlarımızla bir danışma randevusu alın.",
+    "bookConsultation": "{service} tedavisinin sizin için uygun olup olmadığını görüşmek üzere uzmanlarımızla bir konsültasyon randevusu alın.",
     "durationVaries": "Süre vakaya göre değişir",
     "warrantyProcedures": "Tüm işlemlerde garanti",
     "bookAppointment": "Randevu Al",
@@ -49,106 +49,76 @@
     "returnHome": "Ana Sayfaya Dön",
     "excellence": {
       "title": "Mükemmellik",
-      "description": "Her tedavide taviz vermeyen standartlar, ileri teknolojiyi zanaatkâr hassasiyetiyle birleştiren yaklaşım"
+      "description": "Her tedavide taviz vermeyen standartlar, ileri teknolojiyi zanaatkar hassasiyetiyle birleştiriyoruz"
     },
     "personalization": {
       "title": "Kişiselleştirme",
-      "description": "Benzersiz diş profiliniz ve estetik vizyonunuz etrafında tasarlanmış özel tedavi planları"
+      "description": "Benzersiz diş profiliniz ve estetik vizyonunuz etrafında tasarlanan özel tedavi planları"
     },
     "comfort": {
       "title": "Konfor",
-      "description": "Her detayın huzurunuz ve rahatlığınız için düzenlendiği özenli bir ortam"
+      "description": "Her detayın huzurunuz ve rahatınız için özenle düzenlendiği sofistike bir ortam"
     },
     "privacy": {
       "title": "Gizlilik",
-      "description": "Kişisel alanınıza saygı gösteren özel bir ortamda gizli ve dikkatli bakım"
+      "description": "Kişisel alanınıza saygı duyan özel bir ortamda gizli ve dikkatli bakım"
     },
     "items": {
       "cosmetic": {
         "title": "Kozmetik Diş Hekimliği",
-        "description": "Yüz yapınıza uygun veneerler, beyazlatma ve estetik bonding ile gülümsemenizi dönüştürün.",
-        "longDescription": "Kozmetik diş hekimliği hizmetlerimiz, optimal ağız sağlığını korurken gülümsemenizin doğal güzelliğini artırmak için tasarlanmıştır. Gülümseme değişiminin sadece dişleri değiştirmekle ilgili olmadığına, gülümsemenizi yüz hatlarınız ve kişiliğinizle uyumlu hale getirmekle ilgili olduğuna inanıyoruz. Dijital gülümseme tasarım teknolojisi kullanarak, herhangi bir tedavi başlamadan önce yeni gülümsemenizi ön izlemenize olanak tanıyoruz.",
+        "description": "Yüz yapınıza göre uyarlanmış veneer, beyazlatma ve estetik bonding ile gülüşünüzü dönüştürün.",
+        "longDescription": "Kozmetik diş hekimliği hizmetlerimiz, optimum ağız sağlığını korurken gülüşünüzün doğal güzelliğini artırmak için tasarlanmıştır. Gülüş estetiğinin sadece dişleri değiştirmek olmadığına inanıyoruz; gülüşünüzü yüz hatlarınız ve kişiliğinizle uyumlu hale getirmektir. Dijital gülüş tasarım teknolojisi kullanarak, herhangi bir tedavi başlamadan önce yeni gülüşünüzü önizlemenize olanak tanıyoruz.",
         "benefits": [
-          "Doğal görünüm için özel tasarlanmış porselen veneerler",
+          "Doğal görünüm için özel tasarım porselen veneerler",
           "Anında sonuç için profesyonel beyazlatma",
           "Minimal invaziv bonding teknikleri",
-          "Dijital Gülümseme Tasarımı ön izleme"
+          "Dijital Gülüş Tasarımı önizlemesi"
         ],
         "process": [
-          {
-            "title": "Danışma",
-            "description": "Hedeflerinizi görüşüyor ve yüz yapınızı analiz ediyoruz."
-          },
-          {
-            "title": "Tasarım",
-            "description": "Onayınız için yeni gülümsemenizin dijital simülasyonu."
-          },
-          {
-            "title": "Hazırlık",
-            "description": "Dişlerin minimal hazırlanması ve geçici yapıların yerleştirilmesi."
-          },
-          {
-            "title": "Dönüşüm",
-            "description": "Final seramiklerin yapıştırılması ve son ayarlamalar."
-          }
+          { "title": "Konsültasyon", "description": "Hedeflerinizi tartışıyor ve yüz yapınızı analiz ediyoruz." },
+          { "title": "Tasarım", "description": "Onayınız için yeni gülüşünüzün dijital simülasyonu." },
+          { "title": "Hazırlık", "description": "Dişlerin minimal hazırlanması ve geçici protezlerin yerleştirilmesi." },
+          { "title": "Dönüşüm", "description": "Son seramiklerin yapıştırılması ve son ayarlamalar." }
         ]
       },
       "implants": {
         "title": "Diş İmplantları",
-        "description": "En son teknoloji titanyum ve zirkonyum implant çözümlerimizle fonksiyon ve güveninizi yeniden kazanın.",
-        "longDescription": "Diş implantları, doğal dişler gibi görünen, hissettiren ve işlev gören kalıcı bir çözüm sunarak diş değişiminde altın standarttır. Zeo'da, benzersiz hassasiyet ve konfor için 3D rehberli cerrahi kullanıyoruz. İster tek bir diş değişimine ihtiyacınız olsun ister tam çene restorasyonuna, uzmanlarımız hem ısırmanızı hem de güveninizi geri kazandıran bir sonuç sağlar.",
+        "description": "Son teknoloji titanyum ve zirkonyum implant çözümlerimizle fonksiyon ve özgüveninizi geri kazanın.",
+        "longDescription": "Diş implantları, doğal dişler gibi görünen, hissedilen ve işlev gören kalıcı bir çözüm sunarak diş değişimi için altın standarttır. Zeo'da, eşsiz hassasiyet ve konfor için 3D rehberli cerrahi kullanıyoruz. İster tek bir diş değişimi ihtiyacınız olsun ister tam çene restorasyonu gerektirin, uzmanlarımız hem ısırmanızı hem de özgüveninizi geri kazandıran bir sonuç sağlar.",
         "benefits": [
           "Eksik dişler için kalıcı çözüm",
           "Çene kemiği yoğunluğunu korur",
-          "Çevredeki sağlıklı dişlere etkisi yoktur",
+          "Çevredeki sağlıklı dişlere zarar vermez",
           "Biyouyumlu malzemeler (Titanyum veya Zirkonyum)"
         ],
         "process": [
-          {
-            "title": "3D Tarama",
-            "description": "Kemik yapısı ve sinir yollarını haritalamak için CBCT taraması."
-          },
-          {
-            "title": "Yerleştirme",
-            "description": "İmplant direğinin hassas cerrahi yerleştirilmesi."
-          },
-          {
-            "title": "İyileşme",
-            "description": "Kemiğin implantle kaynaştığı osseointegrasyon dönemi."
-          },
-          {
-            "title": "Restorasyon",
-            "description": "Özel yapım kron veya köprünün takılması."
-          }
+          { "title": "3D Tarama", "description": "Kemik yapısı ve sinir yollarını haritalamak için CBCT taraması." },
+          { "title": "Yerleştirme", "description": "İmplant postunun hassas cerrahi yerleştirilmesi." },
+          { "title": "İyileşme", "description": "Kemiğin implantle kaynaştığı osseointegrasyon süreci." },
+          { "title": "Restorasyon", "description": "Özel yapım kuron veya köprünün takılması." }
         ]
       },
       "ortho": {
         "title": "Ortodonti",
         "description": "Her yaş için görünmez plaklar ve seramik braketler dahil modern hizalama çözümleri.",
-        "longDescription": "Dişlerinizi düzeltmek hiç bu kadar gizli veya rahat olmamıştı. Şeffaf plaklardan seramik braketlere kadar kapsamlı ortodontik çözümler sunuyoruz. Odağımız sadece düz dişler değil, uzun vadeli eklem sağlığını destekleyen fonksiyonel bir kapanış oluşturmaktır. Her yaştan hastayı tedavi ederek her zaman istediğiniz gülümsemeye ulaşmanıza yardımcı oluyoruz.",
+        "longDescription": "Dişlerinizi düzeltmek hiç bu kadar gizli ve rahat olmamıştı. Şeffaf plaklardan seramik braketlere kadar kapsamlı ortodontik çözümler sunuyoruz. Odak noktamız sadece düz dişler değil, uzun vadeli eklem sağlığını destekleyen fonksiyonel bir kapanış oluşturmaktır. Her yaştan hastayı tedavi ediyor, her zaman istediğiniz gülüşe kavuşmanıza yardımcı oluyoruz.",
         "benefits": [
           "Gizli tedavi için şeffaf plaklar",
           "Hızlandırılmış ortodonti seçenekleri",
-          "Kapanış sorunlarının düzeltilmesi (TMJ)",
-          "Daha az klinik ziyareti için dijital izleme"
+          "Kapanış sorunlarının düzeltilmesi (TME)",
+          "Daha az klinik ziyareti için dijital takip"
         ],
         "process": [
           { "title": "Değerlendirme", "description": "Dijital tarama ve kapanış analizi." },
           { "title": "Planlama", "description": "Özel tedavi planı ve zaman çizelgesi oluşturma." },
-          {
-            "title": "Aktif Tedavi",
-            "description": "Düzenli kontrollerle plak veya braket takma."
-          },
-          {
-            "title": "Pekiştirme",
-            "description": "Yeni gülümsemenizi sonsuza dek korumak için özel pekiştirme plakaları."
-          }
+          { "title": "Aktif Tedavi", "description": "Düzenli kontrollerle plak veya braket kullanımı." },
+          { "title": "Pekiştirme", "description": "Yeni gülüşünüzü sonsuza kadar korumak için özel pekiştirme plakaları." }
         ]
       },
       "general": {
         "title": "Genel Bakım",
-        "description": "Uzun ömürlü ağız sağlığı için kapsamlı koruyucu bakım, hijyen ve bakım hizmetleri.",
-        "longDescription": "Koruyucu bakım, Zeo felsefesinin temelidir. Basit temizliğin ötesine geçerek ağız sağlığı ekosisteminizin kapsamlı bir analizini sağlıyoruz. Hijyen randevularımız ağız kanseri taramaları, diş eti sağlığı değerlendirmeleri ve dişlerinizi ömür boyu sağlıklı tutmak için kişiselleştirilmiş öneriler içerir. Rutin ziyaretleri rahatlatıcı, spa benzeri bir deneyime dönüştürüyoruz.",
+        "description": "Uzun ömürlü ağız sağlığı için kapsamlı koruyucu bakım, hijyen ve idame tedavisi.",
+        "longDescription": "Koruyucu bakım, Zeo felsefesinin temelidir. Temel temizliğin ötesine geçerek ağız sağlığı ekosisteninizin kapsamlı bir analizini sunuyoruz. Hijyen randevularımız ağız kanseri taraması, diş eti sağlığı değerlendirmeleri ve dişlerinizi ömür boyu sağlıklı tutmanız için kişiselleştirilmiş tavsiyeler içerir. Rutin ziyaretleri rahatlatıcı, spa benzeri bir deneyime dönüştürüyoruz.",
         "benefits": [
           "Gelişmiş airflow temizleme teknolojisi",
           "Dijital çürük tespiti",
@@ -156,65 +126,44 @@
           "Kişiselleştirilmiş hijyen planları"
         ],
         "process": [
-          {
-            "title": "Muayene",
-            "description": "Düşük radyasyonlu dijital röntgenlerle kapsamlı kontrol."
-          },
-          {
-            "title": "Hijyen",
-            "description": "Uzman hijyenistler tarafından kapsamlı temizlik ve cilalama."
-          },
-          {
-            "title": "Eğitim",
-            "description": "Ağız biomunuza özel ipuçları ve araçlar."
-          },
-          {
-            "title": "Plan",
-            "description": "Risk değerlendirmesine dayalı uzun vadeli bakım programı."
-          }
+          { "title": "Muayene", "description": "Düşük radyasyonlu dijital röntgenlerle kapsamlı kontrol." },
+          { "title": "Hijyen", "description": "Uzman hijyenistler tarafından kapsamlı temizlik ve cilalama." },
+          { "title": "Eğitim", "description": "Ağız floranıza özel ipuçları ve araçlar." },
+          { "title": "Plan", "description": "Risk değerlendirmesine dayalı uzun vadeli bakım programı." }
         ]
       },
       "surgery": {
         "title": "Ağız Cerrahisi",
-        "description": "Ağrısız bir ortamda çekimler ve diş eti şekillendirme dahil uzman cerrahi işlemler.",
-        "longDescription": "Cerrahi gerektiğinde önceliğimiz konforunuz ve güvenliğinizdir. Süitimiz, tamamen kaygısız bir deneyim sağlamak için sedasyon diş hekimliği için donatılmıştır. Yirmi yaş dişi çekiminden karmaşık diş eti greftlemesine kadar, sertifikalı cerrahlarımız iyileşme süresini en aza indirmek ve sonuçları en üst düzeye çıkarmak için mikrocerrahi teknikler kullanır.",
+        "description": "Ağrısız bir ortamda çekim ve diş eti şekillendirme dahil uzman cerrahi işlemler.",
+        "longDescription": "Cerrahi gerektiğinde, önceliğimiz konforunuz ve güvenliğinizdir. Süitimiz, tamamen kaygısız bir deneyim sağlamak için sedasyon diş hekimliği için donatılmıştır. Yirmilik diş çekiminden karmaşık diş eti greftlemeye kadar, sertifikalı cerrahlarımız iyileşme süresini en aza indirmek ve sonuçları en üst düzeye çıkarmak için mikrocerrahi teknikler kullanır.",
         "benefits": [
           "Kaygısız tedavi için sedasyon seçenekleri",
           "Daha hızlı iyileşme için mikrocerrahi teknikler",
-          "Yirmi yaş dişi yönetimi",
+          "Yirmilik diş yönetimi",
           "Diş eti greftleme ve şekillendirme"
         ],
         "process": [
-          {
-            "title": "Değerlendirme",
-            "description": "Tıbbi geçmişin incelenmesi ve cerrahi planlama."
-          },
+          { "title": "Değerlendirme", "description": "Tıbbi geçmişin gözden geçirilmesi ve cerrahi planlaması." },
           { "title": "Konfor", "description": "Lokal anestezi veya sedasyon uygulaması." },
           { "title": "İşlem", "description": "Minimal invaziv cerrahi uygulama." },
-          { "title": "İyileşme", "description": "Ayrıntılı bakım talimatları ve takip kontrolü." }
+          { "title": "İyileşme", "description": "Detaylı bakım talimatları ve takip kontrolü." }
         ]
       },
       "pediatric": {
         "title": "Çocuk Diş Hekimliği",
-        "description": "Çocukların ve gençlerin özel ihtiyaçlarına yönelik nazik ve ilgi çekici bakım.",
-        "longDescription": "Çocuklukta olumlu diş hekimliği deneyimlerinin ömür boyu sağlığın temelini oluşturduğuna inanıyoruz. Çocuk bölümümüz samimi ve korkutucu olmayan bir ortam olarak tasarlanmıştır. Çocukların dilinden anlıyor, işlemleri eğlenceli ve anlaşılır şekilde açıklıyoruz. Odağımız önleme, fissür örtücüler ve ortodontik ihtiyaçlar ortaya çıkması durumunda erken müdahale için büyüme kalıplarını izlemektir.",
+        "description": "Çocukların ve gençlerin özel ihtiyaçları için tasarlanmış nazik, ilgi çekici bakım.",
+        "longDescription": "Çocuklukta yaşanan olumlu diş deneyimlerinin ömür boyu sürecek bir sağlığın temelini oluşturduğuna inanıyoruz. Çocuk bölümümüz sıcak ve korkutucu olmayan bir ortam olarak tasarlanmıştır. İşlemleri eğlenceli, anlaşılır şekillerde açıklayarak çocuklarla iyi iletişim kuruyoruz. Odak noktamız önleme, örtücüler ve ortodontik ihtiyaçlar ortaya çıkarsa erken müdahale için büyüme kalıplarının takibidir.",
         "benefits": [
           "Çocuk dostu ortam ve terminoloji",
-          "Koruyucu fissür örtücüler ve florür",
+          "Koruyucu örtücüler ve flor uygulaması",
           "Büyüme ve gelişim takibi",
           "Acil travma bakımı"
         ],
         "process": [
-          {
-            "title": "Tanışma",
-            "description": "Ekiple ve ortamla rahatça tanışma."
-          },
-          {
-            "title": "Diş Sayma",
-            "description": "Çürük ve gelişim kontrolü için nazik muayene."
-          },
-          { "title": "Temizlik", "description": "Nazik cilalama ve hijyen eğitimi." },
-          { "title": "Ödül", "description": "Güven oluşturmak için pozitif pekiştirme." }
+          { "title": "Tanışma", "description": "Ekip ve ortamla rahat bir şekilde tanışma." },
+          { "title": "Diş Sayma", "description": "Çürük ve gelişim kontrolü için nazik muayene." },
+          { "title": "Temizlik", "description": "Yumuşak cilalama ve hijyen eğitimi." },
+          { "title": "Ödül", "description": "Özgüven oluşturmak için pozitif pekiştirme." }
         ]
       }
     }
@@ -223,119 +172,111 @@
     "label": "Zeo Standardı",
     "title": "Farklı Yapılan",
     "titleHighlight": "Diş Hekimliği.",
-    "subtitle": "Diş hekimine gitmenin dört gözle beklediğiniz bir şey olması gerektiğine inanıyoruz. Lüks olanakları en son tıbbi teknolojiyle birleştirerek, duyularınızı rahatlatan ve olağanüstü sonuçlar sunan bir ortam oluşturduk.",
+    "subtitle": "Diş hekimini ziyaret etmenin dört gözle beklenen bir şey olması gerektiğine inanıyoruz. Lüks olanakları son teknoloji tıbbi teknolojiyle birleştirerek, duyuları rahatlatan ve olağanüstü sonuçlar sunan bir ortam yarattık.",
     "feature1Title": "5 Yıldızlı Deneyim",
-    "feature1Desc": "Concierge hizmeti, gürültü önleyici kulaklıklar ve huzurlu bir atmosfer.",
+    "feature1Desc": "Concierge hizmeti, gürültü önleyici kulaklıklar ve sakinleştirici bir atmosfer.",
     "feature2Title": "İleri Teknoloji",
-    "feature2Desc": "Hassas bakım için 3D tarama, dijital gülümseme tasarımı ve lazer diş hekimliği.",
+    "feature2Desc": "Hassas bakım için 3D tarama, dijital gülüş tasarımı ve lazer diş hekimliği.",
     "feature3Title": "Zamanınıza Saygı",
-    "feature3Desc": "Sıfır bekleme süresi. Randevunuz tam planlandığı saatte başlar.",
-    "testimonialQuote": "\"Şimdiye kadar gittiğim en teknolojik olarak gelişmiş klinik.\"",
+    "feature3Desc": "Sıfır bekleme süresi. Randevunuz planlandığı saatte başlar.",
+    "testimonialQuote": "\"Şimdiye kadar ziyaret ettiğim en ileri teknolojiye sahip klinik.\"",
     "testimonialSource": "TechDaily Review"
   },
   "gallery": {
     "label": "Zeo'nun İçinden",
     "title": "Konfor için tasarlanmış bir klinik",
-    "subtitle": "Spa ilhamlı süitlerimize, dijital laboratuvarımıza ve sizi rahat tutmak için tasarlanmış özel salonlarımıza bir göz atın.",
+    "subtitle": "Sizi rahat hissettirecek şekilde tasarlanmış spa esintili süitlerimize, dijital laboratuvarımıza ve özel salonlarımıza göz atın.",
     "cta": "Özel bir tur planlayın"
   },
   "team": {
     "label": "Uzmanlarımız",
-    "title": "Doktorlarla Tanışın",
+    "title": "Doktorlarımızla Tanışın",
     "viewProfile": "Profili Görüntüle",
     "readFullBio": "Tam Biyografiyi Oku",
     "biography": "Biyografi",
     "education": "Eğitim",
     "memberships": "Üyelikler",
-    "quote": "\"Kapımızdan giren her hastaya en yüksek düzeyde bakım sunmaya kararlıyım.\"",
+    "quote": "\"Kapımızdan giren her hastaya en üst düzeyde bakım sunmaya kendimi adadım.\"",
     "educationPlaceholder1": "DDS, Birinci Sınıf Diş Hekimliği Fakültesi",
     "educationPlaceholder2": "Uzmanlık Alanında İhtisas",
     "educationPlaceholder3": "İleri Düzey Sertifika",
-    "membershipPlaceholder1": "Türk Diş Hekimleri Birliği",
-    "membershipPlaceholder2": "İl Diş Hekimleri Odası",
+    "membershipPlaceholder1": "Amerikan Diş Hekimleri Birliği",
+    "membershipPlaceholder2": "Eyalet Diş Hekimliği Derneği",
     "membershipPlaceholder3": "Genel Diş Hekimliği Akademisi",
     "doctors": {
       "dr-rien": {
         "role": "Diş Hekimliği Uzmanı",
-        "bio": "<strong>Tiran Stomatoloji Üniversitesi</strong> mezunu Dr. Stambolliu, <strong>diş tedavisi</strong>, <strong>sabit ve hareketli protez</strong> ve <strong>implant destekli restorasyonlar</strong> konusunda uzmanlaşmıştır.",
-        "fullBio": "Dr. Rien Stambolliu, eğitimini <strong>Tiran Stomatoloji Üniversitesi</strong>'nde tamamlamıştır. Mesleki gelişimi boyunca <strong>çok sayıda ulusal ve uluslararası eğitim programını</strong> başarıyla tamamlamış ve <strong>tıbbi konferanslara aktif olarak katılarak</strong> bilgisini diş hekimliğindeki en son teknikler ve standartlarla sürekli güncellemiştir. <strong>Diş tedavisi</strong>, <strong>sabit ve hareketli protez</strong> ile <strong>implant destekli protez</strong> alanlarında profesyonel tedaviler sunmakta, fonksiyon, estetik ve çalışmalarının uzun vadeli dayanıklılığına özel önem vermektedir. <strong>Hassasiyeti</strong>, <strong>özenli yaklaşımı</strong> ve hastalara karşı <strong>sıcak tavrıyla</strong> tanınan Dr. Rien, her hasta için kaliteli, güvenli ve kişiselleştirilmiş tedavileri garanti etmek üzere maksimum özveriyle çalışmaktadır.",
+        "bio": "<strong>Tiran Stomatoloji Üniversitesi</strong> mezunu Dr. Stambolliu, <strong>diş tedavisi</strong>, <strong>sabit ve hareketli protezler</strong> ve <strong>implant destekli restorasyonlar</strong> konusunda uzmanlaşmıştır.",
+        "fullBio": "Dr. Rien Stambolliu eğitimini <strong>Tiran Stomatoloji Üniversitesi</strong>'nde tamamlamıştır. Mesleki gelişimi boyunca <strong>çok sayıda ulusal ve uluslararası eğitim programını</strong> başarıyla tamamlamış ve <strong>tıbbi kongrelere aktif olarak katılarak</strong> bilgisini diş hekimliğindeki en son teknik ve standartlarla sürekli güncellemiştir. <strong>Diş tedavisi</strong>, <strong>sabit ve hareketli protezler</strong> ile <strong>implant destekli protezler</strong> alanlarında profesyonel tedaviler sunmakta, fonksiyon, estetik ve çalışmalarının uzun vadeli dayanıklılığına özel önem vermektedir. <strong>Hassasiyeti</strong>, <strong>özenli yaklaşımı</strong> ve hastalara karşı <strong>sıcak tavrıyla</strong> tanınan Dr. Rien, her hasta için kaliteli, güvenli ve kişiselleştirilmiş tedaviler garanti etmek adına azami özveriyle çalışmaktadır.",
         "education1": "Tiran Stomatoloji Üniversitesi",
-        "education2": "Diş Protez alanında ulusal ve uluslararası eğitim",
-        "education3": "Diş hekimliği tıbbi konferanslarına aktif katılımcı",
-        "membership1": "Arnavutluk Diş Hekimleri Odası",
-        "membership2": "Arnavutluk Diş Hekimliği Derneği",
-        "membership3": "Profesyonel diş protez dernekleri üyesi",
-        "quote": "Her hasta için kaliteli, güvenli ve kişiselleştirilmiş tedavileri garanti etmeye adanmışım."
+        "education2": "Diş Protezleri alanında ulusal ve uluslararası eğitim",
+        "education3": "Diş hekimliği tıbbi kongrelerine aktif katılım",
+        "membership1": "Arnavutluk Diş Hekimleri Birliği",
+        "membership2": "Arnavutluk Dental Derneği",
+        "membership3": "Profesyonel diş protezleri dernekleri üyesi",
+        "quote": "Her hasta için kaliteli, güvenli ve kişiselleştirilmiş tedaviler garanti etmeye kendimi adadım."
       },
       "dr-kristi": {
         "role": "Diş Hekimliği Uzmanı",
-        "bio": "Dr. Kristi Sulanjaku, <strong>Tıp Bilimleri Yüksek Lisansını, Diş Hekimliği Bölümü</strong>'nde <strong>çok yüksek başarıyla</strong> tamamlamıştır. <strong>Diş protezinde derin bilgi</strong> sahibidir.",
-        "fullBio": "Dr. Kristi Sulanjaku, <strong>Tıp Bilimleri Yüksek Lisansını, Diş Hekimliği Bölümü</strong>'nde <strong>çok yüksek başarıyla</strong> tamamlamıştır. Düzenli olarak <strong>tıbbi konferanslara</strong> katılmaktadır. <strong>Diş protezinde derin bilgi</strong> sahibi olup <strong>doğruluğu</strong>, <strong>hassasiyeti</strong> ve <strong>detaya özel ilgisiyle</strong> öne çıkarak <strong>optimal fonksiyonel ve estetik sonuçlar</strong> garanti etmektedir. <strong>Mükemmel iletişim ve çalışma becerilerine</strong> sahip olup her hasta için profesyonel ve kişiselleştirilmiş tedaviler sunmaktadır.",
+        "bio": "Dr. Kristi Sulanjaku, <strong>Tıp Bilimleri, Diş Hekimliği Bölümü</strong>'nde yüksek lisans eğitimini <strong>çok yüksek başarıyla</strong> tamamlamıştır. <strong>Diş protezleri konusunda derin bilgi birikimine</strong> sahiptir.",
+        "fullBio": "Dr. Kristi Sulanjaku, <strong>Tıp Bilimleri, Diş Hekimliği Bölümü</strong>'nde yüksek lisans eğitimini <strong>çok yüksek başarıyla</strong> tamamlamıştır. Düzenli olarak <strong>tıbbi kongrelere</strong> katılmaktadır. <strong>Diş protezleri konusunda derin bilgi birikimine</strong> sahiptir ve <strong>doğruluğu</strong>, <strong>hassasiyeti</strong> ve <strong>detaylara gösterdiği özel dikkat</strong> ile öne çıkarak <strong>optimum fonksiyonel ve estetik sonuçlar</strong> garanti etmektedir. <strong>Mükemmel iletişim ve çalışma becerileri</strong>ne sahip olup her hasta için profesyonel ve kişiselleştirilmiş tedaviler sunmaktadır.",
         "education1": "Tıp Bilimleri Yüksek Lisansı, Diş Hekimliği Bölümü",
-        "education2": "Diş Protez alanında ileri düzey eğitim",
-        "education3": "Uluslararası tıbbi konferanslara aktif katılımcı",
-        "membership1": "Arnavutluk Diş Hekimleri Odası",
-        "membership2": "Arnavutluk Diş Hekimliği Derneği",
-        "membership3": "Profesyonel diş protez dernekleri üyesi",
-        "quote": "Her hasta için kişiselleştirilmiş bakım ve optimal sonuçlar sağlamaya kararlıyım."
+        "education2": "Diş Protezleri alanında ileri düzey eğitim",
+        "education3": "Uluslararası tıbbi kongrelere aktif katılım",
+        "membership1": "Arnavutluk Diş Hekimleri Birliği",
+        "membership2": "Arnavutluk Dental Derneği",
+        "membership3": "Profesyonel diş protezleri dernekleri üyesi",
+        "quote": "Her hasta için kişiselleştirilmiş bakım ve optimum sonuçlar sunmaya kendimi adadım."
       },
       "dr-dorina": {
-        "role": "Ağız Cerrahisi & İmplantoloji Uzmanı",
-        "bio": "<strong>Paris'in en prestijli hastane merkezlerinde eğitim almış uzman</strong>, Dr. Dorina <strong>klinik hassasiyet</strong> ve <strong>ileri düzey Fransız sertifikalı tedaviler</strong> sunmaktadır.",
-        "fullBio": "Dr. Dorina Beqiraj, Paris'in en prestijli hastane merkezlerinde eğitim almış bir <strong>Ağız Cerrahisi ve İmplantoloji uzmanı</strong>dır. Her işleme klinik hassasiyet ve ileri düzey Fransız sertifikalı tedaviler getirmektedir.<br/><br/><strong>Önemli Noktalar:</strong><br/>• <strong>Paris Uzmanlığı:</strong> Pitié Salpêtrière ve Charles Foix elit hastanelerinde Ağız Cerrahisi ve Oklüzodontoloji deneyimi.<br/>• <strong>Nantes Uzmanlığı:</strong> CHU-Nantes'da Periodontoloji (diş eti hastalıkları) alanında uzmanlaşmış eğitim.<br/>• <strong>Fransız CES Sertifikası:</strong> Cerrahi, implantoloji ve anatomi-fizyoloji alanlarında ileri düzey çalışma diplomaları sahibi.",
-        "education1": "Ağız Cerrahisi & Oklüzodontoloji - Pitié Salpêtrière, Paris",
+        "role": "Ağız Cerrahisi ve İmplantoloji Uzmanı",
+        "bio": "<strong>Paris'in en prestijli hastane merkezlerinde eğitim almış uzman</strong> Dr. Dorina, <strong>klinik hassasiyet</strong> ve <strong>ileri düzey Fransız sertifikalı tedaviler</strong> sunmaktadır.",
+        "fullBio": "Dr. Dorina Beqiraj, Paris'in en prestijli hastane merkezlerinde eğitim almış bir <strong>Ağız Cerrahisi ve İmplantoloji uzmanıdır</strong>. Her işleme klinik hassasiyet ve ileri düzey Fransız sertifikalı tedaviler getirmektedir.<br/><br/><strong>Öne Çıkan Nitelikleri:</strong><br/>• <strong>Paris Uzmanlığı:</strong> Pitié Salpêtrière ve Charles Foix elit hastanelerinde Ağız Cerrahisi ve Oklüzodontoloji deneyimi.<br/>• <strong>Nantes Uzmanlığı:</strong> CHU-Nantes'ta Periodontoloji (diş eti hastalıkları) alanında özel eğitim.<br/>• <strong>Fransız CES Sertifikası:</strong> Cerrahi, implantoloji ve anatomi-fizyoloji alanlarında ileri düzey çalışma diplomaları.",
+        "education1": "Ağız Cerrahisi ve Oklüzodontoloji - Pitié Salpêtrière, Paris",
         "education2": "Periodontoloji - CHU-Nantes, Fransa",
-        "education3": "CES Sertifikası - Cerrahi, İmplantoloji & Anatomi-Fizyoloji",
-        "membership1": "Arnavutluk Diş Hekimleri Odası",
+        "education3": "CES Sertifikası - Cerrahi, İmplantoloji ve Anatomi-Fizyoloji",
+        "membership1": "Arnavutluk Diş Hekimleri Birliği",
         "membership2": "Fransız Diş Hekimliği Derneği",
         "membership3": "Avrupa Osseointegrasyon Derneği",
-        "quote": "Paris'ten getirilen hassasiyet ve ileri teknikler, her hasta için olağanüstü sonuçlar sağlar."
+        "quote": "Paris'ten gelen hassasiyet ve ileri teknikler, her hasta için olağanüstü sonuçlar sağlar."
       },
       "dr-emanuela": {
-        "role": "Kurucu & Baş Diş Hekimi",
-        "bio": "<strong>Zeo Dental Clinic'in kurucusu</strong> Dr. Velaj, <strong>Tıp Fakültesi, Diş Hekimliği Bölümü</strong>'nün seçkin bir mezunu olup <strong>UCAM, İspanya</strong>'dan <strong>Ortodonti</strong> ve <strong>Prostetik Gnatolojik Rehabilitasyon</strong> alanlarında ileri sertifikalara sahiptir.",
-        "fullBio": "Dr. Emanuela Velaj, <strong>Zeo Dental Clinic'in kurucusu</strong> olup eğitimini <strong>Tıp Fakültesi, Diş Hekimliği Bölümü</strong>'nde tamamlamış ve derin bilgi, klinik hassasiyet ve kaliteye sürekli bağlılık üzerine kurulu profesyonel bir profil oluşturmuştur. Eğitimi yıllar içinde modern diş hekimliğinin anahtar alanlarında <strong>ileri düzey lisansüstü eğitimlerle</strong> zenginleştirilmiştir; bunlar arasında <strong>endodonti</strong>, <strong>gnatoloji</strong>, <strong>implant protez</strong>, <strong>dental estetik</strong> ve <strong>ortodonti</strong> yer almaktadır. <strong>UCAM – Universidad Católica de Murcia (İspanya)</strong>'dan <strong>Ortodonti</strong> ve <strong>Prostetik Gnatolojik Rehabilitasyon</strong> diplomasına sahip olup burada fonksiyonel uyum, sofistike estetik ve uzun vadeli klinik sürdürülebilirliğe odaklanan çağdaş Avrupa standartları ve ileri tedavi protokollerinde uzmanlaşmıştır. Kurucu olarak, Zeo Dental Clinic'i <strong>tıbbi mükemmellik</strong>, <strong>ileri teknoloji</strong> ve <strong>en yüksek sterilizasyon standartları</strong> ilkeleri üzerine tasarlamış ve inşa etmiş, her detayın hasta konforu ve güveni için düzenlendiği modern, zarif ve tamamen güvenli bir ortam yaratmıştır. <strong>Profesyonel zarafet</strong>, <strong>net iletişim</strong> ve <strong>insancıl yaklaşımıyla</strong> öne çıkan Dr. Velaj, hassasiyet, etik ve maksimum özveriyle çalışarak kişiselleştirilmiş tedaviler ve üst düzey fonksiyonel ve estetik sonuçlar sunmaktadır. Kişisel olarak <strong>iki çocuk annesi</strong> olup bu rol empati, sabır ve insani duyarlılığını güçlendirmiştir. Seyahat ve farklı kültürlerle temas sürekli ilham sağlarken, müzik, dans ve doğayla temas ona denge ve pozitif enerji vererek profesyonel felsefesine ve her hastaya gösterdiği özel ilgiye doğal olarak yansımaktadır.",
+        "role": "Kurucu ve Baş Diş Hekimi",
+        "bio": "<strong>Zeo Dental Clinic'in kurucusu</strong> Dr. Velaj, <strong>Tıp Fakültesi, Diş Hekimliği Bölümü</strong>'nden seçkin bir mezun olup <strong>UCAM, İspanya</strong>'dan <strong>Ortodonti</strong> ve <strong>Protetik Gnatolojik Rehabilitasyon</strong> alanlarında ileri düzey sertifikalara sahiptir.",
+        "fullBio": "Dr. Emanuela Velaj, <strong>Zeo Dental Clinic'in kurucusudur</strong>; eğitimini <strong>Tıp Fakültesi, Diş Hekimliği Bölümü</strong>'nde tamamlayarak derin bilgi, klinik hassasiyet ve kaliteye sürekli bağlılık üzerine profesyonel bir profil oluşturmuştur. Eğitimi yıllar içinde <strong>endodonti</strong>, <strong>gnatoloji</strong>, <strong>implant protezleri</strong>, <strong>dental estetik</strong> ve <strong>ortodonti</strong> dahil modern diş hekimliğinin kilit alanlarında <strong>ileri düzey lisansüstü eğitimlerle</strong> zenginleştirilmiştir. <strong>UCAM – Universidad Católica de Murcia (İspanya)</strong>'dan <strong>Ortodonti</strong> ve <strong>Protetik Gnatolojik Rehabilitasyon</strong> diplomasına sahiptir; burada fonksiyonel uyum, sofistike estetik ve uzun vadeli klinik sürdürülebilirliğe odaklanan çağdaş Avrupa standartlarını ve ileri tedavi protokollerini benimsemiştir. Kurucu olarak Zeo Dental Clinic'i <strong>tıbbi mükemmellik</strong>, <strong>ileri teknoloji</strong> ve <strong>maksimum sterilizasyon standartları</strong> ilkeleri üzerine tasarlayıp inşa etmiş; her detayın hasta konforu ve güveni için düşünüldüğü modern, rafine ve tamamen güvenli bir ortam yaratmıştır. <strong>Profesyonel zarafeti</strong>, <strong>açık iletişimi</strong> ve <strong>insani yaklaşımıyla</strong> öne çıkan Dr. Velaj, hassasiyet, etik ve azami özveriyle çalışarak kişiselleştirilmiş tedaviler ve üst düzey fonksiyonel ve estetik sonuçlar sunmaktadır. Kişisel olarak <strong>iki çocuk annesidir</strong>; bu rol empati, sabır ve insani duyarlılığını güçlendirmiştir. Seyahat ve farklı kültürlere açılma sürekli ilham kaynağıdır; müzik, dans ve doğayla temas ise denge ve pozitif enerji sağlayarak profesyonel felsefesine ve her hastaya gösterdiği özel özene doğal olarak yansımaktadır.",
         "education1": "Tıp Fakültesi, Diş Hekimliği Bölümü",
         "education2": "UCAM – Universidad Católica de Murcia (İspanya) - Ortodonti",
-        "education3": "UCAM – Prostetik Gnatolojik Rehabilitasyon",
-        "membership1": "Arnavutluk Diş Hekimleri Odası",
-        "membership2": "Arnavutluk Diş Hekimliği Derneği",
+        "education3": "UCAM – Protetik Gnatolojik Rehabilitasyon",
+        "membership1": "Arnavutluk Diş Hekimleri Birliği",
+        "membership2": "Arnavutluk Dental Derneği",
         "membership3": "UCAM Mezunlar Ağı Üyesi",
-        "quote": "Gülümsemeleri dönüştüren ve güven oluşturan tıbbi mükemmellik ve kişiselleştirilmiş tedaviler sunmaya kararlıyım."
+        "quote": "Gülüşleri dönüştüren ve güven inşa eden tıbbi mükemmellik ve kişiselleştirilmiş tedaviler sunmaya kendimi adadım."
       },
       "dr-james": {
         "role": "İmplantolog",
-        "bio": "Dr. Chen, karmaşık restoratif işlemlerdeki hassasiyeti ve nazik yaklaşımıyla tanınan sertifikalı bir cerrahtır.",
-        "fullBio": "Dr. James Chen, çift dereceli bir ağız ve çene-yüz cerrahı ve implantoloji alanında liderdir. Diş hekimliği derecesini UCSF'den, tıp derecesini Columbia Üniversitesi'nden almıştır. Karmaşık tam ağız rekonstrüksiyonu ve \"All-on-4\" anında yükleme implantları konusunda uzmanlaşmış olan Dr. Chen, güvenlik ve hassasiyeti sağlamak için ileri düzey 3D rehberli cerrahi kullanmaktadır. Sakin tavırları ve sedasyon diş hekimliğine odaklanması, kaygılı hastaların favorisi olmasını sağlamaktadır."
+        "bio": "Dr. Chen, karmaşık restoratif işlemlere hassas ve nazik yaklaşımıyla tanınan sertifikalı bir cerrahtır.",
+        "fullBio": "Dr. James Chen, çift diplomalı ağız ve çene-yüz cerrahı ve implantoloji alanında liderdir."
       },
       "dr-elena": {
         "role": "Ortodontist",
-        "bio": "Dr. Rodriguez, gülümsemeleri mükemmel şekilde hizalamak için sanat ve bilimi birleştiren, en ileri şeffaf plak sistemlerinde sertifikalı bir uzmandır.",
-        "fullBio": "Dr. Elena Rodriguez, düzgün bir gülümsemenin ağız sağlığının temeli olduğuna inanmaktadır. Diş Cerrahisi Doktorası ve Ortodonti Yüksek Lisansını Michigan Üniversitesi'nden almıştır. Dr. Rodriguez, Invisalign Diamond Plus Sağlayıcısıdır ve hem gençler hem de yetişkinler için hızlandırılmış ortodontik tedavilerde uzmanlaşmıştır. Havayolu odaklı ortodontiye tutkuyla bağlı olup hastalara sadece güzel gülümsemeler değil, daha iyi nefes alma ve uyku kalitesi de sağlamaktadır."
+        "bio": "Dr. Rodriguez, en gelişmiş şeffaf plak sistemlerinde sertifikalı olup gülüşleri mükemmel şekilde hizalamak için sanatı bilimle birleştirir.",
+        "fullBio": "Dr. Elena Rodriguez, düzgün bir gülüşün ağız sağlığının temeli olduğuna inanmaktadır."
       }
     },
     "founderLabel": "Kurucu",
     "teamTitle": "Stüdyo Ekibi",
-    "teamSubtitle": "Uzmanlık & Özen"
+    "teamSubtitle": "Uzmanlık ve Özen"
   },
   "philosophy": {
     "label": "Felsefemiz",
     "imageAlt": "Zeo Dental Felsefesi",
-    "quote": "Yarattığımız her gülümsemede sanat ve hassasiyet",
-    "text1": "Sanat, hassasiyet ve ileri teknolojiyle oluşturulan kendine güvenli bir gülümsemenin dönüştürücü gücüne inanıyoruz.",
+    "quote": "Yarattığımız her gülüşte sanat ve hassasiyet",
+    "text1": "Sanat, hassasiyet ve ileri teknolojiyle şekillendirilen özgüvenli bir gülüşün dönüştürücü gücüne inanıyoruz.",
     "text2": "Her tedavi, vizyonunuzun uzmanlığımızla buluşarak kalıcı, doğal sonuçlar yarattığı kişiselleştirilmiş bir yolculuktur.",
     "expertise": "Uzmanlık",
-    "expertiseList": {
-      "item1": "Endodonti",
-      "item2": "Cerrahi Hassasiyet",
-      "item3": "İmplant Ustalığı"
-    },
+    "expertiseList": { "item1": "Endodonti", "item2": "Cerrahi Hassasiyet", "item3": "İmplant Ustalığı" },
     "technology": "Teknoloji",
-    "technologyList": {
-      "item1": "3D Dijital Tarama",
-      "item2": "CAD/CAM Tasarım",
-      "item3": "Rehberli Cerrahi"
-    }
+    "technologyList": { "item1": "3D Dijital Tarama", "item2": "CAD/CAM Tasarım", "item3": "Rehberli Cerrahi" }
   },
   "cases": {
     "label": "Dönüşümler",
@@ -344,7 +285,7 @@
     "case1": {
       "number": "Vaka 01",
       "title": "Emax Kronlar",
-      "description": "Premium E.max seramik kronlarla tam gülümseme restorasyonu. Kusursuz, uzun ömürlü bir sonuç için doğal şeffaflıkla optimal estetik ve dayanıklılık elde edilmiştir.",
+      "description": "Premium E.max seramik kronlarla tam gülüş restorasyonu. Kusursuz ve uzun ömürlü bir sonuç için doğal şeffaflıkla optimum estetik ve dayanıklılık elde edilmiştir.",
       "detail1Label": "Süre",
       "detail1Value": "2 Hafta",
       "detail2Label": "Kronlar",
@@ -353,7 +294,7 @@
     "case2": {
       "number": "Vaka 02",
       "title": "Zirkonyum Kronlar",
-      "description": "Olağanüstü dayanıklılık ve estetik için premium zirkonyum kron restorasyonu. Uzun ömürlü gülümseme dönüşümü için üstün dayanıklılıkla doğal görünümlü sonuçlar.",
+      "description": "Olağanüstü dayanıklılık ve estetik için premium zirkonyum kron restorasyonu. Uzun ömürlü gülüş dönüşümü için üstün dayanıklılıkla doğal görünümlü sonuçlar.",
       "detail1Label": "Süre",
       "detail1Value": "2 Hafta",
       "detail2Label": "Kronlar",
@@ -361,8 +302,8 @@
     },
     "case3": {
       "number": "Vaka 03",
-      "title": "Dolgu & Beyazlatma",
-      "description": "Birleşik restoratif ve estetik tedavi. Daha sağlıklı, daha parlak bir gülümseme için profesyonel kompozit dolgu ile diş beyazlatma.",
+      "title": "Dolgu ve Beyazlatma",
+      "description": "Restoratif ve estetik tedavinin birleşimi. Daha sağlıklı, daha parlak bir gülüş için profesyonel kompozit dolgu ve diş beyazlatma.",
       "detail1Label": "Süre",
       "detail1Value": "1 Hafta",
       "detail2Label": "Tedavi",
@@ -370,70 +311,62 @@
     }
   },
   "reviews": {
-    "label": "Google Değerlendirmeleri",
+    "label": "Google Yorumları",
     "title": "Hastalarımız Ne Diyor",
-    "reviewCount": "değerlendirme",
-    "leaveReview": "Değerlendirme Bırakın",
-    "poweredBy": "Google Değerlendirmeleri tarafından desteklenmektedir"
+    "reviewCount": "yorum",
+    "leaveReview": "Yorum Bırakın",
+    "poweredBy": "Google Yorumları tarafından desteklenmektedir"
   },
   "testimonials": {
     "label": "Referanslar",
     "title": "Hasta Hikayeleri",
     "rating": "Ortalama Puan",
     "items": {
-      "t1": {
-        "name": "Michael Ross",
-        "role": "Hasta",
-        "content": "Zeo'daki bakım seviyesi eşsiz. İçeri girdiğiniz andan itibaren bir klinik değil, 5 yıldızlı bir otel gibi hissediyorsunuz. Veneerlerim inanılmaz görünüyor."
-      },
-      "t2": {
-        "name": "Jennifer Wu",
-        "role": "Hasta",
-        "content": "Dr. Zeo'yu tanıyana kadar diş hekiminden korkuyordum. Kullandıkları ağrısız teknoloji ezber bozan bir yenilik. Kesinlikle tavsiye ederim!"
-      },
-      "t3": {
-        "name": "David Okafor",
-        "role": "Hasta",
-        "content": "Profesyonel, kusursuz ve dakik. Zamanınıza ve sağlığınıza değer veriyorlar. Şimdiye kadar yaşadığım en iyi diş hekimliği deneyimi."
-      }
+      "t1": { "name": "Michael Ross", "role": "Hasta", "content": "Zeo'daki bakım düzeyi eşsiz. İçeri adım attığınız andan itibaren, bir klinik değil 5 yıldızlı bir otel gibi hissediyorsunuz. Veneerlerim inanılmaz görünüyor." },
+      "t2": { "name": "Jennifer Wu", "role": "Hasta", "content": "Dr. Zeo ile tanışana kadar diş hekiminden korkuyordum. Kullandıkları ağrısız teknoloji oyunun kurallarını değiştiriyor. Kesinlikle tavsiye ederim!" },
+      "t3": { "name": "David Okafor", "role": "Hasta", "content": "Profesyonel, tertemiz ve dakik. Zamanınıza ve sağlığınıza değer veriyorlar. Hayatımda yaşadığım en iyi diş hekimliği deneyimi." }
     }
   },
   "booking": {
     "label": "İletişim",
-    "title1": "Yolculuğunuza",
-    "title2": "başlayın.",
-    "subtitle": "Şu anda gelecek sezon için yeni hasta kabul ediyoruz. Özel danışma randevunuzu planlayın.",
-    "studioLabel": "Klinik",
+    "title1": "Ücretsiz",
+    "title2": "teklif alın.",
+    "subtitle": "Şeffaf fiyatlandırma ile kişiselleştirilmiş bir tedavi planı alın. Uzmanlarımız durumunuzu inceleyecek ve 24 saat içinde sizinle iletişime geçecektir.",
+    "studioLabel": "Stüdyo",
     "address": "Rruga Hamdi Sina, Tiranë",
     "phoneLabel": "Doğrudan Hat",
     "phone": "+355 68 400 4840",
     "emailLabel": "Sorular",
     "email": "zeodentalclinic@gmail.com",
-    "namePlaceholder": "Adı Soyadı",
+    "namePlaceholder": "Ahmet Yılmaz",
     "phonePlaceholder": "+355 68 400 4840",
-    "emailPlaceholder": "ornek@email.com",
-    "phoneOrEmail": "Telefon veya e-posta gereklidir",
+    "emailPlaceholder": "ahmet@example.com",
+    "phoneOrEmail": "Telefon veya e-posta gerekli",
     "optional": "İsteğe bağlı",
     "privacyNotice": "Bu formu göndererek gizlilik politikamızı ve hizmet şartlarımızı kabul etmiş olursunuz.",
-    "submit": "Randevu Talebi Gönder",
+    "submit": "Randevu Talebini Onayla",
     "submitting": "Gönderiliyor...",
     "backToForm": "Forma Dön",
     "error": "Talebiniz gönderilirken bir hata oluştu. Lütfen tekrar deneyin.",
-    "title": "Randevu Al",
-    "conciergeTitle": "Concierge Hizmetleri",
-    "conciergeSubtitle": "Konforunuz Önceliğimizdir.",
-    "conciergeDesc": "Kullanımı kolay randevu portalımız ile ziyaretinizi planlayın. Acil durumlar veya özel istekler için concierge ekibimiz hazır beklemektedir.",
+    "title": "Ücretsiz Teklif Alın",
+    "conciergeTitle": "Ücretsiz Konsültasyon",
+    "conciergeSubtitle": "Mükemmel Gülüşünüz Burada Başlıyor.",
+    "conciergeDesc": "Diş tedaviniz için ücretsiz kişiselleştirilmiş bir teklif talep edin. Uzmanlarımız durumunuzu inceleyecek ve şeffaf fiyatlandırma ile detaylı bir tedavi planı sunacaktır.",
+    "description": "İhtiyaçlarınızı Açıklayın",
+    "descriptionPlaceholder": "Lütfen diş sorunlarınızı veya ilgilendiğiniz tedaviyi açıklayın...",
+    "consentData": "Kişisel verilerimin randevu amacıyla işlenmesine onay veriyorum.",
+    "consentHealth": "Tedavi planlaması için sağlık bilgilerimin işlenmesine açıkça onay veriyorum.",
     "directLine": "Doğrudan Hat",
-    "availability": "Pazartesi-Cumartesi, 09:00 - 19:00 arası ulaşılabilir",
+    "availability": "Pzt-Cmt, 09:00 - 19:00 arası hizmetinizdeyiz",
     "backToHome": "Ana Sayfaya Dön",
     "personalDetails": "Kişisel Bilgiler",
-    "appointmentDetails": "Randevu Detayları",
+    "appointmentDetails": "Randevu Bilgileri",
     "nameField": "Ad Soyad",
     "emailField": "E-posta Adresi",
     "phoneField": "Telefon Numarası",
     "serviceField": "İlgilenilen Hizmet",
     "selectService": "Bir tedavi türü seçin...",
-    "otherConsultation": "Diğer / Danışma",
+    "otherConsultation": "Diğer / Konsültasyon",
     "date": "Tercih Edilen Tarih",
     "time": "Tercih Edilen Saat",
     "selectTime": "Saat seçin...",
@@ -441,24 +374,20 @@
     "afternoon": "Öğleden Sonra (12:00 - 16:00)",
     "evening": "Akşam (16:00 - 19:00)",
     "notes": "Ek Notlar",
-    "description": "İhtiyaçlarınızı Tanımlayın",
-    "descriptionPlaceholder": "Lütfen dental endişelerinizi veya ilgilendiğiniz tedaviyi açıklayın...",
-    "consentData": "Kişisel verilerimin randevu amaçlı işlenmesine onay veriyorum.",
-    "consentHealth": "Tedavi planlaması için sağlık bilgilerimin işlenmesine açıkça onay veriyorum.",
     "disclaimer": "Bu formu göndererek, bunun bir randevu talebi olduğunu kabul etmiş olursunuz. Ekibimiz programı kesinleştirmek için sizinle iletişime geçecektir.",
     "success": "Talep Onaylandı",
     "successMessage": "Teşekkürler, {name}. Randevu talebinizi aldık.",
     "confirmationEmail": "Onay e-postası şu adrese gönderildi:",
     "serviceRequested": "Talep Edilen Hizmet",
     "preferredTime": "Tercih Edilen Saat",
-    "bookAnother": "Başka Bir Randevu Al",
+    "bookAnother": "Başka Randevu Al",
     "returnHome": "Ana Sayfaya Dön",
     "processing": "İşleniyor..."
   },
   "footer": {
     "tagline": "Tasarım, teknoloji ve sanatla bakım standardını yeniden tanımlıyoruz.",
     "location": "Tiran • Arnavutluk",
-    "description": "Diş bakımını bir sanat formuna yükseltmek. Hayatları değiştiren gülümsemeler yaratmak için lüks, teknoloji ve şefkati birleştiriyoruz.",
+    "description": "Diş bakımını bir sanat formuna yükseltiyoruz. Hayatları değiştiren gülüşler yaratmak için lüks, teknoloji ve şefkati birleştiriyoruz.",
     "quickLinks": "Hızlı Bağlantılar",
     "ourDoctors": "Doktorlarımız",
     "patientPortal": "Hasta Portalı",
@@ -477,30 +406,30 @@
   "chat": {
     "title": "Sofia ile Sohbet",
     "placeholder": "Mesajınızı yazın...",
-    "greeting": "Merhaba! Ben Sofia, Zeo Dental Clinic'in sanal dental asistanıyım. Bana kendi dilinizde yazmaktan çekinmeyin! Bugün mükemmel gülümsemenize ulaşmanız için size nasıl yardımcı olabilirim?",
+    "greeting": "Merhaba! Ben Sofia, Zeo Dental Clinic'teki sanal diş asistanınız. Bana kendi dilinizde yazabilirsiniz! Mükemmel gülüşünüze kavuşmanız için bugün size nasıl yardımcı olabilirim?",
     "assistantName": "Sofia",
     "status": "Her zaman çevrimiçi",
     "typing": "Sofia yazıyor...",
-    "disclaimer": "Yapay zeka yanıtları değişkenlik gösterebilir. Tıbbi aciller için 112'yi arayın."
+    "disclaimer": "Yapay zeka yanıtları değişiklik gösterebilir. Tıbbi aciller için 112'yi arayın."
   },
   "contact": {
     "phone": "+355 68 400 4840",
     "email": "zeodentalclinic@gmail.com",
     "address": "Rruga Hamdi Sina, Tiranë, Albania",
-    "addressShort": "Tiran, Arnavutluk"
+    "addressShort": "Tiranë, Arnavutluk"
   },
   "error": {
-    "title": "Bir şeyler yanlış gitti",
-    "message": "Oluşan rahatsızlıktan dolayı özür dileriz. Lütfen sayfayı yenilemeyi deneyin veya bizimle doğrudan iletişime geçin.",
+    "title": "Bir şeyler ters gitti",
+    "message": "Verdiğimiz rahatsızlıktan dolayı özür dileriz. Lütfen sayfayı yenilemeyi deneyin veya doğrudan bizimle iletişime geçin.",
     "tryAgain": "Tekrar Dene",
-    "callUs": "Arayın +355 68 400 4840"
+    "callUs": "+355 68 400 4840 Ara"
   },
   "common": {
-    "learnMore": "Daha Fazla Bilgi",
+    "learnMore": "Daha Fazla",
     "readMore": "Devamını Oku",
-    "bookNow": "Şimdi Randevu Al",
+    "bookNow": "Randevu Al",
     "contactUs": "Bize Ulaşın",
-    "callNow": "Şimdi Arayın",
+    "callNow": "Hemen Ara",
     "address": "Adres",
     "phone": "Telefon",
     "email": "E-posta",
@@ -515,105 +444,34 @@
   },
   "treatments": {
     "label": "Tedavilerimiz",
-    "title": "Uzmanlaşmış Bakım",
-    "subtitle": "İmplantlardan estetiğe kadar, fonksiyonu geri kazandırmak, güzelliği artırmak ve gülümsemeleri hassasiyet ve sanatla dönüştürmek için tasarlanmış kapsamlı dental çözümler sunuyoruz.",
+    "title": "Uzman Bakım",
+    "subtitle": "İmplantlardan estetiğe kadar, fonksiyonu geri kazandırmak, güzelliği artırmak ve gülüşleri hassasiyet ve sanatla dönüştürmek için kapsamlı dental çözümler sunuyoruz.",
     "viewAllTreatments": "Tüm Tedavileri Görüntüle",
-    "learnMore": "Daha Fazla Bilgi",
+    "learnMore": "Daha Fazla",
     "items": {
-      "implantology": {
-        "title": "İmplantoloji",
-        "description": "Kalıcı, doğal görünümlü diş değişimi için 3D rehberli cerrahiyle en son teknoloji titanyum ve zirkonyum implantlar."
-      },
-      "prosthetics": {
-        "title": "Protez",
-        "description": "Sabit köprüler, hareketli protezler, parsiyel protezler ve implant destekli restorasyonlar dahil kapsamlı protez çözümleri."
-      },
-      "aligners": {
-        "title": "Şeffaf Plaklar",
-        "description": "Metal braket olmadan gizli gülümseme düzeltmesi için özel yapım şeffaf plaklarla görünmez ortodontik tedavi."
-      },
-      "orthodontics": {
-        "title": "Ortodonti",
-        "description": "Mükemmel kapanış ve güzel gülümseme için seramik braketler ve geleneksel ortodonti dahil modern hizalama çözümleri."
-      },
-      "crowns": {
-        "title": "Diş Kronları",
-        "description": "Hasarlı dişleri doğal renk ve şeffaflıkla eşleştirerek restore eden premium porselen ve zirkonyum kronlar."
-      },
-      "aesthetics": {
-        "title": "Endodonti",
-        "description": "Hasarlı dişleri kurtarmak ve ağrıyı gidermek için modern teknikler ve hassas aletler kullanılarak uygulanan ileri kanal tedavisi."
-      }
+      "implantology": { "title": "İmplantoloji", "description": "Kalıcı, doğal görünümlü diş değişimi için 3D rehberli cerrahi ile son teknoloji titanyum ve zirkonyum implantlar." },
+      "prosthetics": { "title": "Protezler", "description": "Sabit köprüler, hareketli protezler, parsiyel protezler ve implant destekli restorasyonlar dahil kapsamlı protetik çözümler." },
+      "aligners": { "title": "Şeffaf Plaklar", "description": "Metal braketler olmadan gizli gülüş düzeltmesi için özel yapım şeffaf plaklarla görünmez ortodontik tedavi." },
+      "orthodontics": { "title": "Ortodonti", "description": "Mükemmel kapanış ve güzel gülüş için seramik braketler ve geleneksel ortodonti dahil modern hizalama çözümleri." },
+      "crowns": { "title": "Diş Kronları", "description": "Hasarlı dişleri doğal renk ve şeffaflıkla eşleştirerek restore eden premium porselen ve zirkonyum kronlar." },
+      "aesthetics": { "title": "Endodonti", "description": "Modern teknikler ve hassas aletler kullanarak hasarlı dişleri kurtarmak ve ağrıyı gidermek için ileri kanal tedavisi." }
     }
   },
   "receptionist": {
     "title": "Resepsiyon Paneli",
     "loading": "Yükleniyor...",
     "noBookings": "Randevu bulunamadı",
-    "login": {
-      "title": "Personel Girişi",
-      "password": "Şifre",
-      "submit": "Giriş Yap",
-      "error": "Geçersiz şifre",
-      "backToSite": "Web Sitesine Dön"
-    },
-    "header": {
-      "logout": "Çıkış Yap",
-      "pending": "Beklemede",
-      "newBooking": "Yeni Randevu!",
-      "lastUpdate": "Güncellendi",
-      "soundOn": "Ses bildirimleri açık",
-      "soundOff": "Ses bildirimleri kapalı",
-      "calendar": "Takvim"
-    },
-    "stats": {
-      "pending": "Beklemede",
-      "today": "Bugün",
-      "thisWeek": "Bu Hafta",
-      "confirmedToday": "Bugün Onaylanan"
-    },
-    "filters": {
-      "all": "Tüm Randevular",
-      "pending": "Beklemede",
-      "confirmed": "Onaylandı",
-      "cancelled": "İptal Edildi",
-      "completed": "Tamamlandı",
-      "noShow": "Gelmedi",
-      "search": "Ad, e-posta, telefon ile ara..."
-    },
-    "booking": {
-      "preferred": "Tercih Edilen",
-      "confirmed": "Onaylandı",
-      "service": "Hizmet",
-      "phone": "Telefon",
-      "email": "E-posta",
-      "notes": "Notlar",
-      "status": "Durum"
-    },
-    "actions": {
-      "view": "Görüntüle",
-      "confirm": "Onayla",
-      "cancel": "İptal Et",
-      "close": "Kapat",
-      "refresh": "Yenile"
-    },
-    "confirm": {
-      "title": "Randevuyu Onayla",
-      "date": "Onaylanan Tarih",
-      "time": "Onaylanan Saat",
-      "sendWhatsApp": "WhatsApp onayı gönder",
-      "sendEmail": "E-posta onayı gönder",
-      "submit": "Randevuyu Onayla"
-    },
-    "cancel": {
-      "title": "Randevuyu İptal Et",
-      "reason": "İptal Nedeni (isteğe bağlı)",
-      "notify": "Hastayı bilgilendir",
-      "submit": "Randevuyu İptal Et"
-    }
+    "login": { "title": "Personel Girişi", "password": "Şifre", "submit": "Giriş Yap", "error": "Geçersiz şifre", "backToSite": "Siteye Dön" },
+    "header": { "logout": "Çıkış", "pending": "Beklemede", "newBooking": "Yeni Randevu!", "lastUpdate": "Güncellendi", "soundOn": "Ses bildirimleri açık", "soundOff": "Ses bildirimleri kapalı", "calendar": "Takvim" },
+    "stats": { "pending": "Beklemede", "today": "Bugün", "thisWeek": "Bu Hafta", "confirmedToday": "Bugün Onaylanan" },
+    "filters": { "all": "Tüm Randevular", "pending": "Beklemede", "confirmed": "Onaylanmış", "cancelled": "İptal Edilmiş", "completed": "Tamamlanmış", "noShow": "Gelmedi", "search": "Ad, e-posta, telefon ile arama..." },
+    "booking": { "preferred": "Tercih Edilen", "confirmed": "Onaylanmış", "service": "Hizmet", "phone": "Telefon", "email": "E-posta", "notes": "Notlar", "status": "Durum" },
+    "actions": { "view": "Görüntüle", "confirm": "Onayla", "cancel": "İptal", "close": "Kapat", "refresh": "Yenile" },
+    "confirm": { "title": "Randevuyu Onayla", "date": "Onaylanan Tarih", "time": "Onaylanan Saat", "sendWhatsApp": "WhatsApp onayı gönder", "sendEmail": "E-posta onayı gönder", "submit": "Randevuyu Onayla" },
+    "cancel": { "title": "Randevuyu İptal Et", "reason": "İptal Nedeni (isteğe bağlı)", "notify": "Hastayı bilgilendir", "submit": "Randevuyu İptal Et" }
   },
   "whatsapp": {
-    "tooltip": "WhatsApp'ta Sohbet Et",
+    "tooltip": "WhatsApp'tan yazın",
     "ariaLabel": "WhatsApp üzerinden bize ulaşın",
     "defaultMessage": "Merhaba! Zeo Dental Clinic'te randevu almak istiyorum."
   },
@@ -621,121 +479,49 @@
     "implantology": {
       "title": "Diş İmplantları",
       "subtitle": "Diş Değişiminde Altın Standart",
-      "heroDescription": "Eşsiz hassasiyet ve konfor için en son teknoloji 3D rehberli cerrahiyle kalıcı, doğal görünümlü diş implantlarıyla gülümsemenizi yeniden kazanın.",
-      "overview": "Diş implantları, eksik dişlerin değiştirilmesi için en gelişmiş ve güvenilir çözümü temsil eder. Geleneksel protez veya köprülerin aksine, implantlar cerrahi olarak çene kemiğine yerleştirilir ve burada osseointegrasyon adı verilen bir süreçle kemikle kaynaşır. Bu, doğal dişleriniz gibi görünen, hissettiren ve işlev gören istikrarlı, kalıcı bir temel oluşturur.\n\nZeo Dental Clinic'te, her implant işlemini milimetre hassasiyetiyle planlamak ve uygulamak için en son teknoloji 3D görüntüleme ve bilgisayar rehberli cerrahi kullanıyoruz. İster tek diş değişimine ister tam çene restorasyonuna ihtiyacınız olsun, uzmanlarımız maksimum dayanıklılık ve estetik sonuçlar için optimal yerleştirme sağlar.\n\nHem titanyum hem de zirkonyum implantlar sunarak tedavinizi spesifik ihtiyaçlarınıza, kemik yoğunluğunuza ve estetik tercihlerinize göre özelleştirmemize olanak tanıyoruz. Yalnızca güvenilir üreticilerden premium malzemeler kullanma taahhüdümüz, implantlarınızın onlarca yıl boyunca size iyi hizmet edeceğini garanti eder.",
-      "benefitsTitle": "Neden Diş İmplantlarını Tercih Etmelisiniz?",
-      "benefits": [
-        "Uygun bakımla ömür boyu sürebilecek kalıcı çözüm",
-        "Çene kemiği yoğunluğunu korur ve yüz kemiği kaybını önler",
-        "Köprülerin aksine komşu sağlıklı dişlere etkisi yoktur",
-        "Gerçek dişlerden ayırt edilemeyen doğal görünüm",
-        "Yeniden kazanılan çiğneme fonksiyonu – tüm sevdiğiniz yiyecekleri yiyin",
-        "Kolay bakım – doğal dişler gibi fırçalayın ve diş ipi kullanın",
-        "Hareketli protezlere kıyasla geliştirilmiş konuşma",
-        "Protezlerin rahatsızlığını ve zahmetini ortadan kaldırır"
-      ],
+      "heroDescription": "Eşsiz hassasiyet ve konfor için son teknoloji 3D rehberli cerrahi ile kalıcı, doğal görünümlü diş implantlarıyla gülüşünüzü geri kazanın.",
+      "overview": "Diş implantları, eksik dişlerin yerine konulması için en gelişmiş ve güvenilir çözümü temsil eder. Geleneksel protez veya köprülerden farklı olarak implantlar, osseointegrasyon adı verilen bir süreçle kemikle kaynaştığı çene kemiğine cerrahi olarak yerleştirilir. Bu, doğal dişleriniz gibi görünen, hissedilen ve işlev gören istikrarlı, kalıcı bir temel oluşturur.\n\nZeo Dental Clinic'te, her implant işlemini milimetre hassasiyetiyle planlamak ve uygulamak için son teknoloji 3D görüntüleme ve bilgisayar rehberli cerrahi kullanıyoruz. İster tek diş değişimi ister tam çene restorasyonu ihtiyacınız olsun, uzmanlarımız maksimum ömür ve estetik sonuçlar için optimum yerleşim sağlar.\n\nHem titanyum hem de zirkonyum implantlar sunarak tedavinizi özel ihtiyaçlarınıza, kemik yoğunluğunuza ve estetik tercihlerinize göre özelleştirmemize olanak tanıyoruz. Yalnızca güvenilir üreticilerden premium malzemeler kullanma taahhüdümüz, implantlarınızın onlarca yıl boyunca size iyi hizmet edeceğini garanti eder.",
+      "benefitsTitle": "Neden Diş İmplantları?",
+      "benefits": ["Doğru bakımla ömür boyu sürebilecek kalıcı çözüm", "Çene kemiği yoğunluğunu korur ve yüz kemik kaybını önler", "Köprülerden farklı olarak komşu sağlıklı dişlere zarar vermez", "Gerçek dişlerden ayırt edilemeyecek doğal görünüm", "Geri kazanılmış çiğneme fonksiyonu - en sevdiğiniz yiyecekleri yiyin", "Kolay bakım - doğal dişler gibi fırçalayın ve diş ipi kullanın", "Hareketli protezlere kıyasla geliştirilmiş konuşma", "Protezlerin rahatsızlığını ve zorluklarını ortadan kaldırır"],
       "processTitle": "İmplant Yolculuğunuz",
       "process": [
-        {
-          "title": "Kapsamlı Danışma",
-          "description": "Kemik kalitesini, miktarını değerlendirmek ve sinir ve sinüs gibi kritik yapıları haritalamak için 3D CBCT taraması dahil kapsamlı bir muayene ile başlıyoruz. Hedeflerinizi görüşüyor ve kişiselleştirilmiş bir tedavi planı oluşturuyoruz."
-        },
-        {
-          "title": "Dijital Tedavi Planlaması",
-          "description": "Gelişmiş yazılım kullanarak her implantın tam konumunu, açısını ve derinliğini dijital olarak planlıyoruz. Bu, milimetre hassasiyetinde yerleştirme için bir cerrahi kılavuz oluşturmamızı sağlar."
-        },
-        {
-          "title": "Cerrahi İmplant Yerleştirme",
-          "description": "Titanyum veya zirkonyum implant direği, minimal invaziv tekniklerle çene kemiğine yerleştirilir. Hastaların çoğu minimal rahatsızlık bildirmekte olup işlem lokal anestezi altında gerçekleştirilir ve sedasyon seçenekleri mevcuttur."
-        },
-        {
-          "title": "Osseointegrasyon Dönemi",
-          "description": "3-6 ay boyunca implant çene kemiğinizle kaynaşarak inanılmaz güçlü bir temel oluşturur. Bu süre zarfında estetiği korumak için geçici bir restorasyon kullanabilirsiniz."
-        },
-        {
-          "title": "Final Restorasyon",
-          "description": "Tam iyileşme sağlandığında, implantınıza özel yapım kron, köprü veya protez takılır. Final restorasyon, doğal dişlerinize renk, şekil ve fonksiyon açısından mükemmel uyum sağlayacak şekilde tasarlanır."
-        }
+        {"title": "Kapsamlı Konsültasyon", "description": "Kemik kalitesi ve miktarını değerlendirmek ve sinirler ve sinüsler gibi kritik yapıları haritalamak için 3D CBCT taraması dahil kapsamlı bir muayene ile başlıyoruz."},
+        {"title": "Dijital Tedavi Planlaması", "description": "Gelişmiş yazılım kullanarak her implantın tam konumunu, açısını ve derinliğini dijital olarak planlıyoruz."},
+        {"title": "Cerrahi İmplant Yerleştirme", "description": "Titanyum veya zirkonyum implant postu, minimal invaziv tekniklerle çene kemiğine yerleştirilir."},
+        {"title": "Osseointegrasyon Süreci", "description": "3-6 ay boyunca implant çene kemiğinizle kaynaşarak inanılmaz güçlü bir temel oluşturur."},
+        {"title": "Son Restorasyon", "description": "Tamamen iyileştiğinde, implantınıza özel yapım kron, köprü veya protez takılır."}
       ],
       "faqTitle": "Sıkça Sorulan Sorular",
       "faqs": [
-        {
-          "question": "Diş implantları için uygun bir aday mıyım?",
-          "answer": "Genel sağlığı iyi olan çoğu yetişkin diş implantları için adaydır. Temel faktörler arasında yeterli kemik yoğunluğu (gerekirse greftleme ile artırılabilir), sağlıklı diş etleri ve ağız hijyenine bağlılık yer alır. Danışma sırasında özel durumunuzu değerlendirip tüm seçenekleri görüşeceğiz."
-        },
-        {
-          "question": "Diş implantları ne kadar dayanır?",
-          "answer": "Uygun bakım ve kontrol ile diş implantları ömür boyu dayanabilir. İmplantın kendisi kalıcı olarak tasarlanmıştır; ancak kron, normal aşınma nedeniyle 15-20 yıl sonra değiştirilmesi gerekebilir. Düzenli kontroller ve iyi ağız hijyeni, uzun ömür için esastır."
-        },
-        {
-          "question": "İmplant işlemi ağrılı mıdır?",
-          "answer": "İşlem lokal anestezi altında gerçekleştirilir, bu nedenle yerleştirme sırasında ağrı hissetmezsiniz. Hastaların çoğu sonrasındaki rahatsızlığın beklenenden az olduğunu bildirmektedir – genellikle bir diş çekimiyle karşılaştırılabilir düzeydedir. Kapsamlı bakım talimatları ve ağrı yönetimi seçenekleri sunuyoruz."
-        },
-        {
-          "question": "Diş implantlarının maliyeti ne kadardır?",
-          "answer": "Maliyet, implant sayısına, restorasyon türüne ve kemik greftleme gibi ek işlemlerin gerekip gerekmediğine göre değişir. Danışma sırasında şeffaf fiyatlandırmayla detaylı bir tedavi planı sunuyoruz. İmplantlar diğer seçeneklere göre daha yüksek başlangıç maliyetine sahip olsa da uzun ömürleri nedeniyle genellikle uzun vadede daha ekonomiktir."
-        }
+        {"question": "Diş implantları için uygun bir aday mıyım?", "answer": "Genel sağlığı iyi olan çoğu yetişkin diş implantları için adaydır."},
+        {"question": "Diş implantları ne kadar süre dayanır?", "answer": "Doğru bakım ve idame ile diş implantları ömür boyu dayanabilir."},
+        {"question": "İmplant işlemi ağrılı mıdır?", "answer": "İşlem lokal anestezi altında gerçekleştirilir, bu yüzden yerleştirme sırasında ağrı hissetmezsiniz."},
+        {"question": "Diş implantlarının maliyeti ne kadardır?", "answer": "Maliyet, implant sayısına, restorasyon türüne ve ek işlemlerin gerekip gerekmediğine bağlı olarak değişir."}
       ],
-      "duration": "3-6 ay toplam tedavi süresi",
+      "duration": "Toplam tedavi süresi 3-6 ay",
       "warranty": "İmplantlarda ömür boyu garanti"
     },
     "prosthetics": {
       "title": "Diş Protezleri",
-      "subtitle": "Kapsamlı Gülümseme Restorasyon Çözümleri",
-      "heroDescription": "Sabit köprülerden implant destekli protezlere kadar, hem fonksiyonu hem de güzelliği geri kazandırmak için hassasiyetle üretilmiş kapsamlı protez çözümleri sunuyoruz.",
-      "overview": "Diş protezleri, eksik dişlerin değiştirilmesi ve ağız fonksiyonunun yeniden kazandırılması için tasarlanmış geniş bir restoratif çözüm yelpazesini kapsar. Zeo Dental Clinic'te, doğal dişlerden ayırt edilemeyen protezler oluşturmak için geleneksel zanaatkârlığı modern dijital teknolojiyle birleştiriyoruz.\n\nProtez tekliflerimiz arasında bir veya daha fazla eksik dişi kalıcı olarak değiştiren sabit köprüler, birkaç dişi eksik olan hastalar için hareketli parsiyel protezler, bir çenedeki tüm dişlerini kaybetmiş olanlar için tam protezler ve implantların stabilitesini geleneksel protezlerin kapsama alanıyla birleştiren gelişmiş implant destekli protezler yer almaktadır.\n\nOluşturduğumuz her protez, konfor ve fonksiyonu en üst düzeye çıkaran hassas bir uyum sağlamak için dijital ölçüler ve CAD/CAM teknolojisi kullanılarak özel olarak tasarlanır. Premium diş laboratuvarlarıyla yakın işbirliği içinde çalışarak yalnızca en kaliteli malzemeleri kullanıyoruz; metalsiz zirkonyum iskeletlerden gerçekçi seramik dişlere kadar.",
-      "benefitsTitle": "Modern Protezlerin Faydaları",
-      "benefits": [
-        "Yeniden kazanılan yeme, konuşma ve güvenle gülümseme yeteneği",
-        "Premium malzemelerle doğal görünümlü sonuçlar",
-        "Farklı ihtiyaçlara ve bütçelere uygun çoklu seçenekler",
-        "Gelişmiş yüz desteği ve genç görünüm",
-        "Optimal uyum ve konfor için dijital hassasiyet",
-        "Uzun vadeli kullanım için tasarlanmış dayanıklı malzemeler",
-        "Kısmi veya tam diş kaybı için çözümler",
-        "Maksimum stabilite için implant destekli seçenekler"
-      ],
-      "processTitle": "Protez Tedavi Süreciniz",
+      "subtitle": "Kapsamlı Gülüş Restorasyon Çözümleri",
+      "heroDescription": "Sabit köprülerden implant destekli protezlere kadar hassasiyetle üretilmiş kapsamlı protetik çözümler sunuyoruz.",
+      "overview": "Diş protezleri, eksik dişlerin yerini almak ve ağız fonksiyonunu geri kazandırmak için tasarlanmış geniş bir restoratif çözüm yelpazesini kapsar.",
+      "benefitsTitle": "Modern Protezlerin Avantajları",
+      "benefits": ["Özgüvenle yeme, konuşma ve gülümseme yeteneğinin geri kazanılması", "Premium malzemelerle doğal görünümlü sonuçlar", "Farklı ihtiyaç ve bütçelere uygun çoklu seçenekler", "Geliştirilmiş yüz desteği ve genç görünüm", "Optimum uyum ve konfor için dijital hassasiyet", "Uzun süreli kullanım için tasarlanmış dayanıklı malzemeler", "Kısmi veya tam diş kaybı için çözümler", "Maksimum stabilite için implant destekli seçenekler"],
+      "processTitle": "Protetik Tedavi Süreciniz",
       "process": [
-        {
-          "title": "İlk Değerlendirme",
-          "description": "Ağız sağlığınız, kalan dişleriniz, diş eti durumunuz ve kemik yapınızın kapsamlı bir muayenesini gerçekleştiriyoruz. Dijital ölçüler ve fotoğraflar benzersiz ihtiyaçlarınızı anlamamıza yardımcı olur."
-        },
-        {
-          "title": "Tedavi Planlaması",
-          "description": "Değerlendirmenize dayanarak köprülerden protezlere, implant destekli çözümlere kadar tüm mevcut seçenekleri görüşüyoruz. Birlikte, yaşam tarzınız, bütçeniz ve estetik hedefleriniz için en iyi yaklaşımı seçiyoruz."
-        },
-        {
-          "title": "Dijital Tasarım",
-          "description": "CAD/CAM teknolojisi kullanarak protezinizi hassasiyetle tasarlıyoruz. Üretim başlamadan önce yeni dişlerinizin nasıl görüneceğini ön izleyebilir ve sonuçtan tam memnuniyetinizi sağlayabilirsiniz."
-        },
-        {
-          "title": "Üretim",
-          "description": "Proteziniz en kaliteli malzemeler kullanılarak premium bir diş laboratuvarında üretilir. Sabit protezler için, üretim süresi boyunca geçici restorasyonlar konfor ve güveninizi korur."
-        },
-        {
-          "title": "Uyum & Ayarlama",
-          "description": "Yeni protezinizi dikkatle yerleştiriyor ve optimal konfor ve fonksiyon için gerekli tüm ayarlamaları yapıyoruz. Kapanışınızın dengeli olduğundan ve estetiğin beklentilerinizi karşıladığından emin oluyoruz."
-        }
+        {"title": "İlk Değerlendirme", "description": "Ağız sağlığınızın kapsamlı bir muayenesini gerçekleştiriyoruz."},
+        {"title": "Tedavi Planlaması", "description": "Değerlendirmenize dayanarak mevcut tüm seçenekleri tartışıyoruz."},
+        {"title": "Dijital Tasarım", "description": "CAD/CAM teknolojisi kullanarak protezinizi hassasiyetle tasarlıyoruz."},
+        {"title": "Üretim", "description": "Proteziniz premium bir diş laboratuvarında üretilir."},
+        {"title": "Takma ve Ayarlama", "description": "Yeni protezinizi dikkatlice takıyor ve gerekli ayarlamaları yapıyoruz."}
       ],
       "faqTitle": "Protezler Hakkında Sık Sorulan Sorular",
       "faqs": [
-        {
-          "question": "Köprü ile protez arasındaki fark nedir?",
-          "answer": "Köprü, bir veya daha fazla eksik dişi komşu doğal dişlere veya implantlara sabitlenerek değiştiren sabit bir restorasyondur. Yerine yapıştırılır ve çıkarılamaz. Protez ise bir çenedeki birden fazla veya tüm dişleri değiştiren çıkarılabilir bir aparattır. Özel durumunuza bağlı olarak her birinin avantajları vardır."
-        },
-        {
-          "question": "Yeni protezlere alışmak ne kadar sürer?",
-          "answer": "Hastaların çoğu 2-4 hafta içinde yeni protezlere uyum sağlar. Başlangıçta konuşma veya yeme güçlüğü yaşayabilirsiniz ve hafif hassasiyet normaldir. Bu geçiş döneminde ayarlamalar yapmak ve konforunuzu sağlamak için takip randevuları planlıyoruz."
-        },
-        {
-          "question": "Protezlerden implant destekli protezlere geçiş yapabilir miyim?",
-          "answer": "Evet, şu anda geleneksel protez kullanan birçok hasta daha iyi stabilite ve fonksiyon için implant destekli seçeneklere yükseltmeyi tercih etmektedir. Bu yükseltme için uygun bir aday olup olmadığınızı belirlemek için kemik yoğunluğunuzu ve genel sağlığınızı değerlendirebiliriz."
-        },
-        {
-          "question": "Protezlerime nasıl bakmalıyım?",
-          "answer": "Sabit protezlere doğal dişler gibi bakılır – düzenli fırçalama, diş ipi ve profesyonel temizlik. Hareketli protezler gece çıkarılmalı, uygun solüsyonlarla temizlenmeli ve doğru şekilde saklanmalıdır. Protez türünüze özel ayrıntılı bakım talimatları sağlıyoruz."
-        }
+        {"question": "Köprü ile protez arasındaki fark nedir?", "answer": "Köprü sabittir, protez çıkarılabilirdir."},
+        {"question": "Yeni protezlere alışmak ne kadar sürer?", "answer": "Çoğu hasta 2-4 hafta içinde uyum sağlar."},
+        {"question": "Protezlerden implant destekli protezlere geçiş yapabilir miyim?", "answer": "Evet, birçok hasta geçiş yapmayı tercih eder."},
+        {"question": "Protezlerimi nasıl bakım yaparım?", "answer": "Sabit protezler doğal dişler gibi bakılır."}
       ],
       "duration": "Türüne göre 2-6 hafta",
       "warranty": "Tüm protezlerde 5 yıl garanti"
@@ -743,280 +529,136 @@
     "aligners": {
       "title": "Şeffaf Plaklar",
       "subtitle": "Görünmez Ortodontik Tedavi",
-      "heroDescription": "Özel yapım şeffaf plaklarla mükemmel gülümsemenize gizlice ulaşın – geleneksel braketlere modern alternatif.",
-      "overview": "Şeffaf plaklar, geleneksel metal braketlerin estetik ve yaşam tarzı ödünlerini vermeden dişleri düzeltmenin neredeyse görünmez bir yolunu sunarak ortodontik tedavide devrim yaratmıştır. Zeo Dental Clinic'te, hafif çapraşıklıktan karmaşık kapanış sorunlarına kadar geniş bir ortodontik sorun yelpazesini tedavi etmek için gelişmiş plak sistemleri kullanıyoruz.\n\nHer plak seti, dişlerinizin hassas dijital taramalarına dayalı olarak 3D baskı teknolojisiyle özel üretilir. Dişlerinizi kademeli olarak ideal konumlarına doğru hareket ettiren aşamalı ayarlamalarla her seti yaklaşık iki hafta takarsınız ve ardından bir sonrakine geçersiniz.\n\nŞeffaf plakların güzelliği çıkarılabilir olmalarında yatar – yemek yemek, içmek, fırçalamak ve diş ipi kullanmak için çıkarabilirsiniz, bu da tedavi sırasında ağız hijyenini geleneksel braketlere göre çok daha kolay hale getirir. Hastaların çoğu takımı rahat bulur ve başkaları ortodontik tedavi gördüğünüzü nadiren fark eder.",
-      "benefitsTitle": "Neden Şeffaf Plakları Tercih Etmelisiniz?",
-      "benefits": [
-        "Neredeyse görünmez – çoğu insan taktığınızı fark etmez",
-        "Yemek, içmek ve özel günler için çıkarılabilir",
-        "Geleneksel braketlerin aksine diyet kısıtlaması yok",
-        "Daha kolay ağız hijyeni – normal şekilde fırçalayın ve diş ipi kullanın",
-        "Geleneksel ortodontiye kıyasla daha az klinik ziyareti",
-        "Başlamadan önce beklenen sonuçlarınızın dijital ön izlemesi",
-        "Keskin braket veya tel olmadan rahat pürüzsüz plastik",
-        "Net kilometre taşlarıyla öngörülebilir tedavi zaman çizelgesi"
-      ],
+      "heroDescription": "Özel yapım şeffaf plaklarla gizlice mükemmel gülüşünüze kavuşun.",
+      "overview": "Şeffaf plaklar ortodontik tedavide devrim yaratmıştır.",
+      "benefitsTitle": "Neden Şeffaf Plaklar?",
+      "benefits": ["Neredeyse görünmez", "Yeme ve içme için çıkarılabilir", "Diyet kısıtlaması yok", "Daha kolay ağız hijyeni", "Daha az klinik ziyareti", "Sonuçların dijital önizlemesi", "Rahat pürüzsüz plastik", "Öngörülebilir tedavi süresi"],
       "processTitle": "Şeffaf Plak Yolculuğunuz",
       "process": [
-        {
-          "title": "Dijital Danışma",
-          "description": "Ağız içi tarayıcı kullanarak dişlerinizin ayrıntılı 3D taramalarını alıyoruz – rahatsız edici ölçülere gerek yok. Kapanışınızı analiz ediyor ve gülümseme hedeflerinizi görüşüyoruz."
-        },
-        {
-          "title": "Tedavi Simülasyonu",
-          "description": "Özel yazılım kullanarak tedavi boyunca dişlerinizin nasıl hareket edeceğini gösteren sanal bir simülasyon oluşturuyoruz. Tedaviye başlamadan önce beklenen nihai sonucunuzu göreceksiniz."
-        },
-        {
-          "title": "Özel Plak Üretimi",
-          "description": "Tedavi planını onayladığınızda, tam özel plak setiniz hassas 3D baskı teknolojisi kullanılarak üretilir."
-        },
-        {
-          "title": "Aktif Tedavi",
-          "description": "Her plak setini yaklaşık 2 hafta, günde 20-22 saat takarsınız. İlerlemeyi izlemek ve sonraki plak setlerinizi vermek için periyodik kontroller planlıyoruz."
-        },
-        {
-          "title": "Pekiştirme Aşaması",
-          "description": "Tedavi tamamlandıktan sonra güzel yeni gülümsemenizi korumak için pekiştirici takarsınız. Hem çıkarılabilir hem de sabit pekiştirici seçenekleri sunuyoruz."
-        }
+        {"title": "Dijital Konsültasyon", "description": "Dişlerinizin detaylı 3D taramalarını alıyoruz."},
+        {"title": "Tedavi Simülasyonu", "description": "Diş hareketini gösteren sanal bir simülasyon oluşturuyoruz."},
+        {"title": "Özel Plak Üretimi", "description": "Plaklarınız hassas 3D baskı kullanılarak üretilir."},
+        {"title": "Aktif Tedavi", "description": "Her seti günde 20-22 saat olmak üzere yaklaşık 2 hafta takın."},
+        {"title": "Pekiştirme Aşaması", "description": "Güzel yeni gülüşünüzü korumak için pekiştirme plakaları takın."}
       ],
       "faqTitle": "Şeffaf Plak SSS",
       "faqs": [
-        {
-          "question": "Şeffaf plaklar benim özel diş sorunumu çözebilir mi?",
-          "answer": "Şeffaf plaklar, çapraşıklık, aralık, üst kapanış bozukluğu, alt çene öne çıkıklığı ve çapraz kapanış dahil çoğu yaygın ortodontik sorunu etkili bir şekilde tedavi edebilir. Danışma sırasında özel durumunuzu değerlendireceğiz ve plakların doğru seçim olup olmadığını veya alternatif tedavilerin daha etkili olup olmayacağını belirleyeceğiz."
-        },
-        {
-          "question": "Şeffaf plak tedavisi ne kadar sürer?",
-          "answer": "Tedavi süresi vakanızın karmaşıklığına göre değişir. Basit vakalar 6-9 ay sürebilirken, daha karmaşık vakalar 12-18 ay veya daha uzun sürebilir. Danışma sırasında kişiselleştirilmiş bir tedavi zaman çizelgesi sunacağız."
-        },
-        {
-          "question": "Şeffaf plaklar ağrı yapar mı?",
-          "answer": "Yeni bir plak setine geçerken bir miktar basınç veya hafif rahatsızlık hissedebilirsiniz, bu dişlerin hareket ettiğini gösterir. Bu genellikle birkaç gün içinde geçer. Genel olarak hastaların çoğu plakları geleneksel braketlerden daha rahat bulmaktadır."
-        },
-        {
-          "question": "Bir plağı kaybedersem veya hasar görürse ne olur?",
-          "answer": "Bir plağı kaybederseniz veya hasar görürse derhal bizimle iletişime geçin. Tedavinizin hangi aşamasında olduğunuza bağlı olarak bir sonraki sete geçmenizi veya yedek üretilirken önceki seti takmanızı önerebiliriz. Kolay yenileme için tüm plaklarınızın dijital kayıtlarını saklıyoruz."
-        }
+        {"question": "Şeffaf plaklar benim özel dental sorunumu düzeltebilir mi?", "answer": "Şeffaf plaklar yaygın ortodontik sorunların çoğunu tedavi edebilir."},
+        {"question": "Tedavi ne kadar sürer?", "answer": "Basit vakalar 6-9 ay, karmaşık vakalar 12-18 ay."},
+        {"question": "Şeffaf plaklar acıtır mı?", "answer": "Yeni plaklara geçerken hafif bir rahatsızlık hissedebilirsiniz."},
+        {"question": "Bir plağı kaybedersem veya kırarsam ne olur?", "answer": "Yenisi için derhal bizimle iletişime geçin."}
       ],
-      "duration": "6-18 ay ortalama tedavi",
+      "duration": "Ortalama 6-18 ay tedavi",
       "warranty": "Memnuniyet garantisi dahil"
     },
     "orthodontics": {
       "title": "Ortodonti",
       "subtitle": "Her Yaş İçin Uzman Diş Hizalaması",
-      "heroDescription": "Mükemmel hizalama ve sağlıklı, güzel bir gülümseme için seramik braketler ve gelişmiş teknikler dahil modern ortodontik çözümler.",
-      "overview": "Ortodonti sadece düz dişlerden ibaret değildir – uzun vadeli ağız sağlığını destekleyen sağlıklı, fonksiyonel bir kapanış oluşturmakla ilgilidir. Zeo Dental Clinic'te, ortodonti uzmanlarımız en son teknik ve teknolojileri kullanarak çocuklardan yetişkinlere her yaştan hastayı tedavi etmektedir.\n\nŞeffaf plaklar birçok vaka için iyi sonuç verirken, geleneksel braketler karmaşık ortodontik sorunlar için altın standart olmaya devam etmektedir. Konvansiyonel metal braketler, daha gizli bir görünüm için diş renginde seramik braketler ve tedavi süresini ve rahatsızlığı azaltabilen kendinden bağlanan sistemler dahil çeşitli seçenekler sunuyoruz.\n\nOrtodontiye yaklaşımımız kapsamlıdır. Sadece estetiğe odaklanmıyoruz – tedavinizin sadece güzel bir gülümseme değil, aynı zamanda optimal ağız sağlığı ve fonksiyonuyla sonuçlanmasını sağlamak için çene ilişkinizi, havayolunuzu ve çene eklemi (TMJ) fonksiyonunuzu dikkatle analiz ediyoruz.",
+      "heroDescription": "Mükemmel hizalama ve sağlıklı, güzel bir gülüş için modern ortodontik çözümler.",
+      "overview": "Ortodonti, uzun vadeli ağız sağlığını destekleyen sağlıklı, fonksiyonel bir kapanış oluşturmakla ilgilidir.",
       "benefitsTitle": "Profesyonel Ortodontinin Avantajları",
-      "benefits": [
-        "Plakların tedavi edemediği karmaşık vakaları düzeltir",
-        "Tüm yönlerde diş hareketi üzerinde hassas kontrol",
-        "Ciddi çapraşıklık, aralık ve kapanış sorunlarında etkili",
-        "Her yaş için seçenekler – çocuklar, gençler ve yetişkinler",
-        "Seramik braketler daha estetik bir alternatif sunar",
-        "Çene hizalaması ve TMJ sorunlarını ele alabilir",
-        "Dişlerin temizlenmesini kolaylaştırarak ağız sağlığını iyileştirir",
-        "Uygun pekiştirme ile ömür boyu süren sonuçlar"
-      ],
+      "benefits": ["Plakların tedavi edemediği karmaşık vakaları düzeltir", "Diş hareketi üzerinde hassas kontrol", "Şiddetli çapraşıklık ve kapanış sorunlarında etkili", "Her yaş için seçenekler", "Estetik için seramik braketler", "Çene ve TME sorunlarını ele alabilir", "Ağız sağlığını iyileştirir", "Ömür boyu süren sonuçlar"],
       "processTitle": "Ortodontik Tedavi Yolunuz",
       "process": [
-        {
-          "title": "Kapsamlı Değerlendirme",
-          "description": "Dişlerinizi, çenenizi ve yüz yapınızı kapsamlı bir şekilde değerlendirmek için dijital röntgenler, fotoğraflar ve 3D taramalar alıyoruz. Ele alınması gereken altta yatan sorunları belirliyoruz."
-        },
-        {
-          "title": "Özelleştirilmiş Tedavi Planı",
-          "description": "Değerlendirmemize dayanarak önerilen yaklaşımı, beklenen zaman çizelgesini ve öngörülen sonuçları ayrıntılandıran detaylı bir tedavi planı oluşturuyoruz. Bilinçli bir karar verebilmeniz için tüm seçenekleri görüşüyoruz."
-        },
-        {
-          "title": "Braket Yerleştirme",
-          "description": "Braketler dikkatle her dişe yapıştırılır ve tel takılır. İlk randevu yaklaşık 1-2 saat sürer. Braketle bakım konusunda bilgilendirilmenizi sağlıyoruz."
-        },
-        {
-          "title": "Düzenli Ayarlamalar",
-          "description": "Ayarlamalar için bizi her 4-8 haftada bir ziyaret edersiniz. Bu ziyaretlerde telleri değiştirir, braketleri ayarlar ve ilerlemeyi izleriz. Her ayarlama sizi hedefinize yaklaştırır."
-        },
-        {
-          "title": "Braket Çıkarma & Pekiştirme",
-          "description": "Tedavi tamamlandığında braketleri çıkarır ve son kayıtları alırız. Sonuçlarınızı korumak için özel pekiştirici alırsınız. Uzun vadeli başarıyı sağlamak için takip randevuları planlıyoruz."
-        }
+        {"title": "Kapsamlı Değerlendirme", "description": "Dijital röntgenler, fotoğraflar ve 3D taramalar."},
+        {"title": "Özelleştirilmiş Tedavi Planı", "description": "Zaman çizelgesi ve beklenen sonuçlarla detaylı plan."},
+        {"title": "Braket Yerleştirme", "description": "Braketlerin yapıştırılması ve ark telinin yerleştirilmesi."},
+        {"title": "Düzenli Ayarlamalar", "description": "Ayarlamalar için her 4-8 haftada ziyaretler."},
+        {"title": "Braket Çıkarma ve Pekiştirme", "description": "Braketlerin çıkarılması ve özel pekiştirme plakaları verilmesi."}
       ],
       "faqTitle": "Ortodonti Soruları Yanıtlandı",
       "faqs": [
-        {
-          "question": "Braket için çok yaşlı mıyım?",
-          "answer": "Kesinlikle hayır! Ortodontik tedavi her yaşta başarılı olabilir. Aslında bugün ortodontik hastaların yaklaşık %25'i yetişkinlerdir. Dişleriniz ve diş etleriniz sağlıklı olduğu sürece yaş, daha düzgün bir gülümsemeye ulaşmak için engel değildir."
-        },
-        {
-          "question": "Ne kadar süre braket takmam gerekecek?",
-          "answer": "Tedavi süresi vakanızın karmaşıklığına bağlıdır. Ortalama olarak hastaların çoğu 18-24 ay braket takar. Bazı basit vakalar 12 ayda tamamlanabilirken, daha karmaşık vakalar 30 ay veya daha uzun sürebilir."
-        },
-        {
-          "question": "Braket ağrılı mıdır?",
-          "answer": "Braket takıldıktan sonra ve her ayarlamadan sonra dişleriniz hareket etmeye başladığında birkaç gün rahatsızlık yaşamanız muhtemeldir. Bu normaldir ve reçetesiz ağrı kesicilerle yönetilebilir. Rahatsızlık genellikle bir hafta içinde geçer."
-        },
-        {
-          "question": "Braketli iken hangi yiyeceklerden kaçınmalıyım?",
-          "answer": "Braketlere veya tellere zarar verebilecek sert, yapışkan ve çiğnenmesi zor yiyeceklerden kaçınmalısınız. Bunlar arasında sert şekerler, patlamış mısır, kuruyemişler, buz, karamel ve sakız yer alır. Kapsamlı bir liste ve tedavi süresince sağlıklı beslenme için ipuçları sunacağız."
-        }
+        {"question": "Braket için çok yaşlı mıyım?", "answer": "Ortodontik tedavi her yaşta başarılı olabilir."},
+        {"question": "Braket ne kadar süre takmam gerekecek?", "answer": "Ortalama 18-24 ay, karmaşıklığa göre değişir."},
+        {"question": "Braketler acıtır mı?", "answer": "Ayarlamalardan sonra biraz rahatsızlık olabilir, ağrı kesicilerle yönetilebilir."},
+        {"question": "Hangi yiyeceklerden kaçınmalıyım?", "answer": "Sert, yapışkan ve çiğnenmesi zor yiyeceklerden kaçınılmalıdır."}
       ],
-      "duration": "12-30 ay ortalama tedavi",
-      "warranty": "Pekiştirme ile garanti edilen sonuçlar"
+      "duration": "Ortalama 12-30 ay tedavi",
+      "warranty": "Pekiştirme ile sonuçlar garanti"
     },
     "crowns": {
       "title": "Diş Kronları",
-      "subtitle": "Dişlerinizi Onarın & Koruyun",
-      "heroDescription": "Hasarlı dişleri doğal güzelliklerine, dayanıklılıklarına ve fonksiyonlarına kavuşturan premium porselen ve zirkonyum kronlar.",
-      "overview": "Diş kronu, hasarlı, zayıflamış veya kozmetik olarak kusurlu bir dişi kaplayan ve koruyan özel yapım bir kaplamadır. Zeo Dental Clinic'te, olağanüstü dayanıklılık ve doğal estetik sunan tam seramik ve zirkonyum kronlar dahil yalnızca premium malzemeler kullanıyoruz.\n\nModern kron teknolojisi önemli ölçüde ilerlemiştir. Dijital ölçüler ve CAD/CAM tasarımı kullanarak, doğal dişlerinizin rengini, şeffaflığını ve şeklini hassas bir şekilde eşleştiren kronlar oluşturabiliyoruz. Birçok durumda, kliniğimizdeki freze teknolojisiyle aynı gün kronlar bile sağlayabiliyoruz.\n\nKanal tedavisinden sonra bir dişi onarmak, çatlak bir dişi daha fazla hasardan korumak veya renk değişikliğine uğramış ya da şekli bozulmuş bir dişin görünümünü iyileştirmek istiyorsanız, kronlarımız tamamen doğal görünen ve hissettiren uzun ömürlü bir çözüm sunar.",
-      "benefitsTitle": "Kaliteli Diş Kronlarının Faydaları",
-      "benefits": [
-        "Hasarlı veya zayıflamış dişlere tam fonksiyon kazandırır",
-        "Kanal tedavisi sonrası dişleri korur",
-        "Çevredeki dişlerle uyumlu doğal görünüm",
-        "Uzun ömürlü dayanıklılık – 15-25 yıl veya daha fazla sürebilir",
-        "Optimal estetik ve biyouyumluluk için metalsiz seçenekler",
-        "Kolaylık için aynı gün kron seçenekleri mevcut",
-        "Kalan diş yapısını güçlendirir ve korur",
-        "Kapanış hizalamasını ve çene fonksiyonunu iyileştirir"
-      ],
+      "subtitle": "Dişlerinizi Restore Edin ve Koruyun",
+      "heroDescription": "Hasarlı dişleri doğal güzellik ve fonksiyonlarına kavuşturan premium porselen ve zirkonyum kronlar.",
+      "overview": "Diş kronu, hasarlı bir dişi kaplayan ve koruyan özel yapım bir kaplamadır.",
+      "benefitsTitle": "Kaliteli Diş Kronlarının Avantajları",
+      "benefits": ["Tam fonksiyonu geri kazandırır", "Kanal tedavisi sonrası dişleri korur", "Doğal görünüm", "15-25 yıl dayanıklı", "Metalsiz seçenekler", "Aynı gün seçenekleri mevcut", "Diş yapısını güçlendirir", "Kapanış hizalamasını iyileştirir"],
       "processTitle": "Kron Tedavi Süreciniz",
       "process": [
-        {
-          "title": "Değerlendirme & Hazırlık",
-          "description": "Dişi muayene ediyor ve durumunu değerlendirmek için dijital röntgenler çekiyoruz. Kron en iyi çözümse, malzeme seçeneklerini görüşüyor ve krona yer açmak için ince bir mine tabakasını kaldırarak dişi hazırlıyoruz."
-        },
-        {
-          "title": "Dijital Ölçüler",
-          "description": "Ağız içi tarayıcı kullanarak hazırlanmış dişinizin ve çevresindeki dişlerin hassas 3D görüntülerini yakalıyoruz. Bu, karmaşık geleneksel ölçü ihtiyacını ortadan kaldırır ve olağanüstü doğruluk sağlar."
-        },
-        {
-          "title": "Özel Tasarım",
-          "description": "Kronunuz CAD yazılımı kullanılarak tasarlanır, böylece şekil, boyut ve uyumu mükemmelleştirebiliriz. Kusursuz entegrasyon için renk tonunu doğal dişlerinize dikkatle eşleştiriyoruz."
-        },
-        {
-          "title": "Üretim",
-          "description": "Durumunuza bağlı olarak kronunuz kliniğimizde aynı gün freze edilebilir veya premium diş laboratuvarı ortağımız tarafından üretilebilir. Gerekirse bu süre zarfında geçici bir kron dişinizi korur."
-        },
-        {
-          "title": "Kalıcı Yerleştirme",
-          "description": "Kalıcı olarak yapıştırmadan önce yeni kronunuzun uyumunu, kapanışını ve estetiğini doğruluyoruz. Son ayarlamalar konfor ve optimal fonksiyon sağlar."
-        }
+        {"title": "Değerlendirme ve Hazırlık", "description": "Dişin muayenesi ve kron için hazırlanması."},
+        {"title": "Dijital Ölçüler", "description": "Ağız içi tarayıcı ile hassas 3D görüntüler alınır."},
+        {"title": "Özel Tasarım", "description": "Kron, CAD yazılımı kullanılarak tasarlanır."},
+        {"title": "Üretim", "description": "Kron ofiste frezelenir veya premium laboratuvarda üretilir."},
+        {"title": "Kalıcı Yerleştirme", "description": "Uyumun doğrulanması ve kronun kalıcı olarak yapıştırılması."}
       ],
       "faqTitle": "Kron SSS",
       "faqs": [
-        {
-          "question": "Ne zaman diş kronuna ihtiyacım olur?",
-          "answer": "Kronlar, önemli ölçüde çürümüş, çatlamış veya zayıflamış dişler, kanal tedavisi sonrası, kırık dişlerin restorasyonu, ciddi şekilde renk değişikliğine uğramış dişlerin kaplanması veya köprünün bir parçası olarak önerilir. Muayeneniz sırasında kronun neden sizin durumunuz için en iyi seçenek olduğunu açıklayacağız."
-        },
-        {
-          "question": "Diş kronları ne kadar dayanır?",
-          "answer": "Uygun bakımla diş kronları genellikle 15-25 yıl dayanır ve birçoğu daha da uzun sürer. Dayanıklılığı etkileyen faktörler arasında ağız hijyeni alışkanlıkları, beslenme, diş sıkma durumu ve kullanılan malzeme yer alır. Düzenli diş kontrolü kronunuzun durumunu izlememize yardımcı olur."
-        },
-        {
-          "question": "Kronum doğal görünecek mi?",
-          "answer": "Kesinlikle. Doğal dişlerin şeffaflığını ve renk varyasyonlarını taklit eden gelişmiş seramik ve zirkonyum malzemeler kullanıyoruz. Kronunuzu komşu dişlerinize dikkatle eşleştiriyoruz, böylece neredeyse ayırt edilemez olur. Diş hekimleri dahil çoğu insan farkı anlayamaz."
-        },
-        {
-          "question": "Kron yaptırmak ağrılı mıdır?",
-          "answer": "Kron işlemi lokal anestezi altında gerçekleştirilir, bu nedenle hazırlık sırasında ağrı hissetmezsiniz. İşlemden birkaç gün sonra bir miktar hassasiyet yaşayabilirsiniz, ancak bu genellikle hafif ve geçicidir. Kaygılıysanız sedasyon seçenekleri sunuyoruz."
-        }
+        {"question": "Ne zaman diş kronuna ihtiyacım olur?", "answer": "Önemli ölçüde çürümüş, çatlamış veya zayıflamış dişler için."},
+        {"question": "Kronlar ne kadar süre dayanır?", "answer": "Doğru bakımla genellikle 15-25 yıl."},
+        {"question": "Kronum doğal görünecek mi?", "answer": "Evet, doğal dişleri taklit eden gelişmiş malzemeler kullanıyoruz."},
+        {"question": "Kron yaptırmak ağrılı mıdır?", "answer": "Lokal anestezi altında yapılır, minimal rahatsızlık."}
       ],
-      "duration": "1-2 randevu, 1-2 hafta boyunca",
+      "duration": "1-2 hafta içinde 1-2 randevu",
       "warranty": "Tüm kronlarda 10 yıl garanti"
     },
     "aesthetics": {
       "title": "Endodonti",
       "subtitle": "Doğal Dişlerinizi Kurtarın",
-      "heroDescription": "Enfeksiyonu ortadan kaldırmak, ağrıyı gidermek ve doğal dişlerinizi korumak için modern teknikler ve hassas aletler kullanılarak uygulanan ileri kanal tedavisi.",
-      "overview": "Endodonti, diş pulpasının ve diş kökünü çevreleyen dokuların tedavisiyle ilgilenen diş hekimliği dalıdır. Zeo Dental Clinic'te, endodontik tedavilerimiz aksi takdirde çekilmesi gereken dişleri kurtarmak, ağrıyı gidermek ve fonksiyonu yeniden kazandırmak için tasarlanmıştır.\n\nDerin çürük, tekrarlayan dental işlemler, çatlaklar veya travma nedeniyle dişinizin içindeki pulpa enfekte veya iltihaplanmış hale geldiğinde, kanal tedavisi dişi kurtarabilir. İleri tekniklerimiz ve modern ekipmanlarımız işlemi konforlu ve son derece başarılı kılmaktadır.\n\nKök kanal sisteminin kapsamlı temizliği ve şekillendirilmesini sağlamak için döner enstrümantasyon, elektronik apeks bulucu ve büyütme kullanıyoruz. Nazik yaklaşımımız ve etkili anestezimiz, modern kanal tedavisinin dolgu yaptırmaktan daha rahatsız edici olmadığı anlamına gelir.",
-      "benefitsTitle": "Neden Kanal Tedavisi Tercih Etmelisiniz",
-      "benefits": [
-        "Doğal dişinizi kurtarın ve çekimi önleyin",
-        "Ağrı ve enfeksiyonu kaynağında ortadan kaldırın",
-        "Enfeksiyonun diğer dişlere yayılmasını önleyin",
-        "Doğal kapanış ve çiğneme fonksiyonunu koruyun",
-        "Çekim ve değiştirmeye göre daha ekonomik",
-        "Modern tekniklerle yüksek başarı oranı",
-        "Lokal anestezi ile konforlu işlem",
-        "Gülümsemenizin doğal görünümünü korur"
-      ],
+      "heroDescription": "Enfeksiyonu ortadan kaldırmak, ağrıyı gidermek ve doğal dişlerinizi korumak için ileri kanal tedavisi.",
+      "overview": "Endodonti, diş pulpası ve diş kökünü çevreleyen dokuların tedavisine odaklanır.",
+      "benefitsTitle": "Neden Kanal Tedavisi",
+      "benefits": ["Doğal dişinizi kurtarın", "Ağrı ve enfeksiyonu ortadan kaldırın", "Yayılmayı önleyin", "Doğal kapanışı koruyun", "Daha uygun maliyetli", "Yüksek başarı oranı", "Konforlu işlem", "Doğal görünümü korur"],
       "processTitle": "Endodontik Tedaviniz",
       "process": [
-        {
-          "title": "Teşhis & Röntgen",
-          "description": "Dişinizi muayene ediyoruz ve enfeksiyonun boyutunu ve kök kanal anatomisini değerlendirmek için ayrıntılı röntgenler çekiyoruz. Bulgularımızı açıklıyor ve özel durumunuz için en iyi tedavi yaklaşımını görüşüyoruz."
-        },
-        {
-          "title": "Anestezi & İzolasyon",
-          "description": "Konforunuz için bölge lokal anesteziyle iyice uyuşturulur. İşlem sırasında dişi temiz ve kuru tutmak için etrafına bir rubber dam yerleştirilir."
-        },
-        {
-          "title": "Erişim & Temizlik",
-          "description": "Pulpa odasına erişmek için diş kronunda küçük bir açıklık oluşturuyoruz. Özel aletler kullanarak enfekte veya hasar görmüş pulpa dokusunu dikkatle çıkarıyor ve kök kanallarını kapsamlı şekilde temizliyor ve şekillendiriyoruz."
-        },
-        {
-          "title": "Dezenfeksiyon & Doldurma",
-          "description": "Kanallar antibakteriyel solüsyonlarla dezenfekte edilir ve gutta-perka adlı biyouyumlu bir malzemeyle doldurulur. Bu, yeniden enfeksiyonu önlemek için kanalları mühürler."
-        },
-        {
-          "title": "Restorasyon",
-          "description": "Kanal tedavisi tamamlandıktan sonra diş, koruma ve tam fonksiyon kazandırma amacıyla dolgu veya kronla restore edilir. Arka dişler için ek dayanıklılık sağlamak üzere genellikle kron önerilir."
-        }
+        {"title": "Teşhis ve Röntgen", "description": "Dişin muayenesi ve enfeksiyonun boyutunun değerlendirilmesi."},
+        {"title": "Anestezi ve İzolasyon", "description": "Bölgenin uyuşturulması ve rubber dam yerleştirilmesi."},
+        {"title": "Erişim ve Temizlik", "description": "Enfekte pulpanın çıkarılması ve kök kanallarının temizlenmesi."},
+        {"title": "Dezenfeksiyon ve Dolgu", "description": "Kanalların dezenfekte edilmesi ve gutta-percha ile doldurulması."},
+        {"title": "Restorasyon", "description": "Dişin dolgu veya kronla restore edilmesi."}
       ],
       "faqTitle": "Endodonti Soruları",
       "faqs": [
-        {
-          "question": "Kanal tedavisi ağrılı mıdır?",
-          "answer": "Modern kanal tedavisi etkili lokal anestezi altında uygulanır ve genellikle dolgu yaptırmaktan daha rahatsız edici değildir. Hastaların çoğu işlemin enfekte dişten kaynaklanan ağrıyı giderdiğini bildirmektedir. Tedavi boyunca konforunuza öncelik veriyoruz."
-        },
-        {
-          "question": "Kanal tedavisi ne kadar sürer?",
-          "answer": "Çoğu kanal tedavisi her biri 60-90 dakika süren bir ila iki seansta tamamlanabilir. Ziyaret sayısı vakanın karmaşıklığına ve tedavi edilen dişe bağlıdır. Ön dişler genellikle birden fazla köke sahip azı dişlerine göre daha az zaman gerektirir."
-        },
-        {
-          "question": "Kanal tedavisi yaptırmazsam ne olur?",
-          "answer": "Tedavi edilmemiş enfekte bir diş kendiliğinden iyileşmez. Enfeksiyon çevredeki kemik ve dokuya yayılarak apse, kemik kaybı ve şiddetli ağrıya neden olabilir. Sonunda dişin çekilmesi gerekebilir. Kanal tedavisi dişi kurtarabilir ve bu komplikasyonları önleyebilir."
-        },
-        {
-          "question": "Kanal tedavisi yapılmış dişler ne kadar dayanır?",
-          "answer": "Uygun restorasyon ve bakımla kanal tedavisi yapılmış bir diş ömür boyu sürebilir. Temel faktörler, önerildiğinde dişin kronla düzgün şekilde restore edilmesi, iyi ağız hijyeninin sürdürülmesi ve düzenli diş kontrollerine gidilmesidir."
-        }
+        {"question": "Kanal tedavisi ağrılı mıdır?", "answer": "Dolgu yaptırmaktan daha fazla rahatsızlık vermez."},
+        {"question": "Ne kadar sürer?", "answer": "Bir ila iki randevu, her biri 60-90 dakika."},
+        {"question": "Tedavi olmazsam ne olur?", "answer": "Enfeksiyon yayılabilir, potansiyel olarak apse ve kemik kaybına neden olabilir."},
+        {"question": "Tedavi edilmiş dişler ne kadar süre dayanır?", "answer": "Doğru restorasyon ve bakımla ömür boyu."}
       ],
-      "duration": "1-2 seans, her biri 60-90 dakika",
+      "duration": "1-2 randevu, her biri 60-90 dakika",
       "warranty": "Tedavi başarı oranı %95'in üzerinde"
     }
   },
   "philosophyPage": {
     "title": "Felsefemiz",
-    "subtitle": "Zeo Dental Clinic'te, olağanüstü diş bakımının bir sanat formu olduğuna inanıyoruz. Yarattığımız her gülümseme, hassasiyet, teknoloji ve insan dokunuşunun bir şaheseridir.",
+    "subtitle": "Zeo Dental Clinic'te, olağanüstü diş bakımının bir sanat formu olduğuna inanıyoruz.",
     "visionLabel": "Vizyonumuz",
-    "visionTitle": "Gülümsemeleri Dönüştürmek, Hayatları Değiştirmek",
-    "visionText": "Diş hekimine gitmenin sadece bir zorunluluk değil, dört gözle beklediğiniz bir deneyim olduğu bir dünya hayal ediyoruz. Kliniğimiz, kapımızdan giren her hasta için güven, mükemmellik ve samimi özen temeli üzerine kurulmuştur. Beklentileri aşan sonuçlar sunmak için estetik diş hekimliğinin sanatını modern teknolojinin hassasiyetiyle birleştiriyoruz.",
+    "visionTitle": "Gülüşleri Dönüştürmek, Hayatları Değiştirmek",
+    "visionText": "Diş hekimini ziyaret etmenin dört gözle beklenen bir deneyim olduğu bir dünya hayal ediyoruz.",
     "valuesLabel": "Temel Değerler",
     "valuesTitle": "Neyi Savunuyoruz"
   },
   "teamPage": {
     "title": "Ekibimizle Tanışın",
-    "subtitle": "Kendini işine adamış dental profesyonellerden oluşan ekibimiz, onlarca yıllık deneyimi, sürekli eğitimi ve güzel, sağlıklı gülümsemeler yaratma tutkusunu bir araya getirmektedir.",
+    "subtitle": "Kendini işine adamış diş hekimliği profesyonellerinden oluşan ekibimiz, onlarca yıllık deneyimi bir araya getirir.",
     "ctaTitle": "Bizimle Tanışmaya Hazır mısınız?",
-    "ctaSubtitle": "Bir danışma randevusu alın ve Zeo Dental farkını yaşayın. Ekibimiz sizi karşılamaya hazır."
+    "ctaSubtitle": "Bir konsültasyon randevusu alın ve Zeo Dental farkını deneyimleyin."
   },
   "casesPage": {
     "title": "Klinik Vakalar",
-    "subtitle": "Gülümseme dönüşüm portföyümüzü keşfedin. Her vaka, danışmadan tamamlanmaya kadar benzersiz bir yolculuğu temsil eder ve çalışmamızın sanatını ve hassasiyetini sergiler.",
+    "subtitle": "Gülüş dönüşümü portföyümüzü keşfedin.",
     "introLabel": "Çalışmalarımız",
     "introTitle": "Gerçek Sonuçlar, Gerçek Hastalar",
-    "introText": "Zeo Dental Clinic'teki her gülümseme dönüşümü bir hikaye anlatır. Vakalarımızı sadece uzmanlığımızı sergilemek için değil, kendi gülümsemeniz için olasılıkları hayal etmenize yardımcı olmak için belgeliyoruz. Bunlar dental yolculuklarını bize emanet eden gerçek hastalardır.",
+    "introText": "Zeo Dental Clinic'teki her gülüş dönüşümü bir hikaye anlatır.",
     "moreComing": "Daha Fazla Vaka Yakında",
-    "moreComingDesc": "Galerimize sürekli yeni dönüşümler ekliyoruz.",
+    "moreComingDesc": "Galerimize sürekli olarak yeni dönüşümler ekliyoruz.",
     "processLabel": "Yaklaşımımız",
     "processTitle": "Bu Sonuçlara Nasıl Ulaşıyoruz",
-    "step1Title": "Danışma",
-    "step1Desc": "Dijital görüntüleme kullanarak diş sağlığınızın ve estetik hedeflerinizin kapsamlı bir analiziyle başlıyoruz.",
+    "step1Title": "Konsültasyon",
+    "step1Desc": "Diş sağlığınızın ve estetik hedeflerinizin kapsamlı analizi.",
     "step2Title": "Tedavi",
-    "step2Desc": "En son teknoloji ve premium malzemeler kullanarak kişiselleştirilmiş tedavi planınızı hassasiyet ve özenle uyguluyoruz.",
+    "step2Desc": "Son teknoloji ve premium malzemeler kullanılarak.",
     "step3Title": "Sonuçlar",
-    "step3Desc": "Dönüştürülmüş bir gülümseme ve en yüksek kalitede bakım aldığınızın güvenciyle ayrılırsınız.",
-    "ctaTitle": "Dönüşümünüzü Başlatın",
-    "ctaSubtitle": "Gülümsemeniz için nelerin mümkün olduğunu görmeye hazır mısınız? Bir danışma randevusu alın ve kişiselleştirilmiş tedavi planınızı oluşturalım."
+    "step3Desc": "Dönüştürülmüş bir gülüş ve özgüven.",
+    "ctaTitle": "Dönüşümünüze Başlayın",
+    "ctaSubtitle": "Neler mümkün olduğunu görmeye hazır mısınız? Konsültasyon randevusu alın."
   }
 }
