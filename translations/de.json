@@ -455,7 +455,11 @@
     "preferredTime": "Bevorzugte Uhrzeit",
     "bookAnother": "Weiteren Termin buchen",
     "returnHome": "Zur Startseite zurückkehren",
-    "processing": "Wird verarbeitet..."
+    "processing": "Wird verarbeitet...",
+    "uploadXray": "Röntgenbild oder Fotos hochladen",
+    "uploadHint": "Dateien hier ablegen oder klicken zum Durchsuchen",
+    "uploadFormats": "JPG, PNG, WebP oder PDF — Max. 10 MB pro Datei, bis zu 3 Dateien",
+    "healthDataConsent": "Ich stimme der Verarbeitung meiner zahnmedizinischen Gesundheitsdaten (Röntgenbilder/Fotos) ausschließlich zur Behandlungsplanung zu. Dateien werden nach 90 Tagen automatisch gelöscht."
   },
   "footer": {
     "tagline": "Wir setzen neue Maßstäbe in der Versorgung durch Design, Technologie und Kunstfertigkeit.",

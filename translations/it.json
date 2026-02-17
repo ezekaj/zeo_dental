@@ -456,7 +456,11 @@
     "preferredTime": "Orario Preferito",
     "bookAnother": "Prenota un Altro Appuntamento",
     "returnHome": "Torna alla Home",
-    "processing": "Elaborazione..."
+    "processing": "Elaborazione...",
+    "uploadXray": "Carica Radiografia o Foto",
+    "uploadHint": "Trascina e rilascia i file qui, oppure clicca per sfogliare",
+    "uploadFormats": "JPG, PNG, WebP o PDF — Max 10MB per file, fino a 3 file",
+    "healthDataConsent": "Acconsento al trattamento dei miei dati sanitari dentali (radiografie/foto) esclusivamente ai fini della pianificazione del trattamento. I file vengono eliminati automaticamente dopo 90 giorni."
   },
   "footer": {
     "tagline": "Ridefinire lo standard di cura attraverso design, tecnologia e arte.",

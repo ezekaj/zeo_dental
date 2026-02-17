@@ -456,7 +456,11 @@
     "processing": "Traitement en cours...",
     "description": "Décrivez Vos Besoins",
     "descriptionPlaceholder": "Veuillez décrire vos besoins dentaires, vos préoccupations ou le traitement qui vous intéresse...",
-    "quoteSubtext": "Réservez une consultation gratuite avec notre spécialiste et obtenez un devis personnalisé pour votre cas."
+    "quoteSubtext": "Réservez une consultation gratuite avec notre spécialiste et obtenez un devis personnalisé pour votre cas.",
+    "uploadXray": "Télécharger Radiographie ou Photos",
+    "uploadHint": "Glissez-déposez les fichiers ici, ou cliquez pour parcourir",
+    "uploadFormats": "JPG, PNG, WebP ou PDF — Max 10 Mo par fichier, jusqu'à 3 fichiers",
+    "healthDataConsent": "Je consens au traitement de mes données de santé dentaire (radiographies/photos) uniquement à des fins de planification du traitement. Les fichiers sont automatiquement supprimés après 90 jours."
   },
   "footer": {
     "tagline": "Redéfinir le standard de soins par le design, la technologie et l'art.",

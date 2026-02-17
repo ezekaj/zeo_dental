@@ -384,7 +384,11 @@
     "preferredTime": "Tercih Edilen Saat",
     "bookAnother": "Başka Randevu Al",
     "returnHome": "Ana Sayfaya Dön",
-    "processing": "İşleniyor..."
+    "processing": "İşleniyor...",
+    "uploadXray": "Röntgen veya Fotoğraf Yükle",
+    "uploadHint": "Dosyaları buraya sürükleyip bırakın veya tıklayarak göz atın",
+    "uploadFormats": "JPG, PNG, WebP veya PDF — Dosya başına maks. 10 MB, en fazla 3 dosya",
+    "healthDataConsent": "Diş sağlığı verilerimin (röntgen/fotoğraf) yalnızca tedavi planlaması amacıyla işlenmesine onay veriyorum. Dosyalar 90 gün sonra otomatik olarak silinir."
   },
   "footer": {
     "tagline": "Tasarım, teknoloji ve sanatla bakım standardını yeniden tanımlıyoruz.",

@@ -459,7 +459,11 @@
     "processing": "Duke procesuar...",
     "namePlaceholder": "Emri Mbiemri",
     "emailPlaceholder": "emri@shembull.com",
-    "phonePlaceholder": "+355 68 400 4840"
+    "phonePlaceholder": "+355 68 400 4840",
+    "uploadXray": "Ngarko Reze-X ose Foto",
+    "uploadHint": "Tërhiq dhe lësho skedarët këtu, ose kliko për të shfletuar",
+    "uploadFormats": "JPG, PNG, WebP ose PDF — Maks 10MB për skedar, deri në 3 skedarë",
+    "healthDataConsent": "Pranoj përpunimin e të dhënave të mia shëndetësore dentare (reze-x/foto) vetëm për qëllime planifikimi trajtimi. Skedarët fshihen automatikisht pas 90 ditësh."
   },
   "footer": {
     "tagline": "Duke ridefinuar standardin e kujdesit përmes dizajnit, teknologjisë dhe artizanatit.",

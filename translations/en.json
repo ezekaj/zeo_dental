@@ -459,7 +459,11 @@
     "processing": "Processing...",
     "namePlaceholder": "John Doe",
     "emailPlaceholder": "john@example.com",
-    "phonePlaceholder": "+355 68 400 4840"
+    "phonePlaceholder": "+355 68 400 4840",
+    "uploadXray": "Upload X-Ray or Photos",
+    "uploadHint": "Drag and drop files here, or click to browse",
+    "uploadFormats": "JPG, PNG, WebP or PDF — Max 10MB per file, up to 3 files",
+    "healthDataConsent": "I consent to the processing of my dental health data (X-rays/photos) for treatment planning purposes only. Files are automatically deleted after 90 days."
   },
   "footer": {
     "tagline": "Redefining the standard of care through design, technology, and artistry.",
