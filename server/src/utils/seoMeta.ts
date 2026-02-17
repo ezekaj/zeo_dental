@@ -607,6 +607,49 @@ export const SEO_META: Record<string, Partial<Record<Language, SeoMeta>>> = {
         'Lea los términos de servicio de Zeo Dental Clinic. Información sobre el uso del sitio, condiciones de reserva y servicios dentales en Tirana, Albania.',
     },
   },
+
+  '/packages': {
+    sq: {
+      title: 'Paketa Turizmi Dentar | Zeo Dental Clinic',
+      description:
+        'Paketa te plota kujdesi dentar per pacientet nderkombetar. Transfer aeroporti, akomodim dhe koordinator personal. Kerkoni oferte falas.',
+    },
+    en: {
+      title: 'Dental Tourism Packages | Zeo Dental Clinic Albania',
+      description:
+        'All-inclusive dental tourism packages in Tirana. Airport transfer, hotel, personal coordinator. Request your free personalized quote today.',
+    },
+    it: {
+      title: 'Pacchetti Turismo Dentale | Zeo Dental Clinic Albania',
+      description:
+        'Pacchetti turismo dentale tutto incluso a Tirana. Transfer aeroportuale, hotel, coordinatore personale. Richiedi il tuo preventivo gratuito.',
+    },
+    de: {
+      title: 'Zahntourismus-Pakete | Zeo Dental Clinic Albanien',
+      description:
+        'All-inclusive Zahntourismus-Pakete in Tirana. Flughafentransfer, Hotel, persoenlicher Koordinator. Fordern Sie Ihr kostenloses Angebot an.',
+    },
+    fr: {
+      title: 'Forfaits Tourisme Dentaire | Zeo Dental Clinic Albanie',
+      description:
+        'Forfaits tourisme dentaire tout compris a Tirana. Transfert aeroport, hotel, coordinateur personnel. Demandez votre devis gratuit.',
+    },
+    tr: {
+      title: 'Dis Turizmi Paketleri | Zeo Dental Clinic Arnavutluk',
+      description:
+        'Tirana\'da her sey dahil dis turizmi paketleri. Havalimani transferi, otel, kisisel koordinator. Ucretsiz teklifinizi isteyin.',
+    },
+    el: {
+      title: 'Paketa Odontiatrikou Tourismou | Zeo Dental Clinic Albania',
+      description:
+        'Olokleiromena paketa odontiatrikou tourismou sta Tirana. Metafora aerodromiou, xenodocheio, prosopikos syntonistis. Zitiste dorean prosfora.',
+    },
+    es: {
+      title: 'Paquetes Turismo Dental | Zeo Dental Clinic Albania',
+      description:
+        'Paquetes de turismo dental todo incluido en Tirana. Transfer aeropuerto, hotel, coordinador personal. Solicita tu presupuesto gratuito.',
+    },
+  },
 };
 
 export function getSeoMeta(barePath: string, lang: Language): SeoMeta {
