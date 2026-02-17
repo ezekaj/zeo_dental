@@ -121,6 +121,31 @@ async function start() {
       return { status: 'ok', timestamp: new Date().toISOString() };
     });
 
+    // Language detection endpoint - uses Accept-Language header from the browser
+    const LANG_MAP: Record<string, string> = {
+      sq: 'sq', en: 'en', it: 'it', de: 'de', fr: 'fr', tr: 'tr', el: 'el', es: 'es',
+    };
+    const SUPPORTED = new Set(Object.keys(LANG_MAP));
+
+    fastify.get('/api/detect-language', async (request) => {
+      const acceptLang = request.headers['accept-language'] || '';
+      // Parse Accept-Language: "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7"
+      const langs = acceptLang
+        .split(',')
+        .map(part => {
+          const [lang, q] = part.trim().split(';q=');
+          return { lang: lang.split('-')[0].toLowerCase(), q: q ? parseFloat(q) : 1 };
+        })
+        .sort((a, b) => b.q - a.q);
+
+      for (const { lang } of langs) {
+        if (SUPPORTED.has(lang)) {
+          return { language: lang };
+        }
+      }
+      return { language: 'en' };
+    });
+
     // Start server
     const host = process.env.HOST || '0.0.0.0';
     const port = parseInt(process.env.PORT || '3000', 10);

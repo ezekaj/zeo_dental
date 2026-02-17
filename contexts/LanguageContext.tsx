@@ -13,30 +13,21 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-const STORAGE_KEY = 'zeo-dental-language';
+const STORAGE_KEY = 'zeo-lang-v2';
 
 interface LanguageProviderProps {
   children: ReactNode;
 }
 
-const COUNTRY_TO_LANGUAGE: Record<string, Language> = {
-  AL: 'sq', XK: 'sq',
-  IT: 'it', SM: 'it', VA: 'it',
-  DE: 'de', AT: 'de', CH: 'de', LI: 'de',
-  FR: 'fr', BE: 'fr', MC: 'fr', LU: 'fr',
-  TR: 'tr',
-  GR: 'el', CY: 'el',
-  ES: 'es', MX: 'es', AR: 'es', CO: 'es', CL: 'es',
-};
-
-async function detectLanguageFromIP(): Promise<Language> {
+async function detectLanguage(): Promise<Language> {
   try {
-    const response = await fetch('https://ipapi.co/json/', {
+    const response = await fetch('/api/detect-language', {
       signal: AbortSignal.timeout(3000),
     });
-    if (!response.ok) throw new Error('IP detection failed');
+    if (!response.ok) throw new Error('Language detection failed');
     const data = await response.json();
-    return COUNTRY_TO_LANGUAGE[data.country_code] || 'en';
+    const lang = data.language as Language;
+    return SUPPORTED_LANGUAGES.includes(lang) ? lang : 'en';
   } catch {
     return 'en';
   }
@@ -57,7 +48,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   useEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (!saved || !SUPPORTED_LANGUAGES.includes(saved as Language)) {
-      detectLanguageFromIP().then(detected => {
+      detectLanguage().then(detected => {
         setLanguageState(detected);
         localStorage.setItem(STORAGE_KEY, detected);
       });
