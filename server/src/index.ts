@@ -238,7 +238,7 @@ async function start() {
       contentSecurityPolicy: {
         directives: {
           defaultSrc: ["'self'"],
-          scriptSrc: ["'self'"],
+          scriptSrc: ["'self'", 'https://static.elfsight.com', 'https://elfsightcdn.com'],
           styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
           fontSrc: ["'self'", 'https://fonts.gstatic.com'],
           imgSrc: [
@@ -249,7 +249,7 @@ async function start() {
             'https://i.pinimg.com',
           ],
           mediaSrc: ["'self'", 'https://videos.pexels.com', 'https://cdn.pixabay.com'],
-          connectSrc: ["'self'", 'https://generativelanguage.googleapis.com'],
+          connectSrc: ["'self'", 'https://generativelanguage.googleapis.com', 'https://core.service.elfsight.com'],
           frameSrc: ["'self'", 'https://www.google.com'],
           objectSrc: ["'none'"],
           upgradeInsecureRequests: [],
