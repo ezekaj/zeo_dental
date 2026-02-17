@@ -230,7 +230,7 @@ export const Booking: React.FC = () => {
                 </span>
               </div>
               <div className="group relative">
-                <label className="text-[10px] uppercase tracking-ultra text-white/40 mb-2 block">
+                <label className="text-[10px] uppercase tracking-ultra text-black/40 mb-2 block">
                   {t('booking.date')}
                 </label>
                 <input
