@@ -96,7 +96,7 @@ class CrmSyncService {
 
   private log(level: 'info' | 'error' | 'warn', msg: string, ...args: unknown[]) {
     if (this.logger) {
-      this.logger[level](`[CRM Sync] ${msg}`, ...args);
+      (this.logger[level] as (msg: string, ...args: unknown[]) => void)(`[CRM Sync] ${msg}`, ...args);
     }
   }
 
