@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowLeft, ArrowRight, Check, Clock, Shield } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
+import { useLocalePath } from '../hooks/useLocalePath';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { ChatWidget } from './ChatWidget';
@@ -18,6 +19,7 @@ interface TreatmentPageProps {
 
 export const TreatmentPage: React.FC<TreatmentPageProps> = ({ treatmentKey, heroImage }) => {
   const { t, tRaw } = useTranslation();
+  const lp = useLocalePath();
 
   // Get treatment data from translations
   const title = t(`treatmentPages.${treatmentKey}.title`);
@@ -49,7 +51,7 @@ export const TreatmentPage: React.FC<TreatmentPageProps> = ({ treatmentKey, hero
         {/* Content */}
         <div className="relative container mx-auto px-4 sm:px-6 md:px-12 pt-32 pb-16">
           <a
-            href="/treatments"
+            href={lp('/treatments')}
             className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
@@ -85,7 +87,7 @@ export const TreatmentPage: React.FC<TreatmentPageProps> = ({ treatmentKey, hero
             {/* CTA */}
             <div className="mt-10">
               <a
-                href="/book"
+                href={lp('/book')}
                 className="inline-flex items-center gap-3 bg-studio-gold text-white px-8 py-4 text-sm uppercase tracking-wider hover:bg-studio-gold/90 transition-colors"
               >
                 {t('services.bookAppointment')}

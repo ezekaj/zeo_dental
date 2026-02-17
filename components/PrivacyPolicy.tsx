@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useLocalePath } from '../hooks/useLocalePath';
 import { privacyContent } from '../translations/privacy';
 
 const renderText = (text: string) => {
@@ -21,6 +22,7 @@ const renderText = (text: string) => {
 
 export const PrivacyPolicy: React.FC = () => {
   const { language } = useLanguage();
+  const lp = useLocalePath();
   const content = privacyContent[language] || privacyContent.en;
 
   return (
@@ -28,7 +30,7 @@ export const PrivacyPolicy: React.FC = () => {
       <header className="bg-studio-black text-white py-8">
         <div className="container mx-auto px-4 sm:px-6 md:px-12">
           <a
-            href="/"
+            href={lp('/')}
             className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors mb-6"
           >
             <ArrowLeft size={18} />

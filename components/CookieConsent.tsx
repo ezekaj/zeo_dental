@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from '../hooks/useTranslation';
+import { useLocalePath } from '../hooks/useLocalePath';
 
 const STORAGE_KEY = 'zeo-cookie-consent';
 
@@ -11,6 +12,7 @@ interface CookieConsentData {
 
 export const CookieConsent: React.FC = () => {
   const { t } = useTranslation();
+  const lp = useLocalePath();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -45,7 +47,7 @@ export const CookieConsent: React.FC = () => {
             <p className="text-[13px] leading-relaxed text-studio-gray font-light max-w-2xl">
               {t('cookie.message', 'We use cookies to enhance your browsing experience and analyze site traffic.')}{' '}
               <a
-                href="/privacy-policy"
+                href={lp('/privacy-policy')}
                 className="text-studio-gold hover:text-white underline underline-offset-2 transition-colors"
               >
                 {t('cookie.learnMore', 'Learn More')}

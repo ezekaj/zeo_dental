@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { ArrowLeft, GraduationCap, Award, Quote } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { useScrollColorize } from '../hooks/useScrollColorize';
+import { useLocalePath } from '../hooks/useLocalePath';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { ChatWidget } from './ChatWidget';
@@ -100,6 +101,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, t }) => {
 
 export const TeamPage: React.FC = () => {
   const { t } = useTranslation();
+  const lp = useLocalePath();
   const founder = DOCTORS[0];
   const team = DOCTORS.slice(1);
   const [founderRef, shouldColorizeFounder] = useScrollColorize<HTMLDivElement>(0.3);
@@ -142,7 +144,7 @@ export const TeamPage: React.FC = () => {
         {/* Content */}
         <div className="relative container mx-auto px-4 sm:px-6 md:px-12 pt-32 pb-16">
           <a
-            href="/"
+            href={lp('/')}
             className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />

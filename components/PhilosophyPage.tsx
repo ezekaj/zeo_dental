@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Check, Heart, Shield, Sparkles, Users } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { useScrollColorize } from '../hooks/useScrollColorize';
+import { useLocalePath } from '../hooks/useLocalePath';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { ChatWidget } from './ChatWidget';
@@ -21,6 +22,7 @@ const philosophyImages = [
 
 export const PhilosophyPage: React.FC = () => {
   const { t } = useTranslation();
+  const lp = useLocalePath();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [slideshowRef, shouldColorize] = useScrollColorize<HTMLDivElement>(0.4);
@@ -71,7 +73,7 @@ export const PhilosophyPage: React.FC = () => {
         {/* Content */}
         <div className="relative container mx-auto px-4 sm:px-6 md:px-12 pt-32 pb-16">
           <a
-            href="/"
+            href={lp('/')}
             className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />

@@ -3,6 +3,7 @@ import { ComparisonSlider } from './ComparisonSlider';
 import { Reveal } from './ui/Reveal';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
+import { useLocalePath } from '../hooks/useLocalePath';
 
 /**
  * Detect if device is touch-only (no hover capability)
@@ -153,6 +154,7 @@ const CaseCard: React.FC<CaseCardProps> = ({
 
 export const ClinicalCases: React.FC = () => {
   const { t } = useTranslation();
+  const lp = useLocalePath();
 
   return (
     <section
@@ -174,7 +176,7 @@ export const ClinicalCases: React.FC = () => {
           </Reveal>
           <Reveal delay={200}>
             <a
-              href="/cases"
+              href={lp('/cases')}
               className="group hidden md:flex items-center gap-4 text-[10px] uppercase tracking-ultra hover:text-studio-gold transition-colors py-2"
               data-cursor="hover"
             >
@@ -234,7 +236,7 @@ export const ClinicalCases: React.FC = () => {
         {/* Mobile-only CTA since the top one is hidden on mobile */}
         <div className="mt-8 sm:mt-10 md:mt-12 md:hidden flex justify-center">
           <a
-            href="/cases"
+            href={lp('/cases')}
             className="group flex items-center gap-3 sm:gap-4 text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra hover:text-studio-gold transition-colors py-3 px-4"
           >
             {t('cases.viewGallery')}

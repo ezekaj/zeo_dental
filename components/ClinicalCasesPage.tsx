@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowLeft, ArrowRight, Clock, Layers } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
+import { useLocalePath } from '../hooks/useLocalePath';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { ChatWidget } from './ChatWidget';
@@ -20,6 +21,7 @@ interface CaseData {
 
 export const ClinicalCasesPage: React.FC = () => {
   const { t } = useTranslation();
+  const lp = useLocalePath();
 
   // Case data - all 3 cases
   const cases: CaseData[] = [
@@ -73,7 +75,7 @@ export const ClinicalCasesPage: React.FC = () => {
         {/* Content */}
         <div className="relative container mx-auto px-4 sm:px-6 md:px-12 pt-32 pb-16">
           <a
-            href="/"
+            href={lp('/')}
             className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />

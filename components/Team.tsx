@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Reveal } from './ui/Reveal';
 import { DOCTORS } from '../constants';
 import { useTranslation } from '../hooks/useTranslation';
+import { useLocalePath } from '../hooks/useLocalePath';
 import { sanitizeHtml } from '../utils/sanitize';
 
 /**
@@ -57,10 +58,11 @@ interface TeamMemberCardProps {
 
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, isMobile, t }) => {
   const colorize = useScrollColorize(isMobile);
+  const lp = useLocalePath();
 
   const handleClick = () => {
     // Navigate to team page with member id hash
-    window.location.href = `/team#${member.id}`;
+    window.location.href = lp('/team') + `#${member.id}`;
   };
 
   return (
@@ -121,6 +123,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, isMobile, t }) 
 
 export const Team: React.FC = () => {
   const { t } = useTranslation();
+  const lp = useLocalePath();
   const founder = DOCTORS[0];
   const team = DOCTORS.slice(1);
   const [isMobile, setIsMobile] = useState(false);
@@ -138,7 +141,7 @@ export const Team: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center mb-16 sm:mb-24 md:mb-32 border-b border-gray-100 pb-12 sm:pb-16 md:pb-24">
           <div className="w-full lg:w-5/12">
             <Reveal>
-              <a href="/team#dr-emanuela" className="block">
+              <a href={lp('/team') + '#dr-emanuela'} className="block">
               <div ref={founderColorize.ref} className="relative aspect-[3/4] overflow-hidden group cursor-pointer">
                 <picture>
                   <source srcSet={founder.image} type="image/webp" />

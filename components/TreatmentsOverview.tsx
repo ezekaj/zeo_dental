@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { useScrollColorize } from '../hooks/useScrollColorize';
+import { useLocalePath } from '../hooks/useLocalePath';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { ChatWidget } from './ChatWidget';
@@ -111,6 +112,7 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({
 
 export const TreatmentsOverview: React.FC = () => {
   const { t } = useTranslation();
+  const lp = useLocalePath();
 
   return (
     <div className="min-h-screen bg-white">
@@ -147,7 +149,7 @@ export const TreatmentsOverview: React.FC = () => {
                 title={t(`treatments.items.${treatment.key}.title`)}
                 description={t(`treatments.items.${treatment.key}.description`)}
                 image={treatment.image}
-                href={treatment.href}
+                href={lp(treatment.href)}
                 learnMoreText={t('treatments.learnMore')}
               />
             ))}
