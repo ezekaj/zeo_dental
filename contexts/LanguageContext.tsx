@@ -64,14 +64,14 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     }
   }, []);
 
-  // Persist language choice to localStorage
+  // Update document lang attribute when language changes
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, language);
     document.documentElement.lang = language;
   }, [language]);
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
+    localStorage.setItem(STORAGE_KEY, lang);
   };
 
   const value: LanguageContextType = {
