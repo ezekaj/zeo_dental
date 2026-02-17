@@ -19,7 +19,12 @@ export const Footer: React.FC = () => {
   return (
     <footer className="bg-white pt-16 sm:pt-24 md:pt-32 pb-8 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-16 md:gap-20 mb-16 sm:mb-24 md:mb-32 items-end">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-16 md:gap-20 mb-16 sm:mb-24 md:mb-32 items-end relative overflow-hidden">
+          <img
+            src="/images/zeo-logo.png"
+            alt=""
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] max-w-[600px] opacity-[0.06] select-none pointer-events-none"
+          />
           <div>
             <ul className="space-y-1 sm:space-y-2">
               {NAV_ITEMS.map(item => (
@@ -60,17 +65,8 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Massive Brand Logo */}
-        <div className="border-t border-gray-100 pt-6 sm:pt-8 relative">
-          <div className="flex justify-center translate-y-4">
-            <img
-              src="/images/zeo-logo.png"
-              alt="Zeo Dental Clinic"
-              className="w-[60vw] max-w-[600px] opacity-[0.06] select-none pointer-events-none"
-            />
-          </div>
-
-          <div className="absolute bottom-2 sm:bottom-4 w-full flex flex-col md:flex-row justify-between items-center md:items-end text-[10px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra text-gray-400 gap-2 px-4 sm:px-0">
+        <div className="border-t border-gray-100 pt-6 sm:pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-end text-[10px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra text-gray-400 gap-2 px-4 sm:px-0">
             <div className="flex flex-col md:flex-row items-center gap-1 sm:gap-2 md:gap-3">
               <span>
                 &copy; {currentYear} {t('footer.rights')}
