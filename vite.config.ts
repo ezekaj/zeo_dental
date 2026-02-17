@@ -9,7 +9,20 @@ export default defineConfig(({ mode }) => {
       port: 3000,
       host: '0.0.0.0',
     },
-    plugins: [react()],
+    plugins: [
+      {
+        name: 'spa-lang-fallback',
+        configureServer(server) {
+          server.middlewares.use((req, _res, next) => {
+            if (req.url?.match(/^\/(sq|en|it|de|fr|tr|el|es)(\/|$)/) && !req.url.includes('.')) {
+              req.url = '/index.html';
+            }
+            next();
+          });
+        },
+      },
+      react(),
+    ],
     define: {
       // Legacy support for direct API (dev only)
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),

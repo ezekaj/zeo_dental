@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from '../hooks/useTranslation';
+import { useLocalePath } from '../hooks/useLocalePath';
 
 const NAV_ITEMS = [
   { labelKey: 'nav.clinic', href: '/' },
@@ -12,6 +13,7 @@ const NAV_ITEMS = [
 
 export const Footer: React.FC = () => {
   const { t } = useTranslation();
+  const lp = useLocalePath();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -23,7 +25,7 @@ export const Footer: React.FC = () => {
               {NAV_ITEMS.map(item => (
                 <li key={item.labelKey} className="overflow-hidden">
                   <a
-                    href={item.href}
+                    href={lp(item.href)}
                     className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-studio-black hover:italic hover:translate-x-4 transition-all duration-500 py-1"
                     data-cursor="hover"
                   >
@@ -74,11 +76,11 @@ export const Footer: React.FC = () => {
                 &copy; {currentYear} {t('footer.rights')}
               </span>
               <span className="hidden md:inline">•</span>
-              <a href="/privacy-policy" className="hover:text-studio-gold transition-colors py-1">
+              <a href={lp('/privacy-policy')} className="hover:text-studio-gold transition-colors py-1">
                 Privacy Policy
               </a>
               <span className="hidden md:inline">•</span>
-              <a href="/terms-of-service" className="hover:text-studio-gold transition-colors py-1">
+              <a href={lp('/terms-of-service')} className="hover:text-studio-gold transition-colors py-1">
                 Terms of Service
               </a>
               <span className="hidden md:inline">•</span>

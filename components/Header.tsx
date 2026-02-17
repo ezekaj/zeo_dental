@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { X } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { useLocalePath } from '../hooks/useLocalePath';
 
 const NAV_ITEMS = [
   { labelKey: 'nav.clinic', href: '#home' },
@@ -17,6 +18,7 @@ const HEADER_OFFSET = 100;
 
 export const Header: React.FC = () => {
   const { t } = useTranslation();
+  const lp = useLocalePath();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -45,7 +47,7 @@ export const Header: React.FC = () => {
       });
     } else {
       // If not on homepage, navigate to homepage with anchor
-      window.location.href = '/' + href;
+      window.location.href = lp('/') + href;
     }
 
     // Close mobile menu if open
@@ -86,7 +88,7 @@ export const Header: React.FC = () => {
           {/* Center: Brand Logo */}
           <div className="flex justify-center">
             <a
-              href="/"
+              href={lp('/')}
               className="relative group"
               data-cursor="hover"
             >
@@ -103,7 +105,7 @@ export const Header: React.FC = () => {
           {/* Right: CTA */}
           <div className="flex justify-end">
             <a
-              href="/book"
+              href={lp('/book')}
               className={`text-[10px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra font-medium border px-3 sm:px-6 py-2.5 sm:py-3 transition-all duration-500 ${
                 isScrolled
                   ? 'border-studio-black text-studio-black hover:bg-studio-black hover:text-white'
@@ -126,7 +128,7 @@ export const Header: React.FC = () => {
         <div className="container mx-auto px-6 md:px-12 h-full relative">
           {/* Logo in menu */}
           <div className="absolute top-8 left-6 md:top-10 md:left-12">
-            <a href="/" onClick={() => setIsMobileMenuOpen(false)}>
+            <a href={lp('/')} onClick={() => setIsMobileMenuOpen(false)}>
               <img
                 src="/images/zeo-logo.png"
                 alt="Zeo Dental Clinic"
@@ -154,7 +156,7 @@ export const Header: React.FC = () => {
               {NAV_ITEMS.map((item, idx) => (
                 <div key={item.labelKey} className="overflow-hidden">
                   <a
-                    href={item.href}
+                    href={item.isPage ? lp(item.href) : item.href}
                     onClick={e => {
                       if ('isPage' in item && item.isPage) {
                         // For page links, close menu and navigate

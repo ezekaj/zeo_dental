@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { SUPPORTED_LANGUAGES, getLangFromPath, stripLangPrefix, localePath } from '../utils/i18n';
+import type { Language } from '../utils/i18n';
 
-export type Language = 'sq' | 'en' | 'it' | 'de' | 'fr' | 'tr' | 'el' | 'es';
-
-const SUPPORTED_LANGUAGES: Language[] = ['sq', 'en', 'it', 'de', 'fr', 'tr', 'el', 'es'];
+export type { Language };
 
 interface LanguageContextType {
   language: Language;
@@ -19,50 +19,36 @@ interface LanguageProviderProps {
   children: ReactNode;
 }
 
-async function detectLanguage(): Promise<Language> {
-  try {
-    const response = await fetch('/api/detect-language', {
-      signal: AbortSignal.timeout(3000),
-    });
-    if (!response.ok) throw new Error('Language detection failed');
-    const data = await response.json();
-    const lang = data.language as Language;
-    return SUPPORTED_LANGUAGES.includes(lang) ? lang : 'en';
-  } catch {
-    return 'en';
-  }
-}
-
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
+    // URL is the source of truth
     if (typeof window !== 'undefined') {
+      const urlLang = getLangFromPath(window.location.pathname);
+      if (urlLang) return urlLang;
+
+      // Fallback to localStorage (shouldn't happen if server redirects)
       const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved && SUPPORTED_LANGUAGES.includes(saved as Language)) {
+      if (saved && (SUPPORTED_LANGUAGES as readonly string[]).includes(saved)) {
         return saved as Language;
       }
     }
     return 'en';
   });
 
-  // Detect language from IP on first visit (no saved preference)
-  useEffect(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (!saved || !SUPPORTED_LANGUAGES.includes(saved as Language)) {
-      detectLanguage().then(detected => {
-        setLanguageState(detected);
-        localStorage.setItem(STORAGE_KEY, detected);
-      });
-    }
-  }, []);
-
   // Update document lang attribute when language changes
   useEffect(() => {
     document.documentElement.lang = language;
   }, [language]);
 
-  const setLanguage = (lang: Language) => {
-    setLanguageState(lang);
-    localStorage.setItem(STORAGE_KEY, lang);
+  const setLanguage = (newLang: Language) => {
+    // Save preference
+    localStorage.setItem(STORAGE_KEY, newLang);
+    document.cookie = `zeo-lang=${newLang};path=/;max-age=${60 * 60 * 24 * 365};SameSite=Lax`;
+
+    // Navigate to same page in new language
+    const barePath = stripLangPrefix(window.location.pathname);
+    const hash = window.location.hash;
+    window.location.href = localePath(barePath, newLang) + hash;
   };
 
   const value: LanguageContextType = {

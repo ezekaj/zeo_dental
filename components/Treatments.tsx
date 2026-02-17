@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Reveal } from './ui/Reveal';
 import { useTranslation } from '../hooks/useTranslation';
+import { useLocalePath } from '../hooks/useLocalePath';
 import { ArrowRight } from 'lucide-react';
 
 /**
@@ -25,6 +26,7 @@ interface TreatmentItemProps {
   learnMoreText: string;
   treatmentKey: string;
   isMobile: boolean;
+  lp: (path: string) => string;
 }
 
 const TreatmentItem: React.FC<TreatmentItemProps> = ({
@@ -35,6 +37,7 @@ const TreatmentItem: React.FC<TreatmentItemProps> = ({
   learnMoreText,
   treatmentKey,
   isMobile,
+  lp,
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [isInCenter, setIsInCenter] = useState(false);
@@ -111,7 +114,7 @@ const TreatmentItem: React.FC<TreatmentItemProps> = ({
           {/* Learn more link */}
           <div className="mt-4 sm:mt-6 overflow-hidden">
             <a
-              href={`/treatments/${treatmentKey}`}
+              href={lp(`/treatments/${treatmentKey}`)}
               className="inline-flex items-center gap-2 text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra text-white/60 group-hover:text-studio-gold transition-all duration-500 transform translate-y-8 group-hover:translate-y-0 py-2"
             >
               {learnMoreText}
@@ -126,6 +129,7 @@ const TreatmentItem: React.FC<TreatmentItemProps> = ({
 
 export const Treatments: React.FC = () => {
   const { t } = useTranslation();
+  const lp = useLocalePath();
   const trackRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -218,7 +222,7 @@ export const Treatments: React.FC = () => {
 
           <Reveal delay={200}>
             <a
-              href="/treatments"
+              href={lp('/treatments')}
               className="group hidden lg:flex items-center gap-4 text-[10px] uppercase tracking-ultra hover:text-studio-gold transition-colors"
               data-cursor="hover"
             >
@@ -246,6 +250,7 @@ export const Treatments: React.FC = () => {
                 learnMoreText={t('treatments.learnMore')}
                 treatmentKey={treatment.key}
                 isMobile={isMobile}
+                lp={lp}
               />
             </div>
           ))}

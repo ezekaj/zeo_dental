@@ -20,6 +20,7 @@ import { PhilosophyPage } from './components/PhilosophyPage';
 import { TeamPage } from './components/TeamPage';
 import { ClinicalCasesPage } from './components/ClinicalCasesPage';
 import { CookieConsent } from './components/CookieConsent';
+import { stripLangPrefix } from './utils/i18n';
 
 // Treatment page configurations with hero images (matching TreatmentsOverview)
 const treatmentConfigs: Record<string, { key: string; heroImage: string }> = {
@@ -49,12 +50,12 @@ const treatmentConfigs: Record<string, { key: string; heroImage: string }> = {
   },
 };
 
-// Simple router based on pathname
+// Simple router based on pathname (strips /:lang/ prefix)
 const useRoute = () => {
-  const [route, setRoute] = useState(window.location.pathname);
+  const [route, setRoute] = useState(() => stripLangPrefix(window.location.pathname));
 
   useEffect(() => {
-    const handlePopState = () => setRoute(window.location.pathname);
+    const handlePopState = () => setRoute(stripLangPrefix(window.location.pathname));
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
