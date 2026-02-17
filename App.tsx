@@ -20,7 +20,6 @@ import { PhilosophyPage } from './components/PhilosophyPage';
 import { TeamPage } from './components/TeamPage';
 import { ClinicalCasesPage } from './components/ClinicalCasesPage';
 import { CookieConsent } from './components/CookieConsent';
-import { Statistics } from './components/Statistics';
 import { CtScanCTA } from './components/CtScanCTA';
 import { GoogleReviews } from './components/GoogleReviews';
 import { PackagesPage } from './components/PackagesPage';
@@ -84,7 +83,6 @@ const MainSite: React.FC = () => {
       <main id="main-content" tabIndex={-1}>
         <Hero />
         <Treatments />
-        <Statistics />
         <CtScanCTA />
         <Philosophy />
         <Team />

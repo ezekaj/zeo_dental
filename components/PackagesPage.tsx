@@ -95,7 +95,7 @@ export const PackagesPage: React.FC = () => {
                       ))}
                     </ul>
                     <a
-                      href={lp('/book')}
+                      href={`${lp('/book')}?package=${tier.key}`}
                       className={`block text-center text-[10px] uppercase tracking-ultra py-4 transition-colors duration-300 ${
                         tier.featured
                           ? 'bg-studio-gold text-white hover:bg-studio-gold/90'

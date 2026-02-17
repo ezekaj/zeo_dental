@@ -16,13 +16,19 @@ export const Booking: React.FC = () => {
   const { t } = useTranslation();
   const { language } = useLanguage();
   const showDateTime = language === 'sq';
+
+  // Pre-fill from ?package= query param (linked from PackagesPage)
+  const packageParam = new URLSearchParams(window.location.search).get('package');
+  const validPackages = ['essential', 'premium', 'vip'];
+  const selectedPackage = packageParam && validPackages.includes(packageParam) ? packageParam : null;
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     date: '',
     time: 'morning',
-    description: '',
+    description: selectedPackage ? t(`booking.packageTemplate.${selectedPackage}`) : '',
     honeypot: '',
   });
 
@@ -98,7 +104,9 @@ export const Booking: React.FC = () => {
           date: formData.date || undefined,
           time: formData.time || undefined,
           description: formData.description,
-          service: 'General Consultation',
+          service: selectedPackage
+            ? `Package: ${selectedPackage.charAt(0).toUpperCase() + selectedPackage.slice(1)}`
+            : 'General Consultation',
         }),
       });
 
