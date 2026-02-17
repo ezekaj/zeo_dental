@@ -424,6 +424,7 @@
     "conciergeSubtitle": "Votre Sourire Parfait Commence Ici.",
     "conciergeDesc": "Demandez un devis gratuit personnalisé pour votre traitement dentaire. Nos spécialistes examineront votre cas et vous fourniront un plan de traitement détaillé avec des prix transparents.",
     "consentData": "Je consens au traitement de mes données personnelles à des fins de réservation.",
+    "consentWhatsApp": "J'accepte de recevoir des notifications de rendez-vous via WhatsApp.",
     "consentHealth": "Je consens explicitement au traitement de mes informations de santé pour la planification du traitement.",
     "directLine": "Ligne Directe",
     "availability": "Disponible Lun-Sam, 9h - 19h",
@@ -482,7 +483,13 @@
     "assistantName": "Sofia",
     "status": "Toujours en ligne",
     "typing": "Sofia est en train d'écrire...",
-    "disclaimer": "Les réponses de l'IA peuvent varier. En cas d'urgence médicale, appelez le 112."
+    "disclaimer": "Assistant IA propulsé par Google Gemini. Ne partagez pas d'informations de santé sensibles par chat. Pour les urgences médicales, appelez le 112."
+  },
+  "cookie": {
+    "message": "Nous utilisons des cookies essentiels pour assurer le bon fonctionnement de notre site web. Aucun cookie de suivi ou de marketing n'est utilisé.",
+    "accept": "Tout Accepter",
+    "essentialOnly": "Essentiels Uniquement",
+    "learnMore": "En Savoir Plus"
   },
   "contact": {
     "phone": "+355 68 400 4840",

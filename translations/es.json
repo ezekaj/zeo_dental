@@ -426,6 +426,7 @@
     "description": "Describe tus Necesidades",
     "descriptionPlaceholder": "Por favor, describe tus preocupaciones dentales o el tratamiento que te interesa...",
     "consentData": "Consiento el procesamiento de mis datos personales con fines de reserva.",
+    "consentWhatsApp": "Acepto recibir notificaciones de citas a través de WhatsApp.",
     "consentHealth": "Consiento explicitamente el procesamiento de mi informacion de salud para la planificacion del tratamiento.",
     "directLine": "Linea Directa",
     "availability": "Disponible Lun-Sab, 9:00 - 19:00",
@@ -481,7 +482,13 @@
     "assistantName": "Sofia",
     "status": "Siempre en linea",
     "typing": "Sofia esta escribiendo...",
-    "disclaimer": "Las respuestas de IA pueden variar. Para emergencias medicas, llama al 112."
+    "disclaimer": "Asistente IA impulsado por Google Gemini. No comparta información de salud sensible a través del chat. Para emergencias médicas, llame al 112."
+  },
+  "cookie": {
+    "message": "Utilizamos cookies esenciales para garantizar el correcto funcionamiento de nuestro sitio web. No se utilizan cookies de seguimiento ni de marketing.",
+    "accept": "Aceptar Todo",
+    "essentialOnly": "Solo Esenciales",
+    "learnMore": "Saber Más"
   },
   "contact": {
     "phone": "+355 68 400 4840",

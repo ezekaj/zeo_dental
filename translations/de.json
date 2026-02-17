@@ -426,6 +426,7 @@
     "description": "Beschreiben Sie Ihre Bedürfnisse",
     "descriptionPlaceholder": "Bitte beschreiben Sie Ihre zahnmedizinischen Anliegen oder die Behandlung, die Sie interessiert...",
     "consentData": "Ich stimme der Verarbeitung meiner persönlichen Daten für Buchungszwecke zu.",
+    "consentWhatsApp": "Ich stimme dem Empfang von Terminbenachrichtigungen über WhatsApp zu.",
     "consentHealth": "Ich stimme ausdrücklich der Verarbeitung meiner Gesundheitsinformationen für die Behandlungsplanung zu.",
     "directLine": "Direktleitung",
     "availability": "Verfügbar Mo-Sa, 9:00 - 19:00 Uhr",
@@ -481,7 +482,13 @@
     "assistantName": "Sofia",
     "status": "Immer online",
     "typing": "Sofia tippt...",
-    "disclaimer": "KI-Antworten können variieren. Bei medizinischen Notfällen rufen Sie den Notruf."
+    "disclaimer": "KI-Assistent powered by Google Gemini. Teilen Sie keine sensiblen Gesundheitsinformationen über den Chat. Bei medizinischen Notfällen rufen Sie 112 an."
+  },
+  "cookie": {
+    "message": "Wir verwenden essenzielle Cookies, um die ordnungsgemäße Funktion unserer Website zu gewährleisten. Es werden keine Tracking- oder Marketing-Cookies verwendet.",
+    "accept": "Alle Akzeptieren",
+    "essentialOnly": "Nur Essenzielle",
+    "learnMore": "Mehr Erfahren"
   },
   "contact": {
     "phone": "+355 68 400 4840",

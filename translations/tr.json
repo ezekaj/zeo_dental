@@ -355,6 +355,7 @@
     "description": "İhtiyaçlarınızı Açıklayın",
     "descriptionPlaceholder": "Lütfen diş sorunlarınızı veya ilgilendiğiniz tedaviyi açıklayın...",
     "consentData": "Kişisel verilerimin randevu amacıyla işlenmesine onay veriyorum.",
+    "consentWhatsApp": "WhatsApp üzerinden randevu bildirimleri almayı kabul ediyorum.",
     "consentHealth": "Tedavi planlaması için sağlık bilgilerimin işlenmesine açıkça onay veriyorum.",
     "directLine": "Doğrudan Hat",
     "availability": "Pzt-Cmt, 09:00 - 19:00 arası hizmetinizdeyiz",
@@ -410,7 +411,13 @@
     "assistantName": "Sofia",
     "status": "Her zaman çevrimiçi",
     "typing": "Sofia yazıyor...",
-    "disclaimer": "Yapay zeka yanıtları değişiklik gösterebilir. Tıbbi aciller için 112'yi arayın."
+    "disclaimer": "Google Gemini destekli yapay zeka asistanı. Sohbet yoluyla hassas sağlık bilgilerini paylaşmayın. Tıbbi acil durumlar için 112'yi arayın."
+  },
+  "cookie": {
+    "message": "Web sitemizin düzgün çalışmasını sağlamak için temel çerezler kullanıyoruz. İzleme veya pazarlama çerezleri kullanılmamaktadır.",
+    "accept": "Tümünü Kabul Et",
+    "essentialOnly": "Yalnızca Temel",
+    "learnMore": "Daha Fazla Bilgi"
   },
   "contact": {
     "phone": "+355 68 400 4840",

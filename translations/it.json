@@ -427,6 +427,7 @@
     "conciergeSubtitle": "Il Tuo Sorriso Perfetto Inizia Qui.",
     "conciergeDesc": "Richiedi un preventivo gratuito personalizzato per il tuo trattamento dentale. I nostri specialisti esamineranno il tuo caso e forniranno un piano di trattamento dettagliato con prezzi trasparenti.",
     "consentData": "Acconsento al trattamento dei miei dati personali a fini di prenotazione.",
+    "consentWhatsApp": "Acconsento a ricevere notifiche sugli appuntamenti tramite WhatsApp.",
     "consentHealth": "Acconsento esplicitamente al trattamento delle mie informazioni sanitarie per la pianificazione del trattamento.",
     "directLine": "Linea Diretta",
     "availability": "Disponibile Lun-Sab, 9:00 - 19:00",
@@ -482,7 +483,13 @@
     "assistantName": "Sofia",
     "status": "Sempre online",
     "typing": "Sofia sta scrivendo...",
-    "disclaimer": "Le risposte dell'IA possono variare. Per emergenze mediche, chiama il 112."
+    "disclaimer": "Assistente AI alimentato da Google Gemini. Non condividere informazioni sanitarie sensibili tramite chat. Per emergenze mediche, chiamare il 112."
+  },
+  "cookie": {
+    "message": "Utilizziamo cookie essenziali per garantire il corretto funzionamento del nostro sito web. Non vengono utilizzati cookie di tracciamento o marketing.",
+    "accept": "Accetta Tutti",
+    "essentialOnly": "Solo Essenziali",
+    "learnMore": "Scopri di Più"
   },
   "contact": {
     "phone": "+355 68 400 4840",

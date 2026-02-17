@@ -426,6 +426,7 @@
     "description": "Përshkruani Nevojat Tuaja",
     "descriptionPlaceholder": "Ju lutemi përshkruani shqetësimet tuaja dentare ose trajtimin që ju intereson...",
     "consentData": "Pranoj përpunimin e të dhënave personale për qëllime rezervimi.",
+    "consentWhatsApp": "Pranoj të marr njoftime për takimet përmes WhatsApp.",
     "consentHealth": "Pranoj në mënyrë të qartë përpunimin e informacionit shëndetësor për planifikimin e trajtimit.",
     "directLine": "Linja Direkte",
     "availability": "E disponueshme Hën-Sht, 9:00 - 19:00",
@@ -485,7 +486,13 @@
     "assistantName": "Sofia",
     "status": "Gjithmonë online",
     "typing": "Sofia po shkruan...",
-    "disclaimer": "Përgjigjet e AI mund të ndryshojnë. Për emergjenca mjekësore, telefononi 112."
+    "disclaimer": "Asistenti AI i mundësuar nga Google Gemini. Mos ndani informacione të ndjeshme shëndetësore përmes chat-it. Për urgjenca mjekësore, telefononi 112."
+  },
+  "cookie": {
+    "message": "Ne përdorim cookies thelbësore për funksionimin e duhur të faqes sonë. Nuk përdorim cookies për gjurmim ose marketing.",
+    "accept": "Prano të Gjitha",
+    "essentialOnly": "Vetëm Thelbësoret",
+    "learnMore": "Mëso Më Shumë"
   },
   "contact": {
     "phone": "+355 68 400 4840",
