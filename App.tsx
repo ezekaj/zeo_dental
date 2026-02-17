@@ -24,6 +24,7 @@ import { Statistics } from './components/Statistics';
 import { CtScanCTA } from './components/CtScanCTA';
 import { GoogleReviews } from './components/GoogleReviews';
 import { PackagesPage } from './components/PackagesPage';
+import { VideoTestimonials } from './components/VideoTestimonials';
 import { stripLangPrefix } from './utils/i18n';
 
 // Treatment page configurations with hero images (matching TreatmentsOverview)
@@ -89,6 +90,7 @@ const MainSite: React.FC = () => {
         <Team />
         <ClinicalCases />
         <GoogleReviews />
+        <VideoTestimonials />
       </main>
       <Footer />
       <ChatWidget />
