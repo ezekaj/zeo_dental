@@ -121,28 +121,38 @@ async function start() {
       return { status: 'ok', timestamp: new Date().toISOString() };
     });
 
-    // Language detection endpoint - uses Accept-Language header from the browser
-    const LANG_MAP: Record<string, string> = {
-      sq: 'sq', en: 'en', it: 'it', de: 'de', fr: 'fr', tr: 'tr', el: 'el', es: 'es',
+    // Language detection endpoint - server-side IP geolocation
+    const COUNTRY_TO_LANG: Record<string, string> = {
+      AL: 'sq', XK: 'sq',
+      IT: 'it', SM: 'it', VA: 'it',
+      DE: 'de', AT: 'de', CH: 'de', LI: 'de',
+      FR: 'fr', BE: 'fr', MC: 'fr', LU: 'fr',
+      TR: 'tr',
+      GR: 'el', CY: 'el',
+      ES: 'es', MX: 'es', AR: 'es', CO: 'es', CL: 'es',
     };
-    const SUPPORTED = new Set(Object.keys(LANG_MAP));
 
     fastify.get('/api/detect-language', async (request) => {
-      const acceptLang = request.headers['accept-language'] || '';
-      // Parse Accept-Language: "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7"
-      const langs = acceptLang
-        .split(',')
-        .map(part => {
-          const [lang, q] = part.trim().split(';q=');
-          return { lang: lang.split('-')[0].toLowerCase(), q: q ? parseFloat(q) : 1 };
-        })
-        .sort((a, b) => b.q - a.q);
+      // Get client IP from Fly.io headers or fallback
+      const clientIp = (request.headers['fly-client-ip']
+        || request.headers['x-forwarded-for']?.toString().split(',')[0]?.trim()
+        || request.ip) as string;
 
-      for (const { lang } of langs) {
-        if (SUPPORTED.has(lang)) {
-          return { language: lang };
+      try {
+        // Server-side geo-IP lookup (ip-api.com: free, no key needed, 45 req/min)
+        const res = await fetch(`http://ip-api.com/json/${clientIp}?fields=countryCode`, {
+          signal: AbortSignal.timeout(2000),
+        });
+        if (res.ok) {
+          const data = await res.json() as { countryCode?: string };
+          if (data.countryCode && COUNTRY_TO_LANG[data.countryCode]) {
+            return { language: COUNTRY_TO_LANG[data.countryCode] };
+          }
         }
+      } catch {
+        // IP lookup failed, fall through to default
       }
+
       return { language: 'en' };
     });
 
