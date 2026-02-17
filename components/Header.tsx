@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { X, Globe } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { X } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 const NAV_ITEMS = [
   { labelKey: 'nav.clinic', href: '#home' },
@@ -17,7 +17,6 @@ const HEADER_OFFSET = 100;
 
 export const Header: React.FC = () => {
   const { t } = useTranslation();
-  const { language, setLanguage } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -81,15 +80,7 @@ export const Header: React.FC = () => {
             </button>
 
             {/* Language Switcher */}
-            <button
-              onClick={() => setLanguage(language === 'en' ? 'sq' : 'en')}
-              className="flex items-center gap-1 sm:gap-2 p-2 text-[11px] sm:text-[10px] uppercase tracking-wide sm:tracking-ultra font-medium hover:text-studio-gold transition-colors"
-              data-cursor="hover"
-              aria-label="Switch language"
-            >
-              <Globe className="w-4 h-4" />
-              <span>{language === 'en' ? 'SQ' : 'EN'}</span>
-            </button>
+            <LanguageSwitcher variant={isScrolled ? 'dark' : 'light'} />
           </div>
 
           {/* Center: Brand Logo */}
