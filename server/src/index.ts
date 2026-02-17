@@ -4,6 +4,7 @@ import helmet from '@fastify/helmet';
 import rateLimit from '@fastify/rate-limit';
 import fastifyStatic from '@fastify/static';
 import fastifyCookie from '@fastify/cookie';
+import fastifyMultipart from '@fastify/multipart';
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -233,6 +234,14 @@ async function start() {
 
     // Cookie support (for language preference)
     await fastify.register(fastifyCookie);
+
+    // Multipart support (for file uploads)
+    await fastify.register(fastifyMultipart, {
+      limits: {
+        fileSize: 10 * 1024 * 1024, // 10MB per file
+        files: 3,                    // max 3 files
+      },
+    });
 
     // Security headers
     await fastify.register(helmet, {

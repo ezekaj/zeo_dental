@@ -1,7 +1,15 @@
 import { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify';
+import { randomUUID } from 'crypto';
+import { mkdir, writeFile } from 'fs/promises';
+import { join, extname } from 'path';
 import type { BookingRequest, BookingResponse } from '../types.js';
 import { sendClinicNotification } from '../services/emailTemplates.js';
 import { getCrmSync } from '../services/crmSync.js';
+
+const UPLOAD_DIR = process.env.UPLOAD_DIR || '/tmp/zeo-uploads';
+const FILE_RETENTION_DAYS = 90;
+const ALLOWED_MIME_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'application/pdf'];
+const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
 
 // Validation helpers
 function isValidEmail(email: string): boolean {
@@ -222,4 +230,110 @@ export async function bookingRoutes(fastify: FastifyInstance) {
       }
     }
   );
+
+  // Upload files for a booking (GDPR-compliant health data handling)
+  fastify.post<{
+    Params: { bookingId: string };
+  }>('/booking/:bookingId/files', async (request, reply) => {
+    const { bookingId } = request.params as { bookingId: string };
+
+    // Validate booking exists
+    const pool = fastify.pg;
+    const bookingCheck = await pool.query('SELECT id FROM bookings WHERE id = $1', [bookingId]);
+    if (bookingCheck.rows.length === 0) {
+      return reply.status(404).send({ success: false, error: 'Booking not found' });
+    }
+
+    // Ensure upload directory exists
+    const bookingDir = join(UPLOAD_DIR, bookingId);
+    await mkdir(bookingDir, { recursive: true });
+
+    const parts = request.parts();
+    let healthDataConsent = false;
+    const savedFiles: Array<{ filename: string; originalName: string; mimeType: string; sizeBytes: number }> = [];
+
+    for await (const part of parts) {
+      if (part.type === 'field') {
+        if (part.fieldname === 'healthDataConsent' && part.value === 'true') {
+          healthDataConsent = true;
+        }
+        continue;
+      }
+
+      // File part
+      if (!ALLOWED_MIME_TYPES.includes(part.mimetype)) {
+        return reply.status(400).send({
+          success: false,
+          error: `File type not allowed: ${part.mimetype}. Accepted: JPG, PNG, WebP, PDF`,
+        });
+      }
+
+      const buffer = await part.toBuffer();
+      if (buffer.length > MAX_FILE_SIZE) {
+        return reply.status(400).send({
+          success: false,
+          error: `File too large: ${part.filename}. Maximum size: 10MB`,
+        });
+      }
+
+      const ext = extname(part.filename || '') || '.bin';
+      const safeFilename = `${randomUUID()}${ext}`;
+      const storagePath = join(bookingDir, safeFilename);
+
+      await writeFile(storagePath, buffer);
+
+      savedFiles.push({
+        filename: safeFilename,
+        originalName: part.filename || 'unknown',
+        mimeType: part.mimetype,
+        sizeBytes: buffer.length,
+      });
+    }
+
+    if (savedFiles.length === 0) {
+      return reply.status(400).send({ success: false, error: 'No files uploaded' });
+    }
+
+    if (!healthDataConsent) {
+      return reply.status(400).send({
+        success: false,
+        error: 'Health data consent is required for uploading dental X-rays or photos',
+      });
+    }
+
+    // Insert file metadata into DB
+    const expiresAt = new Date();
+    expiresAt.setDate(expiresAt.getDate() + FILE_RETENTION_DAYS);
+
+    for (const file of savedFiles) {
+      await pool.query(
+        `INSERT INTO booking_files (booking_id, filename, original_name, mime_type, size_bytes, storage_path, health_data_consent, expires_at)
+         VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
+        [
+          bookingId,
+          file.filename,
+          file.originalName,
+          file.mimeType,
+          file.sizeBytes,
+          join(bookingId, file.filename),
+          healthDataConsent,
+          expiresAt,
+        ]
+      );
+    }
+
+    fastify.log.info(
+      'Uploaded %d files for booking %s (consent: %s, expires: %s)',
+      savedFiles.length,
+      bookingId,
+      healthDataConsent,
+      expiresAt.toISOString()
+    );
+
+    return reply.status(201).send({
+      success: true,
+      message: `${savedFiles.length} file(s) uploaded successfully`,
+      files: savedFiles.map(f => ({ name: f.originalName, size: f.sizeBytes })),
+    });
+  });
 }

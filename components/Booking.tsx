@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useCallback } from 'react';
 import { Button } from './ui/Button';
 import { Reveal } from './ui/Reveal';
-import { CheckCircle, MapPin, Phone, Mail } from 'lucide-react';
+import { CheckCircle, MapPin, Phone, Mail, Upload, X, FileText, Image } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -26,7 +26,41 @@ export const Booking: React.FC = () => {
     honeypot: '',
   });
 
+  const [files, setFiles] = useState<File[]>([]);
+  const [healthConsent, setHealthConsent] = useState(false);
+  const [isDragOver, setIsDragOver] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const [status, setStatus] = useState<'IDLE' | 'SUBMITTING' | 'SUCCESS' | 'ERROR'>('IDLE');
+
+  const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'application/pdf'];
+  const MAX_FILES = 3;
+  const MAX_SIZE = 10 * 1024 * 1024; // 10MB
+
+  const addFiles = useCallback((newFiles: FileList | File[]) => {
+    const validFiles = Array.from(newFiles).filter(f => {
+      if (!ALLOWED_TYPES.includes(f.type)) return false;
+      if (f.size > MAX_SIZE) return false;
+      return true;
+    });
+    setFiles(prev => [...prev, ...validFiles].slice(0, MAX_FILES));
+  }, []);
+
+  const removeFile = useCallback((index: number) => {
+    setFiles(prev => prev.filter((_, i) => i !== index));
+  }, []);
+
+  const handleDrop = useCallback((e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragOver(false);
+    if (e.dataTransfer.files.length) addFiles(e.dataTransfer.files);
+  }, [addFiles]);
+
+  const handleDragOver = useCallback((e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragOver(true);
+  }, []);
+
+  const handleDragLeave = useCallback(() => setIsDragOver(false), []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -76,6 +110,23 @@ export const Booking: React.FC = () => {
         return;
       }
 
+      // Upload files if present
+      if (files.length > 0 && data.booking?.id) {
+        try {
+          const formData = new FormData();
+          formData.append('healthDataConsent', String(healthConsent));
+          files.forEach(f => formData.append('files', f));
+
+          await fetch(`${API_BASE}/api/booking/${data.booking.id}/files`, {
+            method: 'POST',
+            body: formData,
+          });
+        } catch {
+          // File upload failure doesn't block booking success
+          console.warn('File upload failed, booking was still created');
+        }
+      }
+
       setStatus('SUCCESS');
       console.log('Booking created:', data.booking);
     } catch (error) {
@@ -110,6 +161,8 @@ export const Booking: React.FC = () => {
                   description: '',
                   honeypot: '',
                 });
+                setFiles([]);
+                setHealthConsent(false);
               }}
               className="text-[10px] uppercase tracking-ultra text-studio-gold hover:text-white transition-colors"
             >
@@ -245,6 +298,71 @@ export const Booking: React.FC = () => {
                   className="w-full bg-transparent border-b border-white/20 py-4 text-xl font-serif text-white placeholder-white/20 focus:outline-none focus:border-white transition-colors resize-none"
                 />
               </div>
+              {/* X-Ray / Photo Upload */}
+              <div className="group relative md:col-span-2 lg:col-span-3">
+                <label className="text-[10px] uppercase tracking-ultra text-white/40 mb-3 block">
+                  {t('booking.uploadXray')}
+                  <span className="ml-2 normal-case tracking-normal text-white/25">
+                    {t('booking.optional')}
+                  </span>
+                </label>
+                <div
+                  onDrop={handleDrop}
+                  onDragOver={handleDragOver}
+                  onDragLeave={handleDragLeave}
+                  onClick={() => fileInputRef.current?.click()}
+                  className={`border border-dashed rounded-none py-8 px-6 text-center cursor-pointer transition-colors ${
+                    isDragOver
+                      ? 'border-studio-gold bg-studio-gold/5'
+                      : 'border-white/20 hover:border-white/40'
+                  }`}
+                >
+                  <Upload size={24} className="mx-auto mb-3 text-white/30" />
+                  <p className="text-white/40 text-sm font-light">
+                    {t('booking.uploadHint')}
+                  </p>
+                  <p className="text-white/20 text-xs mt-1">
+                    {t('booking.uploadFormats')}
+                  </p>
+                  <input
+                    ref={fileInputRef}
+                    type="file"
+                    multiple
+                    accept=".jpg,.jpeg,.png,.webp,.pdf"
+                    className="hidden"
+                    onChange={e => e.target.files && addFiles(e.target.files)}
+                  />
+                </div>
+
+                {/* File previews */}
+                {files.length > 0 && (
+                  <div className="flex flex-wrap gap-3 mt-4">
+                    {files.map((file, i) => (
+                      <div
+                        key={`${file.name}-${i}`}
+                        className="flex items-center gap-2 bg-white/5 px-3 py-2 text-sm"
+                      >
+                        {file.type === 'application/pdf' ? (
+                          <FileText size={16} className="text-studio-gold flex-shrink-0" />
+                        ) : (
+                          <Image size={16} className="text-studio-gold flex-shrink-0" />
+                        )}
+                        <span className="text-white/60 truncate max-w-[160px]">{file.name}</span>
+                        <span className="text-white/25 text-xs">
+                          {(file.size / 1024 / 1024).toFixed(1)}MB
+                        </span>
+                        <button
+                          type="button"
+                          onClick={(e) => { e.stopPropagation(); removeFile(i); }}
+                          className="text-white/30 hover:text-red-400 transition-colors ml-1"
+                        >
+                          <X size={14} />
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
               {showDateTime && (
                 <>
                   <div className="group relative">
@@ -294,6 +412,20 @@ export const Booking: React.FC = () => {
                 />
                 <span className="text-sm text-white/60">{t('booking.consentWhatsApp')}</span>
               </label>
+              {files.length > 0 && (
+                <label className="flex items-start gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={healthConsent}
+                    onChange={e => setHealthConsent(e.target.checked)}
+                    className="mt-1 w-4 h-4 rounded border-white/30 bg-transparent text-studio-gold focus:ring-studio-gold"
+                    required
+                  />
+                  <span className="text-sm text-white/60">
+                    {t('booking.healthDataConsent')}
+                  </span>
+                </label>
+              )}
             </div>
 
             <div className="flex flex-col md:flex-row justify-between items-center mt-8 gap-8">
