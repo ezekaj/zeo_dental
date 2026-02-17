@@ -1081,5 +1081,11 @@
     },
     "ctaTitle": "Etoimoi na Xekinisete?",
     "ctaDesc": "Steilte mas tin aktinografia i tis fotografies sas kai lavete prosopiko schedio therapeias se 24 ores. Choris desmefseis."
+  },
+  "videoTestimonials": {
+    "label": "Istories Asthenwn",
+    "title": "Akouste Tous Astheneís Mas",
+    "subtitle": "Pragmatikes istories apo diethneis astheneís pou metamorfwsan to chamogelo tous stin Odontriatiki Kliniki Zeo stin Tirana.",
+    "watchVideo": "Deite tin Istoria"
   }
 }

@@ -1085,5 +1085,11 @@
     },
     "ctaTitle": "Gati per te Filluar?",
     "ctaDesc": "Dergoni rontgenin ose fotot tuaja dhe merrni nje plan trajtimi te personalizuar brenda 24 oreve. Nuk kerkohet angazhim."
+  },
+  "videoTestimonials": {
+    "label": "Histori Pacientesh",
+    "title": "Degjoni nga Pacientet Tane",
+    "subtitle": "Histori reale nga paciente nderkombetare qe transformuan buzeqeshjet e tyre ne Kliniken Dentare Zeo ne Tirane.",
+    "watchVideo": "Shiko Historine"
   }
 }

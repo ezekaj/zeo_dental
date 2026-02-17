@@ -1084,5 +1084,11 @@
     },
     "ctaTitle": "Pret a Commencer?",
     "ctaDesc": "Envoyez-nous votre radio ou photos et recevez un plan de traitement personnalise sous 24 heures. Sans engagement."
+  },
+  "videoTestimonials": {
+    "label": "Histoires de Patients",
+    "title": "Ecoutez Nos Patients",
+    "subtitle": "Temoignages reels de patients internationaux qui ont transforme leur sourire a la Clinique Dentaire Zeo a Tirana.",
+    "watchVideo": "Voir le Temoignage"
   }
 }

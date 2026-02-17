@@ -1084,5 +1084,11 @@
     },
     "ctaTitle": "Pronto a Iniziare?",
     "ctaDesc": "Inviaci la tua radiografia o foto e ricevi un piano di trattamento personalizzato entro 24 ore. Senza impegno."
+  },
+  "videoTestimonials": {
+    "label": "Storie dei Pazienti",
+    "title": "Ascolta i Nostri Pazienti",
+    "subtitle": "Storie reali di pazienti internazionali che hanno trasformato il loro sorriso presso Zeo Dental Clinic a Tirana.",
+    "watchVideo": "Guarda la Storia"
   }
 }

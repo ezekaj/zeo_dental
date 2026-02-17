@@ -1081,5 +1081,11 @@
     },
     "ctaTitle": "Bereit Loszulegen?",
     "ctaDesc": "Senden Sie uns Ihr Rontgenbild oder Fotos und erhalten Sie einen personalisierten Behandlungsplan innerhalb von 24 Stunden. Unverbindlich."
+  },
+  "videoTestimonials": {
+    "label": "Patientengeschichten",
+    "title": "Erfahren Sie von Unseren Patienten",
+    "subtitle": "Echte Geschichten von internationalen Patienten, die ihr Lacheln in der Zeo Dental Clinic in Tirana verwandelt haben.",
+    "watchVideo": "Geschichte Ansehen"
   }
 }

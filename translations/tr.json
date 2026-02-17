@@ -723,5 +723,11 @@
     },
     "ctaTitle": "Baslamaya Hazir Misiniz?",
     "ctaDesc": "Rontgeninizi veya fotograflarinizi gonderin, 24 saat icinde kisisellestirilmis tedavi plani alin. Baglayici degil."
+  },
+  "videoTestimonials": {
+    "label": "Hasta Hikayeleri",
+    "title": "Hastalarimizdan Dinleyin",
+    "subtitle": "Tirana'daki Zeo Dental Clinic'te gulucuklerini donusturan uluslararasi hastalarin gercek hikayeleri.",
+    "watchVideo": "Hikayeyi Izle"
   }
 }

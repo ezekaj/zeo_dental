@@ -1106,5 +1106,11 @@
     },
     "ctaTitle": "Ready to Start?",
     "ctaDesc": "Send us your X-ray or photos and receive a personalized treatment plan within 24 hours. No commitment required."
+  },
+  "videoTestimonials": {
+    "label": "Patient Stories",
+    "title": "Hear From Our Patients",
+    "subtitle": "Real stories from international patients who transformed their smiles at Zeo Dental Clinic in Tirana.",
+    "watchVideo": "Watch Story"
   }
 }
