@@ -388,7 +388,12 @@
     "uploadXray": "Röntgen veya Fotoğraf Yükle",
     "uploadHint": "Dosyaları buraya sürükleyip bırakın veya tıklayarak göz atın",
     "uploadFormats": "JPG, PNG, WebP veya PDF — Dosya başına maks. 10 MB, en fazla 3 dosya",
-    "healthDataConsent": "Diş sağlığı verilerimin (röntgen/fotoğraf) yalnızca tedavi planlaması amacıyla işlenmesine onay veriyorum. Dosyalar 90 gün sonra otomatik olarak silinir."
+    "healthDataConsent": "Diş sağlığı verilerimin (röntgen/fotoğraf) yalnızca tedavi planlaması amacıyla işlenmesine onay veriyorum. Dosyalar 90 gün sonra otomatik olarak silinir.",
+    "packageTemplate": {
+      "essential": "Paket: Temel\n\nDiş ihtiyaçlarım:\n- \n\nPanoramik röntgenim var: Evet / Hayır\n\nEk notlar:\n",
+      "premium": "Paket: Premium\n\nDiş ihtiyaçlarım:\n- \n\nPanoramik röntgenim var: Evet / Hayır\n\nEk notlar:\n",
+      "vip": "Paket: VIP\n\nDiş ihtiyaçlarım:\n- \n\nPanoramik röntgenim var: Evet / Hayır\n\nEk notlar:\n"
+    }
   },
   "footer": {
     "tagline": "Tasarım, teknoloji ve sanatla bakım standardını yeniden tanımlıyoruz.",
@@ -672,13 +677,6 @@
     "step3Desc": "Dönüştürülmüş bir gülüş ve özgüven.",
     "ctaTitle": "Dönüşümünüze Başlayın",
     "ctaSubtitle": "Neler mümkün olduğunu görmeye hazır mısınız? Konsültasyon randevusu alın."
-  },
-  "stats": {
-    "label": "Rakamlarla",
-    "years": "Yillik Deneyim",
-    "patients": "Tedavi Edilen Hasta",
-    "satisfaction": "Memnuniyet Orani",
-    "languages": "Konusulan Dil"
   },
   "ctScan": {
     "label": "Sinirli Teklif",

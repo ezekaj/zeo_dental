@@ -460,7 +460,12 @@
     "uploadXray": "Télécharger Radiographie ou Photos",
     "uploadHint": "Glissez-déposez les fichiers ici, ou cliquez pour parcourir",
     "uploadFormats": "JPG, PNG, WebP ou PDF — Max 10 Mo par fichier, jusqu'à 3 fichiers",
-    "healthDataConsent": "Je consens au traitement de mes données de santé dentaire (radiographies/photos) uniquement à des fins de planification du traitement. Les fichiers sont automatiquement supprimés après 90 jours."
+    "healthDataConsent": "Je consens au traitement de mes données de santé dentaire (radiographies/photos) uniquement à des fins de planification du traitement. Les fichiers sont automatiquement supprimés après 90 jours.",
+    "packageTemplate": {
+      "essential": "Forfait : Essentiel\n\nMes besoins dentaires :\n- \n\nJ'ai une radiographie panoramique : Oui / Non\n\nNotes supplémentaires :\n",
+      "premium": "Forfait : Premium\n\nMes besoins dentaires :\n- \n\nJ'ai une radiographie panoramique : Oui / Non\n\nNotes supplémentaires :\n",
+      "vip": "Forfait : VIP\n\nMes besoins dentaires :\n- \n\nJ'ai une radiographie panoramique : Oui / Non\n\nNotes supplémentaires :\n"
+    }
   },
   "footer": {
     "tagline": "Redéfinir le standard de soins par le design, la technologie et l'art.",
@@ -1033,13 +1038,6 @@
     "step3Desc": "Vous repartez avec un sourire transformé et la confiance de savoir que vous avez reçu des soins de la plus haute qualité.",
     "ctaTitle": "Commencez Votre Transformation",
     "ctaSubtitle": "Prêt à voir ce qui est possible pour votre sourire ? Prenez rendez-vous et laissez-nous créer votre plan de traitement personnalisé."
-  },
-  "stats": {
-    "label": "En Chiffres",
-    "years": "Annees d'Experience",
-    "patients": "Patients Traites",
-    "satisfaction": "Taux de Satisfaction",
-    "languages": "Langues Parlees"
   },
   "ctScan": {
     "label": "Offre Limitee",

@@ -459,7 +459,12 @@
     "uploadXray": "Μεταφόρτωση Ακτινογραφίας ή Φωτογραφιών",
     "uploadHint": "Σύρτε και αποθέστε αρχεία εδώ ή κάντε κλικ για αναζήτηση",
     "uploadFormats": "JPG, PNG, WebP ή PDF — Μέγ. 10MB ανά αρχείο, έως 3 αρχεία",
-    "healthDataConsent": "Συναινώ στην επεξεργασία των οδοντιατρικών δεδομένων υγείας μου (ακτινογραφίες/φωτογραφίες) αποκλειστικά για σκοπούς σχεδιασμού θεραπείας. Τα αρχεία διαγράφονται αυτόματα μετά από 90 ημέρες."
+    "healthDataConsent": "Συναινώ στην επεξεργασία των οδοντιατρικών δεδομένων υγείας μου (ακτινογραφίες/φωτογραφίες) αποκλειστικά για σκοπούς σχεδιασμού θεραπείας. Τα αρχεία διαγράφονται αυτόματα μετά από 90 ημέρες.",
+    "packageTemplate": {
+      "essential": "Paketo: Vasiko\n\nOi odontiatrikes mou anagkes:\n- \n\nEcho mia panoramiki aksonomiki: Nai / Ochi\n\nProsthetes simeiosis:\n",
+      "premium": "Paketo: Premium\n\nOi odontiatrikes mou anagkes:\n- \n\nEcho mia panoramiki aksonomiki: Nai / Ochi\n\nProsthetes simeiosis:\n",
+      "vip": "Paketo: VIP\n\nOi odontiatrikes mou anagkes:\n- \n\nEcho mia panoramiki aksonomiki: Nai / Ochi\n\nProsthetes simeiosis:\n"
+    }
   },
   "footer": {
     "tagline": "Επαναπροσδιορίζοντας το πρότυπο φροντίδας μέσω σχεδιασμού, τεχνολογίας και τέχνης.",
@@ -1030,13 +1035,6 @@
     "step3Desc": "Φεύγετε με ένα μεταμορφωμένο χαμόγελο και την αυτοπεποίθηση που προέρχεται από φροντίδα υψηλότατης ποιότητας.",
     "ctaTitle": "Ξεκινήστε τη Μεταμόρφωσή Σας",
     "ctaSubtitle": "Έτοιμοι να δείτε τι είναι δυνατό για το χαμόγελό σας; Κλείστε συνεδρία και αφήστε μας να δημιουργήσουμε το εξατομικευμένο σχέδιο θεραπείας σας."
-  },
-  "stats": {
-    "label": "Se Arithmous",
-    "years": "Chronia Empeirias",
-    "patients": "Asthenis pou Therapeftikan",
-    "satisfaction": "Pososto Ikanopoiisis",
-    "languages": "Glosses pou Milountai"
   },
   "ctScan": {
     "label": "Periorismenei Prosfora",

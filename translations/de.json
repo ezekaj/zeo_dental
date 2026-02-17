@@ -459,7 +459,12 @@
     "uploadXray": "Röntgenbild oder Fotos hochladen",
     "uploadHint": "Dateien hier ablegen oder klicken zum Durchsuchen",
     "uploadFormats": "JPG, PNG, WebP oder PDF — Max. 10 MB pro Datei, bis zu 3 Dateien",
-    "healthDataConsent": "Ich stimme der Verarbeitung meiner zahnmedizinischen Gesundheitsdaten (Röntgenbilder/Fotos) ausschließlich zur Behandlungsplanung zu. Dateien werden nach 90 Tagen automatisch gelöscht."
+    "healthDataConsent": "Ich stimme der Verarbeitung meiner zahnmedizinischen Gesundheitsdaten (Röntgenbilder/Fotos) ausschließlich zur Behandlungsplanung zu. Dateien werden nach 90 Tagen automatisch gelöscht.",
+    "packageTemplate": {
+      "essential": "Paket: Essential\n\nMeine Zahnbehandlungsbedürfnisse:\n- \n\nIch habe ein Panorama-Röntgenbild: Ja / Nein\n\nZusätzliche Hinweise:\n",
+      "premium": "Paket: Premium\n\nMeine Zahnbehandlungsbedürfnisse:\n- \n\nIch habe ein Panorama-Röntgenbild: Ja / Nein\n\nZusätzliche Hinweise:\n",
+      "vip": "Paket: VIP\n\nMeine Zahnbehandlungsbedürfnisse:\n- \n\nIch habe ein Panorama-Röntgenbild: Ja / Nein\n\nZusätzliche Hinweise:\n"
+    }
   },
   "footer": {
     "tagline": "Wir setzen neue Maßstäbe in der Versorgung durch Design, Technologie und Kunstfertigkeit.",
@@ -1030,13 +1035,6 @@
     "step3Desc": "Sie verlassen uns mit einem verwandelten Lächeln und dem Selbstvertrauen, das mit dem Wissen einhergeht, die höchste Versorgungsqualität erhalten zu haben.",
     "ctaTitle": "Starten Sie Ihre Transformation",
     "ctaSubtitle": "Bereit zu sehen, was für Ihr Lächeln möglich ist? Buchen Sie eine Beratung und lassen Sie uns Ihren personalisierten Behandlungsplan erstellen."
-  },
-  "stats": {
-    "label": "In Zahlen",
-    "years": "Jahre Erfahrung",
-    "patients": "Behandelte Patienten",
-    "satisfaction": "Zufriedenheitsrate",
-    "languages": "Gesprochene Sprachen"
   },
   "ctScan": {
     "label": "Begrenztes Angebot",

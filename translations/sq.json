@@ -463,7 +463,12 @@
     "uploadXray": "Ngarko Reze-X ose Foto",
     "uploadHint": "Tërhiq dhe lësho skedarët këtu, ose kliko për të shfletuar",
     "uploadFormats": "JPG, PNG, WebP ose PDF — Maks 10MB për skedar, deri në 3 skedarë",
-    "healthDataConsent": "Pranoj përpunimin e të dhënave të mia shëndetësore dentare (reze-x/foto) vetëm për qëllime planifikimi trajtimi. Skedarët fshihen automatikisht pas 90 ditësh."
+    "healthDataConsent": "Pranoj përpunimin e të dhënave të mia shëndetësore dentare (reze-x/foto) vetëm për qëllime planifikimi trajtimi. Skedarët fshihen automatikisht pas 90 ditësh.",
+    "packageTemplate": {
+      "essential": "Paketa: Esencial\n\nNevojat e mia dentare:\n- \n\nKam një reze-x panoramike: Po / Jo\n\nShënime shtesë:\n",
+      "premium": "Paketa: Premium\n\nNevojat e mia dentare:\n- \n\nKam një reze-x panoramike: Po / Jo\n\nShënime shtesë:\n",
+      "vip": "Paketa: VIP\n\nNevojat e mia dentare:\n- \n\nKam një reze-x panoramike: Po / Jo\n\nShënime shtesë:\n"
+    }
   },
   "footer": {
     "tagline": "Duke ridefinuar standardin e kujdesit përmes dizajnit, teknologjisë dhe artizanatit.",
@@ -1034,13 +1039,6 @@
     "step3Desc": "Largoheni me një buzëqeshje të transformuar dhe besimin që vjen me dijen se keni marrë kujdesin e cilësisë më të lartë.",
     "ctaTitle": "Filloni Transformimin Tuaj",
     "ctaSubtitle": "Gati të shihni çfarë është e mundur për buzëqeshjen tuaj? Rezervoni një konsultë dhe na lini të krijojmë planin tuaj të personalizuar të trajtimit."
-  },
-  "stats": {
-    "label": "Ne Numra",
-    "years": "Vite Eksperience",
-    "patients": "Paciente te Trajtuar",
-    "satisfaction": "Shkalle Kenaqesie",
-    "languages": "Gjuhe te Folura"
   },
   "ctScan": {
     "label": "Oferte e Kufizuar",
