@@ -1,6 +1,12 @@
 import { useLanguage, Language } from '../contexts/LanguageContext';
 import sqTranslations from '../translations/sq.json';
 import enTranslations from '../translations/en.json';
+import itTranslations from '../translations/it.json';
+import deTranslations from '../translations/de.json';
+import frTranslations from '../translations/fr.json';
+import trTranslations from '../translations/tr.json';
+import elTranslations from '../translations/el.json';
+import esTranslations from '../translations/es.json';
 
 type TranslationValue = string | TranslationValue[] | { [key: string]: TranslationValue };
 type Translations = { [key: string]: TranslationValue };
@@ -8,6 +14,12 @@ type Translations = { [key: string]: TranslationValue };
 const translations: Record<Language, Translations> = {
   sq: sqTranslations,
   en: enTranslations,
+  it: itTranslations,
+  de: deTranslations,
+  fr: frTranslations,
+  tr: trTranslations,
+  el: elTranslations,
+  es: esTranslations,
 };
 
 /**

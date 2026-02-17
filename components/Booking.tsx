@@ -3,6 +3,7 @@ import { Button } from './ui/Button';
 import { Reveal } from './ui/Reveal';
 import { CheckCircle, MapPin, Phone, Mail } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
+import { useLanguage } from '../contexts/LanguageContext';
 
 // Clinic contact constants
 const CLINIC_PHONE = '+355684004840';
@@ -13,18 +14,21 @@ const GOOGLE_MAPS_URL = 'https://maps.google.com/?q=Rruga+Hamdi+Sina,+Tiranë,+A
 
 export const Booking: React.FC = () => {
   const { t } = useTranslation();
+  const { language } = useLanguage();
+  const showDateTime = language === 'sq';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     date: '',
     time: 'morning',
+    description: '',
     honeypot: '',
   });
 
   const [status, setStatus] = useState<'IDLE' | 'SUBMITTING' | 'SUCCESS' | 'ERROR'>('IDLE');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value,
@@ -57,8 +61,9 @@ export const Booking: React.FC = () => {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
-          date: formData.date,
-          time: formData.time,
+          date: formData.date || undefined,
+          time: formData.time || undefined,
+          description: formData.description,
           service: 'General Consultation',
         }),
       });
@@ -102,6 +107,7 @@ export const Booking: React.FC = () => {
                   phone: '',
                   date: '',
                   time: 'morning',
+                  description: '',
                   honeypot: '',
                 });
               }}
@@ -229,42 +235,54 @@ export const Booking: React.FC = () => {
                   {t('booking.optional')}
                 </span>
               </div>
-              <div className="group relative">
-                <label className="text-[10px] uppercase tracking-ultra text-black/40 mb-2 block">
-                  {t('booking.date')}
-                </label>
-                <input
-                  type="date"
-                  name="date"
-                  value={formData.date}
+              <div className="group relative md:col-span-2 lg:col-span-3">
+                <textarea
+                  name="description"
+                  value={formData.description}
                   onChange={handleChange}
-                  min={new Date().toISOString().split('T')[0]}
-                  required
-                  className="w-full bg-transparent border-b border-white/20 py-4 text-xl font-serif text-white focus:outline-none focus:border-white transition-colors [color-scheme:dark]"
+                  placeholder={t('booking.descriptionPlaceholder')}
+                  rows={3}
+                  className="w-full bg-transparent border-b border-white/20 py-4 text-xl font-serif text-white placeholder-white/20 focus:outline-none focus:border-white transition-colors resize-none"
                 />
               </div>
-              <div className="group relative">
-                <label className="text-[10px] uppercase tracking-ultra text-white/40 mb-2 block">
-                  {t('booking.time')}
-                </label>
-                <select
-                  name="time"
-                  value={formData.time}
-                  onChange={handleChange}
-                  required
-                  className="w-full bg-transparent border-b border-white/20 py-4 text-xl font-serif text-white focus:outline-none focus:border-white transition-colors appearance-none cursor-pointer"
-                >
-                  <option value="morning" className="bg-studio-black">
-                    {t('booking.morning')}
-                  </option>
-                  <option value="afternoon" className="bg-studio-black">
-                    {t('booking.afternoon')}
-                  </option>
-                  <option value="evening" className="bg-studio-black">
-                    {t('booking.evening')}
-                  </option>
-                </select>
-              </div>
+              {showDateTime && (
+                <>
+                  <div className="group relative">
+                    <label className="text-[10px] uppercase tracking-ultra text-black/40 mb-2 block">
+                      {t('booking.date')}
+                    </label>
+                    <input
+                      type="date"
+                      name="date"
+                      value={formData.date}
+                      onChange={handleChange}
+                      min={new Date().toISOString().split('T')[0]}
+                      className="w-full bg-transparent border-b border-white/20 py-4 text-xl font-serif text-white focus:outline-none focus:border-white transition-colors [color-scheme:dark]"
+                    />
+                  </div>
+                  <div className="group relative">
+                    <label className="text-[10px] uppercase tracking-ultra text-white/40 mb-2 block">
+                      {t('booking.time')}
+                    </label>
+                    <select
+                      name="time"
+                      value={formData.time}
+                      onChange={handleChange}
+                      className="w-full bg-transparent border-b border-white/20 py-4 text-xl font-serif text-white focus:outline-none focus:border-white transition-colors appearance-none cursor-pointer"
+                    >
+                      <option value="morning" className="bg-studio-black">
+                        {t('booking.morning')}
+                      </option>
+                      <option value="afternoon" className="bg-studio-black">
+                        {t('booking.afternoon')}
+                      </option>
+                      <option value="evening" className="bg-studio-black">
+                        {t('booking.evening')}
+                      </option>
+                    </select>
+                  </div>
+                </>
+              )}
             </div>
 
             <div className="flex flex-col md:flex-row justify-between items-center mt-20 gap-8">

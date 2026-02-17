@@ -1,6 +1,8 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
-export type Language = 'sq' | 'en';
+export type Language = 'sq' | 'en' | 'it' | 'de' | 'fr' | 'tr' | 'el' | 'es';
+
+const SUPPORTED_LANGUAGES: Language[] = ['sq', 'en', 'it', 'de', 'fr', 'tr', 'el', 'es'];
 
 interface LanguageContextType {
   language: Language;
@@ -17,22 +19,54 @@ interface LanguageProviderProps {
   children: ReactNode;
 }
 
+const COUNTRY_TO_LANGUAGE: Record<string, Language> = {
+  AL: 'sq', XK: 'sq',
+  IT: 'it', SM: 'it', VA: 'it',
+  DE: 'de', AT: 'de', CH: 'de', LI: 'de',
+  FR: 'fr', BE: 'fr', MC: 'fr', LU: 'fr',
+  TR: 'tr',
+  GR: 'el', CY: 'el',
+  ES: 'es', MX: 'es', AR: 'es', CO: 'es', CL: 'es',
+};
+
+async function detectLanguageFromIP(): Promise<Language> {
+  try {
+    const response = await fetch('https://ipapi.co/json/', {
+      signal: AbortSignal.timeout(3000),
+    });
+    if (!response.ok) throw new Error('IP detection failed');
+    const data = await response.json();
+    return COUNTRY_TO_LANGUAGE[data.country_code] || 'en';
+  } catch {
+    return 'en';
+  }
+}
+
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
-  // Default to Albanian ('sq') - primary language for Albanian dental clinic
   const [language, setLanguageState] = useState<Language>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved === 'en' || saved === 'sq') {
-        return saved;
+      if (saved && SUPPORTED_LANGUAGES.includes(saved as Language)) {
+        return saved as Language;
       }
     }
-    return 'sq'; // Albanian as default
+    return 'en';
   });
+
+  // Detect language from IP on first visit (no saved preference)
+  useEffect(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (!saved || !SUPPORTED_LANGUAGES.includes(saved as Language)) {
+      detectLanguageFromIP().then(detected => {
+        setLanguageState(detected);
+        localStorage.setItem(STORAGE_KEY, detected);
+      });
+    }
+  }, []);
 
   // Persist language choice to localStorage
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, language);
-    // Update document lang attribute for accessibility
     document.documentElement.lang = language;
   }, [language]);
 

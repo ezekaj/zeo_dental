@@ -12,6 +12,12 @@ interface LanguageOption {
 const languages: LanguageOption[] = [
   { code: 'sq', name: 'Shqip', flag: '🇦🇱' },
   { code: 'en', name: 'English', flag: '🇬🇧' },
+  { code: 'it', name: 'Italiano', flag: '🇮🇹' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'fr', name: 'Français', flag: '🇫🇷' },
+  { code: 'tr', name: 'Türkçe', flag: '🇹🇷' },
+  { code: 'el', name: 'Ελληνικά', flag: '🇬🇷' },
+  { code: 'es', name: 'Español', flag: '🇪🇸' },
 ];
 
 // Animated Globe Icon Component

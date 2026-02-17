@@ -22,7 +22,7 @@ const MAX_HISTORY_LENGTH = 10;
  */
 export const sendMessageToGemini = async (
   message: string,
-  language: 'sq' | 'en' = 'sq'
+  language: string = 'sq'
 ): Promise<string> => {
   try {
     // Convert history to API format

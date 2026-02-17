@@ -1,0 +1,1018 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "experience": "Erlebnis",
+    "gallery": "Galerie",
+    "team": "Team",
+    "testimonials": "Bewertungen",
+    "contact": "Kontakt",
+    "booking": "Jetzt buchen",
+    "menu": "Menü",
+    "close": "Schließen",
+    "location": "Tirana, Albanien",
+    "book": "Buchen",
+    "clinic": "Die Klinik",
+    "treatments": "Behandlungen",
+    "philosophy": "Philosophie",
+    "cases": "Klinische Fälle"
+  },
+  "hero": {
+    "welcome": "Willkommen bei Zeo Dental",
+    "redefining": "Wir definieren",
+    "artOfSmiles": "Die Kunst des Lächelns",
+    "artOf": "Die Kunst der",
+    "dentistry": "ZAHNMEDIZIN",
+    "subtitle": "Exzellenz, Präzision, Ästhetik",
+    "explore": "Entdecken",
+    "bookConsultation": "Beratung buchen",
+    "exploreServices": "Leistungen entdecken",
+    "yearsExp": "Jahre Erf.",
+    "smiles": "Lächeln"
+  },
+  "services": {
+    "label": "Unsere Expertise",
+    "title": "Umfassende Versorgung",
+    "subtitle": "Wir verbinden Kunstfertigkeit mit Wissenschaft, um ein umfassendes Spektrum an Zahnbehandlungen anzubieten, die auf Ihre individuellen Bedürfnisse zugeschnitten sind.",
+    "learnMore": "Mehr erfahren",
+    "backToServices": "Zurück zu den Leistungen",
+    "overview": "Überblick",
+    "aboutTreatment": "Über diese Behandlung",
+    "keyBenefits": "Wichtige Vorteile",
+    "theProcess": "Der Ablauf",
+    "readyToStart": "Bereit loszulegen?",
+    "bookConsultation": "Buchen Sie eine Beratung bei unseren Spezialisten, um zu besprechen, ob {service} das Richtige für Sie ist.",
+    "durationVaries": "Dauer variiert je nach Fall",
+    "warrantyProcedures": "Garantie auf alle Eingriffe",
+    "bookAppointment": "Termin buchen",
+    "serviceNotFound": "Leistung nicht gefunden",
+    "returnHome": "Zur Startseite",
+    "excellence": {
+      "title": "Exzellenz",
+      "description": "Kompromisslose Standards bei jeder Behandlung, die fortschrittliche Technologie mit handwerklicher Präzision verbinden"
+    },
+    "personalization": {
+      "title": "Personalisierung",
+      "description": "Maßgeschneiderte Behandlungspläne, die auf Ihr individuelles Zahnprofil und Ihre ästhetische Vision abgestimmt sind"
+    },
+    "comfort": {
+      "title": "Komfort",
+      "description": "Ein gepflegtes Ambiente, in dem jedes Detail für Ihre Ruhe und Entspannung sorgt"
+    },
+    "privacy": {
+      "title": "Privatsphäre",
+      "description": "Diskrete, vertrauliche Behandlung in einem exklusiven Umfeld, das Ihren persönlichen Raum respektiert"
+    },
+    "items": {
+      "cosmetic": {
+        "title": "Ästhetische Zahnmedizin",
+        "description": "Verwandeln Sie Ihr Lächeln mit Veneers, Bleaching und ästhetischem Bonding, abgestimmt auf Ihre Gesichtsstruktur.",
+        "longDescription": "Unsere ästhetischen Zahnbehandlungen sind darauf ausgelegt, die natürliche Schönheit Ihres Lächelns zu verbessern und gleichzeitig eine optimale Mundgesundheit zu gewährleisten. Wir glauben, dass ein Smile-Makeover nicht nur die Zähne verändert, sondern Ihr Lächeln mit Ihren Gesichtszügen und Ihrer Persönlichkeit in Einklang bringt. Mit digitaler Smile-Design-Technologie können Sie Ihr neues Lächeln vorab betrachten, bevor eine Behandlung beginnt.",
+        "benefits": [
+          "Individuell gestaltete Porzellan-Veneers für ein natürliches Aussehen",
+          "Professionelles Bleaching für sofortige Ergebnisse",
+          "Minimal-invasive Bonding-Techniken",
+          "Digitale Smile-Design-Vorschau"
+        ],
+        "process": [
+          {
+            "title": "Beratung",
+            "description": "Wir besprechen Ihre Ziele und analysieren Ihre Gesichtsstruktur."
+          },
+          {
+            "title": "Design",
+            "description": "Digitale Simulation Ihres neuen Lächelns zur Freigabe."
+          },
+          {
+            "title": "Vorbereitung",
+            "description": "Minimale Vorbereitung der Zähne und Einsetzen von Provisorien."
+          },
+          {
+            "title": "Transformation",
+            "description": "Befestigung der finalen Keramiken und letzte Anpassungen."
+          }
+        ]
+      },
+      "implants": {
+        "title": "Zahnimplantate",
+        "description": "Stellen Sie Funktion und Selbstvertrauen wieder her mit unseren hochmodernen Titan- und Zirkoniumimplantatlösungen.",
+        "longDescription": "Zahnimplantate sind der Goldstandard für Zahnersatz und bieten eine dauerhafte Lösung, die wie natürliche Zähne aussieht, sich anfühlt und funktioniert. Bei Zeo verwenden wir 3D-geführte Chirurgie für beispiellose Präzision und Komfort. Ob Sie einen einzelnen Zahn ersetzen oder eine Vollbogen-Restauration benötigen – unsere Spezialisten sorgen für ein Ergebnis, das sowohl Ihren Biss als auch Ihr Selbstvertrauen wiederherstellt.",
+        "benefits": [
+          "Dauerhafte Lösung für fehlende Zähne",
+          "Erhält die Kieferknochendichte",
+          "Keine Beeinträchtigung der benachbarten gesunden Zähne",
+          "Biokompatible Materialien (Titan oder Zirkonium)"
+        ],
+        "process": [
+          {
+            "title": "3D-Scan",
+            "description": "CBCT-Scan zur Kartierung der Knochenstruktur und Nervenbahnen."
+          },
+          {
+            "title": "Einsetzen",
+            "description": "Präzises chirurgisches Einsetzen des Implantatpfostens."
+          },
+          {
+            "title": "Heilung",
+            "description": "Osseointegration – der Knochen verwächst mit dem Implantat."
+          },
+          {
+            "title": "Restauration",
+            "description": "Befestigung der individuell angefertigten Krone oder Brücke."
+          }
+        ]
+      },
+      "ortho": {
+        "title": "Kieferorthopädie",
+        "description": "Moderne Ausrichtungslösungen einschließlich unsichtbarer Aligner und Keramikbrackets für alle Altersgruppen.",
+        "longDescription": "Die Begradigung Ihrer Zähne war noch nie diskreter oder komfortabler. Wir bieten umfassende kieferorthopädische Lösungen, von transparenten Alignern bis hin zu Keramikbrackets. Unser Fokus liegt nicht nur auf geraden Zähnen, sondern auf einem funktionellen Biss, der die langfristige Gelenkgesundheit fördert. Wir behandeln Patienten jeden Alters und helfen Ihnen, das Lächeln zu erreichen, das Sie sich schon immer gewünscht haben.",
+        "benefits": [
+          "Transparente Aligner für diskrete Behandlung",
+          "Optionen für beschleunigte Kieferorthopädie",
+          "Korrektur von Bissproblemen (TMJ)",
+          "Digitale Überwachung für weniger Praxisbesuche"
+        ],
+        "process": [
+          { "title": "Beurteilung", "description": "Digitale Scans und Bissanalyse." },
+          { "title": "Planung", "description": "Individueller Behandlungsplan und Zeitplanerstellung." },
+          {
+            "title": "Aktive Therapie",
+            "description": "Tragen von Alignern oder Brackets mit regelmäßigen Kontrollen."
+          },
+          {
+            "title": "Retention",
+            "description": "Individuelle Retainer, um Ihr neues Lächeln dauerhaft zu erhalten."
+          }
+        ]
+      },
+      "general": {
+        "title": "Allgemeine Versorgung",
+        "description": "Umfassende Vorsorge, Hygiene und Pflege für langanhaltende Mundgesundheit.",
+        "longDescription": "Vorsorge ist das Fundament der Zeo-Philosophie. Wir gehen über eine einfache Reinigung hinaus und bieten eine umfassende Analyse Ihres Mundgesundheits-Ökosystems. Unsere Hygienetermine umfassen Mundkrebs-Screenings, Zahnfleischgesundheits-Bewertungen und persönliche Beratung, damit Ihre Zähne ein Leben lang gesund bleiben. Wir gestalten Routinebesuche zu einem entspannenden, spa-ähnlichen Erlebnis.",
+        "benefits": [
+          "Fortschrittliche Airflow-Reinigungstechnologie",
+          "Digitale Karieserkennung",
+          "Mundkrebs-Screening",
+          "Personalisierte Hygienepläne"
+        ],
+        "process": [
+          {
+            "title": "Untersuchung",
+            "description": "Umfassende Kontrolluntersuchung mit strahlungsarmen digitalen Röntgenaufnahmen."
+          },
+          {
+            "title": "Hygiene",
+            "description": "Gründliche Reinigung und Politur durch erfahrene Dentalhygienikerinnen."
+          },
+          {
+            "title": "Aufklärung",
+            "description": "Tipps und Hilfsmittel, die auf Ihr individuelles Mundbiom abgestimmt sind."
+          },
+          {
+            "title": "Plan",
+            "description": "Langfristiger Pflegeplan basierend auf einer Risikobewertung."
+          }
+        ]
+      },
+      "surgery": {
+        "title": "Oralchirurgie",
+        "description": "Fachkundige chirurgische Eingriffe einschließlich Extraktionen und Zahnfleischkonturierung in schmerzfreier Umgebung.",
+        "longDescription": "Wenn ein chirurgischer Eingriff erforderlich ist, steht Ihr Komfort und Ihre Sicherheit an erster Stelle. Unsere Suite ist für Sedierungszahnmedizin ausgestattet, um ein völlig angstfreies Erlebnis zu gewährleisten. Von der Weisheitszahnentfernung bis hin zu komplexen Zahnfleischtransplantaten – unsere zertifizierten Chirurgen verwenden mikrochirurgische Techniken, um die Erholungszeit zu minimieren und die Ergebnisse zu maximieren.",
+        "benefits": [
+          "Sedierungsoptionen für angstfreie Behandlung",
+          "Mikrochirurgische Techniken für schnellere Heilung",
+          "Weisheitszahn-Management",
+          "Zahnfleischtransplantation und -konturierung"
+        ],
+        "process": [
+          {
+            "title": "Bewertung",
+            "description": "Überprüfung der Krankengeschichte und chirurgische Planung."
+          },
+          { "title": "Komfort", "description": "Verabreichung von Lokalanästhesie oder Sedierung." },
+          { "title": "Eingriff", "description": "Minimal-invasive chirurgische Durchführung." },
+          { "title": "Erholung", "description": "Detaillierte Nachsorgeanweisungen und Nachkontrolle." }
+        ]
+      },
+      "pediatric": {
+        "title": "Kinderzahnmedizin",
+        "description": "Sanfte, einfühlsame Behandlung, speziell auf die besonderen Bedürfnisse von Kindern und Jugendlichen zugeschnitten.",
+        "longDescription": "Wir glauben, dass positive Zahnarzt-Erfahrungen in der Kindheit den Grundstein für ein gesundes Leben legen. Unsere Kinderabteilung ist einladend und angstfrei gestaltet. Wir sprechen die Sprache der Kinder und erklären Verfahren auf spielerische, verständliche Weise. Unser Fokus liegt auf Prävention, Versiegelungen und der Überwachung von Wachstumsmustern, um frühzeitig einzugreifen, wenn kieferorthopädischer Bedarf entsteht.",
+        "benefits": [
+          "Kinderfreundliche Umgebung und Sprache",
+          "Präventive Versiegelungen und Fluorid",
+          "Überwachung von Wachstum und Entwicklung",
+          "Notfall-Traumaversorgung"
+        ],
+        "process": [
+          {
+            "title": "Kennenlernen",
+            "description": "Sich mit dem Team und der Umgebung vertraut machen."
+          },
+          {
+            "title": "Zähne zählen",
+            "description": "Sanfte Untersuchung auf Karies und Entwicklung."
+          },
+          { "title": "Reinigung", "description": "Sanfte Politur und Hygieneanleitung." },
+          { "title": "Belohnung", "description": "Positive Verstärkung zum Aufbau von Selbstvertrauen." }
+        ]
+      }
+    }
+  },
+  "whyChooseUs": {
+    "label": "Der Zeo-Standard",
+    "title": "Zahnmedizin",
+    "titleHighlight": "Anders gedacht.",
+    "subtitle": "Wir glauben, dass ein Zahnarztbesuch etwas sein sollte, worauf Sie sich freuen. Durch die Kombination von Luxus-Annehmlichkeiten mit modernster Medizintechnologie haben wir eine Umgebung geschaffen, die die Sinne beruhigt und außergewöhnliche Ergebnisse liefert.",
+    "feature1Title": "5-Sterne-Erlebnis",
+    "feature1Desc": "Concierge-Service, geräuschunterdrückende Kopfhörer und eine beruhigende Atmosphäre.",
+    "feature2Title": "Fortschrittliche Technologie",
+    "feature2Desc": "3D-Scans, digitales Smile-Design und Laserzahnmedizin für präzise Versorgung.",
+    "feature3Title": "Respekt für Ihre Zeit",
+    "feature3Desc": "Keine Wartezeiten. Ihr Termin beginnt genau zum vereinbarten Zeitpunkt.",
+    "testimonialQuote": "\"Die technologisch fortschrittlichste Klinik, die ich je besucht habe.\"",
+    "testimonialSource": "TechDaily Review"
+  },
+  "gallery": {
+    "label": "Einblick in Zeo",
+    "title": "Eine Klinik für Ihr Wohlbefinden",
+    "subtitle": "Werfen Sie einen Blick auf unsere spa-inspirierten Suiten, das digitale Labor und private Lounges, die für Ihre Entspannung gestaltet sind.",
+    "cta": "Vereinbaren Sie eine private Führung"
+  },
+  "team": {
+    "label": "Unsere Experten",
+    "title": "Lernen Sie die Ärzte kennen",
+    "viewProfile": "Profil ansehen",
+    "readFullBio": "Vollständige Biografie lesen",
+    "biography": "Biografie",
+    "education": "Ausbildung",
+    "memberships": "Mitgliedschaften",
+    "quote": "\"Ich setze mich dafür ein, jedem Patienten, der durch unsere Türen kommt, die höchste Versorgungsqualität zu bieten.\"",
+    "educationPlaceholder1": "DDS, Erstklassige Zahnmedizinische Hochschule",
+    "educationPlaceholder2": "Facharztausbildung im Spezialgebiet",
+    "educationPlaceholder3": "Fortgeschrittene Zertifizierung",
+    "membershipPlaceholder1": "Deutsche Gesellschaft für Zahnmedizin",
+    "membershipPlaceholder2": "Landeszahnärztekammer",
+    "membershipPlaceholder3": "Akademie für Allgemeine Zahnmedizin",
+    "doctors": {
+      "dr-rien": {
+        "role": "Zahnarzt-Spezialist",
+        "bio": "Absolvent der <strong>Universität für Stomatologie, Tirana</strong>, Dr. Stambolliu ist spezialisiert auf <strong>Zahntherapie</strong>, <strong>festsitzende und herausnehmbare Prothetik</strong> sowie <strong>implantatgestützte Restaurationen</strong>.",
+        "fullBio": "Dr. Rien Stambolliu absolvierte sein Studium an der <strong>Universität für Stomatologie, Tirana</strong>. Im Laufe seiner beruflichen Entwicklung hat er erfolgreich <strong>zahlreiche nationale und internationale Fortbildungsprogramme</strong> absolviert und <strong>aktiv an medizinischen Konferenzen teilgenommen</strong>, wobei er sein Wissen kontinuierlich mit den neuesten Techniken und Standards der Zahnmedizin aktualisiert. Er führt professionell Behandlungen in den Bereichen <strong>Zahntherapie</strong>, <strong>festsitzende und herausnehmbare Prothetik</strong> sowie <strong>implantatgestützte Prothetik</strong> durch, mit besonderem Augenmerk auf Funktion, Ästhetik und Langlebigkeit seiner Arbeit. Bekannt für seine <strong>Präzision</strong>, <strong>sorgfältige Vorgehensweise</strong> und sein <strong>herzliches Auftreten</strong> gegenüber Patienten, arbeitet Dr. Rien mit maximaler Hingabe, um qualitativ hochwertige, sichere und personalisierte Behandlungen für jeden Patienten zu garantieren.",
+        "education1": "Universität für Stomatologie, Tirana",
+        "education2": "Nationale und internationale Fortbildung in Zahnprothetik",
+        "education3": "Aktiver Teilnehmer an zahnmedizinischen Konferenzen",
+        "membership1": "Kammer der Albanischen Zahnärzte",
+        "membership2": "Albanische Zahnärztevereinigung",
+        "membership3": "Mitglied in Fachverbänden für Zahnprothetik",
+        "quote": "Ich widme mich der Garantie qualitativ hochwertiger, sicherer und personalisierter Behandlungen für jeden Patienten."
+      },
+      "dr-kristi": {
+        "role": "Zahnärztin-Spezialistin",
+        "bio": "Dr. Kristi Sulanjaku absolvierte ihr <strong>Masterstudium in Medizinischen Wissenschaften, Fachbereich Zahnmedizin</strong>, mit <strong>sehr guten Ergebnissen</strong>. Sie verfügt über <strong>tiefgreifende Kenntnisse in der Zahnprothetik</strong>.",
+        "fullBio": "Dr. Kristi Sulanjaku absolvierte ihr <strong>Masterstudium in Medizinischen Wissenschaften, Fachbereich Zahnmedizin</strong>, mit <strong>sehr guten Ergebnissen</strong>. Sie nimmt regelmäßig an <strong>medizinischen Konferenzen</strong> teil. Sie verfügt über <strong>tiefgreifende Kenntnisse in der Zahnprothetik</strong> und zeichnet sich durch <strong>Korrektheit</strong>, <strong>Präzision</strong> und <strong>besondere Liebe zum Detail</strong> aus, wobei sie <strong>optimale funktionelle und ästhetische Ergebnisse</strong> garantiert. Sie verfügt über <strong>ausgezeichnete Kommunikations- und Arbeitsfähigkeiten</strong> und bietet professionelle und personalisierte Behandlungen für jeden Patienten.",
+        "education1": "Master in Medizinischen Wissenschaften, Fachbereich Zahnmedizin",
+        "education2": "Fortgeschrittene Ausbildung in Zahnprothetik",
+        "education3": "Aktive Teilnehmerin an internationalen medizinischen Konferenzen",
+        "membership1": "Kammer der Albanischen Zahnärzte",
+        "membership2": "Albanische Zahnärztevereinigung",
+        "membership3": "Mitglied in Fachverbänden für Zahnprothetik",
+        "quote": "Ich setze mich für personalisierte Betreuung und optimale Ergebnisse für jeden Patienten ein."
+      },
+      "dr-dorina": {
+        "role": "Spezialistin für Oralchirurgie & Implantologie",
+        "bio": "<strong>In den renommiertesten Klinikzentren von Paris ausgebildete Expertin</strong>, Dr. Dorina bietet <strong>klinische Präzision</strong> und <strong>fortschrittliche französisch-zertifizierte Behandlungen</strong>.",
+        "fullBio": "Dr. Dorina Beqiraj ist eine <strong>Spezialistin für Oralchirurgie und Implantologie</strong>, ausgebildet an den renommiertesten Klinikzentren in Paris. Sie bringt klinische Präzision und fortschrittliche französisch-zertifizierte Behandlungen in jeden Eingriff ein.<br/><br/><strong>Schwerpunkte:</strong><br/>• <strong>Spezialisierung in Paris:</strong> Erfahrung in Oralchirurgie und Okklusodontologie an den Elitekrankenhäusern Pitié Salpêtrière und Charles Foix.<br/>• <strong>Expertise in Nantes:</strong> Spezialisierte Ausbildung in Parodontologie (Zahnfleischerkrankungen) am CHU-Nantes.<br/>• <strong>Französische CES-Zertifizierung:</strong> Inhaberin fortgeschrittener Studiendiplome in Chirurgie, Implantologie und Anatomie-Physiologie.",
+        "education1": "Oralchirurgie & Okklusodontologie - Pitié Salpêtrière, Paris",
+        "education2": "Parodontologie - CHU-Nantes, Frankreich",
+        "education3": "CES-Zertifizierung - Chirurgie, Implantologie & Anatomie-Physiologie",
+        "membership1": "Kammer der Albanischen Zahnärzte",
+        "membership2": "Französische Zahnärztevereinigung",
+        "membership3": "Europäische Vereinigung für Osseointegration",
+        "quote": "Präzision und fortschrittliche Techniken aus Paris gewährleisten außergewöhnliche Ergebnisse für jeden Patienten."
+      },
+      "dr-emanuela": {
+        "role": "Gründerin & Leitende Zahnärztin",
+        "bio": "<strong>Gründerin der Zeo Dental Clinic</strong>, Dr. Velaj ist eine ausgezeichnete Absolventin der <strong>Medizinischen Fakultät, Fachbereich Zahnmedizin</strong>, mit fortgeschrittenen Zertifizierungen in <strong>Kieferorthopädie</strong> und <strong>Prothetischer Gnathologischer Rehabilitation</strong> von <strong>UCAM, Spanien</strong>.",
+        "fullBio": "Dr. Emanuela Velaj ist die <strong>Gründerin der Zeo Dental Clinic</strong> und absolvierte ihr Studium an der <strong>Medizinischen Fakultät, Fachbereich Zahnmedizin</strong>, wobei sie ein berufliches Profil aufbaute, das auf tiefgreifendem Wissen, klinischer Präzision und kontinuierlichem Engagement für Qualität basiert. Ihre Ausbildung wurde im Laufe der Jahre durch <strong>fortgeschrittene Postgraduiertenfortbildungen</strong> in Schlüsselbereichen der modernen Zahnmedizin bereichert, darunter <strong>Endodontie</strong>, <strong>Gnathologie</strong>, <strong>Implantatprothetik</strong>, <strong>Zahnästhetik</strong> und <strong>Kieferorthopädie</strong>. Sie besitzt ein Diplom der <strong>UCAM – Universidad Católica de Murcia (Spanien)</strong> in <strong>Kieferorthopädie</strong> und <strong>Prothetischer Gnathologischer Rehabilitation</strong>, wo sie zeitgenössische europäische Standards und fortschrittliche Behandlungsprotokolle erlernte, die auf funktionelle Harmonie, anspruchsvolle Ästhetik und langfristige klinische Nachhaltigkeit ausgerichtet sind. Als Gründerin hat sie die Zeo Dental Clinic auf den Prinzipien <strong>medizinischer Exzellenz</strong>, <strong>fortschrittlicher Technologie</strong> und <strong>höchster Sterilisationsstandards</strong> konzipiert und aufgebaut und so eine moderne, elegante und vollkommen sichere Umgebung geschaffen, in der jedes Detail für den Komfort und das Vertrauen der Patienten gestaltet ist. Ausgezeichnet durch <strong>professionelle Eleganz</strong>, <strong>klare Kommunikation</strong> und einen <strong>menschlichen Ansatz</strong>, arbeitet Dr. Velaj mit Präzision, Ethik und maximaler Hingabe und bietet personalisierte Behandlungen sowie hochwertige funktionelle und ästhetische Ergebnisse. Persönlich ist sie <strong>Mutter von zwei Kindern</strong>, eine Rolle, die ihre Empathie, Geduld und menschliche Sensibilität gestärkt hat. Reisen und der Kontakt mit verschiedenen Kulturen bieten kontinuierliche Inspiration, während Musik, Tanz und der Kontakt mit der Natur ihr Gleichgewicht und positive Energie geben, die sich natürlich in ihrer beruflichen Philosophie und der besonderen Fürsorge für jeden Patienten widerspiegeln.",
+        "education1": "Medizinische Fakultät, Fachbereich Zahnmedizin",
+        "education2": "UCAM – Universidad Católica de Murcia (Spanien) - Kieferorthopädie",
+        "education3": "UCAM – Prothetische Gnathologische Rehabilitation",
+        "membership1": "Kammer der Albanischen Zahnärzte",
+        "membership2": "Albanische Zahnärztevereinigung",
+        "membership3": "Mitglied des UCAM Alumni-Netzwerks",
+        "quote": "Ich setze mich für medizinische Exzellenz und personalisierte Behandlungen ein, die Lächeln verwandeln und Vertrauen aufbauen."
+      },
+      "dr-james": {
+        "role": "Implantologe",
+        "bio": "Dr. Chen ist ein zertifizierter Chirurg, bekannt für seine Präzision und seinen einfühlsamen Ansatz bei komplexen restaurativen Eingriffen.",
+        "fullBio": "Dr. James Chen ist ein Mund-, Kiefer- und Gesichtschirurg mit Doppelabschluss und führend auf dem Gebiet der Implantologie. Er erhielt seinen Zahnmedizinabschluss an der UCSF und seinen Medizinabschluss an der Columbia University. Spezialisiert auf komplexe Vollmund-Rekonstruktionen und \"All-on-4\"-Sofortbelastungsimplantate, nutzt Dr. Chen fortschrittliche 3D-geführte Chirurgie, um Sicherheit und Präzision zu gewährleisten. Sein ruhiges Auftreten und sein Fokus auf Sedierungszahnmedizin machen ihn zum Favoriten ängstlicher Patienten."
+      },
+      "dr-elena": {
+        "role": "Kieferorthopädin",
+        "bio": "Dr. Rodriguez verbindet Kunst und Wissenschaft, um Lächeln perfekt auszurichten, zertifiziert in den fortschrittlichsten Clear-Aligner-Systemen.",
+        "fullBio": "Dr. Elena Rodriguez glaubt, dass ein gerades Lächeln die Grundlage der Mundgesundheit ist. Sie erwarb ihren Doktor der Zahnchirurgie und ihren Master of Science in Kieferorthopädie an der University of Michigan. Dr. Rodriguez ist Diamond Plus Provider von Invisalign und spezialisiert auf beschleunigte kieferorthopädische Behandlungen für Jugendliche und Erwachsene. Sie engagiert sich leidenschaftlich für atemwegsorientierte Kieferorthopädie und hilft Patienten, nicht nur ein schönes Lächeln, sondern auch bessere Atmung und Schlafqualität zu erreichen."
+      }
+    },
+    "founderLabel": "Die Gründerin",
+    "teamTitle": "Das Praxis-Team",
+    "teamSubtitle": "Expertise & Fürsorge"
+  },
+  "philosophy": {
+    "label": "Unsere Philosophie",
+    "imageAlt": "Zeo Dental Philosophie",
+    "quote": "Kunstfertigkeit und Präzision in jedem Lächeln, das wir gestalten",
+    "text1": "Wir glauben an die transformative Kraft eines selbstbewussten Lächelns, geschaffen durch Kunstfertigkeit, Präzision und fortschrittliche Technologie.",
+    "text2": "Jede Behandlung ist eine personalisierte Reise, bei der Ihre Vision auf unsere Expertise trifft, um dauerhafte, natürliche Ergebnisse zu erzielen.",
+    "expertise": "Expertise",
+    "expertiseList": {
+      "item1": "Endodontie",
+      "item2": "Chirurgische Präzision",
+      "item3": "Implantat-Expertise"
+    },
+    "technology": "Technologie",
+    "technologyList": {
+      "item1": "3D-Digitale Scans",
+      "item2": "CAD/CAM-Design",
+      "item3": "Geführte Chirurgie"
+    }
+  },
+  "cases": {
+    "label": "Transformationen",
+    "title": "Ausgewählte Fälle",
+    "viewGallery": "Gesamte Galerie ansehen",
+    "case1": {
+      "number": "Fall 01",
+      "title": "Emax-Kronen",
+      "description": "Vollständige Lächeln-Restauration mit hochwertigen E.max-Keramikkronen. Optimale Ästhetik und Festigkeit mit natürlicher Transluzenz für ein nahtloses, langlebiges Ergebnis.",
+      "detail1Label": "Zeit",
+      "detail1Value": "2 Wo.",
+      "detail2Label": "Kronen",
+      "detail2Value": "8 Einheiten"
+    },
+    "case2": {
+      "number": "Fall 02",
+      "title": "Zirkonium-Kronen",
+      "description": "Hochwertige Zirkonium-Kronenrestauration für außergewöhnliche Haltbarkeit und Ästhetik. Natürlich wirkende Ergebnisse mit überlegener Festigkeit für eine langlebige Lächelntransformation.",
+      "detail1Label": "Zeit",
+      "detail1Value": "2 Wo.",
+      "detail2Label": "Kronen",
+      "detail2Value": "6 Einheiten"
+    },
+    "case3": {
+      "number": "Fall 03",
+      "title": "Füllung & Bleaching",
+      "description": "Kombinierte restaurative und ästhetische Behandlung. Professionelle Kompositfüllung gepaart mit Zahnaufhellung für ein gesünderes, strahlenderes Lächeln.",
+      "detail1Label": "Zeit",
+      "detail1Value": "1 Wo.",
+      "detail2Label": "Behandlung",
+      "detail2Value": "Vollständig"
+    }
+  },
+  "reviews": {
+    "label": "Google-Bewertungen",
+    "title": "Was unsere Patienten sagen",
+    "reviewCount": "Bewertungen",
+    "leaveReview": "Bewertung abgeben",
+    "poweredBy": "Bereitgestellt durch Google Bewertungen"
+  },
+  "testimonials": {
+    "label": "Erfahrungsberichte",
+    "title": "Patientengeschichten",
+    "rating": "Durchschnittliche Bewertung",
+    "items": {
+      "t1": {
+        "name": "Michael Ross",
+        "role": "Patient",
+        "content": "Das Niveau der Versorgung bei Zeo ist unübertroffen. Vom Moment des Eintritts fühlt es sich wie ein 5-Sterne-Hotel an, nicht wie eine Klinik. Meine Veneers sehen unglaublich aus."
+      },
+      "t2": {
+        "name": "Jennifer Wu",
+        "role": "Patientin",
+        "content": "Ich hatte Angst vor dem Zahnarzt, bis ich Dr. Zeo traf. Die schmerzfreie Technologie, die sie verwenden, ist ein Game-Changer. Sehr empfehlenswert!"
+      },
+      "t3": {
+        "name": "David Okafor",
+        "role": "Patient",
+        "content": "Professionell, makellos und pünktlich. Sie schätzen Ihre Zeit und Ihre Gesundheit. Die beste Zahnarzt-Erfahrung, die ich je hatte."
+      }
+    }
+  },
+  "booking": {
+    "label": "Kontakt",
+    "title1": "Beginnen Sie Ihre",
+    "title2": "Reise.",
+    "subtitle": "Wir nehmen derzeit neue Patienten für die kommende Saison an. Vereinbaren Sie Ihre private Beratung.",
+    "studioLabel": "Praxis",
+    "address": "Rruga Hamdi Sina, Tiranë",
+    "phoneLabel": "Direktleitung",
+    "phone": "+355 68 400 4840",
+    "emailLabel": "Anfragen",
+    "email": "zeodentalclinic@gmail.com",
+    "namePlaceholder": "Max Mustermann",
+    "phonePlaceholder": "+355 68 400 4840",
+    "emailPlaceholder": "max@beispiel.de",
+    "phoneOrEmail": "Telefon oder E-Mail erforderlich",
+    "optional": "Optional",
+    "privacyNotice": "Mit dem Absenden dieses Formulars stimmen Sie unserer Datenschutzrichtlinie und den Nutzungsbedingungen zu.",
+    "submit": "Terminanfrage senden",
+    "submitting": "Wird gesendet...",
+    "backToForm": "Zurück zum Formular",
+    "error": "Beim Absenden Ihrer Anfrage ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "title": "Termin buchen",
+    "conciergeTitle": "Concierge-Service",
+    "conciergeSubtitle": "Ihr Komfort ist unsere Priorität.",
+    "conciergeDesc": "Planen Sie Ihren Besuch mit unserem benutzerfreundlichen Buchungsportal. Für dringende Angelegenheiten oder besondere Wünsche steht Ihnen unser Concierge-Team zur Verfügung.",
+    "directLine": "Direktleitung",
+    "availability": "Verfügbar Mo-Sa, 9:00 - 19:00 Uhr",
+    "backToHome": "Zurück zur Startseite",
+    "personalDetails": "Persönliche Daten",
+    "appointmentDetails": "Termindetails",
+    "nameField": "Vollständiger Name",
+    "emailField": "E-Mail-Adresse",
+    "phoneField": "Telefonnummer",
+    "serviceField": "Gewünschte Leistung",
+    "selectService": "Behandlungsart auswählen...",
+    "otherConsultation": "Sonstiges / Beratung",
+    "date": "Bevorzugtes Datum",
+    "time": "Bevorzugte Uhrzeit",
+    "selectTime": "Uhrzeit auswählen...",
+    "morning": "Vormittag (9:00 - 12:00)",
+    "afternoon": "Nachmittag (12:00 - 16:00)",
+    "evening": "Abend (16:00 - 19:00)",
+    "notes": "Zusätzliche Anmerkungen",
+    "disclaimer": "Mit dem Absenden dieses Formulars bestätigen Sie, dass es sich um eine Terminanfrage handelt. Unser Team wird Sie kontaktieren, um den Termin zu finalisieren.",
+    "success": "Anfrage bestätigt",
+    "successMessage": "Vielen Dank, {name}. Wir haben Ihre Terminanfrage erhalten.",
+    "confirmationEmail": "Eine Bestätigungs-E-Mail wurde gesendet an",
+    "serviceRequested": "Angefragte Leistung",
+    "preferredTime": "Bevorzugte Uhrzeit",
+    "bookAnother": "Weiteren Termin buchen",
+    "returnHome": "Zur Startseite zurückkehren",
+    "processing": "Wird verarbeitet..."
+  },
+  "footer": {
+    "tagline": "Wir setzen neue Maßstäbe in der Versorgung durch Design, Technologie und Kunstfertigkeit.",
+    "location": "Tirana • Albanien",
+    "description": "Zahnmedizin als Kunstform. Wir verbinden Luxus, Technologie und Mitgefühl, um Lächeln zu schaffen, die Leben verändern.",
+    "quickLinks": "Schnellzugriff",
+    "ourDoctors": "Unsere Ärzte",
+    "patientPortal": "Patientenportal",
+    "contactUs": "Kontaktieren Sie uns",
+    "openingHours": "Öffnungszeiten",
+    "monFri": "Montag - Freitag",
+    "saturday": "Samstag",
+    "sunday": "Sonntag",
+    "closed": "Geschlossen",
+    "rights": "Zeo Dental Clinic. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "hoursMF": "9:00 - 17:00",
+    "hoursSat": "9:00 - 14:00"
+  },
+  "chat": {
+    "title": "Chat mit Sofia",
+    "placeholder": "Ihre Nachricht eingeben...",
+    "greeting": "Hallo! Ich bin Sofia, die virtuelle Dentalassistentin der Zeo Dental Clinic. Schreiben Sie mir gerne in Ihrer Sprache! Wie kann ich Ihnen heute helfen, Ihr perfektes Lächeln zu erreichen?",
+    "assistantName": "Sofia",
+    "status": "Immer online",
+    "typing": "Sofia tippt...",
+    "disclaimer": "KI-Antworten können variieren. Bei medizinischen Notfällen rufen Sie den Notruf."
+  },
+  "contact": {
+    "phone": "+355 68 400 4840",
+    "email": "zeodentalclinic@gmail.com",
+    "address": "Rruga Hamdi Sina, Tiranë, Albania",
+    "addressShort": "Tiranë, Albanien"
+  },
+  "error": {
+    "title": "Etwas ist schiefgelaufen",
+    "message": "Wir entschuldigen uns für die Unannehmlichkeiten. Bitte versuchen Sie, die Seite zu aktualisieren, oder kontaktieren Sie uns direkt.",
+    "tryAgain": "Erneut versuchen",
+    "callUs": "Anrufen +355 68 400 4840"
+  },
+  "common": {
+    "learnMore": "Mehr erfahren",
+    "readMore": "Weiterlesen",
+    "bookNow": "Jetzt buchen",
+    "contactUs": "Kontaktieren Sie uns",
+    "callNow": "Jetzt anrufen",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "tryAgain": "Erneut versuchen"
+  },
+  "language": {
+    "select": "Sprache auswählen",
+    "albanian": "Shqip",
+    "english": "English"
+  },
+  "treatments": {
+    "label": "Unsere Behandlungen",
+    "title": "Spezialisierte Versorgung",
+    "subtitle": "Von Implantaten bis zur Ästhetik bieten wir umfassende zahnmedizinische Lösungen, die darauf ausgerichtet sind, Funktion wiederherzustellen, Schönheit zu verbessern und Lächeln mit Präzision und Kunstfertigkeit zu verwandeln.",
+    "viewAllTreatments": "Alle Behandlungen ansehen",
+    "learnMore": "Mehr erfahren",
+    "items": {
+      "implantology": {
+        "title": "Implantologie",
+        "description": "Hochmoderne Titan- und Zirkoniumimplantate mit 3D-geführter Chirurgie für dauerhaften, natürlich aussehenden Zahnersatz."
+      },
+      "prosthetics": {
+        "title": "Prothetik",
+        "description": "Umfassende prothetische Lösungen einschließlich festsitzender Brücken, herausnehmbarer Prothesen, Teilprothesen und implantatgestützter Restaurationen."
+      },
+      "aligners": {
+        "title": "Transparente Aligner",
+        "description": "Unsichtbare kieferorthopädische Behandlung mit maßgefertigten transparenten Alignern für diskrete Zahnkorrektur ohne Metallbrackets."
+      },
+      "orthodontics": {
+        "title": "Kieferorthopädie",
+        "description": "Moderne Ausrichtungslösungen einschließlich Keramikbrackets und klassischer Kieferorthopädie für perfekten Biss und schönes Lächeln."
+      },
+      "crowns": {
+        "title": "Zahnkronen",
+        "description": "Hochwertige Porzellan- und Zirkoniumkronen, die beschädigte Zähne wiederherstellen und dabei die natürliche Farbe und Transluzenz nachahmen."
+      },
+      "aesthetics": {
+        "title": "Endodontie",
+        "description": "Fortschrittliche Wurzelkanalbehandlung zur Rettung beschädigter Zähne und Schmerzlinderung mit modernen Techniken und Präzisionsinstrumenten."
+      }
+    }
+  },
+  "receptionist": {
+    "title": "Empfangs-Dashboard",
+    "loading": "Wird geladen...",
+    "noBookings": "Keine Buchungen gefunden",
+    "login": {
+      "title": "Mitarbeiter-Login",
+      "password": "Passwort",
+      "submit": "Anmelden",
+      "error": "Ungültiges Passwort",
+      "backToSite": "Zurück zur Website"
+    },
+    "header": {
+      "logout": "Abmelden",
+      "pending": "Ausstehend",
+      "newBooking": "Neue Buchung!",
+      "lastUpdate": "Aktualisiert",
+      "soundOn": "Tonbenachrichtigungen an",
+      "soundOff": "Tonbenachrichtigungen aus",
+      "calendar": "Kalender"
+    },
+    "stats": {
+      "pending": "Ausstehend",
+      "today": "Heute",
+      "thisWeek": "Diese Woche",
+      "confirmedToday": "Heute bestätigt"
+    },
+    "filters": {
+      "all": "Alle Buchungen",
+      "pending": "Ausstehend",
+      "confirmed": "Bestätigt",
+      "cancelled": "Storniert",
+      "completed": "Abgeschlossen",
+      "noShow": "Nicht erschienen",
+      "search": "Suche nach Name, E-Mail, Telefon..."
+    },
+    "booking": {
+      "preferred": "Bevorzugt",
+      "confirmed": "Bestätigt",
+      "service": "Leistung",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "notes": "Anmerkungen",
+      "status": "Status"
+    },
+    "actions": {
+      "view": "Ansehen",
+      "confirm": "Bestätigen",
+      "cancel": "Stornieren",
+      "close": "Schließen",
+      "refresh": "Aktualisieren"
+    },
+    "confirm": {
+      "title": "Buchung bestätigen",
+      "date": "Bestätigtes Datum",
+      "time": "Bestätigte Uhrzeit",
+      "sendWhatsApp": "WhatsApp-Bestätigung senden",
+      "sendEmail": "E-Mail-Bestätigung senden",
+      "submit": "Buchung bestätigen"
+    },
+    "cancel": {
+      "title": "Buchung stornieren",
+      "reason": "Stornierungsgrund (optional)",
+      "notify": "Patient benachrichtigen",
+      "submit": "Buchung stornieren"
+    }
+  },
+  "whatsapp": {
+    "tooltip": "Auf WhatsApp chatten",
+    "ariaLabel": "Kontaktieren Sie uns auf WhatsApp",
+    "defaultMessage": "Hallo! Ich möchte einen Termin bei Zeo Dental Clinic buchen."
+  },
+  "treatmentPages": {
+    "implantology": {
+      "title": "Zahnimplantate",
+      "subtitle": "Der Goldstandard für Zahnersatz",
+      "heroDescription": "Stellen Sie Ihr Lächeln mit dauerhaften, natürlich aussehenden Zahnimplantaten wieder her – mit modernster 3D-geführter Chirurgie für unübertroffene Präzision und Komfort.",
+      "overview": "Zahnimplantate stellen die fortschrittlichste und zuverlässigste Lösung für den Ersatz fehlender Zähne dar. Anders als herkömmliche Prothesen oder Brücken werden Implantate chirurgisch in den Kieferknochen eingesetzt, wo sie durch einen Prozess namens Osseointegration mit dem Knochen verwachsen. Dies schafft ein stabiles, dauerhaftes Fundament, das genau wie Ihre natürlichen Zähne aussieht, sich anfühlt und funktioniert.\n\nIn der Zeo Dental Clinic verwenden wir modernste 3D-Bildgebung und computergestützte Chirurgie, um jeden Implantateingriff millimetergenau zu planen und durchzuführen. Ob Sie einen einzelnen Zahnersatz oder eine Vollbogenrestauration benötigen – unsere Spezialisten sorgen für eine optimale Platzierung für maximale Langlebigkeit und ästhetische Ergebnisse.\n\nWir bieten sowohl Titan- als auch Zirkoniumimplantate an, sodass wir Ihre Behandlung individuell auf Ihre spezifischen Bedürfnisse, Knochendichte und ästhetischen Vorlieben abstimmen können. Unser Engagement, ausschließlich Premium-Materialien von vertrauenswürdigen Herstellern zu verwenden, stellt sicher, dass Ihre Implantate Ihnen über Jahrzehnte hinweg gute Dienste leisten werden.",
+      "benefitsTitle": "Warum Zahnimplantate wählen?",
+      "benefits": [
+        "Dauerhafte Lösung, die bei richtiger Pflege ein Leben lang halten kann",
+        "Erhält die Kieferknochendichte und beugt Gesichtsknochenschwund vor",
+        "Keine Beeinträchtigung benachbarter gesunder Zähne im Gegensatz zu Brücken",
+        "Natürliches Aussehen, das von echten Zähnen nicht zu unterscheiden ist",
+        "Wiederhergestellte Kaufunktion – essen Sie alle Ihre Lieblingsspeisen",
+        "Einfache Pflege – Zähneputzen und Zahnseide wie bei natürlichen Zähnen",
+        "Verbesserte Sprachfähigkeit im Vergleich zu herausnehmbaren Prothesen",
+        "Beseitigt den Diskomfort und die Unannehmlichkeiten von Prothesen"
+      ],
+      "processTitle": "Ihre Implantat-Reise",
+      "process": [
+        {
+          "title": "Umfassende Beratung",
+          "description": "Wir beginnen mit einer gründlichen Untersuchung einschließlich 3D-CBCT-Scan, um Knochenqualität, -quantität zu beurteilen und kritische Strukturen wie Nerven und Nebenhöhlen zu kartieren. Wir besprechen Ihre Ziele und erstellen einen personalisierten Behandlungsplan."
+        },
+        {
+          "title": "Digitale Behandlungsplanung",
+          "description": "Mit fortschrittlicher Software planen wir digital die exakte Position, den Winkel und die Tiefe jedes Implantats. Dies ermöglicht uns die Erstellung einer Chirurgieschablone für millimetergenaue Platzierung."
+        },
+        {
+          "title": "Chirurgische Implantatsetzung",
+          "description": "Der Titan- oder Zirkoniumimplantatpfosten wird mit minimal-invasiven Techniken in den Kieferknochen eingesetzt. Die meisten Patienten berichten von minimalem Unbehagen, und der Eingriff wird unter Lokalanästhesie durchgeführt, wobei Sedierungsoptionen verfügbar sind."
+        },
+        {
+          "title": "Osseointegrationsphase",
+          "description": "Über 3-6 Monate verwächst das Implantat mit Ihrem Kieferknochen und bildet ein unglaublich starkes Fundament. Während dieser Zeit können Sie eine provisorische Restauration tragen, um die Ästhetik zu erhalten."
+        },
+        {
+          "title": "Endgültige Restauration",
+          "description": "Nach vollständiger Heilung befestigen wir eine individuell angefertigte Krone, Brücke oder Prothese an Ihrem Implantat. Die endgültige Restauration ist so gestaltet, dass sie Ihren natürlichen Zähnen in Farbe, Form und Funktion perfekt entspricht."
+        }
+      ],
+      "faqTitle": "Häufig gestellte Fragen",
+      "faqs": [
+        {
+          "question": "Bin ich ein guter Kandidat für Zahnimplantate?",
+          "answer": "Die meisten Erwachsenen mit guter allgemeiner Gesundheit sind Kandidaten für Zahnimplantate. Entscheidende Faktoren sind ausreichende Knochendichte (die bei Bedarf durch Augmentation verbessert werden kann), gesundes Zahnfleisch und die Bereitschaft zur Mundhygiene. Während Ihrer Beratung werden wir Ihre spezifische Situation bewerten und alle Optionen besprechen."
+        },
+        {
+          "question": "Wie lange halten Zahnimplantate?",
+          "answer": "Bei richtiger Pflege und Wartung können Zahnimplantate ein Leben lang halten. Das Implantat selbst ist für eine dauerhafte Nutzung konzipiert, während die Krone nach 15-20 Jahren aufgrund normaler Abnutzung möglicherweise ersetzt werden muss. Regelmäßige Kontrolluntersuchungen und gute Mundhygiene sind für die Langlebigkeit unerlässlich."
+        },
+        {
+          "question": "Ist der Implantateingriff schmerzhaft?",
+          "answer": "Der Eingriff wird unter Lokalanästhesie durchgeführt, sodass Sie während der Platzierung keine Schmerzen verspüren. Die meisten Patienten berichten, dass das Unbehagen danach geringer als erwartet ist – oft vergleichbar mit einer Zahnextraktion. Wir bieten umfassende Nachsorgeanweisungen und Schmerzmanagement-Optionen."
+        },
+        {
+          "question": "Wie viel kosten Zahnimplantate?",
+          "answer": "Die Kosten variieren je nach Anzahl der Implantate, Art der Restauration und ob zusätzliche Eingriffe wie Knochenaufbau erforderlich sind. Während Ihrer Beratung erstellen wir einen detaillierten Behandlungsplan mit transparenter Preisgestaltung. Obwohl Implantate höhere Anfangskosten als andere Optionen haben, machen sie ihre Langlebigkeit langfristig oft wirtschaftlicher."
+        }
+      ],
+      "duration": "3-6 Monate Gesamtbehandlungszeit",
+      "warranty": "Lebenslange Garantie auf Implantate"
+    },
+    "prosthetics": {
+      "title": "Zahnprothetik",
+      "subtitle": "Umfassende Lösungen zur Lächeln-Wiederherstellung",
+      "heroDescription": "Von festsitzenden Brücken bis hin zu implantatgestützten Prothesen bieten wir umfassende prothetische Lösungen, die mit Präzision gefertigt werden, um Funktion und Schönheit wiederherzustellen.",
+      "overview": "Zahnprothetik umfasst ein breites Spektrum an restaurativen Lösungen, die darauf ausgelegt sind, fehlende Zähne zu ersetzen und die Mundfunktion wiederherzustellen. In der Zeo Dental Clinic kombinieren wir traditionelle Handwerkskunst mit moderner Digitaltechnologie, um Prothetik zu erstellen, die von natürlichen Zähnen nicht zu unterscheiden ist.\n\nUnser prothetisches Angebot umfasst festsitzende Brücken, die einen oder mehrere fehlende Zähne dauerhaft ersetzen, herausnehmbare Teilprothesen für Patienten, denen mehrere Zähne fehlen, Vollprothesen für diejenigen, die alle Zähne in einem Bogen verloren haben, und fortschrittliche implantatgestützte Prothetik, die die Stabilität von Implantaten mit der Abdeckung traditioneller Prothetik bietet.\n\nJede von uns erstellte Prothetik wird individuell mit digitalen Abdrücken und CAD/CAM-Technologie gestaltet, um eine präzise Passform zu gewährleisten, die Komfort und Funktion maximiert. Wir arbeiten eng mit Premium-Dentallaboren zusammen und verwenden ausschließlich hochwertigste Materialien, von metallfreien Zirkoniumgerüsten bis hin zu lebensechten Keramikzähnen.",
+      "benefitsTitle": "Vorteile moderner Prothetik",
+      "benefits": [
+        "Wiederhergestellte Fähigkeit zu essen, sprechen und selbstbewusst zu lächeln",
+        "Natürlich wirkende Ergebnisse mit Premium-Materialien",
+        "Mehrere Optionen für verschiedene Bedürfnisse und Budgets",
+        "Verbesserte Gesichtsunterstützung und jugendliches Aussehen",
+        "Digitale Präzision für optimale Passform und Komfort",
+        "Langlebige Materialien für den Langzeiteinsatz",
+        "Lösungen für teilweisen oder vollständigen Zahnverlust",
+        "Implantatgestützte Optionen für maximale Stabilität"
+      ],
+      "processTitle": "Ihr prothetischer Behandlungsablauf",
+      "process": [
+        {
+          "title": "Erstbewertung",
+          "description": "Wir führen eine umfassende Untersuchung Ihrer Mundgesundheit, verbleibenden Zähne, des Zahnfleischzustands und der Knochenstruktur durch. Digitale Abdrücke und Fotos helfen uns, Ihre individuellen Bedürfnisse zu verstehen."
+        },
+        {
+          "title": "Behandlungsplanung",
+          "description": "Basierend auf Ihrer Bewertung besprechen wir alle verfügbaren Optionen – von Brücken über Prothesen bis hin zu implantatgestützten Lösungen. Gemeinsam wählen wir den besten Ansatz für Ihren Lebensstil, Ihr Budget und Ihre ästhetischen Ziele."
+        },
+        {
+          "title": "Digitales Design",
+          "description": "Mit CAD/CAM-Technologie entwerfen wir Ihre Prothetik mit Präzision. Sie können eine Vorschau Ihrer neuen Zähne sehen, bevor die Herstellung beginnt, um Ihre vollständige Zufriedenheit mit dem Ergebnis sicherzustellen."
+        },
+        {
+          "title": "Herstellung",
+          "description": "Ihre Prothetik wird in einem Premium-Dentallabor mit feinsten Materialien gefertigt. Für festsitzende Prothetik sorgen provisorische Restaurationen während der Herstellungszeit für Komfort und Selbstvertrauen."
+        },
+        {
+          "title": "Anpassung & Justierung",
+          "description": "Wir passen Ihre neue Prothetik sorgfältig an und nehmen alle notwendigen Justierungen für optimalen Komfort und Funktion vor. Wir stellen sicher, dass Ihr Biss ausgewogen ist und die Ästhetik Ihren Erwartungen entspricht."
+        }
+      ],
+      "faqTitle": "Häufige Fragen zur Prothetik",
+      "faqs": [
+        {
+          "question": "Was ist der Unterschied zwischen einer Brücke und einer Prothese?",
+          "answer": "Eine Brücke ist eine festsitzende Restauration, die einen oder mehrere fehlende Zähne ersetzt, indem sie an benachbarten natürlichen Zähnen oder Implantaten verankert wird. Sie wird zementiert und ist nicht herausnehmbar. Eine Prothese ist ein herausnehmbares Gerät, das mehrere oder alle Zähne in einem Bogen ersetzt. Beide haben je nach Ihrer spezifischen Situation ihre Vorteile."
+        },
+        {
+          "question": "Wie lange dauert die Gewöhnung an neue Prothesen?",
+          "answer": "Die meisten Patienten gewöhnen sich innerhalb von 2-4 Wochen an neue Prothesen. Anfangs können Schwierigkeiten beim Sprechen oder Essen auftreten, und leichte Empfindlichkeit ist normal. Wir planen Nachsorgetermine ein, um Anpassungen vorzunehmen und Ihren Komfort während dieser Übergangszeit sicherzustellen."
+        },
+        {
+          "question": "Kann ich von Prothesen auf implantatgestützte Prothetik umsteigen?",
+          "answer": "Ja, viele Patienten, die derzeit herkömmliche Prothesen tragen, entscheiden sich für ein Upgrade auf implantatgestützte Optionen für bessere Stabilität und Funktion. Wir können Ihre Knochendichte und allgemeine Gesundheit bewerten, um festzustellen, ob Sie ein Kandidat für dieses Upgrade sind."
+        },
+        {
+          "question": "Wie pflege ich meine Prothetik?",
+          "answer": "Festsitzende Prothetik wird wie natürliche Zähne gepflegt – regelmäßiges Zähneputzen, Zahnseide und professionelle Reinigungen. Herausnehmbare Prothetik sollte nachts herausgenommen, mit geeigneten Lösungen gereinigt und ordnungsgemäß aufbewahrt werden. Wir geben Ihnen detaillierte Pflegeanweisungen für Ihren spezifischen Prothetiktyp."
+        }
+      ],
+      "duration": "2-6 Wochen je nach Typ",
+      "warranty": "5 Jahre Garantie auf alle Prothetik"
+    },
+    "aligners": {
+      "title": "Transparente Aligner",
+      "subtitle": "Unsichtbare kieferorthopädische Behandlung",
+      "heroDescription": "Erreichen Sie Ihr perfektes Lächeln diskret mit maßgefertigten transparenten Alignern – die moderne Alternative zu herkömmlichen Zahnspangen.",
+      "overview": "Transparente Aligner haben die kieferorthopädische Behandlung revolutioniert und bieten eine nahezu unsichtbare Möglichkeit, Zähne zu begradigen, ohne die ästhetischen und lebensstilbezogenen Einschränkungen herkömmlicher Metallzahnspangen. In der Zeo Dental Clinic verwenden wir fortschrittliche Aligner-Systeme zur Behandlung eines breiten Spektrums kieferorthopädischer Probleme, von leichter Zahnfehlstellung bis hin zu komplexen Bissproblemen.\n\nJedes Aligner-Set wird individuell mittels 3D-Drucktechnologie auf der Grundlage präziser digitaler Scans Ihrer Zähne gefertigt. Sie tragen jedes Set etwa zwei Wochen, bevor Sie zum nächsten wechseln, wobei jeder Aligner schrittweise Anpassungen vornimmt, um Ihre Zähne allmählich in ihre ideale Position zu bewegen.\n\nDer Vorteil transparenter Aligner liegt in ihrer Herausnehmbarkeit – Sie können sie zum Essen, Trinken, Zähneputzen und Zahnseide verwenden herausnehmen, was die Mundhygiene während der Behandlung wesentlich einfacher macht als bei herkömmlichen Zahnspangen. Die meisten Patienten empfinden sie als angenehm zu tragen, und andere bemerken selten, dass Sie sich in kieferorthopädischer Behandlung befinden.",
+      "benefitsTitle": "Warum transparente Aligner wählen?",
+      "benefits": [
+        "Nahezu unsichtbar – die meisten Menschen bemerken nicht, dass Sie sie tragen",
+        "Herausnehmbar zum Essen, Trinken und für besondere Anlässe",
+        "Keine Ernährungseinschränkungen im Gegensatz zu herkömmlichen Zahnspangen",
+        "Einfachere Mundhygiene – normal Zähne putzen und Zahnseide verwenden",
+        "Weniger Praxisbesuche im Vergleich zur herkömmlichen Kieferorthopädie",
+        "Digitale Vorschau Ihrer erwarteten Ergebnisse vor Behandlungsbeginn",
+        "Komfortabler glatter Kunststoff ohne scharfe Brackets oder Drähte",
+        "Vorhersagbarer Behandlungszeitplan mit klaren Meilensteinen"
+      ],
+      "processTitle": "Ihre Aligner-Reise",
+      "process": [
+        {
+          "title": "Digitale Beratung",
+          "description": "Wir erstellen detaillierte 3D-Scans Ihrer Zähne mit einem Intraoralscanner – keine unangenehmen Abdrücke nötig. Wir analysieren Ihren Biss und besprechen Ihre Lächeln-Ziele."
+        },
+        {
+          "title": "Behandlungssimulation",
+          "description": "Mit spezialisierter Software erstellen wir eine virtuelle Simulation, die zeigt, wie sich Ihre Zähne im Laufe der Behandlung bewegen werden. Sie sehen Ihr erwartetes Endergebnis, bevor Sie sich zur Behandlung entscheiden."
+        },
+        {
+          "title": "Individuelle Aligner-Fertigung",
+          "description": "Sobald Sie den Behandlungsplan genehmigen, wird Ihr komplettes Set individueller Aligner mit präziser 3D-Drucktechnologie gefertigt."
+        },
+        {
+          "title": "Aktive Behandlung",
+          "description": "Sie tragen jedes Aligner-Set etwa 2 Wochen lang, 20-22 Stunden pro Tag. Wir planen regelmäßige Kontrollen ein, um den Fortschritt zu überwachen und Ihnen Ihre nächsten Aligner-Sets zu geben."
+        },
+        {
+          "title": "Retentionsphase",
+          "description": "Nach Abschluss der Behandlung tragen Sie Retainer, um Ihr schönes neues Lächeln zu erhalten. Wir bieten sowohl herausnehmbare als auch festsitzende Retainer-Optionen an."
+        }
+      ],
+      "faqTitle": "Häufig gestellte Fragen zu Alignern",
+      "faqs": [
+        {
+          "question": "Können transparente Aligner mein spezifisches Zahnproblem behandeln?",
+          "answer": "Transparente Aligner können die meisten gängigen kieferorthopädischen Probleme effektiv behandeln, einschließlich Engstand, Lückenbildung, Überbiss, Unterbiss und Kreuzbiss. Während Ihrer Beratung bewerten wir Ihre spezifische Situation und bestimmen, ob Aligner die richtige Wahl sind oder ob alternative Behandlungen effektiver sein könnten."
+        },
+        {
+          "question": "Wie lange dauert die Aligner-Behandlung?",
+          "answer": "Die Behandlungsdauer variiert je nach Komplexität Ihres Falls. Einfache Fälle können 6-9 Monate dauern, während komplexere Fälle 12-18 Monate oder länger in Anspruch nehmen können. Während Ihrer Beratung erstellen wir einen personalisierten Behandlungszeitplan."
+        },
+        {
+          "question": "Tun transparente Aligner weh?",
+          "answer": "Sie können beim Wechsel zu einem neuen Aligner-Set einen gewissen Druck oder leichtes Unbehagen verspüren, was darauf hinweist, dass sich die Zähne bewegen. Dies klingt typischerweise innerhalb weniger Tage ab. Insgesamt empfinden die meisten Patienten Aligner als komfortabler als herkömmliche Zahnspangen."
+        },
+        {
+          "question": "Was passiert, wenn ich einen Aligner verliere oder beschädige?",
+          "answer": "Kontaktieren Sie uns umgehend, wenn Sie einen Aligner verlieren oder beschädigen. Je nach Stand Ihrer Behandlung können wir Ihnen raten, zum nächsten Set zu wechseln oder das vorherige Set zu tragen, während ein Ersatz angefertigt wird. Wir bewahren digitale Aufzeichnungen aller Ihrer Aligner für einen einfachen Ersatz auf."
+        }
+      ],
+      "duration": "6-18 Monate durchschnittliche Behandlung",
+      "warranty": "Zufriedenheitsgarantie inklusive"
+    },
+    "orthodontics": {
+      "title": "Kieferorthopädie",
+      "subtitle": "Fachkundige Zahnausrichtung für alle Altersgruppen",
+      "heroDescription": "Moderne kieferorthopädische Lösungen einschließlich Keramikbrackets und fortschrittlicher Techniken für perfekte Ausrichtung und ein gesundes, schönes Lächeln.",
+      "overview": "Kieferorthopädie bedeutet mehr als nur gerade Zähne – es geht darum, einen gesunden, funktionellen Biss zu schaffen, der die langfristige Mundgesundheit unterstützt. In der Zeo Dental Clinic behandeln unsere Kieferorthopädie-Spezialisten Patienten jeden Alters, von Kindern bis zu Erwachsenen, mit den neuesten Techniken und Technologien.\n\nWährend transparente Aligner für viele Fälle gut funktionieren, bleiben herkömmliche Zahnspangen der Goldstandard für komplexe kieferorthopädische Probleme. Wir bieten verschiedene Optionen an, darunter konventionelle Metallzahnspangen, zahnfarbene Keramikbrackets für ein diskreteres Erscheinungsbild und selbstligierende Systeme, die die Behandlungszeit und das Unbehagen reduzieren können.\n\nUnser Ansatz in der Kieferorthopädie ist umfassend. Wir konzentrieren uns nicht nur auf die Ästhetik – wir analysieren sorgfältig Ihre Kieferbeziehung, den Atemweg und die Kiefergelenksfunktion (TMJ), um sicherzustellen, dass Ihre Behandlung nicht nur ein schönes Lächeln, sondern auch eine optimale Mundgesundheit und Funktion erzielt.",
+      "benefitsTitle": "Vorteile professioneller Kieferorthopädie",
+      "benefits": [
+        "Korrigiert komplexe Fälle, die Aligner nicht behandeln können",
+        "Präzise Kontrolle der Zahnbewegung in alle Richtungen",
+        "Wirksam bei schwerem Engstand, Lückenbildung und Bissproblemen",
+        "Optionen für alle Altersgruppen – Kinder, Jugendliche und Erwachsene",
+        "Keramikbrackets bieten eine ästhetischere Alternative",
+        "Kann Kieferausrichtung und TMJ-Probleme behandeln",
+        "Verbessert die Mundgesundheit durch leichtere Reinigung der Zähne",
+        "Ergebnisse, die mit richtiger Retention ein Leben lang halten"
+      ],
+      "processTitle": "Ihr kieferorthopädischer Behandlungsweg",
+      "process": [
+        {
+          "title": "Umfassende Bewertung",
+          "description": "Wir erstellen digitale Röntgenaufnahmen, Fotos und 3D-Scans, um Ihre Zähne, Ihren Kiefer und Ihre Gesichtsstruktur gründlich zu beurteilen. Wir identifizieren alle zugrunde liegenden Probleme, die behandelt werden müssen."
+        },
+        {
+          "title": "Individueller Behandlungsplan",
+          "description": "Basierend auf unserer Bewertung erstellen wir einen detaillierten Behandlungsplan mit dem empfohlenen Ansatz, dem erwarteten Zeitrahmen und den voraussichtlichen Ergebnissen. Wir besprechen alle Optionen, damit Sie eine fundierte Entscheidung treffen können."
+        },
+        {
+          "title": "Brackets-Platzierung",
+          "description": "Brackets werden sorgfältig auf jeden Zahn geklebt und der Bogendraht wird eingesetzt. Der erste Termin dauert etwa 1-2 Stunden. Wir stellen sicher, dass Sie wissen, wie Sie Ihre Zahnspange pflegen."
+        },
+        {
+          "title": "Regelmäßige Anpassungen",
+          "description": "Sie besuchen uns alle 4-8 Wochen für Anpassungen. Bei diesen Terminen ersetzen wir Drähte, justieren Brackets und überwachen den Fortschritt. Jede Anpassung bringt Sie Ihrem Ziel näher."
+        },
+        {
+          "title": "Entfernung & Retention",
+          "description": "Nach Abschluss der Behandlung entfernen wir die Zahnspange und erstellen abschließende Aufnahmen. Sie erhalten individuelle Retainer, um Ihre Ergebnisse zu erhalten. Wir planen Nachsorgetermine ein, um den langfristigen Erfolg sicherzustellen."
+        }
+      ],
+      "faqTitle": "Kieferorthopädische Fragen beantwortet",
+      "faqs": [
+        {
+          "question": "Bin ich zu alt für eine Zahnspange?",
+          "answer": "Auf keinen Fall! Eine kieferorthopädische Behandlung kann in jedem Alter erfolgreich sein. Tatsächlich sind heute etwa 25 % der kieferorthopädischen Patienten Erwachsene. Solange Ihre Zähne und Ihr Zahnfleisch gesund sind, ist das Alter kein Hindernis für ein geraderes Lächeln."
+        },
+        {
+          "question": "Wie lange muss ich eine Zahnspange tragen?",
+          "answer": "Die Behandlungsdauer variiert je nach Komplexität Ihres Falls. Im Durchschnitt tragen die meisten Patienten 18-24 Monate eine Zahnspange. Einige einfache Fälle können in 12 Monaten abgeschlossen werden, während komplexere Fälle 30 Monate oder länger erfordern können."
+        },
+        {
+          "question": "Tut eine Zahnspange weh?",
+          "answer": "Sie werden wahrscheinlich einige Tage nach dem Einsetzen der Zahnspange und nach jeder Anpassung ein gewisses Unbehagen verspüren, wenn sich Ihre Zähne zu bewegen beginnen. Dies ist normal und kann mit frei verkäuflichen Schmerzmitteln behandelt werden. Das Unbehagen klingt typischerweise innerhalb einer Woche ab."
+        },
+        {
+          "question": "Welche Lebensmittel sollte ich mit Zahnspange meiden?",
+          "answer": "Sie sollten harte, klebrige und zähe Lebensmittel vermeiden, die Brackets oder Drähte beschädigen können. Dazu gehören harte Bonbons, Popcorn, Nüsse, Eis, Karamell und Kaugummi. Wir geben Ihnen eine umfassende Liste und Tipps für eine gesunde Ernährung während der Behandlung."
+        }
+      ],
+      "duration": "12-30 Monate durchschnittliche Behandlung",
+      "warranty": "Ergebnisse garantiert mit Retention"
+    },
+    "crowns": {
+      "title": "Zahnkronen",
+      "subtitle": "Zähne wiederherstellen & schützen",
+      "heroDescription": "Hochwertige Porzellan- und Zirkoniumkronen, die beschädigte Zähne in ihrer natürlichen Schönheit, Stärke und Funktion wiederherstellen.",
+      "overview": "Eine Zahnkrone ist eine individuell angefertigte Kappe, die einen beschädigten, geschwächten oder kosmetisch unvollkommenen Zahn bedeckt und schützt. In der Zeo Dental Clinic verwenden wir ausschließlich Premium-Materialien, darunter Vollkeramik- und Zirkoniumkronen, die außergewöhnliche Festigkeit und natürliche Ästhetik bieten.\n\nDie moderne Kronentechnologie hat sich erheblich weiterentwickelt. Mit digitalen Abdrücken und CAD/CAM-Design können wir Kronen erstellen, die Farbe, Transluzenz und Form Ihrer natürlichen Zähne präzise nachahmen. In vielen Fällen können wir sogar Kronen am selben Tag mit unserer praxisinternen Frästechnologie herstellen.\n\nOb Sie einen Zahn nach einer Wurzelkanalbehandlung wiederherstellen, einen rissigen Zahn vor weiterer Beschädigung schützen oder einfach das Aussehen eines verfärbten oder fehlgeformten Zahns verbessern möchten – unsere Kronen bieten eine langlebige Lösung, die vollkommen natürlich aussieht und sich anfühlt.",
+      "benefitsTitle": "Vorteile hochwertiger Zahnkronen",
+      "benefits": [
+        "Stellt die volle Funktion beschädigter oder geschwächter Zähne wieder her",
+        "Schützt Zähne nach Wurzelkanalbehandlung",
+        "Natürliches Aussehen, das zu den umliegenden Zähnen passt",
+        "Langlebige Haltbarkeit – kann 15-25 Jahre oder länger halten",
+        "Metallfreie Optionen für optimale Ästhetik und Biokompatibilität",
+        "Kronen am selben Tag verfügbar für mehr Komfort",
+        "Stärkt und erhält die verbleibende Zahnsubstanz",
+        "Verbessert die Bissausrichtung und Kieferfunktion"
+      ],
+      "processTitle": "Ihr Kronen-Behandlungsablauf",
+      "process": [
+        {
+          "title": "Bewertung & Vorbereitung",
+          "description": "Wir untersuchen den Zahn und erstellen digitale Röntgenaufnahmen, um seinen Zustand zu beurteilen. Wenn eine Krone die beste Lösung ist, besprechen wir die Materialoptionen und bereiten den Zahn vor, indem wir eine dünne Schicht Zahnschmelz entfernen, um Platz für die Krone zu schaffen."
+        },
+        {
+          "title": "Digitale Abdrücke",
+          "description": "Mit einem Intraoralscanner erfassen wir präzise 3D-Bilder Ihres vorbereiteten Zahns und der umliegenden Zähne. Dies macht unangenehme herkömmliche Abdrücke überflüssig und gewährleistet außergewöhnliche Genauigkeit."
+        },
+        {
+          "title": "Individuelles Design",
+          "description": "Ihre Krone wird mit CAD-Software entworfen, sodass wir Form, Größe und Passform perfektionieren können. Wir gleichen den Farbton sorgfältig an Ihre natürlichen Zähne an, für eine nahtlose Integration."
+        },
+        {
+          "title": "Herstellung",
+          "description": "Je nach Ihrem Fall kann Ihre Krone am selben Tag in unserer Praxis gefräst oder von unserem Premium-Dentallaborpartner gefertigt werden. Eine provisorische Krone schützt Ihren Zahn bei Bedarf während dieser Zeit."
+        },
+        {
+          "title": "Dauerhafte Platzierung",
+          "description": "Wir überprüfen Passform, Biss und Ästhetik Ihrer neuen Krone, bevor wir sie dauerhaft einzementieren. Letzte Anpassungen sorgen für Komfort und optimale Funktion."
+        }
+      ],
+      "faqTitle": "Häufig gestellte Fragen zu Kronen",
+      "faqs": [
+        {
+          "question": "Wann brauche ich eine Zahnkrone?",
+          "answer": "Kronen werden empfohlen für Zähne, die erheblich kariös, rissig oder geschwächt sind, nach einer Wurzelkanalbehandlung, zur Wiederherstellung gebrochener Zähne, zur Abdeckung stark verfärbter Zähne oder als Teil einer Zahnbrücke. Während Ihrer Untersuchung erklären wir, warum eine Krone die beste Option für Ihre Situation ist."
+        },
+        {
+          "question": "Wie lange halten Zahnkronen?",
+          "answer": "Bei richtiger Pflege halten Zahnkronen typischerweise 15-25 Jahre, und viele halten sogar noch länger. Faktoren, die die Langlebigkeit beeinflussen, sind Mundhygiegegewohnheiten, Ernährung, ob Sie mit den Zähnen knirschen, und das verwendete Material. Regelmäßige zahnärztliche Kontrolluntersuchungen helfen uns, den Zustand Ihrer Krone zu überwachen."
+        },
+        {
+          "question": "Wird meine Krone natürlich aussehen?",
+          "answer": "Absolut. Wir verwenden fortschrittliche Keramik- und Zirkonium-Materialien, die die Transluzenz und Farbvariationen natürlicher Zähne nachahmen. Wir passen Ihre Krone sorgfältig an Ihre benachbarten Zähne an, sodass sie praktisch nicht zu unterscheiden ist. Die meisten Menschen, einschließlich Zahnärzte, können den Unterschied nicht erkennen."
+        },
+        {
+          "question": "Ist das Einsetzen einer Krone schmerzhaft?",
+          "answer": "Der Kroneneingriff wird unter Lokalanästhesie durchgeführt, sodass Sie während der Vorbereitung keine Schmerzen verspüren. Sie können einige Tage nach dem Eingriff eine gewisse Empfindlichkeit verspüren, die jedoch typischerweise mild und vorübergehend ist. Wenn Sie ängstlich sind, bieten wir Sedierungsoptionen an."
+        }
+      ],
+      "duration": "1-2 Termine über 1-2 Wochen",
+      "warranty": "10 Jahre Garantie auf alle Kronen"
+    },
+    "aesthetics": {
+      "title": "Endodontie",
+      "subtitle": "Retten Sie Ihre natürlichen Zähne",
+      "heroDescription": "Fortschrittliche Wurzelkanalbehandlung mit modernen Techniken und Präzisionsinstrumenten zur Beseitigung von Infektionen, Schmerzlinderung und Erhaltung Ihrer natürlichen Zähne.",
+      "overview": "Die Endodontie ist der Bereich der Zahnmedizin, der sich auf die Behandlung des Zahnmarks und des Gewebes rund um die Zahnwurzel konzentriert. In der Zeo Dental Clinic sind unsere endodontischen Behandlungen darauf ausgelegt, Zähne zu retten, die andernfalls extrahiert werden müssten, Schmerzen zu lindern und die Funktion wiederherzustellen.\n\nWenn das Mark in Ihrem Zahn aufgrund von tiefer Karies, wiederholten Zahnbehandlungen, Rissen oder Traumata infiziert oder entzündet wird, kann eine Wurzelkanalbehandlung den Zahn retten. Unsere fortschrittlichen Techniken und modernen Geräte machen den Eingriff komfortabel und höchst erfolgreich.\n\nWir verwenden rotierende Instrumente, elektronische Apexlokalisatoren und Vergrößerung, um eine gründliche Reinigung und Formgebung des Wurzelkanalsystems zu gewährleisten. Unser schonender Ansatz und die wirksame Anästhesie bedeuten, dass eine moderne Wurzelkanalbehandlung nicht unbequemer ist als das Legen einer Füllung.",
+      "benefitsTitle": "Warum eine Wurzelkanalbehandlung wählen",
+      "benefits": [
+        "Retten Sie Ihren natürlichen Zahn und vermeiden Sie eine Extraktion",
+        "Beseitigen Sie Schmerzen und Infektionen an der Quelle",
+        "Verhindern Sie, dass sich die Infektion auf andere Zähne ausbreitet",
+        "Erhalten Sie den natürlichen Biss und die Kaufunktion",
+        "Kostengünstiger als Extraktion und Ersatz",
+        "Hohe Erfolgsquote mit modernen Techniken",
+        "Komfortabler Eingriff unter Lokalanästhesie",
+        "Erhält das natürliche Erscheinungsbild Ihres Lächelns"
+      ],
+      "processTitle": "Ihre endodontische Behandlung",
+      "process": [
+        {
+          "title": "Diagnose & Röntgen",
+          "description": "Wir untersuchen Ihren Zahn und erstellen detaillierte Röntgenaufnahmen, um das Ausmaß der Infektion und die Wurzelkanalanatomie zu beurteilen. Wir erklären unsere Befunde und besprechen den besten Behandlungsansatz für Ihren spezifischen Fall."
+        },
+        {
+          "title": "Anästhesie & Isolation",
+          "description": "Der Bereich wird mit Lokalanästhesie für Ihren Komfort gründlich betäubt. Ein Kofferdam wird um den Zahn gelegt, um ihn während des Eingriffs sauber und trocken zu halten."
+        },
+        {
+          "title": "Zugang & Reinigung",
+          "description": "Wir erstellen eine kleine Öffnung in der Zahnkrone, um Zugang zur Pulpakammer zu erhalten. Mit spezialisierten Instrumenten entfernen wir sorgfältig das infizierte oder beschädigte Pulpagewebe und reinigen und formen die Wurzelkanäle gründlich."
+        },
+        {
+          "title": "Desinfektion & Füllung",
+          "description": "Die Kanäle werden mit antibakteriellen Lösungen desinfiziert und mit einem biokompatiblen Material namens Guttapercha gefüllt. Dies versiegelt die Kanäle, um eine Reinfektion zu verhindern."
+        },
+        {
+          "title": "Restauration",
+          "description": "Nach Abschluss der Wurzelkanalbehandlung wird der Zahn mit einer Füllung oder Krone restauriert, um ihn zu schützen und die volle Funktion wiederherzustellen. Eine Krone wird typischerweise für Backenzähne empfohlen, um zusätzliche Festigkeit zu bieten."
+        }
+      ],
+      "faqTitle": "Fragen zur Endodontie",
+      "faqs": [
+        {
+          "question": "Ist eine Wurzelkanalbehandlung schmerzhaft?",
+          "answer": "Eine moderne Wurzelkanalbehandlung wird unter wirksamer Lokalanästhesie durchgeführt und ist typischerweise nicht unbequemer als das Legen einer Füllung. Die meisten Patienten berichten, dass der Eingriff die Schmerzen lindert, die sie durch den infizierten Zahn hatten. Wir legen während der gesamten Behandlung Wert auf Ihren Komfort."
+        },
+        {
+          "question": "Wie lange dauert eine Wurzelkanalbehandlung?",
+          "answer": "Die meisten Wurzelkanalbehandlungen können in ein bis zwei Sitzungen von jeweils 60-90 Minuten abgeschlossen werden. Die Anzahl der Besuche hängt von der Komplexität des Falls und dem behandelten Zahn ab. Frontzähne erfordern typischerweise weniger Zeit als Molaren mit mehreren Wurzeln."
+        },
+        {
+          "question": "Was passiert, wenn ich keine Wurzelkanalbehandlung durchführen lasse?",
+          "answer": "Ein unbehandelter infizierter Zahn heilt nicht von selbst. Die Infektion kann sich auf den umgebenden Knochen und das Gewebe ausbreiten und möglicherweise einen Abszess, Knochenschwund und starke Schmerzen verursachen. Letztendlich muss der Zahn möglicherweise extrahiert werden. Eine Wurzelkanalbehandlung kann den Zahn retten und diese Komplikationen verhindern."
+        },
+        {
+          "question": "Wie lange halten wurzelkanalbehandelte Zähne?",
+          "answer": "Bei richtiger Restauration und Pflege kann ein wurzelkanalbehandelter Zahn ein Leben lang halten. Die entscheidenden Faktoren sind die ordnungsgemäße Restauration des Zahns mit einer Krone, wenn empfohlen, die Aufrechterhaltung einer guten Mundhygiene und regelmäßige zahnärztliche Kontrolluntersuchungen."
+        }
+      ],
+      "duration": "1-2 Sitzungen, jeweils 60-90 Minuten",
+      "warranty": "Behandlungserfolgsrate über 95%"
+    }
+  },
+  "philosophyPage": {
+    "title": "Unsere Philosophie",
+    "subtitle": "In der Zeo Dental Clinic glauben wir, dass außergewöhnliche Zahnversorgung eine Kunstform ist. Jedes Lächeln, das wir gestalten, ist ein Meisterwerk aus Präzision, Technologie und menschlicher Zuwendung.",
+    "visionLabel": "Unsere Vision",
+    "visionTitle": "Lächeln verwandeln, Leben verändern",
+    "visionText": "Wir stellen uns eine Welt vor, in der ein Zahnarztbesuch nicht nur eine Notwendigkeit, sondern ein Erlebnis ist, auf das Sie sich freuen. Unsere Klinik basiert auf dem Fundament von Vertrauen, Exzellenz und aufrichtiger Fürsorge für jeden Patienten, der durch unsere Türen kommt. Wir verbinden die Kunstfertigkeit der ästhetischen Zahnmedizin mit der Präzision moderner Technologie, um Ergebnisse zu liefern, die Erwartungen übertreffen.",
+    "valuesLabel": "Grundwerte",
+    "valuesTitle": "Wofür wir stehen"
+  },
+  "teamPage": {
+    "title": "Lernen Sie unser Team kennen",
+    "subtitle": "Unser engagiertes Team von Zahnmedizin-Fachleuten vereint jahrzehntelange Erfahrung, kontinuierliche Weiterbildung und eine gemeinsame Leidenschaft für die Schaffung schöner, gesunder Lächeln.",
+    "ctaTitle": "Bereit, uns kennenzulernen?",
+    "ctaSubtitle": "Vereinbaren Sie eine Beratung und erleben Sie den Zeo Dental Unterschied. Unser Team freut sich darauf, Sie willkommen zu heißen."
+  },
+  "casesPage": {
+    "title": "Klinische Fälle",
+    "subtitle": "Entdecken Sie unser Portfolio an Lächeln-Transformationen. Jeder Fall repräsentiert eine einzigartige Reise von der Beratung bis zum Abschluss und zeigt die Kunstfertigkeit und Präzision unserer Arbeit.",
+    "introLabel": "Unsere Arbeit",
+    "introTitle": "Echte Ergebnisse, echte Patienten",
+    "introText": "Jede Lächeln-Transformation in der Zeo Dental Clinic erzählt eine Geschichte. Wir dokumentieren unsere Fälle nicht nur, um unsere Expertise zu präsentieren, sondern um Ihnen die Möglichkeiten für Ihr eigenes Lächeln aufzuzeigen. Dies sind echte Patienten, die uns ihre Zahnreise anvertraut haben.",
+    "moreComing": "Weitere Fälle folgen in Kürze",
+    "moreComingDesc": "Wir fügen unserer Galerie kontinuierlich neue Transformationen hinzu.",
+    "processLabel": "Unser Ansatz",
+    "processTitle": "Wie wir diese Ergebnisse erzielen",
+    "step1Title": "Beratung",
+    "step1Desc": "Wir beginnen mit einer umfassenden Analyse Ihrer Zahngesundheit und ästhetischen Ziele, wobei wir digitale Bildgebung zur Planung Ihrer Transformation verwenden.",
+    "step2Title": "Behandlung",
+    "step2Desc": "Mit modernster Technologie und Premium-Materialien führen wir Ihren personalisierten Behandlungsplan mit Präzision und Sorgfalt durch.",
+    "step3Title": "Ergebnisse",
+    "step3Desc": "Sie verlassen uns mit einem verwandelten Lächeln und dem Selbstvertrauen, das mit dem Wissen einhergeht, die höchste Versorgungsqualität erhalten zu haben.",
+    "ctaTitle": "Starten Sie Ihre Transformation",
+    "ctaSubtitle": "Bereit zu sehen, was für Ihr Lächeln möglich ist? Buchen Sie eine Beratung und lassen Sie uns Ihren personalisierten Behandlungsplan erstellen."
+  }
+}

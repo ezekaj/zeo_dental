@@ -1,7 +1,7 @@
 export interface ChatRequest {
   message: string;
   history?: ChatMessage[];
-  language?: 'sq' | 'en';
+  language?: string;
 }
 
 export interface ChatMessage {
@@ -19,8 +19,9 @@ export interface BookingRequest {
   email: string;
   phone: string;
   service: string;
-  date: string;
-  time: string;
+  date?: string;
+  time?: string;
+  description?: string;
   notes?: string;
   honeypot?: string;
 }
@@ -46,9 +47,10 @@ export interface Booking {
   email: string;
   phone: string;
   service: string;
-  preferred_date: string;
-  preferred_time: string;
+  preferred_date: string | null;
+  preferred_time: string | null;
   status: string;
+  description: string | null;
   notes: string | null;
   confirmed_date: string | null;
   confirmed_time: string | null;

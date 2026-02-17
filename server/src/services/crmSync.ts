@@ -302,8 +302,8 @@ class CrmSyncService {
     email?: string;
     phone?: string;
     service: string;
-    date: string;
-    time: string;
+    date?: string;
+    time?: string;
     notes?: string;
   }): Promise<{ patientPid: string | null; appointmentId: string | null }> {
     const result = { patientPid: null as string | null, appointmentId: null as string | null };
@@ -325,15 +325,15 @@ class CrmSyncService {
       }
       result.patientPid = patient.pid;
 
-      // 2. Create appointment
-      const appointment = await this.createAppointment({
+      // 2. Create appointment (only if date is provided)
+      const appointment = booking.date ? await this.createAppointment({
         patientPid: patient.pid,
         service: booking.service,
         date: booking.date,
-        time: booking.time,
+        time: booking.time || 'morning',
         notes: booking.notes,
         status: '-', // pending
-      });
+      }) : null;
 
       if (appointment?.pc_eid) {
         result.appointmentId = appointment.pc_eid;

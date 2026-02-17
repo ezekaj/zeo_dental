@@ -28,7 +28,7 @@ export async function bookingRoutes(fastify: FastifyInstance) {
     Body: BookingRequest;
     Reply: BookingResponse;
   }>('/booking', async (request: FastifyRequest<{ Body: BookingRequest }>, reply: FastifyReply) => {
-    const { name, email, phone, service, date, time, notes, honeypot } = request.body;
+    const { name, email, phone, service, date, time, description, notes, honeypot } = request.body;
 
     // Honeypot spam check
     if (honeypot && honeypot.trim().length > 0) {
@@ -39,16 +39,13 @@ export async function bookingRoutes(fastify: FastifyInstance) {
       });
     }
 
-    // Validate required fields (name, service, date, time are always required)
-    const requiredFields = ['name', 'service', 'date', 'time'] as const;
-    for (const field of requiredFields) {
-      if (!request.body[field]) {
-        return reply.status(400).send({
-          success: false,
-          message: `Missing required field: ${field}`,
-          error: `Missing required field: ${field}`,
-        });
-      }
+    // Validate required fields (name and service are always required; date/time are optional for quote requests)
+    if (!name || !service) {
+      return reply.status(400).send({
+        success: false,
+        message: 'Name and service are required',
+        error: 'Missing required fields',
+      });
     }
 
     // Require at least phone OR email
@@ -78,8 +75,8 @@ export async function bookingRoutes(fastify: FastifyInstance) {
       });
     }
 
-    // Validate date
-    if (!isValidFutureDate(date)) {
+    // Validate date if provided
+    if (date && !isValidFutureDate(date)) {
       return reply.status(400).send({
         success: false,
         message: 'Date must be today or in the future',
@@ -87,30 +84,33 @@ export async function bookingRoutes(fastify: FastifyInstance) {
       });
     }
 
-    // Validate time slot
-    const validTimeSlots = ['morning', 'afternoon', 'evening'];
-    if (!validTimeSlots.includes(time.toLowerCase())) {
-      return reply.status(400).send({
-        success: false,
-        message: 'Invalid time slot. Use: morning, afternoon, or evening',
-        error: 'Invalid time slot',
-      });
+    // Validate time slot if provided
+    if (time) {
+      const validTimeSlots = ['morning', 'afternoon', 'evening'];
+      if (!validTimeSlots.includes(time.toLowerCase())) {
+        return reply.status(400).send({
+          success: false,
+          message: 'Invalid time slot. Use: morning, afternoon, or evening',
+          error: 'Invalid time slot',
+        });
+      }
     }
 
     try {
       const pool = fastify.pg;
 
       const result = await pool.query(
-        `INSERT INTO bookings (name, email, phone, service, preferred_date, preferred_time, notes, status)
-         VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+        `INSERT INTO bookings (name, email, phone, service, preferred_date, preferred_time, description, notes, status)
+         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
          RETURNING id, name, email, service, preferred_date, preferred_time, status`,
         [
           name.trim(),
           email ? email.trim().toLowerCase() : null,
           phone ? phone.trim() : null,
           service.trim(),
-          date,
-          time.toLowerCase(),
+          date || null,
+          time ? time.toLowerCase() : null,
+          description?.trim() || null,
           notes?.trim() || null,
           'pending',
         ]
@@ -124,9 +124,10 @@ export async function bookingRoutes(fastify: FastifyInstance) {
       sendClinicNotification(
         {
           ...booking,
-          phone: phone.trim(),
-          preferred_date: date,
-          preferred_time: time.toLowerCase(),
+          phone: phone ? phone.trim() : null,
+          preferred_date: date || null,
+          preferred_time: time ? time.toLowerCase() : null,
+          description: description?.trim() || null,
           notes: notes?.trim() || null,
         },
         fastify
@@ -141,8 +142,8 @@ export async function bookingRoutes(fastify: FastifyInstance) {
             email: email ? email.trim().toLowerCase() : undefined,
             phone: phone ? phone.trim() : undefined,
             service: service.trim(),
-            date,
-            time: time.toLowerCase(),
+            date: date || undefined,
+            time: time ? time.toLowerCase() : undefined,
             notes: notes?.trim() || undefined,
           })
           .then(syncResult => {

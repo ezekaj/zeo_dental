@@ -10,8 +10,10 @@ import {
   Loader2,
   ChevronDown,
   ArrowLeft,
+  FileText,
 } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface BookingSectionProps {
   onNavigate?: (view: 'home' | 'booking', sectionId?: string) => void;
@@ -20,6 +22,8 @@ interface BookingSectionProps {
 
 export const BookingSection: React.FC<BookingSectionProps> = ({ onNavigate, initialService }) => {
   const { t } = useTranslation();
+  const { language } = useLanguage();
+  const showDateTime = language === 'sq';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -27,6 +31,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ onNavigate, init
     date: '',
     time: '',
     service: '',
+    description: '',
     honeypot: '',
   });
 
@@ -39,7 +44,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ onNavigate, init
     }
   }, [initialService]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value,
@@ -109,17 +114,21 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ onNavigate, init
                     {formData.service}
                   </p>
                 </div>
-                <div>
-                  <p className="text-xs font-bold text-primary-700 uppercase tracking-widest mb-2">
-                    {t('booking.preferredTime')}
-                  </p>
-                  <p className="font-serif font-bold text-primary-900 text-xl leading-tight">
-                    {formData.date}
-                    <span className="block text-sm font-sans font-medium text-primary-800 capitalize mt-1 flex items-center gap-1">
-                      <Clock size={14} /> {formData.time}
-                    </span>
-                  </p>
-                </div>
+                {formData.date && (
+                  <div>
+                    <p className="text-xs font-bold text-primary-700 uppercase tracking-widest mb-2">
+                      {t('booking.preferredTime')}
+                    </p>
+                    <p className="font-serif font-bold text-primary-900 text-xl leading-tight">
+                      {formData.date}
+                      {formData.time && (
+                        <span className="block text-sm font-sans font-medium text-primary-800 capitalize mt-1 flex items-center gap-1">
+                          <Clock size={14} /> {formData.time}
+                        </span>
+                      )}
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -134,6 +143,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ onNavigate, init
                     date: '',
                     time: '',
                     service: '',
+                    description: '',
                     honeypot: '',
                   });
                 }}
@@ -343,57 +353,101 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ onNavigate, init
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-primary-900">
-                      {t('booking.date')} <span className="text-red-500">*</span>
-                    </label>
-                    <div className="relative">
-                      <Calendar
-                        className="absolute left-4 top-1/2 -translate-y-1/2 text-primary-400"
-                        size={18}
-                      />
-                      <input
-                        required
-                        type="date"
-                        name="date"
-                        value={formData.date}
-                        onChange={handleChange}
-                        className={inputClasses}
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-primary-900">
-                      {t('booking.time')} <span className="text-red-500">*</span>
-                    </label>
-                    <div className="relative">
-                      <Clock
-                        className="absolute left-4 top-1/2 -translate-y-1/2 text-primary-400"
-                        size={18}
-                      />
-                      <select
-                        required
-                        name="time"
-                        value={formData.time}
-                        onChange={handleChange}
-                        className={selectWithIconClasses}
-                      >
-                        <option value="" disabled>
-                          {t('booking.selectTime')}
-                        </option>
-                        <option value="morning">{t('booking.morning')}</option>
-                        <option value="afternoon">{t('booking.afternoon')}</option>
-                        <option value="evening">{t('booking.evening')}</option>
-                      </select>
-                      <ChevronDown
-                        className="absolute right-4 top-1/2 -translate-y-1/2 text-primary-400 pointer-events-none"
-                        size={18}
-                      />
-                    </div>
+                {/* Description textarea */}
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-primary-900">
+                    {t('booking.description')}
+                  </label>
+                  <div className="relative">
+                    <FileText
+                      className="absolute left-4 top-4 text-slate-400"
+                      size={18}
+                    />
+                    <textarea
+                      name="description"
+                      value={formData.description}
+                      onChange={handleChange}
+                      placeholder={t('booking.descriptionPlaceholder')}
+                      rows={4}
+                      className="w-full pl-12 pr-4 py-3.5 bg-white border border-primary-100 rounded-xl focus:bg-white focus:border-primary-500 focus:ring-4 focus:ring-primary-500/15 focus:shadow-md outline-none transition-all duration-200 text-primary-900 placeholder:text-primary-400 resize-none"
+                    />
                   </div>
                 </div>
+
+                {/* Date/Time - only shown for Albanian language */}
+                {showDateTime && (
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-primary-900">
+                        {t('booking.date')}
+                      </label>
+                      <div className="relative">
+                        <Calendar
+                          className="absolute left-4 top-1/2 -translate-y-1/2 text-primary-400"
+                          size={18}
+                        />
+                        <input
+                          type="date"
+                          name="date"
+                          value={formData.date}
+                          onChange={handleChange}
+                          className={inputClasses}
+                        />
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-primary-900">
+                        {t('booking.time')}
+                      </label>
+                      <div className="relative">
+                        <Clock
+                          className="absolute left-4 top-1/2 -translate-y-1/2 text-primary-400"
+                          size={18}
+                        />
+                        <select
+                          name="time"
+                          value={formData.time}
+                          onChange={handleChange}
+                          className={selectWithIconClasses}
+                        >
+                          <option value="" disabled>
+                            {t('booking.selectTime')}
+                          </option>
+                          <option value="morning">{t('booking.morning')}</option>
+                          <option value="afternoon">{t('booking.afternoon')}</option>
+                          <option value="evening">{t('booking.evening')}</option>
+                        </select>
+                        <ChevronDown
+                          className="absolute right-4 top-1/2 -translate-y-1/2 text-primary-400 pointer-events-none"
+                          size={18}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
+            </div>
+
+            {/* Consent checkboxes */}
+            <div className="space-y-3">
+              <label className="flex items-start gap-3 cursor-pointer">
+                <input
+                  type="checkbox"
+                  required
+                  className="mt-1 w-4 h-4 rounded border-primary-300 text-primary-600 focus:ring-primary-500"
+                />
+                <span className="text-sm text-primary-700">{t('booking.consentData')}</span>
+              </label>
+              {formData.description && (
+                <label className="flex items-start gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    required
+                    className="mt-1 w-4 h-4 rounded border-primary-300 text-primary-600 focus:ring-primary-500"
+                  />
+                  <span className="text-sm text-primary-700">{t('booking.consentHealth')}</span>
+                </label>
+              )}
             </div>
 
             <div className="pt-4">

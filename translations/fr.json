@@ -1,0 +1,1023 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "experience": "Expérience",
+    "gallery": "Galerie",
+    "team": "Équipe",
+    "testimonials": "Témoignages",
+    "contact": "Contact",
+    "booking": "Réserver",
+    "menu": "Menu",
+    "close": "Fermer",
+    "location": "Tirana, Albanie",
+    "book": "Réserver",
+    "clinic": "La Clinique",
+    "treatments": "Traitements",
+    "philosophy": "Philosophie",
+    "cases": "Cas Cliniques"
+  },
+  "hero": {
+    "welcome": "Bienvenue chez Zeo Dental",
+    "redefining": "Redéfinir",
+    "artOfSmiles": "L'Art des Sourires",
+    "artOf": "L'Art de la",
+    "dentistry": "DENTISTERIE",
+    "subtitle": "Excellence, Précision, Esthétique",
+    "explore": "Explorer",
+    "bookConsultation": "Prendre Rendez-vous",
+    "exploreServices": "Découvrir nos Services",
+    "yearsExp": "Ans d'Exp.",
+    "smiles": "Sourires"
+  },
+  "services": {
+    "label": "Notre Expertise",
+    "title": "Soins Complets",
+    "subtitle": "Nous allions l'art et la science pour offrir une gamme complète de traitements dentaires adaptés à vos besoins uniques.",
+    "learnMore": "En Savoir Plus",
+    "backToServices": "Retour aux Services",
+    "overview": "Aperçu",
+    "aboutTreatment": "À Propos de ce Traitement",
+    "keyBenefits": "Avantages Clés",
+    "theProcess": "Le Processus",
+    "readyToStart": "Prêt à commencer ?",
+    "bookConsultation": "Prenez rendez-vous avec nos spécialistes pour discuter si {service} vous convient.",
+    "durationVaries": "La durée varie selon le cas",
+    "warrantyProcedures": "Garantie sur toutes les interventions",
+    "bookAppointment": "Prendre Rendez-vous",
+    "serviceNotFound": "Service Non Trouvé",
+    "returnHome": "Retour à l'Accueil",
+    "excellence": {
+      "title": "Excellence",
+      "description": "Des standards sans compromis dans chaque traitement, alliant technologie avancée et précision artisanale"
+    },
+    "personalization": {
+      "title": "Personnalisation",
+      "description": "Des plans de traitement sur mesure conçus autour de votre profil dentaire unique et de votre vision esthétique"
+    },
+    "comfort": {
+      "title": "Confort",
+      "description": "Un environnement raffiné où chaque détail est pensé pour votre tranquillité d'esprit et votre relaxation"
+    },
+    "privacy": {
+      "title": "Confidentialité",
+      "description": "Des soins discrets et confidentiels dans un cadre exclusif qui respecte votre espace personnel"
+    },
+    "items": {
+      "cosmetic": {
+        "title": "Dentisterie Esthétique",
+        "description": "Transformez votre sourire avec des facettes, un blanchiment et des collages esthétiques adaptés à la structure de votre visage.",
+        "longDescription": "Nos services de dentisterie esthétique sont conçus pour sublimer la beauté naturelle de votre sourire tout en maintenant une santé bucco-dentaire optimale. Nous croyons qu'un relooking du sourire ne se limite pas à modifier les dents ; il s'agit d'harmoniser votre sourire avec vos traits du visage et votre personnalité. Grâce à la technologie de conception numérique du sourire, nous vous permettons de visualiser votre nouveau sourire avant le début de tout traitement.",
+        "benefits": [
+          "Facettes en porcelaine sur mesure pour un aspect naturel",
+          "Blanchiment professionnel pour des résultats immédiats",
+          "Techniques de collage peu invasives",
+          "Aperçu par Conception Numérique du Sourire"
+        ],
+        "process": [
+          {
+            "title": "Consultation",
+            "description": "Nous discutons de vos objectifs et analysons la structure de votre visage."
+          },
+          {
+            "title": "Conception",
+            "description": "Simulation numérique de votre nouveau sourire pour approbation."
+          },
+          {
+            "title": "Préparation",
+            "description": "Préparation minimale des dents et pose de provisoires."
+          },
+          {
+            "title": "Transformation",
+            "description": "Collage des céramiques définitives et ajustements finaux."
+          }
+        ]
+      },
+      "implants": {
+        "title": "Implants Dentaires",
+        "description": "Retrouvez fonction et confiance grâce à nos solutions d'implants en titane et zircone de dernière génération.",
+        "longDescription": "Les implants dentaires sont la référence en matière de remplacement dentaire, offrant une solution permanente qui ressemble, se ressent et fonctionne comme des dents naturelles. Chez Zeo, nous utilisons la chirurgie guidée en 3D pour une précision et un confort inégalés. Que vous ayez besoin de remplacer une seule dent ou que vous nécessitiez une restauration complète d'arcade, nos spécialistes garantissent un résultat qui restaure à la fois votre occlusion et votre confiance.",
+        "benefits": [
+          "Solution permanente pour les dents manquantes",
+          "Préserve la densité de l'os de la mâchoire",
+          "Aucun impact sur les dents saines adjacentes",
+          "Matériaux biocompatibles (Titane ou Zircone)"
+        ],
+        "process": [
+          {
+            "title": "Scanner 3D",
+            "description": "Scanner CBCT pour cartographier la structure osseuse et les trajets nerveux."
+          },
+          {
+            "title": "Pose",
+            "description": "Mise en place chirurgicale précise du pilier implantaire."
+          },
+          {
+            "title": "Cicatrisation",
+            "description": "Période d'ostéointégration où l'os fusionne avec l'implant."
+          },
+          {
+            "title": "Restauration",
+            "description": "Fixation de la couronne ou du bridge fabriqué sur mesure."
+          }
+        ]
+      },
+      "ortho": {
+        "title": "Orthodontie",
+        "description": "Solutions d'alignement modernes comprenant des gouttières invisibles et des bagues en céramique pour tous les âges.",
+        "longDescription": "Aligner vos dents n'a jamais été aussi discret ni confortable. Nous proposons des solutions orthodontiques complètes allant des gouttières transparentes aux bagues en céramique. Notre objectif ne se limite pas à des dents droites, mais vise à créer une occlusion fonctionnelle qui favorise la santé articulaire à long terme. Nous traitons des patients de tous âges, vous aidant à obtenir le sourire dont vous avez toujours rêvé.",
+        "benefits": [
+          "Gouttières transparentes pour un traitement discret",
+          "Options d'orthodontie accélérée",
+          "Correction des problèmes d'occlusion (ATM)",
+          "Suivi numérique pour moins de visites au cabinet"
+        ],
+        "process": [
+          { "title": "Évaluation", "description": "Scanner numérique et analyse de l'occlusion." },
+          { "title": "Planification", "description": "Plan de traitement personnalisé et création du calendrier." },
+          {
+            "title": "Thérapie Active",
+            "description": "Port des gouttières ou des bagues avec contrôles réguliers."
+          },
+          {
+            "title": "Contention",
+            "description": "Appareils de contention sur mesure pour maintenir votre nouveau sourire à vie."
+          }
+        ]
+      },
+      "general": {
+        "title": "Soins Généraux",
+        "description": "Soins préventifs complets, hygiène et maintenance pour une santé bucco-dentaire durable.",
+        "longDescription": "Les soins préventifs sont le fondement de la philosophie Zeo. Nous allons au-delà du simple nettoyage pour fournir une analyse complète de votre écosystème de santé bucco-dentaire. Nos rendez-vous d'hygiène incluent un dépistage du cancer buccal, des évaluations de la santé gingivale et des conseils personnalisés pour garder vos dents en bonne santé à vie. Nous faisons des visites de routine une expérience relaxante, comparable à un spa.",
+        "benefits": [
+          "Technologie de nettoyage par aéro-polissage avancée",
+          "Détection numérique des caries",
+          "Dépistage du cancer buccal",
+          "Plans d'hygiène personnalisés"
+        ],
+        "process": [
+          {
+            "title": "Examen",
+            "description": "Bilan complet avec radiographies numériques à faible radiation."
+          },
+          {
+            "title": "Hygiène",
+            "description": "Nettoyage approfondi et polissage par des hygiénistes experts."
+          },
+          {
+            "title": "Éducation",
+            "description": "Conseils et outils adaptés à votre biome buccal spécifique."
+          },
+          {
+            "title": "Plan",
+            "description": "Programme de maintenance à long terme basé sur l'évaluation des risques."
+          }
+        ]
+      },
+      "surgery": {
+        "title": "Chirurgie Buccale",
+        "description": "Interventions chirurgicales expertes incluant extractions et remodelage gingival dans un environnement sans douleur.",
+        "longDescription": "Lorsque la chirurgie est nécessaire, notre priorité est votre confort et votre sécurité. Notre salle est équipée pour la sédation dentaire afin de garantir une expérience totalement sans anxiété. De l'extraction des dents de sagesse au greffage gingival complexe, nos chirurgiens certifiés utilisent des techniques microchirurgicales pour minimiser le temps de récupération et maximiser les résultats.",
+        "benefits": [
+          "Options de sédation pour un traitement sans anxiété",
+          "Techniques microchirurgicales pour une cicatrisation plus rapide",
+          "Prise en charge des dents de sagesse",
+          "Greffe et remodelage gingival"
+        ],
+        "process": [
+          {
+            "title": "Évaluation",
+            "description": "Examen des antécédents médicaux et planification chirurgicale."
+          },
+          { "title": "Confort", "description": "Administration d'anesthésie locale ou de sédation." },
+          { "title": "Intervention", "description": "Exécution chirurgicale peu invasive." },
+          { "title": "Récupération", "description": "Instructions détaillées de suivi postopératoire et contrôle." }
+        ]
+      },
+      "pediatric": {
+        "title": "Dentisterie Pédiatrique",
+        "description": "Des soins doux et engageants conçus spécifiquement pour les besoins uniques des enfants et des adolescents.",
+        "longDescription": "Nous croyons que des expériences dentaires positives dans l'enfance posent les bases d'une vie de bonne santé. Notre espace pédiatrique est conçu pour être accueillant et non menaçant. Nous parlons le langage des enfants, expliquant les procédures de manière amusante et compréhensible. Notre objectif est la prévention, les scellants et le suivi des schémas de croissance pour intervenir tôt si des besoins orthodontiques apparaissent.",
+        "benefits": [
+          "Environnement et terminologie adaptés aux enfants",
+          "Scellants préventifs et fluor",
+          "Suivi de la croissance et du développement",
+          "Soins d'urgence en cas de traumatisme"
+        ],
+        "process": [
+          {
+            "title": "Accueil",
+            "description": "Se familiariser avec l'équipe et l'environnement."
+          },
+          {
+            "title": "Compter les Dents",
+            "description": "Examen doux pour vérifier les caries et le développement."
+          },
+          { "title": "Nettoyage", "description": "Polissage doux et instructions d'hygiène." },
+          { "title": "Récompense", "description": "Renforcement positif pour développer la confiance." }
+        ]
+      }
+    }
+  },
+  "whyChooseUs": {
+    "label": "Le Standard Zeo",
+    "title": "La Dentisterie",
+    "titleHighlight": "Autrement.",
+    "subtitle": "Nous croyons qu'une visite chez le dentiste devrait être un moment que vous attendez avec impatience. En combinant des équipements de luxe avec une technologie médicale de pointe, nous avons créé un environnement qui apaise les sens et offre des résultats exceptionnels.",
+    "feature1Title": "Expérience 5 Étoiles",
+    "feature1Desc": "Service de conciergerie, casque antibruit et atmosphère apaisante.",
+    "feature2Title": "Technologie Avancée",
+    "feature2Desc": "Scanner 3D, conception numérique du sourire et dentisterie laser pour des soins précis.",
+    "feature3Title": "Respect de Votre Temps",
+    "feature3Desc": "Zéro attente. Votre rendez-vous commence exactement à l'heure prévue.",
+    "testimonialQuote": "\"La clinique la plus technologiquement avancée que j'aie jamais visitée.\"",
+    "testimonialSource": "TechDaily Review"
+  },
+  "gallery": {
+    "label": "À l'Intérieur de Zeo",
+    "title": "Une clinique conçue pour le confort",
+    "subtitle": "Découvrez nos suites inspirées du spa, notre laboratoire numérique et nos salons privés conçus pour votre bien-être.",
+    "cta": "Planifier une visite privée"
+  },
+  "team": {
+    "label": "Nos Experts",
+    "title": "Rencontrez les Docteurs",
+    "viewProfile": "Voir le Profil",
+    "readFullBio": "Lire la Biographie Complète",
+    "biography": "Biographie",
+    "education": "Formation",
+    "memberships": "Affiliations",
+    "quote": "\"Je m'engage à offrir le plus haut niveau de soins à chaque patient qui franchit nos portes.\"",
+    "educationPlaceholder1": "Doctorat en Chirurgie Dentaire, École Dentaire de Premier Plan",
+    "educationPlaceholder2": "Résidence en Domaine de Spécialité",
+    "educationPlaceholder3": "Certification Avancée",
+    "membershipPlaceholder1": "Association Dentaire Américaine",
+    "membershipPlaceholder2": "Société Dentaire Régionale",
+    "membershipPlaceholder3": "Académie de Dentisterie Générale",
+    "doctors": {
+      "dr-rien": {
+        "role": "Spécialiste Dentaire",
+        "bio": "Diplômé de l'<strong>Université de Stomatologie de Tirana</strong>, le Dr. Stambolliu est spécialisé en <strong>thérapie dentaire</strong>, <strong>prothèses fixes et mobiles</strong> et <strong>restaurations sur implants</strong>.",
+        "fullBio": "Le Dr. Rien Stambolliu a terminé ses études à l'<strong>Université de Stomatologie de Tirana</strong>. Au cours de son développement professionnel, il a complété avec succès <strong>de nombreux programmes de formation nationaux et internationaux</strong> et <strong>participé activement à des conférences médicales</strong>, mettant constamment à jour ses connaissances avec les dernières techniques et normes en dentisterie. Il réalise professionnellement des traitements en <strong>thérapie dentaire</strong>, <strong>prothèses fixes et mobiles</strong>, ainsi qu'en <strong>prothèses sur implants</strong>, accordant une attention particulière à la fonction, à l'esthétique et à la durabilité à long terme de son travail. Reconnu pour sa <strong>précision</strong>, son <strong>approche minutieuse</strong> et son <strong>accueil chaleureux</strong> envers les patients, le Dr. Rien travaille avec un dévouement maximal pour garantir des traitements de qualité, sûrs et personnalisés pour chaque patient.",
+        "education1": "Université de Stomatologie de Tirana",
+        "education2": "Formation nationale et internationale en Prothèses Dentaires",
+        "education3": "Participant actif aux conférences médicales dentaires",
+        "membership1": "Ordre des Dentistes Albanais",
+        "membership2": "Association Dentaire Albanaise",
+        "membership3": "Membre d'associations professionnelles de prothèses dentaires",
+        "quote": "Je suis dévoué à garantir des traitements de qualité, sûrs et personnalisés pour chaque patient."
+      },
+      "dr-kristi": {
+        "role": "Spécialiste Dentaire",
+        "bio": "Le Dr. Kristi Sulanjaku a complété ses <strong>études de Master en Sciences Médicales, Département de Dentisterie</strong>, avec <strong>d'excellents résultats</strong>. Elle possède une <strong>connaissance approfondie en prothèses dentaires</strong>.",
+        "fullBio": "Le Dr. Kristi Sulanjaku a complété ses <strong>études de Master en Sciences Médicales, Département de Dentisterie</strong>, avec <strong>d'excellents résultats</strong>. Elle participe régulièrement à des <strong>conférences médicales</strong>. Elle possède une <strong>connaissance approfondie en prothèses dentaires</strong> et se distingue par sa <strong>rigueur</strong>, sa <strong>précision</strong> et son <strong>attention particulière aux détails</strong>, garantissant des <strong>résultats fonctionnels et esthétiques optimaux</strong>. Elle possède d'<strong>excellentes compétences en communication et en travail</strong>, offrant des traitements professionnels et personnalisés à chaque patient.",
+        "education1": "Master en Sciences Médicales, Département de Dentisterie",
+        "education2": "Formation avancée en Prothèses Dentaires",
+        "education3": "Participante active aux conférences médicales internationales",
+        "membership1": "Ordre des Dentistes Albanais",
+        "membership2": "Association Dentaire Albanaise",
+        "membership3": "Membre d'associations professionnelles de prothèses dentaires",
+        "quote": "Je m'engage à fournir des soins personnalisés et des résultats optimaux pour chaque patient."
+      },
+      "dr-dorina": {
+        "role": "Spécialiste en Chirurgie Buccale et Implantologie",
+        "bio": "<strong>Experte formée dans les centres hospitaliers les plus prestigieux de Paris</strong>, le Dr. Dorina offre une <strong>précision clinique</strong> et des <strong>traitements avancés certifiés en France</strong>.",
+        "fullBio": "Le Dr. Dorina Beqiraj est <strong>spécialiste en Chirurgie Buccale et Implantologie</strong>, formée dans les centres hospitaliers les plus prestigieux de Paris. Elle apporte une précision clinique et des traitements avancés certifiés en France à chaque intervention.<br/><br/><strong>Points Forts :</strong><br/>• <strong>Spécialisation à Paris :</strong> Expérience en Chirurgie Buccale et Occlusodontie aux hôpitaux d'élite Pitié Salpêtrière et Charles Foix.<br/>• <strong>Expertise à Nantes :</strong> Formation spécialisée en Parodontologie (maladies des gencives) au CHU-Nantes.<br/>• <strong>Certification CES Française :</strong> Titulaire de diplômes d'études supérieures en chirurgie, implantologie et anatomie-physiologie.",
+        "education1": "Chirurgie Buccale et Occlusodontie - Pitié Salpêtrière, Paris",
+        "education2": "Parodontologie - CHU-Nantes, France",
+        "education3": "Certification CES - Chirurgie, Implantologie et Anatomie-Physiologie",
+        "membership1": "Ordre des Dentistes Albanais",
+        "membership2": "Association Dentaire Française",
+        "membership3": "Association Européenne pour l'Ostéointégration",
+        "quote": "La précision et les techniques avancées de Paris garantissent des résultats exceptionnels pour chaque patient."
+      },
+      "dr-emanuela": {
+        "role": "Fondatrice et Dentiste Principale",
+        "bio": "<strong>Fondatrice de Zeo Dental Clinic</strong>, le Dr. Velaj est une diplômée distinguée de la <strong>Faculté de Médecine, Département de Dentisterie</strong>, avec des certifications avancées en <strong>Orthodontie</strong> et en <strong>Réhabilitation Gnathologique Prothétique</strong> de <strong>UCAM, Espagne</strong>.",
+        "fullBio": "Le Dr. Emanuela Velaj est la <strong>fondatrice de Zeo Dental Clinic</strong>, ayant complété ses études à la <strong>Faculté de Médecine, Département de Dentisterie</strong>, construisant un profil professionnel basé sur des connaissances profondes, une précision clinique et un engagement continu envers la qualité. Sa formation a été enrichie au fil des années par des <strong>formations postuniversitaires avancées</strong> dans des domaines clés de la dentisterie moderne, notamment l'<strong>endodontie</strong>, la <strong>gnathologie</strong>, les <strong>prothèses sur implants</strong>, l'<strong>esthétique dentaire</strong> et l'<strong>orthodontie</strong>. Elle est titulaire d'un diplôme de <strong>UCAM – Universidad Católica de Murcia (Espagne)</strong> en <strong>Orthodontie</strong> et en <strong>Réhabilitation Gnathologique Prothétique</strong>, où elle a maîtrisé les normes européennes contemporaines et les protocoles de traitement avancés axés sur l'harmonie fonctionnelle, l'esthétique sophistiquée et la durabilité clinique à long terme. En tant que fondatrice, elle a conceptualisé et construit Zeo Dental Clinic sur les principes d'<strong>excellence médicale</strong>, de <strong>technologie avancée</strong> et de <strong>normes maximales de stérilisation</strong>, créant un environnement moderne, raffiné et totalement sûr où chaque détail est conçu pour le confort et la confiance du patient. Distinguée par son <strong>élégance professionnelle</strong>, sa <strong>communication claire</strong> et son <strong>approche humaine</strong>, le Dr. Velaj travaille avec précision, éthique et dévouement maximal, offrant des traitements personnalisés et des résultats fonctionnels et esthétiques de haut niveau. Personnellement, elle est <strong>mère de deux enfants</strong>, un rôle qui a renforcé son empathie, sa patience et sa sensibilité humaine. Les voyages et l'exposition à différentes cultures lui apportent une inspiration continue, tandis que la musique, la danse et le contact avec la nature lui donnent équilibre et énergie positive, se reflétant naturellement dans sa philosophie professionnelle et l'attention particulière qu'elle porte à chaque patient.",
+        "education1": "Faculté de Médecine, Département de Dentisterie",
+        "education2": "UCAM – Universidad Católica de Murcia (Espagne) - Orthodontie",
+        "education3": "UCAM – Réhabilitation Gnathologique Prothétique",
+        "membership1": "Ordre des Dentistes Albanais",
+        "membership2": "Association Dentaire Albanaise",
+        "membership3": "Membre du Réseau des Anciens de UCAM",
+        "quote": "Je m'engage à offrir une excellence médicale et des traitements personnalisés qui transforment les sourires et instaurent la confiance."
+      },
+      "dr-james": {
+        "role": "Implantologue",
+        "bio": "Le Dr. Chen est un chirurgien certifié reconnu pour sa précision et son approche douce des interventions de restauration complexes.",
+        "fullBio": "Le Dr. James Chen est un chirurgien oral et maxillo-facial à double diplôme et un leader dans le domaine de l'implantologie. Il a obtenu son diplôme dentaire à l'UCSF et son diplôme médical à l'Université Columbia. Spécialisé dans la reconstruction complète de la bouche et les implants à chargement immédiat \"All-on-4\", le Dr. Chen utilise la chirurgie guidée 3D avancée pour garantir sécurité et précision. Son calme et son attention à la sédation dentaire en font un favori parmi les patients anxieux."
+      },
+      "dr-elena": {
+        "role": "Orthodontiste",
+        "bio": "Le Dr. Rodriguez allie art et science pour aligner les sourires parfaitement, certifiée dans les systèmes de gouttières transparentes les plus avancés.",
+        "fullBio": "Le Dr. Elena Rodriguez croit qu'un sourire aligné est le fondement de la santé bucco-dentaire. Elle a obtenu son Doctorat en Chirurgie Dentaire et son Master en Orthodontie à l'Université du Michigan. Le Dr. Rodriguez est Fournisseur Diamond Plus Invisalign et se spécialise dans les traitements orthodontiques accélérés pour les adolescents et les adultes. Elle est passionnée par l'orthodontie axée sur les voies aériennes, aidant les patients à obtenir non seulement de beaux sourires, mais aussi une meilleure respiration et qualité de sommeil."
+      }
+    },
+    "founderLabel": "La Fondatrice",
+    "teamTitle": "L'Équipe du Cabinet",
+    "teamSubtitle": "Expertise et Soins"
+  },
+  "philosophy": {
+    "label": "Notre Philosophie",
+    "imageAlt": "Philosophie Zeo Dental",
+    "quote": "Art et précision dans chaque sourire que nous créons",
+    "text1": "Nous croyons au pouvoir transformateur d'un sourire confiant, façonné par l'art, la précision et la technologie avancée.",
+    "text2": "Chaque traitement est un parcours personnalisé, où votre vision rencontre notre expertise pour créer des résultats durables et naturels.",
+    "expertise": "Expertise",
+    "expertiseList": {
+      "item1": "Endodontie",
+      "item2": "Précision Chirurgicale",
+      "item3": "Maîtrise des Implants"
+    },
+    "technology": "Technologie",
+    "technologyList": {
+      "item1": "Scanner Numérique 3D",
+      "item2": "Conception CAO/FAO",
+      "item3": "Chirurgie Guidée"
+    }
+  },
+  "cases": {
+    "label": "Transformations",
+    "title": "Cas Sélectionnés",
+    "viewGallery": "Voir la Galerie Complète",
+    "case1": {
+      "number": "Cas 01",
+      "title": "Couronnes Emax",
+      "description": "Restauration complète du sourire avec des couronnes en céramique E.max haut de gamme. Obtention d'une esthétique et d'une résistance optimales avec une translucidité naturelle pour un résultat harmonieux et durable.",
+      "detail1Label": "Durée",
+      "detail1Value": "2 Sem.",
+      "detail2Label": "Couronnes",
+      "detail2Value": "8 Unités"
+    },
+    "case2": {
+      "number": "Cas 02",
+      "title": "Couronnes en Zircone",
+      "description": "Restauration avec couronnes en zircone haut de gamme pour une durabilité et une esthétique exceptionnelles. Des résultats naturels avec une résistance supérieure pour une transformation durable du sourire.",
+      "detail1Label": "Durée",
+      "detail1Value": "2 Sem.",
+      "detail2Label": "Couronnes",
+      "detail2Value": "6 Unités"
+    },
+    "case3": {
+      "number": "Cas 03",
+      "title": "Obturation et Blanchiment",
+      "description": "Traitement combiné restaurateur et esthétique. Obturation composite professionnelle associée au blanchiment des dents pour un sourire plus sain et plus éclatant.",
+      "detail1Label": "Durée",
+      "detail1Value": "1 Sem.",
+      "detail2Label": "Traitement",
+      "detail2Value": "Complet"
+    }
+  },
+  "reviews": {
+    "label": "Avis Google",
+    "title": "Ce Que Disent Nos Patients",
+    "reviewCount": "avis",
+    "leaveReview": "Laisser un Avis",
+    "poweredBy": "Propulsé par Google Reviews"
+  },
+  "testimonials": {
+    "label": "Témoignages",
+    "title": "Histoires de Patients",
+    "rating": "Note Moyenne",
+    "items": {
+      "t1": {
+        "name": "Michael Ross",
+        "role": "Patient",
+        "content": "Le niveau de soins chez Zeo est inégalé. Dès que vous entrez, on se croirait dans un hôtel 5 étoiles, pas une clinique. Mes facettes sont incroyables."
+      },
+      "t2": {
+        "name": "Jennifer Wu",
+        "role": "Patiente",
+        "content": "J'étais terrifiée par le dentiste jusqu'à ce que je rencontre le Dr. Zeo. La technologie sans douleur qu'ils utilisent change tout. Je recommande vivement !"
+      },
+      "t3": {
+        "name": "David Okafor",
+        "role": "Patient",
+        "content": "Professionnel, impeccable et ponctuel. Ils respectent votre temps et votre santé. La meilleure expérience dentaire que j'aie jamais eue."
+      }
+    }
+  },
+  "booking": {
+    "label": "Contact",
+    "title1": "Commencez votre",
+    "title2": "parcours.",
+    "subtitle": "Nous acceptons actuellement de nouveaux patients pour la prochaine saison. Planifiez votre consultation privée.",
+    "studioLabel": "Cabinet",
+    "address": "Rruga Hamdi Sina, Tiranë",
+    "phoneLabel": "Ligne Directe",
+    "phone": "+355 68 400 4840",
+    "emailLabel": "Demandes",
+    "email": "zeodentalclinic@gmail.com",
+    "namePlaceholder": "John Doe",
+    "phonePlaceholder": "+355 68 400 4840",
+    "emailPlaceholder": "john@example.com",
+    "phoneOrEmail": "Téléphone ou email requis",
+    "optional": "Facultatif",
+    "privacyNotice": "En soumettant ce formulaire, vous acceptez notre politique de confidentialité et nos conditions d'utilisation.",
+    "submit": "Confirmer la Demande de Rendez-vous",
+    "submitting": "Envoi en cours...",
+    "backToForm": "Retour au Formulaire",
+    "error": "Une erreur est survenue lors de l'envoi de votre demande. Veuillez réessayer.",
+    "title": "Demander un Devis Gratuit",
+    "conciergeTitle": "Services de Conciergerie",
+    "conciergeSubtitle": "Votre Confort est Notre Priorité.",
+    "conciergeDesc": "Planifiez votre visite avec notre portail de réservation facile à utiliser. Pour les demandes urgentes ou spécifiques, notre équipe de conciergerie est à votre disposition.",
+    "directLine": "Ligne Directe",
+    "availability": "Disponible Lun-Sam, 9h - 19h",
+    "backToHome": "Retour à l'Accueil",
+    "personalDetails": "Informations Personnelles",
+    "appointmentDetails": "Détails du Rendez-vous",
+    "nameField": "Nom Complet",
+    "emailField": "Adresse Email",
+    "phoneField": "Numéro de Téléphone",
+    "serviceField": "Service Souhaité",
+    "selectService": "Sélectionner un type de traitement...",
+    "otherConsultation": "Autre / Consultation",
+    "date": "Date Préférée",
+    "time": "Heure Préférée",
+    "selectTime": "Sélectionner l'heure...",
+    "morning": "Matin (9h - 12h)",
+    "afternoon": "Après-midi (12h - 16h)",
+    "evening": "Soir (16h - 19h)",
+    "notes": "Notes Supplémentaires",
+    "disclaimer": "En soumettant ce formulaire, vous reconnaissez qu'il s'agit d'une demande de rendez-vous. Notre équipe vous contactera pour finaliser le planning.",
+    "success": "Demande Confirmée",
+    "successMessage": "Merci, {name}. Nous avons bien reçu votre demande de rendez-vous.",
+    "confirmationEmail": "Un email de confirmation a été envoyé à",
+    "serviceRequested": "Service Demandé",
+    "preferredTime": "Heure Préférée",
+    "bookAnother": "Prendre un Autre Rendez-vous",
+    "returnHome": "Retour à l'Accueil",
+    "processing": "Traitement en cours...",
+    "description": "Décrivez Vos Besoins",
+    "descriptionPlaceholder": "Veuillez décrire vos besoins dentaires, vos préoccupations ou le traitement qui vous intéresse...",
+    "quoteSubtext": "Réservez une consultation gratuite avec notre spécialiste et obtenez un devis personnalisé pour votre cas."
+  },
+  "footer": {
+    "tagline": "Redéfinir le standard de soins par le design, la technologie et l'art.",
+    "location": "Tirana • Albanie",
+    "description": "Élever les soins dentaires au rang d'art. Nous combinons luxe, technologie et compassion pour créer des sourires qui changent des vies.",
+    "quickLinks": "Liens Rapides",
+    "ourDoctors": "Nos Docteurs",
+    "patientPortal": "Portail Patient",
+    "contactUs": "Nous Contacter",
+    "openingHours": "Horaires d'Ouverture",
+    "monFri": "Lundi - Vendredi",
+    "saturday": "Samedi",
+    "sunday": "Dimanche",
+    "closed": "Fermé",
+    "rights": "Zeo Dental Clinic. Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "hoursMF": "9:00 - 17:00",
+    "hoursSat": "9:00 - 14:00"
+  },
+  "chat": {
+    "title": "Discutez avec Sofia",
+    "placeholder": "Tapez votre message...",
+    "greeting": "Bonjour ! Je suis Sofia, votre assistante dentaire virtuelle chez Zeo Dental Clinic. N'hésitez pas à m'écrire dans votre langue ! Comment puis-je vous aider à obtenir votre sourire parfait aujourd'hui ?",
+    "assistantName": "Sofia",
+    "status": "Toujours en ligne",
+    "typing": "Sofia est en train d'écrire...",
+    "disclaimer": "Les réponses de l'IA peuvent varier. En cas d'urgence médicale, appelez le 112."
+  },
+  "contact": {
+    "phone": "+355 68 400 4840",
+    "email": "zeodentalclinic@gmail.com",
+    "address": "Rruga Hamdi Sina, Tiranë, Albania",
+    "addressShort": "Tiranë, Albania"
+  },
+  "error": {
+    "title": "Une erreur est survenue",
+    "message": "Nous nous excusons pour le désagrément. Veuillez actualiser la page ou nous contacter directement.",
+    "tryAgain": "Réessayer",
+    "callUs": "Appelez le +355 68 400 4840"
+  },
+  "common": {
+    "learnMore": "En Savoir Plus",
+    "readMore": "Lire la Suite",
+    "bookNow": "Réserver",
+    "contactUs": "Nous Contacter",
+    "callNow": "Appeler",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "Email",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "tryAgain": "Réessayer"
+  },
+  "language": {
+    "select": "Choisir la Langue",
+    "albanian": "Shqip",
+    "english": "English",
+    "french": "Français",
+    "turkish": "Türkçe"
+  },
+  "treatments": {
+    "label": "Nos Traitements",
+    "title": "Soins Spécialisés",
+    "subtitle": "Des implants à l'esthétique, nous offrons des solutions dentaires complètes conçues pour restaurer la fonction, sublimer la beauté et transformer les sourires avec précision et art.",
+    "viewAllTreatments": "Voir Tous les Traitements",
+    "learnMore": "En Savoir Plus",
+    "items": {
+      "implantology": {
+        "title": "Implantologie",
+        "description": "Implants en titane et zircone de pointe avec chirurgie guidée 3D pour un remplacement dentaire permanent et naturel."
+      },
+      "prosthetics": {
+        "title": "Prothèses",
+        "description": "Solutions prothétiques complètes incluant bridges fixes, prothèses amovibles, prothèses partielles et restaurations sur implants."
+      },
+      "aligners": {
+        "title": "Gouttières Transparentes",
+        "description": "Traitement orthodontique invisible avec gouttières transparentes sur mesure pour une correction discrète du sourire sans bagues métalliques."
+      },
+      "orthodontics": {
+        "title": "Orthodontie",
+        "description": "Solutions d'alignement modernes comprenant des bagues en céramique et l'orthodontie traditionnelle pour une occlusion parfaite et un beau sourire."
+      },
+      "crowns": {
+        "title": "Couronnes Dentaires",
+        "description": "Couronnes haut de gamme en porcelaine et zircone qui restaurent les dents endommagées tout en reproduisant la couleur et la translucidité naturelles."
+      },
+      "aesthetics": {
+        "title": "Endodontie",
+        "description": "Traitement endodontique avancé pour sauver les dents endommagées et soulager la douleur grâce à des techniques modernes et des instruments de précision."
+      }
+    }
+  },
+  "receptionist": {
+    "title": "Tableau de Bord Réceptionniste",
+    "loading": "Chargement...",
+    "noBookings": "Aucune réservation trouvée",
+    "login": {
+      "title": "Connexion Personnel",
+      "password": "Mot de Passe",
+      "submit": "Se Connecter",
+      "error": "Mot de passe invalide",
+      "backToSite": "Retour au Site"
+    },
+    "header": {
+      "logout": "Déconnexion",
+      "pending": "En Attente",
+      "newBooking": "Nouvelle Réservation !",
+      "lastUpdate": "Mis à jour",
+      "soundOn": "Notifications sonores activées",
+      "soundOff": "Notifications sonores désactivées",
+      "calendar": "Calendrier"
+    },
+    "stats": {
+      "pending": "En Attente",
+      "today": "Aujourd'hui",
+      "thisWeek": "Cette Semaine",
+      "confirmedToday": "Confirmés Aujourd'hui"
+    },
+    "filters": {
+      "all": "Toutes les Réservations",
+      "pending": "En Attente",
+      "confirmed": "Confirmées",
+      "cancelled": "Annulées",
+      "completed": "Terminées",
+      "noShow": "Absent",
+      "search": "Rechercher par nom, email, téléphone..."
+    },
+    "booking": {
+      "preferred": "Préféré",
+      "confirmed": "Confirmé",
+      "service": "Service",
+      "phone": "Téléphone",
+      "email": "Email",
+      "notes": "Notes",
+      "status": "Statut"
+    },
+    "actions": {
+      "view": "Voir",
+      "confirm": "Confirmer",
+      "cancel": "Annuler",
+      "close": "Fermer",
+      "refresh": "Actualiser"
+    },
+    "confirm": {
+      "title": "Confirmer la Réservation",
+      "date": "Date Confirmée",
+      "time": "Heure Confirmée",
+      "sendWhatsApp": "Envoyer confirmation par WhatsApp",
+      "sendEmail": "Envoyer confirmation par Email",
+      "submit": "Confirmer la Réservation"
+    },
+    "cancel": {
+      "title": "Annuler la Réservation",
+      "reason": "Motif d'Annulation (facultatif)",
+      "notify": "Notifier le patient",
+      "submit": "Annuler la Réservation"
+    }
+  },
+  "whatsapp": {
+    "tooltip": "Discuter sur WhatsApp",
+    "ariaLabel": "Nous contacter sur WhatsApp",
+    "defaultMessage": "Bonjour ! Je souhaiterais prendre rendez-vous chez Zeo Dental Clinic."
+  },
+  "treatmentPages": {
+    "implantology": {
+      "title": "Implants Dentaires",
+      "subtitle": "La Référence pour le Remplacement Dentaire",
+      "heroDescription": "Retrouvez votre sourire avec des implants dentaires permanents et naturels grâce à une chirurgie guidée 3D de pointe pour une précision et un confort inégalés.",
+      "overview": "Les implants dentaires représentent la solution la plus avancée et la plus fiable pour remplacer les dents manquantes. Contrairement aux prothèses ou bridges traditionnels, les implants sont chirurgicalement placés dans l'os de la mâchoire, où ils fusionnent avec l'os par un processus appelé ostéointégration. Cela crée une fondation stable et permanente qui ressemble, se ressent et fonctionne exactement comme vos dents naturelles.\n\nChez Zeo Dental Clinic, nous utilisons l'imagerie 3D de pointe et la chirurgie guidée par ordinateur pour planifier et exécuter chaque intervention implantaire avec une précision millimétrique. Que vous ayez besoin d'un remplacement unitaire ou d'une restauration complète d'arcade, nos spécialistes assurent un positionnement optimal pour une longévité maximale et des résultats esthétiques.\n\nNous proposons des implants en titane et en zircone, nous permettant de personnaliser votre traitement en fonction de vos besoins spécifiques, de votre densité osseuse et de vos préférences esthétiques. Notre engagement à n'utiliser que des matériaux haut de gamme de fabricants de confiance garantit que vos implants vous serviront pendant des décennies.",
+      "benefitsTitle": "Pourquoi Choisir les Implants Dentaires ?",
+      "benefits": [
+        "Solution permanente pouvant durer toute une vie avec des soins appropriés",
+        "Préserve la densité de l'os de la mâchoire et prévient la perte osseuse faciale",
+        "Aucun impact sur les dents saines adjacentes contrairement aux bridges",
+        "Apparence naturelle indistinguable des vraies dents",
+        "Fonction masticatoire restaurée - mangez tous vos aliments préférés",
+        "Entretien facile - brossez et utilisez du fil dentaire comme des dents naturelles",
+        "Élocution améliorée par rapport aux prothèses amovibles",
+        "Élimine l'inconfort et les contraintes des prothèses"
+      ],
+      "processTitle": "Votre Parcours Implantaire",
+      "process": [
+        {
+          "title": "Consultation Complète",
+          "description": "Nous commençons par un examen approfondi incluant un scanner CBCT 3D pour évaluer la qualité et la quantité osseuse et cartographier les structures critiques comme les nerfs et les sinus. Nous discutons de vos objectifs et créons un plan de traitement personnalisé."
+        },
+        {
+          "title": "Planification Numérique du Traitement",
+          "description": "Grâce à un logiciel avancé, nous planifions numériquement la position exacte, l'angle et la profondeur de chaque implant. Cela nous permet de créer un guide chirurgical pour un placement d'une précision millimétrique."
+        },
+        {
+          "title": "Pose Chirurgicale de l'Implant",
+          "description": "Le pilier implantaire en titane ou en zircone est placé dans l'os de la mâchoire à l'aide de techniques peu invasives. La plupart des patients rapportent un inconfort minimal, et l'intervention est réalisée sous anesthésie locale avec des options de sédation disponibles."
+        },
+        {
+          "title": "Période d'Ostéointégration",
+          "description": "Sur 3 à 6 mois, l'implant fusionne avec votre os maxillaire, créant une fondation incroyablement solide. Pendant cette période, vous pouvez porter une restauration provisoire pour maintenir l'esthétique."
+        },
+        {
+          "title": "Restauration Définitive",
+          "description": "Une fois la cicatrisation complète, nous fixons une couronne, un bridge ou une prothèse fabriqué(e) sur mesure à votre implant. La restauration finale est conçue pour correspondre parfaitement à vos dents naturelles en couleur, forme et fonction."
+        }
+      ],
+      "faqTitle": "Questions Fréquemment Posées",
+      "faqs": [
+        {
+          "question": "Suis-je un bon candidat pour les implants dentaires ?",
+          "answer": "La plupart des adultes en bonne santé générale sont candidats aux implants dentaires. Les facteurs clés incluent une densité osseuse adéquate (qui peut être améliorée par greffe si nécessaire), des gencives saines et un engagement en matière d'hygiène bucco-dentaire. Lors de votre consultation, nous évaluerons votre situation spécifique et discuterons de toutes les options."
+        },
+        {
+          "question": "Combien de temps durent les implants dentaires ?",
+          "answer": "Avec des soins et un entretien appropriés, les implants dentaires peuvent durer toute une vie. L'implant lui-même est conçu pour être permanent, tandis que la couronne peut nécessiter un remplacement après 15 à 20 ans en raison de l'usure normale. Des contrôles réguliers et une bonne hygiène bucco-dentaire sont essentiels pour la longévité."
+        },
+        {
+          "question": "La pose d'implant est-elle douloureuse ?",
+          "answer": "L'intervention est réalisée sous anesthésie locale, vous ne ressentirez donc pas de douleur pendant la pose. La plupart des patients rapportent que l'inconfort postopératoire est moins important que prévu - souvent comparable à une extraction dentaire. Nous fournissons des instructions complètes de suivi et des options de gestion de la douleur."
+        },
+        {
+          "question": "Combien coûtent les implants dentaires ?",
+          "answer": "Le coût varie en fonction du nombre d'implants, du type de restauration et de la nécessité de procédures supplémentaires comme la greffe osseuse. Lors de votre consultation, nous fournissons un plan de traitement détaillé avec une tarification transparente. Bien que les implants aient un coût initial plus élevé que d'autres options, leur longévité les rend souvent plus économiques à long terme."
+        }
+      ],
+      "duration": "3 à 6 mois de traitement au total",
+      "warranty": "Garantie à vie sur les implants"
+    },
+    "prosthetics": {
+      "title": "Prothèses Dentaires",
+      "subtitle": "Solutions Complètes de Restauration du Sourire",
+      "heroDescription": "Des bridges fixes aux prothèses sur implants, nous offrons des solutions prothétiques complètes fabriquées avec précision pour restaurer fonction et beauté.",
+      "overview": "Les prothèses dentaires englobent une large gamme de solutions restauratrices conçues pour remplacer les dents manquantes et restaurer la fonction buccale. Chez Zeo Dental Clinic, nous combinons l'artisanat traditionnel avec la technologie numérique moderne pour créer des prothèses indistinguables des dents naturelles.\n\nNos offres prothétiques comprennent des bridges fixes qui remplacent de manière permanente une ou plusieurs dents manquantes, des prothèses partielles amovibles pour les patients à qui il manque plusieurs dents, des prothèses complètes pour ceux qui ont perdu toutes les dents d'une arcade, et des prothèses avancées sur implants qui offrent la stabilité des implants avec la couverture des prothèses traditionnelles.\n\nChaque prothèse que nous créons est conçue sur mesure à l'aide d'empreintes numériques et de la technologie CAO/FAO, garantissant un ajustement précis qui maximise le confort et la fonction. Nous travaillons en étroite collaboration avec des laboratoires dentaires haut de gamme pour n'utiliser que des matériaux de la plus haute qualité, des armatures en zircone sans métal aux dents en céramique réalistes.",
+      "benefitsTitle": "Avantages des Prothèses Modernes",
+      "benefits": [
+        "Capacité restaurée de manger, parler et sourire avec confiance",
+        "Résultats naturels grâce à des matériaux haut de gamme",
+        "Multiples options adaptées à différents besoins et budgets",
+        "Soutien facial amélioré et apparence rajeunie",
+        "Précision numérique pour un ajustement et un confort optimaux",
+        "Matériaux durables conçus pour un usage à long terme",
+        "Solutions pour la perte dentaire partielle ou complète",
+        "Options sur implants pour une stabilité maximale"
+      ],
+      "processTitle": "Votre Processus de Traitement Prothétique",
+      "process": [
+        {
+          "title": "Évaluation Initiale",
+          "description": "Nous réalisons un examen complet de votre santé bucco-dentaire, des dents restantes, de l'état des gencives et de la structure osseuse. Des empreintes numériques et des photographies nous aident à comprendre vos besoins uniques."
+        },
+        {
+          "title": "Planification du Traitement",
+          "description": "Sur la base de votre évaluation, nous discutons de toutes les options disponibles - des bridges aux prothèses en passant par les solutions sur implants. Ensemble, nous choisissons la meilleure approche pour votre mode de vie, votre budget et vos objectifs esthétiques."
+        },
+        {
+          "title": "Conception Numérique",
+          "description": "Grâce à la technologie CAO/FAO, nous concevons votre prothèse avec précision. Vous pouvez prévisualiser l'apparence de vos nouvelles dents avant le début de la fabrication, assurant votre entière satisfaction du résultat."
+        },
+        {
+          "title": "Fabrication",
+          "description": "Votre prothèse est fabriquée dans un laboratoire dentaire haut de gamme utilisant les meilleurs matériaux. Pour les prothèses fixes, des restaurations provisoires vous gardent confortable et confiant pendant la période de fabrication."
+        },
+        {
+          "title": "Essayage et Ajustement",
+          "description": "Nous ajustons soigneusement votre nouvelle prothèse, effectuant tous les ajustements nécessaires pour un confort et une fonction optimaux. Nous vérifions que votre occlusion est équilibrée et que l'esthétique répond à vos attentes."
+        }
+      ],
+      "faqTitle": "Questions Courantes sur les Prothèses",
+      "faqs": [
+        {
+          "question": "Quelle est la différence entre un bridge et une prothèse ?",
+          "answer": "Un bridge est une restauration fixe qui remplace une ou plusieurs dents manquantes en s'ancrant aux dents naturelles ou aux implants adjacents. Il est cimenté en place et n'est pas amovible. Une prothèse est un appareil amovible qui remplace plusieurs ou toutes les dents d'une arcade. Chacun a ses avantages selon votre situation spécifique."
+        },
+        {
+          "question": "Combien de temps faut-il pour s'adapter à de nouvelles prothèses ?",
+          "answer": "La plupart des patients s'adaptent à de nouvelles prothèses en 2 à 4 semaines. Au début, vous pouvez éprouver des difficultés à parler ou à manger, et une légère sensibilité est normale. Nous planifions des rendez-vous de suivi pour effectuer des ajustements et assurer votre confort pendant cette période de transition."
+        },
+        {
+          "question": "Puis-je passer des prothèses amovibles aux prothèses sur implants ?",
+          "answer": "Oui, de nombreux patients qui portent actuellement des prothèses traditionnelles choisissent de passer aux options sur implants pour une meilleure stabilité et fonction. Nous pouvons évaluer votre densité osseuse et votre état de santé général pour déterminer si vous êtes candidat à cette amélioration."
+        },
+        {
+          "question": "Comment entretenir mes prothèses ?",
+          "answer": "Les prothèses fixes s'entretiennent comme des dents naturelles - brossage régulier, fil dentaire et nettoyages professionnels. Les prothèses amovibles doivent être retirées la nuit, nettoyées avec des solutions appropriées et rangées correctement. Nous fournissons des instructions d'entretien détaillées spécifiques à votre type de prothèse."
+        }
+      ],
+      "duration": "2 à 6 semaines selon le type",
+      "warranty": "Garantie de 5 ans sur toutes les prothèses"
+    },
+    "aligners": {
+      "title": "Gouttières Transparentes",
+      "subtitle": "Traitement Orthodontique Invisible",
+      "heroDescription": "Obtenez votre sourire parfait en toute discrétion avec des gouttières transparentes sur mesure - l'alternative moderne aux bagues traditionnelles.",
+      "overview": "Les gouttières transparentes ont révolutionné le traitement orthodontique, offrant un moyen quasi invisible de redresser les dents sans les compromis esthétiques et pratiques des bagues métalliques traditionnelles. Chez Zeo Dental Clinic, nous utilisons des systèmes de gouttières avancés pour traiter un large éventail de problèmes orthodontiques, de l'encombrement léger aux problèmes d'occlusion complexes.\n\nChaque jeu de gouttières est fabriqué sur mesure à l'aide de la technologie d'impression 3D basée sur des scans numériques précis de vos dents. Vous porterez chaque jeu environ deux semaines avant de passer au suivant, chaque gouttière effectuant des ajustements progressifs pour déplacer graduellement vos dents vers leur position idéale.\n\nLa beauté des gouttières transparentes réside dans leur amovibilité - vous pouvez les retirer pour manger, boire, vous brosser les dents et utiliser du fil dentaire, rendant l'hygiène bucco-dentaire pendant le traitement beaucoup plus simple qu'avec les bagues traditionnelles. La plupart des patients les trouvent confortables à porter, et les autres remarquent rarement que vous suivez un traitement orthodontique.",
+      "benefitsTitle": "Pourquoi Choisir les Gouttières Transparentes ?",
+      "benefits": [
+        "Quasi invisibles - la plupart des gens ne remarqueront pas que vous les portez",
+        "Amovibles pour manger, boire et les occasions spéciales",
+        "Aucune restriction alimentaire contrairement aux bagues traditionnelles",
+        "Hygiène bucco-dentaire plus facile - brossez et utilisez du fil dentaire normalement",
+        "Moins de visites au cabinet par rapport à l'orthodontie traditionnelle",
+        "Aperçu numérique de vos résultats attendus avant de commencer",
+        "Plastique lisse et confortable sans bagues ni fils coupants",
+        "Calendrier de traitement prévisible avec des étapes claires"
+      ],
+      "processTitle": "Votre Parcours avec les Gouttières Transparentes",
+      "process": [
+        {
+          "title": "Consultation Numérique",
+          "description": "Nous prenons des scans 3D détaillés de vos dents à l'aide d'un scanner intra-oral - pas d'empreintes inconfortables nécessaires. Nous analysons votre occlusion et discutons de vos objectifs pour votre sourire."
+        },
+        {
+          "title": "Simulation du Traitement",
+          "description": "À l'aide d'un logiciel spécialisé, nous créons une simulation virtuelle montrant comment vos dents se déplaceront tout au long du traitement. Vous verrez votre résultat final attendu avant de vous engager dans le traitement."
+        },
+        {
+          "title": "Fabrication des Gouttières Sur Mesure",
+          "description": "Une fois que vous approuvez le plan de traitement, votre jeu complet de gouttières sur mesure est fabriqué à l'aide de la technologie d'impression 3D de précision."
+        },
+        {
+          "title": "Traitement Actif",
+          "description": "Vous porterez chaque jeu de gouttières pendant environ 2 semaines, 20 à 22 heures par jour. Nous programmerons des contrôles périodiques pour suivre les progrès et vous fournir vos prochains jeux de gouttières."
+        },
+        {
+          "title": "Phase de Contention",
+          "description": "Après avoir terminé le traitement, vous porterez des appareils de contention pour maintenir votre beau nouveau sourire. Nous proposons des options de contention amovibles et fixes."
+        }
+      ],
+      "faqTitle": "FAQ sur les Gouttières Transparentes",
+      "faqs": [
+        {
+          "question": "Les gouttières transparentes peuvent-elles corriger mon problème dentaire spécifique ?",
+          "answer": "Les gouttières transparentes peuvent traiter efficacement la plupart des problèmes orthodontiques courants, y compris l'encombrement, les espaces interdentaires, la supraclusion, la sous-occlusion et l'occlusion croisée. Lors de votre consultation, nous évaluerons votre situation spécifique et déterminerons si les gouttières sont le bon choix, ou si des traitements alternatifs seraient plus efficaces."
+        },
+        {
+          "question": "Combien de temps dure le traitement par gouttières transparentes ?",
+          "answer": "La durée du traitement varie en fonction de la complexité de votre cas. Les cas simples peuvent prendre 6 à 9 mois, tandis que les cas plus complexes peuvent nécessiter 12 à 18 mois ou plus. Lors de votre consultation, nous vous fournirons un calendrier de traitement personnalisé."
+        },
+        {
+          "question": "Les gouttières transparentes font-elles mal ?",
+          "answer": "Vous pouvez ressentir une pression ou un léger inconfort lors du passage à un nouveau jeu de gouttières, car cela indique que les dents bougent. Cela disparaît généralement en quelques jours. Dans l'ensemble, la plupart des patients trouvent les gouttières plus confortables que les bagues traditionnelles."
+        },
+        {
+          "question": "Que se passe-t-il si je perds ou endommage une gouttière ?",
+          "answer": "Contactez-nous immédiatement si vous perdez ou endommagez une gouttière. Selon l'avancement de votre traitement, nous pouvons vous conseiller de passer au jeu suivant ou de porter le jeu précédent pendant qu'un remplacement est fabriqué. Nous conservons les fichiers numériques de toutes vos gouttières pour un remplacement facile."
+        }
+      ],
+      "duration": "6 à 18 mois de traitement en moyenne",
+      "warranty": "Garantie de satisfaction incluse"
+    },
+    "orthodontics": {
+      "title": "Orthodontie",
+      "subtitle": "Alignement Dentaire Expert pour Tous les Âges",
+      "heroDescription": "Solutions orthodontiques modernes comprenant des bagues en céramique et des techniques avancées pour un alignement parfait et un sourire sain et beau.",
+      "overview": "L'orthodontie ne se limite pas à des dents droites - il s'agit de créer une occlusion saine et fonctionnelle qui favorise la santé bucco-dentaire à long terme. Chez Zeo Dental Clinic, nos spécialistes en orthodontie traitent des patients de tous âges, des enfants aux adultes, en utilisant les dernières techniques et technologies.\n\nBien que les gouttières transparentes fonctionnent bien pour de nombreux cas, les bagues traditionnelles restent la référence pour les problèmes orthodontiques complexes. Nous proposons plusieurs options, notamment les bagues métalliques conventionnelles, les bagues en céramique de la couleur des dents pour une apparence plus discrète, et les systèmes auto-ligaturants qui peuvent réduire la durée du traitement et l'inconfort.\n\nNotre approche de l'orthodontie est globale. Nous ne nous concentrons pas uniquement sur l'esthétique - nous analysons soigneusement la relation entre vos mâchoires, les voies aériennes et la fonction de l'articulation temporo-mandibulaire (ATM) pour garantir que votre traitement aboutisse non seulement à un beau sourire, mais aussi à une santé et une fonction buccales optimales.",
+      "benefitsTitle": "Avantages de l'Orthodontie Professionnelle",
+      "benefits": [
+        "Corrige les cas complexes que les gouttières ne peuvent pas traiter",
+        "Contrôle précis du mouvement dentaire dans toutes les directions",
+        "Efficace pour l'encombrement sévère, les espaces et les problèmes d'occlusion",
+        "Options pour tous les âges - enfants, adolescents et adultes",
+        "Les bagues en céramique offrent une alternative plus esthétique",
+        "Peut traiter les problèmes d'alignement de la mâchoire et de l'ATM",
+        "Améliore la santé bucco-dentaire en facilitant le nettoyage des dents",
+        "Des résultats qui durent toute une vie avec une contention appropriée"
+      ],
+      "processTitle": "Votre Parcours de Traitement Orthodontique",
+      "process": [
+        {
+          "title": "Évaluation Complète",
+          "description": "Nous prenons des radiographies numériques, des photographies et des scans 3D pour évaluer minutieusement vos dents, votre mâchoire et la structure de votre visage. Nous identifions tout problème sous-jacent à traiter."
+        },
+        {
+          "title": "Plan de Traitement Personnalisé",
+          "description": "Sur la base de notre évaluation, nous créons un plan de traitement détaillé décrivant l'approche recommandée, le calendrier prévu et les résultats attendus. Nous discutons de toutes les options pour que vous puissiez prendre une décision éclairée."
+        },
+        {
+          "title": "Pose des Bagues",
+          "description": "Les attaches sont soigneusement collées sur chaque dent, et le fil est mis en place. Le rendez-vous initial dure environ 1 à 2 heures. Nous nous assurons que vous comprenez comment entretenir vos bagues."
+        },
+        {
+          "title": "Ajustements Réguliers",
+          "description": "Vous nous rendrez visite toutes les 4 à 8 semaines pour des ajustements. Lors de ces visites, nous remplaçons les fils, ajustons les attaches et suivons les progrès. Chaque ajustement vous rapproche de votre objectif."
+        },
+        {
+          "title": "Retrait des Bagues et Contention",
+          "description": "Une fois le traitement terminé, nous retirons les bagues et prenons les empreintes finales. Vous recevrez des appareils de contention sur mesure pour maintenir vos résultats. Nous planifions des visites de suivi pour assurer le succès à long terme."
+        }
+      ],
+      "faqTitle": "Questions Orthodontiques Répondues",
+      "faqs": [
+        {
+          "question": "Suis-je trop âgé(e) pour porter des bagues ?",
+          "answer": "Absolument pas ! Le traitement orthodontique peut réussir à tout âge. En fait, environ 25 % des patients orthodontiques aujourd'hui sont des adultes. Tant que vos dents et vos gencives sont saines, l'âge n'est pas un obstacle pour obtenir un sourire plus droit."
+        },
+        {
+          "question": "Combien de temps devrai-je porter des bagues ?",
+          "answer": "La durée du traitement varie en fonction de la complexité de votre cas. En moyenne, la plupart des patients portent des bagues pendant 18 à 24 mois. Certains cas simples peuvent être terminés en 12 mois, tandis que les cas plus complexes peuvent nécessiter 30 mois ou plus."
+        },
+        {
+          "question": "Les bagues font-elles mal ?",
+          "answer": "Vous ressentirez probablement un certain inconfort pendant quelques jours après la pose des bagues et après chaque ajustement, car vos dents commencent à bouger. C'est normal et peut être géré avec des antalgiques en vente libre. L'inconfort disparaît généralement en une semaine."
+        },
+        {
+          "question": "Quels aliments dois-je éviter avec des bagues ?",
+          "answer": "Vous devez éviter les aliments durs, collants et caoutchouteux qui peuvent endommager les attaches ou les fils. Cela inclut les bonbons durs, le pop-corn, les noix, la glace, le caramel et le chewing-gum. Nous vous fournirons une liste complète et des conseils pour maintenir une alimentation saine pendant le traitement."
+        }
+      ],
+      "duration": "12 à 30 mois de traitement en moyenne",
+      "warranty": "Résultats garantis avec contention"
+    },
+    "crowns": {
+      "title": "Couronnes Dentaires",
+      "subtitle": "Restaurez et Protégez Vos Dents",
+      "heroDescription": "Couronnes haut de gamme en porcelaine et zircone qui restaurent les dents endommagées dans toute leur beauté, résistance et fonction naturelles.",
+      "overview": "Une couronne dentaire est un capuchon sur mesure qui recouvre et protège une dent endommagée, fragilisée ou esthétiquement imparfaite. Chez Zeo Dental Clinic, nous n'utilisons que des matériaux haut de gamme, notamment des couronnes entièrement en céramique et en zircone qui offrent une résistance exceptionnelle et une esthétique naturelle.\n\nLa technologie des couronnes a considérablement progressé. Grâce aux empreintes numériques et à la conception CAO/FAO, nous pouvons créer des couronnes qui correspondent précisément à la couleur, la translucidité et la forme de vos dents naturelles. Dans de nombreux cas, nous pouvons même fournir des couronnes le jour même grâce à notre technologie d'usinage au cabinet.\n\nQue vous ayez besoin de restaurer une dent après un traitement endodontique, de protéger une dent fissurée contre d'autres dommages, ou simplement d'améliorer l'apparence d'une dent décolorée ou mal formée, nos couronnes offrent une solution durable qui semble et se ressent totalement naturelle.",
+      "benefitsTitle": "Avantages des Couronnes Dentaires de Qualité",
+      "benefits": [
+        "Restaure la pleine fonction des dents endommagées ou fragilisées",
+        "Protège les dents après un traitement endodontique",
+        "Apparence naturelle correspondant aux dents adjacentes",
+        "Durabilité à long terme - peut durer 15 à 25 ans ou plus",
+        "Options sans métal pour une esthétique et une biocompatibilité optimales",
+        "Options de couronne le jour même disponibles pour plus de commodité",
+        "Renforce et préserve la structure dentaire restante",
+        "Améliore l'alignement de l'occlusion et la fonction de la mâchoire"
+      ],
+      "processTitle": "Votre Processus de Traitement par Couronne",
+      "process": [
+        {
+          "title": "Évaluation et Préparation",
+          "description": "Nous examinons la dent et prenons des radiographies numériques pour évaluer son état. Si une couronne est la meilleure solution, nous discutons des options de matériaux et préparons la dent en retirant une fine couche d'émail pour faire place à la couronne."
+        },
+        {
+          "title": "Empreintes Numériques",
+          "description": "À l'aide d'un scanner intra-oral, nous capturons des images 3D précises de votre dent préparée et des dents adjacentes. Cela élimine le besoin d'empreintes traditionnelles désagréables et assure une précision exceptionnelle."
+        },
+        {
+          "title": "Conception Sur Mesure",
+          "description": "Votre couronne est conçue à l'aide d'un logiciel de CAO, nous permettant de perfectionner la forme, la taille et l'ajustement. Nous faisons correspondre soigneusement la teinte à vos dents naturelles pour une intégration harmonieuse."
+        },
+        {
+          "title": "Fabrication",
+          "description": "Selon votre cas, votre couronne peut être usinée au cabinet le jour même ou fabriquée par notre laboratoire dentaire haut de gamme partenaire. Une couronne provisoire protège votre dent pendant cette période si nécessaire."
+        },
+        {
+          "title": "Pose Définitive",
+          "description": "Nous vérifions l'ajustement, l'occlusion et l'esthétique de votre nouvelle couronne avant de la cimenter de manière permanente. Des ajustements finaux assurent le confort et une fonction optimale."
+        }
+      ],
+      "faqTitle": "FAQ sur les Couronnes",
+      "faqs": [
+        {
+          "question": "Quand ai-je besoin d'une couronne dentaire ?",
+          "answer": "Les couronnes sont recommandées pour les dents significativement cariées, fissurées ou fragilisées, après un traitement endodontique, pour restaurer des dents cassées, pour recouvrir des dents sévèrement décolorées, ou dans le cadre d'un bridge dentaire. Lors de votre examen, nous vous expliquerons pourquoi une couronne est la meilleure option pour votre situation."
+        },
+        {
+          "question": "Combien de temps durent les couronnes dentaires ?",
+          "answer": "Avec des soins appropriés, les couronnes dentaires durent généralement 15 à 25 ans, et beaucoup durent encore plus longtemps. Les facteurs affectant la longévité incluent les habitudes d'hygiène bucco-dentaire, l'alimentation, le bruxisme éventuel et le matériau utilisé. Des contrôles dentaires réguliers nous aident à surveiller l'état de votre couronne."
+        },
+        {
+          "question": "Ma couronne aura-t-elle un aspect naturel ?",
+          "answer": "Absolument. Nous utilisons des matériaux avancés en céramique et zircone qui imitent la translucidité et les variations de couleur des dents naturelles. Nous faisons correspondre méticuleusement votre couronne à vos dents adjacentes pour qu'elle soit pratiquement indistinguable. La plupart des gens, y compris les dentistes, ne peuvent pas faire la différence."
+        },
+        {
+          "question": "La pose d'une couronne est-elle douloureuse ?",
+          "answer": "La procédure de couronne est réalisée sous anesthésie locale, vous ne ressentirez donc pas de douleur pendant la préparation. Vous pouvez éprouver une certaine sensibilité pendant quelques jours après l'intervention, mais elle est généralement légère et temporaire. Si vous êtes anxieux, nous proposons des options de sédation."
+        }
+      ],
+      "duration": "1 à 2 rendez-vous sur 1 à 2 semaines",
+      "warranty": "Garantie de 10 ans sur toutes les couronnes"
+    },
+    "aesthetics": {
+      "title": "Endodontie",
+      "subtitle": "Sauvez Vos Dents Naturelles",
+      "heroDescription": "Traitement endodontique avancé utilisant des techniques modernes et des instruments de précision pour éliminer l'infection, soulager la douleur et préserver vos dents naturelles.",
+      "overview": "L'endodontie est la branche de la dentisterie axée sur le traitement de la pulpe dentaire et des tissus entourant la racine d'une dent. Chez Zeo Dental Clinic, nos traitements endodontiques sont conçus pour sauver des dents qui devraient autrement être extraites, soulageant la douleur et restaurant la fonction.\n\nLorsque la pulpe à l'intérieur de votre dent s'infecte ou s'enflamme en raison d'une carie profonde, de procédures dentaires répétées, de fissures ou de traumatismes, le traitement endodontique peut sauver la dent. Nos techniques avancées et notre équipement moderne rendent la procédure confortable et hautement réussie.\n\nNous utilisons l'instrumentation rotative, les localisateurs d'apex électroniques et le grossissement pour assurer un nettoyage et un façonnage approfondis du système canalaire. Notre approche douce et notre anesthésie efficace signifient que le traitement endodontique moderne n'est pas plus inconfortable que la pose d'un plombage.",
+      "benefitsTitle": "Pourquoi Choisir le Traitement Endodontique",
+      "benefits": [
+        "Sauvez votre dent naturelle et évitez l'extraction",
+        "Éliminez la douleur et l'infection à la source",
+        "Empêchez l'infection de se propager aux autres dents",
+        "Maintenez l'occlusion naturelle et la fonction masticatoire",
+        "Plus économique que l'extraction et le remplacement",
+        "Taux de réussite élevé avec les techniques modernes",
+        "Procédure confortable sous anesthésie locale",
+        "Préserve l'apparence naturelle de votre sourire"
+      ],
+      "processTitle": "Votre Traitement Endodontique",
+      "process": [
+        {
+          "title": "Diagnostic et Radiographie",
+          "description": "Nous examinons votre dent et prenons des radiographies détaillées pour évaluer l'étendue de l'infection et l'anatomie canalaire. Nous vous expliquerons nos résultats et discuterons de la meilleure approche thérapeutique pour votre cas spécifique."
+        },
+        {
+          "title": "Anesthésie et Isolation",
+          "description": "La zone est soigneusement anesthésiée par anesthésie locale pour votre confort. Une digue en caoutchouc est placée autour de la dent pour la garder propre et sèche pendant la procédure."
+        },
+        {
+          "title": "Accès et Nettoyage",
+          "description": "Nous créons une petite ouverture dans la couronne de la dent pour accéder à la chambre pulpaire. À l'aide d'instruments spécialisés, nous retirons soigneusement le tissu pulpaire infecté ou endommagé et nettoyons et façonnons minutieusement les canaux radiculaires."
+        },
+        {
+          "title": "Désinfection et Obturation",
+          "description": "Les canaux sont désinfectés avec des solutions antibactériennes et obturés avec un matériau biocompatible appelé gutta-percha. Cela scelle les canaux pour prévenir la réinfection."
+        },
+        {
+          "title": "Restauration",
+          "description": "Après le traitement endodontique, la dent est restaurée avec une obturation ou une couronne pour la protéger et restaurer sa pleine fonction. Une couronne est généralement recommandée pour les dents postérieures afin de fournir une résistance supplémentaire."
+        }
+      ],
+      "faqTitle": "Questions sur l'Endodontie",
+      "faqs": [
+        {
+          "question": "Le traitement endodontique est-il douloureux ?",
+          "answer": "Le traitement endodontique moderne est réalisé sous anesthésie locale efficace et n'est généralement pas plus inconfortable que la pose d'un plombage. La plupart des patients rapportent que la procédure soulage la douleur qu'ils ressentaient à cause de la dent infectée. Nous accordons la priorité à votre confort tout au long du traitement."
+        },
+        {
+          "question": "Combien de temps dure un traitement endodontique ?",
+          "answer": "La plupart des traitements endodontiques peuvent être réalisés en un à deux rendez-vous, chacun durant 60 à 90 minutes. Le nombre de visites dépend de la complexité du cas et de la dent traitée. Les dents antérieures nécessitent généralement moins de temps que les molaires à racines multiples."
+        },
+        {
+          "question": "Que se passe-t-il si je ne fais pas de traitement endodontique ?",
+          "answer": "Une dent infectée non traitée ne guérira pas d'elle-même. L'infection peut se propager à l'os et aux tissus environnants, causant potentiellement un abcès, une perte osseuse et des douleurs sévères. Finalement, la dent devra être extraite. Le traitement endodontique peut sauver la dent et prévenir ces complications."
+        },
+        {
+          "question": "Combien de temps durent les dents traitées par endodontie ?",
+          "answer": "Avec une restauration et des soins appropriés, une dent traitée par endodontie peut durer toute une vie. Les facteurs clés sont une restauration correcte de la dent avec une couronne lorsque cela est recommandé, le maintien d'une bonne hygiène bucco-dentaire et la participation à des contrôles dentaires réguliers."
+        }
+      ],
+      "duration": "1 à 2 rendez-vous, 60 à 90 minutes chacun",
+      "warranty": "Taux de réussite du traitement supérieur à 95 %"
+    }
+  },
+  "philosophyPage": {
+    "title": "Notre Philosophie",
+    "subtitle": "Chez Zeo Dental Clinic, nous croyons que les soins dentaires exceptionnels sont un art. Chaque sourire que nous créons est un chef-d'oeuvre de précision, de technologie et de touche humaine.",
+    "visionLabel": "Notre Vision",
+    "visionTitle": "Transformer les Sourires, Changer les Vies",
+    "visionText": "Nous envisageons un monde où aller chez le dentiste n'est pas seulement une nécessité, mais une expérience que vous attendez avec impatience. Notre clinique est bâtie sur les fondations de la confiance, de l'excellence et d'un véritable souci pour chaque patient qui franchit nos portes. Nous combinons l'art de la dentisterie esthétique avec la précision de la technologie moderne pour offrir des résultats qui dépassent les attentes.",
+    "valuesLabel": "Valeurs Fondamentales",
+    "valuesTitle": "Ce Que Nous Défendons"
+  },
+  "teamPage": {
+    "title": "Rencontrez Notre Équipe",
+    "subtitle": "Notre équipe dévouée de professionnels dentaires réunit des décennies d'expérience, une formation continue et une passion partagée pour créer de beaux sourires sains.",
+    "ctaTitle": "Prêt à Nous Rencontrer ?",
+    "ctaSubtitle": "Planifiez une consultation et découvrez la différence Zeo Dental. Notre équipe est prête à vous accueillir."
+  },
+  "casesPage": {
+    "title": "Cas Cliniques",
+    "subtitle": "Explorez notre portfolio de transformations du sourire. Chaque cas représente un parcours unique de la consultation à l'achèvement, illustrant l'art et la précision de notre travail.",
+    "introLabel": "Notre Travail",
+    "introTitle": "Résultats Réels, Patients Réels",
+    "introText": "Chaque transformation du sourire chez Zeo Dental Clinic raconte une histoire. Nous documentons nos cas non seulement pour mettre en valeur notre expertise, mais pour vous aider à envisager les possibilités pour votre propre sourire. Ce sont de vrais patients qui nous ont fait confiance pour leur parcours dentaire.",
+    "moreComing": "Plus de Cas à Venir",
+    "moreComingDesc": "Nous ajoutons continuellement de nouvelles transformations à notre galerie.",
+    "processLabel": "Notre Approche",
+    "processTitle": "Comment Nous Obtenons Ces Résultats",
+    "step1Title": "Consultation",
+    "step1Desc": "Nous commençons par une analyse complète de votre santé dentaire et de vos objectifs esthétiques, en utilisant l'imagerie numérique pour planifier votre transformation.",
+    "step2Title": "Traitement",
+    "step2Desc": "En utilisant une technologie de pointe et des matériaux haut de gamme, nous exécutons votre plan de traitement personnalisé avec précision et soin.",
+    "step3Title": "Résultats",
+    "step3Desc": "Vous repartez avec un sourire transformé et la confiance de savoir que vous avez reçu des soins de la plus haute qualité.",
+    "ctaTitle": "Commencez Votre Transformation",
+    "ctaSubtitle": "Prêt à voir ce qui est possible pour votre sourire ? Prenez rendez-vous et laissez-nous créer votre plan de traitement personnalisé."
+  }
+}

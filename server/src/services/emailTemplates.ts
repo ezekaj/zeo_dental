@@ -7,9 +7,11 @@ const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KE
 
 const mailFrom = process.env.MAIL_FROM || 'Zeo Dental Clinic <onboarding@resend.dev>';
 const clinicEmail = process.env.MAIL_TO || 'zeodentalclinic@gmail.com';
+const partnerEmail = process.env.MAIL_TO_PARTNER || '';
 
 // Format date for display
-function formatDate(dateString: string, language: 'sq' | 'en' = 'sq'): string {
+function formatDate(dateString: string | null, language: 'sq' | 'en' = 'sq'): string {
+  if (!dateString) return 'N/A';
   const date = new Date(dateString);
   const locale = language === 'sq' ? 'sq-AL' : 'en-US';
   return date.toLocaleDateString(locale, {
@@ -461,11 +463,10 @@ export async function sendClinicNotification(
   }
 
   try {
-    const { error } = await resend.emails.send({
-      from: mailFrom,
-      to: clinicEmail,
-      subject: `Rezervim i Ri: ${booking.name} - ${booking.service}`,
-      html: `
+    const recipients = [clinicEmail];
+    if (partnerEmail) recipients.push(partnerEmail);
+
+    const notificationHtml = `
         <!DOCTYPE html>
         <html>
         <head>
@@ -479,6 +480,7 @@ export async function sendClinicNotification(
             .field { margin: 10px 0; }
             .label { color: #666; font-size: 12px; text-transform: uppercase; }
             .value { font-size: 16px; color: #050505; }
+            .description { background: #fff; border-left: 3px solid #C5A47E; padding: 12px 16px; margin: 10px 0; }
             .cta { text-align: center; margin: 20px 0; }
             .button { background: #C5A47E; color: white; padding: 12px 24px; text-decoration: none; display: inline-block; }
           </style>
@@ -487,7 +489,7 @@ export async function sendClinicNotification(
           <div class="container">
             <div class="header">
               <div class="logo">ZEO<span>.</span></div>
-              <p>Rezervim i Ri</p>
+              <p>Kërkesë e Re për Preventiv</p>
             </div>
             <div class="content">
               <div class="field">
@@ -496,24 +498,19 @@ export async function sendClinicNotification(
               </div>
               <div class="field">
                 <div class="label">Email</div>
-                <div class="value">${booking.email}</div>
+                <div class="value">${booking.email || 'N/A'}</div>
               </div>
               <div class="field">
                 <div class="label">Telefon</div>
-                <div class="value">${booking.phone}</div>
+                <div class="value">${booking.phone || 'N/A'}</div>
               </div>
               <div class="field">
                 <div class="label">Shërbimi</div>
                 <div class="value">${booking.service}</div>
               </div>
-              <div class="field">
-                <div class="label">Data e preferuar</div>
-                <div class="value">${formatDate(booking.preferred_date)}</div>
-              </div>
-              <div class="field">
-                <div class="label">Ora e preferuar</div>
-                <div class="value">${booking.preferred_time}</div>
-              </div>
+              ${booking.description ? `<div class="field"><div class="label">Përshkrimi i Nevojave</div><div class="description">${booking.description}</div></div>` : ''}
+              ${booking.preferred_date ? `<div class="field"><div class="label">Data e preferuar</div><div class="value">${formatDate(booking.preferred_date)}</div></div>` : ''}
+              ${booking.preferred_time ? `<div class="field"><div class="label">Ora e preferuar</div><div class="value">${booking.preferred_time}</div></div>` : ''}
               ${booking.notes ? `<div class="field"><div class="label">Shënime</div><div class="value">${booking.notes}</div></div>` : ''}
               <div class="cta">
                 <a href="https://zeodentalclinic.com/receptionist" class="button">Shko te Paneli →</a>
@@ -522,7 +519,13 @@ export async function sendClinicNotification(
           </div>
         </body>
         </html>
-      `,
+      `;
+
+    const { error } = await resend.emails.send({
+      from: mailFrom,
+      to: recipients,
+      subject: `Kërkesë e Re: ${booking.name} - ${booking.service}`,
+      html: notificationHtml,
     });
 
     if (error) {

@@ -5,6 +5,7 @@ import { useTranslation } from '../hooks/useTranslation';
 export const Hero: React.FC = () => {
   const { t } = useTranslation();
   const [offset, setOffset] = useState(0);
+  const [videoError, setVideoError] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,16 +17,31 @@ export const Hero: React.FC = () => {
 
   return (
     <section id="home" className="relative w-full min-h-screen overflow-hidden bg-studio-black">
-      {/* Parallax Image Background */}
+      {/* Parallax Video/Image Background */}
       <div
         className="absolute inset-0 z-0 w-full h-[120%] -top-[10%]"
         style={{ transform: `translateY(${offset * 0.15}px)` }}
       >
-        <img
-          src="/team-hero.jpg"
-          alt="Zeo Dental Clinic Team"
-          className="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700 hero-image"
-        />
+        {!videoError ? (
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="/team-hero.jpg"
+            onError={() => setVideoError(true)}
+            className="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700 hero-image"
+          >
+            <source src="/videos/clinic-360.webm" type="video/webm" />
+            <source src="/videos/clinic-360.mp4" type="video/mp4" />
+          </video>
+        ) : (
+          <img
+            src="/team-hero.jpg"
+            alt="Zeo Dental Clinic Team"
+            className="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700 hero-image"
+          />
+        )}
         {/* Grain Overlay */}
         <div className="absolute inset-0 bg-noise opacity-10 mix-blend-overlay"></div>
         {/* Gradient Overlay */}
