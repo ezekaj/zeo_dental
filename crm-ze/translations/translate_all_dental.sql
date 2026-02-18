@@ -493,41 +493,26 @@ UPDATE codes SET code_text='Takim i anuluar', code_text_short='Takim i Anuluar' 
 UPDATE codes SET code_text='Procedurë ndihmëse e paspecifikuar', code_text_short='Procedurë e Paspecifikuar' WHERE code='D9999';
 
 -- ============================================
--- CUSTOM CLINIC CODES - Albanian Translation
+-- CUSTOM CLINIC CODES (ZEO prefix) - Exact Excel Names
+-- Note: update_fees.sql runs AFTER this and sets final names/prices
 -- ============================================
 
--- Surgery custom codes
-UPDATE codes SET code_text='Ngritje sinusi', code_text_short='Ngritje Sinusi' WHERE code='D7999A';
-UPDATE codes SET code_text='Graft kockor / Osteo plastik', code_text_short='Graft Kockor' WHERE code='D7999B';
-UPDATE codes SET code_text='Heqje kisti', code_text_short='Heqje Kisti' WHERE code='D7999C';
-
--- Regenerative custom codes
-UPDATE codes SET code_text='Rigjenerim me plazëm (PRP)', code_text_short='Plazëm PRP' WHERE code='D9999A';
-UPDATE codes SET code_text='Rigjenerim me fibrinë', code_text_short='Fibrinë' WHERE code='D9999B';
-
--- Implant custom codes
-UPDATE codes SET code_text='Kurorë provizore karikim imediat', code_text_short='Provizor Imediat' WHERE code='D6999A';
-
--- Periodontic custom codes
-UPDATE codes SET code_text='Graft gingive', code_text_short='Graft Gingive' WHERE code='D4999A';
-
--- Orthodontic custom codes
-UPDATE codes SET code_text='Korrigjim i buzëqeshjes gingivale', code_text_short='Gummy Smile' WHERE code='D8999A';
-
--- Preventive custom codes
-UPDATE codes SET code_text='Pastrim me air flow', code_text_short='Air Flow' WHERE code='D1999A';
-UPDATE codes SET code_text='Vendosje pircing', code_text_short='Pircing' WHERE code='D1999B';
-
--- Restorative custom codes
-UPDATE codes SET code_text='Rikonstruksion me vidë metalike', code_text_short='Vidë Metalike' WHERE code='D2999A';
-UPDATE codes SET code_text='Rikonstruksion me vidë qelqi', code_text_short='Vidë Qelqi' WHERE code='D2999B';
-UPDATE codes SET code_text='Kurorë full zirkon', code_text_short='Kurorë Full Zirkon' WHERE code='D2999C';
-UPDATE codes SET code_text='Kurorë E-max', code_text_short='Kurorë E-max' WHERE code='D2999D';
-
--- Prosthodontic custom codes
-UPDATE codes SET code_text='Protezë totale elastike', code_text_short='Protezë Elastike' WHERE code='D5999A';
-
--- Child filling grades
-UPDATE codes SET code_text='Mbushje dhëmb qumështi Gr.1', code_text_short='Fëmijë Gr.1' WHERE code='D2999E';
-UPDATE codes SET code_text='Mbushje dhëmb qumështi Gr.2', code_text_short='Fëmijë Gr.2' WHERE code='D2999F';
-UPDATE codes SET code_text='Mbushje dhëmb qumështi Gr.3', code_text_short='Fëmijë Gr.3' WHERE code='D2999G';
+UPDATE codes SET code_text='Mbushje dhemb qumeshti Gr.1', code_text_short='Mbushje qumeshti Gr.1' WHERE code='ZEO01';
+UPDATE codes SET code_text='Mbushje dhemb qumeshti Gr.2', code_text_short='Mbushje qumeshti Gr.2' WHERE code='ZEO02';
+UPDATE codes SET code_text='Mbushje dhemb qumeshti Gr.3', code_text_short='Mbushje qumeshti Gr.3' WHERE code='ZEO03';
+UPDATE codes SET code_text='Rikonstruksion me vide metalike', code_text_short='Vide metalike' WHERE code='ZEO04';
+UPDATE codes SET code_text='Rikonstruksion me vide qelqi', code_text_short='Vide qelqi' WHERE code='ZEO05';
+UPDATE codes SET code_text='Detartrazh + air flow', code_text_short='Detartrazh+air flow' WHERE code='ZEO06';
+UPDATE codes SET code_text='Vendosje Pircing', code_text_short='Pircing' WHERE code='ZEO07';
+UPDATE codes SET code_text='Kurore full Zirkon', code_text_short='Full Zirkon' WHERE code='ZEO08';
+UPDATE codes SET code_text='Kurore Emax', code_text_short='Emax' WHERE code='ZEO09';
+UPDATE codes SET code_text='Proteze totale elastike (1 Nofull)', code_text_short='Proteze elastike' WHERE code='ZEO10';
+UPDATE codes SET code_text='Sinus lift', code_text_short='Sinus lift' WHERE code='ZEO11';
+UPDATE codes SET code_text='Gammy smile', code_text_short='Gammy smile' WHERE code='ZEO12';
+UPDATE codes SET code_text='Osteo plastik', code_text_short='Osteo plastik' WHERE code='ZEO13';
+UPDATE codes SET code_text='Graft kockor', code_text_short='Graft kockor' WHERE code='ZEO14';
+UPDATE codes SET code_text='Graft gingive', code_text_short='Graft gingive' WHERE code='ZEO15';
+UPDATE codes SET code_text='Heqje kisti', code_text_short='Heqje kisti' WHERE code='ZEO16';
+UPDATE codes SET code_text='Plazem (rigjenerim)', code_text_short='Plazem' WHERE code='ZEO17';
+UPDATE codes SET code_text='Fibrine (rigjenerim)', code_text_short='Fibrine' WHERE code='ZEO18';
+UPDATE codes SET code_text='Dhemb provizor me karikim imediat (1 dhemb)', code_text_short='Provizor imediat' WHERE code='ZEO19';
