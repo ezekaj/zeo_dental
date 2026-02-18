@@ -46,6 +46,9 @@ run_sql() {
     fi
 }
 
+# Step 0: Fix permissions (unlock greyed-out features for all staff)
+run_sql "$SCRIPT_DIR/../fix_permissions.sql" "Fixing user permissions (unlocking all features)"
+
 # Step 1: Update fee schedule (CDT code prices)
 run_sql "$SCRIPT_DIR/../update_fees.sql" "Updating fee schedule with clinic prices"
 
