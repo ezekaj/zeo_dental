@@ -278,24 +278,25 @@ INSERT IGNORE INTO codes (code, code_type, code_text, code_text_short, active, f
 -- ═══════════════════════════════════════════════════════════
 
 INSERT IGNORE INTO codes (code, code_type, code_text, code_text_short, active, fee) VALUES
-('D7999A', @cdt_type, 'Ngritje sinusi', 'Ngritje Sinusi', 1, 65000),
-('D7999B', @cdt_type, 'Graft kockor / Osteo plastik', 'Graft Kockor', 1, 30000),
-('D7999C', @cdt_type, 'Heqje kisti', 'Heqje Kisti', 1, 35000),
-('D9999A', @cdt_type, 'Rigjenerim me plazëm (PRP)', 'Plazëm PRP', 1, 25000),
-('D9999B', @cdt_type, 'Rigjenerim me fibrinë', 'Fibrinë', 1, 25000),
-('D6999A', @cdt_type, 'Kurorë provizore karikim imediat', 'Provizor Imediat', 1, 3000),
-('D4999A', @cdt_type, 'Graft gingive', 'Graft Gingive', 1, 50000),
-('D8999A', @cdt_type, 'Korrigjim i buzëqeshjes gingivale', 'Gummy Smile', 1, 45000),
-('D1999A', @cdt_type, 'Pastrim me air flow', 'Air Flow', 1, 3500),
-('D1999B', @cdt_type, 'Vendosje pircing', 'Pircing', 1, 3000),
-('D2999A', @cdt_type, 'Rikonstruksion me vidë metalike', 'Vidë Metalike', 1, 1000),
-('D2999B', @cdt_type, 'Rikonstruksion me vidë qelqi', 'Vidë Qelqi', 1, 1500),
-('D2999C', @cdt_type, 'Kurorë full zirkon', 'Kurorë Full Zirkon', 1, 28000),
-('D2999D', @cdt_type, 'Kurorë E-max', 'Kurorë E-max', 1, 30000),
-('D5999A', @cdt_type, 'Protezë totale elastike', 'Protezë Elastike', 1, 50000),
-('D2999E', @cdt_type, 'Mbushje dhëmb qumështi Gr.1', 'Fëmijë Gr.1', 1, 2500),
-('D2999F', @cdt_type, 'Mbushje dhëmb qumështi Gr.2', 'Fëmijë Gr.2', 1, 3000),
-('D2999G', @cdt_type, 'Mbushje dhëmb qumështi Gr.3', 'Fëmijë Gr.3', 1, 3500);
+('ZEO01', @cdt_type, 'Mbushje dhemb qumeshti Gr.1', 'Mbushje qumeshti Gr.1', 1, 2500),
+('ZEO02', @cdt_type, 'Mbushje dhemb qumeshti Gr.2', 'Mbushje qumeshti Gr.2', 1, 3000),
+('ZEO03', @cdt_type, 'Mbushje dhemb qumeshti Gr.3', 'Mbushje qumeshti Gr.3', 1, 3500),
+('ZEO04', @cdt_type, 'Rikonstruksion me vide metalike', 'Vide metalike', 1, 1000),
+('ZEO05', @cdt_type, 'Rikonstruksion me vide qelqi', 'Vide qelqi', 1, 1500),
+('ZEO06', @cdt_type, 'Detartrazh + air flow', 'Detartrazh+air flow', 1, 3500),
+('ZEO07', @cdt_type, 'Vendosje Pircing', 'Pircing', 1, 3000),
+('ZEO08', @cdt_type, 'Kurore full Zirkon', 'Full Zirkon', 1, 28000),
+('ZEO09', @cdt_type, 'Kurore Emax', 'Emax', 1, 30000),
+('ZEO10', @cdt_type, 'Proteze totale elastike (1 Nofull)', 'Proteze elastike', 1, 50000),
+('ZEO11', @cdt_type, 'Sinus lift', 'Sinus lift', 1, 65000),
+('ZEO12', @cdt_type, 'Gammy smile', 'Gammy smile', 1, 45000),
+('ZEO13', @cdt_type, 'Osteo plastik', 'Osteo plastik', 1, 30000),
+('ZEO14', @cdt_type, 'Graft kockor', 'Graft kockor', 1, 30000),
+('ZEO15', @cdt_type, 'Graft gingive', 'Graft gingive', 1, 50000),
+('ZEO16', @cdt_type, 'Heqje kisti', 'Heqje kisti', 1, 35000),
+('ZEO17', @cdt_type, 'Plazem (rigjenerim)', 'Plazem', 1, 25000),
+('ZEO18', @cdt_type, 'Fibrine (rigjenerim)', 'Fibrine', 1, 25000),
+('ZEO19', @cdt_type, 'Dhemb provizor me karikim imediat (1 dhemb)', 'Provizor imediat', 1, 3000);
 
 -- ═══════════════════════════════════════════════════════════
 -- 3. DENTAL APPOINTMENT CATEGORIES

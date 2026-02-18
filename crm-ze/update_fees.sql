@@ -11,6 +11,13 @@ SET @cdt_type = (SELECT ct_id FROM code_types WHERE ct_key = 'CDT');
 -- ───────────────────────────────────────────────────────────
 UPDATE codes SET active = 0, fee = 0 WHERE code_type = @cdt_type;
 
+-- Remove old D-prefix custom codes (replaced by ZEO01-ZEO19)
+DELETE FROM codes WHERE code IN (
+    'D7999A','D7999B','D7999C','D9999A','D9999B','D6999A',
+    'D4999A','D8999A','D1999A','D1999B','D2999A','D2999B',
+    'D2999C','D2999D','D5999A','D2999E','D2999F','D2999G'
+) AND code_type = @cdt_type;
+
 -- ───────────────────────────────────────────────────────────
 -- STEP 2: Insert custom codes that don't exist in standard CDT
 -- (INSERT IGNORE = skip if already exists)
