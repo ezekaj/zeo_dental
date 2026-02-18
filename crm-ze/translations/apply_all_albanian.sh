@@ -49,13 +49,16 @@ run_sql() {
 # Step 1: Update fee schedule (CDT code prices)
 run_sql "$SCRIPT_DIR/../update_fees.sql" "Updating fee schedule with clinic prices"
 
-# Step 2: Translate all dental-specific content (CDT codes, appointment categories, document categories)
+# Step 2: Setup dental chart form (Kartela Dentare - patient intake)
+run_sql "$SCRIPT_DIR/../setup_dental_chart.sql" "Creating Kartela Dentare form (medical history, consent)"
+
+# Step 3: Translate all dental-specific content (CDT codes, appointment categories, document categories)
 run_sql "$SCRIPT_DIR/translate_all_dental.sql" "Translating dental codes and categories to Albanian"
 
-# Step 3: Fix Albanian UI translations (Provider→Doktor, OpenEMR→ManagerCRM, etc.)
+# Step 4: Fix Albanian UI translations (Provider→Doktor, OpenEMR→ManagerCRM, etc.)
 run_sql "$SCRIPT_DIR/fix_albanian_ui.sql" "Fixing Albanian UI translations"
 
-# Step 4: Import 9,543 Albanian UI translations from CSV
+# Step 5: Import 9,543 Albanian UI translations from CSV
 echo "[+] Importing Albanian UI translations from CSV..."
 CSV_FILE="$SCRIPT_DIR/albanian_translations.csv"
 if [ -f "$CSV_FILE" ]; then
