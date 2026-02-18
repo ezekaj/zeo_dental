@@ -4,6 +4,13 @@ import { useTranslation } from '../hooks/useTranslation';
 import { useLocalePath } from '../hooks/useLocalePath';
 import { ArrowRight } from 'lucide-react';
 
+const MARQUEE_STYLE = `
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.333%); }
+}
+`;
+
 /**
  * Detect if device is touch-only (no hover capability)
  */
@@ -130,11 +137,8 @@ const TreatmentItem: React.FC<TreatmentItemProps> = ({
 export const Treatments: React.FC = () => {
   const { t } = useTranslation();
   const lp = useLocalePath();
-  const trackRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const animationRef = useRef<number>();
-  const positionRef = useRef(0);
 
   // Detect touch device on mount
   useEffect(() => {
@@ -168,40 +172,8 @@ export const Treatments: React.FC = () => {
     },
   ];
 
-  // Double the items for seamless looping
-  const loopedTreatments = [...treatments, ...treatments];
-
-  useEffect(() => {
-    const track = trackRef.current;
-    if (!track) return;
-
-    const itemWidth = 400 + 2; // width + gap (2px border)
-    const totalWidth = itemWidth * treatments.length;
-    const speed = 0.5; // pixels per frame
-
-    const animate = () => {
-      if (!isPaused) {
-        positionRef.current -= speed;
-
-        // Reset position when we've scrolled through one set
-        if (Math.abs(positionRef.current) >= totalWidth) {
-          positionRef.current = 0;
-        }
-
-        track.style.transform = `translateX(${positionRef.current}px)`;
-      }
-
-      animationRef.current = requestAnimationFrame(animate);
-    };
-
-    animationRef.current = requestAnimationFrame(animate);
-
-    return () => {
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current);
-      }
-    };
-  }, [isPaused, treatments.length]);
+  // Triple items for seamless CSS animation loop (translateX(-33.333%) = one set)
+  const loopedTreatments = [...treatments, ...treatments, ...treatments];
 
   return (
     <section id="treatments" className="bg-white border-b border-gray-100">
@@ -233,13 +205,20 @@ export const Treatments: React.FC = () => {
         </div>
       </div>
 
-      {/* Looping Image Train */}
+      {/* Looping Image Train — CSS animation for reliability */}
+      <style dangerouslySetInnerHTML={{ __html: MARQUEE_STYLE }} />
       <div
         className="relative overflow-hidden border-t border-gray-100"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
-        <div ref={trackRef} className="flex" style={{ willChange: 'transform' }}>
+        <div
+          className="flex"
+          style={{
+            animation: 'marquee 80s linear infinite',
+            animationPlayState: isPaused ? 'paused' : 'running',
+          }}
+        >
           {loopedTreatments.map((treatment, index) => (
             <div key={`${treatment.key}-${index}`} className="border-r border-gray-100">
               <TreatmentItem

@@ -5,6 +5,17 @@ import { CheckCircle, MapPin, Phone, Mail, Upload, X, FileText, Image } from 'lu
 import { useTranslation } from '../hooks/useTranslation';
 import { useLanguage } from '../contexts/LanguageContext';
 
+const LANG_PHONE_PREFIX: Record<string, string> = {
+  sq: '+355 ',
+  en: '+44 ',
+  it: '+39 ',
+  de: '+49 ',
+  fr: '+33 ',
+  tr: '+90 ',
+  el: '+30 ',
+  es: '+34 ',
+};
+
 // Clinic contact constants
 const CLINIC_PHONE = '+355684004840';
 const CLINIC_PHONE_DISPLAY = '+355 68 400 4840';
@@ -25,7 +36,7 @@ export const Booking: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
+    phone: LANG_PHONE_PREFIX[language] || '',
     date: '',
     time: 'morning',
     description: selectedPackage ? t(`booking.packageTemplate.${selectedPackage}`) : '',
