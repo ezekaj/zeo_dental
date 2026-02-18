@@ -49,19 +49,22 @@ run_sql() {
 # Step 0: Fix permissions (unlock greyed-out features for all staff)
 run_sql "$SCRIPT_DIR/../fix_permissions.sql" "Fixing user permissions (unlocking all features)"
 
-# Step 1: Update fee schedule (CDT code prices)
-run_sql "$SCRIPT_DIR/../update_fees.sql" "Updating fee schedule with clinic prices"
+# Step 1: Setup dental codes, appointment categories, and settings (INSERT IGNORE = safe to re-run)
+run_sql "$SCRIPT_DIR/../setup_dental.sql" "Creating CDT dental codes, appointment categories, and clinic settings"
 
-# Step 2: Setup dental chart form (Kartela Dentare - patient intake)
+# Step 2: Update fee schedule to match clinic price list
+run_sql "$SCRIPT_DIR/../update_fees.sql" "Updating fee schedule with clinic prices (LISTE CMIMESH)"
+
+# Step 3: Setup dental chart form (Kartela Dentare - patient intake)
 run_sql "$SCRIPT_DIR/../setup_dental_chart.sql" "Creating Kartela Dentare form (medical history, consent)"
 
-# Step 3: Translate all dental-specific content (CDT codes, appointment categories, document categories)
+# Step 4: Translate all dental-specific content (CDT codes, appointment categories, document categories)
 run_sql "$SCRIPT_DIR/translate_all_dental.sql" "Translating dental codes and categories to Albanian"
 
-# Step 4: Fix Albanian UI translations (Provider→Doktor, OpenEMR→ManagerCRM, etc.)
+# Step 5: Fix Albanian UI translations (Provider→Doktor, OpenEMR→ManagerCRM, etc.)
 run_sql "$SCRIPT_DIR/fix_albanian_ui.sql" "Fixing Albanian UI translations"
 
-# Step 5: Import 9,543 Albanian UI translations from CSV
+# Step 6: Import 9,543 Albanian UI translations from CSV
 echo "[+] Importing Albanian UI translations from CSV..."
 CSV_FILE="$SCRIPT_DIR/albanian_translations.csv"
 if [ -f "$CSV_FILE" ]; then
