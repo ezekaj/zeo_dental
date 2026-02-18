@@ -278,24 +278,24 @@ INSERT IGNORE INTO codes (code, code_type, code_text, code_text_short, active, f
 -- ═══════════════════════════════════════════════════════════
 
 INSERT IGNORE INTO codes (code, code_type, code_text, code_text_short, active, fee) VALUES
-('D7999A', @cdt_type, 'Sinus lift / Ngritje sinusi', 'Sinus Lift', 1, 65000),
-('D7999B', @cdt_type, 'Bone graft / Graft kockor / Osteo plastik', 'Bone Graft', 1, 30000),
-('D7999C', @cdt_type, 'Cyst removal / Heqje kisti', 'Cyst Removal', 1, 35000),
-('D9999A', @cdt_type, 'PRP regeneration / Plazem rigjenerim', 'PRP Regeneration', 1, 25000),
-('D9999B', @cdt_type, 'Fibrin regeneration / Fibrine rigjenerim', 'Fibrin Regeneration', 1, 25000),
-('D6999A', @cdt_type, 'Immediate load temporary crown / Provizor karikim imediat', 'Immediate Load Temp', 1, 3000),
-('D4999A', @cdt_type, 'Gum graft / Graft gingive', 'Gum Graft', 1, 50000),
-('D8999A', @cdt_type, 'Gummy smile correction / Gammy smile', 'Gummy Smile', 1, 45000),
-('D1999A', @cdt_type, 'Air flow cleaning / Detartrazh + air flow', 'Air Flow Cleaning', 1, 3500),
-('D1999B', @cdt_type, 'Piercing placement / Vendosje pircing', 'Piercing Placement', 1, 3000),
-('D2999A', @cdt_type, 'Reconstruction with metal pin / Rikonstruksion me vide metalike', 'Reconstruction Metal Pin', 1, 1000),
-('D2999B', @cdt_type, 'Reconstruction with glass pin / Rikonstruksion me vide qelqi', 'Reconstruction Glass Pin', 1, 1500),
-('D2999C', @cdt_type, 'Crown - Full Zirkon', 'Full Zirkon Crown', 1, 28000),
-('D2999D', @cdt_type, 'Crown - E-max', 'E-max Crown', 1, 30000),
-('D5999A', @cdt_type, 'Flexible total denture / Proteze totale elastike', 'Flexible Denture', 1, 50000),
-('D2999E', @cdt_type, 'Child filling Grade 1 / Mbushje dhemb qumeshti Gr.1', 'Child Filling G1', 1, 2500),
-('D2999F', @cdt_type, 'Child filling Grade 2 / Mbushje dhemb qumeshti Gr.2', 'Child Filling G2', 1, 3000),
-('D2999G', @cdt_type, 'Child filling Grade 3 / Mbushje dhemb qumeshti Gr.3', 'Child Filling G3', 1, 3500);
+('D7999A', @cdt_type, 'Ngritje sinusi', 'Ngritje Sinusi', 1, 65000),
+('D7999B', @cdt_type, 'Graft kockor / Osteo plastik', 'Graft Kockor', 1, 30000),
+('D7999C', @cdt_type, 'Heqje kisti', 'Heqje Kisti', 1, 35000),
+('D9999A', @cdt_type, 'Rigjenerim me plazëm (PRP)', 'Plazëm PRP', 1, 25000),
+('D9999B', @cdt_type, 'Rigjenerim me fibrinë', 'Fibrinë', 1, 25000),
+('D6999A', @cdt_type, 'Kurorë provizore karikim imediat', 'Provizor Imediat', 1, 3000),
+('D4999A', @cdt_type, 'Graft gingive', 'Graft Gingive', 1, 50000),
+('D8999A', @cdt_type, 'Korrigjim i buzëqeshjes gingivale', 'Gummy Smile', 1, 45000),
+('D1999A', @cdt_type, 'Pastrim me air flow', 'Air Flow', 1, 3500),
+('D1999B', @cdt_type, 'Vendosje pircing', 'Pircing', 1, 3000),
+('D2999A', @cdt_type, 'Rikonstruksion me vidë metalike', 'Vidë Metalike', 1, 1000),
+('D2999B', @cdt_type, 'Rikonstruksion me vidë qelqi', 'Vidë Qelqi', 1, 1500),
+('D2999C', @cdt_type, 'Kurorë full zirkon', 'Kurorë Full Zirkon', 1, 28000),
+('D2999D', @cdt_type, 'Kurorë E-max', 'Kurorë E-max', 1, 30000),
+('D5999A', @cdt_type, 'Protezë totale elastike', 'Protezë Elastike', 1, 50000),
+('D2999E', @cdt_type, 'Mbushje dhëmb qumështi Gr.1', 'Fëmijë Gr.1', 1, 2500),
+('D2999F', @cdt_type, 'Mbushje dhëmb qumështi Gr.2', 'Fëmijë Gr.2', 1, 3000),
+('D2999G', @cdt_type, 'Mbushje dhëmb qumështi Gr.3', 'Fëmijë Gr.3', 1, 3500);
 
 -- ═══════════════════════════════════════════════════════════
 -- 3. DENTAL APPOINTMENT CATEGORIES

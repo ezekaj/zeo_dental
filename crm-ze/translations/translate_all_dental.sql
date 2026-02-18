@@ -491,3 +491,43 @@ UPDATE codes SET code_text='Zbardhim në shtëpi - për hark', code_text_short='
 UPDATE codes SET code_text='Takim i humbur', code_text_short='Takim i Humbur' WHERE code='D9986';
 UPDATE codes SET code_text='Takim i anuluar', code_text_short='Takim i Anuluar' WHERE code='D9987';
 UPDATE codes SET code_text='Procedurë ndihmëse e paspecifikuar', code_text_short='Procedurë e Paspecifikuar' WHERE code='D9999';
+
+-- ============================================
+-- CUSTOM CLINIC CODES - Albanian Translation
+-- ============================================
+
+-- Surgery custom codes
+UPDATE codes SET code_text='Ngritje sinusi', code_text_short='Ngritje Sinusi' WHERE code='D7999A';
+UPDATE codes SET code_text='Graft kockor / Osteo plastik', code_text_short='Graft Kockor' WHERE code='D7999B';
+UPDATE codes SET code_text='Heqje kisti', code_text_short='Heqje Kisti' WHERE code='D7999C';
+
+-- Regenerative custom codes
+UPDATE codes SET code_text='Rigjenerim me plazëm (PRP)', code_text_short='Plazëm PRP' WHERE code='D9999A';
+UPDATE codes SET code_text='Rigjenerim me fibrinë', code_text_short='Fibrinë' WHERE code='D9999B';
+
+-- Implant custom codes
+UPDATE codes SET code_text='Kurorë provizore karikim imediat', code_text_short='Provizor Imediat' WHERE code='D6999A';
+
+-- Periodontic custom codes
+UPDATE codes SET code_text='Graft gingive', code_text_short='Graft Gingive' WHERE code='D4999A';
+
+-- Orthodontic custom codes
+UPDATE codes SET code_text='Korrigjim i buzëqeshjes gingivale', code_text_short='Gummy Smile' WHERE code='D8999A';
+
+-- Preventive custom codes
+UPDATE codes SET code_text='Pastrim me air flow', code_text_short='Air Flow' WHERE code='D1999A';
+UPDATE codes SET code_text='Vendosje pircing', code_text_short='Pircing' WHERE code='D1999B';
+
+-- Restorative custom codes
+UPDATE codes SET code_text='Rikonstruksion me vidë metalike', code_text_short='Vidë Metalike' WHERE code='D2999A';
+UPDATE codes SET code_text='Rikonstruksion me vidë qelqi', code_text_short='Vidë Qelqi' WHERE code='D2999B';
+UPDATE codes SET code_text='Kurorë full zirkon', code_text_short='Kurorë Full Zirkon' WHERE code='D2999C';
+UPDATE codes SET code_text='Kurorë E-max', code_text_short='Kurorë E-max' WHERE code='D2999D';
+
+-- Prosthodontic custom codes
+UPDATE codes SET code_text='Protezë totale elastike', code_text_short='Protezë Elastike' WHERE code='D5999A';
+
+-- Child filling grades
+UPDATE codes SET code_text='Mbushje dhëmb qumështi Gr.1', code_text_short='Fëmijë Gr.1' WHERE code='D2999E';
+UPDATE codes SET code_text='Mbushje dhëmb qumështi Gr.2', code_text_short='Fëmijë Gr.2' WHERE code='D2999F';
+UPDATE codes SET code_text='Mbushje dhëmb qumështi Gr.3', code_text_short='Fëmijë Gr.3' WHERE code='D2999G';
