@@ -250,7 +250,7 @@ async function start() {
           defaultSrc: ["'self'"],
           scriptSrc: ["'self'", 'https://static.elfsight.com', 'https://elfsightcdn.com', 'https://*.elfsightcdn.com'],
           styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com', 'https://*.elfsightcdn.com'],
-          fontSrc: ["'self'", 'https://fonts.gstatic.com'],
+          fontSrc: ["'self'", 'https://fonts.gstatic.com', 'data:'],
           imgSrc: [
             "'self'",
             'data:',
