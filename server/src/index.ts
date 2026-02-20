@@ -248,7 +248,7 @@ async function start() {
       contentSecurityPolicy: {
         directives: {
           defaultSrc: ["'self'"],
-          scriptSrc: ["'self'", 'https://static.elfsight.com', 'https://*.elfsightcdn.com'],
+          scriptSrc: ["'self'", 'https://static.elfsight.com', 'https://elfsightcdn.com', 'https://*.elfsightcdn.com'],
           styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com', 'https://*.elfsightcdn.com'],
           fontSrc: ["'self'", 'https://fonts.gstatic.com'],
           imgSrc: [
