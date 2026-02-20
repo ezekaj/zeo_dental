@@ -248,8 +248,8 @@ async function start() {
       contentSecurityPolicy: {
         directives: {
           defaultSrc: ["'self'"],
-          scriptSrc: ["'self'", 'https://static.elfsight.com', 'https://elfsightcdn.com'],
-          styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
+          scriptSrc: ["'self'", 'https://static.elfsight.com', 'https://*.elfsightcdn.com'],
+          styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com', 'https://*.elfsightcdn.com'],
           fontSrc: ["'self'", 'https://fonts.gstatic.com'],
           imgSrc: [
             "'self'",
@@ -259,9 +259,10 @@ async function start() {
             'https://i.pinimg.com',
             'https://img.youtube.com',
             'https://i.ytimg.com',
+            'https://*.elfsightcdn.com',
           ],
           mediaSrc: ["'self'", 'https://videos.pexels.com', 'https://cdn.pixabay.com'],
-          connectSrc: ["'self'", 'https://generativelanguage.googleapis.com', 'https://core.service.elfsight.com'],
+          connectSrc: ["'self'", 'https://generativelanguage.googleapis.com', 'https://*.elfsight.com', 'https://*.elfsightcdn.com'],
           frameSrc: ["'self'", 'https://www.google.com', 'https://www.youtube.com', 'https://www.youtube-nocookie.com'],
           objectSrc: ["'none'"],
           upgradeInsecureRequests: [],
