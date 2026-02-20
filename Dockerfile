@@ -8,6 +8,8 @@ RUN npm ci --legacy-peer-deps
 
 # Copy frontend source and build
 COPY . .
+ARG VITE_ELFSIGHT_WIDGET_ID=f2d6942e44a24e68b5643809a1f1cabb
+ENV VITE_ELFSIGHT_WIDGET_ID=$VITE_ELFSIGHT_WIDGET_ID
 RUN npm run build
 
 # Stage 2: Build Fastify server
